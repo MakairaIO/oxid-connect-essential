@@ -1,0 +1,14 @@
+{
+    "name": "makaira/oxid-connect-essential",
+    "type": "oxideshop-module",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Stefan Krenz",
+            "email": "sk@marmalade.group"
+        }
+    ],
+    "require": {
+        "makaira/shared-libs": ">=2021.11.1"
+    }
+}
