@@ -17,7 +17,7 @@
         </include>
         <report>
             <clover outputFile="build/code-coverage-clover.xml" />
-            <html outputDirectory="build/code-coverage/" lowUpperBound="35" highLowerBound="70" />
+            <html outputDirectory="build/code-coverage-html/" lowUpperBound="35" highLowerBound="70" />
         </report>
     </coverage>
 

@@ -53,8 +53,8 @@ jobs:
 
       - name: Compress HTML code coverage
         run: |
-          cd build/code-coverage/
-          tar -czf /tmp/code-coverage-html.taz.gz * .*
+          cd build/
+          tar -czf /tmp/code-coverage-html.tar.gz code-coverage-html/
 
       - name: Upload HTML code coverage report
         uses: actions/upload-artifact@v2
