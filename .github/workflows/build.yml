@@ -48,9 +48,9 @@ jobs:
           args: --ignore-platform-reqs --prefer-dist -no --no-progress
 
       - name: Run tests
-        uses: php-actions/phpunit@v3
+        uses: php-actions/composer@v6
         with:
-          configuration: phpunit.xml
+          command: test
 
       - name: Compress HTML code coverage
         run: |
