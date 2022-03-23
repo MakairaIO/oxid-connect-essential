@@ -6,7 +6,7 @@ $aModule          = [
     'id'          => 'makaira_oxid-connect-essential',
     'description' => '',
     'thumbnail'   => 'makaira.jpg',
-    'version'     => '1.0.1',
+    'version'     => '1.0.2',
     'author'      => 'Makaira GmbH',
     'controllers' => [],
 ];
