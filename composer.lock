@@ -4,8 +4,73 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5779cc676b9691f00d6925143645c2bf",
+    "content-hash": "26ebff421f794ac37b4e5832fa25c1b3",
     "packages": [
+        {
+            "name": "kore/data-object",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kore/DataObject.git",
+                "reference": "f1ea02846690f546eb01e117fb6c876a5cd11f7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kore/DataObject/zipball/f1ea02846690f546eb01e117fb6c876a5cd11f7f",
+                "reference": "f1ea02846690f546eb01e117fb6c876a5cd11f7f",
+                "shasum": ""
+            },
+            "require-dev": {
+                "pdepend/pdepend": "@stable",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "@stable",
+                "sebastian/phpcpd": "@stable",
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Kore": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Simple base class for data objects.",
+            "support": {
+                "issues": "https://github.com/kore/DataObject/issues",
+                "source": "https://github.com/kore/DataObject/tree/1.2"
+            },
+            "time": "2019-04-07T12:33:47+00:00"
+        },
+        {
+            "name": "makaira/shared-libs",
+            "version": "2021.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://gitlab.marmalade.de/makaira/shared-libs.git",
+                "reference": "2d44adbee328e1f3260f1e38c48386326e9033d4"
+            },
+            "require": {
+                "kore/data-object": "1.2"
+            },
+            "require-dev": {
+                "pdepend/pdepend": "@stable",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "^4.0",
+                "squizlabs/php_codesniffer": "@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Makaira\\": "src/"
+                }
+            },
+            "time": "2021-11-02T22:06:09+00:00"
+        }
+    ],
+    "packages-dev": [
         {
             "name": "doctrine/instantiator",
             "version": "1.4.1",
@@ -75,69 +140,6 @@
                 }
             ],
             "time": "2022-03-03T08:28:38+00:00"
-        },
-        {
-            "name": "kore/data-object",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kore/DataObject.git",
-                "reference": "f1ea02846690f546eb01e117fb6c876a5cd11f7f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kore/DataObject/zipball/f1ea02846690f546eb01e117fb6c876a5cd11f7f",
-                "reference": "f1ea02846690f546eb01e117fb6c876a5cd11f7f",
-                "shasum": ""
-            },
-            "require-dev": {
-                "pdepend/pdepend": "@stable",
-                "phpmd/phpmd": "@stable",
-                "phpunit/phpunit": "@stable",
-                "sebastian/phpcpd": "@stable",
-                "squizlabs/php_codesniffer": "@stable"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Kore": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Simple base class for data objects.",
-            "support": {
-                "issues": "https://github.com/kore/DataObject/issues",
-                "source": "https://github.com/kore/DataObject/tree/1.2"
-            },
-            "time": "2019-04-07T12:33:47+00:00"
-        },
-        {
-            "name": "makaira/shared-libs",
-            "version": "2021.11.1",
-            "source": {
-                "type": "git",
-                "url": "https://gitlab.marmalade.de/makaira/shared-libs.git",
-                "reference": "2d44adbee328e1f3260f1e38c48386326e9033d4"
-            },
-            "require": {
-                "kore/data-object": "1.2"
-            },
-            "require-dev": {
-                "pdepend/pdepend": "@stable",
-                "phpmd/phpmd": "@stable",
-                "phpunit/phpunit": "^4.0",
-                "squizlabs/php_codesniffer": "@stable"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Makaira\\": "src/"
-                }
-            },
-            "time": "2021-11-02T22:06:09+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2168,7 +2170,6 @@
             "time": "2021-03-09T10:59:23+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
