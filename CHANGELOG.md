@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/MakairaIO/oxid-connect-essential/compare/1.0.2...1.0.3) (2022-03-23)
+
+
+### Bug Fixes
+
+* Add comments ([fa5fc15](https://github.com/MakairaIO/oxid-connect-essential/commit/fa5fc15d2af5f1ae784635af2a9fce68e12c6225))
+
 ## [1.0.2](https://github.com/MakairaIO/oxid-connect-essential/compare/1.0.1...1.0.2) (2022-03-23)
 
 
