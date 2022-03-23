@@ -8,49 +8,57 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
-
-    - name: Cache Composer packages
-      id: composer-cache
-      uses: actions/cache@v2
-      with:
-        path: vendor
-        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-php-
-
-    - name: Install dependencies
-      uses: php-actions/composer@v6
-      with:
-        command: install
-        dev: no
-        php_version: 8.0
-        version: 2
-        args: --ignore-platform-reqs --prefer-dist -no --no-progress
-
-    - name: Create vendor archive
-      run: tar -czf composer-dependencies.tar.gz vendor/
-
-    - name: Composer dependencies
-      uses: actions/upload-artifact@v2
-      with:
-        name: composer-dependencies
-        path: composer-dependencies.tar.gz
-        retention-days: 1
-
-  sonarcloud:
-    name: SonarCloud
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
+      - name: Setup PHP with PECL extension
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: curl, json, :opcache, xdebug, mbstring
+          coverage: xdebug
+          ini-values: memory_limit=-1,error_reporting=-1,log_errors_max_len=0,zend.assertions=1,assert.exception=1,xdebug.show_exception_trace=0,suhosin.executor.include.whitelist=phar,xdebug.mode="develop,coverage"
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict
+
+      - uses: actions/cache@v3
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-dev-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-dev-composer-
+
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          command: install
+          dev: yes
+          php_version: 8.0
+          version: 2
+          args: --ignore-platform-reqs --prefer-dist -no --no-progress
+
+      - name: Run tests
+        uses: php-actions/phpunit@v3
+        with:
+          configuration: phpunit.xml
+
+      - name: Compress HTML code coverage
+        run: |
+          cd build/code-coverage/
+          tar -czf /tmp/code-coverage-html.taz.gz * .*
+
+      - name: Upload HTML code coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage-html
+          path: /tmp/code-coverage-html.taz.gz
+          retention-days: 1
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
@@ -59,7 +67,7 @@ jobs:
 
   release:
     name: Create a new release
-    needs: [build, sonarcloud]
+    needs: [test]
     runs-on: ubuntu-latest
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/stable'
     steps:
@@ -69,20 +77,26 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Download Composer dependencies
-        uses: actions/download-artifact@v2
-        with:
-          name: composer-dependencies
-          path: /tmp
-
-      - name: Extract artifacts
+      - name: Get Composer Cache Directory
+        id: composer-cache
         run: |
-          tar -xzf /tmp/composer-dependencies.tar.gz
-          rm -rf /tmp/composer-dependencies.tar.gz
+          echo "::set-output name=dir::$(composer config cache-files-dir)"
 
-      - uses: geekyeggo/delete-artifact@v1
+      - uses: actions/cache@v3
         with:
-          name: composer-dependencies
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-nodev-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-nodev-composer-
+
+      - name: Install dependencies
+        uses: php-actions/composer@v6
+        with:
+          command: install
+          dev: no
+          php_version: 8.0
+          version: 2
+          args: --ignore-platform-reqs --prefer-dist -no --no-progress
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v2

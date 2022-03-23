@@ -20,9 +20,20 @@
         "ext-json": "*",
         "makaira/shared-libs": "^2021.11 | ^2022.1"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
         "psr-4": {
             "Makaira\\OxidConnectEssential\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Makaira\\OxidConnectEssential\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml"
     }
 }
