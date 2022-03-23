@@ -60,7 +60,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: code-coverage-html
-          path: /tmp/code-coverage-html.taz.gz
+          path: /tmp/code-coverage-html.tar.gz
           retention-days: 1
 
       - name: SonarCloud Scan
