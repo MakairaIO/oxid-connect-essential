@@ -1,5 +1,6 @@
 {
     "name": "makaira/oxid-connect-essential",
+    "description": "Module for OXID eShop to connect it with Makaira.",
     "type": "oxideshop-module",
     "license": "GPL-3.0-or-later",
     "homepage": "https://makaira.io/",
@@ -17,7 +18,7 @@
         "php": ">=8.0",
         "ext-curl": "*",
         "ext-json": "*",
-        "makaira/shared-libs": ">=2021.11.1"
+        "makaira/shared-libs": "^2021.11 | ^2022.1"
     },
     "autoload": {
         "psr-4": {
