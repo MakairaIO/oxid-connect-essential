@@ -1,3 +1,12 @@
+## [1.0.4](https://github.com/MakairaIO/oxid-connect-essential/compare/1.0.3...1.0.4) (2022-03-23)
+
+
+### Bug Fixes
+
+* Add quotes to sonarcloud option ([85551ea](https://github.com/MakairaIO/oxid-connect-essential/commit/85551ea18d57850e030094c3916c91e55adff9b6))
+* Move sonarcloud config into GitHub wrokflow ([04a109b](https://github.com/MakairaIO/oxid-connect-essential/commit/04a109b19c507ced9447e3e47c54ca9b466353d0))
+* Remove project name ([06ed5b7](https://github.com/MakairaIO/oxid-connect-essential/commit/06ed5b787787f1b0e496b26de6da91e5f4aa0153))
+
 ## [1.0.3](https://github.com/MakairaIO/oxid-connect-essential/compare/1.0.2...1.0.3) (2022-03-23)
 
 

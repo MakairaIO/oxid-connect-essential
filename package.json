@@ -1,6 +1,6 @@
 {
   "name": "oxid-connect-essential",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "scripts": {
     "release": "semantic-release"
