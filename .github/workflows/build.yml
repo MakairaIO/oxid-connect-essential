@@ -68,6 +68,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=MakairaIO_oxid-connect-essential
+            -Dsonar.organization=makairaio
+            -Dsonar.projectName=OXID Connect Essential
+            -Dsonar.language=php
+            -Dsonar.sources=src
+            -Dsonar.tests=tests/
+            -Dsonar.sourceEncoding=UTF-8
+            -Dsonar.php.tests.reportPath=build/junit.xml
+            -Dsonar.php.coverage.reportPaths=build/code-coverage-clover.xml
+            -Dsonar.verbose=false
 
   release:
     name: Create a new release
