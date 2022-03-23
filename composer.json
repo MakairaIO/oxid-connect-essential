@@ -18,5 +18,10 @@
         "ext-curl": "*",
         "ext-json": "*",
         "makaira/shared-libs": ">=2021.11.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Makaira\\OxidConnectEssential\\": "src/"
+        }
     }
 }
