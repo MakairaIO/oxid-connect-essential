@@ -78,7 +78,8 @@ jobs:
             -Dsonar.sourceEncoding=UTF-8
             -Dsonar.php.tests.reportPath=build/junit.xml
             -Dsonar.php.coverage.reportPaths=build/code-coverage-clover.xml
-            -Dsonar.verbose=false
+            -Dsonar.log.level=DEBUG
+            -Dsonar.verbose=true
 
   release:
     name: Create a new release
