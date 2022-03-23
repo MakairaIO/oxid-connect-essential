@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/MakairaIO/oxid-connect-essential/compare/1.0.0...1.0.1) (2022-03-23)
+
+
+### Bug Fixes
+
+* Change paths for sonarcloud ([eb6afeb](https://github.com/MakairaIO/oxid-connect-essential/commit/eb6afeb212eb2802751020280f970b42509af899))
+
 # 1.0.0 (2022-03-23)
 
 
