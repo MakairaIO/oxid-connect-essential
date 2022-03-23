@@ -72,7 +72,7 @@ jobs:
           args: >
             -Dsonar.projectKey=MakairaIO_oxid-connect-essential
             -Dsonar.organization=makairaio
-            -Dsonar.projectName=OXID Connect Essential
+            -Dsonar.projectName="OXID Connect Essential"
             -Dsonar.language=php
             -Dsonar.sources=src
             -Dsonar.tests=tests/
@@ -130,7 +130,6 @@ jobs:
         run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-
           GIT_AUTHOR_NAME: ${{ secrets.GIT_USERNAME }}
           GIT_AUTHOR_EMAIL: ${{ secrets.GIT_EMAIL }}
           GIT_COMMITTER_NAME: ${{ secrets.GIT_USERNAME }}
