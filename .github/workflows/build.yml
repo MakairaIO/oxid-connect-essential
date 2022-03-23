@@ -63,6 +63,20 @@ jobs:
           path: /tmp/code-coverage-html.tar.gz
           retention-days: 1
 
+      - name: Upload Clover code coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage-clover
+          path: build/code-coverage-clover.xml
+          retention-days: 1
+
+      - name: Upload PHPUnit junit report
+        uses: actions/upload-artifact@v2
+        with:
+          name: phpunit-junit
+          path: build/junit.xml
+          retention-days: 1
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
@@ -73,13 +87,11 @@ jobs:
             -Dsonar.projectKey=MakairaIO_oxid-connect-essential
             -Dsonar.organization=makairaio
             -Dsonar.language=php
-            -Dsonar.sources=src
+            -Dsonar.sources=src/
             -Dsonar.tests=tests/
             -Dsonar.sourceEncoding=UTF-8
             -Dsonar.php.tests.reportPath=build/junit.xml
             -Dsonar.php.coverage.reportPaths=build/code-coverage-clover.xml
-            -Dsonar.log.level=DEBUG
-            -Dsonar.verbose=true
 
   release:
     name: Create a new release
