@@ -77,6 +77,11 @@ jobs:
           path: build/junit.xml
           retention-days: 1
 
+      - name: Fix code coverage paths        
+        run: | 
+          sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' build/code-coverage-clover.xml
+          sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' build/junit.xml    
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
