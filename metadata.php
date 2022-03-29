@@ -1,5 +1,7 @@
 <?php
 
+use Makaira\OxidConnectEssential\Controller\ReviewController;
+
 $sMetadataVersion = '2.1';
 
 $aModule          = [
@@ -8,5 +10,7 @@ $aModule          = [
     'thumbnail'   => 'makaira.jpg',
     'version'     => '1.0.4',
     'author'      => 'Makaira GmbH',
-    'controllers' => [],
+    'controllers' => [
+        "MakairaReviewController" => ReviewController::class
+    ],
 ];
