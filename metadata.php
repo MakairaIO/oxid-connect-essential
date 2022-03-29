@@ -8,7 +8,8 @@ $sMetadataVersion = '2.1';
 
 $aModule          = [
     'id'          => 'makaira_oxid-connect-essential',
-    'description' => '',
+    'title'       => 'Makaira Connect Essential',
+    'description' => 'This module provides required endpoints to import product data into Makaira.',
     'thumbnail'   => 'makaira.jpg',
     'version'     => '1.1.0',
     'author'      => 'Makaira GmbH',
