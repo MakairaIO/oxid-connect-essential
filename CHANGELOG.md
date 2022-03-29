@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.0.4...1.1.0) (2022-03-29)
+
+
+### Bug Fixes
+
+* restore Dummy.php ([165ed93](https://github.com/MakairaIO/oxid-connect-essential/commit/165ed93350bddaafff80c2aed6db250cebf386e0))
+* update composer.lock ([dbd76ac](https://github.com/MakairaIO/oxid-connect-essential/commit/dbd76ac814daef6f1ab8d2e5626b56bdef284932))
+
+
+### Features
+
+* Review API ([aeba34a](https://github.com/MakairaIO/oxid-connect-essential/commit/aeba34ad8c311e3065d5d0b1c8feae19f6e44d68))
+
 ## [1.0.4](https://github.com/MakairaIO/oxid-connect-essential/compare/1.0.3...1.0.4) (2022-03-23)
 
 
