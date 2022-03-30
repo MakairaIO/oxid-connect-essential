@@ -44,6 +44,12 @@
             "@phpcs",
             "@phpunit"
         ],
+        "test-all": [
+            "@phpcs",
+            "phpmd",
+            "@phpstan",
+            "@phpunit"
+        ],
         "phpunit": [
             "phpunit -c phpunit.xml"
         ],
