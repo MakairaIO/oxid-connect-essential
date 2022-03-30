@@ -46,7 +46,7 @@
         ],
         "test-all": [
             "@phpcs",
-            "phpmd",
+            "@phpmd",
             "@phpstan",
             "@phpunit"
         ],
