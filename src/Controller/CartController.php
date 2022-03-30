@@ -3,7 +3,6 @@
 namespace Makaira\OxidConnectEssential\Controller;
 
 use Exception;
-use JetBrains\PhpStorm\NoReturn;
 use OxidEsales\Eshop\Application\Model\Article;
 use OxidEsales\Eshop\Application\Model\BasketItem;
 use OxidEsales\Eshop\Core\Registry;
@@ -13,8 +12,7 @@ class CartController extends BaseController
     /**
      * @throws Exception
      */
-    #[NoReturn]
-    public function getCart()
+    public function getCartItems()
     {
         $session = Registry::getSession();
         $basket = $session->getBasket();
@@ -24,21 +22,18 @@ class CartController extends BaseController
 
         foreach ($basketItems as $itemId => $basketItem) {
             /**@var BasketItem $basketItem*/
+            $article = $basketItem->getArticle();
             $cartItems[] = [
                 'cart_item_id' => $itemId,
                 'name' => $basketItem->getTitle(),
-                'price' => $basketItem->getPrice(),
-                'base_price' => $basketItem->getArticle()->getBasePrice(),
+                'price' => $article->getPrice()->getPrice(),
+                'base_price' => $article->getBasePrice(),
                 'quantity' => $basketItem->getAmount(),
                 'image_path' => $basketItem->getIconUrl()
             ];
         }
 
-        $response = [
-            'cart_items' => $cartItems
-        ];
-
-        $this->sendResponse($response);
+        $this->sendResponse($cartItems);
     }
 
     public function addProductToCart()
@@ -54,8 +49,6 @@ class CartController extends BaseController
 
             $this->sendResponse([
                 'success' => true,
-                'itemCount' => $basket->getItemsCount(),
-                'totalSum' => $basket->getBruttoSum()
             ]);
         } catch (Exception $e) {
             $this->sendResponse([
@@ -67,7 +60,7 @@ class CartController extends BaseController
 
     public function updateCartItem()
     {
-        ['cart_item_id' => $cartItemId, 'count' => $count] = $this->getRequestBody();
+        ['cart_item_id' => $cartItemId, 'amount' => $amount] = $this->getRequestBody();
 
         $session = Registry::getSession();
         $basket = $session->getBasket();
@@ -82,14 +75,12 @@ class CartController extends BaseController
             // Update cart
             /**@var Article $article*/
             $article = $basketItems[$cartItemId];
-            $basket->addToBasket(sProductID: $article->getProductId(), dAmount: $count, sOldBasketItemId: $cartItemId);
+            $basket->addToBasket(sProductID: $article->getProductId(), dAmount: $amount, blOverride: true);
 
             $basket->calculateBasket();
 
             $this->sendResponse([
                 'success' => true,
-                'itemCount' => $basket->getItemsCount(),
-                'totalSum' => $basket->getBruttoSum()
             ]);
         } catch (Exception $e) {
             $this->sendResponse([
@@ -112,8 +103,6 @@ class CartController extends BaseController
 
             $this->sendResponse([
                 'success' => true,
-                'itemCount' => $basket->getItemsCount(),
-                'totalSum' => $basket->getBruttoSum()
             ]);
         } catch (Exception $e) {
             $this->sendResponse([

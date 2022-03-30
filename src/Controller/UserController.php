@@ -3,13 +3,11 @@
 namespace Makaira\OxidConnectEssential\Controller;
 
 use Exception;
-use JetBrains\PhpStorm\NoReturn;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Registry;
 
 class UserController extends BaseController
 {
-    #[NoReturn]
     public function login()
     {
         ['username' => $username, 'password' => $password, 'rememberLogin' => $rememberLogin] = $this->getRequestBody();
@@ -52,7 +50,6 @@ class UserController extends BaseController
         $this->sendResponse($response, $httpCode);
     }
 
-    #[NoReturn]
     public function logout()
     {
         $user = oxNew(User::class);
@@ -75,7 +72,6 @@ class UserController extends BaseController
         $this->sendResponse(["success" => true]);
     }
 
-    #[NoReturn]
     public function getUser()
     {
         $user = Registry::getSession()->getUser();

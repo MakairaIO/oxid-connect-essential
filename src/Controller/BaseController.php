@@ -2,7 +2,6 @@
 
 namespace Makaira\OxidConnectEssential\Controller;
 
-use JetBrains\PhpStorm\NoReturn;
 use OxidEsales\Eshop\Application\Controller\FrontendController;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Registry;
@@ -11,12 +10,15 @@ use Symfony\Component\HttpFoundation\Request;
 
 class BaseController extends FrontendController
 {
-    #[NoReturn]
+    public function render(): string
+    {
+        return '';
+    }
+
     protected function sendResponse(array $content, int $status = 200): void
     {
         $response = new JsonResponse($content, $status);
         $response->send();
-        exit;
     }
 
     protected function getRequestBody(): array
@@ -30,7 +32,7 @@ class BaseController extends FrontendController
     protected function checkAndGetActiveUser(): User
     {
         $user = Registry::getSession()->getUser();
-        if (!$user) {
+        if ($user === false) {
             $this->sendResponse(["message" => "Unauthorized"], 401);
         }
 

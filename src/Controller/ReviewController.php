@@ -14,7 +14,6 @@ use OxidEsales\EshopCommunity\Core\Field as FieldAlias;
 
 class ReviewController extends BaseController
 {
-    #[NoReturn]
     public function getReviews()
     {
         ['id' => $productId, 'limit' => $limit, 'offset' => $offset] = $this->getRequestBody();
@@ -35,10 +34,10 @@ class ReviewController extends BaseController
             $user = oxNew(User::class);
             $user->load($review->getFieldData('oxuserid'));
             $response[] = [
-                'name' => $user->getFieldData('oxfname'),
+                'reviewer_name' => "{$user->getFieldData('oxfname')} {$user->getFieldData('oxlname')}",
                 'rating' => $review->getFieldData('oxrating'),
                 'text' => $review->getFieldData('oxtext'),
-                'created' => $review->getFieldData('oxcreate'),
+                'created_at' => $review->getFieldData('oxcreate'),
             ];
         }
 
@@ -53,7 +52,7 @@ class ReviewController extends BaseController
     {
         $user = $this->checkAndGetActiveUser();
 
-        ['id' => $productId, 'rating' => $rating, 'text' => $text] = $this->getRequestBody();
+        ['product_id' => $productId, 'rating' => $rating, 'text' => $text] = $this->getRequestBody();
 
         $product = oxNew(Article::class);
         $isLoaded = $product->load($productId);
