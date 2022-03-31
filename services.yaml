@@ -1,1 +1,9 @@
 services:
+  _defaults:
+    public: true
+  Makaira\OxidConnectEssential\Service\UserService:
+    class: Makaira\OxidConnectEssential\Service\UserService
+  Makaira\OxidConnectEssential\Service\CartService:
+    class: Makaira\OxidConnectEssential\Service\CartService
+  Makaira\OxidConnectEssential\Service\ReviewService:
+    class: Makaira\OxidConnectEssential\Service\ReviewService

@@ -19,6 +19,7 @@ class BaseController extends FrontendController
     {
         $response = new JsonResponse($content, $status);
         $response->send();
+        exit();
     }
 
     protected function getRequestBody(): array

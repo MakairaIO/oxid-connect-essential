@@ -2,79 +2,53 @@
 
 namespace Makaira\OxidConnectEssential\Controller;
 
-use Exception;
-use OxidEsales\Eshop\Application\Model\User;
-use OxidEsales\Eshop\Core\Registry;
+use Makaira\OxidConnectEssential\Exception\UserBlockedException;
+use Makaira\OxidConnectEssential\Service\UserService;
+use OxidEsales\Eshop\Core\Exception\CookieException;
+use OxidEsales\Eshop\Core\Exception\UserException;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 
 class UserController extends BaseController
 {
+    private UserService $userService;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->userService = ContainerFactory::getInstance()->getContainer()->get(UserService::class);
+    }
     public function login()
     {
         ['username' => $username, 'password' => $password, 'rememberLogin' => $rememberLogin] = $this->getRequestBody();
 
-        $httpCode = 200;
         try {
-            /** @var User $user */
-            $user = oxNew(User::class);
-            $response = [
-                'success' => $user->login($username, $password, $rememberLogin)
-            ];
-        } catch (Exception $userException) {
-            $response = [
+            $this->userService->login($username, $password, $rememberLogin);
+            $this->sendResponse([
+                'success' => true
+            ]);
+        } catch (UserException | UserBlockedException $e) {
+            $this->sendResponse([
                 'success' => false,
-                'message' => $userException->getMessage()
-            ];
-            $httpCode = 500;
-        }
-
-        // after login
-        $session = Registry::getSession();
-        if ($session->isSessionStarted()) {
-            $session->regenerateSessionId();
-        }
-
-        // this user is blocked, deny him
-        if ($user->inGroup('oxidblocked')) {
-            $response = [
+                'message' => $e->getMessage()
+            ], 403);
+        } catch (CookieException $e) {
+            $this->sendResponse([
                 'success' => false,
-                'message' => 'USER_BLOCKED'
-            ];
-            $httpCode = 403;
+                'message' => $e->getMessage()
+            ], 400);
         }
-
-        // recalc basket
-        if ($basket = $session->getBasket()) {
-            $basket->onUpdate();
-        }
-
-        $this->sendResponse($response, $httpCode);
     }
 
     public function logout()
     {
-        $user = oxNew(User::class);
-        $user->logout();
-
-        // after logout
-        Registry::getSession()->deleteVariable('paymentid');
-        Registry::getSession()->deleteVariable('sShipSet');
-        Registry::getSession()->deleteVariable('deladrid');
-        Registry::getSession()->deleteVariable('dynvalue');
-
-        // resetting & recalc basket
-        if (($basket = Registry::getSession()->getBasket())) {
-            $basket->resetUserInfo();
-            $basket->onUpdate();
-        }
-
-        Registry::getSession()->delBasket();
+        $this->userService->logout();
 
         $this->sendResponse(["success" => true]);
     }
 
-    public function getUser()
+    public function getCurrentLoggedInUser()
     {
-        $user = Registry::getSession()->getUser();
+        $user = $this->userService->getCurrentLoggedInUser();
         if ($user) {
             $this->sendResponse([
                 'id' => $user->getFieldData('oxid'),

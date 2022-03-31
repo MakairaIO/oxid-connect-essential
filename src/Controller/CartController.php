@@ -3,50 +3,38 @@
 namespace Makaira\OxidConnectEssential\Controller;
 
 use Exception;
-use OxidEsales\Eshop\Application\Model\Article;
-use OxidEsales\Eshop\Application\Model\BasketItem;
-use OxidEsales\Eshop\Core\Registry;
+use Makaira\OxidConnectEssential\Exception\InvalidCartItem;
+use Makaira\OxidConnectEssential\Service\CartService;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 
 class CartController extends BaseController
 {
-    /**
-     * @throws Exception
-     */
+    private CartService $cartService;
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->cartService = ContainerFactory::getInstance()->getContainer()->get(CartService::class);
+    }
+
     public function getCartItems()
     {
-        $session = Registry::getSession();
-        $basket = $session->getBasket();
-        $basketItems = $basket->getContents();
-
-        $cartItems = [];
-
-        foreach ($basketItems as $itemId => $basketItem) {
-            /**@var BasketItem $basketItem*/
-            $article = $basketItem->getArticle();
-            $cartItems[] = [
-                'cart_item_id' => $itemId,
-                'name' => $basketItem->getTitle(),
-                'price' => $article->getPrice()->getPrice(),
-                'base_price' => $article->getBasePrice(),
-                'quantity' => $basketItem->getAmount(),
-                'image_path' => $basketItem->getIconUrl()
-            ];
+        try {
+            $this->sendResponse($this->cartService->getCartItems());
+        } catch (Exception $e) {
+            $this->sendResponse([
+                'success' => false,
+                'message' => $e->getMessage()
+            ], 500);
         }
-
-        $this->sendResponse($cartItems);
     }
 
     public function addProductToCart()
     {
         ['product_id' => $productId, 'amount' => $amount] = $this->getRequestBody();
 
-        $session = Registry::getSession();
-        $basket = $session->getBasket();
-
         try {
-            $basket->addToBasket($productId, $amount);
-            $basket->calculateBasket();
-
+            $this->cartService->addProductToCart($productId, $amount);
             $this->sendResponse([
                 'success' => true,
             ]);
@@ -62,26 +50,17 @@ class CartController extends BaseController
     {
         ['cart_item_id' => $cartItemId, 'amount' => $amount] = $this->getRequestBody();
 
-        $session = Registry::getSession();
-        $basket = $session->getBasket();
-
         try {
-            $basketItems = $basket->getContents();
-            if (!isset($basketItems[$cartItemId])) {
-                $this->sendResponse([
-                    'message' => 'Invalid cart_item_id.'
-                ], 400);
-            }
-            // Update cart
-            /**@var Article $article*/
-            $article = $basketItems[$cartItemId];
-            $basket->addToBasket(sProductID: $article->getProductId(), dAmount: $amount, blOverride: true);
-
-            $basket->calculateBasket();
+            $this->cartService->updateCartItem($cartItemId, $amount);
 
             $this->sendResponse([
                 'success' => true,
             ]);
+        } catch (InvalidCartItem $e) {
+            $this->sendResponse([
+                'success' => false,
+                'message' => $e->getMessage()
+            ], 400);
         } catch (Exception $e) {
             $this->sendResponse([
                 'success' => false,
@@ -94,12 +73,8 @@ class CartController extends BaseController
     {
         ['cart_item_id' => $cartItemId] = $this->getRequestBody();
 
-        $session = Registry::getSession();
-        $basket = $session->getBasket();
-
         try {
-            $basket->removeItem($cartItemId);
-            $basket->calculateBasket();
+            $this->cartService->removeCartItem($cartItemId);
 
             $this->sendResponse([
                 'success' => true,
