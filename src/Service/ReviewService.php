@@ -13,7 +13,7 @@ use OxidEsales\EshopCommunity\Core\Field as FieldAlias;
 
 class ReviewService
 {
-    public function getReviews($productId, $limit, $offset): array
+    public function getReviews($productId, $limit = null, $offset = null): array
     {
         $product = oxNew(Article::class);
         $product->load($productId);

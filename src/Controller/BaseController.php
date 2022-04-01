@@ -19,7 +19,6 @@ class BaseController extends FrontendController
     {
         $response = new JsonResponse($content, $status);
         $response->send();
-        exit();
     }
 
     protected function getRequestBody(): array
@@ -30,11 +29,12 @@ class BaseController extends FrontendController
         return (array)json_decode($body, true);
     }
 
-    protected function checkAndGetActiveUser(): User
+    protected function checkAndGetActiveUser(): User|bool
     {
         $user = Registry::getSession()->getUser();
         if ($user === false) {
             $this->sendResponse(["message" => "Unauthorized"], 401);
+            exit;
         }
 
         return $user;

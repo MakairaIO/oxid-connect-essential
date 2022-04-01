@@ -23,7 +23,7 @@ class UserService
      * @throws UserException
      * @throws CookieException Do not remove this because of "never thrown" warning
      */
-    public function login($username, $password, $rememberLogin)
+    public function login($username, $password, $rememberLogin): User
     {
         /** @var User $user */
         $user = oxNew(User::class);
@@ -43,6 +43,8 @@ class UserService
         if ($basket = $this->session->getBasket()) {
             $basket->onUpdate();
         }
+
+        return $user;
     }
 
     public function logout()

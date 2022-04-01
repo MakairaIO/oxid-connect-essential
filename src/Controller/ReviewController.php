@@ -20,7 +20,14 @@ class ReviewController extends BaseController
     {
         ['id' => $productId, 'limit' => $limit, 'offset' => $offset] = $this->getRequestBody();
 
-        $this->sendResponse($this->reviewService->getReviews($productId, $limit, $offset));
+        try {
+            $this->sendResponse($this->reviewService->getReviews($productId, $limit, $offset));
+        } catch (Exception $e) {
+            $this->sendResponse([
+                'success' => false,
+                'message' => $e->getMessage()
+            ], 500);
+        }
     }
 
     public function createReview()
