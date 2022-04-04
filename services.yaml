@@ -1,5 +1,19 @@
 services:
   _defaults:
+    public: false
+    autowire: true
+    autoconfigure: true
+
+  OxidEsales\Eshop\Core\TableViewNameGenerator: ~
+
+  Makaira\OxidConnectEssential\Events\DatabaseSubscriber:
+    tags: ['kernel.event_subscriber']
+
+  Makaira\OxidConnectEssential\RevisionHandler\ModelDataExtractor:
+    bind:
+      $extractors: !tagged makaira_connect_essential.model_data_extractor
+
+  Makaira\OxidConnectEssential\Entity\RevisionRepository:
     public: true
 
   OxidSession:
@@ -10,13 +24,42 @@ services:
     class: OxidEsales\EshopCommunity\Core\Session
     factory: [ '@OxidSession', 'getBasket' ]
 
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\Article:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleAttribute:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleCategory:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleSelectList:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\Category:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\GraduatedPrices:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\Manufacturer:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\SelectList:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
   Makaira\OxidConnectEssential\Service\UserService:
+    public: true
     class: Makaira\OxidConnectEssential\Service\UserService
     arguments:
       - '@OxidSession'
+
   Makaira\OxidConnectEssential\Service\CartService:
+    public: true
     class: Makaira\OxidConnectEssential\Service\CartService
     arguments:
       - '@OxidBasket'
+
   Makaira\OxidConnectEssential\Service\ReviewService:
+    public: true
     class: Makaira\OxidConnectEssential\Service\ReviewService
