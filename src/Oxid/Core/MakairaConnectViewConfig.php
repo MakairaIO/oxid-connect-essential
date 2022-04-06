@@ -17,29 +17,7 @@ use OxidEsales\EshopCommunity\Core\Config;
 
 class MakairaConnectViewConfig extends ViewConfig
 {
-    private array $experiments = [];
-
     private ?bool $cookieBannerActive = null;
-
-    /**
-     * @param array $experiments
-     *
-     * @return static
-     */
-    public function setExperiments(array $experiments): static
-    {
-        $this->experiments = $experiments;
-
-        return $this;
-    }
-
-    /**
-     * @return array
-     */
-    public function getExperiments(): array
-    {
-        return $this->experiments;
-    }
 
     /**
      * @return bool

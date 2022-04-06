@@ -37,7 +37,11 @@ class MakairaTrackingDataGenerator
      */
     public function generate(string $oxidControllerClass): array
     {
-        $siteId = Registry::getConfig()->getShopConfVar('makaira_tracking_page_id', null, 'module:makaira_oxid-connect-essential');
+        $siteId = Registry::getConfig()->getShopConfVar(
+            'makaira_tracking_page_id',
+            null,
+            'module:makaira_oxid-connect-essential'
+        );
 
         if (empty($siteId)) {
             return [];
@@ -75,10 +79,20 @@ class MakairaTrackingDataGenerator
             ];
         }
 
-        $oxidViewConfig = Registry::get('oxviewconfig');
-        if ($oxidViewConfig instanceof MakairaConnectViewConfig) {
-            foreach ($oxidViewConfig->getExperiments() as $experiment => $variation) {
-                $trackingData[] = [['trackEvent', 'abtesting', $experiment, $variation]];
+        // Send tracking to piwik if mak_experiments cookie is set
+        if (!empty($_COOKIE['mak_experiments'])) {
+            $experiments = json_decode($_COOKIE['mak_experiments'], true);
+            if (is_array($experiments)) {
+                foreach ($experiments as $experiment) {
+                    $trackingData[] = [
+                        [
+                            'trackEvent',
+                            'abtesting',
+                            $experiment['experiment'],
+                            $experiment['variation']
+                        ]
+                    ];
+                }
             }
         }
 
