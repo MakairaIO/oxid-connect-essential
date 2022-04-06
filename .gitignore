@@ -3,3 +3,4 @@
 /build/*
 !/build/.gitkeep
 /.idea
+/out/node_modules
