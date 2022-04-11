@@ -59,5 +59,4 @@ class Manufacturer extends AbstractModelDataExtractor
     {
         return $model instanceof ManufacturerModel;
     }
-
 }

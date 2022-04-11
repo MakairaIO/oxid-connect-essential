@@ -6,6 +6,8 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\ConnectionException;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Exception as DBALException;
+use Doctrine\DBAL\ParameterType;
+use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
 
 class RevisionRepository
@@ -97,5 +99,60 @@ class RevisionRepository
         } catch (DBALException | DBALDriverException) {
             $this->connection->rollBack();
         }
+    }
+
+    /**
+     * @param int $since
+     *
+     * @return int
+     * @throws DBALDriverException
+     * @throws DBALException
+     */
+    public function countChanges(int $since): int
+    {
+        $prepared = $this->connection->prepare('SELECT COUNT(*) FROM `makaira_connect_changes` WHERE `SEQUENCE` > ?');
+        $prepared->execute([$since]);
+
+        return (int) $prepared->fetchOne();
+    }
+
+    /**
+     * @param int $since
+     * @param int $limit
+     *
+     * @return array
+     * @throws DBALDriverException
+     * @throws DBALException
+     */
+    public function getRevisions(int $since, int $limit = 50): array
+    {
+        $prepared = $this->connection->prepare(
+            'SELECT `SEQUENCE` as sequence, `OXID` as id, `TYPE` as type
+            FROM `makaira_connect_changes`
+            WHERE `SEQUENCE` > :since
+            ORDER BY `SEQUENCE` ASC
+            LIMIT :limit'
+        );
+
+        $prepared->bindValue(':since', $since, ParameterType::INTEGER);
+        $prepared->bindValue(':limit', $limit, ParameterType::INTEGER);
+
+        $prepared->execute();
+
+        return $prepared->fetchAllAssociative();
+    }
+
+    /**
+     * @return void
+     * @throws DBALException
+     */
+    public function cleanup(): void
+    {
+        $this->connection->executeQuery(
+            'DELETE FROM
+              makaira_connect_changes
+            WHERE
+              changed < DATE_SUB(NOW(), INTERVAL 1 DAY)'
+        );
     }
 }

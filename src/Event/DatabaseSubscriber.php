@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Makaira\OxidConnectEssential\Events;
+namespace Makaira\OxidConnectEssential\Event;
 
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;

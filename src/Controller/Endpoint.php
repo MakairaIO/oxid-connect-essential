@@ -1,0 +1,62 @@
+<?php
+
+namespace Makaira\OxidConnectEssential\Controller;
+
+use Makaira\OxidConnectEssential\HttpException;
+use Makaira\OxidConnectEssential\Rpc\RpcService;
+use Makaira\OxidConnectEssential\SymfonyContainerTrait;
+use OxidEsales\Eshop\Application\Controller\FrontendController;
+use OxidEsales\Eshop\Core\Registry;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Throwable;
+
+use function explode;
+use function ini_set;
+
+use const PHP_EOL;
+
+class Endpoint extends FrontendController
+{
+    use SymfonyContainerTrait;
+
+    public function render()
+    {
+        ini_set('html_errors', false);
+
+        $container  = $this->getSymfonyContainer();
+        $rpcService = $container->get(RpcService::class);
+
+        $exception = null;
+        try {
+            $responseContent = $rpcService->handleRequest(Request::createFromGlobals());
+            $statusCode      = 200;
+        } catch (HttpException $exception) {
+            $responseContent = ['message' => $exception->getMessage()];
+            $statusCode      = $exception->getCode();
+        } catch (Throwable $exception) {
+            $responseContent = ['messgae' => $exception->getMessage()];
+            $statusCode      = 500;
+        }
+
+        if ($exception instanceof Throwable && !Registry::getConfig()->isProductiveMode()) {
+            $responseContent['file']  = $exception->getFile();
+            $responseContent['line']  = $exception->getLine();
+            $responseContent['stack'] = explode(PHP_EOL, $exception->getTraceAsString());
+        }
+
+        $this->sendAndShutdown(new JsonResponse($responseContent, $statusCode));
+    }
+
+    /**
+     * @param Response $response
+     *
+     * @return void
+     */
+    private function sendAndShutdown(Response $response): void
+    {
+        $response->send();
+        exit(0);
+    }
+}
