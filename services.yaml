@@ -140,30 +140,30 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Category\HierarchyModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.category', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\SubcategoriesModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.category', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\ActiveModifier:
     bind:
       $model: '@Makaira_OxidConnectEssential_Oxid_Article'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\ActiveModifier:
     bind:
       $model: '@Makaira_OxidConnectEssential_Oxid_Category'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.category', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\ActiveModifier:
     bind:
       $model: '@Makaira_OxidConnectEssential_Oxid_Manufacturer'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.manufacturer', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\AttributeModifier:
     bind:
@@ -171,41 +171,41 @@ services:
       $attributeInt: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_int", "makaira_oxid-connect-essential")'
       $attributeFloat: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_float", "makaira_oxid-connect-essential")'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\BlacklistModifier:
     arguments:
       $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_category", "makaira_oxid-connect-essential")'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: -1, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: -1, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: -1 }
+      - { name: 'makaira.importer.modifier.variant', priority: -1 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\BlacklistModifier:
     arguments:
       $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_manufacturer", "makaira_oxid-connect-essential")'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: -1, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: -1, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: -1 }
+      - { name: 'makaira.importer.modifier.variant', priority: -1 }
 
   Makaira\OxidConnectEssential\Modifier\Product\BlacklistModifier:
     arguments:
       $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_product", "makaira_oxid-connect-essential")'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: -1, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: -1, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: -1 }
+      - { name: 'makaira.importer.modifier.variant', priority: -1 }
 
   Makaira\OxidConnectEssential\Modifier\Category\UrlModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.category', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\UrlModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.manufacturer', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\UrlModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\LongDescriptionModifier:
     arguments:
@@ -217,8 +217,8 @@ services:
       $showNetto: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blShowNetPrice")'
       $defaultVAT: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("dDefaultVAT")'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\TimestampNormalizer:
     tags:
@@ -238,8 +238,8 @@ services:
     autoconfigure: false
     parent: Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\ShopModifier:
     public: false
@@ -247,7 +247,7 @@ services:
     autoconfigure: false
     parent: Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.category', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\ShopModifier:
     public: false
@@ -255,33 +255,33 @@ services:
     autoconfigure: false
     parent: Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.manufacturer', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\StockModifier:
     bind:
       $tableName: '@=service("Makaira_OxidConnectEssential_Oxid_Article").getCoreTableName()'
       $useStock: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blUseStock")'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\ZeroDateTimeModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: 1000, method: addModifier }
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.category', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\BoostFieldModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\CategoryModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\MainCategoryModifier:
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\VariantAttributesModifier:
     bind:
@@ -289,7 +289,7 @@ services:
       $attributeInt: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_int", "makaira_oxid-connect-essential")'
       $attributeFloat: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_float", "makaira_oxid-connect-essential")'
     tags:
-      - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
 ### Helper ###
 
