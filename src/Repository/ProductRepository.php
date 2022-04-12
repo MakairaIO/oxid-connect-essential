@@ -33,7 +33,7 @@ class ProductRepository extends AbstractRepository
         return "
             SELECT
                 oxarticles.OXID as `id`,
-                UNIX_TIMESTAMP(oxarticles.oxtimestamp) AS `timestamp`,
+                oxarticles.oxtimestamp AS `timestamp`,
                 oxarticles.*,
                 oxartextends.oxlongdesc AS `OXLONGDESC`,
                 oxartextends.oxtags AS `OXTAGS`,

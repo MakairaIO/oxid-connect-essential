@@ -220,6 +220,13 @@ services:
       - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.product', priority: 1000, method: addModifier }
       - { name: 'kernel.event_listener', event: 'makaira.importer.modifier.variant', priority: 1000, method: addModifier }
 
+  Makaira\OxidConnectEssential\Modifier\Common\TimestampNormalizer:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
+
   Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier:
     abstract: true
     arguments:

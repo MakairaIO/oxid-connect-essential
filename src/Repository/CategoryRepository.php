@@ -33,7 +33,7 @@ class CategoryRepository extends AbstractRepository
         return "
           SELECT
             oxcategories.OXID as `id`,
-            UNIX_TIMESTAMP(oxcategories.oxtimestamp) AS `timestamp`,
+            oxcategories.oxtimestamp AS `timestamp`,
             oxcategories.*
           FROM
             oxcategories

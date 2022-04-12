@@ -39,7 +39,7 @@ class ManufacturerRepository extends AbstractRepository
         return "
           SELECT
             oxmanufacturers.OXID as `id`,
-            UNIX_TIMESTAMP(oxmanufacturers.oxtimestamp) AS `timestamp`,
+            oxmanufacturers.oxtimestamp AS `timestamp`,
             oxmanufacturers.*
           FROM
             oxmanufacturers

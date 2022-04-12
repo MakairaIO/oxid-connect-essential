@@ -33,7 +33,7 @@ class VariantRepository extends ProductRepository
             SELECT
                 oxarticles.OXID as `id`,
                 oxarticles.oxparentid AS `parent`,
-                UNIX_TIMESTAMP(oxarticles.oxtimestamp) AS `timestamp`,
+                oxarticles.oxtimestamp AS `timestamp`,
                 oxarticles.*,
                 oxartextends.oxlongdesc AS `OXLONGDESC`,
                 oxartextends.oxtags AS `OXTAGS`
