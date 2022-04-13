@@ -9,18 +9,11 @@ use OxidEsales\Eshop\Application\Model\BasketItem;
 use OxidEsales\Eshop\Core\Exception\ArticleInputException;
 use OxidEsales\Eshop\Core\Exception\NoArticleException;
 use OxidEsales\Eshop\Core\Exception\OutOfStockException;
-use OxidEsales\Eshop\Core\Registry;
-use OxidEsales\Eshop\Core\Session;
 
 class CartService
 {
-    private Session $session;
-    private Basket $basket;
-
-    public function __construct()
+    public function __construct(private Basket $basket)
     {
-        $this->session = Registry::getSession();
-        $this->basket = $this->session->getBasket();
     }
 
     /**

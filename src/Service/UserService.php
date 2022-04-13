@@ -6,16 +6,12 @@ use Makaira\OxidConnectEssential\Exception\UserBlockedException;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Exception\CookieException;
 use OxidEsales\Eshop\Core\Exception\UserException;
-use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\Session;
 
 class UserService
 {
-    private Session $session;
-
-    public function __construct()
+    public function __construct(private Session $session)
     {
-        $this->session = Registry::getSession();
     }
 
     /**

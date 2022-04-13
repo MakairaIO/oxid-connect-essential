@@ -2,15 +2,15 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Service;
 
-use Makaira\OxidConnectEssential\Service\ReviewService;
 use Makaira\OxidConnectEssential\Service\UserService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
+use OxidEsales\EshopCommunity\Core\Registry;
 
 class UserServiceTest extends IntegrationTestCase
 {
     public function test()
     {
-        $userService = new UserService();
+        $userService = new UserService(Registry::getSession());
         // User not logged in yet
         self::assertFalse($userService->getCurrentLoggedInUser());
 

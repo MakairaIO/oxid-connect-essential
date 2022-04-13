@@ -4,13 +4,14 @@ namespace Makaira\OxidConnectEssential\Test\Integration\Service;
 
 use Makaira\OxidConnectEssential\Service\CartService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
+use OxidEsales\EshopCommunity\Core\Registry;
 
 class CartServiceTest extends IntegrationTestCase
 {
     public function test()
     {
         // Empty cart at first time
-        $cartService = new CartService();
+        $cartService = new CartService(Registry::getSession()->getBasket());
         self::assertEquals([], $cartService->getCartItems());
 
         // Add a product to cart
