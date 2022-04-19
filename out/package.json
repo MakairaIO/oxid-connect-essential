@@ -1,0 +1,40 @@
+{
+  "name": "makaira",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "prebuild": "npm run clean",
+    "build": "npm run build:styles && npm run build:scripts",
+    "build:styles": "stylus --compress --use autoprefixer-stylus < src/styles/index.styl | hashmark -l 8 --silent 'dist/makaira.{hash}.min.css'",
+    "build:scripts": "browserify src/scripts/index.js --transform [ babelify --presets=es2015 ] | npm run --silent uglify | hashmark -l 8 --silent 'dist/makaira.{hash}.min.js'",
+    "uglify": "uglifyjs --mangle --compress sequences=true,dead_code=true,conditionals=true,booleans=true,unused=true,if_return=true,join_vars=true,drop_console=true",
+    "watch:styles": "stylus --watch src/styles/index.styl --out dist/makaira.css",
+    "watch:scripts": "watchify src/scripts/index.js --verbose --transform [ babelify --presets=es2015] --outfile dist/makaira.js",
+    "predev": "npm run clean",
+    "dev": "npm-run-all --parallel watch:*"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "braces": "^2.3.1",
+    "browserify": "^14.5.0",
+    "cached-path-relative": "^1.0.2",
+    "debug": "^2.6.9",
+    "hashmark": "^5.0.0",
+    "lodash": "^4.17.21",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "randomatic": "^3.0.0",
+    "stylus": "^0.54.8",
+    "uglify-js": "^3.12.7",
+    "watchify": "^4.0.0"
+  },
+  "dependencies": {
+    "nouislider": "^10.1.0"
+  }
+}

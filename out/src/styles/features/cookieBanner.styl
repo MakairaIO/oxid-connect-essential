@@ -1,0 +1,37 @@
+.makaira-cookie-banner
+    position fixed
+    display none
+    bottom 0
+    z-index 2030
+    background-color rgba(255,255,255,.95)
+    box-shadow 0 0 3px rgba(0,0,0,0.2)
+
+    &__container
+        position relative
+    &__hint
+        margin-top 10px
+    &__buttons
+        display flex
+        justify-content space-between
+        margin-top 10px
+        margin-bottom 10px
+        &-close
+            font-family "FontAwesome"
+            position absolute
+            top 10px
+            right 15px
+            cursor pointer
+            &:after
+                content '\f00d'
+
+@media (min-width: 768px)
+    .makaira-cookie-banner__container
+        width 750px
+
+@media (min-width: 992px)
+    .makaira-cookie-banner__container
+        width 970px
+
+@media (min-width: 1200px)
+    .makaira-cookie-banner__container
+        width 1170px
