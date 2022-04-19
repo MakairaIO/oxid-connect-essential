@@ -23,7 +23,7 @@ class CartServiceTest extends IntegrationTestCase
                 "price" => 699.0,
                 "base_price" => "699",
                 "quantity" => 20.0,
-                "image_path" => 'https://oxid64.makaira.vm/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg'
+                "image_path" => 'http://shop/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg'
             ]
         ], $cartService->getCartItems());
 
@@ -36,7 +36,7 @@ class CartServiceTest extends IntegrationTestCase
                 "price" => 699.0,
                 "base_price" => "699",
                 "quantity" => 15.0,
-                "image_path" => 'https://oxid64.makaira.vm/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg'
+                "image_path" => 'http://shop/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg'
             ]
         ], $cartService->getCartItems());
 

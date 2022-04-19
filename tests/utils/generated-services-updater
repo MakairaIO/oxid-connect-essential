@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Yaml\Dumper;
+use Symfony\Component\Yaml\Parser;
+use Symfony\Component\Yaml\Yaml;
+
+include __DIR__ . '/../vendor/autoload.php';
+
+$yamlFile = __DIR__ . '/../var/generated/generated_services.yaml';
+if (file_exists($yamlFile)) {
+    $yamlParser = new Parser();
+    $yaml = $yamlParser->parseFile($yamlFile);
+    if (isset($yaml['services'])) {
+        unset($yaml['services']);
+    }
+    $yamlDumper = new Dumper(2);
+    file_put_contents($yamlFile, $yamlDumper->dump($yaml, 3, 0));
+}

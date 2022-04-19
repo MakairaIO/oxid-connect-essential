@@ -17,9 +17,9 @@ class TableTranslator
     private string $language = 'de';
 
     /**
-     * @var int | string | null
+     * @var int | null
      */
-    private int | string | null $shopId;
+    private ?int $shopId = null;
 
     /**
      * @var Closure
@@ -49,7 +49,7 @@ class TableTranslator
      *
      * @return TableTranslator
      */
-    public function setViewNameGenerator(Closure $viewNameGenerator): static
+    public function setViewNameGenerator(Closure $viewNameGenerator): TableTranslator
     {
         $this->viewNameGenerator = $viewNameGenerator;
 
@@ -63,7 +63,7 @@ class TableTranslator
      *
      * @return TableTranslator
      */
-    public function setLanguage(string $language): static
+    public function setLanguage(string $language): TableTranslator
     {
         $this->language = $language;
 
@@ -75,9 +75,9 @@ class TableTranslator
      *
      * @return TableTranslator
      */
-    public function setShopId(int | string | null $shopId): static
+    public function setShopId(mixed $shopId): TableTranslator
     {
-        $this->shopId = $shopId;
+        $this->shopId = (int) $shopId;
 
         return $this;
     }
@@ -96,9 +96,7 @@ class TableTranslator
             $replaceTable = $viewNameGenerator($searchTable, $this->language, $this->shopId);
             $sql          = preg_replace_callback(
                 "((?P<tableName>{$searchTable})(?P<end>[^A-Za-z0-9_]|$))",
-                static function ($match) use ($replaceTable) {
-                    return $replaceTable . $match['end'];
-                },
+                static fn ($match) => $replaceTable . $match['end'],
                 $sql
             );
         }

@@ -117,7 +117,8 @@ class VariantAttributesModifier extends Modifier
 
             $attributes = $this->database
                 ->executeQuery(
-                    $this->selectVariantAttributesQuery, [
+                    $this->selectVariantAttributesQuery,
+                    [
                         'productId' => $product->id,
                         'variantId' => $id,
                     ]

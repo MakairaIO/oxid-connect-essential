@@ -47,7 +47,7 @@ abstract class AbstractActiveModifier extends Modifier
             FROM {$this->tableName}
             WHERE OXID = '{$product->id}' AND {$this->activeSnippet}";
 
-        $product->active = (bool) $this->database->executeQuery($sql)->fetchFirstColumn();
+        $product->active = (bool) $this->database->executeQuery($sql)->fetchOne();
 
         return $product;
     }

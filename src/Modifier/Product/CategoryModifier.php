@@ -3,6 +3,8 @@
 namespace Makaira\OxidConnectEssential\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
@@ -47,7 +49,6 @@ class CategoryModifier extends Modifier
      */
     public function __construct(private Connection $database)
     {
-        $this->database        = $database;
     }
 
     /**
@@ -56,6 +57,8 @@ class CategoryModifier extends Modifier
      * @param BaseProduct $product
      *
      * @return BaseProduct
+     * @throws DBALDriverException
+     * @throws DBALException
      */
     public function apply(Type $product)
     {

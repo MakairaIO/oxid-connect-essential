@@ -35,9 +35,9 @@ abstract class Modifier
     /**
      * @param $docType
      *
-     * @return $this
+     * @return Modifier
      */
-    public function setDocType($docType): static
+    public function setDocType($docType): Modifier
     {
         $this->docType = $docType;
 
@@ -47,9 +47,9 @@ abstract class Modifier
     /**
      * @param Event $e
      *
-     * @return $this
+     * @return Modifier
      */
-    public function addModifier(Event $e): static
+    public function addModifier(Event $e): Modifier
     {
         if ($e instanceof ModifierCollectEvent) {
             $e->addModifier($this);

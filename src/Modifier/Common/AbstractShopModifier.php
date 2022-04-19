@@ -43,13 +43,9 @@ abstract class AbstractShopModifier extends Modifier
     public function apply(Type $type)
     {
         if ($this->isMultiShop) {
-            if (empty($type->OXMAPID)) {
-                $bitmask = $type->OXSHOPINCL;
-                $type->shop = $this->getArrayFromBitmask($bitmask);
-            } else {
-                $type->shop = $this->database->query($this->selectQuery, ['mapId' => $type->OXMAPID]);
-                $type->shop = array_column($type->shop, 'OXSHOPID');
-            }
+            $type->shop = $this->database
+                ->executeQuery($this->selectQuery, [$type->OXMAPID])
+                ->fetchFirstColumn();
         } else {
             $type->shop = [$type->OXSHOPID];
         }
@@ -58,21 +54,7 @@ abstract class AbstractShopModifier extends Modifier
     }
 
     /**
-     * @param $bitmask
-     *
-     * @return array
+     * @return string
      */
-    private function getArrayFromBitmask($bitmask): array
-    {
-        $retArray = [];
-        for ($i = 0; $i < self::SHOP_FIELD_SET_SIZE; $i++) {
-            if (($bitmask >> $i) & 1) {
-                $retArray[] = $i + 1;
-            }
-        }
-
-        return $retArray;
-    }
-
     abstract protected function getTableName(): string;
 }

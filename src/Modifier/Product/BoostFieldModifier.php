@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of a marmalade GmbH project
  * It is not Open Source and may not be redistributed.
@@ -52,7 +53,7 @@ class BoostFieldModifier extends Modifier
             'rating'
         );
 
-        $priceAverage = ($type->OXVARMINPRICE + $type->OXVARMAXPRICE)/2;
+        $priceAverage = ($type->OXVARMINPRICE + $type->OXVARMAXPRICE) / 2;
         $type->mak_boost_norm_revenue = $this->boostFieldUtilities->normalize(
             $priceAverage * $type->OXSOLDAMOUNT,
             'revenue'

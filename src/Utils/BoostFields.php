@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of a marmalade GmbH project
  * It is not Open Source and may not be redistributed.
@@ -7,6 +8,8 @@
  * Author:     Jens Richter <richter@marmalade.de>
  * Author URI: http://www.marmalade.de
  */
+
+declare(strict_types=1);
 
 namespace Makaira\OxidConnectEssential\Utils;
 

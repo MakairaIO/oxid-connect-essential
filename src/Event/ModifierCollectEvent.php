@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of a Makaira GmbH project
  * It is not Open Source and may not be redistributed.
@@ -16,7 +17,6 @@ use Symfony\Component\EventDispatcher\Event;
 
 class ModifierCollectEvent extends Event
 {
-
     /**
      * @var ModifierList
      */

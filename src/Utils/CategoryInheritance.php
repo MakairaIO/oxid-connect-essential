@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of a marmalade GmbH project
  * It is not Open Source and may not be redistributed.
@@ -45,7 +46,7 @@ class CategoryInheritance
                 [
                     'rootId' => $oCategory->oxcategories__oxrootid->value,
                     'left' => $oCategory->oxcategories__oxleft->value,
-                    'right' =>$oCategory->oxcategories__oxright->value
+                    'right' => $oCategory->oxcategories__oxright->value
                 ]
             );
             $categoryId = array_merge(

@@ -7,7 +7,7 @@ use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\EshopCommunity\Core\Registry;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
-class IntegrationTestCase extends UnitTestCase
+abstract class IntegrationTestCase extends UnitTestCase
 {
     protected function loginToTestingUser(): User
     {

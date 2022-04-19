@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of a marmalade GmbH project
  * It is not Open Source and may not be redistributed.
