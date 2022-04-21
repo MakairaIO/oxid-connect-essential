@@ -13,9 +13,10 @@ use OxidEsales\EshopCommunity\Core\Config;
  * Version:    1.0
  * Author:     Jens Richter <richter@marmalade.de>
  * Author URI: http://www.marmalade.de
+ * @see ViewConfig
  */
 
-class MakairaConnectViewConfig extends ViewConfig
+class MakairaConnectViewConfig extends MakairaConnectViewConfig_parent
 {
     private ?bool $cookieBannerActive = null;
 
