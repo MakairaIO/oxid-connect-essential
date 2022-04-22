@@ -14,8 +14,9 @@ use OxidEsales\EshopCommunity\Core\Output;
  * Version:    1.0
  * Author:     Sunny <dt@marmalade.de>
  * Author URI: http://www.marmalade.de
+ * @see Output
  */
-class MakairaConnectOutput extends Output
+class MakairaConnectOutput extends MakairaConnectOutput_parent
 {
     private static ?array $trackingData = null;
 

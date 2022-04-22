@@ -83,16 +83,15 @@ class MakairaTrackingDataGenerator
         if (!empty($_COOKIE['mak_experiments'])) {
             $experiments = json_decode($_COOKIE['mak_experiments'], true);
             if (is_array($experiments)) {
-                foreach ($experiments as $experiment) {
-                    $trackingData[] = [
-                        [
-                            'trackEvent',
-                            'abtesting',
-                            $experiment['experiment'],
-                            $experiment['variation']
-                        ]
-                    ];
-                }
+                $trackingData[] = array_map(
+                    static fn ($experiment) => [
+                        'trackEvent',
+                        'abtesting',
+                        $experiment['experiment'],
+                        $experiment['variation']
+                    ],
+                    $experiments
+                );
             }
         }
 
