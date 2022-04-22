@@ -1,0 +1,22 @@
+services:
+  _defaults:
+    public: true
+
+  OxidSession:
+    class: OxidEsales\EshopCommunity\Core\Session
+    factory: [ 'OxidEsales\Eshop\Core\Registry', 'getSession' ]
+
+  OxidBasket:
+    class: OxidEsales\EshopCommunity\Core\Session
+    factory: [ '@OxidSession', 'getBasket' ]
+
+  Makaira\OxidConnectEssential\Service\UserService:
+    class: Makaira\OxidConnectEssential\Service\UserService
+    arguments:
+      - '@OxidSession'
+  Makaira\OxidConnectEssential\Service\CartService:
+    class: Makaira\OxidConnectEssential\Service\CartService
+    arguments:
+      - '@OxidBasket'
+  Makaira\OxidConnectEssential\Service\ReviewService:
+    class: Makaira\OxidConnectEssential\Service\ReviewService
