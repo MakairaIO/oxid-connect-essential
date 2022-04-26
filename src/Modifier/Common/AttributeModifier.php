@@ -99,6 +99,10 @@ class AttributeModifier extends Modifier
      */
     private array $attributeFloat;
 
+    private Connection $database;
+
+    private string $activeSnippet;
+
     /**
      * @param Connection $database
      * @param string     $activeSnippet
@@ -106,11 +110,13 @@ class AttributeModifier extends Modifier
      * @param array|null $attributeFloat
      */
     public function __construct(
-        private Connection $database,
-        private string $activeSnippet,
+        Connection $database,
+        string $activeSnippet,
         ?array $attributeInt = null,
         ?array $attributeFloat = null
     ) {
+        $this->activeSnippet  = $activeSnippet;
+        $this->database       = $database;
         $this->attributeInt   = array_unique((array) $attributeInt);
         $this->attributeFloat = array_unique((array) $attributeFloat);
     }

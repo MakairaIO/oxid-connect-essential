@@ -17,14 +17,17 @@ class RpcService
      */
     private array $rpcHandlers;
 
+    private SignatureCheck $signatureCheck;
+
     /**
      * @param SignatureCheck             $signatureCheck
      * @param iterable<HandlerInterface> $rpcHandlers
      */
-    public function __construct(private SignatureCheck $signatureCheck, iterable $rpcHandlers)
+    public function __construct(SignatureCheck $signatureCheck, iterable $rpcHandlers)
     {
+        $this->signatureCheck = $signatureCheck;
         foreach ($rpcHandlers as $rpcHandler) {
-            $class = $rpcHandler::class;
+            $class = get_class($rpcHandler);
             $name  = basename(str_replace(['\\', '/'], DIRECTORY_SEPARATOR, $class));
 
             $this->rpcHandlers[lcfirst($name)] = $rpcHandler;
@@ -49,7 +52,7 @@ class RpcService
 
         try {
             $requestBody = json_decode($request->getContent(false), true, 512, JSON_THROW_ON_ERROR);
-        } catch (JsonException) {
+        } catch (JsonException $e) {
             throw new HttpException(400);
         }
 

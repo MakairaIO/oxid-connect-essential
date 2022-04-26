@@ -9,6 +9,6 @@ trait SymfonyContainerTrait
 {
     public function getSymfonyContainer(): ContainerInterface
     {
-        return ContainerFactory::getInstance()?->getContainer();
+        return ContainerFactory::getInstance()->getContainer();
     }
 }

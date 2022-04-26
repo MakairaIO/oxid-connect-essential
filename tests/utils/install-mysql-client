@@ -63,8 +63,6 @@ install_mysql_client() {
     echo "deb http://repo.mysql.com/apt/debian/ buster mysql-${MYSQL_VERSION}" | tee -a /etc/apt/sources.list.d/mysql.list
     apt-get update
     apt-get install --no-install-recommends -y "${packages[@]}"
-    apt-get autoremove -yqq --purge
-    apt-get clean && rm -rf /var/lib/apt/lists/*
 }
 
 # Install MySQL client from Oracle repositories (Debian installs mariadb)

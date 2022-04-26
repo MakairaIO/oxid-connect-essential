@@ -8,8 +8,11 @@ use Makaira\OxidConnectEssential\Utils\CategoryInheritance;
 
 class SubcategoriesModifier extends Modifier
 {
-    public function __construct(private CategoryInheritance $categoryInheritance)
+    private CategoryInheritance $categoryInheritance;
+
+    public function __construct(CategoryInheritance $categoryInheritance)
     {
+        $this->categoryInheritance = $categoryInheritance;
     }
 
     public function apply(Type $category)

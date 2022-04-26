@@ -111,6 +111,10 @@ class Repository
      */
     private array $repositoryMapping = [];
 
+    private Connection $database;
+
+    private ?bool $parentsPurchasable;
+
     /**
      * Repository constructor.
      *
@@ -120,11 +124,12 @@ class Repository
      * @param bool                         $parentsPurchasable
      */
     public function __construct(
-        private Connection $database,
+        Connection $database,
         EventDispatcherInterface $dispatcher,
         iterable $repositories,
-        private ?bool $parentsPurchasable
+        ?bool $parentsPurchasable
     ) {
+        $this->database           = $database;
         $this->parentsPurchasable = (bool) $parentsPurchasable;
 
         foreach ($repositories as $repository) {

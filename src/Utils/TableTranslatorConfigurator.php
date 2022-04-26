@@ -14,15 +14,18 @@ class TableTranslatorConfigurator
      */
     private array $languageMap;
 
+    private TableViewNameGenerator $viewNameGenerator;
+
     /**
      * TableTranslatorConfigurator constructor.
      *
      * @param Language               $language
      * @param TableViewNameGenerator $viewNameGenerator
      */
-    public function __construct(Language $language, private TableViewNameGenerator $viewNameGenerator)
+    public function __construct(Language $language, TableViewNameGenerator $viewNameGenerator)
     {
-        $oxidLanguages = $language->getLanguageArray();
+        $this->viewNameGenerator = $viewNameGenerator;
+        $oxidLanguages           = $language->getLanguageArray();
         foreach ($oxidLanguages as $oxidLanguage) {
             $this->languageMap[$oxidLanguage->abbr] = $oxidLanguage->id;
         }
@@ -49,7 +52,7 @@ class TableTranslatorConfigurator
      *
      * @return string|null
      */
-    private function mapLanguage(int | string $language): ?string
+    private function mapLanguage($language): ?string
     {
         if (is_numeric($language)) {
             return $language;

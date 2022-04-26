@@ -14,7 +14,7 @@ use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelDeleteEve
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelInsertEvent;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelUpdateEvent;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\BeforeHeadersSendEvent;
-use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\BeforeModelDeleteEvent;
+use Symfony\Component\EventDispatcher\Event;
 
 use function array_replace;
 
@@ -25,13 +25,19 @@ class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
      */
     private array $revisions = [];
 
+    private ModelDataExtractor $dataExtractor;
+
+    private RevisionRepository $revisionRepository;
+
     /**
      * @param ModelDataExtractor $dataExtractor
      */
     public function __construct(
-        private ModelDataExtractor $dataExtractor,
-        private RevisionRepository $revisionRepository
+        ModelDataExtractor $dataExtractor,
+        RevisionRepository $revisionRepository
     ) {
+        $this->revisionRepository = $revisionRepository;
+        $this->dataExtractor      = $dataExtractor;
     }
 
     /**
@@ -39,7 +45,7 @@ class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
      *
      * @return void
      */
-    public function onChange(AfterModelUpdateEvent | AfterModelInsertEvent | AfterModelDeleteEvent $event): void
+    public function onChange(Event $event): void
     {
         $this->processModel($event->getModel());
     }
@@ -48,7 +54,7 @@ class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
     {
         try {
             $this->revisions[] = $this->dataExtractor->extractData($model);
-        } catch (ModelNotSupportedException) {
+        } catch (ModelNotSupportedException $e) {
         }
     }
 

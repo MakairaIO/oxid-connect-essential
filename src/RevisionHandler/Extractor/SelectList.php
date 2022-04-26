@@ -15,12 +15,18 @@ use function array_replace;
 
 class SelectList extends AbstractModelDataExtractor
 {
+    private TableViewNameGenerator $viewNameGenerator;
+
+    private Connection $connection;
+
     /**
      * @param Connection             $connection
      * @param TableViewNameGenerator $viewNameGenerator
      */
-    public function __construct(private Connection $connection, private TableViewNameGenerator $viewNameGenerator)
+    public function __construct(Connection $connection, TableViewNameGenerator $viewNameGenerator)
     {
+        $this->connection        = $connection;
+        $this->viewNameGenerator = $viewNameGenerator;
     }
 
     /**

@@ -26,13 +26,16 @@ class BoostFields
      */
     private ?array $minMaxValues = null;
 
+    private Connection $database;
+
     /**
      * BoostFieldStatistics constructor.
      *
      * @param Connection $database
      */
-    public function __construct(private Connection $database)
+    public function __construct(Connection $database)
     {
+        $this->database = $database;
     }
 
     /**

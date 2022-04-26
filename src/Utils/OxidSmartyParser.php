@@ -8,6 +8,12 @@ use OxidEsales\Eshop\Core\UtilsView;
 
 class OxidSmartyParser implements ContentParserInterface
 {
+    private Language $oxLang;
+
+    private UtilsView $oxUtilsView;
+
+    private FrontendController $frontendController;
+
     /**
      * OxidSmartyParser constructor.
      *
@@ -15,10 +21,13 @@ class OxidSmartyParser implements ContentParserInterface
      * @param \oxUtilsView $oxUtilsView
      */
     public function __construct(
-        private Language $oxLang,
-        private UtilsView $oxUtilsView,
-        private FrontendController $frontendController
+        Language $oxLang,
+        UtilsView $oxUtilsView,
+        FrontendController $frontendController
     ) {
+        $this->frontendController = $frontendController;
+        $this->oxUtilsView        = $oxUtilsView;
+        $this->oxLang             = $oxLang;
     }
 
     /**

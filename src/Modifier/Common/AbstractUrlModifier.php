@@ -20,13 +20,16 @@ use function array_keys;
 
 abstract class AbstractUrlModifier extends Modifier
 {
+    private Language $oxLang;
+
     /**
      * UrlModifier constructor.
      *
      * @param Language $oxLang
      */
-    public function __construct(private Language $oxLang)
+    public function __construct(Language $oxLang)
     {
+        $this->oxLang = $oxLang;
     }
 
     /**

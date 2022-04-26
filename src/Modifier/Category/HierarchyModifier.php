@@ -32,8 +32,11 @@ class HierarchyModifier extends Modifier
       ORDER BY oc.OXLEFT;
     ";
 
-    public function __construct(private Connection $database)
+    private Connection $database;
+
+    public function __construct(Connection $database)
     {
+        $this->database = $database;
     }
 
     /**

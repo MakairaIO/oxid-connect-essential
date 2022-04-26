@@ -23,12 +23,18 @@ abstract class AbstractShopModifier extends Modifier
 
     private string $selectQuery;
 
+    private Connection $database;
+
+    private bool $isMultiShop;
+
     /**
      * @param Connection $database
      * @param bool       $isMultiShop
      */
-    public function __construct(private Connection $database, private bool $isMultiShop)
+    public function __construct(Connection $database, bool $isMultiShop)
     {
+        $this->isMultiShop = $isMultiShop;
+        $this->database    = $database;
         $this->selectQuery = sprintf(self::QUERY_TEMPLATE, $this->getTableName());
     }
 

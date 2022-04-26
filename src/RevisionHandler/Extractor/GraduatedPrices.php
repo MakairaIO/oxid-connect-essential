@@ -17,11 +17,14 @@ class GraduatedPrices extends AbstractModelDataExtractor
      */
     private ?Statement $statement = null;
 
+    private Connection $connection;
+
     /**
      * @param Connection $connection
      */
-    public function __construct(private Connection $connection)
+    public function __construct(Connection $connection)
     {
+        $this->connection = $connection;
     }
 
     /**

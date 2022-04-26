@@ -44,11 +44,14 @@ class CategoryModifier extends Modifier
       ORDER BY oc.OXLEFT;
     ";
 
+    private Connection $database;
+
     /**
      * @param Connection $database
      */
-    public function __construct(private Connection $database)
+    public function __construct(Connection $database)
     {
+        $this->database = $database;
     }
 
     /**

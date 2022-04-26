@@ -19,13 +19,16 @@ use Makaira\OxidConnectEssential\Utils\BoostFields;
 
 class BoostFieldModifier extends Modifier
 {
+    private BoostFields $boostFieldUtilities;
+
     /**
      * BoostFieldModifier constructor.
      *
      * @param BoostFields $boostFieldUtilities
      */
-    public function __construct(private BoostFields $boostFieldUtilities)
+    public function __construct(BoostFields $boostFieldUtilities)
     {
+        $this->boostFieldUtilities = $boostFieldUtilities;
     }
 
     /**

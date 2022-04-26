@@ -9,13 +9,16 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 abstract class ModifierList
 {
+    private array $modifiers;
+
     /**
      * @param                          $tag
      * @param EventDispatcherInterface $dispatcher
      * @param array<Modifier>          $modifiers
      */
-    public function __construct($tag, EventDispatcherInterface $dispatcher, private array $modifiers)
+    public function __construct($tag, EventDispatcherInterface $dispatcher, array $modifiers)
     {
+        $this->modifiers = $modifiers;
         $dispatcher->dispatch($tag, new ModifierCollectEvent($this));
     }
 

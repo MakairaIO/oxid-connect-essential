@@ -20,16 +20,25 @@ use OxidEsales\Eshop\Core\Language;
 
 class MainCategoryModifier extends Modifier
 {
+    private Connection $database;
+
+    private SeoEncoderCategory $encoder;
+
+    private Language $oxLang;
+
     /**
      * @param Connection         $database
      * @param SeoEncoderCategory $encoder
      * @param Language           $oxLang
      */
     public function __construct(
-        private Connection $database,
-        private SeoEncoderCategory $encoder,
-        private Language $oxLang
+        Connection $database,
+        SeoEncoderCategory $encoder,
+        Language $oxLang
     ) {
+        $this->oxLang   = $oxLang;
+        $this->encoder  = $encoder;
+        $this->database = $database;
     }
 
     /**

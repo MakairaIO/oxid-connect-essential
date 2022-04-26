@@ -47,6 +47,14 @@ class VariantAttributesModifier extends Modifier
                             AND oxobject2attribute.oxobjectid in (:productId, :variantId)
                         ';
 
+    private Connection $database;
+
+    private string $activeSnippet;
+
+    private array $attributeInt;
+
+    private array $attributeFloat;
+
     /**
      * @param Connection $database
      * @param string     $activeSnippet
@@ -54,11 +62,13 @@ class VariantAttributesModifier extends Modifier
      * @param array      $attributeFloat
      */
     public function __construct(
-        private Connection $database,
-        private string $activeSnippet,
-        private array $attributeInt,
-        private array $attributeFloat
+        Connection $database,
+        string $activeSnippet,
+        array $attributeInt,
+        array $attributeFloat
     ) {
+        $this->activeSnippet  = $activeSnippet;
+        $this->database       = $database;
         $this->attributeInt   = array_unique((array) $attributeInt);
         $this->attributeFloat = array_unique((array) $attributeFloat);
     }

@@ -10,13 +10,22 @@ use Makaira\OxidConnectEssential\Type;
 
 class StockModifier extends Modifier
 {
+    private Connection $database;
+
+    private string $tableName;
+
+    private bool $useStock;
+
     /**
      * @param Connection $database
      * @param string     $tableName
      * @param bool       $useStock
      */
-    public function __construct(private Connection $database, private string $tableName, private bool $useStock)
+    public function __construct(Connection $database, string $tableName, bool $useStock)
     {
+        $this->useStock  = $useStock;
+        $this->tableName = $tableName;
+        $this->database  = $database;
     }
 
     /**

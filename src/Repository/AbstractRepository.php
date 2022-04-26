@@ -14,16 +14,25 @@ use Symfony\Component\EventDispatcher\Event;
 
 abstract class AbstractRepository
 {
+    protected Connection $database;
+
+    private ModifierList $modifiers;
+
+    private TableTranslator $tableTranslator;
+
     /**
      * @param Connection      $database
      * @param ModifierList    $modifiers
      * @param TableTranslator $tableTranslator
      */
     public function __construct(
-        protected Connection $database,
-        private ModifierList $modifiers,
-        private TableTranslator $tableTranslator
+        Connection $database,
+        ModifierList $modifiers,
+        TableTranslator $tableTranslator
     ) {
+        $this->tableTranslator = $tableTranslator;
+        $this->modifiers       = $modifiers;
+        $this->database        = $database;
     }
 
     /**

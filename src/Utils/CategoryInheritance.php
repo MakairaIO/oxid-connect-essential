@@ -15,6 +15,10 @@ use Doctrine\DBAL\Connection;
 
 class CategoryInheritance
 {
+    private Connection $database;
+
+    private bool $useCategoryInheritance;
+
     /**
      * CategoryInheritance constructor.
      *
@@ -22,9 +26,11 @@ class CategoryInheritance
      * @param bool       $useCategoryInheritance
      */
     public function __construct(
-        private Connection $database,
-        private bool $useCategoryInheritance
+        Connection $database,
+        bool $useCategoryInheritance
     ) {
+        $this->useCategoryInheritance = $useCategoryInheritance;
+        $this->database               = $database;
     }
 
     /**

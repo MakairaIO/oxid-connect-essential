@@ -7,13 +7,21 @@ namespace Makaira\OxidConnectEssential\RevisionHandler;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 
+use function get_class;
+
 class ModelDataExtractor
 {
     /**
+     * @var iterable<AbstractModelDataExtractor>
+     */
+    private iterable $extractors;
+
+    /**
      * @param iterable<AbstractModelDataExtractor> $extractors
      */
-    public function __construct(private iterable $extractors)
+    public function __construct(iterable $extractors)
     {
+        $this->extractors = $extractors;
     }
 
     /**
@@ -33,7 +41,7 @@ class ModelDataExtractor
         }
 
         if (!$dataExtractor instanceof AbstractModelDataExtractor) {
-            throw new ModelNotSupportedException(sprintf("The model '%s' is not supported.", $model::class));
+            throw new ModelNotSupportedException(sprintf("The model '%s' is not supported.", get_class($model)));
         }
 
         return $dataExtractor->extract($model);

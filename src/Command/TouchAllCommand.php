@@ -18,10 +18,20 @@ use function sprintf;
 class TouchAllCommand extends Command
 {
     /**
-     * @param iterable<AbstractRepository> $repositories
+     * @var iterable<AbstractRepository>
      */
-    public function __construct(private iterable $repositories, private RevisionRepository $revisionRepository)
+    private iterable $repositories;
+
+    private RevisionRepository $revisionRepository;
+
+    /**
+     * @param iterable<AbstractRepository> $repositories
+     * @param RevisionRepository           $revisionRepository
+     */
+    public function __construct(iterable $repositories, RevisionRepository $revisionRepository)
     {
+        $this->revisionRepository = $revisionRepository;
+        $this->repositories       = $repositories;
         parent::__construct('makaira:touch-all');
     }
 
@@ -45,8 +55,8 @@ class TouchAllCommand extends Command
     {
         foreach ($this->repositories as $repository) {
             $output->write(sprintf('Touching <fg=green>%s</>', $repository->getType()));
-            $revisions = array_map(
-                static fn ($id) => new Revision($repository->getType(), $id),
+            $revisions     = array_map(
+                static fn($id) => new Revision($repository->getType(), $id),
                 $repository->getAllIds()
             );
             $revisionCount = count($revisions);

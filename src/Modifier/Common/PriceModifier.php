@@ -11,6 +11,12 @@ use function get_object_vars;
 
 class PriceModifier extends Modifier
 {
+    private ?bool $isNetto;
+
+    private ?bool $showNetto;
+
+    private ?int $defaultVAT;
+
     /**
      * PriceModifier constructor.
      *
@@ -19,10 +25,13 @@ class PriceModifier extends Modifier
      * @param int  $defaultVAT
      */
     public function __construct(
-        private ?bool $isNetto = false,
-        private ?bool $showNetto = false,
-        private ?int $defaultVAT = 19
+        ?bool $isNetto = false,
+        ?bool $showNetto = false,
+        ?int $defaultVAT = 19
     ) {
+        $this->defaultVAT = $defaultVAT;
+        $this->showNetto  = $showNetto;
+        $this->isNetto    = $isNetto;
         $this->isNetto    = (bool) $this->isNetto;
         $this->showNetto  = (bool) $this->showNetto;
         $this->defaultVAT = (int) $this->defaultVAT;

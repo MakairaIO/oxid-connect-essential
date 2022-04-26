@@ -12,11 +12,14 @@ use Makaira\OxidConnectEssential\Domain\Revision;
 
 class RevisionRepository
 {
+    private Connection $connection;
+
     /**
      * @param Connection $connection
      */
-    public function __construct(private Connection $connection)
+    public function __construct(Connection $connection)
     {
+        $this->connection = $connection;
     }
 
     /**
@@ -96,7 +99,9 @@ class RevisionRepository
             }
 
             $this->connection->commit();
-        } catch (DBALException | DBALDriverException) {
+        } catch (DBALException $e) {
+            $this->connection->rollBack();
+        } catch (DBALDriverException $e) {
             $this->connection->rollBack();
         }
     }

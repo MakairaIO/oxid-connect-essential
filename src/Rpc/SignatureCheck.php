@@ -10,12 +10,18 @@ class SignatureCheck
     public const HEADER_NONCE = 'X-Makaira-Nonce';
     public const HEADER_SIGNATURE = 'X-Makaira-Hash';
 
+    private HashGenerator $hashGenerator;
+
+    private string $secret;
+
     /**
      * @param HashGenerator $hashGenerator
      * @param string        $secret
      */
-    public function __construct(private HashGenerator $hashGenerator, private string $secret)
+    public function __construct(HashGenerator $hashGenerator, string $secret)
     {
+        $this->secret        = $secret;
+        $this->hashGenerator = $hashGenerator;
     }
 
     /**

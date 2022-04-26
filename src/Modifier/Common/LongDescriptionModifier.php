@@ -11,13 +11,16 @@ class LongDescriptionModifier extends Modifier
     /** @var  ContentParserInterface */
     private $contentParser;
 
+    private bool $parseThroughSmarty = false;
+
     /**
      * LongDescriptionModifier constructor.
      *
      * @param ContentParserInterface $contentParser
      */
-    public function __construct(ContentParserInterface $contentParser, private bool $parseThroughSmarty = false)
+    public function __construct(ContentParserInterface $contentParser, bool $parseThroughSmarty = false)
     {
+        $this->parseThroughSmarty = $parseThroughSmarty;
         $this->contentParser      = $contentParser;
     }
 

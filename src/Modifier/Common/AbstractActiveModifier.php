@@ -22,12 +22,18 @@ abstract class AbstractActiveModifier extends Modifier
      */
     private string $tableName;
 
+    private BaseModel $model;
+
+    private Connection $database;
+
     /**
      * @param Connection $database
      * @param BaseModel  $model
      */
-    public function __construct(private Connection $database, private BaseModel $model)
+    public function __construct(Connection $database, BaseModel $model)
     {
+        $this->database      = $database;
+        $this->model         = $model;
         $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
         $this->tableName     = (string) $this->model->getCoreTableName();
     }

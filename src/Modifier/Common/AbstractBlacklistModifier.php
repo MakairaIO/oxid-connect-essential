@@ -16,10 +16,12 @@ use Makaira\OxidConnectEssential\Type;
 
 abstract class AbstractBlacklistModifier extends Modifier
 {
+    private ?array $blacklistedFields = null;
+
     /**
      * @param array|null $blacklistedFields
      */
-    public function __construct(private ?array $blacklistedFields = null)
+    public function __construct(?array $blacklistedFields = null)
     {
         $this->blacklistedFields = (array) $blacklistedFields;
     }
