@@ -68,7 +68,7 @@ class CartService
         // Update cart
         /**@var Article $article*/
         $article = $basketItems[$cartItemId];
-        $this->basket->addToBasket(sProductID: $article->getProductId(), dAmount: $amount, blOverride: true);
+        $this->basket->addToBasket($article->getProductId(), $amount, null, null, true);
 
         $this->basket->calculateBasket();
     }
