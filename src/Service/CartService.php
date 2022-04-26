@@ -12,8 +12,11 @@ use OxidEsales\Eshop\Core\Exception\OutOfStockException;
 
 class CartService
 {
-    public function __construct(private Basket $basket)
+    private Basket $basket;
+
+    public function __construct(Basket $basket)
     {
+        $this->basket = $basket;
     }
 
     /**

@@ -15,7 +15,7 @@
         "makaira/oxid-connect-compat": "*"
     },
     "require": {
-        "php": ">=8.0",
+        "php": ">=7.4",
         "ext-curl": "*",
         "ext-json": "*",
         "makaira/shared-libs": "^2021.11 | ^2022.1",

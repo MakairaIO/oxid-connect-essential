@@ -29,7 +29,10 @@ class BaseController extends FrontendController
         return (array)json_decode($body, true);
     }
 
-    protected function checkAndGetActiveUser(): User|bool
+    /**
+     * @return User|void|null
+     */
+    protected function checkAndGetActiveUser()
     {
         $user = Registry::getSession()->getUser();
         if ($user === false) {

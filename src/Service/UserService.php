@@ -10,8 +10,11 @@ use OxidEsales\Eshop\Core\Session;
 
 class UserService
 {
-    public function __construct(private Session $session)
+    private Session $session;
+
+    public function __construct(Session $session)
     {
+        $this->session = $session;
     }
 
     /**
@@ -63,7 +66,10 @@ class UserService
         $this->session->delBasket();
     }
 
-    public function getCurrentLoggedInUser(): false|User|null
+    /**
+     * @return false|User|null
+     */
+    public function getCurrentLoggedInUser()
     {
         return $this->session->getUser();
     }
