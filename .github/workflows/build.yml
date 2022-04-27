@@ -35,9 +35,11 @@ jobs:
           echo "GROUP_ID=$(id -g)" >> tests/utils/.env
 
       - name: Build test container
+        working-directory: tests/utils/
         run: docker-compose build tests
 
       - name: Run tests
+        working-directory: tests/utils/
         run: |
           docker-compose run --rm tests --all
           docker-compose down
