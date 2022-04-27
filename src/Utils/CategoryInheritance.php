@@ -12,6 +12,8 @@
 namespace Makaira\OxidConnectEssential\Utils;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Exception as DBALException;
 
 class CategoryInheritance
 {
@@ -34,30 +36,31 @@ class CategoryInheritance
     }
 
     /**
-     * @param $categoryId
+     * @param string $categoryId
      *
-     * @return array
+     * @return array|string
+     * @throws DBALDriverException
+     * @throws DBALException
      */
-    public function buildCategoryInheritance($categoryId)
+    public function buildCategoryInheritance(string $categoryId)
     {
         if (!isset($categoryId) || !$this->useCategoryInheritance) {
             return $categoryId;
         }
 
-        $oCategory = oxNew('oxcategory');
-        $oCategory->load($categoryId);
-        if ($oCategory) {
-            $result     = $this->database->getColumn(
+        $category = oxNew('oxcategory');
+        if ($category->load($categoryId)) {
+            $result     = $this->database->executeQuery(
                 "SELECT OXID FROM oxcategories WHERE OXROOTID = :rootId AND OXLEFT > :left AND OXRIGHT < :right",
                 [
-                    'rootId' => $oCategory->oxcategories__oxrootid->value,
-                    'left' => $oCategory->oxcategories__oxleft->value,
-                    'right' => $oCategory->oxcategories__oxright->value
+                    'rootId' => $category->oxcategories__oxrootid->value,
+                    'left' => $category->oxcategories__oxleft->value,
+                    'right' => $category->oxcategories__oxright->value
                 ]
             );
             $categoryId = array_merge(
                 (array) $categoryId,
-                $result
+                $result->fetchFirstColumn()
             );
         }
 
