@@ -4,3 +4,5 @@
 !/build/.gitkeep
 /.idea
 /composer.lock
+/tests/reports/
+tests/utils/.env

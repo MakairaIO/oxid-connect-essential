@@ -1,0 +1,6 @@
+#!/bin/sh
+
+files=$(find ./src/ -iname '*.php')
+for f in $files; do
+  php -l $f
+done

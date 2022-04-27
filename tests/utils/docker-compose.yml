@@ -1,15 +1,16 @@
 services:
-  shop:
+  tests:
     build:
       context: ../../
       dockerfile: ./tests/utils/Dockerfile
     volumes:
       - "../../:/app/modules/oxid-connect-essential"
-      - "./config.test.php:/app/config.test.php:ro"
+      - "/etc/passwd:/etc/passwd:ro"
+      - "/etc/group:/etc/group:ro"
     depends_on:
       - db
+    user: ${USER_ID:?You must set the user ID in the .env file}:${GROUP_ID:?You must set the group ID in the .env file}
     environment:
-      COMPOSE_PROJECT_NAME: ${COMPOSE_PROJECT_NAME:-Foo}
       APP_DATA: "/app_data"
       PHPINI_MEMORY_LIMIT: 1G
       PHPINI_SESSION__GC_MAXLIFETIME: "3600"
@@ -24,6 +25,9 @@ services:
       PHPINI_XDEBUG__VAR_DISPLAY_MAX_DATA: 1024
       PHPINI_XDEBUG__VAR_DISPLAY_MAX_DEPTH: 10
       PHP_IDE_CONFIG: serverName=oxid64-tests.${DOMAIN:-makaira.vm}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: "no"
 
   db:
     image: mysql:5.7
@@ -45,3 +49,4 @@ services:
       MYSQL_DATABASE: oxid
       MYSQL_USER: oxid
       MYSQL_PASSWORD: oxid
+    restart: "no"

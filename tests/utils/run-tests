@@ -1,0 +1,77 @@
+#!/bin/bash
+
+set -e
+
+cleanup() {
+  test -f source/log/oxideshop.log && cat source/log/oxideshop.log
+}
+
+trap cleanup EXIT
+
+run_tests=0
+run_tests_coverage=0
+run_metrics=0
+update=1
+
+# Call getopt to validate the provided input.
+options=$(getopt -o umc -l unit -l metrics -l code-coverage -l all -l no-update -- "$@")
+[ $? -eq 0 ] || {
+    echo "Incorrect options provided"
+    exit 1
+}
+eval set -- "$options"
+while true; do
+  case "$1" in
+  -u | --unit) run_tests=1; shift ;;
+  -m | --metrics) run_metrics=1; shift ;;
+  -c | --code-coverage) run_metrics=1; run_tests_coverage=1; shift ;;
+  --all) run_tests=1; run_tests_coverage=1; run_metrics=1; shift ;;
+  --no-update) update=0; shift ;;
+  --) shift; break ;;
+  *) break ;;
+  esac
+  shift
+done
+
+# Update the module in OXID
+if [ $update -eq 1 ]; then
+  composer dev:update
+fi
+
+mkdir -p odules/oxid-connect-essential/build/
+
+set +e
+
+# Run PHPUnit tests
+composer_exit=0
+if [ $run_tests -eq 1 ]; then
+  sub_command=""
+  if [ $run_tests_coverage -eq 1 ]; then
+    sub_command="-coverage"
+  fi
+  composer "run-tests$sub_command"
+  composer_exit=$?
+fi
+
+if [ -d source/modules/makaira/oxid-connect-essential/tests/reports ]; then
+  cp -rf source/modules/makaira/oxid-connect-essential/tests/reports/* modules/oxid-connect-essential/build/
+fi
+
+if [ $composer_exit -ne 0 ]; then
+  exit $composer_exit
+fi
+
+# Run metrics tests
+composer_exit=0
+if [ $run_metrics -eq 1 ]; then
+  composer "run-metrics"
+  composer_exit=$?
+fi
+
+if [ -d source/modules/makaira/oxid-connect-essential/tests/reports ]; then
+  cp -rf source/modules/makaira/oxid-connect-essential/tests/reports/* modules/oxid-connect-essential/build/
+fi
+
+if [ $composer_exit -ne 0 ]; then
+  exit $composer_exit
+fi

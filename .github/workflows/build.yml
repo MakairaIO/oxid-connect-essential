@@ -16,45 +16,36 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
 
-      - name: Setup PHP with PECL extension
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.0'
-          extensions: curl, json, :opcache, xdebug, mbstring, xdebug
-          coverage: xdebug
-          ini-values: memory_limit=-1,error_reporting=-1,log_errors_max_len=0,zend.assertions=1,assert.exception=1,xdebug.show_exception_trace=0,suhosin.executor.include.whitelist=phar,xdebug.mode="develop,coverage"
-
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
-
-      - name: Get Composer Cache Directory
-        id: composer-cache
-        run: |
-          echo "::set-output name=dir::$(composer config cache-files-dir)"
-
-      - uses: actions/cache@v3
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-dev-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-dev-composer-
 
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
           command: install
           dev: yes
-          php_version: 8.0
+          php_version: 7.4
           version: 2
-          args: --ignore-platform-reqs --prefer-dist -no --no-progress
+          args: --ignore-platform-reqs --prefer-dist -no --no-progress --no-plugins
+
+      - name: Create .env for docker
+        run: |
+          rm -f tests/utils/.env
+          echo "USER_ID=$(id -u)" >> tests/utils/.env
+          echo "GROUP_ID=$(id -g)" >> tests/utils/.env
+
+      - name: Build test container
+        run: docker-compose build tests
 
       - name: Run tests
-        run: composer test
+        run: |
+          docker-compose run --rm tests --all
+          docker-compose down
 
       - name: Compress HTML code coverage
         run: |
           cd build/
-          tar -czf /tmp/code-coverage-html.tar.gz code-coverage-html/
+          tar -czf /tmp/code-coverage-html.tar.gz html/
 
       - name: Upload HTML code coverage report
         uses: actions/upload-artifact@v2
@@ -67,20 +58,42 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: code-coverage-clover
-          path: build/code-coverage-clover.xml
+          path: build/clover.xml
           retention-days: 1
 
-      - name: Upload PHPUnit junit report
+      - name: Upload PHP-formatted code coverage report
         uses: actions/upload-artifact@v2
         with:
-          name: phpunit-junit
-          path: build/junit.xml
+          name: code-coverage-php
+          path: build/coverage.cov
           retention-days: 1
 
-      - name: Fix code coverage paths        
+# Currently unavailable
+#      - name: Upload PHPUnit junit report
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: phpunit-junit
+#          path: build/junit.xml
+#          retention-days: 1
+
+      - name: Upload OXID metrics report
+        uses: actions/upload-artifact@v2
+        with:
+          name: metrics
+          path: build/metrics.txt
+          retention-days: 1
+
+      - name: Upload OXID pdepend report
+        uses: actions/upload-artifact@v2
+        with:
+          name: pdepend
+          path: build/pdepend.xml
+          retention-days: 1
+
+      - name: Fix code coverage paths
+        # Currently unavailable: sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' build/junit.xml
         run: | 
-          sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' build/code-coverage-clover.xml
-          sed -i 's@'$GITHUB_WORKSPACE'@/github/workspace/@g' build/junit.xml    
+          sed -i 's@/app/@/github/workspace/@g' build/clover.xml
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
@@ -88,6 +101,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
+          # Currently unavailable: -Dsonar.php.tests.reportPath=build/junit.xml
           args: >
             -Dsonar.projectKey=MakairaIO_oxid-connect-essential
             -Dsonar.organization=makairaio
@@ -95,8 +109,7 @@ jobs:
             -Dsonar.sources=src/
             -Dsonar.tests=tests/
             -Dsonar.sourceEncoding=UTF-8
-            -Dsonar.php.tests.reportPath=build/junit.xml
-            -Dsonar.php.coverage.reportPaths=build/code-coverage-clover.xml
+            -Dsonar.php.coverage.reportPaths=build/clover.xml
 
   release:
     name: Create a new release
@@ -110,24 +123,12 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Get Composer Cache Directory
-        id: composer-cache
-        run: |
-          echo "::set-output name=dir::$(composer config cache-files-dir)"
-
-      - uses: actions/cache@v3
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-nodev-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-nodev-composer-
-
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
           command: install
-          dev: no
-          php_version: 8.0
+          dev: yes
+          php_version: 7.4
           version: 2
           args: --ignore-platform-reqs --prefer-dist -no --no-progress
 
