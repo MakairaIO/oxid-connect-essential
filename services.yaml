@@ -316,6 +316,14 @@ services:
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
     arguments: ['OxidEsales\Eshop\Application\Model\Manufacturer']
 
+  Makaira_OxidConnectEssential_Oxid_Session:
+    class: OxidEsales\Eshop\Core\Session
+    factory: ['OxidEsales\Eshop\Core\Registry', 'getSession']
+
+  Makaira_OxidConnectEssential_Oxid_Basket:
+    class: OxidEsales\Eshop\Application\Model\Basket
+    factory: ['@Makaira_OxidConnectEssential_Oxid_Session', 'getBasket']
+
   Makaira_OxidConnectEssential_Oxid_FrontEndController:
     class: OxidEsales\Eshop\Application\Controller\FrontendController
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
@@ -338,14 +346,10 @@ services:
   Makaira\OxidConnectEssential\Service\UserService:
     public: true
     class: Makaira\OxidConnectEssential\Service\UserService
-    arguments:
-      - '@OxidSession'
 
   Makaira\OxidConnectEssential\Service\CartService:
     public: true
     class: Makaira\OxidConnectEssential\Service\CartService
-    arguments:
-      - '@OxidBasket'
 
   Makaira\OxidConnectEssential\Service\ReviewService:
     public: true

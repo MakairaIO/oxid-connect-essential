@@ -13,7 +13,7 @@ trait PSR12WrapperTrait
      *
      * @return mixed
      */
-    public function callPSR12Incompatible(string $method, ...$args): mixed
+    public function callPSR12Incompatible(string $method, ...$args)
     {
         $newMethod  = ltrim($method, '_');
         $callMethod = method_exists($this, $newMethod) ? $newMethod : $method;

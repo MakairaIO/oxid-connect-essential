@@ -75,7 +75,7 @@ class TableTranslator
      *
      * @return TableTranslator
      */
-    public function setShopId(mixed $shopId): TableTranslator
+    public function setShopId($shopId): TableTranslator
     {
         $this->shopId = (int) $shopId;
 

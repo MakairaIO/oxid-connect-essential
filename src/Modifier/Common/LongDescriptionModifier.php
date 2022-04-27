@@ -9,14 +9,15 @@ use Makaira\OxidConnectEssential\Utils\ContentParserInterface;
 class LongDescriptionModifier extends Modifier
 {
     /** @var  ContentParserInterface */
-    private $contentParser;
+    private ContentParserInterface $contentParser;
 
-    private bool $parseThroughSmarty = false;
+    private bool $parseThroughSmarty;
 
     /**
      * LongDescriptionModifier constructor.
      *
      * @param ContentParserInterface $contentParser
+     * @param bool                   $parseThroughSmarty
      */
     public function __construct(ContentParserInterface $contentParser, bool $parseThroughSmarty = false)
     {

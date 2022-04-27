@@ -14,11 +14,20 @@ use function array_flip;
 
 class GetUpdates implements HandlerInterface
 {
+    private Language $language;
+
+    private TableTranslator $tableTranslator;
+
+    private Repository $repository;
+
     public function __construct(
-        private Language $language,
-        private TableTranslator $tableTranslator,
-        private Repository $repository
+        Language $language,
+        TableTranslator $tableTranslator,
+        Repository $repository
     ) {
+        $this->repository      = $repository;
+        $this->tableTranslator = $tableTranslator;
+        $this->language        = $language;
     }
 
     /**
@@ -29,7 +38,7 @@ class GetUpdates implements HandlerInterface
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function handle(array $request): mixed
+    public function handle(array $request): array
     {
         if (!isset($request['since'])) {
             throw new HttpException(400);

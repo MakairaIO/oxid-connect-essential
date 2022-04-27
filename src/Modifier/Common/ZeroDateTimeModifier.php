@@ -37,7 +37,7 @@ class ZeroDateTimeModifier extends Modifier
      *
      * @return bool
      */
-    private function isZeroDate(mixed $value): bool
+    private function isZeroDate($value): bool
     {
         return is_string($value) && in_array($value, $this->zeroDateValues, true);
     }

@@ -4,5 +4,5 @@ namespace Makaira\OxidConnectEssential\Rpc;
 
 interface HandlerInterface
 {
-    public function handle(array $request): mixed;
+    public function handle(array $request): array;
 }
