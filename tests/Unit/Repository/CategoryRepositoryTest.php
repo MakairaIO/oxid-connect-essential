@@ -1,23 +1,24 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Repository;
+namespace Makaira\OxidConnectEssential\Test\Unit\Repository;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
+use Makaira\OxidConnectEssential\Repository\CategoryRepository;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
-use Makaira\OxidConnectEssential\Repository\VariantRepository;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
-use Makaira\OxidConnectEssential\Type\Variant\Variant;
+use Makaira\OxidConnectEssential\Type\Category\Category;
 use OxidEsales\TestingLibrary\UnitTestCase;
+use ParseError;
 use PHPUnit\Framework\MockObject\MockObject;
 
-class VariantRepositoryTest extends UnitTestCase
+class CategoryRepositoryTest extends UnitTestCase
 {
     use TableTranslatorTrait;
 
-    public function testLoadVariant()
+    public function testLoadCategory()
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -28,13 +29,11 @@ class VariantRepositoryTest extends UnitTestCase
         $modifiersMock->method('applyModifiers')->willReturnArgument(0);
 
         $change = $repository->get(42);
-        self::assertEquals(
+        $this->assertEquals(
             new Change([
                     'id'   => 42,
-                    'type' => 'variant',
-                    'data' => new Variant([
-                            'id' => 42,
-                        ]),
+                    'type' => 'category',
+                    'data' => new Category(['id' => 42]),
                 ]),
             $change
         );
@@ -48,20 +47,20 @@ class VariantRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository([]);
 
-        $modifiersMock->expects(self::never())->method('applyModifiers');
+        $modifiersMock->expects($this->never())->method('applyModifiers');
 
         $change = $repository->get(42);
-        self::assertEquals(
+        $this->assertEquals(
             new Change([
                     'id'      => 42,
-                    'type'    => 'variant',
+                    'type'    => 'category',
                     'deleted' => true,
                 ]),
             $change
         );
     }
 
-    public function testRunModifierLoadVariant()
+    public function testRunModifierLoadCategory()
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -69,13 +68,13 @@ class VariantRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
-        $modifiersMock->expects(self::once())->method('applyModifiers')->willReturn('modified');
+        $modifiersMock->expects($this->once())->method('applyModifiers')->willReturn('modified');
 
         $change = $repository->get(42);
-        self::assertEquals(
+        $this->assertEquals(
             new Change([
                     'id'   => 42,
-                    'type' => 'variant',
+                    'type' => 'category',
                     'data' => 'modified',
                 ]),
             $change
@@ -89,7 +88,7 @@ class VariantRepositoryTest extends UnitTestCase
          */
         [, $repository] = $this->createRepository([42], 'fetchFirstColumn');
 
-        self::assertEquals([42], $repository->getAllIds());
+        $this->assertEquals([42], $repository->getAllIds());
     }
 
     /**
@@ -108,7 +107,7 @@ class VariantRepositoryTest extends UnitTestCase
 
         $modifiersMock = $this->createMock(ModifierList::class);
 
-        $repository = new VariantRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
+        $repository = new CategoryRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
 
         return [$modifiersMock, $repository];
     }

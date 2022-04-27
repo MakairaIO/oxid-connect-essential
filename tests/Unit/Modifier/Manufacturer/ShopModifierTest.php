@@ -1,10 +1,10 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Modifier\Category;
+namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Manufacturer;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
-use Makaira\OxidConnectEssential\Modifier\Category\ShopModifier;
+use Makaira\OxidConnectEssential\Modifier\Manufacturer\ShopModifier;
 use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
@@ -33,7 +33,7 @@ class ShopModifierTest extends UnitTestCase
         $sql = 'SELECT
           `OXSHOPID`
         FROM
-          `oxcategories2shop`
+          `oxmanufacturers2shop`
         WHERE
           `OXMAPOBJECTID` = ?';
 

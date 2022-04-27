@@ -1,24 +1,23 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Repository;
+namespace Makaira\OxidConnectEssential\Test\Unit\Repository;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
-use Makaira\OxidConnectEssential\Repository\CategoryRepository;
+use Makaira\OxidConnectEssential\Repository\ManufacturerRepository;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
-use Makaira\OxidConnectEssential\Type\Category\Category;
+use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer;
 use OxidEsales\TestingLibrary\UnitTestCase;
-use ParseError;
 use PHPUnit\Framework\MockObject\MockObject;
 
-class CategoryRepositoryTest extends UnitTestCase
+class ManufacturerRepositoryTest extends UnitTestCase
 {
     use TableTranslatorTrait;
 
-    public function testLoadCategory()
+    public function testLoadManufacturer()
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -26,15 +25,23 @@ class CategoryRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
-        $modifiersMock->method('applyModifiers')->willReturnArgument(0);
+        $modifiersMock
+            ->method('applyModifiers')
+            ->willReturnArgument(0);
 
         $change = $repository->get(42);
         $this->assertEquals(
-            new Change([
-                    'id'   => 42,
-                    'type' => 'category',
-                    'data' => new Category(['id' => 42]),
-                ]),
+            new Change(
+                array(
+                    'id' => 42,
+                    'type' => 'manufacturer',
+                    'data' => new Manufacturer(
+                        array(
+                            'id' => 42,
+                        )
+                    ),
+                )
+            ),
             $change
         );
     }
@@ -47,20 +54,24 @@ class CategoryRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository([]);
 
-        $modifiersMock->expects($this->never())->method('applyModifiers');
+        $modifiersMock
+            ->expects($this->never())
+            ->method('applyModifiers');
 
         $change = $repository->get(42);
         $this->assertEquals(
-            new Change([
-                    'id'      => 42,
-                    'type'    => 'category',
+            new Change(
+                array(
+                    'id' => 42,
+                    'type' => 'manufacturer',
                     'deleted' => true,
-                ]),
+                )
+            ),
             $change
         );
     }
 
-    public function testRunModifierLoadCategory()
+    public function testRunModifierLoadManufacturer()
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -68,15 +79,20 @@ class CategoryRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
-        $modifiersMock->expects($this->once())->method('applyModifiers')->willReturn('modified');
+        $modifiersMock
+            ->expects($this->once())
+            ->method('applyModifiers')
+            ->willReturn('modified');
 
         $change = $repository->get(42);
         $this->assertEquals(
-            new Change([
-                    'id'   => 42,
-                    'type' => 'category',
+            new Change(
+                array(
+                    'id' => 42,
+                    'type' => 'manufacturer',
                     'data' => 'modified',
-                ]),
+                )
+            ),
             $change
         );
     }
@@ -107,7 +123,7 @@ class CategoryRepositoryTest extends UnitTestCase
 
         $modifiersMock = $this->createMock(ModifierList::class);
 
-        $repository = new CategoryRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
+        $repository = new ManufacturerRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
 
         return [$modifiersMock, $repository];
     }

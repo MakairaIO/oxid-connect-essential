@@ -1,12 +1,12 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Modifier\Product;
+namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Manufacturer;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
-use Makaira\OxidConnectEssential\Modifier\Product\ActiveModifier;
-use Makaira\OxidConnectEssential\Type\Product\Product as ProductType;
-use OxidEsales\Eshop\Application\Model\Category;
+use Makaira\OxidConnectEssential\Modifier\Manufacturer\ActiveModifier;
+use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer as ManufacturerType;
+use OxidEsales\Eshop\Application\Model\Manufacturer;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
 class ActiveModifierTest extends UnitTestCase
@@ -26,7 +26,7 @@ class ActiveModifierTest extends UnitTestCase
             ->with($sql)
             ->willReturn($resultMock);
 
-        $modelMock = $this->createMock(Category::class);
+        $modelMock = $this->createMock(Manufacturer::class);
         $modelMock->method('getSqlActiveSnippet')
             ->with(true)
             ->willReturn('OXACTIVE = 1');
@@ -34,7 +34,7 @@ class ActiveModifierTest extends UnitTestCase
             ->willReturn('oxcategories_test');
 
         $modifier = new ActiveModifier($databaseMock, $modelMock);
-        $type = new ProductType(['id' => 42, 'active' => false]);
+        $type = new ManufacturerType(['id' => 42, 'active' => false]);
         $currentType = $modifier->apply($type);
 
         static::assertTrue($currentType->active);
@@ -55,7 +55,7 @@ class ActiveModifierTest extends UnitTestCase
             ->with($sql)
             ->willReturn($resultMock);
 
-        $modelMock = $this->createMock(Category::class);
+        $modelMock = $this->createMock(Manufacturer::class);
         $modelMock->method('getSqlActiveSnippet')
             ->with(true)
             ->willReturn('OXACTIVE = 1');
@@ -63,7 +63,7 @@ class ActiveModifierTest extends UnitTestCase
             ->willReturn('oxcategories_test');
 
         $modifier = new ActiveModifier($databaseMock, $modelMock);
-        $type = new ProductType(['id' => 42, 'active' => true]);
+        $type = new ManufacturerType(['id' => 42, 'active' => true]);
         $currentType = $modifier->apply($type);
 
         static::assertFalse($currentType->active);

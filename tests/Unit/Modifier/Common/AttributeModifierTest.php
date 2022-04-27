@@ -1,6 +1,6 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Modifier\Common;
+namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Common;
 
 use OxidEsales\TestingLibrary\UnitTestCase;
 

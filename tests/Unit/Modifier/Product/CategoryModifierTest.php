@@ -1,6 +1,6 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Modifier\Product;
+namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Modifier\Category;
+namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
-use Makaira\OxidConnectEssential\Modifier\Category\ActiveModifier;
-use Makaira\OxidConnectEssential\Type\Category\Category as CategoryType;
+use Makaira\OxidConnectEssential\Modifier\Product\ActiveModifier;
+use Makaira\OxidConnectEssential\Type\Product\Product as ProductType;
 use OxidEsales\Eshop\Application\Model\Category;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
@@ -34,7 +34,7 @@ class ActiveModifierTest extends UnitTestCase
             ->willReturn('oxcategories_test');
 
         $modifier = new ActiveModifier($databaseMock, $modelMock);
-        $type = new CategoryType(['id' => 42, 'active' => false]);
+        $type = new ProductType(['id' => 42, 'active' => false]);
         $currentType = $modifier->apply($type);
 
         static::assertTrue($currentType->active);
@@ -63,7 +63,7 @@ class ActiveModifierTest extends UnitTestCase
             ->willReturn('oxcategories_test');
 
         $modifier = new ActiveModifier($databaseMock, $modelMock);
-        $type = new CategoryType(['id' => 42, 'active' => true]);
+        $type = new ProductType(['id' => 42, 'active' => true]);
         $currentType = $modifier->apply($type);
 
         static::assertFalse($currentType->active);

@@ -1,15 +1,14 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Repository;
+namespace Makaira\OxidConnectEssential\Test\Unit\Repository;
 
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Repository\CategoryModifierList;
-use Makaira\OxidConnectEssential\Repository\ManufacturerModifierList;
 use Makaira\OxidConnectEssential\Type;
 use OxidEsales\TestingLibrary\UnitTestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
-class ManufacturerModifierListTest extends UnitTestCase
+class CategoryModifierListTest extends UnitTestCase
 {
     public function testApplyModifier()
     {
@@ -22,8 +21,8 @@ class ManufacturerModifierListTest extends UnitTestCase
             ->with($type)
             ->willReturn($type);
 
-        $modifierList = new ManufacturerModifierList(new EventDispatcher(), [$modifierMock]);
-        $result = $modifierList->applyModifiers($type, 'manufacturer');
+        $modifierList = new CategoryModifierList(new EventDispatcher(), [$modifierMock]);
+        $result = $modifierList->applyModifiers($type, 'category');
 
         $this->assertSame($type, $result);
     }

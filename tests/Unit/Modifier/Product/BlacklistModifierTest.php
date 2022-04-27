@@ -8,9 +8,9 @@
  * Author URI: http://www.marmalade.de
  */
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Modifier\Category;
+namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Product;
 
-use Makaira\OxidConnectEssential\Modifier\Category\BlacklistModifier;
+use Makaira\OxidConnectEssential\Modifier\Product\BlacklistModifier;
 use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
 use OxidEsales\TestingLibrary\UnitTestCase;
 

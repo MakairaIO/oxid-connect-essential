@@ -1,23 +1,23 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Integration\Repository;
+namespace Makaira\OxidConnectEssential\Test\Unit\Repository;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
-use Makaira\OxidConnectEssential\Repository\ManufacturerRepository;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
+use Makaira\OxidConnectEssential\Repository\VariantRepository;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
-use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer;
+use Makaira\OxidConnectEssential\Type\Variant\Variant;
 use OxidEsales\TestingLibrary\UnitTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
 
-class ManufacturerRepositoryTest extends UnitTestCase
+class VariantRepositoryTest extends UnitTestCase
 {
     use TableTranslatorTrait;
 
-    public function testLoadManufacturer()
+    public function testLoadVariant()
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -25,23 +25,17 @@ class ManufacturerRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
-        $modifiersMock
-            ->method('applyModifiers')
-            ->willReturnArgument(0);
+        $modifiersMock->method('applyModifiers')->willReturnArgument(0);
 
         $change = $repository->get(42);
-        $this->assertEquals(
-            new Change(
-                array(
-                    'id' => 42,
-                    'type' => 'manufacturer',
-                    'data' => new Manufacturer(
-                        array(
+        self::assertEquals(
+            new Change([
+                    'id'   => 42,
+                    'type' => 'variant',
+                    'data' => new Variant([
                             'id' => 42,
-                        )
-                    ),
-                )
-            ),
+                        ]),
+                ]),
             $change
         );
     }
@@ -54,24 +48,20 @@ class ManufacturerRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository([]);
 
-        $modifiersMock
-            ->expects($this->never())
-            ->method('applyModifiers');
+        $modifiersMock->expects(self::never())->method('applyModifiers');
 
         $change = $repository->get(42);
-        $this->assertEquals(
-            new Change(
-                array(
-                    'id' => 42,
-                    'type' => 'manufacturer',
+        self::assertEquals(
+            new Change([
+                    'id'      => 42,
+                    'type'    => 'variant',
                     'deleted' => true,
-                )
-            ),
+                ]),
             $change
         );
     }
 
-    public function testRunModifierLoadManufacturer()
+    public function testRunModifierLoadVariant()
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -79,20 +69,15 @@ class ManufacturerRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
-        $modifiersMock
-            ->expects($this->once())
-            ->method('applyModifiers')
-            ->willReturn('modified');
+        $modifiersMock->expects(self::once())->method('applyModifiers')->willReturn('modified');
 
         $change = $repository->get(42);
-        $this->assertEquals(
-            new Change(
-                array(
-                    'id' => 42,
-                    'type' => 'manufacturer',
+        self::assertEquals(
+            new Change([
+                    'id'   => 42,
+                    'type' => 'variant',
                     'data' => 'modified',
-                )
-            ),
+                ]),
             $change
         );
     }
@@ -104,7 +89,7 @@ class ManufacturerRepositoryTest extends UnitTestCase
          */
         [, $repository] = $this->createRepository([42], 'fetchFirstColumn');
 
-        $this->assertEquals([42], $repository->getAllIds());
+        self::assertEquals([42], $repository->getAllIds());
     }
 
     /**
@@ -123,7 +108,7 @@ class ManufacturerRepositoryTest extends UnitTestCase
 
         $modifiersMock = $this->createMock(ModifierList::class);
 
-        $repository = new ManufacturerRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
+        $repository = new VariantRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
 
         return [$modifiersMock, $repository];
     }
