@@ -7,7 +7,7 @@ on:
 
 env:
   PACKAGE_NAME: 'makaira/oxid-connect-essential'
-  MODULE_PATH: 'makaira/oxid-connect-essential'  
+  MODULE_PATH: 'makaira/oxid-connect-essential'
 
 jobs:
   install_shop_with_module:
@@ -92,7 +92,7 @@ jobs:
   styles:
     strategy:
       matrix:
-        php: [ '8.0' ]
+        php: [ '7.4' ]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout current module
