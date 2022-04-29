@@ -118,7 +118,10 @@ class RevisionRepository
         $prepared = $this->connection->prepare('SELECT COUNT(*) FROM `makaira_connect_changes` WHERE `SEQUENCE` > ?');
         $prepared->execute([$since]);
 
-        return (int) $prepared->fetchOne();
+        /** @var string $count */
+        $count = $prepared->fetchOne();
+
+        return (int) $count;
     }
 
     /**

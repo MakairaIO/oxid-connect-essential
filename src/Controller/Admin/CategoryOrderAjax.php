@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
@@ -24,11 +25,13 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
     /**
      * @return null
      */
-    public function remNewOrder(): void
+    public function remNewOrder()
     {
         $this->isRemove = true;
         parent::remNewOrder();
         $this->isRemove = false;
+
+        return null;
     }
 
     /**
@@ -62,7 +65,9 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
             LEFT JOIN `{$productView}` `a` ON `a`.`OXID` = `o2c`.`OXOBJECTID`
             WHERE `o2c`.`OXCATNID` = ?";
 
-        $changedProducts = $db->executeQuery($query, [$categoryId])->fetchAllAssociative();
+        /** @var Result $resultStatement */
+        $resultStatement = $db->executeQuery($query, [$categoryId]);
+        $changedProducts = $resultStatement->fetchAllAssociative();
 
         $revisionRepository->storeRevisions(
             array_map(

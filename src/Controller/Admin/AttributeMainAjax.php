@@ -71,7 +71,7 @@ class AttributeMainAjax extends AttributeMainAjax_parent
                 array_map(
                     static fn($changedProduct) => new Revision(
                         $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
-                        $changedProduct['OXOBJECTID']
+                        (string) $changedProduct['OXOBJECTID']
                     ),
                     $changedProducts
                 )

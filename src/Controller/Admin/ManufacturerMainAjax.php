@@ -5,6 +5,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\ConnectionException;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Doctrine\DBAL\ParameterType;
 use Makaira\OxidConnectEssential\Domain\Revision;
@@ -28,11 +29,14 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     public function addManufacturer()
     {
-        $productIds     = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
-        $manufacturerId = (string) Registry::getRequest()->getRequestParameter('synchoxid');
+        $productIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
+
+        /** @var string $manufacturerId */
+        $manufacturerId = Registry::getRequest()->getRequestParameter('synchoxid');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
-            $productView = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+            /** @var string $productView */
+            $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
             $changedIds  = (array) $this->callPSR12Incompatible(
                 '_getAll',
                 $this->callPSR12Incompatible(
@@ -59,8 +63,10 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
     private function addParentIds(array $productIds): array
     {
         /** @var Connection $db */
-        $db          = $this->getSymfonyContainer()->get(Connection::class);
-        $productView = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $db = $this->getSymfonyContainer()->get(Connection::class);
+
+        /** @var string $productView */
+        $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         $sqlProductIds = implode(
             ',',
@@ -69,7 +75,10 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
 
         $query = "SELECT a.OXID, a.OXPARENTID FROM {$productView} a WHERE a.OXID IN ($sqlProductIds)";
 
-        return $db->executeQuery($query)->fetchAllAssociative();
+        /** @var Result $resultStatement */
+        $resultStatement = $db->executeQuery($query);
+
+        return $resultStatement->fetchAllAssociative();
     }
 
     /**
@@ -109,17 +118,23 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     public function removeManufacturer(): void
     {
-        $productIds     = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
-        $manufacturerId = (string) Registry::getRequest()->getRequestParameter('oxid');
+        $productIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
+
+        /** @var string $manufacturerId */
+        $manufacturerId = Registry::getRequest()->getRequestParameter('oxid');
 
         /** @var Connection $db */
-        $db             = $this->getSymfonyContainer()->get(Connection::class);
-        $productView    = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $db          = $this->getSymfonyContainer()->get(Connection::class);
+        $productView = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
-            $oxidQuery  = (string) $this->callPSR12Incompatible('_getQuery');
-            $query      = "SELECT {$productView}.OXID, {$productView}.OXPARENTID {$oxidQuery}";
-            $changedIds = $db->executeQuery($query)->fetchAllAssociative();
+            /** @var string $oxidQuery */
+            $oxidQuery = $this->callPSR12Incompatible('_getQuery');
+            $query     = "SELECT {$productView}.OXID, {$productView}.OXPARENTID {$oxidQuery}";
+
+            /** @var Result $resultStatement */
+            $resultStatement = $db->executeQuery($query);
+            $changedIds      = $resultStatement->fetchAllAssociative();
         } else {
             $changedIds = $this->addParentIds($productIds);
         }
