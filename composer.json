@@ -33,11 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Makaira\\OxidConnectEssential\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
+            "Makaira\\OxidConnectEssential\\": "src/",
             "Makaira\\OxidConnectEssential\\Test\\": "tests/"
         }
     },
