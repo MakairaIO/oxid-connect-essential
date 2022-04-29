@@ -38,28 +38,14 @@
         }
     },
     "scripts": {
-        "test": [
-            "@phpcs",
-            "@phpunit"
-        ],
-        "test-all": [
-            "@phpcs",
-            "@phpmd",
-            "@phpstan",
-            "@phpunit"
-        ],
-        "phpunit": [
-            "phpunit -c phpunit.xml"
-        ],
-        "phpcs": [
-            "phpcs --standard=PSR12 src/"
-        ],
-        "phpmd": [
-            "phpmd src/ ansi cleancode"
-        ],
-        "phpstan": [
-            "phpstan"
-        ]
+        "phpcs": "phpcs --standard=tests/phpcs.xml",
+        "phpcbf": "phpcbf --standard=tests/phpcs.xml",
+
+        "phpstan": "phpstan -ctests/PhpStan/phpstan.neon analyse src/",
+        "phpstan-report": "phpstan -ctests/PhpStan/phpstan.neon analyse src/ --error-format=json > phpstan.report.json",
+
+        "phpmd": "phpmd src text cleancode,codesize,design,naming,unusedcode",
+        "phpmd-report": "phpmd src json cleancode,codesize,design,naming,unusedcode --reportfile phpmd.report.json"
     },
     "extra": {
         "oxideshop": {
