@@ -28,7 +28,7 @@ class LongDescriptionModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type $product
+     * @param Type\Product\Product $product
      *
      * @return Type
      */

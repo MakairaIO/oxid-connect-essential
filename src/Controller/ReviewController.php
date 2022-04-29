@@ -18,7 +18,7 @@ class ReviewController extends BaseController
         $this->reviewService = $reviewService;
     }
 
-    public function getReviews()
+    public function getReviews(): void
     {
         ['id' => $productId, 'limit' => $limit, 'offset' => $offset] = $this->getRequestBody();
 

@@ -32,7 +32,7 @@ class BaseController extends FrontendController
     /**
      * @return User
      */
-    protected function checkAndGetActiveUser(): Userŝ
+    protected function checkAndGetActiveUser(): User
     {
         /** @var User|false $user */
         $user = Registry::getSession()->getUser();

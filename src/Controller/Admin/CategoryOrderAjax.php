@@ -69,12 +69,19 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
         $resultStatement = $db->executeQuery($query, [$categoryId]);
         $changedProducts = $resultStatement->fetchAllAssociative();
 
+        /**
+         * @param array<string> $changedProduct
+         *
+         * @return Revision
+         */
+        $buildRevision = static fn(array $changedProduct) => new Revision(
+            $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
+            $changedProduct['OXOBJECTID']
+        );
+
         $revisionRepository->storeRevisions(
             array_map(
-                static fn ($changedProduct) => new Revision(
-                    $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
-                    $changedProduct['OXOBJECTID']
-                ),
+                $buildRevision,
                 $changedProducts
             )
         );

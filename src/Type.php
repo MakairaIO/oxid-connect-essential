@@ -18,7 +18,7 @@ class Type extends DataObject
     public $active = true;
     public $shop = [];
 
-    /* additional data array */
+    /** @var array<string, string>|array<string, int>|array<string, float> */
     public $additionalData = [];
 
     public $selfLinks;

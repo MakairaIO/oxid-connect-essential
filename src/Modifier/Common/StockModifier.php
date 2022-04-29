@@ -4,9 +4,11 @@ namespace Makaira\OxidConnectEssential\Modifier\Common;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 
 class StockModifier extends Modifier
 {
@@ -31,7 +33,7 @@ class StockModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type $type
+     * @param Product $type
      *
      * @return Type
      * @throws DBALDriverException
@@ -45,15 +47,20 @@ class StockModifier extends Modifier
 
         if ($this->useStock) {
             if (!isset($type->OXSTOCKFLAG, $type->OXSTOCK, $type->OXVARSTOCK)) {
-                $sql    = "SELECT OXPARENTID, OXSTOCKFLAG, OXSTOCK, OXVARSTOCK FROM {$this->tableName} WHERE OXID = ?";
-                $result = $this->database->executeQuery($sql, [$type->id])->fetchAssociative();
+                $sql  = "SELECT OXPARENTID, OXSTOCKFLAG, OXSTOCK, OXVARSTOCK FROM {$this->tableName} WHERE OXID = ?";
+
+                /** @var Result $resultStatement */
+                $resultStatement = $this->database->executeQuery($sql, [$type->id]);
+
+                /** @var array<string, string> $result */
+                $result          = $resultStatement->fetchAssociative();
                 if ($result) {
                     $stockFlag = (int) $result['OXSTOCKFLAG'];
-                    $stock     = $result['OXSTOCK'] + $result['OXVARSTOCK'];
+                    $stock     = (int) $result['OXSTOCK'] + (int) $result['OXVARSTOCK'];
                 }
             } else {
                 $stockFlag = (int) $type->OXSTOCKFLAG;
-                $stock     = $type->OXSTOCK + $type->OXVARSTOCK;
+                $stock     = (int) ($type->OXSTOCK + $type->OXVARSTOCK);
             }
 
             // 1 --> Standard

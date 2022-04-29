@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Modifier\Common;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
@@ -124,22 +125,22 @@ class AttributeModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type $product
+     * @param Type\Product\Product $product
      *
-     * @return BaseProduct|Type
+     * @return BaseProduct
      * @throws ConnectException
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function apply(Type $product)
+    public function apply(Type $product): BaseProduct
     {
         if (!$product->id) {
             throw new ConnectException("Cannot fetch attributes without a product ID.");
         }
 
-        $attributes = $this->database
-            ->executeQuery($this->selectAttributesQuery, ['productId' => $product->id,])
-            ->fetchAllAssociative();
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery($this->selectAttributesQuery, ['productId' => $product->id,]);
+        $attributes      = $resultStatement->fetchAllAssociative();
 
         if (false === $product->isVariant) {
             $product->tmpAttributeStr   = [];
@@ -163,13 +164,13 @@ class AttributeModifier extends Modifier
 
             $query = str_replace('{{activeSnippet}}', $this->activeSnippet, $this->selectVariantsAttributesQuery);
 
-            $rawAttributes = $this->database
-                ->executeQuery($query, ['productId' => $product->id])
-                ->fetchAllAssociative();
-            $attributes              = [];
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery($query, ['productId' => $product->id]);
+            $rawAttributes   = $resultStatement->fetchAllAssociative();
+            $attributes      = [];
             foreach ($rawAttributes as $attributeData) {
-                $id                = $attributeData['id'] . $attributeData['value'];
-                $attributes[ $id ] = $attributeData;
+                $id              = $attributeData['id'] . $attributeData['value'];
+                $attributes[$id] = $attributeData;
             }
         } else {
             $product->attributeStr   = [];
@@ -191,33 +192,48 @@ class AttributeModifier extends Modifier
         }
 
         if (false === $product->isVariant) {
-            $variantsName = $this->database
-                ->executeQuery($this->selectVariantsNameQuery, ['productId' => $product->id])
-                ->fetchAllAssociative();
-            $variants = $this->database
-                ->executeQuery($this->selectVariantsQuery, ['productId' => $product->id])
-                ->fetchAllAssociative();
+            /** @var Result $resultStatement */
+            $resultStatement =
+                $this->database->executeQuery($this->selectVariantsNameQuery, ['productId' => $product->id]);
+
+            $variantsName = $resultStatement->fetchAllAssociative();
+
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery($this->selectVariantsQuery, ['productId' => $product->id]);
+
+            $variants = $resultStatement->fetchAllAssociative();
         } else {
-            $variantsName = $this->database
-                ->executeQuery($this->selectVariantNameQuery, ['productId' => $product->id])
-                ->fetchAllAssociative();
-            $variants = $this->database
-                ->executeQuery($this->selectVariantQuery, ['productId' => $product->id])
-                ->fetchAllAssociative();
+            /** @var Result $resultStatement */
+            $resultStatement =
+                $this->database->executeQuery($this->selectVariantNameQuery, ['productId' => $product->id]);
+
+            $variantsName = $resultStatement->fetchAllAssociative();
+
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery($this->selectVariantQuery, ['productId' => $product->id]);
+
+            $variants = $resultStatement->fetchAllAssociative();
         }
 
         if ($variants) {
-            $hashArray = array_map('md5', array_map('trim', explode('|', $variantsName[0]['title'])));
+            /** @var string $variantTitle */
+            $variantTitle = $variantsName[0]['title'];
+            $hashArray    = array_map('md5', array_map('trim', explode('|', $variantTitle)));
 
             $allVariants = [];
             foreach ($variants as $variantData) {
-                $titleArray = array_map('trim', explode('|', $variantData['title']));
-                $valueArray = array_map('trim', explode('|', $variantData['value']));
+                /** @var string $variantDataTitle */
+                $variantDataTitle = $variantData['title'];
+                $titleArray       = array_map('trim', explode('|', $variantDataTitle));
+
+                /** @var string $variantDataValue */
+                $variantDataValue = $variantData['value'];
+                $valueArray       = array_map('trim', explode('|', $variantDataValue));
 
                 foreach ($titleArray as $index => $title) {
-                    $title                         = "{$title}  (VarSelect)";
-                    $allVariants[ $title ][]       = $valueArray[ $index ];
-                    $allVariants[ $title ]["hash"] = $hashArray[ $index ];
+                    $title                       = "{$title}  (VarSelect)";
+                    $allVariants[$title][]       = $valueArray[$index];
+                    $allVariants[$title]["hash"] = $hashArray[$index];
                 }
             }
 

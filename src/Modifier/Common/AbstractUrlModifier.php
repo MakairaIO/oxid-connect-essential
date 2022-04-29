@@ -64,14 +64,14 @@ abstract class AbstractUrlModifier extends Modifier
         $object = $this->createModelInstance();
         $object->assign($objectData);
 
-        $this->getUrl($type, $object, $this->oxLang->getBaseLanguage());
-        $type->url = $this->getUrl($type, $object, $this->oxLang->getBaseLanguage());
+        $type->url = $this->getUrl($type, $object, (int) $this->oxLang->getBaseLanguage());
 
         $type->selfLinks = [];
+        /** @var array<int> $languageIds */
         $languageIds     = $this->oxLang->getLanguageIds();
         foreach (array_keys($languageIds) as $id) {
             $key                   = $languageIds[$id];
-            $type->selfLinks[$key] = $this->getUrl($type, $object, $this->oxLang->getBaseLanguage());
+            $type->selfLinks[$key] = $this->getUrl($type, $object, $id);
         }
 
         return $type;

@@ -5,6 +5,8 @@ namespace Makaira\OxidConnectEssential\Modifier\Common;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 
+use function get_object_vars;
+
 class ZeroDateTimeModifier extends Modifier
 {
     /**
@@ -20,12 +22,14 @@ class ZeroDateTimeModifier extends Modifier
      */
     public function apply(Type $type)
     {
-        foreach ($type as $property => $value) {
+        $properties = get_object_vars($type);
+        foreach ($properties as $property) {
+            $value = $type->{$property};
             if (is_array($value)) {
-                $type->$property = array_map(fn ($item) => $this->isZeroDate($item) ? null : $item, $value);
+                $type->{$property} = array_map(fn ($item) => $this->isZeroDate($item) ? null : $item, $value);
             }
             if ($this->isZeroDate($value)) {
-                $type->$property = null;
+                $type->{$property} = null;
             }
         }
 

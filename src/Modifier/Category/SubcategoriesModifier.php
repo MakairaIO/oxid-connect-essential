@@ -5,6 +5,7 @@ namespace Makaira\OxidConnectEssential\Modifier\Category;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Utils\CategoryInheritance;
+use Makaira\OxidConnectEssential\Type\Category\Category;
 
 class SubcategoriesModifier extends Modifier
 {
@@ -15,7 +16,14 @@ class SubcategoriesModifier extends Modifier
         $this->categoryInheritance = $categoryInheritance;
     }
 
-    public function apply(Type $category)
+    /**
+     * @param Category $category
+     *
+     * @return Category
+     * @throws \Doctrine\DBAL\Driver\Exception
+     * @throws \Doctrine\DBAL\Exception
+     */
+    public function apply(Type $category): Category
     {
         $category->subcategories = $this->categoryInheritance->buildCategoryInheritance($category->id);
 

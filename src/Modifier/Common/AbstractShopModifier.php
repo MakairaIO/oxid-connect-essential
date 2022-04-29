@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Modifier\Common;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
@@ -12,8 +13,6 @@ use function sprintf;
 
 abstract class AbstractShopModifier extends Modifier
 {
-    private const SHOP_FIELD_SET_SIZE = 64;
-
     private const QUERY_TEMPLATE = 'SELECT
           `OXSHOPID`
         FROM
@@ -49,11 +48,11 @@ abstract class AbstractShopModifier extends Modifier
     public function apply(Type $type)
     {
         if ($this->isMultiShop) {
-            $type->shop = $this->database
-                ->executeQuery($this->selectQuery, [$type->OXMAPID])
-                ->fetchFirstColumn();
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery($this->selectQuery, [$type->additionalData['OXMAPID']]);
+            $type->shop      = $resultStatement->fetchFirstColumn();
         } else {
-            $type->shop = [$type->OXSHOPID];
+            $type->shop = [$type->additionalData['OXSHOPID']];
         }
 
         return $type;

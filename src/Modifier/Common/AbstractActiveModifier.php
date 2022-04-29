@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Modifier\Common;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Makaira\OxidConnectEssential\Modifier;
@@ -53,7 +54,9 @@ abstract class AbstractActiveModifier extends Modifier
             FROM {$this->tableName}
             WHERE OXID = '{$product->id}' AND {$this->activeSnippet}";
 
-        $product->active = (bool) $this->database->executeQuery($sql)->fetchOne();
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery($sql);
+        $product->active = (bool) $resultStatement->fetchOne();
 
         return $product;
     }

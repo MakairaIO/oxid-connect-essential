@@ -33,11 +33,11 @@ abstract class Modifier
     }
 
     /**
-     * @param $docType
+     * @param string $docType
      *
      * @return Modifier
      */
-    public function setDocType($docType): Modifier
+    public function setDocType(string $docType): Modifier
     {
         $this->docType = $docType;
 

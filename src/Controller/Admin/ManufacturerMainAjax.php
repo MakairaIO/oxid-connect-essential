@@ -78,7 +78,10 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
         /** @var Result $resultStatement */
         $resultStatement = $db->executeQuery($query);
 
-        return $resultStatement->fetchAllAssociative();
+        /** @var array<string> $result */
+        $result = $resultStatement->fetchAllAssociative();
+
+        return $result;
     }
 
     /**
@@ -124,8 +127,10 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
         $manufacturerId = Registry::getRequest()->getRequestParameter('oxid');
 
         /** @var Connection $db */
-        $db          = $this->getSymfonyContainer()->get(Connection::class);
-        $productView = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $db = $this->getSymfonyContainer()->get(Connection::class);
+
+        /** @var string $productView */
+        $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
             /** @var string $oxidQuery */

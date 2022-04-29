@@ -27,7 +27,7 @@ class RepositoryCollectEvent extends Event
         $this->repository = $repository;
     }
 
-    public function addRepository(AbstractRepository $repository)
+    public function addRepository(AbstractRepository $repository): void
     {
         $this->repository->addRepositoryMapping($repository);
     }

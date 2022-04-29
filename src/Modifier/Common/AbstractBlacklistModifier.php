@@ -16,7 +16,7 @@ use Makaira\OxidConnectEssential\Type;
 
 abstract class AbstractBlacklistModifier extends Modifier
 {
-    private ?array $blacklistedFields = null;
+    private array $blacklistedFields;
 
     /**
      * @param array|null $blacklistedFields

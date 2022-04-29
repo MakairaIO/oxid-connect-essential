@@ -13,6 +13,7 @@ namespace Makaira\OxidConnectEssential\Modifier\Category;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
@@ -48,18 +49,19 @@ class HierarchyModifier extends Modifier
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function apply(Type $category)
+    public function apply(Type $category): Category
     {
-        $hierarchy = $this->database
-            ->executeQuery(
-                $this->selectQuery,
-                [
-                    'left'   => $category->OXLEFT,
-                    'right'  => $category->OXRIGHT,
-                    'rootId' => $category->OXROOTID,
-                ]
-            )
-            ->fetchFirstColumn();
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery(
+            $this->selectQuery,
+            [
+                'left'   => $category->additionalData['OXLEFT'],
+                'right'  => $category->additionalData['OXRIGHT'],
+                'rootId' => $category->additionalData['OXROOTID'],
+            ]
+        );
+
+        $hierarchy = $resultStatement->fetchFirstColumn();
 
         $category->depth     = count($hierarchy);
         $category->hierarchy = implode('//', $hierarchy);

@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Controller\Admin;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\ParameterType;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
@@ -21,19 +22,29 @@ class SelectListMainAjax extends SelectListMainAjax_parent
     /**
      * Removes article from Selection list
      */
-    public function removeArtFromSel()
+    public function removeArtFromSel(): void
     {
         /** @var ContainerInterface $container */
-        $container             = $this->getSymfonyContainer();
-        $db                    = $container->get(Connection::class);
+        $container = $this->getSymfonyContainer();
+
+        /** @var Connection $db */
+        $db = $container->get(Connection::class);
+
+        /** @var string $articleSelectListView */
         $articleSelectListView = $this->callPSR12Incompatible('_getViewName', 'oxobject2selectlist');
-        $productView           = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+
+        /** @var string $productView */
+        $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
+            /** @var string $oxidQuery */
             $oxidQuery = $this->callPSR12Incompatible('_getQuery');
             $query     = "SELECT {$articleSelectListView}.`OXOBJECTID`, {$productView}.`OXPARENTID` {$oxidQuery}";
 
-            $changedProducts = $db->executeQuery($query)->fetchAllAssociative();
+            /** @var Result $resultStatement */
+            $resultStatement = $db->executeQuery($query);
+
+            $changedProducts = $resultStatement->fetchAllAssociative();
         } else {
             $entryIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxobject2attribute.oxid');
             if (!empty($entryIds)) {
@@ -50,20 +61,30 @@ class SelectListMainAjax extends SelectListMainAjax_parent
                     LEFT JOIN `{$productView}` a ON a.`OXID` = o2a.`OXOBJECTID`
                     WHERE o2a.`OXID` IN ({$sqlEntryIds})";
 
-                $changedProducts = $db->executeQuery($query)->fetchAllAssociative();
+                /** @var Result $resultStatement */
+                $resultStatement = $db->executeQuery($query);
+                $changedProducts  = $resultStatement->fetchAllAssociative();
             }
         }
 
         parent::removeArtFromSel();
 
         if (!empty($changedProducts)) {
+            /** @var RevisionRepository $revisionRepository */
             $revisionRepository = $container->get(RevisionRepository::class);
+
+            /**
+             * @param array<string> $changedProduct
+             *
+             * @return Revision
+             */
+            $buildRevision = static fn(array $changedProduct) => new Revision(
+                $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
+                $changedProduct['OXOBJECTID']
+            );
             $revisionRepository->storeRevisions(
                 array_map(
-                    static fn($changedProduct) => new Revision(
-                        $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
-                        $changedProduct['OXOBJECTID']
-                    ),
+                    $buildRevision,
                     $changedProducts
                 )
             );

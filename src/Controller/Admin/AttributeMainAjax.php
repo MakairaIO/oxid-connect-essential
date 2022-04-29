@@ -67,15 +67,18 @@ class AttributeMainAjax extends AttributeMainAjax_parent
         if (!empty($changedProducts)) {
             /** @var RevisionRepository $revisionRepository */
             $revisionRepository = $container->get(RevisionRepository::class);
-            $revisionRepository->storeRevisions(
-                array_map(
-                    static fn($changedProduct) => new Revision(
-                        $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
-                        (string) $changedProduct['OXOBJECTID']
-                    ),
-                    $changedProducts
-                )
+
+            /**
+             * @param array<string> $changedProduct
+             *
+             * @return Revision
+             */
+            $buildRevision = static fn(array $changedProduct) => new Revision(
+                $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
+                $changedProduct['OXOBJECTID']
             );
+
+            $revisionRepository->storeRevisions(array_map($buildRevision, $changedProducts));
         }
     }
 }

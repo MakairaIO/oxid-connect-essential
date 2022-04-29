@@ -21,7 +21,7 @@ class Endpoint extends FrontendController
 {
     use SymfonyContainerTrait;
 
-    public function render(): void
+    public function render(): string
     {
         ini_set('html_errors', 'off');
 
@@ -48,6 +48,8 @@ class Endpoint extends FrontendController
         }
 
         $this->sendAndShutdown(new JsonResponse($responseContent, $statusCode));
+
+        return $this->_sThisTemplate;
     }
 
     /**

@@ -20,14 +20,14 @@ class ModifierCollectEvent extends Event
     /**
      * @var ModifierList
      */
-    public $modifierList;
+    public ModifierList $modifierList;
 
     public function __construct(ModifierList $modifierList)
     {
         $this->modifierList = $modifierList;
     }
 
-    public function addModifier(Modifier $modifier)
+    public function addModifier(Modifier $modifier): void
     {
         $this->modifierList->addModifier($modifier);
     }
