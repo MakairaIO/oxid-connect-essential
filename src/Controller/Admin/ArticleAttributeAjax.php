@@ -17,7 +17,7 @@ class ArticleAttributeAjax extends ArticleAttributeAjax_parent
      */
     private bool $isRemove = false;
 
-    public function removeAttr()
+    public function removeAttr(): void
     {
         $this->isRemove = true;
         parent::removeAttr();
@@ -30,7 +30,7 @@ class ArticleAttributeAjax extends ArticleAttributeAjax_parent
      *
      * @throws \Doctrine\DBAL\Exception
      */
-    protected function onArticleAttributeRelationChange($articleId)
+    protected function onArticleAttributeRelationChange($articleId): void
     {
         if ($this->isRemove) {
             /** @var ContainerInterface $container */

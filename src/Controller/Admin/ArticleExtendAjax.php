@@ -17,10 +17,10 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
     /**
      * Sets selected category as a default
      */
-    public function setAsDefault()
+    public function setAsDefault(): void
     {
         parent::setAsDefault();
-        $productId = Registry::getRequest()->getRequestParameter("oxid");
+        $productId = (string) Registry::getRequest()->getRequestParameter("oxid");
         /** @var ContainerInterface $container */
 
         $container = $this->getSymfonyContainer();
@@ -33,10 +33,14 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
     /**
      * Method is used for overloading to do additional actions.
      *
-     * @param array<string>  $categoriesToRemove
-     * @param string $productId
+     * @param array<string> $categoriesToRemove
+     * @param string        $productId
+     *
+     * @throws \Doctrine\DBAL\ConnectionException
+     * @throws \Doctrine\DBAL\Driver\Exception
+     * @throws \Doctrine\DBAL\Exception
      */
-    protected function onCategoriesRemoval($categoriesToRemove, $productId)
+    protected function onCategoriesRemoval($categoriesToRemove, $productId): void
     {
         parent::onCategoriesRemoval($categoriesToRemove, $productId);
 

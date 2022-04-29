@@ -18,7 +18,7 @@ class ArticleSelectionAjax extends ArticleSelectionAjax_parent
     /**
      * @return void
      */
-    public function removeSel()
+    public function removeSel(): void
     {
         $this->isRemove = true;
         parent::removeSel();
@@ -32,7 +32,7 @@ class ArticleSelectionAjax extends ArticleSelectionAjax_parent
      *
      * @throws \Doctrine\DBAL\Exception
      */
-    protected function onArticleSelectionListChange($articleId)
+    protected function onArticleSelectionListChange($articleId): void
     {
         if ($this->isRemove) {
             /** @var ContainerInterface $container */

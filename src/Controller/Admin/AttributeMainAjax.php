@@ -17,13 +17,14 @@ class AttributeMainAjax extends AttributeMainAjax_parent
     use PSR12WrapperTrait;
     use SymfonyContainerTrait;
 
-    public function removeAttrArticle()
+    public function removeAttrArticle(): void
     {
         /** @var ContainerInterface $container */
         $container     = $this->getSymfonyContainer();
+        /** @var Connection $db */
         $db            = $container->get(Connection::class);
-        $attributeView = $this->callPSR12Incompatible('_getViewName', 'oxobject2attribute');
-        $productView   = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $attributeView = (string) $this->callPSR12Incompatible('_getViewName', 'oxobject2attribute');
+        $productView   = (string)  $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
             $oxidQuery = $this->callPSR12Incompatible('_getQuery');

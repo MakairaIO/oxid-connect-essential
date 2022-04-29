@@ -24,7 +24,7 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
     /**
      * @return void
      */
-    public function remNewOrder()
+    public function remNewOrder(): void
     {
         $this->isRemove = true;
         parent::remNewOrder();
@@ -37,18 +37,22 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
      * @throws DBALDriverException
      * @throws DBALException
      */
-    protected function onCategoryChange($categoryId)
+    protected function onCategoryChange($categoryId): void
     {
-        $container          = $this->getSymfonyContainer();
-        $db                 = $container->get(Connection::class);
+        $container = $this->getSymfonyContainer();
+
+        /** @var Connection $db */
+        $db = $container->get(Connection::class);
+
+        /** @var RevisionRepository $revisionRepository */
         $revisionRepository = $container->get(RevisionRepository::class);
 
         if ($this->isRemove) {
             $revisionRepository->touchCategory($categoryId);
         }
 
-        $categoryView = $this->callPSR12Incompatible('_getViewName', 'oxobject2category');
-        $productView  = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $categoryView = (string) $this->callPSR12Incompatible('_getViewName', 'oxobject2category');
+        $productView  = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         $query = "SELECT `o2c`.`OXOBJECTID`, `a`.`OXPARENTID`
             FROM `{$categoryView}` `o2c`

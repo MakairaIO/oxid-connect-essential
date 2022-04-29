@@ -18,7 +18,7 @@ class ArticleCrossSellingAjax extends ArticleCrossSellingAjax_parent
     {
         parent::removeArticleCross();
 
-        $productId = Registry::getRequest()->getRequestParameter('oxid');
+        $productId = (string) Registry::getRequest()->getRequestParameter('oxid');
 
         /** @var ContainerInterface $container */
         $container = $this->getSymfonyContainer();

@@ -28,12 +28,12 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     public function addManufacturer()
     {
-        $productIds     = $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
-        $manufacturerId = Registry::getRequest()->getRequestParameter('synchoxid');
+        $productIds     = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
+        $manufacturerId = (string) Registry::getRequest()->getRequestParameter('synchoxid');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
-            $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
-            $changedIds  = $this->callPSR12Incompatible(
+            $productView = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+            $changedIds  = (array) $this->callPSR12Incompatible(
                 '_getAll',
                 $this->callPSR12Incompatible(
                     '_addFilter',
@@ -58,8 +58,9 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     private function addParentIds(array $productIds): array
     {
+        /** @var Connection $db */
         $db          = $this->getSymfonyContainer()->get(Connection::class);
-        $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $productView = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         $sqlProductIds = implode(
             ',',
@@ -80,7 +81,9 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     private function executeTouches(array $productIds, string $manufacturerId): void
     {
-        $container          = $this->getSymfonyContainer();
+        $container = $this->getSymfonyContainer();
+
+        /** @var RevisionRepository $revisionRepository */
         $revisionRepository = $container->get(RevisionRepository::class);
 
         if (!empty($productIds)) {
@@ -104,15 +107,17 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function removeManufacturer()
+    public function removeManufacturer(): void
     {
-        $productIds     = $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
-        $manufacturerId = Registry::getRequest()->getRequestParameter('oxid');
+        $productIds     = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
+        $manufacturerId = (string) Registry::getRequest()->getRequestParameter('oxid');
+
+        /** @var Connection $db */
         $db             = $this->getSymfonyContainer()->get(Connection::class);
-        $productView    = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $productView    = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
-            $oxidQuery  = $this->callPSR12Incompatible('_getQuery');
+            $oxidQuery  = (string) $this->callPSR12Incompatible('_getQuery');
             $query      = "SELECT {$productView}.OXID, {$productView}.OXPARENTID {$oxidQuery}";
             $changedIds = $db->executeQuery($query)->fetchAllAssociative();
         } else {
