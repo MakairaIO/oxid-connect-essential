@@ -8,11 +8,41 @@
 declare(strict_types=1);
 
 class_alias(
-    \OxidEsales\Eshop\Application\Model\User::class,
-    \OxidEsales\ModuleTemplate\Model\User_parent::class
+    OxidEsales\Eshop\Application\Controller\Admin\ArticleAttributeAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\ArticleAttributeAjax_parent::class
 );
 
 class_alias(
-    \OxidEsales\Eshop\Application\Controller\StartController::class,
-    \OxidEsales\ModuleTemplate\Controller\StartController_parent::class
+    OxidEsales\Eshop\Application\Controller\Admin\ArticleCrosssellingAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\ArticleCrossSellingAjax_parent::class
+);
+
+class_alias(
+    OxidEsales\Eshop\Application\Controller\Admin\ArticleExtendAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\ArticleExtendAjax_parent::class
+);
+
+class_alias(
+    OxidEsales\Eshop\Application\Controller\Admin\ArticleSelectionAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\ArticleSelectionAjax_parent::class
+);
+
+class_alias(
+    OxidEsales\Eshop\Application\Controller\Admin\AttributeMainAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\AttributeMainAjax_parent::class
+);
+
+class_alias(
+    OxidEsales\Eshop\Application\Controller\Admin\CategoryOrderAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\CategoryOrderAjax_parent::class
+);
+
+class_alias(
+    OxidEsales\Eshop\Application\Controller\Admin\ManufacturerMainAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\ManufacturerMainAjax_parent::class
+);
+
+class_alias(
+    OxidEsales\Eshop\Application\Controller\Admin\SelectListMainAjax::class,
+    Makaira\OxidConnectEssential\Controller\Admin\SelectListMainAjax_parent::class
 );

@@ -15,9 +15,11 @@ class UserController extends BaseController
     public function __construct()
     {
         parent::__construct();
-        $this->userService = ContainerFactory::getInstance()->getContainer()->get(UserService::class);
+        /** @var UserService $userService */
+        $userService       = ContainerFactory::getInstance()->getContainer()->get(UserService::class);
+        $this->userService = $userService;
     }
-    public function login()
+    public function login(): void
     {
         ['username' => $username, 'password' => $password, 'rememberLogin' => $rememberLogin] = $this->getRequestBody();
 
@@ -39,14 +41,14 @@ class UserController extends BaseController
         }
     }
 
-    public function logout()
+    public function logout(): void
     {
         $this->userService->logout();
 
         $this->sendResponse(["success" => true]);
     }
 
-    public function getCurrentLoggedInUser()
+    public function getCurrentLoggedInUser(): void
     {
         $user = $this->userService->getCurrentLoggedInUser();
         if ($user) {

@@ -52,7 +52,7 @@ abstract class AbstractRepository
         $result = $this->database->executeQuery($this->getSelectQuery(), ['id' => $id])->fetchAssociative();
 
         $change       = new Change();
-        $change->id   = $id;
+        $change->id   = (string) $id;
         $change->type = $this->getType();
 
         if (empty($result)) {

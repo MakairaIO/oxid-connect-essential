@@ -24,16 +24,17 @@ class BaseController extends FrontendController
     protected function getRequestBody(): array
     {
         $request = Request::createFromGlobals();
-        $body = $request->getContent();
+        $body = (string) $request->getContent(false);
 
-        return (array)json_decode($body, true);
+        return (array) json_decode($body, true, 512, JSON_THROW_ON_ERROR);
     }
 
     /**
-     * @return User|void|null
+     * @return User
      */
-    protected function checkAndGetActiveUser()
+    protected function checkAndGetActiveUser(): Userŝ
     {
+        /** @var User|false $user */
         $user = Registry::getSession()->getUser();
         if ($user === false) {
             $this->sendResponse(["message" => "Unauthorized"], 401);

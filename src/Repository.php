@@ -189,8 +189,8 @@ class Repository
         foreach ($result as $row) {
             try {
                 $type     = $row['type'];
-                $sequence = $row['sequence'];
-                $id       = $row['id'];
+                $sequence = (int) $row['sequence'];
+                $id       = (string) $row['id'];
                 $parentId = null;
 
                 if ($typeVariant === $type) {

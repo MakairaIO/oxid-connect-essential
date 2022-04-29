@@ -10,9 +10,28 @@ namespace Makaira\OxidConnectEssential;
  */
 class Change extends \Kore\DataObject\DataObject
 {
-    public $id;
-    public $sequence;
-    public $deleted = false;
+    /**
+     * @var string|null
+     */
+    public ?string $id = null;
+
+    /**
+     * @var int|null
+     */
+    public ?int $sequence = null;
+
+    /**
+     * @var bool
+     */
+    public bool $deleted = false;
+
+    /**
+     * @var mixed|null
+     */
     public $data;
-    public $type;
+
+    /**
+     * @var string
+     */
+    public string $type = '';
 }

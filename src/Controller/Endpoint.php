@@ -21,11 +21,12 @@ class Endpoint extends FrontendController
 {
     use SymfonyContainerTrait;
 
-    public function render()
+    public function render(): void
     {
-        ini_set('html_errors', false);
+        ini_set('html_errors', 'off');
 
         $container  = $this->getSymfonyContainer();
+        /** @var RpcService $rpcService */
         $rpcService = $container->get(RpcService::class);
 
         $exception = null;
