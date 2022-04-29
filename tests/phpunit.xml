@@ -23,12 +23,9 @@
         </testsuite>
     </testsuites>
     <filter>
-        <whitelist addUncoveredFilesFromWhitelist="false"
+        <whitelist addUncoveredFilesFromWhitelist="true"
                    processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">/var/www/test-module/src</directory>
-            <exclude>
-                <directory suffix=".php">../src</directory>
-            </exclude>
+            <directory suffix=".php">../src</directory>
         </whitelist>
     </filter>
 </phpunit>
