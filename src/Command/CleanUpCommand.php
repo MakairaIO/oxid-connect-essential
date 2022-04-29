@@ -22,5 +22,7 @@ class CleanUpCommand extends Command
         $output->write('Removing registered revisions...');
         $this->revisionRepository->cleanup();
         $output->writeln('done');
+
+        return 0;
     }
 }
