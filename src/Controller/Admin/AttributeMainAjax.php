@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Controller\Admin;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\ParameterType;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
@@ -20,17 +21,25 @@ class AttributeMainAjax extends AttributeMainAjax_parent
     public function removeAttrArticle(): void
     {
         /** @var ContainerInterface $container */
-        $container     = $this->getSymfonyContainer();
+        $container = $this->getSymfonyContainer();
+
         /** @var Connection $db */
-        $db            = $container->get(Connection::class);
-        $attributeView = (string) $this->callPSR12Incompatible('_getViewName', 'oxobject2attribute');
-        $productView   = (string)  $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        $db = $container->get(Connection::class);
+
+        /** @var string $attributeView */
+        $attributeView = $this->callPSR12Incompatible('_getViewName', 'oxobject2attribute');
+
+        /** @var string $productView */
+        $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         if (Registry::getRequest()->getRequestParameter('all')) {
+            /** @var string $oxidQuery */
             $oxidQuery = $this->callPSR12Incompatible('_getQuery');
             $query     = "SELECT {$attributeView}.`OXOBJECTID`, {$productView}.`OXPARENTID` {$oxidQuery}";
 
-            $changedProducts = $db->executeQuery($query)->fetchAllAssociative();
+            /** @var Result $resultStatement */
+            $resultStatement = $db->executeQuery($query);
+            $changedProducts = $resultStatement->fetchAllAssociative();
         } else {
             $entryIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxobject2attribute.oxid');
             if (!empty($entryIds)) {
@@ -47,13 +56,16 @@ class AttributeMainAjax extends AttributeMainAjax_parent
                     LEFT JOIN `{$productView}` a ON a.`OXID` = o2a.`OXOBJECTID`
                     WHERE o2a.`OXID` IN ({$sqlEntryIds})";
 
-                $changedProducts = $db->executeQuery($query)->fetchAllAssociative();
+                /** @var Result $resultStatement */
+                $resultStatement = $db->executeQuery($query);
+                $changedProducts = $resultStatement->fetchAllAssociative();
             }
         }
 
         parent::removeAttrArticle();
 
         if (!empty($changedProducts)) {
+            /** @var RevisionRepository $revisionRepository */
             $revisionRepository = $container->get(RevisionRepository::class);
             $revisionRepository->storeRevisions(
                 array_map(

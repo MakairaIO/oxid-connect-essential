@@ -20,9 +20,11 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
     public function setAsDefault(): void
     {
         parent::setAsDefault();
-        $productId = (string) Registry::getRequest()->getRequestParameter("oxid");
-        /** @var ContainerInterface $container */
 
+        /** @var string $productId */
+        $productId = Registry::getRequest()->getRequestParameter("oxid");
+
+        /** @var ContainerInterface $container */
         $container = $this->getSymfonyContainer();
 
         /** @var RevisionRepository $revisionRepo */

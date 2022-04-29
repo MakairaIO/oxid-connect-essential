@@ -22,7 +22,7 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
     private bool $isRemove = false;
 
     /**
-     * @return void
+     * @return null
      */
     public function remNewOrder(): void
     {
@@ -51,8 +51,11 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
             $revisionRepository->touchCategory($categoryId);
         }
 
-        $categoryView = (string) $this->callPSR12Incompatible('_getViewName', 'oxobject2category');
-        $productView  = (string) $this->callPSR12Incompatible('_getViewName', 'oxarticles');
+        /** @var string $categoryView */
+        $categoryView = $this->callPSR12Incompatible('_getViewName', 'oxobject2category');
+
+        /** @var string $productView */
+        $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         $query = "SELECT `o2c`.`OXOBJECTID`, `a`.`OXPARENTID`
             FROM `{$categoryView}` `o2c`
