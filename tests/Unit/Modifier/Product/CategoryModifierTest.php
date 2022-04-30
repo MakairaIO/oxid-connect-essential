@@ -64,7 +64,8 @@ class CategoryModifierTest extends UnitTestCase
                         'title' => 'mysubcat'
                     ]
                 ),
-            ], $product->category
+            ],
+            $product->category
         );
     }
 }

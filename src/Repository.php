@@ -191,7 +191,7 @@ class Repository
      */
     public function getChangesFromList(array $result, int $since, int $limit = 50): array
     {
-        $changes           = array();
+        $changes           = [];
         /** @var ProductRepository $productRepository */
         $productRepository = $this->getRepositoryForType('product');
         $typeProduct       = $productRepository->getType();

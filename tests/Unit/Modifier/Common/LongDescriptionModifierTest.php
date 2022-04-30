@@ -9,7 +9,6 @@ use OxidEsales\TestingLibrary\UnitTestCase;
 
 class LongDescriptionModifierTest extends UnitTestCase
 {
-
     public function testShortText()
     {
         $parserMock = $this->createMock(ContentParserInterface::class);
@@ -51,5 +50,4 @@ class LongDescriptionModifierTest extends UnitTestCase
         $product = $modifier->apply($product);
         $this->assertEquals('This is a short text', $product->longdesc);
     }
-
 }

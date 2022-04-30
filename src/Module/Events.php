@@ -60,7 +60,7 @@ class Events
                 ADD OXTAGS_1 varchar(255) NOT NULL,
                 ADD OXTAGS_2 varchar(255) NOT NULL,
                 ADD OXTAGS_3 varchar(255) NOT NULL";
-           $db->executeQuery($sSql);
+            $db->executeQuery($sSql);
         }
     }
 

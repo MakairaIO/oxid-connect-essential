@@ -31,13 +31,13 @@ class ProductRepositoryTest extends TestCase
 
         $change = $repository->get(42);
         $this->assertEquals(
-            new Change(array(
+            new Change([
                 'id' => 42,
                 'type' => 'product',
-                'data' => new Product(array(
+                'data' => new Product([
                     'id' => 42,
-                )),
-            )),
+                ]),
+            ]),
             $change
         );
     }
@@ -56,11 +56,11 @@ class ProductRepositoryTest extends TestCase
 
         $change = $repository->get(42);
         $this->assertEquals(
-            new Change(array(
+            new Change([
                 'id' => 42,
                 'type' => 'product',
                 'deleted' => true,
-            )),
+            ]),
             $change
         );
     }
@@ -80,11 +80,11 @@ class ProductRepositoryTest extends TestCase
 
         $change = $repository->get(42);
         $this->assertEquals(
-            new Change(array(
+            new Change([
                 'id' => 42,
                 'type' => 'product',
                 'data' => 'modified',
-            )),
+            ]),
             $change
         );
     }

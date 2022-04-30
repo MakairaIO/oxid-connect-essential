@@ -8,7 +8,6 @@ use OxidEsales\TestingLibrary\UnitTestCase;
 
 class PriceModifierTest extends UnitTestCase
 {
-
     private function productFactory()
     {
         $product = new BaseProduct();

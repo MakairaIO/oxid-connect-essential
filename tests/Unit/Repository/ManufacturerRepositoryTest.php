@@ -32,15 +32,15 @@ class ManufacturerRepositoryTest extends UnitTestCase
         $change = $repository->get(42);
         $this->assertEquals(
             new Change(
-                array(
+                [
                     'id' => 42,
                     'type' => 'manufacturer',
                     'data' => new Manufacturer(
-                        array(
+                        [
                             'id' => 42,
-                        )
+                        ]
                     ),
-                )
+                ]
             ),
             $change
         );
@@ -61,11 +61,11 @@ class ManufacturerRepositoryTest extends UnitTestCase
         $change = $repository->get(42);
         $this->assertEquals(
             new Change(
-                array(
+                [
                     'id' => 42,
                     'type' => 'manufacturer',
                     'deleted' => true,
-                )
+                ]
             ),
             $change
         );
@@ -87,11 +87,11 @@ class ManufacturerRepositoryTest extends UnitTestCase
         $change = $repository->get(42);
         $this->assertEquals(
             new Change(
-                array(
+                [
                     'id' => 42,
                     'type' => 'manufacturer',
                     'data' => 'modified',
-                )
+                ]
             ),
             $change
         );

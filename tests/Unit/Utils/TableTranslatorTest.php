@@ -2,7 +2,6 @@
 
 namespace Makaira\OxidConnectEssential\Test\Unit\Utils;
 
-
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
