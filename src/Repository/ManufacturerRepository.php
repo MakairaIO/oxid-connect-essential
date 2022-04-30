@@ -28,11 +28,13 @@ class ManufacturerRepository extends AbstractRepository
     /**
      * Get an instance of current type.
      *
+     * @param string $id
+     *
      * @return Manufacturer
      */
-    protected function getInstance($id): Manufacturer
+    protected function getInstance(string $id): Manufacturer
     {
-        return new Manufacturer($id);
+        return new Manufacturer(['id' => $id]);
     }
 
     protected function getSelectQuery(): string

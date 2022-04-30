@@ -22,9 +22,9 @@ class VariantRepository extends ProductRepository
      *
      * @return Variant
      */
-    protected function getInstance($id): Variant
+    protected function getInstance(string $id): Variant
     {
-        return new Variant($id);
+        return new Variant(['id' => $id]);
     }
 
     protected function getSelectQuery(): string

@@ -13,7 +13,9 @@ namespace Makaira\OxidConnectEssential\Utils;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
+use OxidEsales\Eshop\Application\Model\Category;
 
 class CategoryInheritance
 {
@@ -38,32 +40,36 @@ class CategoryInheritance
     /**
      * @param string $categoryId
      *
-     * @return array|string
+     * @return array<string>
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function buildCategoryInheritance(string $categoryId)
+    public function buildCategoryInheritance(string $categoryId): array
     {
-        if (!isset($categoryId) || !$this->useCategoryInheritance) {
-            return $categoryId;
+        $categories = [$categoryId];
+
+        if ($this->useCategoryInheritance) {
+            $category = oxNew(Category::class);
+            if ($category->load($categoryId)) {
+                $sql = "SELECT `OXID` FROM `oxcategories`
+                    WHERE `OXROOTID` = :rootId AND `OXLEFT` >= :left AND `OXRIGHT` <= :right
+                    ORDER BY `OXLEFT` ASC";
+
+                /** @var Result $result */
+                $result = $this->database->executeQuery(
+                    $sql,
+                    [
+                        'rootId' => $category->getFieldData('oxrootid'),
+                        'left'   => $category->getFieldData('oxleft'),
+                        'right'  => $category->getFieldData('oxright'),
+                    ]
+                );
+
+                /** @var array<string> $categories */
+                $categories = $result->fetchFirstColumn();
+            }
         }
 
-        $category = oxNew('oxcategory');
-        if ($category->load($categoryId)) {
-            $result     = $this->database->executeQuery(
-                "SELECT OXID FROM oxcategories WHERE OXROOTID = :rootId AND OXLEFT > :left AND OXRIGHT < :right",
-                [
-                    'rootId' => $category->oxcategories__oxrootid->value,
-                    'left' => $category->oxcategories__oxleft->value,
-                    'right' => $category->oxcategories__oxright->value
-                ]
-            );
-            $categoryId = array_merge(
-                (array) $categoryId,
-                $result->fetchFirstColumn()
-            );
-        }
-
-        return $categoryId;
+        return $categories;
     }
 }

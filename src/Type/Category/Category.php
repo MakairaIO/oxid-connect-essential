@@ -10,16 +10,15 @@ use Makaira\OxidConnectEssential\Type;
  */
 class Category extends Type
 {
-    public $category_title;
-    public $sort;
-    public $shortdesc;
-    public $longdesc;
-    public $meta_keywords;
-    public $meta_description;
-    public $selfLinks = [];
-    public $hierarchy;
-    public $depth;
-    public $subcategories = [];
-    public $hidden = false;
-    public $oxobject = [];
+    public ?string $category_title;
+    public ?string $sort;
+    public ?string $shortdesc;
+    public ?string $longdesc;
+    public ?string $meta_keywords;
+    public ?string $meta_description;
+    public ?string $hierarchy;
+    public int $depth;
+    public array $subcategories = [];
+    public bool $hidden = false;
+    public array $oxobject = [];
 }

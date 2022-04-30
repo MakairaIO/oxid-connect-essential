@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Service;
 
 use Makaira\OxidConnectEssential\Exception\UserBlockedException;
+use OxidEsales\Eshop\Application\Model\Basket;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Exception\CookieException;
 use OxidEsales\Eshop\Core\Exception\UserException;
@@ -22,7 +23,7 @@ class UserService
      * @throws UserException
      * @throws CookieException Do not remove this because of "never thrown" warning
      */
-    public function login($username, $password, $rememberLogin): User
+    public function login(string $username, string $password, bool $rememberLogin): User
     {
         /** @var User $user */
         $user = oxNew(User::class);
@@ -39,14 +40,14 @@ class UserService
         }
 
         // recalculate basket
-        if ($basket = $this->session->getBasket()) {
+        if (($basket = $this->session->getBasket()) instanceof Basket) {
             $basket->onUpdate();
         }
 
         return $user;
     }
 
-    public function logout()
+    public function logout(): void
     {
         $user = oxNew(User::class);
         $user->logout();
@@ -58,7 +59,7 @@ class UserService
         $this->session->deleteVariable('dynvalue');
 
         // resetting & recalculate basket
-        if (($basket = $this->session->getBasket())) {
+        if (($basket = $this->session->getBasket()) instanceof Basket) {
             $basket->resetUserInfo();
             $basket->onUpdate();
         }

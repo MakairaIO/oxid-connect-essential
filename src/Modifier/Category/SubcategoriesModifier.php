@@ -25,7 +25,9 @@ class SubcategoriesModifier extends Modifier
      */
     public function apply(Type $category): Category
     {
-        $category->subcategories = $this->categoryInheritance->buildCategoryInheritance($category->id);
+        if (null !== $category->id) {
+            $category->subcategories = $this->categoryInheritance->buildCategoryInheritance($category->id);
+        }
 
         return $category;
     }

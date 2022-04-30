@@ -42,6 +42,7 @@ class GraduatedPrices extends AbstractModelDataExtractor
             );
         }
 
+        /** @var string $productId */
         $productId = $model->getRawFieldData('oxobjectid');
 
         $this->statement->execute([$productId]);

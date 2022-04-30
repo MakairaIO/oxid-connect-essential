@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Repository;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Event\RepositoryCollectEvent;
@@ -47,12 +48,16 @@ abstract class AbstractRepository
         }
     }
 
-    public function get($id): Change
+    public function get(string $id): Change
     {
-        $result = $this->database->executeQuery($this->getSelectQuery(), ['id' => $id])->fetchAssociative();
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery($this->getSelectQuery(), ['id' => $id]);
+
+        /** @var array<string, string> $result */
+        $result = $resultStatement->fetchAssociative();
 
         $change       = new Change();
-        $change->id   = (string) $id;
+        $change->id   = $id;
         $change->type = $this->getType();
 
         if (empty($result)) {
@@ -61,7 +66,7 @@ abstract class AbstractRepository
             return $change;
         }
 
-        $type         = $this->getInstance($result);
+        $type         = $this->getInstance($result['id']);
         $type         = $this->modifiers->applyModifiers($type, $this->getType());
         $change->data = $type;
 
@@ -71,7 +76,7 @@ abstract class AbstractRepository
     /**
      * Get all IDs handled by this repository.
      *
-     * @param null $shopId
+     * @param int|string|null $shopId
      *
      * @return array
      * @throws DBALDriverException
@@ -83,12 +88,15 @@ abstract class AbstractRepository
         $this->tableTranslator->setShopId($shopId);
         $sql = $this->tableTranslator->translate($sql);
 
-        return $this->database->executeQuery($sql)->fetchFirstColumn();
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery($sql);
+
+        return $resultStatement->fetchFirstColumn();
     }
 
     abstract public function getType(): string;
 
-    abstract protected function getInstance($id): Type;
+    abstract protected function getInstance(string $id): Type;
 
     abstract protected function getSelectQuery(): string;
 

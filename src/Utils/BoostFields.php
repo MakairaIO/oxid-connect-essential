@@ -16,6 +16,7 @@ namespace Makaira\OxidConnectEssential\Utils;
 use DateTime;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Exception;
 
@@ -39,14 +40,20 @@ class BoostFields
     }
 
     /**
-     * @return array
+     * @return array<string>
      * @throws DBALDriverException
      * @throws DBALException
      */
     public function getMinMaxValues(): array
     {
         if (null === $this->minMaxValues) {
-            $this->minMaxValues = (array) $this->database->executeQuery($this->getMinMaxQuery())->fetchAssociative();
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery($this->getMinMaxQuery());
+
+            /** @var array<string> $rawValues */
+            $rawValues = (array) $resultStatement->fetchAssociative();
+
+            $this->minMaxValues = $rawValues;
         }
 
         return $this->minMaxValues;
@@ -66,12 +73,12 @@ class BoostFields
         $minMaxValues = $this->getMinMaxValues();
         $min = $minMaxValues["{$key}_min"];
         if ($min < 0) {
-            $max = $this->scaleValue($minMaxValues["{$key}_max"] - $min);
-            $scaled = $this->scaleValue($value - $min);
+            $max = $this->scaleValue((float) $minMaxValues["{$key}_max"] - (float) $min);
+            $scaled = $this->scaleValue($value - (float) $min);
             $min = 0;
         } else {
-            $min = $this->scaleValue($minMaxValues["{$key}_min"]);
-            $max = $this->scaleValue($minMaxValues["{$key}_max"]);
+            $min = $this->scaleValue((float) $minMaxValues["{$key}_min"]);
+            $max = $this->scaleValue((float) $minMaxValues["{$key}_max"]);
             $scaled = $this->scaleValue($value);
         }
 
@@ -94,8 +101,8 @@ class BoostFields
      */
     public function normalizeTimestamp(string $value, string $key, float $maxInfluence = 1.0): float
     {
-        $minMaxValues         = $this->getMinMaxValues();
-        $max                  = $minMaxValues["{$key}_max"];
+        $minMaxValues = $this->getMinMaxValues();
+        $max          = $minMaxValues["{$key}_max"];
 
         $timestamp            = new DateTime($value);
         $maxTimestamp         = new DateTime($max);
@@ -110,11 +117,11 @@ class BoostFields
     }
 
     /**
-     * @param $value
+     * @param float $value
      *
      * @return float
      */
-    private function scaleValue($value): float
+    private function scaleValue(float $value): float
     {
         return $value >= 0 ? $value + 1 : 0;
     }

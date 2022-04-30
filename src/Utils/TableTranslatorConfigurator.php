@@ -10,7 +10,7 @@ use function is_numeric;
 class TableTranslatorConfigurator
 {
     /**
-     * @var array<string>
+     * @var array<string, int>
      */
     private array $languageMap;
 
@@ -27,7 +27,7 @@ class TableTranslatorConfigurator
         $this->viewNameGenerator = $viewNameGenerator;
         $oxidLanguages           = $language->getLanguageArray();
         foreach ($oxidLanguages as $oxidLanguage) {
-            $this->languageMap[$oxidLanguage->abbr] = $oxidLanguage->id;
+            $this->languageMap[(string) $oxidLanguage->abbr] = (int) $oxidLanguage->id;
         }
     }
 
@@ -50,12 +50,12 @@ class TableTranslatorConfigurator
     /**
      * @param int|string $language
      *
-     * @return string|null
+     * @return int|null
      */
-    private function mapLanguage($language): ?string
+    private function mapLanguage($language): ?int
     {
         if (is_numeric($language)) {
-            return $language;
+            return (int) $language;
         }
 
         return $this->languageMap[$language] ?? null;

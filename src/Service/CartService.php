@@ -47,7 +47,7 @@ class CartService
      * @throws NoArticleException
      * @throws ArticleInputException
      */
-    public function addProductToCart($productId, $amount)
+    public function addProductToCart(string $productId, float $amount): void
     {
         $this->basket->addToBasket($productId, $amount);
         $this->basket->calculateBasket();
@@ -59,7 +59,7 @@ class CartService
      * @throws ArticleInputException
      * @throws InvalidCartItem
      */
-    public function updateCartItem($cartItemId, $amount)
+    public function updateCartItem(string $cartItemId, float $amount): void
     {
         $basketItems = $this->basket->getContents();
         if (!isset($basketItems[$cartItemId])) {
@@ -73,7 +73,7 @@ class CartService
         $this->basket->calculateBasket();
     }
 
-    public function removeCartItem($cartItemId)
+    public function removeCartItem(string $cartItemId): void
     {
         $this->basket->removeItem($cartItemId);
         $this->basket->calculateBasket();

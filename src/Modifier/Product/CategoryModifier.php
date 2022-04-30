@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
@@ -57,37 +58,39 @@ class CategoryModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param BaseProduct $product
+     * @param Type\Product\Product $product
      *
-     * @return BaseProduct
+     * @return Type\Product\Product
      * @throws DBALDriverException
      * @throws DBALException
      */
     public function apply(Type $product)
     {
-        $allCats = $this->database
-            ->executeQuery(
-                $this->selectCategoriesQuery,
-                [
-                    'productId'     => $product->id,
-                    'productActive' => $product->active,
-                ]
-            )
-            ->fetchAllAssociative();
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery(
+            $this->selectCategoriesQuery,
+            [
+                'productId' => $product->id,
+                'productActive' => $product->active,
+            ]
+        );
+
+        $allCats = $resultStatement->fetchAllAssociative();
 
         $categories = [];
 
         foreach ($allCats as $cat) {
-            $catPaths = $this->database
-                ->executeQuery(
-                    $this->selectCategoryPathQuery,
-                    [
-                        'left'      => $cat['oxleft'],
-                        'right'     => $cat['oxright'],
-                        'rootId'    => $cat['oxrootid'],
-                    ]
-                )
-                ->fetchAllAssociative();
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery(
+                $this->selectCategoryPathQuery,
+                [
+                    'left'   => $cat['oxleft'],
+                    'right'  => $cat['oxright'],
+                    'rootId' => $cat['oxrootid'],
+                ]
+            );
+
+            $catPaths = $resultStatement->fetchAllAssociative();
 
             $path  = '';
             $active = true;

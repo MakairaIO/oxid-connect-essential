@@ -2,6 +2,7 @@
 
 namespace Makaira\OxidConnectEssential\Repository;
 
+use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Type\Product\Product;
 
 class ProductRepository extends AbstractRepository
@@ -19,13 +20,13 @@ class ProductRepository extends AbstractRepository
     /**
      * Get an instance of current type.
      *
-     * @param $id
+     * @param string $id
      *
      * @return Product
      */
-    protected function getInstance($id): Product
+    protected function getInstance(string $id): Product
     {
-        return new Product($id);
+        return new Product(['id' => $id]);
     }
 
     protected function getSelectQuery(): string
@@ -72,8 +73,14 @@ class ProductRepository extends AbstractRepository
         ";
     }
 
-    public function getParentId($id): ?string
+    public function getParentId(string $id): ?string
     {
-        return (string) $this->database->executeQuery($this->getParentIdQuery(), ['id' => $id])->fetchOne();
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery($this->getParentIdQuery(), ['id' => $id]);
+
+        /** @var string $parentID */
+        $parentID = $resultStatement->fetchOne();
+
+        return $parentID;
     }
 }

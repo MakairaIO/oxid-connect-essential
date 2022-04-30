@@ -14,9 +14,8 @@ use Makaira\OxidConnectEssential\Type;
  */
 class Manufacturer extends Type
 {
-    public $manufacturer_title;
-    public $shortdesc;
-    public $selfLinks = [];
-    public $meta_keywords;
-    public $meta_description;
+    public ?string $manufacturer_title;
+    public ?string $shortdesc;
+    public ?string $meta_keywords;
+    public ?string $meta_description;
 }

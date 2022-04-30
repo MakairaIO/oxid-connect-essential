@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
@@ -76,7 +77,7 @@ class VariantAttributesModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type $product
+     * @param Type\Variant\Variant $product
      *
      * @return Type
      * @throws ConnectException
@@ -91,19 +92,26 @@ class VariantAttributesModifier extends Modifier
 
         $product->attributes = [];
 
-        $variantName = $this->database
-            ->executeQuery($this->selectVariantNameQuery, ['productId' => $product->id])
-            ->fetchAllAssociative();
-        $single      = ($variantName[0]['oxvarname'] === '');
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery($this->selectVariantNameQuery, ['productId' => $product->id]);
+
+        /** @var string $variantName */
+        $variantName = $resultStatement->fetchOne();
+        $single      = ($variantName === '');
+
+        $hashArray = [];
 
         if (!$single) {
-            $titleArray = array_map('trim', explode('|', $variantName[0]['oxvarname']));
+            $titleArray = array_map('trim', explode('|', $variantName));
             $hashArray  = array_map('md5', $titleArray);
 
-            $query    = str_replace('{{activeSnippet}}', $this->activeSnippet, $this->selectVariantDataQuery);
-            $variants = $this->database
-                ->executeQuery($query, ['productId' => $product->id])
-                ->fetchAllAssociative();
+            $query = str_replace('{{activeSnippet}}', $this->activeSnippet, $this->selectVariantDataQuery);
+
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery($query, ['productId' => $product->id]);
+
+            /** @var array<array<string, string>> $variants */
+            $variants = $resultStatement->fetchAllAssociative();
         } else {
             $variants = [['id' => '']];
         }
@@ -115,9 +123,9 @@ class VariantAttributesModifier extends Modifier
                 $variantAttributes = [];
 
                 foreach ($hashArray as $index => $hash) {
-                    if (in_array($hash, $this->attributeInt)) {
+                    if (in_array($hash, $this->attributeInt, true)) {
                         $variantAttributes[ $hash ] = (int) $valueArray[ $index ];
-                    } elseif (in_array($hash, $this->attributeFloat)) {
+                    } elseif (in_array($hash, $this->attributeFloat, true)) {
                         $variantAttributes[ $hash ] = (float) $valueArray[ $index ];
                     } else {
                         $variantAttributes[ $hash ] = (string) $valueArray[ $index ];
@@ -125,18 +133,22 @@ class VariantAttributesModifier extends Modifier
                 }
             }
 
-            $attributes = $this->database
-                ->executeQuery(
-                    $this->selectVariantAttributesQuery,
-                    [
-                        'productId' => $product->id,
-                        'variantId' => $id,
-                    ]
-                )
-                ->fetchAllAssociative();
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery(
+                $this->selectVariantAttributesQuery,
+                [
+                    'productId' => $product->id,
+                    'variantId' => $id,
+                ]
+            );
 
+            $attributes = $resultStatement->fetchAllAssociative();
+
+            $variantAttributes = [];
             foreach ($attributes as $attribute) {
+                /** @var string $hash */
                 $hash  = $attribute['id'];
+                /** @var string|int|float $value */
                 $value = $attribute['value'];
 
                 if (in_array($hash, $this->attributeInt)) {
@@ -148,7 +160,7 @@ class VariantAttributesModifier extends Modifier
                 }
             }
 
-            if ($variantAttributes) {
+            if (!empty($variantAttributes)) {
                 $product->attributes[] = $variantAttributes;
             }
         }

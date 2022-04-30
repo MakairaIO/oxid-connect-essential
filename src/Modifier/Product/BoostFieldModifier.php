@@ -34,7 +34,7 @@ class BoostFieldModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type $type
+     * @param Type\Product\Product $type
      *
      * @return Type
      * @throws DBALDriverException
@@ -42,28 +42,31 @@ class BoostFieldModifier extends Modifier
      */
     public function apply(Type $type)
     {
-        $type->mak_boost_norm_insert = $this->boostFieldUtilities->normalizeTimestamp(
-            $type->OXINSERT,
-            'insert'
-        );
+        /** @var string $insertDate */
+        $insertDate = $type->additionalData['OXINSERT'];
 
-        $type->mak_boost_norm_sold = $this->boostFieldUtilities->normalize(
-            $type->OXSOLDAMOUNT,
+        $type->mak_boost_norm_insert = $this->boostFieldUtilities->normalizeTimestamp($insertDate, 'insert');
+
+        $type->mak_boost_norm_sold   = $this->boostFieldUtilities->normalize(
+            (float) $type->additionalData['OXSOLDAMOUNT'],
             'sold'
         );
         $type->mak_boost_norm_rating = $this->boostFieldUtilities->normalize(
-            $type->OXRATING,
+            (float) $type->additionalData['OXRATING'],
             'rating'
         );
 
-        $priceAverage = ($type->OXVARMINPRICE + $type->OXVARMAXPRICE) / 2;
+        $priceAverage =
+            ((float) $type->additionalData['OXVARMINPRICE'] + (float) $type->additionalData['OXVARMAXPRICE']) / 2;
+
         $type->mak_boost_norm_revenue = $this->boostFieldUtilities->normalize(
-            $priceAverage * $type->OXSOLDAMOUNT,
+            (float) ($priceAverage * (float) $type->additionalData['OXSOLDAMOUNT']),
             'revenue'
         );
 
         $type->mak_boost_norm_profit_margin = $this->boostFieldUtilities->normalize(
-            (0.0 === round($type->OXBPRICE)) ? 0 : ($priceAverage - $type->OXBPRICE),
+            (0.0 === round((float) $type->additionalData['OXBPRICE'])) ? 0 :
+                ($priceAverage - (float) $type->additionalData['OXBPRICE']),
             'profit_margin'
         );
 

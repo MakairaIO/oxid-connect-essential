@@ -10,8 +10,12 @@ use Kore\DataObject\DataObject;
  */
 class AssignedTypedAttribute extends DataObject
 {
-    public $id;
-    public $title;
+    public string $id;
+    public string $title;
+
+    /**
+     * @var string|int|float
+     */
     public $value;
 
     public function __toString()

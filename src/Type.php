@@ -2,69 +2,77 @@
 
 namespace Makaira\OxidConnectEssential;
 
-use Kore\DataObject\DataObject;
-
-class Type extends DataObject
+class Type
 {
     /* primary es id field */
-    public $es_id;
+    public ?string $es_id;
 
     /* primary id field */
-    public $id;
+    public ?string $id;
 
     /* required fields + mak-fields */
-    public $timestamp;
-    public $url;
-    public $active = true;
-    public $shop = [];
+    public ?string $timestamp;
+    public ?string $url;
+    public bool $active = true;
+    public array $shop = [];
 
-    /** @var array<string, string>|array<string, int>|array<string, float> */
-    public $additionalData = [];
+    /** @var array<string, float|int|string|array<int|string, string|float|int>> */
+    public array $additionalData = [];
 
-    public $selfLinks;
+    public array $selfLinks = [];
 
-    public function __set($name, $value)
+    /**
+     * Generic constructor
+     *
+     * @param array $values
+     * @return void
+     */
+    public function __construct(array $values = array())
     {
-        try {
-            parent::__set($name, $value);
-        } catch (\Exception $e) {
-            // catch exception on unknown fields
-            // unknown fields will be added to additional data array
-            $this->additionalData[ $name ] = $value;
+        foreach ($values as $name => $value) {
+            $this->{$name} = $value;
         }
     }
 
-    public function __get($name)
+    /**
+     * @param string $name
+     * @param float|int|string|array<int|string, string|float|int> $value
+     *
+     * @return void
+     */
+    public function __set(string $name, $value)
     {
-        try {
-            parent::__get($name);
-        } catch (\Exception $e) {
-            // catch exception on unknown fields
-            // unknown fields are added to additional data array
-            if (!array_key_exists($name, $this->additionalData)) {
-                throw $e;
-            }
-            return $this->additionalData[ $name ];
-        }
+        $this->additionalData[$name] = $value;
     }
 
-    public function __isset($name)
+    /**
+     * @param string $name
+     *
+     * @return float|int|string|array<int|string, string|float|int>|null
+     */
+    public function __get(string $name)
+    {
+        return $this->additionalData[$name] ?? null;
+    }
+
+    /**
+     * @param string $name
+     *
+     * @return bool
+     */
+    public function __isset(string $name)
     {
         // unknown fields are added to additional data array
-        return isset($this->additionalData[ $name ]);
+        return isset($this->additionalData[$name]);
     }
 
-    public function __unset($name)
+    /**
+     * @param string $name
+     *
+     * @return void
+     */
+    public function __unset(string $name)
     {
-        try {
-            parent::__unset($name);
-        } catch (\Exception $e) {
-            // catch exception on unknown fields
-            // unknown fields are added to additional data array
-            if (!array_key_exists($name, $this->additionalData)) {
-                throw $e;
-            }
-            unset($this->additionalData[ $name ]);
-        }
+        unset($this->additionalData[$name]);
     }
 }

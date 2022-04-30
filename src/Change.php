@@ -2,6 +2,8 @@
 
 namespace Makaira\OxidConnectEssential;
 
+use stdClass;
+
 /**
  * Class Change
  *
@@ -26,9 +28,9 @@ class Change extends \Kore\DataObject\DataObject
     public bool $deleted = false;
 
     /**
-     * @var mixed|null
+     * @var Type|null
      */
-    public $data;
+    public ?Type $data;
 
     /**
      * @var string

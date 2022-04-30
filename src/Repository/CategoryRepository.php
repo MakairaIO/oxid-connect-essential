@@ -19,13 +19,13 @@ class CategoryRepository extends AbstractRepository
     /**
      * Get an instance of current type.
      *
-     * @param $id
+     * @param string $id
      *
      * @return Category
      */
-    public function getInstance($id): Category
+    public function getInstance(string $id): Category
     {
-        return new Category($id);
+        return new Category(['id' => $id]);
     }
 
     protected function getSelectQuery(): string

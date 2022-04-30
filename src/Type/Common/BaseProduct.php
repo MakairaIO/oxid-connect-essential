@@ -11,31 +11,31 @@ use Makaira\OxidConnectEssential\Type;
 class BaseProduct extends Type
 {
     /* attributes as String */
-    public $attributeStr = [];
+    public array $attributeStr = [];
 
     /* attributes as Integer */
-    public $attributeInt = [];
+    public array $attributeInt = [];
 
     /* attributes as Float */
-    public $attributeFloat = [];
+    public array $attributeFloat = [];
 
     /* required fields + mak-fields */
-    public $isPseudo = false;
-    public $ean = '';
-    public $title = '';
-    public $searchkeys = '';
-    public $hidden = false;
-    public $sort = 0;
-    public $longdesc = '';
-    public $shortdesc = '';
-    public $stock = 0;
-    public $onstock = false;
-    public $manufacturerid = '';
-    public $manufacturer_title = '';
-    public $price = 0.00;
-    public $insert;
-    public $soldamount = 0;
-    public $rating = 0.0;
-    public $searchable = true;
-    public $picture_url_main = [];
+    public bool $isPseudo = false;
+    public string $ean = '';
+    public string $title = '';
+    public string $searchkeys = '';
+    public bool $hidden = false;
+    public int $sort = 0;
+    public string $longdesc = '';
+    public string $shortdesc = '';
+    public int $stock = 0;
+    public bool $onstock = false;
+    public string $manufacturerid = '';
+    public string $manufacturer_title = '';
+    public float $price = 0.00;
+    public ?string $insert;
+    public int $soldamount = 0;
+    public float $rating = 0.0;
+    public bool $searchable = true;
+    public array $picture_url_main = [];
 }

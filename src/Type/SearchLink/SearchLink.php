@@ -15,9 +15,9 @@ use Makaira\OxidConnectEssential\Type;
 
 class SearchLink extends Type
 {
-    public $MARM_OXSEARCH_SEARCHLINKS_EXTERNAL;
-    public $MARM_OXSEARCH_SEARCHLINKS_KEYWORDS;
-    public $MARM_OXSEARCH_SEARCHLINKS_SITE;
-    public $MARM_OXSEARCH_SEARCHLINKS_TITLE;
-    public $OXSHOPID;
+    public string $MARM_OXSEARCH_SEARCHLINKS_EXTERNAL;
+    public string $MARM_OXSEARCH_SEARCHLINKS_KEYWORDS;
+    public string $MARM_OXSEARCH_SEARCHLINKS_SITE;
+    public string $MARM_OXSEARCH_SEARCHLINKS_TITLE;
+    public string $OXSHOPID;
 }

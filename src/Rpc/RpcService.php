@@ -51,7 +51,10 @@ class RpcService
         }
 
         try {
-            $requestBody = json_decode($request->getContent(false), true, 512, JSON_THROW_ON_ERROR);
+            /** @var string $body */
+            $body        = $request->getContent(false);
+            /** @var array $requestBody */
+            $requestBody = json_decode($body, true, 512, JSON_THROW_ON_ERROR);
         } catch (JsonException $e) {
             throw new HttpException(400);
         }

@@ -12,9 +12,11 @@
 namespace Makaira\OxidConnectEssential\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
+use OxidEsales\Eshop\Application\Model\Category;
 use OxidEsales\Eshop\Application\Model\SeoEncoderCategory;
 use OxidEsales\Eshop\Core\Language;
 
@@ -44,10 +46,11 @@ class MainCategoryModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type $type
+     * @param Type\Product\Product $type
      *
-     * @return Type
+     * @return Type\Product\Product
      * @throws DBALException
+     * @throws \Doctrine\DBAL\Driver\Exception
      */
     public function apply(Type $type)
     {
@@ -55,12 +58,19 @@ class MainCategoryModifier extends Modifier
         if (!isset($type->maincategory)) {
             $sql = "SELECT `OXCATNID` FROM `oxobject2category` WHERE `OXOBJECTID`= ? ORDER BY `OXTIME` LIMIT 1";
 
-            $categoryId = (string) $this->database->executeQuery($sql, [$type->OXPARENTID ?: $type->OXID])->fetchOne();
+            /** @var Result $resultStatement */
+            $resultStatement = $this->database->executeQuery(
+                $sql,
+                [$type->additionalData['OXPARENTID'] ?: $type->additionalData['OXID']]
+            );
+
+            /** @var string $categoryId */
+            $categoryId = $resultStatement->fetchOne();
 
             if ($categoryId) {
                 $type->maincategory = $categoryId;
-                $languageId         = $this->oxLang->getBaseLanguage();
-                $oCategory          = oxNew('oxcategory');
+                $languageId         = (int) $this->oxLang->getBaseLanguage();
+                $oCategory          = oxNew(Category::class);
                 $oCategory->loadInLang($languageId, $categoryId);
                 $type->maincategoryurl = $this->encoder->getCategoryUri($oCategory, $languageId);
             }

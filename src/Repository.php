@@ -4,11 +4,16 @@ namespace Makaira\OxidConnectEssential;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Doctrine\DBAL\ParameterType;
 use Makaira\Import\Changes;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
+use Makaira\OxidConnectEssential\Repository\ProductRepository;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+
+use function get_object_vars;
 
 /**
  * Class Repository
@@ -139,7 +144,12 @@ class Repository
         $dispatcher->dispatch('makaira.connect.repository', new Event\RepositoryCollectEvent($this));
     }
 
-    public function addRepositoryMapping(AbstractRepository $repository)
+    /**
+     * @param AbstractRepository $repository
+     *
+     * @return void
+     */
+    public function addRepositoryMapping(AbstractRepository $repository): void
     {
         $this->repositoryMapping[$repository->getType()] = $repository;
     }
@@ -182,6 +192,7 @@ class Repository
     public function getChangesFromList(array $result, int $since, int $limit = 50): array
     {
         $changes           = array();
+        /** @var ProductRepository $productRepository */
         $productRepository = $this->getRepositoryForType('product');
         $typeProduct       = $productRepository->getType();
         $variantRepository = $this->getRepositoryForType('variant');
@@ -206,62 +217,68 @@ class Repository
                 $change           = $this->getRepositoryForType($type)->get($id);
                 $change->sequence = $sequence;
 
-                if ($typeVariant === $type && $parentId && $change->data) {
-                    foreach ($change->data as $_key => $_data) {
-                        if (in_array($_key, $this->propsExclude, false)) {
+                if ($typeVariant === $type && $parentId && $change->data instanceof Type) {
+                    $dataKeys = get_object_vars($change->data);
+                    foreach ($dataKeys as $key) {
+                        if (in_array($key, $this->propsExclude, false)) {
                             continue;
                         }
-                        $nullValues =
-                            isset($this->propsSpecial[ $_key ]) ? $this->propsSpecial[ $_key ] : $this->propsNullValues;
-                        if (in_array($_key, $this->propsInclude, false) || in_array($_data, $nullValues, true)) {
-                            $change->data->$_key = $this->parentProducts[ $parentId ]->data->$_key;
+                        $data = $change->data->{$key};
+                        $nullValues = $this->propsSpecial[$key] ?? $this->propsNullValues;
+                        if (in_array($key, $this->propsInclude, false) || in_array($data, $nullValues, true)) {
+                            $change->data->{$key} = $this->parentProducts[$parentId]->data->{$key};
                         }
                     }
-                    $change->data->attributeStr   = array_merge(
-                        (array) $this->parentAttributes[ $parentId ]['attributeStr'],
-                        $change->data->attributeStr
-                    );
-                    $change->data->attributeInt   = array_merge(
-                        (array) $this->parentAttributes[ $parentId ]['attributeInt'],
-                        $change->data->attributeInt
-                    );
-                    $change->data->attributeFloat = array_merge(
-                        (array) $this->parentAttributes[ $parentId ]['attributeFloat'],
-                        $change->data->attributeFloat
-                    );
-                    unset(
-                        $change->data->tmpAttributeStr,
-                        $change->data->tmpAttributeInt,
-                        $change->data->tmpAttributeFloat
-                    );
+                    if ($change->data instanceof Product) {
+                        $change->data->attributeStr   = array_merge(
+                            (array) $this->parentAttributes[$parentId]['attributeStr'],
+                            $change->data->attributeStr
+                        );
+                        $change->data->attributeInt   = array_merge(
+                            (array) $this->parentAttributes[$parentId]['attributeInt'],
+                            $change->data->attributeInt
+                        );
+                        $change->data->attributeFloat = array_merge(
+                            (array) $this->parentAttributes[$parentId]['attributeFloat'],
+                            $change->data->attributeFloat
+                        );
+                        unset(
+                            $change->data->tmpAttributeStr,
+                            $change->data->tmpAttributeInt,
+                            $change->data->tmpAttributeFloat
+                        );
+                    }
                 }
 
                 if ($typeProduct === $type) {
                     if (
                         true === $change->deleted ||
                         (isset($change->data->OXVARCOUNT) && 0 === $change->data->OXVARCOUNT) ||
-                         $this->parentsPurchasable
+                        $this->parentsPurchasable
                     ) {
                         $pChange = clone $change;
 
                         if (is_null($pChange->data)) {
-                            $pChange->data = new \stdClass();
+                            $pChange->data = new Product();
                         }
 
-                        $pChange->data->isPseudo  = true;
-                        $pChange->data->isVariant = true;
+                        /** @var Product $productType */
+                        $productType = $pChange->data;
+
+                        $productType->isPseudo  = true;
+                        $productType->isVariant = true;
 
                         foreach ($this->propsDoNotClone as $_props) {
-                            if (isset($pChange->data->$_props)) {
-                                unset($pChange->data->$_props);
+                            if (isset($productType->$_props)) {
+                                unset($productType->$_props);
                             }
                         }
-                        $pChange->data->parent = $id;
+                        $productType->parent = $id;
                         if (isset($pChange->data->OXPARENTID)) {
-                            $pChange->data->OXPARENTID = $id;
+                            $productType->additionalData['OXPARENTID'] = $id;
                         }
-                        $pChange->id       = md5($id . '.variant.new');
-                        $pChange->data->id = $pChange->id;
+                        $pChange->id     = md5($id . '.variant.new');
+                        $productType->id = $pChange->id;
 
                         $pChange->sequence = $sequence;
                         $pChange->type     = $typeVariant;
@@ -293,19 +310,23 @@ class Repository
         ];
     }
 
-    protected function setParentCache($parentId, $parentData)
+    protected function setParentCache(string $parentId, Change $parentData): void
     {
-        $this->parentAttributes[ $parentId ] = [
-            'attributeStr'   => $parentData->data->tmpAttributeStr,
-            'attributeInt'   => $parentData->data->tmpAttributeInt,
-            'attributeFloat' => $parentData->data->tmpAttributeFloat,
+        /** @var Product $changeData */
+        $changeData = $parentData->data;
+
+        $this->parentAttributes[$parentId] = [
+            'attributeStr'   => $changeData->tmpAttributeStr,
+            'attributeInt'   => $changeData->tmpAttributeInt,
+            'attributeFloat' => $changeData->tmpAttributeFloat,
         ];
-        $this->parentProducts[ $parentId ] = $parentData;
+        $this->parentProducts[$parentId] = $parentData;
     }
 
-    public function countChangesSince($since)
+    public function countChangesSince(int $since): int
     {
-        $result = $this->database->query(
+        /** @var Result $result */
+        $result = $this->database->executeQuery(
             'SELECT
                 COUNT(*) count
             FROM
@@ -315,16 +336,19 @@ class Repository
             ['since' => $since ?: 0]
         );
 
-        return $result[0]['count'];
+        /** @var string $count */
+        $count = $result->fetchOne();
+
+        return (int) $count;
     }
 
-    protected function getRepositoryForType($type)
+    protected function getRepositoryForType(string $type): AbstractRepository
     {
-        if (!isset($this->repositoryMapping[ $type ])) {
+        if (!isset($this->repositoryMapping[$type])) {
             throw new OutOfBoundsException("No repository defined for type " . $type);
         }
 
-        return $this->repositoryMapping[ $type ];
+        return $this->repositoryMapping[$type];
     }
 
     /**
@@ -333,12 +357,12 @@ class Repository
      * @param string $type
      * @param string $id
      */
-    public function touch($type, $id)
+    public function touch(string $type, string $id): void
     {
         if (!$id) {
             return;
         }
-        $this->database->execute($this->touchQuery, ['type' => $type, 'id' => $id]);
+        $this->database->executeQuery($this->touchQuery, ['type' => $type, 'id' => $id]);
     }
 
     /**
@@ -346,15 +370,15 @@ class Repository
      *
      * @ignoreCodeCoverage
      */
-    public function cleanup()
+    public function cleanup(): void
     {
-        $this->database->execute($this->cleanupQuery);
+        $this->database->executeQuery($this->cleanupQuery);
     }
 
     /**
      * Add all items to the changes list.
      */
-    public function touchAll($shopId = null)
+    public function touchAll(int $shopId = null): void
     {
         $this->cleanUp();
 

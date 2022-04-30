@@ -10,7 +10,7 @@ use Kore\DataObject\DataObject;
  */
 class AssignedAttribute extends DataObject
 {
-    public $oxid;
-    public $oxtitle;
-    public $oxvalue;
+    public ?string $oxid;
+    public ?string $oxtitle;
+    public ?string $oxvalue;
 }

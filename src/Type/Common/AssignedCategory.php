@@ -6,9 +6,9 @@ use Kore\DataObject\DataObject;
 
 class AssignedCategory extends DataObject
 {
-    public $catid;
-    public $title;
-    public $shopid;
-    public $pos;
-    public $path;
+    public ?string $catid;
+    public ?string $title;
+    public ?int $shopid;
+    public ?int $pos;
+    public ?string $path;
 }
