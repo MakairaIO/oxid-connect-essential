@@ -264,6 +264,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONARCLOUD_ORGANIZATION: makairaio
+          SONARCLOUD_PROJECT_KEY: MakairaIO_oxid-connect-essential
         with:
           args: >
             -Dsonar.organization=${{ env.SONARCLOUD_ORGANIZATION }}
