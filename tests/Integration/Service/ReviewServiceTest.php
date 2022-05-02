@@ -22,7 +22,7 @@ class ReviewServiceTest extends IntegrationTestCase
         self::assertEquals($expected, $reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093'));
     }
 
-    public function testThrowsExceptionForInvalidProductId()
+    public function testThrowsExceptionIfCreateReviewForInvalidProductId()
     {
         $user = $this->loginToTestingUser();
 
@@ -31,7 +31,11 @@ class ReviewServiceTest extends IntegrationTestCase
         $this->expectExceptionMessage("Failed loading product");
 
         $reviewService->createReview('phpunit42', 5, 'PHPUnit Test', $user);
+    }
 
+    public function testThrowsExceptionIfGettingReviewsForInvalidProductId()
+    {
+        $reviewService = new ReviewService();
         $this->expectException(Exception::class);
         $this->expectExceptionMessage("Failed loading product");
 
