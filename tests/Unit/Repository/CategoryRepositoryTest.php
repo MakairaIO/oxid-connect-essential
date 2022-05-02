@@ -9,6 +9,7 @@ use Makaira\OxidConnectEssential\Repository\AbstractRepository;
 use Makaira\OxidConnectEssential\Repository\CategoryRepository;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
+use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Category\Category;
 use OxidEsales\TestingLibrary\UnitTestCase;
 use ParseError;
@@ -68,7 +69,8 @@ class CategoryRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
-        $modifiersMock->expects($this->once())->method('applyModifiers')->willReturn('modified');
+        $type = new Category(['id' => 42]);
+        $modifiersMock->expects($this->once())->method('applyModifiers')->willReturn($type);
 
         $change = $repository->get(42);
         $this->assertEquals(

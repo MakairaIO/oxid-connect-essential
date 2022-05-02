@@ -175,21 +175,21 @@ services:
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\BlacklistModifier:
-    arguments:
+    bind:
       $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_category", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: -1 }
       - { name: 'makaira.importer.modifier.variant', priority: -1 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\BlacklistModifier:
-    arguments:
+    bind:
       $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_manufacturer", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: -1 }
       - { name: 'makaira.importer.modifier.variant', priority: -1 }
 
   Makaira\OxidConnectEssential\Modifier\Product\BlacklistModifier:
-    arguments:
+    bind:
       $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_product", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: -1 }
@@ -208,11 +208,11 @@ services:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\LongDescriptionModifier:
-    arguments:
+    bind:
       $parseThroughSmarty: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("bl_perfParseLongDescinSmarty")'
 
   Makaira\OxidConnectEssential\Modifier\Common\PriceModifier:
-    arguments:
+    bind:
       $isNetto: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blEnterNetPrice")'
       $showNetto: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blShowNetPrice")'
       $defaultVAT: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("dDefaultVAT")'
@@ -229,7 +229,7 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier:
     abstract: true
-    arguments:
+    bind:
       $isMultiShop: '@=service("Makaira_OxidConnectEssential_Oxid_Config").isMall()'
 
   Makaira\OxidConnectEssential\Modifier\Product\ShopModifier:
@@ -304,17 +304,17 @@ services:
   Makaira_OxidConnectEssential_Oxid_Article:
     class: OxidEsales\Eshop\Application\Model\Article
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
-    arguments: ['OxidEsales\Eshop\Application\Model\Article']
+    bind: ['OxidEsales\Eshop\Application\Model\Article']
 
   Makaira_OxidConnectEssential_Oxid_Category:
     class: OxidEsales\Eshop\Application\Model\Category
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
-    arguments: ['OxidEsales\Eshop\Application\Model\Category']
+    bind: ['OxidEsales\Eshop\Application\Model\Category']
 
   Makaira_OxidConnectEssential_Oxid_Manufacturer:
     class: OxidEsales\Eshop\Application\Model\Manufacturer
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
-    arguments: ['OxidEsales\Eshop\Application\Model\Manufacturer']
+    bind: ['OxidEsales\Eshop\Application\Model\Manufacturer']
 
   Makaira_OxidConnectEssential_Oxid_Session:
     class: OxidEsales\Eshop\Core\Session
@@ -327,21 +327,21 @@ services:
   Makaira_OxidConnectEssential_Oxid_FrontEndController:
     class: OxidEsales\Eshop\Application\Controller\FrontendController
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
-    arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
+    bind: ['OxidEsales\Eshop\Application\Controller\FrontendController']
     calls:
       - ['addGlobalParams']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
-    arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
+    bind: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer:
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
-    arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
+    bind: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderArticle:
     factory: ['OxidEsales\Eshop\Core\Registry', 'get']
-    arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
+    bind: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
 
   Makaira\OxidConnectEssential\Service\UserService:
     public: true

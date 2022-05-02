@@ -69,7 +69,8 @@ class VariantRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
-        $modifiersMock->expects(self::once())->method('applyModifiers')->willReturn('modified');
+        $type = new Variant(['id' => 42]);
+        $modifiersMock->expects(self::once())->method('applyModifiers')->willReturn($type);
 
         $change = $repository->get(42);
         self::assertEquals(

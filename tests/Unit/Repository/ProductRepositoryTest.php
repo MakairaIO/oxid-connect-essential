@@ -73,6 +73,7 @@ class ProductRepositoryTest extends TestCase
          */
         [$modifiersMock, $repository] = $this->createRepository([['id' => 42]]);
 
+        $type = new Product(['id' => 42]);
         $modifiersMock
             ->expects($this->once())
             ->method('applyModifiers')

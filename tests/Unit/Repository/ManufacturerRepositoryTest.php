@@ -79,10 +79,11 @@ class ManufacturerRepositoryTest extends UnitTestCase
          */
         [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
+        $type = new Manufacturer(['id' => 42]);
         $modifiersMock
             ->expects($this->once())
             ->method('applyModifiers')
-            ->willReturn('modified');
+            ->willReturn($type);
 
         $change = $repository->get(42);
         $this->assertEquals(
