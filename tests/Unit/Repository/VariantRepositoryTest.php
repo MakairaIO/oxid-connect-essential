@@ -77,7 +77,7 @@ class VariantRepositoryTest extends UnitTestCase
             new Change([
                     'id'   => 42,
                     'type' => 'variant',
-                    'data' => 'modified',
+                    'data' => $type,
                 ]),
             $change
         );
@@ -102,7 +102,7 @@ class VariantRepositoryTest extends UnitTestCase
     private function createRepository(array $dbRow = [], string $fetchMethod = 'fetchAssociative'): array
     {
         $resultSet = $this->createMock(Result::class);
-        $resultSet->method($fetchMethod)->willReturnCallback(static fn() => $dbRow);
+        $resultSet->method($fetchMethod)->willReturn($dbRow);
 
         $databaseMock = $this->createMock(Connection::class);
         $databaseMock->method('executeQuery')->willReturn($resultSet);

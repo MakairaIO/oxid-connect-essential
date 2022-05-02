@@ -71,20 +71,20 @@ class ProductRepositoryTest extends TestCase
          * @var MockObject<ModifierList> $modifiersMock
          * @var AbstractRepository $repository
          */
-        [$modifiersMock, $repository] = $this->createRepository([['id' => 42]]);
+        [$modifiersMock, $repository] = $this->createRepository(['id' => 42]);
 
         $type = new Product(['id' => 42]);
         $modifiersMock
             ->expects($this->once())
             ->method('applyModifiers')
-            ->willReturn('modified');
+            ->willReturn($type);
 
         $change = $repository->get(42);
         $this->assertEquals(
             new Change([
                 'id' => 42,
                 'type' => 'product',
-                'data' => 'modified',
+                'data' => $type,
             ]),
             $change
         );
@@ -109,7 +109,7 @@ class ProductRepositoryTest extends TestCase
     private function createRepository(array $dbRow = [], string $fetchMethod = 'fetchAssociative'): array
     {
         $resultSet = $this->createMock(Result::class);
-        $resultSet->method($fetchMethod)->willReturnCallback(static fn() => $dbRow);
+        $resultSet->method($fetchMethod)->willReturn($dbRow);
 
         $databaseMock = $this->createMock(Connection::class);
         $databaseMock->method('executeQuery')->willReturn($resultSet);

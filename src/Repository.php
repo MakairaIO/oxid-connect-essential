@@ -7,7 +7,6 @@ use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Doctrine\DBAL\ParameterType;
-use Makaira\Import\Changes;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
 use Makaira\OxidConnectEssential\Repository\ProductRepository;
 use Makaira\OxidConnectEssential\Type\Product\Product;
@@ -219,11 +218,10 @@ class Repository
 
                 if ($typeVariant === $type && $parentId && $change->data instanceof Type) {
                     $dataKeys = get_object_vars($change->data);
-                    foreach ($dataKeys as $key) {
+                    foreach ($dataKeys as $key => $data) {
                         if (in_array($key, $this->propsExclude, false)) {
                             continue;
                         }
-                        $data = $change->data->{$key};
                         $nullValues = $this->propsSpecial[$key] ?? $this->propsNullValues;
                         if (in_array($key, $this->propsInclude, false) || in_array($data, $nullValues, true)) {
                             $change->data->{$key} = $this->parentProducts[$parentId]->data->{$key};

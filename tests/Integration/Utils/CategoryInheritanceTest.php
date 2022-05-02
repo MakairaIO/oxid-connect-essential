@@ -13,12 +13,12 @@ class CategoryInheritanceTest extends TestCase
     {
         $databaseMock        = $this->createMock(Connection::class);
         $categoryInheritance = new CategoryInheritance($databaseMock, false);
-        $this->assertSame('phpunit', $categoryInheritance->buildCategoryInheritance('phpunit'));
+        $this->assertSame(['phpunit'], $categoryInheritance->buildCategoryInheritance('phpunit'));
     }
 
     public function testReturnArrayIfInheritanceIsUsed()
     {
-        $ids = ['phpunit_21', 'phpunit_42', 'phpunit_84'];
+        $ids = ['fad569d6659caca39bc93e98d13dd58b', 'phpunit_21', 'phpunit_42', 'phpunit_84'];
 
         $resultMock = $this->createMock(Result::class);
         $resultMock->expects($this->once())->method('fetchFirstColumn')->willReturn($ids);
