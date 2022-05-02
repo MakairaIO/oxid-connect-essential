@@ -12,8 +12,6 @@ use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
-use function var_export;
-
 class CategoryTest extends UnitTestCase
 {
     public function testItSupportsCategoryModel()

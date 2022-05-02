@@ -6,30 +6,37 @@ use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
-use Makaira\OxidConnectEssential\RevisionHandler\Extractor\GraduatedPrices;
-use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
-use OxidEsales\Eshop\Application\Model\Object2Category;
+use Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleSelectList;
+use OxidEsales\Eshop\Application\Model\Article as OxidArticle;
 use OxidEsales\Eshop\Core\Model\BaseModel;
+use OxidEsales\Eshop\Core\TableViewNameGenerator;
+use OxidEsales\TestingLibrary\UnitTestCase;
 use PHPUnit\Framework\TestCase;
 
-class GraduatedPricesTest extends TestCase
+class ArticleSelectListTest extends UnitTestCase
 {
     public function testItSupportsBaseModel()
     {
-        $dataExtractor = new GraduatedPrices($this->createMock(Connection::class));
+        $dataExtractor = new ArticleSelectList(
+            $this->createMock(Connection::class),
+            $this->createMock(TableViewNameGenerator::class)
+        );
 
         $model = new BaseModel();
-        $model->init('oxprice2article');
+        $model->init('oxobject2selectlist');
 
         $actual = $dataExtractor->supports($model);
         $this->assertTrue($actual);
     }
 
-    public function testItDoesNotSupportManufacturerModel()
+    public function testItDoesNotSupportProductModel()
     {
-        $dataExtractor = new GraduatedPrices($this->createMock(Connection::class));
+        $dataExtractor = new ArticleSelectList(
+            $this->createMock(Connection::class),
+            $this->createMock(TableViewNameGenerator::class)
+        );
 
-        $actual = $dataExtractor->supports(new OxidManufacturer());
+        $actual = $dataExtractor->supports(new OxidArticle());
         $this->assertFalse($actual);
     }
 
@@ -55,7 +62,7 @@ class GraduatedPricesTest extends TestCase
             ->method('fetchOne')
             ->willReturn($parentId);
 
-        $sql = "SELECT `OXPARENTID` FROM `oxarticles` WHERE `OXID` = ?";
+        $sql = "SELECT `OXPARENTID` FROM `phpunit_oxarticles_de` WHERE `OXID` = ?";
 
         $db = $this->createMock(Connection::class);
         $db->expects($this->once())
@@ -63,10 +70,17 @@ class GraduatedPricesTest extends TestCase
             ->with($sql)
             ->willReturn($statementMock);
 
-        $model = $this->createMock(Object2Category::class);
+        $viewNameGenerator = $this->createMock(TableViewNameGenerator::class);
+        $viewNameGenerator
+            ->expects($this->once())
+            ->method('getViewName')
+            ->with('oxarticles')
+            ->willReturn('phpunit_oxarticles_de');
+
+        $model = $this->createMock(BaseModel::class);
         $model->method('getRawFieldData')->with('oxobjectid')->willReturn('phpunit42');
 
-        $articleExtractor = new GraduatedPrices($db);
+        $articleExtractor = new ArticleSelectList($db, $viewNameGenerator);
         $actual = $articleExtractor->extract($model);
 
         $changed = new DateTimeImmutable();
