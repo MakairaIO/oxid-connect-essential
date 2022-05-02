@@ -91,17 +91,16 @@ class TableTranslator
      */
     public function translate(string $sql): string
     {
-        $newSql = $sql;
         foreach ($this->searchTables as $searchTable) {
             $viewNameGenerator = $this->viewNameGenerator;
             $replaceTable = $viewNameGenerator($searchTable, $this->language, $this->shopId);
-            $newSql          = (string) preg_replace_callback(
+            $sql          = (string) preg_replace_callback(
                 "((?P<tableName>{$searchTable})(?P<end>[^A-Za-z0-9_]|$))",
                 static fn ($match) => $replaceTable . $match['end'],
                 $sql
             );
         }
 
-        return $newSql;
+        return $sql;
     }
 }
