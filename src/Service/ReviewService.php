@@ -10,21 +10,24 @@ use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Field;
 use OxidEsales\Eshop\Core\Model\ListModel;
 use OxidEsales\Eshop\Core\Registry;
-use OxidEsales\EshopCommunity\Core\Field as FieldAlias;
 
 class ReviewService
 {
-    public function getReviews(string $productId, int $limit = null, int $offset = null): array
+    public function getReviews(string $productId, int $limit = null, int $offset = 0): array
     {
         $product = oxNew(Article::class);
-        $product->load($productId);
+        $isLoaded = $product->load($productId);
+
+        if (!$isLoaded) {
+            throw new Exception("Failed loading product");
+        }
 
         /** @var ListModel $reviews */
         $reviews = $product->getReviews();
         $reviewsArray = $reviews->getArray();
 
         if ($limit > 0) {
-            $reviewsArray = array_slice($reviewsArray, $offset ?? 0, $limit);
+            $reviewsArray = array_slice($reviewsArray, $offset, $limit);
         }
 
         $result = [];

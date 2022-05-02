@@ -27,12 +27,13 @@ class UserService
     {
         /** @var User $user */
         $user = oxNew(User::class);
+
+        $user->login($username, $password, $rememberLogin);
+
         // this user is blocked, deny him
         if ($user->inGroup('oxidblocked')) {
             throw new UserBlockedException('User blocked');
         }
-
-        $user->login($username, $password, $rememberLogin);
 
         // after login
         if ($this->session->isSessionStarted()) {

@@ -2,8 +2,10 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Service;
 
+use Makaira\OxidConnectEssential\Exception\InvalidCartItem;
 use Makaira\OxidConnectEssential\Service\CartService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
+use OxidEsales\Eshop\Application\Model\Basket;
 use OxidEsales\EshopCommunity\Core\Registry;
 
 class CartServiceTest extends IntegrationTestCase
@@ -11,7 +13,7 @@ class CartServiceTest extends IntegrationTestCase
     public function test()
     {
         // Empty cart at first time
-        $cartService = new CartService(Registry::getSession()->getBasket());
+        $cartService = new CartService(new Basket());
         self::assertEquals([], $cartService->getCartItems());
 
         // Add a product to cart
@@ -43,5 +45,22 @@ class CartServiceTest extends IntegrationTestCase
         // Add a product to cart
         $cartService->removeCartItem('5f62f5daee9ecb4b4389918a2b070643');
         self::assertEquals([], $cartService->getCartItems());
+    }
+
+    /**
+     * @return void
+     * @throws InvalidCartItem
+     * @throws \OxidEsales\Eshop\Core\Exception\ArticleInputException
+     * @throws \OxidEsales\Eshop\Core\Exception\NoArticleException
+     * @throws \OxidEsales\Eshop\Core\Exception\OutOfStockException
+     */
+    public function testThrowExceptionOnInvalidCartItemId()
+    {
+        $cartService = new CartService(new Basket());
+
+        $this->expectException(InvalidCartItem::class);
+        $this->expectExceptionMessage("Invalid cart_item_id: phpunit42");
+
+        $cartService->updateCartItem('phpunit42', 42);
     }
 }

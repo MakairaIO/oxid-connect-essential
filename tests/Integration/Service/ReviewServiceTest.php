@@ -2,6 +2,7 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Service;
 
+use Exception;
 use Makaira\OxidConnectEssential\Service\ReviewService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 
@@ -19,6 +20,22 @@ class ReviewServiceTest extends IntegrationTestCase
             ]
         ];
         self::assertEquals($expected, $reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093'));
+    }
+
+    public function testThrowsExceptionForInvalidProductId()
+    {
+        $user = $this->loginToTestingUser();
+
+        $reviewService = new ReviewService();
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage("Failed loading product");
+
+        $reviewService->createReview('phpunit42', 5, 'PHPUnit Test', $user);
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage("Failed loading product");
+
+        $reviewService->getReviews('phpunit42');
     }
 
     public function testCreateReviews()
@@ -43,6 +60,22 @@ class ReviewServiceTest extends IntegrationTestCase
         ];
 
         $reviews = $reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093');
+        $reviews[0]['created_at'] = "XXXX-XX-XX XX:XX:XX";
+        self::assertEquals($expected, $reviews);
+    }
+
+    public function testGetOnlyPartialReviews()
+    {
+        $reviewService = new ReviewService();
+        $reviews = $reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093', 1, 0);
+        $expected = [
+            [
+                "reviewer_name" => 'John Doe',
+                "rating" => "5",
+                "text" => "testing review",
+                "created_at" => "XXXX-XX-XX XX:XX:XX"
+            ],
+        ];
         $reviews[0]['created_at'] = "XXXX-XX-XX XX:XX:XX";
         self::assertEquals($expected, $reviews);
     }
