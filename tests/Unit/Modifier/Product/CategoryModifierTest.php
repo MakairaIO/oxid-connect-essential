@@ -34,7 +34,13 @@ class CategoryModifierTest extends UnitTestCase
                         'title'  => 'mytitle',
                         'active'  => 1
                     ],
-                ]
+                ],
+                [
+                    [
+                        'title'  => 'mytitle_inactive',
+                        'active'  => 0
+                    ],
+                ],
             );
 
         $databaseMock = $this->createMock(Connection::class);
