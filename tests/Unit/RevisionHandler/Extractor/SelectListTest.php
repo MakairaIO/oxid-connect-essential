@@ -11,9 +11,9 @@ use OxidEsales\Eshop\Application\Model\Category as OxidCategory;
 use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
 use OxidEsales\Eshop\Application\Model\SelectList as SelectListModel;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
-use PHPUnit\Framework\TestCase;
+use OxidEsales\TestingLibrary\UnitTestCase;
 
-class SelectListTest extends TestCase
+class SelectListTest extends UnitTestCase
 {
     public function testItSupportsSelectListModel()
     {

@@ -10,9 +10,9 @@ use Makaira\OxidConnectEssential\RevisionHandler\Extractor\GraduatedPrices;
 use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
 use OxidEsales\Eshop\Application\Model\Object2Category;
 use OxidEsales\Eshop\Core\Model\BaseModel;
-use PHPUnit\Framework\TestCase;
+use OxidEsales\TestingLibrary\UnitTestCase;
 
-class GraduatedPricesTest extends TestCase
+class GraduatedPricesTest extends UnitTestCase
 {
     public function testItSupportsBaseModel()
     {
