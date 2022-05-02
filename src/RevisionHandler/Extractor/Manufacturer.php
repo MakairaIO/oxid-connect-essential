@@ -38,7 +38,7 @@ class Manufacturer extends AbstractModelDataExtractor
      */
     public function extract(BaseModel $model): array
     {
-        $revisions   = [$this->buildRevistion(Revision::TYPE_MANUFACTURER, $model->getId())];
+        $revisions   = [$this->buildRevision(Revision::TYPE_MANUFACTURER, $model->getId())];
         $articleView = $this->viewNameGenerator->getViewName('oxarticles');
 
         $statement = $this->connection->prepare(
@@ -49,10 +49,10 @@ class Manufacturer extends AbstractModelDataExtractor
         $statement->execute([$model->getId()]);
 
         /** @var array<array<string, string>> $parentIds */
-        $parentIds = $statement->fetchAssociative();
-        foreach ($parentIds as $product) {
-            $type        = $product['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT;
-            $revisions[] = $this->buildRevistion($type, $product['OXID']);
+        $parentIds = $statement->fetchAllKeyValue();
+        foreach ($parentIds as $productId => $parentId) {
+            $type        = $parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT;
+            $revisions[] = $this->buildRevision($type, $productId);
         }
 
         return array_replace(...$revisions);

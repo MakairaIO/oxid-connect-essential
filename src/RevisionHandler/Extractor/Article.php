@@ -16,7 +16,7 @@ class Article extends AbstractModelDataExtractor
      */
     public function extract(BaseModel $model): array
     {
-        return $this->buildRevistion(
+        return $this->buildRevision(
             $model->getParentId() ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
             $model->getId()
         );

@@ -50,10 +50,10 @@ class SelectList extends AbstractModelDataExtractor
 
         $revisions = [];
         /** @var array<array<string, string>> $parentIds */
-        $parentIds = $statement->fetchAssociative();
-        foreach ($parentIds as $product) {
-            $type        = $product['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT;
-            $revisions[] = $this->buildRevistion($type, $product['OXOBJECTID']);
+        $parentIds = $statement->fetchAllKeyValue();
+        foreach ($parentIds as $productId => $parentId) {
+            $type        = $parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT;
+            $revisions[] = $this->buildRevision($type, $productId);
         }
 
         return array_replace([], ...$revisions);

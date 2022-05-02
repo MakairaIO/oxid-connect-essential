@@ -15,12 +15,12 @@ abstract class AbstractModelDataExtractor implements ModelDataExtractorInterface
      *
      * @return array<Revision>
      */
-    protected function buildRevistion(
+    protected function buildRevision(
         string $type,
         string $objectId,
         ?DateTimeInterface $changed = null,
         ?int $revision = null
-    ) {
+    ): array {
         $key = sprintf('%s-%s', $type, $objectId);
 
         return [$key => new Revision($type, $objectId, $changed, $revision)];

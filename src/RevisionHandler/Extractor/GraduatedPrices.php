@@ -49,7 +49,7 @@ class GraduatedPrices extends AbstractModelDataExtractor
 
         $parentId = $this->statement->fetchOne();
 
-        return $this->buildRevistion($parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $productId);
+        return $this->buildRevision($parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $productId);
     }
 
     /**
