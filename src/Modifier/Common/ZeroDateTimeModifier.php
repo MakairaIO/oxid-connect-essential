@@ -23,8 +23,7 @@ class ZeroDateTimeModifier extends Modifier
     public function apply(Type $type)
     {
         $properties = get_object_vars($type);
-        foreach ($properties as $property) {
-            $value = $type->{$property};
+        foreach ($properties as $property => $value) {
             if (is_array($value)) {
                 $type->{$property} = array_map(fn ($item) => $this->isZeroDate($item) ? null : $item, $value);
             }
