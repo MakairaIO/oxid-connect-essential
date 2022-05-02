@@ -35,7 +35,7 @@ class SelectListTest extends TestCase
         $this->assertFalse($actual);
     }
 
-    public function testCreatesRevisionsForManufacturerAndProducts()
+    public function testCreatesRevisionsForProducts()
     {
         $productIds = [
             'product1' => '',
@@ -57,10 +57,8 @@ class SelectListTest extends TestCase
             ->method('fetchAllKeyValue')
             ->willReturn($productIds);
 
-        $sql = "SELECT `o2sl`.`OXOBJECTID`, `a`.`OXPARENTID`
-            FROM `phpunit_oxobject2selectlist_de` `o2sl`
-            LEFT JOIN `oxarticles` `a` ON `a`.`OXID` = `o2sl`.`OXOBJECTID`
-            WHERE `o2sl`.`OXSELNID` = ?";
+        $sql = 'SELECT `o2sl`.`OXOBJECTID`, `a`.`OXPARENTID` FROM `phpunit_oxobject2selectlist_de` `o2sl` ';
+        $sql .= 'LEFT JOIN `phpunit_oxarticles_de` `a` ON `a`.`OXID` = `o2sl`.`OXOBJECTID` WHERE `o2sl`.`OXSELNID` = ?';
 
         $db = $this->createMock(Connection::class);
         $db->expects($this->once())
@@ -69,7 +67,14 @@ class SelectListTest extends TestCase
             ->willReturn($statementMock);
 
         $viewNameCallback = function (string $table) {
-            return ($table === 'oxobject2selectlist') ? 'phpunit_oxobject2selectlist_de' : 'phpunit_42_table';
+            switch ($table) {
+                case 'oxobject2selectlist':
+                    return 'phpunit_oxobject2selectlist_de';
+                case 'oxarticles':
+                    return 'phpunit_oxarticles_de';
+                default:
+                    return 'phpunit_42_table';
+            }
         };
 
         $viewNameGenerator = $this->createMock(TableViewNameGenerator::class);

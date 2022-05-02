@@ -41,11 +41,9 @@ class Manufacturer extends AbstractModelDataExtractor
         $revisions   = [$this->buildRevision(Revision::TYPE_MANUFACTURER, $model->getId())];
         $articleView = $this->viewNameGenerator->getViewName('oxarticles');
 
-        $statement = $this->connection->prepare(
-            "SELECT a.OXID, a.OXPARENTID
-            FROM `{$articleView}` a
-            WHERE a.`OXMANUFACTURERID` = ?"
-        );
+        $query     = "SELECT a.OXID, a.OXPARENTID FROM `{$articleView}` a WHERE a.`OXMANUFACTURERID` = ?";
+        $statement = $this->connection->prepare($query);
+
         $statement->execute([$model->getId()]);
 
         /** @var array<array<string, string>> $parentIds */

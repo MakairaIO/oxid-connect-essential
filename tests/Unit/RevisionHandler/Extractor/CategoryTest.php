@@ -58,10 +58,8 @@ class CategoryTest extends UnitTestCase
             ->method('fetchAllKeyValue')
             ->willReturn($productIds);
 
-        $sql = "SELECT o2c.OXOBJECTID, a.OXPARENTID
-            FROM `phpunit_oxobject2category_de` o2c
-            LEFT JOIN `phpunit_oxarticles_de` a ON a.`OXID` = o2c.`OXOBJECTID`
-            WHERE o2c.`OXCATNID` = ?";
+        $sql = 'SELECT o2c.OXOBJECTID, a.OXPARENTID FROM `phpunit_oxobject2category_de` o2c ';
+        $sql .= 'LEFT JOIN `phpunit_oxarticles_de` a ON a.`OXID` = o2c.`OXOBJECTID` WHERE o2c.`OXCATNID` = ?';
         $db = $this->createMock(Connection::class);
         $db->expects($this->once())
             ->method('prepare')

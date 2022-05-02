@@ -58,9 +58,7 @@ class ManufacturerTest extends UnitTestCase
             ->method('fetchAllKeyValue')
             ->willReturn($productIds);
 
-        $sql = "SELECT a.OXID, a.OXPARENTID
-            FROM `phpunit_oxarticles_de` a
-            WHERE a.`OXMANUFACTURERID` = ?";
+        $sql = "SELECT a.OXID, a.OXPARENTID FROM `phpunit_oxarticles_de` a WHERE a.`OXMANUFACTURERID` = ?";
 
         $db = $this->createMock(Connection::class);
         $db->expects($this->once())

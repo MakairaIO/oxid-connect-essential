@@ -39,13 +39,12 @@ class SelectList extends AbstractModelDataExtractor
     public function extract(BaseModel $model): array
     {
         $articleSelectListView = $this->viewNameGenerator->getViewName('oxobject2selectlist');
+        $productView = $this->viewNameGenerator->getViewName('oxarticles');
 
-        $statement = $this->connection->prepare(
-            "SELECT `o2sl`.`OXOBJECTID`, `a`.`OXPARENTID`
-            FROM `{$articleSelectListView}` `o2sl`
-            LEFT JOIN `oxarticles` `a` ON `a`.`OXID` = `o2sl`.`OXOBJECTID`
-            WHERE `o2sl`.`OXSELNID` = ?"
-        );
+        $sql = "SELECT `o2sl`.`OXOBJECTID`, `a`.`OXPARENTID` FROM `{$articleSelectListView}` `o2sl` ";
+        $sql .= "LEFT JOIN `{$productView}` `a` ON `a`.`OXID` = `o2sl`.`OXOBJECTID` WHERE `o2sl`.`OXSELNID` = ?";
+
+        $statement = $this->connection->prepare($sql);
         $statement->execute([$model->getId()]);
 
         $revisions = [];

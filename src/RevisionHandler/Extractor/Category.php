@@ -40,12 +40,10 @@ class Category extends AbstractModelDataExtractor
         $articleCategoryView = $this->viewNameGenerator->getViewName('oxobject2category');
         $articleView         = $this->viewNameGenerator->getViewName('oxarticles');
 
-        $statement = $this->connection->prepare(
-            "SELECT o2c.OXOBJECTID, a.OXPARENTID
-            FROM `{$articleCategoryView}` o2c
-            LEFT JOIN `{$articleView}` a ON a.`OXID` = o2c.`OXOBJECTID`
-            WHERE o2c.`OXCATNID` = ?"
-        );
+        $query = "SELECT o2c.OXOBJECTID, a.OXPARENTID FROM `{$articleCategoryView}` o2c ";
+        $query .= "LEFT JOIN `{$articleView}` a ON a.`OXID` = o2c.`OXOBJECTID` WHERE o2c.`OXCATNID` = ?";
+
+        $statement = $this->connection->prepare($query);
         $statement->execute([$model->getId()]);
 
         /** @var array<array<string, string>> $parentIds */
