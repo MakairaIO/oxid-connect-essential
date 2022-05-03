@@ -34,7 +34,7 @@ $aModule = [
         OxidAdminController\SelectListMainAjax::class      => ModuleAdminController\SelectListMainAjax::class,
     ],
     'settings'    => [
-        ['name' => 'makaira_connect_secret', 'group' => 'SETTINGS', 'type' => 'str'],
+        ['name' => 'makaira_connect_secret', 'group' => 'SETTINGS', 'type' => 'str', 'value' => 'ChangeThis'],
         ['name' => 'makaira_connect_category_inheritance', 'group' => 'SETTINGS', 'type' => 'bool', 'value' => 0],
         [
             'name'  => 'makaira_field_blacklist_product',

@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Test;
 
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
+use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -10,12 +11,26 @@ use PHPUnit\Framework\TestCase;
  */
 trait TableTranslatorTrait
 {
-    protected function getTableTranslatorMock(): TableTranslator
+    /**
+     * @return TableTranslator|MockObject
+     */
+    protected function getTableTranslatorMock()
     {
-        return $this->createMock(
-            TableTranslator::class,
-            ['translate'],
-            [['oxarticles', 'oxartextends', 'oxattribute', 'oxcategories', 'oxmanufacturers', 'oxobject2attribute']]
-        );
+        $mockBuilder = $this->getMockBuilder(TableTranslator::class)
+            ->setMethodsExcept(['translate'])
+            ->setConstructorArgs(
+                [
+                    [
+                        'oxarticles',
+                        'oxartextends',
+                        'oxattribute',
+                        'oxcategories',
+                        'oxmanufacturers',
+                        'oxobject2attribute',
+                    ],
+                ]
+            );
+
+        return $mockBuilder->getMock();
     }
 }
