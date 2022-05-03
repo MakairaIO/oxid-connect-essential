@@ -40,19 +40,23 @@ abstract class IntegrationTestCase extends UnitTestCase
         $this->snapshotCount = 0;
     }
 
-    protected function getConnectRequest($body, $secret = self::SECRET): Request
+    protected function getConnectRequest($rawBody, string $secret = self::SECRET, bool $encodeBody = true): Request
     {
         $nonce = md5(random_bytes(32));
 
-        $jsonBody = json_encode($body, JSON_THROW_ON_ERROR);
-        $signature = (new Sha256())->hash($nonce, $jsonBody, $secret);
+        $body = $rawBody;
+        if ($encodeBody) {
+            $body = json_encode($rawBody, JSON_THROW_ON_ERROR);
+        }
+
+        $signature = (new Sha256())->hash($nonce, $body, $secret);
 
         $server = [
             'HTTP_X-MAKAIRA-NONCE' => $nonce,
             'HTTP_X-MAKAIRA-HASH'  => $signature,
         ];
 
-        return new Request([], [], [], [], [], $server, $jsonBody);
+        return new Request([], [], [], [], [], $server, $body);
     }
 
     /**
