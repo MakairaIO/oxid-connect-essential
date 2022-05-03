@@ -21,17 +21,30 @@ class Endpoint extends FrontendController
 {
     use SymfonyContainerTrait;
 
-    public function render(): string
+    public function render()
     {
         ini_set('html_errors', 'off');
 
+        $response = $this->handleRequest(Request::createFromGlobals());
+
+        $response->send();
+        exit(0);
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return Response
+     */
+    public function handleRequest(Request $request): Response
+    {
         $container  = $this->getSymfonyContainer();
         /** @var RpcService $rpcService */
         $rpcService = $container->get(RpcService::class);
 
         $exception = null;
         try {
-            $responseContent = $rpcService->handleRequest(Request::createFromGlobals());
+            $responseContent = $rpcService->handleRequest($request);
             $statusCode      = 200;
         } catch (HttpException $exception) {
             $responseContent = ['message' => $exception->getMessage()];
@@ -47,19 +60,6 @@ class Endpoint extends FrontendController
             $responseContent['stack'] = explode(PHP_EOL, $exception->getTraceAsString());
         }
 
-        $this->sendAndShutdown(new JsonResponse($responseContent, $statusCode));
-
-        return $this->_sThisTemplate;
-    }
-
-    /**
-     * @param Response $response
-     *
-     * @return void
-     */
-    private function sendAndShutdown(Response $response): void
-    {
-        $response->send();
-        exit(0);
+        return new JsonResponse($responseContent, $statusCode);
     }
 }

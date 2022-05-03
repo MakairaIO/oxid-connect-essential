@@ -2,11 +2,8 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration;
 
-use Makaira\HttpClient;
-use Makaira\HttpClient\Curl;
-use Makaira\HttpClient\Signing;
 use Makaira\OxidConnectEssential\Service\UserService;
-use Makaira\OxidConnectEssential\Test\ConnectClient;
+use Makaira\Signing\Hash\Sha256;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Session;
 use OxidEsales\EshopCommunity\Core\Registry;
@@ -14,6 +11,7 @@ use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Configuration\Bridge\ModuleSettingBridgeInterface;
 use OxidEsales\TestingLibrary\UnitTestCase;
 use Psr\Container\ContainerInterface;
+use Symfony\Component\HttpFoundation\Request;
 
 use function basename;
 use function debug_backtrace;
@@ -22,12 +20,10 @@ use function file_exists;
 use function file_put_contents;
 use function is_dir;
 use function json_encode;
-use function ltrim;
 use function mkdir;
-use function rtrim;
+use function random_bytes;
 use function sprintf;
 use function str_replace;
-use function strpos;
 
 use const JSON_PRETTY_PRINT;
 use const JSON_THROW_ON_ERROR;
@@ -44,47 +40,19 @@ abstract class IntegrationTestCase extends UnitTestCase
         $this->snapshotCount = 0;
     }
 
-    /**
-     * @return HttpClient
-     */
-    protected function getHttpClient(): HttpClient
+    protected function getConnectRequest($body, $secret = self::SECRET): Request
     {
-        $baseUrl       = $this->getTestConfig()->getShopUrl();
+        $nonce = md5(random_bytes(32));
 
-        return new class (new Curl(10, 1), $baseUrl) extends HttpClient {
-            private HttpClient $aggregate;
+        $jsonBody = json_encode($body, JSON_THROW_ON_ERROR);
+        $signature = (new Sha256())->hash($nonce, $jsonBody, $secret);
 
-            private string $baseUrl;
+        $server = [
+            'HTTP_X-MAKAIRA-NONCE' => $nonce,
+            'HTTP_X-MAKAIRA-HASH'  => $signature,
+        ];
 
-            public function __construct(HttpClient $aggregate, string $baseUrl)
-            {
-                $this->aggregate = $aggregate;
-                $this->baseUrl   = rtrim(rtrim($baseUrl, '/'));
-            }
-
-            public function request($method, $url, $body = null, array $headers = [])
-            {
-                if (false === strpos($url, 'http:') && false === strpos($url, 'https:')) {
-                    $url = ltrim(ltrim($url, '/'));
-                    $url = "{$this->baseUrl}/{$url}";
-                }
-
-                return $this->aggregate->request($method, $url, $body, $headers);
-            }
-        };
-    }
-
-    /**
-     * @param string $secret
-     *
-     * @return ConnectClient
-     */
-    protected function getConnectClient(string $secret = self::SECRET): ConnectClient
-    {
-        $signingClient = new Signing($this->getHttpClient(), $secret);
-        $connectUrl = rtrim($this->getTestConfig()->getShopUrl(), '/') . '/?cl=makaira_connect_endpoint';
-
-        return new ConnectClient($signingClient, $connectUrl);
+        return new Request([], [], [], [], [], $server, $jsonBody);
     }
 
     /**
