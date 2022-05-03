@@ -31,6 +31,7 @@ services:
       $extractors: !tagged makaira_connect_essential.model_data_extractor
 
   Makaira\OxidConnectEssential\Repository:
+    public: true
     bind:
       $repositories: !tagged makaira_connect_essential.repository
       $parentsPurchasable: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blVariantParentBuyable")'
