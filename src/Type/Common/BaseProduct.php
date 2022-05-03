@@ -33,7 +33,7 @@ class BaseProduct extends Type
     public string $manufacturerid = '';
     public string $manufacturer_title = '';
     public float $price = 0.00;
-    public ?string $insert;
+    public ?string $insert = null;
     public int $soldamount = 0;
     public float $rating = 0.0;
     public bool $searchable = true;

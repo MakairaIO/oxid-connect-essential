@@ -30,7 +30,7 @@ class Change extends \Kore\DataObject\DataObject
     /**
      * @var Type|null
      */
-    public ?Type $data;
+    public ?Type $data = null;
 
     /**
      * @var string

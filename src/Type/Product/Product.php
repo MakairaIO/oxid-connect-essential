@@ -15,10 +15,10 @@ class Product extends BaseProduct
 
     public string $parent = '';
 
-    public ?string $meta_keywords;
-    public ?string $meta_description;
-    public ?string $maincategory;
-    public ?string $maincategoryurl;
+    public ?string $meta_keywords = null;
+    public ?string $meta_description = null;
+    public ?string $maincategory = null;
+    public ?string $maincategoryurl = null;
 
     public float $mak_boost_norm_insert = 0.0;
     public float $mak_boost_norm_sold = 0.0;
@@ -27,11 +27,11 @@ class Product extends BaseProduct
     public float $mak_boost_norm_profit_margin = 0.0;
 
     public bool $isVariant = false;
-    public ?string $activeto;
-    public ?string $activefrom;
+    public ?string $activeto = null;
+    public ?string $activefrom = null;
     public array $suggest = [];
     public array $category = [];
-    public ?string $TRACKING;
+    public ?string $TRACKING = null;
 
     public array $tmpAttributeStr = [];
     public array $tmpAttributeInt = [];

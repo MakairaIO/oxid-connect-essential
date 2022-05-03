@@ -2,18 +2,20 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 
+use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 
-use OxidEsales\Eshop\Core\Registry;
-
 use function json_encode;
-use function var_export;
-
-use const JSON_PRETTY_PRINT;
-use const JSON_THROW_ON_ERROR;
 
 class EndpointTest extends IntegrationTestCase
 {
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        static::setModuleSetting('makaira_connect_secret', parent::SECRET);
+    }
+
     public function testResponsesWith403ForInvalidSignature()
     {
         $client = $this->getConnectClient('s3cr3t');
@@ -29,5 +31,24 @@ class EndpointTest extends IntegrationTestCase
 
         $this->assertSame(200, $response->status);
         $this->assertSame(['de', 'en'], $response->body);
+    }
+
+    public function testFetchChangesFromShop()
+    {
+        /** @var Repository $repo */
+        $repo = static::getContainer()->get(Repository::class);
+        $repo->touchAll();
+
+        $client = $this->getConnectClient();
+        $response = $client->request(
+            [
+                'action' => 'getUpdates',
+                'since' => 0,
+                'count' => 1000,
+            ]
+        );
+
+        $this->assertSame(200, $response->status, json_encode($response->body, JSON_THROW_ON_ERROR));
+        $this->assertSnapshot($response->body);
     }
 }

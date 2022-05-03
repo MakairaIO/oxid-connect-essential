@@ -43,7 +43,7 @@ class BoostFieldModifier extends Modifier
     public function apply(Type $type)
     {
         /** @var string $insertDate */
-        $insertDate = $type->additionalData['OXINSERT'];
+        $insertDate = (string) $type->additionalData['OXINSERT'];
 
         $type->mak_boost_norm_insert = $this->boostFieldUtilities->normalizeTimestamp($insertDate, 'insert');
 

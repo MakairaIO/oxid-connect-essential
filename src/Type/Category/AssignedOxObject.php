@@ -6,6 +6,6 @@ use Kore\DataObject\DataObject;
 
 class AssignedOxObject extends DataObject
 {
-    public ?string $oxid;
-    public ?int $oxpos;
+    public ?string $oxid = null;
+    public ?int $oxpos = null;
 }
