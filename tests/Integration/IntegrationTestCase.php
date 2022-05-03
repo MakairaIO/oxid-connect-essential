@@ -13,14 +13,12 @@ use OxidEsales\EshopCommunity\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Configuration\Bridge\ModuleSettingBridgeInterface;
 use OxidEsales\TestingLibrary\UnitTestCase;
-
 use Psr\Container\ContainerInterface;
 
 use function basename;
 use function debug_backtrace;
 use function dirname;
 use function file_exists;
-use function file_get_contents;
 use function file_put_contents;
 use function is_dir;
 use function json_encode;
@@ -137,6 +135,7 @@ abstract class IntegrationTestCase extends UnitTestCase
      * @param mixed $actual
      *
      * @return void
+     * @throws \JsonException
      */
     protected function assertSnapshot($actual)
     {
