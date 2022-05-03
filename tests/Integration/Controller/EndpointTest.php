@@ -5,7 +5,6 @@ namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
 use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
-
 use Symfony\Component\HttpFoundation\Request;
 
 use function json_decode;
