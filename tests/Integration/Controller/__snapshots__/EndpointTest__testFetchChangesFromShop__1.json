@@ -1,0 +1,1727 @@
+{
+    "since": 25,
+    "count": 25,
+    "requestedCount": 25,
+    "changes": [
+        {
+            "id": "3a909e7c886063857e86982c7a3c5b84",
+            "sequence": 26,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "3a909e7c886063857e86982c7a3c5b84",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "3a97c94553428daed76ba83e54d3876f",
+            "sequence": 27,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "3a97c94553428daed76ba83e54d3876f",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "3a9fd0ec4b41d001e770b1d2d7af3e73",
+            "sequence": 28,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "3a9fd0ec4b41d001e770b1d2d7af3e73",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "90a0b84564cde2394491df1c673b6aa0",
+            "sequence": 29,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "90a0b84564cde2394491df1c673b6aa0",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "90a3eccf9d7121a9ca7d659f29021b7a",
+            "sequence": 30,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "90a3eccf9d7121a9ca7d659f29021b7a",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "90a8a18dd0cf0e7aec5238f30e1c6106",
+            "sequence": 31,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "90a8a18dd0cf0e7aec5238f30e1c6106",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "9434afb379a46d6c141de9c9e5b94fcf",
+            "sequence": 32,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "9434afb379a46d6c141de9c9e5b94fcf",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adc566c366db8eaf30c6c124a09e82b3",
+            "sequence": 33,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "adc566c366db8eaf30c6c124a09e82b3",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adc6df0977329923a6330cc8f3c0a906",
+            "sequence": 34,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "adc6df0977329923a6330cc8f3c0a906",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adca51c88a3caa1c7b939fd6a229ae3a",
+            "sequence": 35,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "adca51c88a3caa1c7b939fd6a229ae3a",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": false,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adca6aa4df3f95b6b46e28d4fc5855ba",
+            "sequence": 36,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "adca6aa4df3f95b6b46e28d4fc5855ba",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": false,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "dc50589ad69b6ec71721b25bdd403171",
+            "sequence": 37,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "dc50589ad69b6ec71721b25bdd403171",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": false,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "dc59459d4d67189182c53ed0e4e777bc",
+            "sequence": 38,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "dc59459d4d67189182c53ed0e4e777bc",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": false,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "dc5ec524a9aa6175cf7a498d70ce510a",
+            "sequence": 39,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "dc5ec524a9aa6175cf7a498d70ce510a",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "oiaf6ab7e12e86291e86dd3ff891fe40",
+            "sequence": 40,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": null,
+                "shortdesc": null,
+                "meta_keywords": null,
+                "meta_description": null,
+                "es_id": null,
+                "id": "oiaf6ab7e12e86291e86dd3ff891fe40",
+                "timestamp": null,
+                "url": "en\/By-Manufacturer\/oxid\/",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": [],
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "05848170643ab0deb9914566391c0c63",
+            "sequence": 41,
+            "deleted": false,
+            "data": {
+                "attributes": [],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
+                "maincategoryurl": "en\/Kiteboarding\/Harnesses\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "0f41a4463b227c437f6e6bf57b1697c4",
+                        "title": "Trapeze",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Trapeze\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 15,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "05848170643ab0deb9914566391c0c63",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "0584e8b766a4de2177f9ed11d1587f55",
+            "sequence": 42,
+            "deleted": false,
+            "data": {
+                "attributes": [],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
+                "maincategoryurl": "en\/Kiteboarding\/Supplies\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "fc7e7bd8403448f00a363f60f44da8f2",
+                        "title": "Zubeh\u00f6r",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Zubeh\u00f6r\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "wei\u00df"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "schwarz"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 61,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "0584e8b766a4de2177f9ed11d1587f55",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "058de8224773a1d5fd54d523f0c823e0",
+            "sequence": 43,
+            "deleted": false,
+            "data": {
+                "attributes": [],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
+                "maincategoryurl": "en\/Kiteboarding\/Kiteboards\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "0f4f08358666c54b4fde3d83d2b7ef04",
+                        "title": "Kiteboards",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Kiteboards\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 13,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "058de8224773a1d5fd54d523f0c823e0",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "058e613db53d782adfc9f2ccb43c45fe",
+            "sequence": 44,
+            "deleted": false,
+            "data": {
+                "attributes": [],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
+                "maincategoryurl": "en\/Wakeboarding\/Bindings\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "0f40c6a077b68c21f164767c4a903fd2",
+                        "title": "Bindungen",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Wakeboarding\/Bindungen\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 16,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "058e613db53d782adfc9f2ccb43c45fe",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "531b537118f5f4d7a427cdb825440922",
+            "sequence": 45,
+            "deleted": false,
+            "data": {
+                "attributes": [
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Super Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
+                    }
+                ],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d863b76c6bb90a970a5577adf890e8cd",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Smoke Gray"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Super Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Smoke Gray"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Super Blue"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 140,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "531b537118f5f4d7a427cdb825440922",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "531f91d4ab8bfb24c4d04e473d246d0b",
+            "sequence": 46,
+            "deleted": false,
+            "data": {
+                "attributes": [
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32"
+                    }
+                ],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d8665fef35f4d528e92c3d664f4a00c0",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 9,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "531f91d4ab8bfb24c4d04e473d246d0b",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b6099c305f591cb39d4314e9a823fc1",
+            "sequence": 47,
+            "deleted": false,
+            "data": {
+                "attributes": [
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet"
+                    }
+                ],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "d86779840626d3ab8263b62db85df3f0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d86779840626d3ab8263b62db85df3f0",
+                        "title": "Shirts & Co.",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "M"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Clover"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Violet"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 100,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "6b6099c305f591cb39d4314e9a823fc1",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b63456b3abeeeccd9b085a76ffba1a3",
+            "sequence": 48,
+            "deleted": false,
+            "data": {
+                "attributes": [
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
+                    }
+                ],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d863b76c6bb90a970a5577adf890e8cd",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 63,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "6b63456b3abeeeccd9b085a76ffba1a3",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b63f459c781fa42edeb889242304014",
+            "sequence": 49,
+            "deleted": false,
+            "data": {
+                "attributes": [
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
+                        "9438ac75bac3e344628b14bf7ed82c15": "White"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "White",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S",
+                        "9438ac75bac3e344628b14bf7ed82c15": "White"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "White",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "White",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L"
+                    }
+                ],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "d86779840626d3ab8263b62db85df3f0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d86779840626d3ab8263b62db85df3f0",
+                        "title": "Shirts & Co.",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "White"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "M"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "White"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 17,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "6b63f459c781fa42edeb889242304014",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b66d82af984e5ad46b9cb27b1ef8aae",
+            "sequence": 50,
+            "deleted": false,
+            "data": {
+                "attributes": [
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "6b6e77de7a04de54f1aa63cfeca2f487": "Bangle Blue"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32",
+                        "6b6e77de7a04de54f1aa63cfeca2f487": "Bangle Blue"
+                    },
+                    {
+                        "6b6e77de7a04de54f1aa63cfeca2f487": "Bangle Blue",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34"
+                    }
+                ],
+                "parent": "",
+                "meta_keywords": null,
+                "meta_description": null,
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
+                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d863b76c6bb90a970a5577adf890e8cd",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "attributeStr": [
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Bangle Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "418fa487bf06eb6f14ffa32115a762d2",
+                        "title": "Washing  (VarSelect)",
+                        "value": "Predded Green"
+                    },
+                    {
+                        "id": "418fa487bf06eb6f14ffa32115a762d2",
+                        "title": "Washing  (VarSelect)",
+                        "value": "Bangle Blue"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "",
+                "stock": 19,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": null,
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "es_id": null,
+                "id": "6b66d82af984e5ad46b9cb27b1ef8aae",
+                "timestamp": null,
+                "url": "en\/oxid.html",
+                "active": true,
+                "shop": [
+                    null
+                ],
+                "additionalData": {
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        }
+    ]
+}

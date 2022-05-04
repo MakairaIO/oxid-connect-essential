@@ -53,12 +53,7 @@ class ManufacturerRepository extends AbstractRepository
 
     protected function getAllIdsQuery(): string
     {
-        return "
-          SELECT
-           OXID
-          FROM
-           oxmanufacturers;
-        ";
+        return "SELECT OXID FROM oxmanufacturers ORDER BY OXID";
     }
 
     protected function getParentIdQuery(): ?string

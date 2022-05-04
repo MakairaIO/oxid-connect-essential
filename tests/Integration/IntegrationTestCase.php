@@ -2,6 +2,7 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration;
 
+use JsonException;
 use Makaira\OxidConnectEssential\Service\UserService;
 use Makaira\Signing\Hash\Sha256;
 use OxidEsales\Eshop\Application\Model\User;
@@ -106,10 +107,10 @@ abstract class IntegrationTestCase extends UnitTestCase
     /**
      * @param mixed $actual
      *
-     * @return void
-     * @throws \JsonException
+     * @return void|bool
+     * @throws JsonException
      */
-    protected function assertSnapshot($actual)
+    protected function assertSnapshot($actual, ?string $message = null, bool $continueIfIncomplete = false)
     {
         $backtrace = debug_backtrace();
         $snapshotDir = dirname($backtrace[0]['file']) . '/__snapshots__';
@@ -121,6 +122,8 @@ abstract class IntegrationTestCase extends UnitTestCase
             $this->snapshotCount
         );
 
+        $this->snapshotCount++;
+
         if (!is_dir($snapshotDir)) {
             mkdir($snapshotDir, 0755, true);
         }
@@ -129,13 +132,19 @@ abstract class IntegrationTestCase extends UnitTestCase
 
         if (!file_exists($snapshotFile)) {
             file_put_contents($snapshotFile, json_encode($actual, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT));
-            $this->markTestIncomplete();
+            if (!$continueIfIncomplete) {
+                $this->markTestIncomplete();
+            }
+
+            return false;
         }
 
         $actualJson = json_encode($actual, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
 
-        $this->assertStringEqualsFileCanonicalizing($snapshotFile, $actualJson);
+        if (null === $message) {
+            $message = sprintf("Current object doesn't match the contents of %s", $snapshotFilename);
+        }
 
-        $this->snapshotCount++;
+        $this->assertStringEqualsFileCanonicalizing($snapshotFile, $actualJson, $message);
     }
 }

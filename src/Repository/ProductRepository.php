@@ -51,26 +51,12 @@ class ProductRepository extends AbstractRepository
 
     protected function getAllIdsQuery(): string
     {
-        return "
-          SELECT
-            OXID
-          FROM
-            oxarticles
-          WHERE
-            OXPARENTID = ''
-        ";
+        return "SELECT OXID FROM oxarticles WHERE OXPARENTID = '' ORDER BY OXID";
     }
 
     protected function getParentIdQuery(): string
     {
-        return "
-          SELECT
-            OXPARENTID
-          FROM
-            oxarticles
-          WHERE
-            oxarticles.oxid = :id
-        ";
+        return "SELECT OXPARENTID FROM oxarticles WHERE oxarticles.oxid = :id";
     }
 
     public function getParentId(string $id): ?string

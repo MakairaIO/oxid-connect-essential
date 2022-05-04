@@ -59,10 +59,7 @@ class MainCategoryModifier extends Modifier
             $sql = "SELECT `OXCATNID` FROM `oxobject2category` WHERE `OXOBJECTID`= ? ORDER BY `OXTIME` LIMIT 1";
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
-                $sql,
-                [$type->additionalData['OXPARENTID'] ?: $type->additionalData['OXID']]
-            );
+            $resultStatement = $this->database->executeQuery($sql, [$type->parent ?: $type->id]);
 
             /** @var string $categoryId */
             $categoryId = $resultStatement->fetchOne();

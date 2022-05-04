@@ -44,23 +44,11 @@ class CategoryRepository extends AbstractRepository
 
     protected function getAllIdsQuery(): string
     {
-        return "
-          SELECT
-           OXID
-          FROM
-           oxcategories;
-        ";
+        return "SELECT OXID FROM oxcategories ORDER BY OXID";
     }
 
     protected function getParentIdQuery(): string
     {
-        return "
-          SELECT
-            OXPARENTID
-          FROM
-            oxcategories
-          WHERE
-            oxcategories.oxid = :id
-        ";
+        return "SELECT OXPARENTID FROM oxcategories WHERE oxcategories.oxid = :id";
     }
 }

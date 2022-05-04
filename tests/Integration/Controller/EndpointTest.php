@@ -84,17 +84,22 @@ class EndpointTest extends IntegrationTestCase
         $repo = static::getContainer()->get(Repository::class);
         $repo->touchAll();
 
-        $body = [
-            'action' => 'getUpdates',
-            'since'  => 0,
-            'count'  => 1000,
-        ];
-        $request = $this->getConnectRequest($body);
+        for ($since = 0;; $since += 25) {
+            $body    = [
+                'action' => 'getUpdates',
+                'since'  => $since,
+                'count'  => 25,
+            ];
+            $request = $this->getConnectRequest($body);
 
-        $controller = new Endpoint();
-        $rawResponse = $controller->handleRequest($request);
-        $response = json_decode($rawResponse->getContent(), false, 512, JSON_THROW_ON_ERROR);
+            $controller  = new Endpoint();
+            $rawResponse = $controller->handleRequest($request);
+            $response    = json_decode($rawResponse->getContent(), true, 512, JSON_THROW_ON_ERROR);
 
-        $this->assertSnapshot($response);
+            $this->assertSnapshot($response, null, true);
+            if ($response['count'] === 0) {
+                break;
+            }
+        }
     }
 }

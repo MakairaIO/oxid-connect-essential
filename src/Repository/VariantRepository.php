@@ -48,13 +48,6 @@ class VariantRepository extends ProductRepository
 
     protected function getAllIdsQuery(): string
     {
-        return "
-          SELECT
-            OXID
-          FROM
-            oxarticles
-          WHERE
-            OXPARENTID != ''
-        ";
+        return "SELECT OXID FROM oxarticles WHERE NOT OXPARENTID = '' ORDER BY OXPARENTID, OXID";
     }
 }
