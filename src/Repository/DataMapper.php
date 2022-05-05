@@ -2,12 +2,14 @@
 
 namespace Makaira\OxidConnectEssential\Repository;
 
+use Closure;
 use Makaira\OxidConnectEssential\Type;
-
 use ReflectionClass;
 
-use function array_keys;
-use function array_values;
+use ReflectionNamedType;
+
+use ReflectionProperty;
+
 use function get_class;
 
 class DataMapper
@@ -52,7 +54,7 @@ class DataMapper
     /**
      * @SuppressWarnings(CyclomaticComplexity)
      */
-    public function map(Type $entity, array $dbResult, string $docType)
+    public function map(Type $entity, array $dbResult, string $docType): void
     {
         $mappingFields = [];
 
@@ -106,7 +108,7 @@ class DataMapper
     /**
      * @param Type $entity
      *
-     * @return array<string, string>
+     * @return array<string, Closure>
      */
     private function getFieldDataTypes(Type $entity): array
     {
@@ -116,10 +118,11 @@ class DataMapper
             self::$dataTypes[$entityClass] = [];
 
             $reflection = new ReflectionClass($entity);
-            $properties = $reflection->getProperties(\ReflectionProperty::IS_PUBLIC);
+            $properties = $reflection->getProperties(ReflectionProperty::IS_PUBLIC);
             foreach ($properties as $property) {
                 if (
                     null !== ($propertyType = $property->getType()) &&
+                    $propertyType instanceof ReflectionNamedType &&
                     !('string' === $propertyType->getName() && $propertyType->allowsNull())
                 ) {
                     $converter = eval("return static fn (\$value) => ({$propertyType->getName()}) \$value;");

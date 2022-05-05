@@ -206,4 +206,5 @@ abstract class IntegrationTestCase extends UnitTestCase
         }
 
         return $text;
-    }}
+    }
+}
