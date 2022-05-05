@@ -8,7 +8,6 @@ use JsonException;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
 use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
-use Makaira\OxidConnectEssential\Type\Product\Product;
 use OxidEsales\Eshop\Application\Model\Article;
 use OxidEsales\Eshop\Application\Model\Attribute;
 use OxidEsales\Eshop\Core\Model\MultiLanguageModel;
@@ -18,9 +17,7 @@ use Symfony\Component\HttpFoundation\Request;
 use function array_map;
 use function end;
 use function json_decode;
-
 use function md5;
-
 use function preg_replace;
 
 use const JSON_THROW_ON_ERROR;
