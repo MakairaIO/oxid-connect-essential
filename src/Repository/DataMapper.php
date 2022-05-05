@@ -5,9 +5,7 @@ namespace Makaira\OxidConnectEssential\Repository;
 use Closure;
 use Makaira\OxidConnectEssential\Type;
 use ReflectionClass;
-
 use ReflectionNamedType;
-
 use ReflectionProperty;
 
 use function get_class;
