@@ -136,21 +136,7 @@ abstract class IntegrationTestCase extends UnitTestCase
      */
     protected function assertSnapshot($actual, ?string $message = null, bool $continueIfIncomplete = false)
     {
-        $backtrace = debug_backtrace();
-        /** @var false|string $testCaseClass */
-        $testCaseClass = false;
-        foreach ($backtrace as $call) {
-            if (str_ends_with($call['class'], 'Test')) {
-                $testCaseClass = $call['class'];
-                break;
-            }
-        }
-
-        if (false === $testCaseClass) {
-            throw new RuntimeException("Can't find test case");
-        }
-
-        $reflection = new ReflectionClass($testCaseClass);
+        $reflection = new ReflectionClass($this);
 
         $snapshotDir = dirname($reflection->getFileName()) . '/__snapshots__';
 
