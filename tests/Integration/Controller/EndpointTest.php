@@ -15,8 +15,13 @@ use OxidEsales\Eshop\Core\Model\MultiLanguageModel;
 use ReflectionException;
 use Symfony\Component\HttpFoundation\Request;
 
+use function array_map;
 use function end;
 use function json_decode;
+
+use function md5;
+
+use function preg_replace;
 
 use const JSON_THROW_ON_ERROR;
 
@@ -192,6 +197,14 @@ class EndpointTest extends IntegrationTestCase
             $response    = json_decode($rawResponse->getContent(), true, 512, JSON_THROW_ON_ERROR);
 
             if ($response['count'] > 0) {
+                $response['changes'] = array_map(
+                    static function (array $change) {
+                        $change['data']['timestamp'] = preg_replace('/\d/', 'X', $change['data']['timestamp']);
+
+                        return $change;
+                    },
+                    $response['changes']
+                );
                 $this->assertSnapshot($response, null, true);
                 $lastChange = end($response['changes']);
                 $since      = $lastChange['sequence'];
