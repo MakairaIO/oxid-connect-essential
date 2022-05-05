@@ -30,7 +30,7 @@ class GetReplicationStatus implements HandlerInterface
     {
         $indices = $request['indices'] ?? [];
 
-        foreach ($request['indices'] as &$index) {
+        foreach ($indices as &$index) {
             $index['openChanges'] = $this->repository->countChanges($index['lastRevision']);
         }
         unset($index);

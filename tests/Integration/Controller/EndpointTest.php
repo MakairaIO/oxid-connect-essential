@@ -2,13 +2,13 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 
+use Doctrine\DBAL\Connection;
 use Exception;
 use JsonException;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
 use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 use OxidEsales\Eshop\Application\Model\Attribute;
-use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\Model\MultiLanguageModel;
 use ReflectionException;
 use Symfony\Component\HttpFoundation\Request;
@@ -101,6 +101,19 @@ class EndpointTest extends IntegrationTestCase
      * @return void
      * @throws JsonException
      */
+    public function testResponsesWith400IfSinceIsMissing(): void
+    {
+        $request  = $this->getConnectRequest(['action' => 'getUpdates','count' => 25]);
+        $endpoint = new Endpoint();
+        $response = $endpoint->handleRequest($request);
+
+        $this->assertEquals(400, $response->getStatusCode());
+    }
+
+    /**
+     * @return void
+     * @throws JsonException
+     */
     public function testCanGetLanguagesFromShop(): void
     {
         $request  = $this->getConnectRequest(['action' => 'listLanguages']);
@@ -109,6 +122,45 @@ class EndpointTest extends IntegrationTestCase
 
         $this->assertSame(200, $response->getStatusCode());
         $this->assertSame(['de', 'en'], json_decode($response->getContent(), true, 512, JSON_THROW_ON_ERROR));
+    }
+
+    /**
+     * @return void
+     * @throws JsonException
+     */
+    public function testCanGetReplicationStatus(): void
+    {
+        $this->touchAll();
+
+        $request  = $this->getConnectRequest(
+            [
+                'action'  => 'getReplicationStatus',
+                'indices' => [
+                    'de' => [
+                        'lastRevision' => 250,
+                    ],
+                    'en' => [
+                        'lastRevision' => 250,
+                    ],
+                ],
+            ]
+        );
+        $endpoint = new Endpoint();
+        $response = $endpoint->handleRequest($request);
+
+        $this->assertSame(200, $response->getStatusCode());
+
+        $expected = [
+            'de' => [
+                'lastRevision' => 250,
+                'openChanges'  => 7,
+            ],
+            'en' => [
+                'lastRevision' => 250,
+                'openChanges'  => 7,
+            ],
+        ];
+        $this->assertSame($expected, json_decode($response->getContent(), true, 512, JSON_THROW_ON_ERROR));
     }
 
     /**
@@ -257,6 +309,17 @@ class EndpointTest extends IntegrationTestCase
 
         self::setModuleSetting('makaira_attribute_as_int', [$intAttributeId]);
         self::setModuleSetting('makaira_attribute_as_float', [$floatAttributeId]);
+        $this->touchAll();
+    }
+
+    /**
+     * @return void
+     */
+    private function touchAll(): void
+    {
+        $db = static::getContainer()->get(Connection::class);
+        $db->executeQuery('TRUNCATE makaira_connect_changes');
+        $db->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 
         /** @var Repository $repo */
         $repo = static::getContainer()->get(Repository::class);

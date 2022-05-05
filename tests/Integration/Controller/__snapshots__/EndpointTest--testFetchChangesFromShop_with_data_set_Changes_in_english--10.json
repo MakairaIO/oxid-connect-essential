@@ -1,11 +1,11 @@
 {
-    "since": 507,
+    "since": 250,
     "count": 7,
     "requestedCount": 25,
     "changes": [
         {
             "id": "096fec4cae008af69c9087228bd8af38",
-            "sequence": 508,
+            "sequence": 251,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -169,7 +169,7 @@
         },
         {
             "id": "10002696d80479437dda4882c77b3bd8",
-            "sequence": 509,
+            "sequence": 252,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -323,7 +323,7 @@
         },
         {
             "id": "10049f9322cf8852f8d567e9662cb12c",
-            "sequence": 510,
+            "sequence": 253,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -477,7 +477,7 @@
         },
         {
             "id": "10067ab25bf275b7e68bc0431b204d24",
-            "sequence": 511,
+            "sequence": 254,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -631,7 +631,7 @@
         },
         {
             "id": "1008b12cef0476f5e941da460ba621e6",
-            "sequence": 512,
+            "sequence": 255,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -785,7 +785,7 @@
         },
         {
             "id": "dc53d3c0ca2ae7c38bf51f3410da0bf8",
-            "sequence": 513,
+            "sequence": 256,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -944,7 +944,7 @@
         },
         {
             "id": "dc5ae3d43f96269ed3c62172e383be40",
-            "sequence": 514,
+            "sequence": 257,
             "deleted": false,
             "data": {
                 "isVariant": true,

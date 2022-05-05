@@ -5,7 +5,7 @@
     "changes": [
         {
             "id": "0f40c6a077b68c21f164767c4a903fd2",
-            "sequence": 258,
+            "sequence": 1,
             "deleted": false,
             "data": {
                 "category_title": "Bindungen",
@@ -72,7 +72,7 @@
         },
         {
             "id": "0f41a4463b227c437f6e6bf57b1697c4",
-            "sequence": 259,
+            "sequence": 2,
             "deleted": false,
             "data": {
                 "category_title": "Trapeze",
@@ -139,7 +139,7 @@
         },
         {
             "id": "0f4270b89fbef1481958381410a0dbca",
-            "sequence": 260,
+            "sequence": 3,
             "deleted": false,
             "data": {
                 "category_title": "Wakeboards",
@@ -206,7 +206,7 @@
         },
         {
             "id": "0f4f08358666c54b4fde3d83d2b7ef04",
-            "sequence": 261,
+            "sequence": 4,
             "deleted": false,
             "data": {
                 "category_title": "Kiteboards",
@@ -273,7 +273,7 @@
         },
         {
             "id": "0f4fb00809cec9aa0910aa9c8fe36751",
-            "sequence": 262,
+            "sequence": 5,
             "deleted": false,
             "data": {
                 "category_title": "Kites",
@@ -340,7 +340,7 @@
         },
         {
             "id": "30e44ab83fdee7564.23264141",
-            "sequence": 263,
+            "sequence": 6,
             "deleted": false,
             "data": {
                 "category_title": "Bekleidung",
@@ -407,7 +407,7 @@
         },
         {
             "id": "943173edecf6d6870a0f357b8ac84d32",
-            "sequence": 264,
+            "sequence": 7,
             "deleted": false,
             "data": {
                 "category_title": "Wakeboarding",
@@ -474,7 +474,7 @@
         },
         {
             "id": "943a9ba3050e78b443c16e043ae60ef3",
-            "sequence": 265,
+            "sequence": 8,
             "deleted": false,
             "data": {
                 "category_title": "Kiteboarding",
@@ -541,7 +541,7 @@
         },
         {
             "id": "d862abc1f98741797cf889eb4a9090ad",
-            "sequence": 266,
+            "sequence": 9,
             "deleted": false,
             "data": {
                 "category_title": "Shirts & Co.",
@@ -608,7 +608,7 @@
         },
         {
             "id": "d863b76c6bb90a970a5577adf890e8cd",
-            "sequence": 267,
+            "sequence": 10,
             "deleted": false,
             "data": {
                 "category_title": "Jeans",
@@ -675,7 +675,7 @@
         },
         {
             "id": "d8665fef35f4d528e92c3d664f4a00c0",
-            "sequence": 268,
+            "sequence": 11,
             "deleted": false,
             "data": {
                 "category_title": "Jeans",
@@ -742,7 +742,7 @@
         },
         {
             "id": "d86779840626d3ab8263b62db85df3f0",
-            "sequence": 269,
+            "sequence": 12,
             "deleted": false,
             "data": {
                 "category_title": "Shirts & Co.",
@@ -809,7 +809,7 @@
         },
         {
             "id": "d86d90e4b441aa3f0004dcda5ba5bb38",
-            "sequence": 270,
+            "sequence": 13,
             "deleted": false,
             "data": {
                 "category_title": "Sets",
@@ -876,7 +876,7 @@
         },
         {
             "id": "d86fdf0d67bf76dc427aabd2e53e0a97",
-            "sequence": 271,
+            "sequence": 14,
             "deleted": false,
             "data": {
                 "category_title": "Schuhe",
@@ -943,7 +943,7 @@
         },
         {
             "id": "fad181ad64642b955becd0759345161e",
-            "sequence": 272,
+            "sequence": 15,
             "deleted": false,
             "data": {
                 "category_title": "Fashion",
@@ -1010,7 +1010,7 @@
         },
         {
             "id": "fad2a9b0037b71ff1107ae725aae8d1c",
-            "sequence": 273,
+            "sequence": 16,
             "deleted": false,
             "data": {
                 "category_title": "Sonstiges",
@@ -1077,7 +1077,7 @@
         },
         {
             "id": "fad2d80baf7aca6ac54e819e066f24aa",
-            "sequence": 274,
+            "sequence": 17,
             "deleted": false,
             "data": {
                 "category_title": "Neopren",
@@ -1144,7 +1144,7 @@
         },
         {
             "id": "fad4d7e2b47d87bb6a2773d93d4ae9be",
-            "sequence": 275,
+            "sequence": 18,
             "deleted": false,
             "data": {
                 "category_title": "Accessoires",
@@ -1211,7 +1211,7 @@
         },
         {
             "id": "fad569d6659caca39bc93e98d13dd58b",
-            "sequence": 276,
+            "sequence": 19,
             "deleted": false,
             "data": {
                 "category_title": "Sportswear",
@@ -1278,7 +1278,7 @@
         },
         {
             "id": "fad7facadcb7d4297f033d242aa0d310",
-            "sequence": 277,
+            "sequence": 20,
             "deleted": false,
             "data": {
                 "category_title": "F\u00fcr Ihn",
@@ -1345,7 +1345,7 @@
         },
         {
             "id": "fada9485f003c731b7fad08b873214e0",
-            "sequence": 278,
+            "sequence": 21,
             "deleted": false,
             "data": {
                 "category_title": "Anz\u00fcge",
@@ -1412,7 +1412,7 @@
         },
         {
             "id": "fadbdb3145458afc5aa4dbf7eb906761",
-            "sequence": 279,
+            "sequence": 22,
             "deleted": false,
             "data": {
                 "category_title": "F\u00fcr Sie",
@@ -1479,7 +1479,7 @@
         },
         {
             "id": "fadcb6dd70b9f6248efa425bd159684e",
-            "sequence": 280,
+            "sequence": 23,
             "deleted": false,
             "data": {
                 "category_title": "Angebote",
@@ -1546,7 +1546,7 @@
         },
         {
             "id": "fc7e7bd8403448f00a363f60f44da8f2",
-            "sequence": 281,
+            "sequence": 24,
             "deleted": false,
             "data": {
                 "category_title": "Zubeh\u00f6r",
@@ -1613,7 +1613,7 @@
         },
         {
             "id": "oia9ff5c96f1f29d527b61202ece0829",
-            "sequence": 282,
+            "sequence": 25,
             "deleted": false,
             "data": {
                 "category_title": "Downloads",
