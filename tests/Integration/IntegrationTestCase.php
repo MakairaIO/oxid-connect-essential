@@ -3,18 +3,23 @@
 namespace Makaira\OxidConnectEssential\Test\Integration;
 
 use JsonException;
+use Makaira\OxidConnectEssential\Exception\UserBlockedException;
 use Makaira\OxidConnectEssential\Service\UserService;
 use Makaira\Signing\Hash\Sha256;
 use OxidEsales\Eshop\Application\Model\User;
+use OxidEsales\Eshop\Core\Exception\CookieException;
+use OxidEsales\Eshop\Core\Exception\UserException;
 use OxidEsales\Eshop\Core\Session;
 use OxidEsales\EshopCommunity\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Configuration\Bridge\ModuleSettingBridgeInterface;
 use OxidEsales\TestingLibrary\UnitTestCase;
 use Psr\Container\ContainerInterface;
+use ReflectionClass;
+use ReflectionException;
+use RuntimeException;
 use Symfony\Component\HttpFoundation\Request;
 
-use function basename;
 use function debug_backtrace;
 use function dirname;
 use function file_exists;
@@ -24,7 +29,7 @@ use function json_encode;
 use function mkdir;
 use function random_bytes;
 use function sprintf;
-use function str_replace;
+use function str_ends_with;
 
 use const JSON_PRETTY_PRINT;
 use const JSON_THROW_ON_ERROR;
@@ -41,6 +46,14 @@ abstract class IntegrationTestCase extends UnitTestCase
         $this->snapshotCount = 0;
     }
 
+    /**
+     * @param mixed  $rawBody
+     * @param string $secret
+     * @param bool   $encodeBody
+     *
+     * @return Request
+     * @throws JsonException
+     */
     protected function getConnectRequest($rawBody, string $secret = self::SECRET, bool $encodeBody = true): Request
     {
         $nonce = md5(random_bytes(32));
@@ -87,6 +100,14 @@ abstract class IntegrationTestCase extends UnitTestCase
         $moduleSettings->save($name, $value, $moduleId);
     }
 
+    /**
+     * @param Session|null $session
+     *
+     * @return User
+     * @throws UserBlockedException
+     * @throws CookieException
+     * @throws UserException
+     */
     protected function loginToTestingUser(Session $session = null): User
     {
         if (null === $session) {
@@ -105,20 +126,38 @@ abstract class IntegrationTestCase extends UnitTestCase
     }
 
     /**
-     * @param mixed $actual
+     * @param mixed       $actual
+     * @param string|null $message
+     * @param bool        $continueIfIncomplete
      *
      * @return void|bool
      * @throws JsonException
+     * @throws ReflectionException
      */
     protected function assertSnapshot($actual, ?string $message = null, bool $continueIfIncomplete = false)
     {
         $backtrace = debug_backtrace();
-        $snapshotDir = dirname($backtrace[0]['file']) . '/__snapshots__';
+        /** @var false|string $testCaseClass */
+        $testCaseClass = false;
+        foreach ($backtrace as $call) {
+            if (str_ends_with($call['class'], 'Test')) {
+                $testCaseClass = $call['class'];
+                break;
+            }
+        }
+
+        if (false === $testCaseClass) {
+            throw new RuntimeException("Can't find test case");
+        }
+
+        $reflection = new ReflectionClass($testCaseClass);
+
+        $snapshotDir = dirname($reflection->getFileName()) . '/__snapshots__';
 
         $snapshotFilename = sprintf(
             '%s__%s__%u.json',
-            basename(str_replace('\\', '/', $backtrace[1]['class'])),
-            $backtrace[1]['function'],
+            $reflection->getShortName(),
+            $this->getName(),
             $this->snapshotCount
         );
 

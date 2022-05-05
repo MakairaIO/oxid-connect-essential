@@ -8,6 +8,7 @@ use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
+use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 
 /**
  * Class AttributeModifier
@@ -52,26 +53,21 @@ class VariantAttributesModifier extends Modifier
 
     private string $activeSnippet;
 
-    private array $attributeInt;
-
-    private array $attributeFloat;
+    private ModuleSettingsProvider $moduleSettings;
 
     /**
-     * @param Connection $database
-     * @param string     $activeSnippet
-     * @param array      $attributeInt
-     * @param array      $attributeFloat
+     * @param Connection             $database
+     * @param string                 $activeSnippet
+     * @param ModuleSettingsProvider $moduleSettings
      */
     public function __construct(
         Connection $database,
         string $activeSnippet,
-        array $attributeInt,
-        array $attributeFloat
+        ModuleSettingsProvider $moduleSettings
     ) {
         $this->activeSnippet  = $activeSnippet;
         $this->database       = $database;
-        $this->attributeInt   = array_unique((array) $attributeInt);
-        $this->attributeFloat = array_unique((array) $attributeFloat);
+        $this->moduleSettings = $moduleSettings;
     }
 
     /**
@@ -116,6 +112,12 @@ class VariantAttributesModifier extends Modifier
             $variants = [['id' => '']];
         }
 
+        /** @var array<string> $integerAttributes */
+        $integerAttributes = $this->moduleSettings->get('makaira_attribute_as_int');
+
+        /** @var array<string> $floatAttributes */
+        $floatAttributes = $this->moduleSettings->get('makaira_attribute_as_float');
+
         foreach ($variants as $variant) {
             $id = $variant['id'];
             if ($id) {
@@ -123,9 +125,9 @@ class VariantAttributesModifier extends Modifier
                 $variantAttributes = [];
 
                 foreach ($hashArray as $index => $hash) {
-                    if (in_array($hash, $this->attributeInt, true)) {
+                    if (in_array($hash, $integerAttributes, true)) {
                         $variantAttributes[ $hash ] = (int) $valueArray[ $index ];
-                    } elseif (in_array($hash, $this->attributeFloat, true)) {
+                    } elseif (in_array($hash, $floatAttributes, true)) {
                         $variantAttributes[ $hash ] = (float) $valueArray[ $index ];
                     } else {
                         $variantAttributes[ $hash ] = (string) $valueArray[ $index ];
@@ -151,9 +153,9 @@ class VariantAttributesModifier extends Modifier
                 /** @var string|int|float $value */
                 $value = $attribute['value'];
 
-                if (in_array($hash, $this->attributeInt)) {
+                if (in_array($hash, $integerAttributes)) {
                     $variantAttributes[ $hash ] = (int) $value;
-                } elseif (in_array($hash, $this->attributeFloat)) {
+                } elseif (in_array($hash, $floatAttributes)) {
                     $variantAttributes[ $hash ] = (float) $value;
                 } else {
                     $variantAttributes[ $hash ] = (string) $value;

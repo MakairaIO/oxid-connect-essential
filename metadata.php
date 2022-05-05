@@ -6,12 +6,13 @@ use Makaira\OxidConnectEssential\Controller\Endpoint;
 use Makaira\OxidConnectEssential\Controller\ReviewController;
 use Makaira\OxidConnectEssential\Controller\UserController;
 use Makaira\OxidConnectEssential\Module\Events;
+use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\Eshop\Application\Controller\Admin as OxidAdminController;
 
 $sMetadataVersion = '2.1';
 
 $aModule = [
-    'id'          => 'makaira_oxid-connect-essential',
+    'id'          => ModuleSettingsProvider::MODULE_ID,
     'title'       => 'Makaira Connect Essential',
     'description' => 'This module provides required endpoints to import product data into Makaira.',
     'thumbnail'   => 'makaira.jpg',

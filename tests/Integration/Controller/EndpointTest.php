@@ -5,6 +5,8 @@ namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
 use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
+use OxidEsales\Eshop\Application\Model\Attribute;
+use OxidEsales\Eshop\Core\Model\BaseModel;
 use Symfony\Component\HttpFoundation\Request;
 
 use function json_decode;
@@ -80,10 +82,7 @@ class EndpointTest extends IntegrationTestCase
 
     public function testFetchChangesFromShop()
     {
-        /** @var Repository $repo */
-        $repo = static::getContainer()->get(Repository::class);
-        $repo->touchAll();
-
+        $this->prepareProducts();
         for ($since = 0;; $since += 25) {
             $body    = [
                 'action' => 'getUpdates',
@@ -96,10 +95,69 @@ class EndpointTest extends IntegrationTestCase
             $rawResponse = $controller->handleRequest($request);
             $response    = json_decode($rawResponse->getContent(), true, 512, JSON_THROW_ON_ERROR);
 
-            $this->assertSnapshot($response, null, true);
             if ($response['count'] === 0) {
                 break;
             }
+
+            $this->assertSnapshot($response, null, true);
         }
+    }
+
+    private function prepareProducts()
+    {
+        $testProductId    = '6b6c129c62119185c7779987e7d8cd5c';
+        $intAttributeId   = md5('phphunit_attribute_int');
+        $floatAttributeId = md5('phphunit_attribute_float');
+
+        $intAttribute = new Attribute();
+        $intAttribute->assign(
+            [
+                'oxid'     => $intAttributeId,
+                'oxtitle'  => 'PHPUnit integer attribute',
+                'oxshopid' => 1,
+            ]
+        );
+        $intAttribute->save();
+
+        $floatAttribute = new Attribute();
+        $floatAttribute->assign(
+            [
+                'oxid'     => $floatAttributeId,
+                'oxtitle'  => 'PHPUnit float attribute',
+                'oxshopid' => 1,
+            ]
+        );
+        $floatAttribute->save();
+
+        $articleAttributeInt = new BaseModel();
+        $articleAttributeInt->init('oxobject2attribute');
+        $articleAttributeInt->assign(
+            [
+                'oxid'       => md5("{$testProductId}-{$intAttributeId}"),
+                'oxobjectid' => $testProductId,
+                'oxattrid'   => $intAttributeId,
+                'oxvalue'    => '42',
+            ]
+        );
+        $articleAttributeInt->save();
+
+        $articleAttributeFloat = new BaseModel();
+        $articleAttributeFloat->init('oxobject2attribute');
+        $articleAttributeFloat->assign(
+            [
+                'oxid'       => md5("{$testProductId}-{$floatAttributeId}"),
+                'oxobjectid' => $testProductId,
+                'oxattrid'   => $floatAttributeId,
+                'oxvalue'    => '4.2',
+            ]
+        );
+        $articleAttributeInt->save();
+
+        self::setModuleSetting('makaira_attribute_as_int', [$intAttributeId]);
+        self::setModuleSetting('makaira_attribute_as_float', [$floatAttributeId]);
+
+        /** @var Repository $repo */
+        $repo = static::getContainer()->get(Repository::class);
+        $repo->touchAll();
     }
 }

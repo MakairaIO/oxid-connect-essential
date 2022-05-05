@@ -50,10 +50,6 @@ services:
   Makaira\OxidConnectEssential\Rpc\Handler\GetUpdates:
     tags: [ 'makaira_connect_essential.rpc_handler' ]
 
-  Makaira\OxidConnectEssential\Rpc\SignatureCheck:
-    bind:
-      $secret: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_connect_secret", "makaira_oxid-connect-essential")'
-
   Makaira\Signing\HashGenerator:
     class: Makaira\Signing\Hash\Sha256
 
@@ -132,10 +128,6 @@ services:
       $modifiers: '@Makaira\OxidConnectEssential\Repository\VariantModifierList'
     tags: ['makaira_connect_essential.repository']
 
-  Makaira\OxidConnectEssential\Utils\CategoryInheritance:
-    bind:
-      $useCategoryInheritance: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_connect_category_inheritance", "makaira_oxid-connect-essential")'
-
 
   ### Modifier ###
 
@@ -169,29 +161,21 @@ services:
   Makaira\OxidConnectEssential\Modifier\Common\AttributeModifier:
     bind:
       $activeSnippet: '@=service("Makaira_OxidConnectEssential_Oxid_Article").getSqlActiveSnippet(true)'
-      $attributeInt: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_int", "makaira_oxid-connect-essential")'
-      $attributeFloat: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_float", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\BlacklistModifier:
-    bind:
-      $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_category", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: -1 }
       - { name: 'makaira.importer.modifier.variant', priority: -1 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\BlacklistModifier:
-    bind:
-      $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_manufacturer", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: -1 }
       - { name: 'makaira.importer.modifier.variant', priority: -1 }
 
   Makaira\OxidConnectEssential\Modifier\Product\BlacklistModifier:
-    bind:
-      $blacklistedFields: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_field_blacklist_product", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: -1 }
       - { name: 'makaira.importer.modifier.variant', priority: -1 }
@@ -287,8 +271,6 @@ services:
   Makaira\OxidConnectEssential\Modifier\Product\VariantAttributesModifier:
     bind:
       $activeSnippet: '@=service("Makaira_OxidConnectEssential_Oxid_Article").getSqlActiveSnippet(true)'
-      $attributeInt: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_int", "makaira_oxid-connect-essential")'
-      $attributeFloat: '@=service("OxidEsales\\EshopCommunity\\Internal\\Framework\\Module\\Configuration\\Bridge\\ModuleSettingBridgeInterface").get("makaira_attribute_as_float", "makaira_oxid-connect-essential")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 

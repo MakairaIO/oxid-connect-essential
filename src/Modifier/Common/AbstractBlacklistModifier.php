@@ -13,17 +13,18 @@ namespace Makaira\OxidConnectEssential\Modifier\Common;
 
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
+use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 
 abstract class AbstractBlacklistModifier extends Modifier
 {
-    private array $blacklistedFields;
+    protected ModuleSettingsProvider $moduleSettings;
 
     /**
-     * @param array|null $blacklistedFields
+     * @param ModuleSettingsProvider $moduleSettings
      */
-    public function __construct(?array $blacklistedFields = null)
+    public function __construct(ModuleSettingsProvider $moduleSettings)
     {
-        $this->blacklistedFields = (array) $blacklistedFields;
+        $this->moduleSettings = $moduleSettings;
     }
 
     /**
@@ -35,7 +36,8 @@ abstract class AbstractBlacklistModifier extends Modifier
      */
     public function apply(Type $type)
     {
-        foreach ($this->blacklistedFields as $blacklistedField) {
+        $blacklistedFields = (array) $this->moduleSettings->get($this->getBlacklistedFieldSetting());
+        foreach ($blacklistedFields as $blacklistedField) {
             if (isset($type->$blacklistedField)) {
                 unset($type->$blacklistedField);
             }
@@ -43,4 +45,9 @@ abstract class AbstractBlacklistModifier extends Modifier
 
         return $type;
     }
+
+    /**
+     * @return string
+     */
+    abstract protected function getBlacklistedFieldSetting(): string;
 }

@@ -1575,6 +1575,11 @@
                         "value": "L"
                     },
                     {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "",
+                        "value": "42"
+                    },
+                    {
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "L"
@@ -1585,7 +1590,13 @@
                         "value": "White"
                     }
                 ],
-                "attributeInt": [],
+                "attributeInt": [
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "",
+                        "value": "42"
+                    }
+                ],
                 "attributeFloat": [],
                 "isPseudo": false,
                 "ean": "",

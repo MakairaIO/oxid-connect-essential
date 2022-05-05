@@ -13,6 +13,7 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Manufacturer;
 
 use Makaira\OxidConnectEssential\Modifier\Manufacturer\BlacklistModifier;
 use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
+use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
 class BlacklistModifierTest extends UnitTestCase
@@ -87,7 +88,10 @@ class BlacklistModifierTest extends UnitTestCase
      */
     public function testBlacklistedFields($product, $modifiedProduct, $blacklist)
     {
-        $modifier = new BlacklistModifier($blacklist);
+        $moduleSettingsMock = $this->createMock(ModuleSettingsProvider::class);
+        $moduleSettingsMock->method('get')->willReturn($blacklist);
+
+        $modifier = new BlacklistModifier($moduleSettingsMock);
         $product = $modifier->apply($product);
 
         $this->assertEquals($modifiedProduct, $product);

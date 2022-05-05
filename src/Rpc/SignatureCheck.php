@@ -2,26 +2,27 @@
 
 namespace Makaira\OxidConnectEssential\Rpc;
 
+use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use Makaira\Signing\HashGenerator;
 use Symfony\Component\HttpFoundation\Request;
 
 class SignatureCheck
 {
-    public const HEADER_NONCE = 'X-Makaira-Nonce';
+    public const HEADER_NONCE     = 'X-Makaira-Nonce';
     public const HEADER_SIGNATURE = 'X-Makaira-Hash';
 
     private HashGenerator $hashGenerator;
 
-    private string $secret;
+    private ModuleSettingsProvider $moduleSettings;
 
     /**
-     * @param HashGenerator $hashGenerator
-     * @param string        $secret
+     * @param HashGenerator          $hashGenerator
+     * @param ModuleSettingsProvider $moduleSettings
      */
-    public function __construct(HashGenerator $hashGenerator, string $secret)
+    public function __construct(HashGenerator $hashGenerator, ModuleSettingsProvider $moduleSettings)
     {
-        $this->secret        = $secret;
-        $this->hashGenerator = $hashGenerator;
+        $this->moduleSettings = $moduleSettings;
+        $this->hashGenerator  = $hashGenerator;
     }
 
     /**
@@ -57,7 +58,7 @@ class SignatureCheck
      */
     public function verify(string $nonce, string $body, string $signature): bool
     {
-        $expectedHash = $this->hashGenerator->hash($nonce, $body, $this->secret);
+        $expectedHash = $this->hashGenerator->hash($nonce, $body, $this->moduleSettings->get('makaira_connect_secret'));
 
         return $expectedHash === $signature;
     }

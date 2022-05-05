@@ -389,7 +389,7 @@
                 "meta_description": null,
                 "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
                 "maincategoryurl": "en\/Kiteboarding\/Harnesses\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -458,7 +458,7 @@
                 "meta_description": null,
                 "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
                 "maincategoryurl": "en\/Kiteboarding\/Supplies\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -538,7 +538,7 @@
                 "meta_description": null,
                 "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
                 "maincategoryurl": "en\/Kiteboarding\/Kiteboards\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -607,7 +607,7 @@
                 "meta_description": null,
                 "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
                 "maincategoryurl": "en\/Wakeboarding\/Bindings\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -713,7 +713,7 @@
                 "meta_description": null,
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -893,7 +893,7 @@
                 "meta_description": null,
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1084,7 +1084,7 @@
                 "meta_description": null,
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1237,7 +1237,7 @@
                 "meta_description": null,
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1410,7 +1410,8 @@
                     },
                     {
                         "9438ac75bac3e344628b14bf7ed82c15": "White",
-                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L"
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
+                        "df3e95af29221b89021a3ae7d6e44ee0": 42
                     }
                 ],
                 "parent": "",
@@ -1418,7 +1419,7 @@
                 "meta_description": null,
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1469,6 +1470,11 @@
                         "value": "L"
                     },
                     {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "",
+                        "value": "42"
+                    },
+                    {
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XL"
@@ -1499,7 +1505,13 @@
                         "value": "White"
                     }
                 ],
-                "attributeInt": [],
+                "attributeInt": [
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "",
+                        "value": "42"
+                    }
+                ],
                 "attributeFloat": [],
                 "isPseudo": false,
                 "ean": "",
@@ -1564,7 +1576,7 @@
                 "meta_description": null,
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 1.0700884481372286,
+                "mak_boost_norm_insert": 1.070088807227071,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,

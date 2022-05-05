@@ -11,6 +11,7 @@ use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
 use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
+use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 
 /**
  * Class AttributeModifier
@@ -90,36 +91,25 @@ class AttributeModifier extends Modifier
                             variant.oxid = :productId
                         ';
 
-    /**
-     * @var array
-     */
-    private array $attributeInt;
-
-    /**
-     * @var array
-     */
-    private array $attributeFloat;
+    private ModuleSettingsProvider $moduleSettings;
 
     private Connection $database;
 
     private string $activeSnippet;
 
     /**
-     * @param Connection $database
-     * @param string     $activeSnippet
-     * @param array|null $attributeInt
-     * @param array|null $attributeFloat
+     * @param Connection             $database
+     * @param string                 $activeSnippet
+     * @param ModuleSettingsProvider $moduleSettings
      */
     public function __construct(
         Connection $database,
         string $activeSnippet,
-        ?array $attributeInt = null,
-        ?array $attributeFloat = null
+        ModuleSettingsProvider $moduleSettings
     ) {
         $this->activeSnippet  = $activeSnippet;
         $this->database       = $database;
-        $this->attributeInt   = array_unique((array) $attributeInt);
-        $this->attributeFloat = array_unique((array) $attributeFloat);
+        $this->moduleSettings = $moduleSettings;
     }
 
     /**
@@ -142,6 +132,12 @@ class AttributeModifier extends Modifier
         $resultStatement = $this->database->executeQuery($this->selectAttributesQuery, ['productId' => $product->id,]);
         $attributes      = $resultStatement->fetchAllAssociative();
 
+        /** @var array<string> $integerAttributes */
+        $integerAttributes = $this->moduleSettings->get('makaira_attribute_as_int');
+
+        /** @var array<string> $floatAttributes */
+        $floatAttributes   = $this->moduleSettings->get('makaira_attribute_as_float');
+
         if (false === $product->isVariant) {
             $product->tmpAttributeStr   = [];
             $product->tmpAttributeInt   = [];
@@ -151,10 +147,10 @@ class AttributeModifier extends Modifier
                 $product->tmpAttributeStr[] = $attribute;
 
                 $attributeId = $attributeData['id'];
-                if (in_array($attributeId, $this->attributeInt)) {
+                if (in_array($attributeId, $integerAttributes)) {
                     $product->tmpAttributeInt[] = $attribute;
                 }
-                if (in_array($attributeId, $this->attributeFloat)) {
+                if (in_array($attributeId, $floatAttributes)) {
                     $product->tmpAttributeFloat[] = $attribute;
                 }
             }
@@ -183,10 +179,10 @@ class AttributeModifier extends Modifier
             $product->attributeStr[] = $attribute;
 
             $attributeId = $attributeData['id'];
-            if (in_array($attributeId, $this->attributeInt, true)) {
+            if (in_array($attributeId, $integerAttributes, true)) {
                 $product->attributeInt[] = $attribute;
             }
-            if (in_array($attributeId, $this->attributeFloat, true)) {
+            if (in_array($attributeId, $floatAttributes, true)) {
                 $product->attributeFloat[] = $attribute;
             }
         }

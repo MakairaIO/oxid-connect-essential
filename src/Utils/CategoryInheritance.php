@@ -21,19 +21,19 @@ class CategoryInheritance
 {
     private Connection $database;
 
-    private bool $useCategoryInheritance;
+    private ModuleSettingsProvider $moduleSettingsProvider;
 
     /**
      * CategoryInheritance constructor.
      *
-     * @param Connection $database
-     * @param bool       $useCategoryInheritance
+     * @param Connection             $database
+     * @param ModuleSettingsProvider $moduleSettingsProvider
      */
     public function __construct(
         Connection $database,
-        bool $useCategoryInheritance
+        ModuleSettingsProvider $moduleSettingsProvider
     ) {
-        $this->useCategoryInheritance = $useCategoryInheritance;
+        $this->moduleSettingsProvider = $moduleSettingsProvider;
         $this->database               = $database;
     }
 
@@ -48,7 +48,7 @@ class CategoryInheritance
     {
         $categories = [$categoryId];
 
-        if ($this->useCategoryInheritance) {
+        if ($this->moduleSettingsProvider->get('makaira_connect_category_inheritance')) {
             $category = oxNew(Category::class);
             if ($category->load($categoryId)) {
                 $sql = "SELECT `OXID` FROM `oxcategories`
