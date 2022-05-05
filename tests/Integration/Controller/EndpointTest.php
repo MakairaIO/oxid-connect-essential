@@ -8,6 +8,8 @@ use JsonException;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
 use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
+use Makaira\OxidConnectEssential\Type\Product\Product;
+use OxidEsales\Eshop\Application\Model\Article;
 use OxidEsales\Eshop\Application\Model\Attribute;
 use OxidEsales\Eshop\Core\Model\MultiLanguageModel;
 use ReflectionException;
@@ -229,9 +231,9 @@ class EndpointTest extends IntegrationTestCase
                 'oxshopid' => 1,
             ]
         );
-        $intAttribute->setLanguage(1);
+        $intAttribute->setLanguage(0);
         $intAttribute->save();
-        $intAttribute->setLanguage(2);
+        $intAttribute->setLanguage(1);
         $intAttribute->save();
 
         $floatAttribute = new Attribute();
@@ -242,9 +244,9 @@ class EndpointTest extends IntegrationTestCase
                 'oxshopid' => 1,
             ]
         );
-        $floatAttribute->setLanguage(1);
+        $floatAttribute->setLanguage(0);
         $floatAttribute->save();
-        $floatAttribute->setLanguage(2);
+        $floatAttribute->setLanguage(1);
         $floatAttribute->save();
 
         $articleAttributeInt = new MultiLanguageModel();
@@ -257,9 +259,9 @@ class EndpointTest extends IntegrationTestCase
                 'oxvalue'    => '21',
             ]
         );
-        $articleAttributeInt->setLanguage(1);
+        $articleAttributeInt->setLanguage(0);
         $articleAttributeInt->save();
-        $articleAttributeInt->setLanguage(2);
+        $articleAttributeInt->setLanguage(1);
         $articleAttributeInt->save();
 
         $articleAttributeFloat = new MultiLanguageModel();
@@ -272,9 +274,9 @@ class EndpointTest extends IntegrationTestCase
                 'oxvalue'    => '2.1',
             ]
         );
-        $articleAttributeFloat->setLanguage(1);
+        $articleAttributeFloat->setLanguage(0);
         $articleAttributeFloat->save();
-        $articleAttributeFloat->setLanguage(2);
+        $articleAttributeFloat->setLanguage(1);
         $articleAttributeFloat->save();
 
         $articleAttributeInt = new MultiLanguageModel();
@@ -287,9 +289,9 @@ class EndpointTest extends IntegrationTestCase
                 'oxvalue'    => '42',
             ]
         );
-        $articleAttributeInt->setLanguage(1);
+        $articleAttributeInt->setLanguage(0);
         $articleAttributeInt->save();
-        $articleAttributeInt->setLanguage(2);
+        $articleAttributeInt->setLanguage(1);
         $articleAttributeInt->save();
 
         $articleAttributeFloat = new MultiLanguageModel();
@@ -302,13 +304,28 @@ class EndpointTest extends IntegrationTestCase
                 'oxvalue'    => '4.2',
             ]
         );
+        $articleAttributeFloat->setLanguage(0);
+        $articleAttributeFloat->save();
         $articleAttributeFloat->setLanguage(1);
         $articleAttributeFloat->save();
-        $articleAttributeFloat->setLanguage(2);
-        $articleAttributeFloat->save();
+
+        $product = new Article();
+        $product->assign(
+            [
+                'oxactive'    => '1',
+                'oxtitle'     => 'PHPUnit test product',
+                'oxshortdesc' => 'Product with OXSTOCKFLAG = 4',
+                'oxstockflag' => '4',
+            ]
+        );
+        $product->setLanguage(0);
+        $product->save();
+        $product->setLanguage(1);
+        $product->save();
 
         self::setModuleSetting('makaira_attribute_as_int', [$intAttributeId]);
         self::setModuleSetting('makaira_attribute_as_float', [$floatAttributeId]);
+
         $this->touchAll();
     }
 
