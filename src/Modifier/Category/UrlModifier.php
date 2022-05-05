@@ -40,10 +40,12 @@ class UrlModifier extends AbstractUrlModifier
      */
     protected function getUrl(Type $type, BaseModel $model, int $languageId): string
     {
+        $url = '';
+
         if ($model instanceof Category) {
-            return $this->encoder->getCategoryUri($model, $languageId);
+            $url = $this->encoder->getCategoryUri($model, $languageId);
         }
 
-        return '';
+        return $url;
     }
 }

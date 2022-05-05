@@ -40,15 +40,16 @@ class UrlModifier extends AbstractUrlModifier
      */
     protected function getUrl(Type $type, BaseModel $model, int $languageId): string
     {
-        $uri = '';
+        $url = '';
+
         if ($model instanceof Article) {
             if (!isset($type->additionalData['picture_url_main'])) {
                 $type->additionalData['picture_url_main'] = $model->getMasterZoomPictureUrl(1);
             }
 
-            $uri = $this->encoder->getArticleMainUri($model, $languageId);
+            $url = $this->encoder->getArticleMainUri($model, $languageId);
         }
 
-        return $uri;
+        return $url;
     }
 }
