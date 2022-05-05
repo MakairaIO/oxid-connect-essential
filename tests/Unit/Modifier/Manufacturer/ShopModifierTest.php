@@ -5,7 +5,7 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Manufacturer;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Modifier\Manufacturer\ShopModifier;
-use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
 class ShopModifierTest extends UnitTestCase
@@ -17,7 +17,7 @@ class ShopModifierTest extends UnitTestCase
             ->expects($this->never())
             ->method('executeQuery');
 
-        $product = new BaseProduct();
+        $product = new Product();
         $product->OXSHOPID = 'test';
         $modifier = new ShopModifier($databaseMock, false);
         $product = $modifier->apply($product);
@@ -42,7 +42,7 @@ class ShopModifierTest extends UnitTestCase
             ->with($sql, [1])
             ->willReturn($resultMock);
 
-        $product = new BaseProduct();
+        $product = new Product();
         $product->OXMAPID = 1;
         $modifier = new ShopModifier($databaseMock, true);
         $product = $modifier->apply($product);

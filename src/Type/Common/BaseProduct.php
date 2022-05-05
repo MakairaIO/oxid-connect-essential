@@ -28,8 +28,8 @@ class BaseProduct extends Type
     public int $sort = 0;
     public string $longdesc = '';
     public string $shortdesc = '';
-    public int $stock = 0;
-    public bool $onstock = false;
+    public int $stock = 1;
+    public bool $onstock = true;
     public string $manufacturerid = '';
     public string $manufacturer_title = '';
     public float $price = 0.00;

@@ -155,9 +155,9 @@ abstract class IntegrationTestCase extends UnitTestCase
         $snapshotDir = dirname($reflection->getFileName()) . '/__snapshots__';
 
         $snapshotFilename = sprintf(
-            '%s__%s__%u.json',
+            '%s--%s--%u.json',
             $reflection->getShortName(),
-            $this->getName(),
+            $this->slugify($this->getName()),
             $this->snapshotCount
         );
 
@@ -186,4 +186,24 @@ abstract class IntegrationTestCase extends UnitTestCase
 
         $this->assertStringEqualsFileCanonicalizing($snapshotFile, $actualJson, $message);
     }
-}
+
+    protected function slugify($text, string $divider = '_')
+    {
+        // replace non letter or digits by divider
+        $text = preg_replace('~[^\pL]+~u', $divider, $text);
+
+        // transliterate
+        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+        // remove unwanted characters
+        $text = preg_replace('~[^-\w]+~', $divider, $text);
+
+        // trim
+        $text = trim($text, $divider);
+
+        if (empty($text)) {
+            return 'n-a';
+        }
+
+        return $text;
+    }}

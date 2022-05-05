@@ -6,6 +6,7 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
+use Makaira\OxidConnectEssential\Repository\DataMapper;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
 use Makaira\OxidConnectEssential\Repository\ProductRepository;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
@@ -116,7 +117,12 @@ class ProductRepositoryTest extends TestCase
 
         $modifiersMock = $this->createMock(ModifierList::class);
 
-        $repository = new ProductRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
+        $repository = new ProductRepository(
+            $databaseMock,
+            $modifiersMock,
+            $this->getTableTranslatorMock(),
+            new DataMapper()
+        );
 
         return [$modifiersMock, $repository];
     }

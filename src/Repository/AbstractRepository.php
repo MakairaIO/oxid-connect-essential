@@ -10,7 +10,6 @@ use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Event\RepositoryCollectEvent;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
-use OxidEsales\Eshop\Core\Model\BaseModel;
 use Symfony\Component\EventDispatcher\Event;
 
 abstract class AbstractRepository
@@ -21,6 +20,8 @@ abstract class AbstractRepository
 
     private TableTranslator $tableTranslator;
 
+    private DataMapper $dataMapper;
+
     /**
      * @param Connection      $database
      * @param ModifierList    $modifiers
@@ -29,11 +30,13 @@ abstract class AbstractRepository
     public function __construct(
         Connection $database,
         ModifierList $modifiers,
-        TableTranslator $tableTranslator
+        TableTranslator $tableTranslator,
+        DataMapper $dataMapper
     ) {
         $this->tableTranslator = $tableTranslator;
         $this->modifiers       = $modifiers;
         $this->database        = $database;
+        $this->dataMapper      = $dataMapper;
     }
 
     /**
@@ -56,19 +59,22 @@ abstract class AbstractRepository
         /** @var array<string, string> $result */
         $result = $resultStatement->fetchAssociative();
 
-        $change       = new Change();
-        $change->id   = $id;
-        $change->type = $this->getType();
+        $deleted = empty($result);
+        $change  = new Change(
+            [
+                'id'      => $id,
+                'type'    => $this->getType(),
+                'deleted' => $deleted,
+            ]
+        );
 
-        if (empty($result)) {
-            $change->deleted = true;
+        if (!$deleted) {
+            $type = $this->getInstance($result['id']);
 
-            return $change;
+            $this->dataMapper->map($type, $result, $this->getType());
+
+            $change->data = $this->modifiers->applyModifiers($type, $this->getType());
         }
-
-        $type         = $this->getInstance($result['id']);
-        $type         = $this->modifiers->applyModifiers($type, $this->getType());
-        $change->data = $type;
 
         return $change;
     }

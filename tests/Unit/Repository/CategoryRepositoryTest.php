@@ -7,6 +7,7 @@ use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
 use Makaira\OxidConnectEssential\Repository\CategoryRepository;
+use Makaira\OxidConnectEssential\Repository\DataMapper;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
 use Makaira\OxidConnectEssential\Type;
@@ -109,7 +110,12 @@ class CategoryRepositoryTest extends UnitTestCase
 
         $modifiersMock = $this->createMock(ModifierList::class);
 
-        $repository = new CategoryRepository($databaseMock, $modifiersMock, $this->getTableTranslatorMock());
+        $repository = new CategoryRepository(
+            $databaseMock,
+            $modifiersMock,
+            $this->getTableTranslatorMock(),
+            new DataMapper()
+        );
 
         return [$modifiersMock, $repository];
     }

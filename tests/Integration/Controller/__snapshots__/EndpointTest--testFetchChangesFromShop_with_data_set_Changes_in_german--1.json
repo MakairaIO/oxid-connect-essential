@@ -1,0 +1,2627 @@
+{
+    "since": 25,
+    "count": 25,
+    "requestedCount": 25,
+    "changes": [
+        {
+            "id": "3a909e7c886063857e86982c7a3c5b84",
+            "sequence": 26,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Mauirippers",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "3a909e7c886063857e86982c7a3c5b84",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "mauirippers_1_mico.png",
+                    "OXTITLE_1": "Mauirippers",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "3a97c94553428daed76ba83e54d3876f",
+            "sequence": 27,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Big Matsol",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "3a97c94553428daed76ba83e54d3876f",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "big_matsol_1_mico.png",
+                    "OXTITLE_1": "Big Matsol",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "3a9fd0ec4b41d001e770b1d2d7af3e73",
+            "sequence": 28,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Jucker Hawaii",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "3a9fd0ec4b41d001e770b1d2d7af3e73",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "mikejucker_hawaii_1_mico.png",
+                    "OXTITLE_1": "Jucker Hawaii",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "90a0b84564cde2394491df1c673b6aa0",
+            "sequence": 29,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "ION",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "90a0b84564cde2394491df1c673b6aa0",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "ion_logo_black_1_mico.png",
+                    "OXTITLE_1": "ION",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "90a3eccf9d7121a9ca7d659f29021b7a",
+            "sequence": 30,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Cabrinha",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "90a3eccf9d7121a9ca7d659f29021b7a",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "cabrinha_logo2011_1_mico.png",
+                    "OXTITLE_1": "Cabrinha",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "90a8a18dd0cf0e7aec5238f30e1c6106",
+            "sequence": 31,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Naish",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "90a8a18dd0cf0e7aec5238f30e1c6106",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "naish_1_mico.png",
+                    "OXTITLE_1": "Naish",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "9434afb379a46d6c141de9c9e5b94fcf",
+            "sequence": 32,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Kuyichi",
+                "shortdesc": "Eine stilbewusste Marke",
+                "es_id": "",
+                "id": "9434afb379a46d6c141de9c9e5b94fcf",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "logo3_ico.png",
+                    "OXTITLE_1": "Kuyichi",
+                    "OXSHORTDESC_1": "A style conscious brand",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adc566c366db8eaf30c6c124a09e82b3",
+            "sequence": 33,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Core Kiteboarding",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "adc566c366db8eaf30c6c124a09e82b3",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "core_logo_1_mico.png",
+                    "OXTITLE_1": "Core Kiteboarding",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adc6df0977329923a6330cc8f3c0a906",
+            "sequence": 34,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Liquid Force",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "adc6df0977329923a6330cc8f3c0a906",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "lf_kite_logo_1_mico.png",
+                    "OXTITLE_1": "Liquid Force Kite",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adca51c88a3caa1c7b939fd6a229ae3a",
+            "sequence": 35,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "RRD",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "adca51c88a3caa1c7b939fd6a229ae3a",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": false,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "",
+                    "OXTITLE_1": "RRD",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "adca6aa4df3f95b6b46e28d4fc5855ba",
+            "sequence": 36,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Spleene",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "adca6aa4df3f95b6b46e28d4fc5855ba",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": false,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "",
+                    "OXTITLE_1": "Spleene",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "dc50589ad69b6ec71721b25bdd403171",
+            "sequence": 37,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Flysurfer",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "dc50589ad69b6ec71721b25bdd403171",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": false,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "",
+                    "OXTITLE_1": "Flysurfer",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "dc59459d4d67189182c53ed0e4e777bc",
+            "sequence": 38,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "Flyboards",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "dc59459d4d67189182c53ed0e4e777bc",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": false,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "",
+                    "OXTITLE_1": "Flyboards",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "dc5ec524a9aa6175cf7a498d70ce510a",
+            "sequence": 39,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "NPX",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "dc5ec524a9aa6175cf7a498d70ce510a",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "npx_logo_1_mico.png",
+                    "OXTITLE_1": "NPX",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "0"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid-oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "oiaf6ab7e12e86291e86dd3ff891fe40",
+            "sequence": 40,
+            "deleted": false,
+            "data": {
+                "manufacturer_title": "O'Reilly",
+                "shortdesc": "",
+                "es_id": "",
+                "id": "oiaf6ab7e12e86291e86dd3ff891fe40",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "Nach-Hersteller\/oxid\/",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXICON": "oreilly_1_mico.png",
+                    "OXTITLE_1": "O'Reilly",
+                    "OXSHORTDESC_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXSHOWSUFFIX": "1"
+                },
+                "selfLinks": {
+                    "de": "Nach-Hersteller\/oxid-oxid\/",
+                    "en": "en\/By-Manufacturer\/oxid\/"
+                }
+            },
+            "type": "manufacturer"
+        },
+        {
+            "id": "05848170643ab0deb9914566391c0c63",
+            "sequence": 41,
+            "deleted": false,
+            "data": {
+                "attributeStr": [],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "1402",
+                "title": "Trapez ION MADTRIXX",
+                "searchkeys": "trapez, h\u00fcfttrapez, madtrixx",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>ION Madtrixx Kite Waist<\/h2><\/div>\r\n    Neues Freestyle Trapez mit einer schlank\r\ngeschnittenen Outline und Neopren-Schutzkissen innen. Dank der\r\nelastischen Ausschnitte im hinteren Teil des Trapezes bietet es ein\r\nMaximum an Flexibilit\u00e4t. Die neue Kontur Form mit Wrap Tec garantiert\r\neine perfekte Passform.<br \/>\r\n<br \/>\r\n<div><strong>Ausstattungsmerkmale:<\/strong><\/div>\r\n<ul>\r\n<li>Hip Protection<br \/>\r\n  Die Double-Layer-Schaumstoff-Polsterung sch\u00fctzt die Knochen und alle\r\nanderen ungesch\u00fctzten Teile in diesem Bereich. Besonders, wenn der\r\nK\u00f6rper seitlich gebeugt ist.<\/li>\r\n<li>Cross Link Webbing<br \/>\r\n  Normalerweise enden die Gurtbandenden irgendwo hinter der Schnalle.\r\nEin ununterbrochenes Gurtband entlang der R\u00fcckseite des Trapezes\r\ngarantiert eine bessere Kraftverteilung<\/li>\r\n<li>Internal Flex Belt<br \/>\r\n  Flexibler H\u00fcftgurt , sichert einen festen und bequemen Sitz des Trapezes<\/li>\r\n<li>Handle Pass Leash Slider<br \/>\r\n  Ein kleiner Metallring l\u00e4sst die Leash entlang der R\u00fcckseite des Trapezes gleiten und macht Handle Pass Tricks einfacher<\/li>\r\n<li>Push Button Spreader Bar<br \/>\r\n  Der Druckknopf unterst\u00fctzt die schnelle Montage des Trapezes. Es\r\nbesteht keine Notwendigkeit, alle Klettb\u00e4nder an den&nbsp; Schnallen zu\r\nmontieren. Schlie\u00df einfach den Metallring in der Spreader Bar, pass das\r\nGurtband an und los geht's.<\/li>\r\n<li>Belt Garage<br \/>\r\n  Verhindert ein Herumfliegen des Gurtbandes<\/li>\r\n<li>Protection Pads<br \/>\r\n  Eine solide, neoprengepolsterte Platte, h\u00e4lt den Trapezhaken vom K\u00f6rper fern<\/li>\r\n<li>Contour shape<br \/>\r\n  vorgeformte Konstruktion<\/li>\r\n<li>Elasto Tec<br \/>\r\n  Flexible Ausschnitte in H\u00fcfttrapezen sorgen f\u00fcr ein Maximum an&nbsp; Flexibilit\u00e4t im hinteren Teil des Trapezes.<\/li>\r\n<li>Weicher Rand des Trapezes<\/li>\r\n<li>Support Cushion<\/li>\r\n<li>Twister<\/li>\r\n<li>Wrap Tech<br \/>\r\n  Vorgeformte Trapezkonstruktion, die sich besser am K\u00f6rper anpasst<\/li><\/ul>",
+                "shortdesc": "Neues Freestyle Trapez mit einer schlank geschnittenen Outline",
+                "stock": 15,
+                "onstock": true,
+                "manufacturerid": "90a0b84564cde2394491df1c673b6aa0",
+                "manufacturer_title": "",
+                "price": 159,
+                "insert": "2010-12-06",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [],
+                "parent": "",
+                "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
+                "maincategoryurl": "Kiteboarding\/Trapeze\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "0f41a4463b227c437f6e6bf57b1697c4",
+                        "title": "Trapeze",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Trapeze\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "05848170643ab0deb9914566391c0c63",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "ion_madtrixx_kite_waist_2011_1.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "15",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "159",
+                    "OXVARMAXPRICE": "0",
+                    "OXVARNAME_1": "",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Harness MADTRIXX",
+                    "OXSHORTDESC_1": "New freestyle harness with a lean cut outline",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "harness, hip harness, madtrixx",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "1",
+                    "OXMAXDELTIME": "3",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": "ION",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/ion_madtrixx_kite_waist_2011_1.jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "0584e8b766a4de2177f9ed11d1587f55",
+            "sequence": 42,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "wei\u00df"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "schwarz"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "1501",
+                "title": "Klebeband DACRON KITEFIX",
+                "searchkeys": "klebeband, kite, reparieren, kitefix",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Klebeband Dacron Kitefix<\/h2><\/div>\r\n<div class=\"product_text3\">\r\n<div><span>Das selbstklebende Dacron\r\nKlebeband ist ideal, um eine GluFix und FiberFix Reparatur an der\r\nLeading Edge oder den Struts Ihres Kites zu verst\u00e4rken.  Sie sind gerade\r\n vom Wasser gekommen und haben einen Riss im Tuchmaterial Ihres Kites\r\nentdeckt? Verwenden Sie das Dacron Klebeband, um eine schnelle,\r\ntempor\u00e4re Reparatur durchzuf\u00fchren. Erh\u00e4ltlich in wei\u00df, schwarz, gr\u00fcn,\r\nrot und blau.<\/span><\/div>\r\n<div><span>&nbsp;<\/span><\/div>\r\n<div><span>Jede Rolle ist ca. 5cm breit und ca. 152cm lang.<\/span><\/div>\r\n<p><strong>&nbsp;<\/strong><\/p>\r\n<p><span> <br \/>\r\n<\/span><\/p><\/div>",
+                "shortdesc": "Ideal f\u00fcr kleine Reparaturen am Kite",
+                "stock": 61,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 7.99,
+                "insert": "2010-12-06",
+                "soldamount": 3,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [],
+                "parent": "",
+                "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
+                "maincategoryurl": "Kiteboarding\/Zubehoer\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "fc7e7bd8403448f00a363f60f44da8f2",
+                        "title": "Zubeh\u00f6r",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Zubeh\u00f6r\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "0584e8b766a4de2177f9ed11d1587f55",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "1",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "kitefix_self-adhesive_dacron_1.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "50",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "1.52",
+                    "OXWIDTH": "0.05",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "Farbe",
+                    "OXVARSTOCK": "11",
+                    "OXVARCOUNT": "2",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "7.99",
+                    "OXVARMAXPRICE": "7.99",
+                    "OXVARNAME_1": "Color",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Sticky Tape DACRON KITEFIX",
+                    "OXSHORTDESC_1": "ideal for small repairs of the kite",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "sticky tape, kite, repair, kitefix",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "4",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": null,
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/kitefix_self-adhesive_dacron_1.jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "058de8224773a1d5fd54d523f0c823e0",
+            "sequence": 43,
+            "deleted": false,
+            "data": {
+                "attributeStr": [],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "1302",
+                "title": "Kiteboard CABRINHA CALIBER",
+                "searchkeys": "kiteboard, kite, board, caliber, cabrinha",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<p>\r\n<div class=\"product_title_big\">\r\n<h2>Cabrinha Caliber <\/h2><\/div>\r\n    Das Caliber meint es ernst mit Freestyle\r\nund Freeride. Wenn du schnell und hart kiten willst, dann ist das\r\nCaliber passend f\u00fcr dich!<br \/>\r\n<br \/>\r\n   Das Caliber hat eine flachere Rockerlinie als das Custom, was es\r\nknackig und lebhaft macht. Es beschleunigt sehr schnell und beh\u00e4lt den\r\nSpeed auch durch Windl\u00f6cher hindurch. Die Outline des Caliber und der\r\nFlexverlauf bringen dir h\u00e4rtesten Pop beim Absprung, egal ob du unhooked\r\n oder hooked f\u00e4hrst. Das quadkonkave Unterwasserschiff gibt dir\r\nmaximalen Grip bei Starkwind und in kabbeligem Wasser.<br \/>\r\n<br \/>\r\n<div><strong>Ausstattungsmerkmale:<\/strong><\/div>\r\n<ul>\r\n<li>neue unidirektionale Carbonlage f\u00fcr kr\u00e4ftigen Pop und schnelle R\u00fcckmeldung<\/li>\r\n<li>unterschiedliches 3D Topsheet Design je Gr\u00f6\u00dfe, f\u00fcr konstanteren Flex und Pop<\/li>\r\n<li>digital gedruckte Oberfl\u00e4che mit metallic Effekt, digital bedruckte Basis f\u00fcr l\u00e4ngere Haltbarkeit<\/li>\r\n<li>24&#8216;&#8216;(61cm) \/ 26&#8216;&#8216; ( 66cm) \/ 28&#8216;&#8216; (71cm) Stand-Optionen<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Lieferumfang:<\/strong><\/div><br \/>\r\n   Alle Boards werden mit Finnen, Finnenschrauben und Grab Handle (+ dazugeh\u00f6rige Schrauben) geliefert.<br \/>\r\n<br \/>\r\n<div><strong>Gr\u00f6\u00dfen:<\/strong><\/div><br \/>\r\n   127 x 38<br \/>\r\n   130 x 40<br \/>\r\n   133 x 41<br \/>\r\n   136 x 42<br \/>\r\n   139 x 43<\/p>\r\n<p> <\/p>",
+                "shortdesc": "Freestyle und Freeride Board",
+                "stock": 13,
+                "onstock": true,
+                "manufacturerid": "90a3eccf9d7121a9ca7d659f29021b7a",
+                "manufacturer_title": "",
+                "price": 479,
+                "insert": "2010-12-06",
+                "soldamount": 2,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [],
+                "parent": "",
+                "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
+                "maincategoryurl": "Kiteboarding\/Kiteboards\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "0f4f08358666c54b4fde3d83d2b7ef04",
+                        "title": "Kiteboards",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Kiteboards\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "058de8224773a1d5fd54d523f0c823e0",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "499",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "cabrinha_caliber_2011.jpg",
+                    "OXPIC2": "cabrinha_caliber_2011_deck.jpg",
+                    "OXPIC3": "cabrinha_caliber_2011_bottom.jpg",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "13",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "479",
+                    "OXVARMAXPRICE": "479",
+                    "OXVARNAME_1": "",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Kiteboard CABRINHA CALIBER",
+                    "OXSHORTDESC_1": "Freestyle und Freeride Board",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "kiteboard, kite, board, caliber, cabrinha",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "1",
+                    "OXMAXDELTIME": "3",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": "Cabrinha",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/cabrinha_caliber_2011.jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "058e613db53d782adfc9f2ccb43c45fe",
+            "sequence": 44,
+            "deleted": false,
+            "data": {
+                "attributeStr": [],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "2401",
+                "title": "Bindung O'BRIEN DECADE CT",
+                "searchkeys": "bindung, decade, schuh, wakeboarding",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<p>\r\n<div class=\"product_title_big\">\r\n<h2>O'Brien Decade CT Boot<\/h2><\/div>\r\n    Die Decade Pro Bindung ist nicht nur\r\n Close-Toe Boots mit hammer Style, sondern es war das Ziel den Komfort\r\nvon normalen Boots in eine Wakeboard-Bindung einzubringen, dabei\r\nleichtgewichtig zu bleiben, und damit perfekte Performance auf dem\r\nWasser zu erm\u00f6glichen.<br \/>\r\n<br \/>\r\n  Die Wakeboard-Bindung ist in der Gr\u00f6\u00dfe gleich bleibend, gibt also im\r\nLaufe der Zeit nicht nach und sitzt somit wie ein perfekter Schuh. Ein\r\nergonomisches und sto\u00dfabsorbierendes Fussbett sorgt f\u00fcr weiche\r\nLandungen.<\/p>\r\n<p> <\/p>",
+                "shortdesc": "Geringes Gewicht, beste Performance!",
+                "stock": 16,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 359,
+                "insert": "2010-12-06",
+                "soldamount": 1,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [],
+                "parent": "",
+                "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
+                "maincategoryurl": "Wakeboarding\/Bindungen\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "0f40c6a077b68c21f164767c4a903fd2",
+                        "title": "Bindungen",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Wakeboarding\/Bindungen\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "058e613db53d782adfc9f2ccb43c45fe",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "399",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "obrien_decade_ct_boot_2010_1.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "16",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "359",
+                    "OXVARMAXPRICE": "0",
+                    "OXVARNAME_1": "",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Binding O'BRIEN DECADE CT",
+                    "OXSHORTDESC_1": "Less weight, best performance!",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "binding, decade, boot, wakeboarding",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "4",
+                    "OXMAXDELTIME": "6",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": null,
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/obrien_decade_ct_boot_2010_1.jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "531b537118f5f4d7a427cdb825440922",
+            "sequence": 45,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Smoke Gray"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Super Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Smoke Gray"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Super Blue"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "3570",
+                "title": "Kuyichi Jeans ANNA",
+                "searchkeys": "jeans,anna,kuyichi,l\u00e4ssig,locker",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">\r\n<p><span>Eine lockere und l\u00e4ssige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.<\/span><\/p>\r\n<p><span><br \/>\r\n<strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><\/span><\/p>\r\n<p><!--[if gte mso 9]>\r\n<xml>\r\n<w:worddocument>\r\n<w:view>Normal<\/w:view>\r\n<w:zoom>0<\/w:zoom>\r\n<w:trackmoves\/>\r\n<w:trackformatting\/>\r\n<w:hyphenationzone>21<\/w:hyphenationzone>\r\n<w:punctuationkerning\/>\r\n<w:validateagainstschemas\/>\r\n<w:saveifxmlinvalid>false<\/w:saveifxmlinvalid>\r\n<w:ignoremixedcontent>false<\/w:ignoremixedcontent>\r\n<w:alwaysshowplaceholdertext>false<\/w:alwaysshowplaceholdertext>\r\n<w:donotpromoteqf\/>\r\n<w:lidthemeother>DE<\/w:lidthemeother>\r\n<w:lidthemeasian>X-NONE<\/w:lidthemeasian>\r\n<w:lidthemecomplexscript>X-NONE<\/w:lidthemecomplexscript>\r\n<w:compatibility>\r\n<w:breakwrappedtables\/>\r\n<w:snaptogridincell\/>\r\n<w:wraptextwithpunct\/>\r\n<w:useasianbreakrules\/>\r\n<w:dontgrowautofit\/>\r\n<w:splitpgbreakandparamark\/>\r\n<w:dontvertaligncellwithsp\/>\r\n<w:dontbreakconstrainedforcedtables\/>\r\n<w:dontvertalignintxbx\/>\r\n<w:word11kerningpairs\/>\r\n<w:cachedcolbalance\/><\/w:compatibility>\r\n<m:mathpr>\r\n<m:mathfont m:val=\"Cambria Math\"\/>\r\n<m:brkbin m:val=\"before\"\/>\r\n<m:brkbinsub m:val=\"&#45;-\"\/>\r\n<m:smallfrac m:val=\"off\"\/>\r\n<m:dispdef\/>\r\n<m:lmargin m:val=\"0\"\/>\r\n<m:rmargin m:val=\"0\"\/>\r\n<m:defjc m:val=\"centerGroup\"\/>\r\n<m:wrapindent m:val=\"1440\"\/>\r\n<m:intlim m:val=\"subSup\"\/>\r\n<m:narylim m:val=\"undOvr\"\/><\/m:mathpr><\/w:worddocument><\/xml><![endif]--><!--[if gte mso 9]>\r\n<xml>\r\n<w:latentstyles deflockedstate=\"false\" defunhidewhenused=\"true\"\r\n  defsemihidden=\"true\" defqformat=\"false\" defpriority=\"99\"\r\n  latentstylecount=\"267\">\r\n<w:lsdexception locked=\"false\" priority=\"0\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Normal\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"heading 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 7\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 8\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"9\" qformat=\"true\" name=\"heading 9\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 7\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 8\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" name=\"toc 9\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"35\" qformat=\"true\" name=\"caption\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"10\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Title\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"1\" name=\"Default Paragraph Font\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"11\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Subtitle\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"22\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Strong\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"20\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Emphasis\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"59\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Table Grid\"\/>\r\n<w:lsdexception locked=\"false\" unhidewhenused=\"false\" name=\"Placeholder Text\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"1\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"No Spacing\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"60\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Shading\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"61\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light List\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"62\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Grid\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"63\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"64\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"65\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"66\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"67\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"68\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"69\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"70\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Dark List\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"71\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Shading\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"72\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful List\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"73\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Grid\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"60\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Shading Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"61\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light List Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"62\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Grid Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"63\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 1 Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"64\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 2 Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"65\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 1 Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" unhidewhenused=\"false\" name=\"Revision\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"34\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"List Paragraph\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"29\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Quote\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"30\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Intense Quote\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"66\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 2 Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"67\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 1 Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"68\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 2 Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"69\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 3 Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"70\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Dark List Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"71\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Shading Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"72\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful List Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"73\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Grid Accent 1\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"60\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Shading Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"61\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light List Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"62\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Grid Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"63\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 1 Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"64\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 2 Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"65\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 1 Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"66\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 2 Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"67\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 1 Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"68\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 2 Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"69\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 3 Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"70\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Dark List Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"71\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Shading Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"72\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful List Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"73\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Grid Accent 2\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"60\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Shading Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"61\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light List Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"62\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Grid Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"63\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 1 Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"64\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 2 Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"65\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 1 Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"66\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 2 Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"67\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 1 Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"68\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 2 Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"69\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 3 Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"70\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Dark List Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"71\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Shading Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"72\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful List Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"73\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Grid Accent 3\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"60\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Shading Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"61\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light List Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"62\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Grid Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"63\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 1 Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"64\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 2 Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"65\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 1 Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"66\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 2 Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"67\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 1 Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"68\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 2 Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"69\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 3 Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"70\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Dark List Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"71\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Shading Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"72\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful List Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"73\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Grid Accent 4\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"60\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Shading Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"61\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light List Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"62\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Grid Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"63\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 1 Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"64\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 2 Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"65\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 1 Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"66\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 2 Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"67\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 1 Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"68\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 2 Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"69\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 3 Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"70\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Dark List Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"71\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Shading Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"72\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful List Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"73\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Grid Accent 5\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"60\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Shading Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"61\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light List Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"62\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Light Grid Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"63\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 1 Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"64\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Shading 2 Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"65\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 1 Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"66\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium List 2 Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"67\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 1 Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"68\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 2 Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"69\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Medium Grid 3 Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"70\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Dark List Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"71\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Shading Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"72\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful List Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"73\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" name=\"Colorful Grid Accent 6\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"19\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Subtle Emphasis\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"21\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Intense Emphasis\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"31\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Subtle Reference\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"32\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Intense Reference\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"33\" semihidden=\"false\"\r\n   unhidewhenused=\"false\" qformat=\"true\" name=\"Book Title\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"37\" name=\"Bibliography\"\/>\r\n<w:lsdexception locked=\"false\" priority=\"39\" qformat=\"true\" name=\"TOC Heading\"\/><\/w:latentstyles><\/xml><![endif]--><!--[if gte mso 10]>\r\n<style>\r\n \/* Style Definitions *\/\r\n table.MsoNormalTable\r\n {mso-style-name:\"Normale Tabelle\";\r\n  mso-tstyle-rowband-size:0;\r\n  mso-tstyle-colband-size:0;\r\n  mso-style-noshow:yes;\r\n   mso-style-priority:99;\r\n  mso-style-qformat:yes;\r\n  mso-style-parent:\"\";\r\n    mso-padding-alt:0cm 5.4pt 0cm 5.4pt;\r\n    mso-para-margin-top:0cm;\r\n    mso-para-margin-right:0cm;\r\n  mso-para-margin-bottom:10.0pt;\r\n  mso-para-margin-left:0cm;\r\n   line-height:115%;\r\n   mso-pagination:widow-orphan;\r\n    font-size:11.0pt;\r\n   font-family:\"Calibri\",\"sans-serif\";\r\n mso-ascii-font-family:Calibri;\r\n  mso-ascii-theme-font:minor-latin;\r\n   mso-fareast-font-family:\"Times New Roman\";\r\n  mso-fareast-theme-font:minor-fareast;\r\n   mso-hansi-font-family:Calibri;\r\n  mso-hansi-theme-font:minor-latin;}<\/style><![endif]--><\/p>\r\n\r\n<p><font face=\"Times New Roman\" size=\"3\"><span><strong><\/strong><\/span><\/font><\/p><\/div>",
+                "shortdesc": "L\u00e4ssige Damenjeans von Kuyichi",
+                "stock": 140,
+                "onstock": true,
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "manufacturer_title": "",
+                "price": 99.9,
+                "insert": "2009-12-14",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Super Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
+                    }
+                ],
+                "parent": "",
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d863b76c6bb90a970a5577adf890e8cd",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "531b537118f5f4d7a427cdb825440922",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "front(4)_v_th_th.jpg",
+                    "OXICON": "front(4)_v_ico_ico.jpg",
+                    "OXPIC1": "front(4)_v_pi.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "17",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "Gr\u00f6\u00dfe | Farbe",
+                    "OXVARSTOCK": "123",
+                    "OXVARCOUNT": "36",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "92.9",
+                    "OXVARMAXPRICE": "109.9",
+                    "OXVARNAME_1": "Size | Color",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Kuyichi Jeans ANNA",
+                    "OXSHORTDESC_1": "Cool lady jeans by Kuyichi",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "jeans,anna,kuyichi,cool,casual",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "2",
+                    "OXMAXDELTIME": "4",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": "Kuyichi",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front(4)_v_pi.jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "531f91d4ab8bfb24c4d04e473d246d0b",
+            "sequence": 46,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "3560",
+                "title": "Kuyichi Jeans KYLE",
+                "searchkeys": "jeans,kuyichi,modisch,dunkel",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
+                "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
+                "stock": 9,
+                "onstock": true,
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "manufacturer_title": "",
+                "price": 89.9,
+                "insert": "2009-12-14",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32"
+                    }
+                ],
+                "parent": "",
+                "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d8665fef35f4d528e92c3d664f4a00c0",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "531f91d4ab8bfb24c4d04e473d246d0b",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "thumb_th(2).jpg",
+                    "OXICON": "icon_ico(2).jpg",
+                    "OXPIC1": "front_z1(2).jpg",
+                    "OXPIC2": "back_z2(2).jpg",
+                    "OXPIC3": "detail1_z3(2).jpg",
+                    "OXPIC4": "detail2_z4(2).jpg",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "4",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "Gr\u00f6\u00dfe | Farbe",
+                    "OXVARSTOCK": "5",
+                    "OXVARCOUNT": "24",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "89.9",
+                    "OXVARMAXPRICE": "89.9",
+                    "OXVARNAME_1": "Size | Color",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Kuyichi Jeans KYLE",
+                    "OXSHORTDESC_1": "Narrow low boot cut Jeans with straight legs.",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "jeans,kuyichi,stylish,dark",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "5",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": "Kuyichi",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(2).jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b6099c305f591cb39d4314e9a823fc1",
+            "sequence": 47,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "M"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Clover"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Violet"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "3582",
+                "title": "Stewart+Brown Shirt Kisser Fish",
+                "searchkeys": "shirt,pima,kurz",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stewart&Brown Shirt Kisser Fish, langes Shirt mit kurzen \u00c4rmeln und farbigem Aufdruck, das auch auch als Mini-Kleid getragen werden kann. Erh\u00e4ltlich in den Farben Clover (Klee-Gr\u00fcn) und Violet, aus der exklusiven Stewart+Brown Organic Cotton Linie. Die feinste Pima Baumwolle besteht aus besonders langstapeligen Fasern, die eine besonders hohe Qualit\u00e4t der Verarbeitung erm\u00f6glichen.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><font face=\"Times New Roman\" size=\"3\"><strong><span><\/span><\/strong><\/font>\r\n<\/div>",
+                "shortdesc": "Langes Shirt mit kurzen \u00c4rmeln und farbigem Aufdruck",
+                "stock": 100,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 59.9,
+                "insert": "2009-12-17",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet"
+                    }
+                ],
+                "parent": "",
+                "maincategory": "d86779840626d3ab8263b62db85df3f0",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d86779840626d3ab8263b62db85df3f0",
+                        "title": "Shirts & Co.",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "6b6099c305f591cb39d4314e9a823fc1",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "72.9",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "thumb_th(12)(5)_th.jpg",
+                    "OXICON": "icon_ico(12)(5)_ico.jpg",
+                    "OXPIC1": "front_z1(12).jpg",
+                    "OXPIC2": "back_z2(12).jpg",
+                    "OXPIC3": "detail1_z3(12).jpg",
+                    "OXPIC4": "detail2_z4(12).jpg",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "0",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "EU-Gr\u00f6\u00dfe | Farbe",
+                    "OXVARSTOCK": "100",
+                    "OXVARCOUNT": "10",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "59.9",
+                    "OXVARMAXPRICE": "59.9",
+                    "OXVARNAME_1": "EU-Size | Color",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Stewart+Brown Shirt Kisser Fish",
+                    "OXSHORTDESC_1": "Long shirt with short sleeves and colored printing",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "shirt,pima,short",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "5",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": null,
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(12).jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b63456b3abeeeccd9b085a76ffba1a3",
+            "sequence": 48,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "3571",
+                "title": "Kuyichi Jeans CANDY",
+                "searchkeys": "kuyichi,jeans,dunkel,eng",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
+                "shortdesc": "Eng geschnittene Stretch-Jeans",
+                "stock": 63,
+                "onstock": true,
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "manufacturer_title": "",
+                "price": 89.9,
+                "insert": "2009-12-17",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue"
+                    },
+                    {
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
+                    }
+                ],
+                "parent": "",
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d863b76c6bb90a970a5577adf890e8cd",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "6b63456b3abeeeccd9b085a76ffba1a3",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "thumb_th(7).jpg",
+                    "OXICON": "icon_ico(7).jpg",
+                    "OXPIC1": "front_z1(7).jpg",
+                    "OXPIC2": "back_z2(7).jpg",
+                    "OXPIC3": "detail1_z3(7).jpg",
+                    "OXPIC4": "detail2_z4(7).jpg",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "26",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "Gr\u00f6\u00dfe | Farbe",
+                    "OXVARSTOCK": "37",
+                    "OXVARCOUNT": "24",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "89.9",
+                    "OXVARMAXPRICE": "89.9",
+                    "OXVARNAME_1": "Size | Color",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Kuyichi Jeans CANDY",
+                    "OXSHORTDESC_1": "Tight cut stretch jeans",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "kuyichi,jeans,dark,tight",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "4",
+                    "OXMAXDELTIME": "6",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": "Kuyichi",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(7).jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b63f459c781fa42edeb889242304014",
+            "sequence": 49,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "White"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "M"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "White"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "3583",
+                "title": "Stewart+Brown Organic Pima Edged Lengthen",
+                "searchkeys": "shirt,pima,\u00e4rmellos,tr\u00e4ger,l\u00e4ssig,locker",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe Sommertage oder zum Layering bestens geeignet. Das Shirt kommt aus der exklusiven Stewart+Brown Organic Cotton Linie und verspricht die Verwendung feinster Pima-Baumwolle. Pima Baumwolle besteht aus besonders langstapeligen Fasern, die die hohe Qualit\u00e4t ausmachen.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><font face=\"Times New Roman\" size=\"3\"><strong><span><\/span><\/strong><\/font>\r\n<\/div>",
+                "shortdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe Sommertage",
+                "stock": 17,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 49.9,
+                "insert": "2009-12-17",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
+                        "9438ac75bac3e344628b14bf7ed82c15": "White"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "White",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
+                    },
+                    {
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S",
+                        "9438ac75bac3e344628b14bf7ed82c15": "White"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "White",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "White",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L"
+                    }
+                ],
+                "parent": "",
+                "maincategory": "d86779840626d3ab8263b62db85df3f0",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d86779840626d3ab8263b62db85df3f0",
+                        "title": "Shirts & Co.",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "6b63f459c781fa42edeb889242304014",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "69.9",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "thumb_th(15)(5)_th.jpg",
+                    "OXICON": "icon_ico(15)_ico.jpg",
+                    "OXPIC1": "front_z1(15).jpg",
+                    "OXPIC2": "back_z2(15).jpg",
+                    "OXPIC3": "detail1_z3(15).jpg",
+                    "OXPIC4": "detail2_z4(15).jpg",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "0",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "EU-Gr\u00f6\u00dfe | Farbe",
+                    "OXVARSTOCK": "17",
+                    "OXVARCOUNT": "5",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "49.9",
+                    "OXVARMAXPRICE": "49.9",
+                    "OXVARNAME_1": "EU-Size | Color",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Stewart+Brown Organic Pima Edged Lengthen",
+                    "OXSHORTDESC_1": "Cushy sleeveless long shirt from Pima cotton for hot summer days",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "shirt,pima,sleeveless,suspenders,casual,cool",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "4",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": null,
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(15).jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b66d82af984e5ad46b9cb27b1ef8aae",
+            "sequence": 50,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Bangle Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "418fa487bf06eb6f14ffa32115a762d2",
+                        "title": "Washing  (VarSelect)",
+                        "value": "Predded Green"
+                    },
+                    {
+                        "id": "418fa487bf06eb6f14ffa32115a762d2",
+                        "title": "Washing  (VarSelect)",
+                        "value": "Bangle Blue"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "3572",
+                "title": "Kuyichi Jeans SUGAR",
+                "searchkeys": "kuyichi,jeans,dunkel,gerade,h\u00fcftjeans",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Kuyichi Jeans Sugar, das Spitzenjeansmodell in verschiedenen Waschungen. Die Jeans sitzt l\u00e4ssig auf der H\u00fcfte und ist mit breitem, geraden Beinschnitt. Tiefgesetzte, gro\u00dfe Taschen sorgen f\u00fcr einen knackigen Hintern<br \/>\r\n<strong><br \/>\r\n<\/strong><\/div>\r\n<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\"><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
+                "shortdesc": "Spitzenjeans in verschiedenen Waschungen",
+                "stock": 19,
+                "onstock": true,
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "manufacturer_title": "",
+                "price": 89.9,
+                "insert": "2009-12-17",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "6b6e77de7a04de54f1aa63cfeca2f487": "Bangle Blue"
+                    },
+                    {
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32",
+                        "6b6e77de7a04de54f1aa63cfeca2f487": "Bangle Blue"
+                    },
+                    {
+                        "6b6e77de7a04de54f1aa63cfeca2f487": "Bangle Blue",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34"
+                    }
+                ],
+                "parent": "",
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d863b76c6bb90a970a5577adf890e8cd",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "6b66d82af984e5ad46b9cb27b1ef8aae",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "thumb_th(9).jpg",
+                    "OXICON": "icon_ico(9).jpg",
+                    "OXPIC1": "front_z1(9).jpg",
+                    "OXPIC2": "back_z2(9).jpg",
+                    "OXPIC3": "detail1_z3(9).jpg",
+                    "OXPIC4": "detail2_z4(9).jpg",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "14",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "Gr\u00f6\u00dfe | Farbe | Washing",
+                    "OXVARSTOCK": "5",
+                    "OXVARCOUNT": "24",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "89.9",
+                    "OXVARMAXPRICE": "89.9",
+                    "OXVARNAME_1": "Size | Color | Washing",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Kuyichi Jeans SUGAR",
+                    "OXSHORTDESC_1": "Leading jeans for repeated washing",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "kuyichi,jeans,dark,straight",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "5",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": "Kuyichi",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(9).jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid-oxid.html"
+                }
+            },
+            "type": "product"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
 namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Common;
 
 use Makaira\OxidConnectEssential\Modifier\Common\LongDescriptionModifier;
-use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Utils\ContentParserInterface;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
@@ -17,7 +17,7 @@ class LongDescriptionModifierTest extends UnitTestCase
             ->willReturnArgument(0);
 
         $modifier = new LongDescriptionModifier($parserMock, true);
-        $product = new BaseProduct();
+        $product = new Product();
         $product->longdesc = 'This is a short text';
         $product = $modifier->apply($product);
         $this->assertEquals('This is a short text', $product->longdesc);
@@ -25,13 +25,13 @@ class LongDescriptionModifierTest extends UnitTestCase
 
     public function testShortTextWithHTML()
     {
-        $parserMock = $this->getMock(ContentParserInterface::class);
+        $parserMock = $this->createMock(ContentParserInterface::class);
         $parserMock
             ->method('parseContent')
             ->willReturnArgument(0);
 
         $modifier = new LongDescriptionModifier($parserMock, true);
-        $product = new BaseProduct();
+        $product = new Product();
         $product->longdesc = 'This is a <del>short</del> text';
         $product = $modifier->apply($product);
         $this->assertEquals('This is a short text', $product->longdesc);
@@ -39,13 +39,13 @@ class LongDescriptionModifierTest extends UnitTestCase
 
     public function testTrimming()
     {
-        $parserMock = $this->getMock(ContentParserInterface::class);
+        $parserMock = $this->createMock(ContentParserInterface::class);
         $parserMock
             ->method('parseContent')
             ->willReturnArgument(0);
 
         $modifier = new LongDescriptionModifier($parserMock, true);
-        $product = new BaseProduct();
+        $product = new Product();
         $product->longdesc = '   This is a short text   ' . PHP_EOL;
         $product = $modifier->apply($product);
         $this->assertEquals('This is a short text', $product->longdesc);

@@ -9,7 +9,6 @@ use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
-use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 
@@ -117,12 +116,12 @@ class AttributeModifier extends Modifier
      *
      * @param Type\Product\Product $product
      *
-     * @return BaseProduct
+     * @return Type\Product\Product
      * @throws ConnectException
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function apply(Type $product): BaseProduct
+    public function apply(Type $product): Type\Product\Product
     {
         if (!$product->id) {
             throw new ConnectException("Cannot fetch attributes without a product ID.");

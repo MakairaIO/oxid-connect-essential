@@ -12,7 +12,7 @@
 namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Product;
 
 use Makaira\OxidConnectEssential\Modifier\Product\BlacklistModifier;
-use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
@@ -20,7 +20,7 @@ class BlacklistModifierTest extends UnitTestCase
 {
     private function productFactory($skipFields = [])
     {
-        $product = new BaseProduct();
+        $product = new Product();
         $fieldValues = [
             'OXTITLE' => 'TITEL',
             'OXSHORTDESC' => 'SHORTDESC',

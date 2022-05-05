@@ -3,14 +3,14 @@
 namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Common;
 
 use Makaira\OxidConnectEssential\Modifier\Common\PriceModifier;
-use Makaira\OxidConnectEssential\Type\Common\BaseProduct;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use OxidEsales\TestingLibrary\UnitTestCase;
 
 class PriceModifierTest extends UnitTestCase
 {
     private function productFactory()
     {
-        $product = new BaseProduct();
+        $product = new Product();
         $product->OXBPRICE = 10;
         $product->OXPRICE = 10;
         $product->OXTPRICE = 10;

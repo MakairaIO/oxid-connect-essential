@@ -5,16 +5,18 @@ namespace Makaira\OxidConnectEssential;
 class Type
 {
     /* primary es id field */
-    public ?string $es_id = null;
+    public string $es_id = '';
 
     /* primary id field */
     public ?string $id = null;
 
     /* required fields + mak-fields */
     public ?string $timestamp = null;
-    public ?string $url = null;
+    public string $url = '';
     public bool $active = true;
     public array $shop = [];
+    public string $meta_keywords = '';
+    public string $meta_description = '';
 
     /** @var array<string, float|int|string|array<int|string, string|float|int>> */
     public array $additionalData = [];

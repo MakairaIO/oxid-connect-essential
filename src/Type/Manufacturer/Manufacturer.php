@@ -16,6 +16,4 @@ class Manufacturer extends Type
 {
     public ?string $manufacturer_title = null;
     public ?string $shortdesc = null;
-    public ?string $meta_keywords = null;
-    public ?string $meta_description = null;
 }
