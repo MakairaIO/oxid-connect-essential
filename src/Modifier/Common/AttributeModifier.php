@@ -123,10 +123,6 @@ class AttributeModifier extends Modifier
      */
     public function apply(Type $product): Type\Product\Product
     {
-        if (!$product->id) {
-            throw new ConnectException("Cannot fetch attributes without a product ID.");
-        }
-
         /** @var Result $resultStatement */
         $resultStatement = $this->database->executeQuery($this->selectAttributesQuery, ['productId' => $product->id,]);
         $attributes      = $resultStatement->fetchAllAssociative();
