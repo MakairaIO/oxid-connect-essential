@@ -312,6 +312,7 @@ class EndpointTest extends IntegrationTestCase
         $product = new Article();
         $product->assign(
             [
+                'oxid'        => md5('PHPUnit test product-Product with OXSTOCKFLAG = 4'),
                 'oxactive'    => '1',
                 'oxtitle'     => 'PHPUnit test product',
                 'oxshortdesc' => 'Product with OXSTOCKFLAG = 4',

@@ -717,144 +717,8 @@
             "type": "product"
         },
         {
-            "id": "786f7841994431a375a9423c4ce2540f",
-            "sequence": 54,
-            "deleted": false,
-            "data": {
-                "attributeStr": [],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "",
-                "title": "PHPUnit test product",
-                "searchkeys": "",
-                "hidden": false,
-                "sort": 0,
-                "longdesc": "",
-                "shortdesc": "Product with OXSTOCKFLAG = 4",
-                "stock": 1,
-                "onstock": true,
-                "manufacturerid": "",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "2022-05-05",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
-                "attributes": [],
-                "parent": "",
-                "maincategory": null,
-                "maincategoryurl": null,
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
-                "category": [],
-                "TRACKING": null,
-                "es_id": "",
-                "id": "786f7841994431a375a9423c4ce2540f",
-                "timestamp": "2022-05-05T13:23:18+02:00",
-                "url": "en\/oxid-oxid.html",
-                "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
-                "additionalData": {
-                    "OXSHOPID": "1",
-                    "OXPARENTID": "",
-                    "OXACTIVEFROM": null,
-                    "OXACTIVETO": null,
-                    "OXEAN": "",
-                    "OXDISTEAN": "",
-                    "OXMPN": "",
-                    "OXBLFIXEDPRICE": "0",
-                    "OXPRICEA": "0",
-                    "OXPRICEB": "0",
-                    "OXPRICEC": "0",
-                    "OXBPRICE": "0",
-                    "OXTPRICE": "0",
-                    "OXUNITNAME": "",
-                    "OXUNITQUANTITY": "0",
-                    "OXVAT": null,
-                    "OXTHUMB": "",
-                    "OXICON": "",
-                    "OXPIC1": "",
-                    "OXPIC2": "",
-                    "OXPIC3": "",
-                    "OXPIC4": "",
-                    "OXPIC5": "",
-                    "OXPIC6": "",
-                    "OXPIC7": "",
-                    "OXWEIGHT": "0",
-                    "OXSTOCK": "0",
-                    "OXSTOCKFLAG": "4",
-                    "OXDELIVERY": null,
-                    "OXLENGTH": "0",
-                    "OXWIDTH": "0",
-                    "OXHEIGHT": "0",
-                    "OXFILE": "",
-                    "OXISCONFIGURABLE": "0",
-                    "OXVARNAME": "",
-                    "OXVARSTOCK": "0",
-                    "OXVARCOUNT": "0",
-                    "OXVARSELECT": "",
-                    "OXVARMINPRICE": "0",
-                    "OXVARMAXPRICE": "0",
-                    "OXVARNAME_1": "",
-                    "OXVARSELECT_1": "",
-                    "OXVARNAME_2": "",
-                    "OXVARSELECT_2": "",
-                    "OXVARNAME_3": "",
-                    "OXVARSELECT_3": "",
-                    "OXTITLE_1": "PHPUnit test product",
-                    "OXSHORTDESC_1": "Product with OXSTOCKFLAG = 4",
-                    "OXURLDESC_1": "",
-                    "OXSEARCHKEYS_1": "",
-                    "OXTITLE_2": "",
-                    "OXSHORTDESC_2": "",
-                    "OXURLDESC_2": "",
-                    "OXSEARCHKEYS_2": "",
-                    "OXTITLE_3": "",
-                    "OXSHORTDESC_3": "",
-                    "OXURLDESC_3": "",
-                    "OXSEARCHKEYS_3": "",
-                    "OXSTOCKTEXT_1": "",
-                    "OXSTOCKTEXT_2": "",
-                    "OXSTOCKTEXT_3": "",
-                    "OXNOSTOCKTEXT_1": "",
-                    "OXNOSTOCKTEXT_2": "",
-                    "OXNOSTOCKTEXT_3": "",
-                    "OXNONMATERIAL": "0",
-                    "OXFREESHIPPING": "0",
-                    "OXVENDORID": "",
-                    "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "0",
-                    "OXMAXDELTIME": "0",
-                    "OXDELTIMEUNIT": "",
-                    "OXUPDATEPRICETIME": null,
-                    "OXISDOWNLOADABLE": "0",
-                    "OXTAGS": null,
-                    "manufacturer_title": null,
-                    "picture_url_main": false
-                },
-                "selfLinks": {
-                    "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
-                }
-            },
-            "type": "product"
-        },
-        {
             "id": "943ed656e21971fb2f1827facbba9bec",
-            "sequence": 55,
+            "sequence": 54,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -1098,7 +962,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -1106,7 +970,7 @@
         },
         {
             "id": "adc5ee42bd3c37a27a488769d22ad9ed",
-            "sequence": 56,
+            "sequence": 55,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1242,7 +1106,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/vamp_su9448_z1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -1250,7 +1114,7 @@
         },
         {
             "id": "adc920f4cbfa739803058c663a4a00b9",
-            "sequence": 57,
+            "sequence": 56,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1386,7 +1250,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/flywave2010_bild1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -1394,7 +1258,7 @@
         },
         {
             "id": "adcb9deae73557006a8ac748f45288b4",
-            "sequence": 58,
+            "sequence": 57,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1530,7 +1394,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/helm_ahm_5000_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -1538,7 +1402,7 @@
         },
         {
             "id": "b56164c54701f07df14b141da197c207",
-            "sequence": 59,
+            "sequence": 58,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1674,7 +1538,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/liquid_force_transit_boot_2010_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -1682,7 +1546,7 @@
         },
         {
             "id": "b56369b1fc9d7b97f9c5fc343b349ece",
-            "sequence": 60,
+            "sequence": 59,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -1834,7 +1698,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/core_gts_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -1842,7 +1706,7 @@
         },
         {
             "id": "b563ab240dc19b89fc0349866b2be9c0",
-            "sequence": 61,
+            "sequence": 60,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1978,7 +1842,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/30-360-back_p1_z_f_th_665.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -1986,7 +1850,7 @@
         },
         {
             "id": "b56597806428de2f58b1c6c7d3e0e093",
-            "sequence": 62,
+            "sequence": 61,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -2138,7 +2002,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/nkb_evo_2010_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -2146,7 +2010,7 @@
         },
         {
             "id": "b5666b6d4bcb67c61dee4887bfba8351",
-            "sequence": 63,
+            "sequence": 62,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -2298,7 +2162,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/core_riot_xr_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -2306,7 +2170,7 @@
         },
         {
             "id": "b56764137ca959da9541bb28c1987d6c",
-            "sequence": 64,
+            "sequence": 63,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -2458,7 +2322,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/nkb_rebel_2010_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -2466,7 +2330,7 @@
         },
         {
             "id": "b5685a5230f5050475f214b4bb0e239b",
-            "sequence": 65,
+            "sequence": 64,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2602,7 +2466,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/liquid_force_index_boot_2010_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -2610,7 +2474,7 @@
         },
         {
             "id": "b56c560872da93602ff88c7267eb4774",
-            "sequence": 66,
+            "sequence": 65,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -2762,7 +2626,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/naish_park_2011_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -2770,7 +2634,7 @@
         },
         {
             "id": "d861ad687c60820255dbf8f88516f24d",
-            "sequence": 67,
+            "sequence": 66,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2906,7 +2770,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/cabrinha_inflation_pump_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -2914,7 +2778,7 @@
         },
         {
             "id": "d86236918e1533cccb679208628eda32",
-            "sequence": 68,
+            "sequence": 67,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3050,7 +2914,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/naish_smart_loop_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -3058,7 +2922,7 @@
         },
         {
             "id": "d862c91305fe0d5e86f82122ae9e367c",
-            "sequence": 69,
+            "sequence": 68,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3194,7 +3058,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/obrien_decade_impact_base__decade_ct_boot_2010_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -3202,7 +3066,7 @@
         },
         {
             "id": "d8631f92ababb452139f222afb81cd36",
-            "sequence": 70,
+            "sequence": 69,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3338,7 +3202,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/naish_momentum_2011_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -3346,7 +3210,7 @@
         },
         {
             "id": "d866060a82d29bc94db20bdfd0e73713",
-            "sequence": 71,
+            "sequence": 70,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3482,7 +3346,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/obrien_vice__vice_ct_boot_2010_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -3490,7 +3354,7 @@
         },
         {
             "id": "d86e244c8114c8214fbf83da8d6336b3",
-            "sequence": 72,
+            "sequence": 71,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3626,7 +3490,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/lf_shane_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -3634,7 +3498,7 @@
         },
         {
             "id": "d86f775338da3228bec9e968f02e7551",
-            "sequence": 73,
+            "sequence": 72,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3770,7 +3634,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/vector_kitelinen_quad_pro_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid.html",
+                    "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -3778,7 +3642,7 @@
         },
         {
             "id": "dc5480c47d8cd5a9eab9da5db9159cc6",
-            "sequence": 74,
+            "sequence": 73,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -3930,7 +3794,7 @@
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/rrd_passion_2009_1.jpg"
                 },
                 "selfLinks": {
-                    "de": "oxid-oxid.html",
+                    "de": "oxid.html",
                     "en": "en\/oxid.html"
                 }
             },
@@ -3938,7 +3802,7 @@
         },
         {
             "id": "dc55b2b2e633527f9a8b2408a032f28f",
-            "sequence": 75,
+            "sequence": 74,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -4072,6 +3936,166 @@
                     "OXTAGS": "",
                     "manufacturer_title": "Kuyichi",
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/p1170203_1.jpg"
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "dc57391739360d306c8dfcb3a4295e19",
+            "sequence": 75,
+            "deleted": false,
+            "data": {
+                "attributeStr": [
+                    {
+                        "id": "8a142c3f14ef22a14.79693851",
+                        "title": "Einsatzbereich",
+                        "value": "Freeride"
+                    },
+                    {
+                        "id": "6cf89d2d73e666457d167cebfc3eb492",
+                        "title": "Lieferumfang",
+                        "value": "Kite, Tasche"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "1206",
+                "title": "Kite RRD PASSION",
+                "searchkeys": "kite, rrd, passion",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>RRD Passion<\/h2><\/div>\r\n<div class=\"product_text3\">\r\n<div>Dieser Kite \u00fcberrascht total:\r\nStabil, kraftvoll und sehr einfach zu relaunchen sowie zu depowern!\r\nDieser Kite gibt jedem das Gef\u00fchl, dass er schon immer kiten konnte. Der\r\n neue Passion wurde komplett \u00fcberarbeitet so dass seine Kraft und\r\nStabilit\u00e4t voll zur Geltung kommen.<br \/>\r\n<br \/><strong>Eigenschaften:<\/strong><br \/>\r\n<\/div>\r\n<div>\r\n<ul>\r\n<li>Stabilit\u00e4t<\/li>\r\n<li>Kraftvoll<\/li>\r\n<li>Leichte progressive Depower<\/li>\r\n<li>Mittlere\/leichte Bar Druck<\/li>\r\n<li>SOFORTIGER Relaunch<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Technologie:<\/strong><\/div>\r\n<ul>\r\n<li>Neues SPS System mit einem neu entworfenen Ventil<\/li>\r\n<li>Leading Edge mit parallelen N\u00e4hten f\u00fcr maximale Haltbarkeit und geringere Dehnung<\/li>\r\n<li>hei\u00df geklebtes Double Tape Liek<\/li>\r\n<li>PVC abgerundete Verst\u00e4rkung an den Enden der Querstuts<\/li>\r\n<li>Metallic-PU verst\u00e4rkte Quertube-Enden<\/li>\r\n<li>DP 175 LL Dacron<\/li>\r\n<li>Tejin T9600 Canopy<\/li>\r\n<li>Neu geformte Quertube-Protektoren<\/li>\r\n<li>Neue PVC-Ventilprotektoren<br \/>\r\n<\/li><\/ul><strong>Gr\u00f6\u00dfen:<\/strong><br \/>\r\n<blockquote>   13.0 | 11.0 | 9.0 | 7.0 | 5.0 | 3.0<br \/>\r\n<\/blockquote>\r\n<div><strong>Lieferumfang:<br \/>\r\n<\/strong>\r\n<ul>\r\n<li>Kite Passion<\/li>\r\n<li>Kitebag <\/li><\/ul><\/div><\/div><\/div>",
+                "shortdesc": "Ein au\u00dfergew\u00f6hnlicher \"Easy Performer\"",
+                "stock": 6,
+                "onstock": true,
+                "manufacturerid": "adca51c88a3caa1c7b939fd6a229ae3a",
+                "manufacturer_title": "",
+                "price": 589,
+                "insert": "2010-12-10",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [
+                    {
+                        "8a142c3f14ef22a14.79693851": "Freeride",
+                        "6cf89d2d73e666457d167cebfc3eb492": "Kite, Tasche"
+                    }
+                ],
+                "parent": "",
+                "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
+                "maincategoryurl": "en\/Kiteboarding\/Kites\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "0f4fb00809cec9aa0910aa9c8fe36751",
+                        "title": "Kites",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Kites\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "dc57391739360d306c8dfcb3a4295e19",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "en\/oxid-oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "rrd_passion_2010_1.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "6",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "589",
+                    "OXVARMAXPRICE": "0",
+                    "OXVARNAME_1": "",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "Kite RRD PASSION",
+                    "OXSHORTDESC_1": "An outstanding \"Easy Performer\"",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "kite, rrd, passion",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "4",
+                    "OXMAXDELTIME": "6",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": "",
+                    "manufacturer_title": "RRD",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/rrd_passion_2010_1.jpg"
                 },
                 "selfLinks": {
                     "de": "oxid.html",
