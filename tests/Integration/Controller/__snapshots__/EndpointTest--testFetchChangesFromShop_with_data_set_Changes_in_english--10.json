@@ -1,11 +1,339 @@
 {
     "since": 250,
-    "count": 7,
+    "count": 9,
     "requestedCount": 25,
     "changes": [
         {
-            "id": "096fec4cae008af69c9087228bd8af38",
+            "id": "096d0f954953901b7c83504f548a78ca",
             "sequence": 251,
+            "deleted": false,
+            "data": {
+                "isVariant": true,
+                "attributeStr": [
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "0802-85-823-9-1",
+                "title": "Kuyichi Jeans MICK",
+                "searchkeys": "kuyichi,jeans,dunkel,l\u00e4ssig,frisch,gerade,locker",
+                "hidden": false,
+                "sort": 14001,
+                "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die trendige und frische Herrenjeans von Kuyichi. L\u00e4ssige Jeans mit Rei\u00dfverschlu\u00df \u00fcber der Hosentasche, geradem und engem Beinschnitt.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
+                "shortdesc": "L\u00e4ssige Jeans mit Rei\u00dfverschlu\u00df \u00fcber der Hosentasche, geradem und engem Beinschnitt",
+                "stock": 0,
+                "onstock": true,
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "manufacturer_title": "",
+                "price": 109,
+                "insert": "2009-12-04",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": false,
+                "picture_url_main": [],
+                "attributes": [],
+                "parent": "",
+                "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
+                "mak_boost_norm_insert": 0,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d8665fef35f4d528e92c3d664f4a00c0",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "096d0f954953901b7c83504f548a78ca",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "en\/oxid-oxid.html",
+                "active": false,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "parent": "943ed656e21971fb2f1827facbba9bec",
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "943ed656e21971fb2f1827facbba9bec",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "0",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "W 32\/L 34 | Blau",
+                    "OXVARMINPRICE": "0",
+                    "OXVARMAXPRICE": "0",
+                    "OXVARNAME_1": "",
+                    "OXVARSELECT_1": "W 32\/L 34 | Blue ",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "",
+                    "OXSHORTDESC_1": "",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "2",
+                    "OXMAXDELTIME": "4",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": ""
+                },
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "variant"
+        },
+        {
+            "id": "096e38032896a847682651d565966c45",
+            "sequence": 252,
+            "deleted": false,
+            "data": {
+                "isVariant": true,
+                "attributeStr": [
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Schwarz"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    }
+                ],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "0802-85-823-12",
+                "title": "Kuyichi Jeans MICK",
+                "searchkeys": "kuyichi,jeans,dunkel,l\u00e4ssig,frisch,gerade,locker",
+                "hidden": false,
+                "sort": 17000,
+                "longdesc": "Die trendige und frische Herrenjeans von Kuyichi. L\u00e4ssige Jeans mit\r\nRei\u00dfverschlu\u00df \u00fcber der Hosentasche, geradem und engem Beinschnitt.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
+                "shortdesc": "L\u00e4ssige Jeans mit Rei\u00dfverschlu\u00df \u00fcber der Hosentasche, geradem und engem Beinschnitt",
+                "stock": 20,
+                "onstock": true,
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "manufacturer_title": "",
+                "price": 109,
+                "insert": "2009-12-04",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": false,
+                "picture_url_main": [],
+                "attributes": [],
+                "parent": "",
+                "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
+                "mak_boost_norm_insert": 0,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [
+                    {
+                        "catid": "d8665fef35f4d528e92c3d664f4a00c0",
+                        "title": "Jeans",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                    }
+                ],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "096e38032896a847682651d565966c45",
+                "timestamp": "2020-04-21T09:50:35+02:00",
+                "url": "en\/oxid-oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "parent": "943ed656e21971fb2f1827facbba9bec",
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "943ed656e21971fb2f1827facbba9bec",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "thumb(2)_th.jpg",
+                    "OXICON": "icon(2)_ico.jpg",
+                    "OXPIC1": "front_z1(6).jpg",
+                    "OXPIC2": "back_z2(6).jpg",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "20",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "W 34\/L 34 | Schwarz",
+                    "OXVARMINPRICE": "0",
+                    "OXVARMAXPRICE": "0",
+                    "OXVARNAME_1": "",
+                    "OXVARSELECT_1": "W 34\/L 34 | Black ",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "",
+                    "OXSHORTDESC_1": "Casual jeans with a zipper over the pockets and straight, tight legs",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "kuyichi,jeans,dark,casual,fresh,straight,cool",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "4",
+                    "OXMAXDELTIME": "6",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": ""
+                },
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "variant"
+        },
+        {
+            "id": "096fec4cae008af69c9087228bd8af38",
+            "sequence": 253,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -76,7 +404,7 @@
                 "es_id": "",
                 "id": "096fec4cae008af69c9087228bd8af38",
                 "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "en\/oxid.html",
+                "url": "en\/oxid-oxid.html",
                 "active": false,
                 "shop": [
                     "1"
@@ -162,14 +490,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "variant"
         },
         {
             "id": "10002696d80479437dda4882c77b3bd8",
-            "sequence": 252,
+            "sequence": 254,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -230,7 +558,7 @@
                 "es_id": "",
                 "id": "10002696d80479437dda4882c77b3bd8",
                 "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "en\/oxid.html",
+                "url": "en\/oxid-oxid.html",
                 "active": true,
                 "shop": [
                     "1"
@@ -316,14 +644,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "variant"
         },
         {
             "id": "10049f9322cf8852f8d567e9662cb12c",
-            "sequence": 253,
+            "sequence": 255,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -384,7 +712,7 @@
                 "es_id": "",
                 "id": "10049f9322cf8852f8d567e9662cb12c",
                 "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "en\/oxid.html",
+                "url": "en\/oxid-oxid.html",
                 "active": true,
                 "shop": [
                     "1"
@@ -470,14 +798,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "variant"
         },
         {
             "id": "10067ab25bf275b7e68bc0431b204d24",
-            "sequence": 254,
+            "sequence": 256,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -538,7 +866,7 @@
                 "es_id": "",
                 "id": "10067ab25bf275b7e68bc0431b204d24",
                 "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "en\/oxid.html",
+                "url": "en\/oxid-oxid.html",
                 "active": true,
                 "shop": [
                     "1"
@@ -624,14 +952,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "variant"
         },
         {
             "id": "1008b12cef0476f5e941da460ba621e6",
-            "sequence": 255,
+            "sequence": 257,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -692,7 +1020,7 @@
                 "es_id": "",
                 "id": "1008b12cef0476f5e941da460ba621e6",
                 "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "en\/oxid.html",
+                "url": "en\/oxid-oxid.html",
                 "active": true,
                 "shop": [
                     "1"
@@ -778,14 +1106,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "variant"
         },
         {
             "id": "dc53d3c0ca2ae7c38bf51f3410da0bf8",
-            "sequence": 256,
+            "sequence": 258,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -851,7 +1179,7 @@
                 "es_id": "",
                 "id": "dc53d3c0ca2ae7c38bf51f3410da0bf8",
                 "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "en\/oxid.html",
+                "url": "en\/oxid-oxid.html",
                 "active": true,
                 "shop": [
                     "1"
@@ -937,14 +1265,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "variant"
         },
         {
             "id": "dc5ae3d43f96269ed3c62172e383be40",
-            "sequence": 257,
+            "sequence": 259,
             "deleted": false,
             "data": {
                 "isVariant": true,
@@ -1010,7 +1338,7 @@
                 "es_id": "",
                 "id": "dc5ae3d43f96269ed3c62172e383be40",
                 "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "en\/oxid.html",
+                "url": "en\/oxid-oxid.html",
                 "active": true,
                 "shop": [
                     "1"
@@ -1096,7 +1424,7 @@
                 },
                 "selfLinks": {
                     "de": "oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "variant"

@@ -115,7 +115,7 @@
                 "parent": "",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -341,7 +341,7 @@
                 "parent": "",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -456,8 +456,144 @@
             "type": "product"
         },
         {
-            "id": "943ed656e21971fb2f1827facbba9bec",
+            "id": "786f7841994431a375a9423c4ce2540f",
             "sequence": 53,
+            "deleted": false,
+            "data": {
+                "attributeStr": [],
+                "attributeInt": [],
+                "attributeFloat": [],
+                "isPseudo": false,
+                "ean": "",
+                "title": "PHPUnit test product",
+                "searchkeys": "",
+                "hidden": false,
+                "sort": 0,
+                "longdesc": "",
+                "shortdesc": "Product with OXSTOCKFLAG = 4",
+                "stock": 1,
+                "onstock": true,
+                "manufacturerid": "",
+                "manufacturer_title": "",
+                "price": 0,
+                "insert": "2022-05-05",
+                "soldamount": 0,
+                "rating": 0,
+                "searchable": true,
+                "picture_url_main": [],
+                "attributes": [],
+                "parent": "",
+                "maincategory": null,
+                "maincategoryurl": null,
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_profit_margin": 0,
+                "isVariant": false,
+                "activeto": null,
+                "activefrom": null,
+                "suggest": [],
+                "category": [],
+                "TRACKING": null,
+                "es_id": "",
+                "id": "786f7841994431a375a9423c4ce2540f",
+                "timestamp": "2022-05-05T13:23:18+02:00",
+                "url": "oxid.html",
+                "active": true,
+                "shop": [
+                    "1"
+                ],
+                "meta_keywords": "",
+                "meta_description": "",
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "0",
+                    "OXSTOCKFLAG": "4",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "0",
+                    "OXVARMAXPRICE": "0",
+                    "OXVARNAME_1": "",
+                    "OXVARSELECT_1": "",
+                    "OXVARNAME_2": "",
+                    "OXVARSELECT_2": "",
+                    "OXVARNAME_3": "",
+                    "OXVARSELECT_3": "",
+                    "OXTITLE_1": "PHPUnit test product",
+                    "OXSHORTDESC_1": "Product with OXSTOCKFLAG = 4",
+                    "OXURLDESC_1": "",
+                    "OXSEARCHKEYS_1": "",
+                    "OXTITLE_2": "",
+                    "OXSHORTDESC_2": "",
+                    "OXURLDESC_2": "",
+                    "OXSEARCHKEYS_2": "",
+                    "OXTITLE_3": "",
+                    "OXSHORTDESC_3": "",
+                    "OXURLDESC_3": "",
+                    "OXSEARCHKEYS_3": "",
+                    "OXSTOCKTEXT_1": "",
+                    "OXSTOCKTEXT_2": "",
+                    "OXSTOCKTEXT_3": "",
+                    "OXNOSTOCKTEXT_1": "",
+                    "OXNOSTOCKTEXT_2": "",
+                    "OXNOSTOCKTEXT_3": "",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "0",
+                    "OXMAXDELTIME": "0",
+                    "OXDELTIMEUNIT": "",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXTAGS": null,
+                    "manufacturer_title": null,
+                    "picture_url_main": false
+                },
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                }
+            },
+            "type": "product"
+        },
+        {
+            "id": "943ed656e21971fb2f1827facbba9bec",
+            "sequence": 54,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -593,7 +729,7 @@
                 "parent": "",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -702,14 +838,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "adc5ee42bd3c37a27a488769d22ad9ed",
-            "sequence": 54,
+            "sequence": 55,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -737,7 +873,7 @@
                 "parent": "",
                 "maincategory": "fada9485f003c731b7fad08b873214e0",
                 "maincategoryurl": "Bekleidung\/Sportswear\/Neopren\/Anzuege\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -846,14 +982,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "adc920f4cbfa739803058c663a4a00b9",
-            "sequence": 55,
+            "sequence": 56,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -881,7 +1017,7 @@
                 "parent": "",
                 "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
                 "maincategoryurl": "Kiteboarding\/Kiteboards\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -990,14 +1126,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "adcb9deae73557006a8ac748f45288b4",
-            "sequence": 56,
+            "sequence": 57,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1025,7 +1161,7 @@
                 "parent": "",
                 "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
                 "maincategoryurl": "Kiteboarding\/Zubehoer\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1134,14 +1270,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b56164c54701f07df14b141da197c207",
-            "sequence": 57,
+            "sequence": 58,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1169,7 +1305,7 @@
                 "parent": "",
                 "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
                 "maincategoryurl": "Wakeboarding\/Bindungen\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1278,14 +1414,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b56369b1fc9d7b97f9c5fc343b349ece",
-            "sequence": 58,
+            "sequence": 59,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -1329,7 +1465,7 @@
                 "parent": "",
                 "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
                 "maincategoryurl": "Kiteboarding\/Kites\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1438,14 +1574,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b563ab240dc19b89fc0349866b2be9c0",
-            "sequence": 59,
+            "sequence": 60,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -1473,7 +1609,7 @@
                 "parent": "",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1582,14 +1718,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b56597806428de2f58b1c6c7d3e0e093",
-            "sequence": 60,
+            "sequence": 61,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -1633,7 +1769,7 @@
                 "parent": "",
                 "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
                 "maincategoryurl": "Kiteboarding\/Kites\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1742,14 +1878,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b5666b6d4bcb67c61dee4887bfba8351",
-            "sequence": 61,
+            "sequence": 62,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -1793,7 +1929,7 @@
                 "parent": "",
                 "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
                 "maincategoryurl": "Kiteboarding\/Kites\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -1902,14 +2038,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b56764137ca959da9541bb28c1987d6c",
-            "sequence": 62,
+            "sequence": 63,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -1953,7 +2089,7 @@
                 "parent": "",
                 "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
                 "maincategoryurl": "Kiteboarding\/Kites\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -2062,14 +2198,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b5685a5230f5050475f214b4bb0e239b",
-            "sequence": 63,
+            "sequence": 64,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2097,7 +2233,7 @@
                 "parent": "",
                 "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
                 "maincategoryurl": "Wakeboarding\/Bindungen\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -2206,14 +2342,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "b56c560872da93602ff88c7267eb4774",
-            "sequence": 64,
+            "sequence": 65,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -2257,7 +2393,7 @@
                 "parent": "",
                 "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
                 "maincategoryurl": "Kiteboarding\/Kites\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -2366,14 +2502,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "d861ad687c60820255dbf8f88516f24d",
-            "sequence": 65,
+            "sequence": 66,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2401,7 +2537,7 @@
                 "parent": "",
                 "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
                 "maincategoryurl": "Kiteboarding\/Zubehoer\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -2510,14 +2646,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "d86236918e1533cccb679208628eda32",
-            "sequence": 66,
+            "sequence": 67,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2545,7 +2681,7 @@
                 "parent": "",
                 "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
                 "maincategoryurl": "Kiteboarding\/Zubehoer\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -2654,14 +2790,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "d862c91305fe0d5e86f82122ae9e367c",
-            "sequence": 67,
+            "sequence": 68,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2689,7 +2825,7 @@
                 "parent": "",
                 "maincategory": "d86d90e4b441aa3f0004dcda5ba5bb38",
                 "maincategoryurl": "Wakeboarding\/Sets\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -2798,14 +2934,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "d8631f92ababb452139f222afb81cd36",
-            "sequence": 68,
+            "sequence": 69,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2833,7 +2969,7 @@
                 "parent": "",
                 "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
                 "maincategoryurl": "Kiteboarding\/Kiteboards\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -2942,14 +3078,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "d866060a82d29bc94db20bdfd0e73713",
-            "sequence": 69,
+            "sequence": 70,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -2977,7 +3113,7 @@
                 "parent": "",
                 "maincategory": "d86d90e4b441aa3f0004dcda5ba5bb38",
                 "maincategoryurl": "Wakeboarding\/Sets\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -3086,14 +3222,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "d86e244c8114c8214fbf83da8d6336b3",
-            "sequence": 70,
+            "sequence": 71,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3121,7 +3257,7 @@
                 "parent": "",
                 "maincategory": "0f4270b89fbef1481958381410a0dbca",
                 "maincategoryurl": "Wakeboarding\/Wakeboards\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -3230,14 +3366,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "d86f775338da3228bec9e968f02e7551",
-            "sequence": 71,
+            "sequence": 72,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3265,7 +3401,7 @@
                 "parent": "",
                 "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
                 "maincategoryurl": "Kiteboarding\/Zubehoer\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -3374,14 +3510,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "dc5480c47d8cd5a9eab9da5db9159cc6",
-            "sequence": 72,
+            "sequence": 73,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -3425,7 +3561,7 @@
                 "parent": "",
                 "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
                 "maincategoryurl": "Kiteboarding\/Kites\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -3534,14 +3670,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
+                    "en": "en\/oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "dc55b2b2e633527f9a8b2408a032f28f",
-            "sequence": 73,
+            "sequence": 74,
             "deleted": false,
             "data": {
                 "attributeStr": [],
@@ -3569,7 +3705,7 @@
                 "parent": "",
                 "maincategory": "fad4d7e2b47d87bb6a2773d93d4ae9be",
                 "maincategoryurl": "Bekleidung\/Fashion\/Accessoires\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -3678,14 +3814,14 @@
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
+                    "en": "en\/oxid-oxid.html"
                 }
             },
             "type": "product"
         },
         {
             "id": "dc57391739360d306c8dfcb3a4295e19",
-            "sequence": 74,
+            "sequence": 75,
             "deleted": false,
             "data": {
                 "attributeStr": [
@@ -3729,7 +3865,7 @@
                 "parent": "",
                 "maincategory": "0f4fb00809cec9aa0910aa9c8fe36751",
                 "maincategoryurl": "Kiteboarding\/Kites\/",
-                "mak_boost_norm_insert": 1.070088807227071,
+                "mak_boost_norm_insert": 1,
                 "mak_boost_norm_sold": 0,
                 "mak_boost_norm_rating": 0,
                 "mak_boost_norm_revenue": 0,
@@ -3835,193 +3971,6 @@
                     "OXTAGS": "",
                     "manufacturer_title": "RRD",
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/rrd_passion_2010_1.jpg"
-                },
-                "selfLinks": {
-                    "de": "oxid-oxid.html",
-                    "en": "en\/oxid-oxid.html"
-                }
-            },
-            "type": "product"
-        },
-        {
-            "id": "dc581d8a115035cbfb0223c9c736f513",
-            "sequence": 75,
-            "deleted": false,
-            "data": {
-                "attributeStr": [
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "grau"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "orange"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "grau"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "orange"
-                    }
-                ],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "3552",
-                "title": "Kuyichi T-Shirt TIGER",
-                "searchkeys": "shirt, tiger, organic, men",
-                "hidden": false,
-                "sort": 0,
-                "longdesc": "<div><font face=\"Verdana\" size=\"2\">L\u00e4ssiges Shortsleeve f\u00fcr Herren mit dem Aufdruck \"ORGANIC TO THE BONE\".<\/font><\/div>\r\n<ul>\r\n<li><font face=\"Verdana\" size=\"2\">Fair Trade Produkt <br \/>\r\n<\/font><\/li>\r\n<li><font face=\"Verdana\" size=\"2\">100% organic<\/font><\/li><\/ul>\r\n",
-                "shortdesc": "L\u00e4ssiges Herrenshirt mit Aufdruck",
-                "stock": 167,
-                "onstock": true,
-                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
-                "manufacturer_title": "",
-                "price": 29.9,
-                "insert": "2010-12-10",
-                "soldamount": 1,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
-                "attributes": [
-                    {
-                        "9438ac75bac3e344628b14bf7ed82c15": "grau"
-                    },
-                    {
-                        "9438ac75bac3e344628b14bf7ed82c15": "orange"
-                    }
-                ],
-                "parent": "",
-                "maincategory": "d862abc1f98741797cf889eb4a9090ad",
-                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1.070088807227071,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
-                "category": [
-                    {
-                        "catid": "d862abc1f98741797cf889eb4a9090ad",
-                        "title": "Shirts & Co.",
-                        "shopid": 1,
-                        "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Shirts & Co.\/"
-                    }
-                ],
-                "TRACKING": null,
-                "es_id": "",
-                "id": "dc581d8a115035cbfb0223c9c736f513",
-                "timestamp": "2020-04-21T09:50:35+02:00",
-                "url": "oxid.html",
-                "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
-                "additionalData": {
-                    "OXSHOPID": "1",
-                    "OXPARENTID": "",
-                    "OXACTIVEFROM": null,
-                    "OXACTIVETO": null,
-                    "OXEAN": "",
-                    "OXDISTEAN": "",
-                    "OXMPN": "",
-                    "OXBLFIXEDPRICE": "0",
-                    "OXPRICEA": "0",
-                    "OXPRICEB": "0",
-                    "OXPRICEC": "0",
-                    "OXBPRICE": "0",
-                    "OXTPRICE": "0",
-                    "OXUNITNAME": "",
-                    "OXUNITQUANTITY": "0",
-                    "OXVAT": null,
-                    "OXTHUMB": "",
-                    "OXICON": "",
-                    "OXPIC1": "img_0027_1.jpg",
-                    "OXPIC2": "img_0030.jpg",
-                    "OXPIC3": "img_0032.jpg",
-                    "OXPIC4": "img_0019_1.jpg",
-                    "OXPIC5": "img_0022.jpg",
-                    "OXPIC6": "img_0024.jpg",
-                    "OXPIC7": "",
-                    "OXWEIGHT": "0",
-                    "OXSTOCK": "78",
-                    "OXSTOCKFLAG": "1",
-                    "OXDELIVERY": null,
-                    "OXLENGTH": "0",
-                    "OXWIDTH": "0",
-                    "OXHEIGHT": "0",
-                    "OXFILE": "",
-                    "OXISCONFIGURABLE": "0",
-                    "OXVARNAME": "Gr\u00f6\u00dfe | Farbe",
-                    "OXVARSTOCK": "89",
-                    "OXVARCOUNT": "6",
-                    "OXVARSELECT": "",
-                    "OXVARMINPRICE": "29.9",
-                    "OXVARMAXPRICE": "29.9",
-                    "OXVARNAME_1": "Size | Color",
-                    "OXVARSELECT_1": "",
-                    "OXVARNAME_2": "",
-                    "OXVARSELECT_2": "",
-                    "OXVARNAME_3": "",
-                    "OXVARSELECT_3": "",
-                    "OXTITLE_1": "Kuyichi T-Shirt TIGER",
-                    "OXSHORTDESC_1": "Short sleeve shirt for men",
-                    "OXURLDESC_1": "",
-                    "OXSEARCHKEYS_1": "shirt, tiger, organic, men, grey, orange",
-                    "OXTITLE_2": "",
-                    "OXSHORTDESC_2": "",
-                    "OXURLDESC_2": "",
-                    "OXSEARCHKEYS_2": "",
-                    "OXTITLE_3": "",
-                    "OXSHORTDESC_3": "",
-                    "OXURLDESC_3": "",
-                    "OXSEARCHKEYS_3": "",
-                    "OXSTOCKTEXT_1": "",
-                    "OXSTOCKTEXT_2": "",
-                    "OXSTOCKTEXT_3": "",
-                    "OXNOSTOCKTEXT_1": "",
-                    "OXNOSTOCKTEXT_2": "",
-                    "OXNOSTOCKTEXT_3": "",
-                    "OXNONMATERIAL": "0",
-                    "OXFREESHIPPING": "0",
-                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
-                    "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "1",
-                    "OXMAXDELTIME": "3",
-                    "OXDELTIMEUNIT": "DAY",
-                    "OXUPDATEPRICETIME": null,
-                    "OXISDOWNLOADABLE": "0",
-                    "OXTAGS": "",
-                    "manufacturer_title": "Kuyichi",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/img_0027_1.jpg"
                 },
                 "selfLinks": {
                     "de": "oxid-oxid.html",
