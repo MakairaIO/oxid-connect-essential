@@ -244,7 +244,6 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Common\StockModifier:
     bind:
-      $tableName: '@=service("Makaira_OxidConnectEssential_Oxid_Article").getCoreTableName()'
       $useStock: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blUseStock")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
