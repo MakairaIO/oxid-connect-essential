@@ -197,6 +197,8 @@ class EndpointTest extends IntegrationTestCase
                 $response['changes'] = array_map(
                     static function (array $change) {
                         $change['data']['timestamp'] = preg_replace('/\d/', 'X', $change['data']['timestamp']);
+                        $change['data']['insert']    = preg_replace('/\d/', 'X', $change['data']['insert']);
+                        $change['data']['url']       = preg_replace('/^.*$/', 'X', $change['data']['url']);
 
                         return $change;
                     },

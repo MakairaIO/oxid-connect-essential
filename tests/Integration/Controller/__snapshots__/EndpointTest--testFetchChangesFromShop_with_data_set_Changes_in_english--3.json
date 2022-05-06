@@ -60,7 +60,7 @@
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "manufacturer_title": "",
                 "price": 29.9,
-                "insert": "2010-12-10",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 1,
                 "rating": 0,
                 "searchable": true,
@@ -98,7 +98,7 @@
                 "es_id": "",
                 "id": "dc581d8a115035cbfb0223c9c736f513",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -222,7 +222,7 @@
                 "manufacturerid": "dc50589ad69b6ec71721b25bdd403171",
                 "manufacturer_title": "",
                 "price": 1599,
-                "insert": "2010-12-10",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -258,7 +258,7 @@
                 "es_id": "",
                 "id": "dc5b9cfeb5bd96fdbd9b4e43974661a1",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -371,7 +371,7 @@
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "manufacturer_title": "",
                 "price": 29.9,
-                "insert": "2010-12-10",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 3,
                 "rating": 0,
                 "searchable": true,
@@ -402,7 +402,7 @@
                 "es_id": "",
                 "id": "dc5ffdf380e15674b56dd562a7cb6aec",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -515,7 +515,7 @@
                 "manufacturerid": "adc6df0977329923a6330cc8f3c0a906",
                 "manufacturer_title": "",
                 "price": 329,
-                "insert": "2010-12-09",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 1,
                 "rating": 0,
                 "searchable": true,
@@ -546,7 +546,7 @@
                 "es_id": "",
                 "id": "ed6573c0259d6a6fb641d106dcb2faec",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -659,7 +659,7 @@
                 "manufacturerid": "90a0b84564cde2394491df1c673b6aa0",
                 "manufacturer_title": "",
                 "price": 44.9,
-                "insert": "2010-12-09",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -690,7 +690,7 @@
                 "es_id": "",
                 "id": "ed6a2b0b90cab3f60a2dfd1c91fceb77",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -803,7 +803,7 @@
                 "manufacturerid": "adc6df0977329923a6330cc8f3c0a906",
                 "manufacturer_title": "",
                 "price": 389,
-                "insert": "2010-12-09",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 1,
                 "rating": 0,
                 "searchable": true,
@@ -834,7 +834,7 @@
                 "es_id": "",
                 "id": "ed6a4182ae58874e4fdaa4775566af6c",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -947,7 +947,7 @@
                 "manufacturerid": "",
                 "manufacturer_title": "",
                 "price": 12.49,
-                "insert": "2011-03-24",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 3,
                 "rating": 0,
                 "searchable": true,
@@ -978,7 +978,7 @@
                 "es_id": "",
                 "id": "f33d5bcc7135908fd36fc736c643aa1c",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -1102,7 +1102,7 @@
                 "manufacturerid": "adc6df0977329923a6330cc8f3c0a906",
                 "manufacturer_title": "",
                 "price": 1019,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -1138,7 +1138,7 @@
                 "es_id": "",
                 "id": "f4f0cb3606e231c3fdb34fcaee2d6d04",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -1251,7 +1251,7 @@
                 "manufacturerid": "90a0b84564cde2394491df1c673b6aa0",
                 "manufacturer_title": "",
                 "price": 129,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 1,
                 "rating": 0,
                 "searchable": true,
@@ -1282,7 +1282,7 @@
                 "es_id": "",
                 "id": "f4f2d8eee51b0fd5eb60a46dff1166d8",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -1395,7 +1395,7 @@
                 "manufacturerid": "3a9fd0ec4b41d001e770b1d2d7af3e73",
                 "manufacturer_title": "",
                 "price": 24.95,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 1,
                 "rating": 0,
                 "searchable": true,
@@ -1426,7 +1426,7 @@
                 "es_id": "",
                 "id": "f4f73033cf5045525644042325355732",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -1539,7 +1539,7 @@
                 "manufacturerid": "",
                 "manufacturer_title": "",
                 "price": 79,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -1570,7 +1570,7 @@
                 "es_id": "",
                 "id": "f4f981b0d9e34d2aeda82d79412480a4",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -1683,7 +1683,7 @@
                 "manufacturerid": "dc5ec524a9aa6175cf7a498d70ce510a",
                 "manufacturer_title": "",
                 "price": 269,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -1714,7 +1714,7 @@
                 "es_id": "",
                 "id": "f4fc98f99e3660bd2ecd7450f832c41a",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -1838,7 +1838,7 @@
                 "manufacturerid": "adc566c366db8eaf30c6c124a09e82b3",
                 "manufacturer_title": "",
                 "price": 699,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -1874,7 +1874,7 @@
                 "es_id": "",
                 "id": "f4fe052346b4ec271011e25c052682c5",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -1987,7 +1987,7 @@
                 "manufacturerid": "adca51c88a3caa1c7b939fd6a229ae3a",
                 "manufacturer_title": "",
                 "price": 509,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 4,
                 "searchable": true,
@@ -2018,7 +2018,7 @@
                 "es_id": "",
                 "id": "f4fe754e1692b9f79f2a7b1a01bb8dee",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -2142,7 +2142,7 @@
                 "manufacturerid": "adc6df0977329923a6330cc8f3c0a906",
                 "manufacturer_title": "",
                 "price": 1189,
-                "insert": "2010-12-03",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -2178,7 +2178,7 @@
                 "es_id": "",
                 "id": "fad21eb148918c8f4d9f0077fedff1ba",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -2302,7 +2302,7 @@
                 "manufacturerid": "adca6aa4df3f95b6b46e28d4fc5855ba",
                 "manufacturer_title": "",
                 "price": 1169,
-                "insert": "2010-12-03",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -2338,7 +2338,7 @@
                 "es_id": "",
                 "id": "fadc492a5807c56eb80b0507accd756b",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -2451,7 +2451,7 @@
                 "manufacturerid": "",
                 "manufacturer_title": "",
                 "price": 4.99,
-                "insert": "2010-12-07",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -2482,7 +2482,7 @@
                 "es_id": "",
                 "id": "fc71f70c3398ee4c2cdd101494087185",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -2595,7 +2595,7 @@
                 "manufacturerid": "oiaf6ab7e12e86291e86dd3ff891fe40",
                 "manufacturer_title": "",
                 "price": 0,
-                "insert": "2012-04-25",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": true,
@@ -2626,7 +2626,7 @@
                 "es_id": "",
                 "id": "oiaa81b5e002fc2f73b9398c361c0b97",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -2745,7 +2745,7 @@
                 "manufacturerid": "",
                 "manufacturer_title": "",
                 "price": 7.99,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": false,
@@ -2775,7 +2775,7 @@
                 "es_id": "",
                 "id": "05833e961f65616e55a2208c2ed7c6b8",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -2894,7 +2894,7 @@
                 "manufacturerid": "",
                 "manufacturer_title": "",
                 "price": 7.99,
-                "insert": "2010-12-06",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": false,
@@ -2924,7 +2924,7 @@
                 "es_id": "",
                 "id": "058c7b525aad619d8b343c0ffada0247",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
@@ -3058,7 +3058,7 @@
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "manufacturer_title": "",
                 "price": 99.9,
-                "insert": "2009-12-14",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": false,
@@ -3088,7 +3088,7 @@
                 "es_id": "",
                 "id": "6b601c0b45cea6507b28b90a613174c8",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": false,
                 "shop": [
                     "1"
@@ -3222,7 +3222,7 @@
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "manufacturer_title": "",
                 "price": 99.9,
-                "insert": "2009-12-14",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": false,
@@ -3252,7 +3252,7 @@
                 "es_id": "",
                 "id": "6b6032141245c2efb4d75a7e6205aa6b",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": false,
                 "shop": [
                     "1"
@@ -3386,7 +3386,7 @@
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "manufacturer_title": "",
                 "price": 99.9,
-                "insert": "2009-12-14",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": false,
@@ -3416,7 +3416,7 @@
                 "es_id": "",
                 "id": "6b6102e4f214581a9c3356bdd3839e1b",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": false,
                 "shop": [
                     "1"
@@ -3550,7 +3550,7 @@
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "manufacturer_title": "",
                 "price": 99.9,
-                "insert": "2009-12-14",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": false,
@@ -3580,7 +3580,7 @@
                 "es_id": "",
                 "id": "6b61647e12835f0f9dee1d5596132e26",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": false,
                 "shop": [
                     "1"
@@ -3714,7 +3714,7 @@
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "manufacturer_title": "",
                 "price": 92.9,
-                "insert": "2009-12-14",
+                "insert": "XXXX-XX-XX",
                 "soldamount": 0,
                 "rating": 0,
                 "searchable": false,
@@ -3744,7 +3744,7 @@
                 "es_id": "",
                 "id": "6b628e6a8ffa98fea6f2ee9d708b1b23",
                 "timestamp": "XXXX-XX-XXTXX:XX:XX+XX:XX",
-                "url": "en\/oxid-oxid.html",
+                "url": "X",
                 "active": true,
                 "shop": [
                     "1"
