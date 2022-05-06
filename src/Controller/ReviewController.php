@@ -13,10 +13,12 @@ class ReviewController extends BaseController
     public function __construct()
     {
         parent::__construct();
-        $this->reviewService = ContainerFactory::getInstance()->getContainer()->get(ReviewService::class);
+        /** @var ReviewService $reviewService */
+        $reviewService       = ContainerFactory::getInstance()->getContainer()->get(ReviewService::class);
+        $this->reviewService = $reviewService;
     }
 
-    public function getReviews()
+    public function getReviews(): void
     {
         ['id' => $productId, 'limit' => $limit, 'offset' => $offset] = $this->getRequestBody();
 
@@ -30,7 +32,7 @@ class ReviewController extends BaseController
         }
     }
 
-    public function createReview()
+    public function createReview(): void
     {
         $user = $this->checkAndGetActiveUser();
         ['product_id' => $productId, 'rating' => $rating, 'text' => $text] = $this->getRequestBody();
