@@ -2,11 +2,15 @@
 
 namespace Makaira\OxidConnectEssential\Oxid\Core;
 
+use OxidEsales\Eshop\Application\Controller\BasketController;
+use OxidEsales\Eshop\Application\Controller\ThankYouController;
 use OxidEsales\Eshop\Core\Exception\ArticleInputException;
 use OxidEsales\Eshop\Core\Exception\NoArticleException;
 use OxidEsales\EshopCommunity\Application\Model\Basket;
 use OxidEsales\EshopCommunity\Application\Model\BasketItem;
 use OxidEsales\EshopCommunity\Core\Registry;
+use oxRegistry;
+use Thankyou;
 
 /**
  * This file is part of a marmalade GmbH project
@@ -28,6 +32,12 @@ class MakairaTrackingDataGenerator
 
     private static mixed $odoScopeTracking = false;
 
+    private const METHOD_MAP = [
+        BasketController::class   => 'generateForBasket',
+        ThankYouController::class => 'generateForThankYou',
+
+    ];
+
     /**
      * Generates the tracking data array to send to piwik.
      * @param string $oxidControllerClass OXIDs controller class to generate the tracking data for.
@@ -48,8 +58,7 @@ class MakairaTrackingDataGenerator
         }
 
         $childTrackingData = null;
-        $normalizedClass = $this->normalize($oxidControllerClass);
-        $methodName = "generateFor{$normalizedClass}";
+        $methodName = self::METHOD_MAP[$oxidControllerClass] ?? 'UnknownController';
 
         if (is_callable([$this, $methodName]) && method_exists($this, $methodName)) {
             $childTrackingData = $this->{$methodName}();
@@ -170,6 +179,37 @@ class MakairaTrackingDataGenerator
                 $cartItem->getAmount(),
             ];
         }
+
+        return $cartData;
+    }
+
+    /**
+     * Generates tracking data for a completed order.
+     *
+     * @return array
+     * @throws ArticleInputException
+     * @throws NoArticleException
+     */
+    protected function generateForThankYou(): array
+    {
+        /** @var Thankyou $oxidController */
+        $oxidController = Registry::getConfig()->getTopActiveView();
+
+        $cart     = $oxidController->getBasket();
+        $cartData = $this->createCartTrackingData($cart);
+        $order    = $oxidController->getOrder();
+
+        $cartData[] = [
+            'trackEcommerceOrder',
+            $order->oxorder__oxordernr->value,
+            $order->getTotalOrderSum(),
+            $cart->getDiscountedProductsBruttoPrice(),
+            ($order->oxorder__oxartvatprice1->value + $order->oxorder__oxartvatprice2->value),
+            ($order->getOrderDeliveryPrice()->getBruttoPrice() +
+                $order->getOrderPaymentPrice()->getBruttoPrice() +
+                $order->getOrderWrappingPrice()->getBruttoPrice()),
+            $order->oxorder__oxdiscount->value,
+        ];
 
         return $cartData;
     }

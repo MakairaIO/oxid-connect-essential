@@ -7,6 +7,8 @@ use OxidEsales\Eshop\Core\Exception\NoArticleException;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Core\Output;
 
+use function get_class;
+
 /**
  * This file is part of a marmalade GmbH project
  * It is not Open Source and may not be redistributed.
@@ -73,10 +75,9 @@ class MakairaConnectOutput extends MakairaConnectOutput_parent
         if (null === self::$trackingData) {
             /** @var MakairaTrackingDataGenerator $trackingDataGenerator */
             $trackingDataGenerator = Registry::get(MakairaTrackingDataGenerator::class);
-            $oxidControllerClass = Registry::getConfig()
-                ->getTopActiveView()
-                ->getClassKey();
-            self::$trackingData = $trackingDataGenerator->generate($oxidControllerClass);
+            $oxidController = Registry::getConfig()
+                ->getTopActiveView();
+            self::$trackingData = $trackingDataGenerator->generate(get_class($oxidController));
         }
 
         return self::$trackingData;
