@@ -14,6 +14,10 @@ class RevisionRepository
 {
     private Connection $connection;
 
+    private ?Statement $fetchParentId = null;
+
+    private ?Statement $insertRevision = null;
+
     /**
      * @param Connection $connection
      */
@@ -43,10 +47,13 @@ class RevisionRepository
      */
     public function touchProduct(string $id): void
     {
-        $statement = $this->connection->prepare('SELECT OXPARENTID FROM oxarticles WHERE OXID = ?');
-        $statement->execute([$id]);
+        if (null === $this->fetchParentId) {
+            $this->fetchParentId = $this->connection->prepare('SELECT `OXPARENTID` FROM `oxarticles` WHERE `OXID` = ?');
+        }
 
-        $isVariant = (bool) $statement->fetchOne();
+        $this->fetchParentId->execute([$id]);
+
+        $isVariant = (bool) $this->fetchParentId->fetchOne();
         $this->touch($isVariant ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $id);
     }
 
@@ -84,18 +91,19 @@ class RevisionRepository
     {
         $this->connection->beginTransaction();
         try {
-            $prepared = $this->connection->prepare(
-                'REPLACE INTO `makaira_connect_changes` (`TYPE`, `OXID`)
-            VALUES (:type, :objectId)'
-            );
+            if (null === $this->insertRevision) {
+                $this->insertRevision = $this->connection->prepare(
+                    'REPLACE INTO `makaira_connect_changes` (`TYPE`, `OXID`) VALUES (:type, :objectId)'
+                );
+            }
 
-            $prepared->bindParam('type', $type);
-            $prepared->bindParam('objectId', $objectId);
+            $this->insertRevision->bindParam('type', $type);
+            $this->insertRevision->bindParam('objectId', $objectId);
 
             foreach ($revisions as $revision) {
                 $type     = $revision->type;
                 $objectId = $revision->objectId;
-                $prepared->execute();
+                $this->insertRevision->execute();
             }
 
             $this->connection->commit();
