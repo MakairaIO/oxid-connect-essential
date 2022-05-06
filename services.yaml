@@ -1,6 +1,64 @@
+parameters:
+  searchTables: ['oxarticles', 'oxartextends', 'oxattribute', 'oxcategories', 'oxmanufacturers', 'oxobject2attribute']
+
 services:
   _defaults:
+    public: false
+    autowire: true
+    autoconfigure: true
+
+  Makaira\OxidConnectEssential\:
+    resource: './src/'
+    exclude: './src/{Controller,Domain,Event}/*'
+
+  OxidEsales\Eshop\Core\TableViewNameGenerator: ~
+
+  Makaira\OxidConnectEssential\Command\CleanUpCommand:
+    tags:
+      - { name: 'console.command', command: 'makaira:cleanup' }
+
+  Makaira\OxidConnectEssential\Command\TouchAllCommand:
+    bind:
+      $repositories: !tagged makaira_connect_essential.repository
+    tags:
+      - { name: 'console.command', command: 'makaira:touch-all' }
+
+  Makaira\OxidConnectEssential\Event\DatabaseSubscriber:
+    tags: ['kernel.event_subscriber']
+
+  Makaira\OxidConnectEssential\RevisionHandler\ModelDataExtractor:
+    bind:
+      $extractors: !tagged makaira_connect_essential.model_data_extractor
+
+  Makaira\OxidConnectEssential\Repository:
     public: true
+    bind:
+      $repositories: !tagged makaira_connect_essential.repository
+      $parentsPurchasable: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blVariantParentBuyable")'
+
+  Makaira\OxidConnectEssential\Rpc\RpcService:
+    public: true
+    bind:
+      $rpcHandlers: !tagged makaira_connect_essential.rpc_handler
+
+  Makaira\OxidConnectEssential\Rpc\Handler\ListLanguages:
+    tags: [ 'makaira_connect_essential.rpc_handler' ]
+
+  Makaira\OxidConnectEssential\Rpc\Handler\GetReplicationStatus:
+    tags: [ 'makaira_connect_essential.rpc_handler' ]
+
+  Makaira\OxidConnectEssential\Rpc\Handler\GetUpdates:
+    tags: [ 'makaira_connect_essential.rpc_handler' ]
+
+  Makaira\Signing\HashGenerator:
+    class: Makaira\Signing\Hash\Sha256
+
+  Makaira\OxidConnectEssential\Utils\TableTranslatorConfigurator: ~
+
+  Makaira\OxidConnectEssential\Utils\TableTranslator:
+    bind:
+      $searchTables: '%searchTables%'
+    configurator: ['@Makaira\OxidConnectEssential\Utils\TableTranslatorConfigurator', 'configure']
 
   OxidSession:
     class: OxidEsales\EshopCommunity\Core\Session
@@ -10,13 +68,271 @@ services:
     class: OxidEsales\EshopCommunity\Core\Session
     factory: [ '@OxidSession', 'getBasket' ]
 
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\Article:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleAttribute:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleCategory:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleSelectList:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\Category:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\GraduatedPrices:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\Manufacturer:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\RevisionHandler\Extractor\SelectList:
+    tags: ['makaira_connect_essential.model_data_extractor']
+
+  Makaira\OxidConnectEssential\Repository\CategoryModifierList:
+    bind:
+      $modifiers: !tagged makaira.importer.modifier.category
+
+  Makaira\OxidConnectEssential\Repository\ManufacturerModifierList:
+    bind:
+      $modifiers: !tagged makaira.importer.modifier.manufacturer
+
+  Makaira\OxidConnectEssential\Repository\ProductModifierList:
+    bind:
+      $modifiers: !tagged makaira.importer.modifier.product
+
+  Makaira\OxidConnectEssential\Repository\VariantModifierList:
+    bind:
+      $modifiers: !tagged makaira.importer.modifier.variant
+
+  Makaira\OxidConnectEssential\Repository\CategoryRepository:
+    bind:
+      $modifiers: '@Makaira\OxidConnectEssential\Repository\CategoryModifierList'
+    tags: ['makaira_connect_essential.repository']
+
+  Makaira\OxidConnectEssential\Repository\ManufacturerRepository:
+    bind:
+      $modifiers: '@Makaira\OxidConnectEssential\Repository\ManufacturerModifierList'
+    tags: ['makaira_connect_essential.repository']
+
+  Makaira\OxidConnectEssential\Repository\ProductRepository:
+    bind:
+      $modifiers: '@Makaira\OxidConnectEssential\Repository\ProductModifierList'
+    tags: ['makaira_connect_essential.repository']
+
+  Makaira\OxidConnectEssential\Repository\VariantRepository:
+    bind:
+      $modifiers: '@Makaira\OxidConnectEssential\Repository\VariantModifierList'
+    tags: ['makaira_connect_essential.repository']
+
+
+  ### Modifier ###
+
+  Makaira\OxidConnectEssential\Modifier\Category\HierarchyModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Category\SubcategoriesModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Product\ActiveModifier:
+    bind:
+      $model: '@Makaira_OxidConnectEssential_Oxid_Article'
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Category\ActiveModifier:
+    bind:
+      $model: '@Makaira_OxidConnectEssential_Oxid_Category'
+    tags:
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Manufacturer\ActiveModifier:
+    bind:
+      $model: '@Makaira_OxidConnectEssential_Oxid_Manufacturer'
+    tags:
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Common\AttributeModifier:
+    bind:
+      $activeSnippet: '@=service("Makaira_OxidConnectEssential_Oxid_Article").getSqlActiveSnippet(true)'
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Category\BlacklistModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: -1 }
+      - { name: 'makaira.importer.modifier.variant', priority: -1 }
+
+  Makaira\OxidConnectEssential\Modifier\Manufacturer\BlacklistModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: -1 }
+      - { name: 'makaira.importer.modifier.variant', priority: -1 }
+
+  Makaira\OxidConnectEssential\Modifier\Product\BlacklistModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: -1 }
+      - { name: 'makaira.importer.modifier.variant', priority: -1 }
+
+  Makaira\OxidConnectEssential\Modifier\Category\UrlModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Manufacturer\UrlModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Product\UrlModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Common\LongDescriptionModifier:
+    bind:
+      $parseThroughSmarty: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("bl_perfParseLongDescinSmarty")'
+
+  Makaira\OxidConnectEssential\Modifier\Common\PriceModifier:
+    bind:
+      $isNetto: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blEnterNetPrice")'
+      $showNetto: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blShowNetPrice")'
+      $defaultVAT: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("dDefaultVAT")'
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Common\TimestampNormalizer:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier:
+    abstract: true
+    bind:
+      $isMultiShop: '@=service("Makaira_OxidConnectEssential_Oxid_Config").isMall()'
+
+  Makaira\OxidConnectEssential\Modifier\Product\ShopModifier:
+    public: false
+    autowire: true
+    autoconfigure: false
+    parent: Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Category\ShopModifier:
+    public: false
+    autowire: true
+    autoconfigure: false
+    parent: Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier
+    tags:
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Manufacturer\ShopModifier:
+    public: false
+    autowire: true
+    autoconfigure: false
+    parent: Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier
+    tags:
+      - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Common\StockModifier:
+    bind:
+      $useStock: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blUseStock")'
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Common\ZeroDateTimeModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+      - { name: 'makaira.importer.modifier.variant', priority: 1000 }
+      - { name: 'makaira.importer.modifier.category', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Product\BoostFieldModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Product\CategoryModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Product\MainCategoryModifier:
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+
+  Makaira\OxidConnectEssential\Modifier\Product\VariantAttributesModifier:
+    bind:
+      $activeSnippet: '@=service("Makaira_OxidConnectEssential_Oxid_Article").getSqlActiveSnippet(true)'
+    tags:
+      - { name: 'makaira.importer.modifier.product', priority: 1000 }
+
+### Helper ###
+
+  Makaira_OxidConnectEssential_Oxid_Language:
+    class: OxidEsales\Eshop\Core\Language
+    factory: ['OxidEsales\Eshop\Core\Registry', 'getLang']
+
+  Makaira_OxidConnectEssential_Oxid_Config:
+    class: OxidEsales\Eshop\Core\Config
+    factory: ['OxidEsales\Eshop\Core\Registry', 'getConfig']
+
+  Makaira_OxidConnectEssential_Oxid_Article:
+    class: OxidEsales\Eshop\Application\Model\Article
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    arguments: ['OxidEsales\Eshop\Application\Model\Article']
+
+  Makaira_OxidConnectEssential_Oxid_Category:
+    class: OxidEsales\Eshop\Application\Model\Category
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    arguments: ['OxidEsales\Eshop\Application\Model\Category']
+
+  Makaira_OxidConnectEssential_Oxid_Manufacturer:
+    class: OxidEsales\Eshop\Application\Model\Manufacturer
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    arguments: ['OxidEsales\Eshop\Application\Model\Manufacturer']
+
+  Makaira_OxidConnectEssential_Oxid_Session:
+    class: OxidEsales\Eshop\Core\Session
+    factory: ['OxidEsales\Eshop\Core\Registry', 'getSession']
+
+  Makaira_OxidConnectEssential_Oxid_Basket:
+    class: OxidEsales\Eshop\Application\Model\Basket
+    factory: ['@Makaira_OxidConnectEssential_Oxid_Session', 'getBasket']
+
+  Makaira_OxidConnectEssential_Oxid_FrontEndController:
+    class: OxidEsales\Eshop\Application\Controller\FrontendController
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
+    calls:
+      - ['addGlobalParams']
+
+  OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
+
+  OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer:
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
+
+  OxidEsales\Eshop\Application\Model\SeoEncoderArticle:
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
+
   Makaira\OxidConnectEssential\Service\UserService:
+    public: true
     class: Makaira\OxidConnectEssential\Service\UserService
-    arguments:
-      - '@OxidSession'
+
   Makaira\OxidConnectEssential\Service\CartService:
+    public: true
     class: Makaira\OxidConnectEssential\Service\CartService
-    arguments:
-      - '@OxidBasket'
+
   Makaira\OxidConnectEssential\Service\ReviewService:
+    public: true
     class: Makaira\OxidConnectEssential\Service\ReviewService

@@ -14,10 +14,12 @@ class CartController extends BaseController
     public function __construct()
     {
         parent::__construct();
-        $this->cartService = ContainerFactory::getInstance()->getContainer()->get(CartService::class);
+        /** @var CartService $cartService */
+        $cartService = ContainerFactory::getInstance()->getContainer()->get(CartService::class);
+        $this->cartService = $cartService;
     }
 
-    public function getCartItems()
+    public function getCartItems(): void
     {
         try {
             $this->sendResponse($this->cartService->getCartItems());
@@ -29,7 +31,7 @@ class CartController extends BaseController
         }
     }
 
-    public function addProductToCart()
+    public function addProductToCart(): void
     {
         ['product_id' => $productId, 'amount' => $amount] = $this->getRequestBody();
 
@@ -46,7 +48,7 @@ class CartController extends BaseController
         }
     }
 
-    public function updateCartItem()
+    public function updateCartItem(): void
     {
         ['cart_item_id' => $cartItemId, 'amount' => $amount] = $this->getRequestBody();
 
@@ -69,7 +71,7 @@ class CartController extends BaseController
         }
     }
 
-    public function removeCartItem()
+    public function removeCartItem(): void
     {
         ['cart_item_id' => $cartItemId] = $this->getRequestBody();
 
