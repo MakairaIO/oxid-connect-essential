@@ -2,8 +2,10 @@ name: Development
 
 on:
   push:
-    branches: [ oxid-testing ]
-
+    branches: [ stable ]
+  pull_request:
+    branches: [ stable ]
+    types: [opened, synchronize, reopened]
 
 env:
   PACKAGE_NAME: 'makaira/oxid-connect-essential'
