@@ -83,7 +83,13 @@ class MakairaConnectOutput extends MakairaConnectOutput_parent
         return self::$trackingData;
     }
 
-    public function output($sName, $output)
+    /**
+     * @param string $sName
+     * @param string $output
+     *
+     * @return void
+     */
+    public function output($sName, $output): void
     {
         if (
             self::OUTPUT_FORMAT_HTML === $this->_sOutputFormat &&

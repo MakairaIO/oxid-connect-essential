@@ -4,6 +4,10 @@ namespace Makaira\OxidConnectEssential\Oxid\Core;
 
 use OxidEsales\Eshop\Application\Controller\BasketController;
 use OxidEsales\Eshop\Application\Controller\ThankYouController;
+use OxidEsales\Eshop\Application\Model\Article;
+use OxidEsales\Eshop\Application\Model\Category;
+use OxidEsales\Eshop\Application\Model\Order;
+use OxidEsales\Eshop\Application\Model\OrderArticle;
 use OxidEsales\Eshop\Core\Exception\ArticleInputException;
 use OxidEsales\Eshop\Core\Exception\NoArticleException;
 use OxidEsales\EshopCommunity\Application\Model\Basket;
@@ -30,11 +34,6 @@ class MakairaTrackingDataGenerator
 {
     public const TRACKER_URL = 'https://piwik.makaira.io/';
 
-    /**
-     * @var mixed
-     */
-    private static $odoScopeTracking = false;
-
     private const METHOD_MAP = [
         BasketController::class   => 'generateForBasket',
         ThankYouController::class => 'generateForThankYou',
@@ -50,6 +49,7 @@ class MakairaTrackingDataGenerator
      */
     public function generate(string $oxidControllerClass): array
     {
+        /** @var string $siteId */
         $siteId = Registry::getConfig()->getShopConfVar(
             'makaira_tracking_page_id',
             null,
@@ -85,12 +85,6 @@ class MakairaTrackingDataGenerator
             $this->getCustomTrackingData()
         ];
 
-        if (self::$odoScopeTracking) {
-            $trackingData[] = [
-                ['trackEvent', 'odoscope', self::$odoScopeTracking['group'], self::$odoScopeTracking['data']]
-            ];
-        }
-
         // Send tracking to piwik if mak_experiments cookie is set
         if (!empty($_COOKIE['mak_experiments'])) {
             $experiments = json_decode($_COOKIE['mak_experiments'], true);
@@ -110,11 +104,6 @@ class MakairaTrackingDataGenerator
         return array_merge(...$trackingData);
     }
 
-    public static function setOdoscopeData($odoscopeData)
-    {
-        self::$odoScopeTracking = $odoscopeData;
-    }
-
     /**
      * Hook to add custom data to Piwik/Matomo tracking.
      * @return array
@@ -122,20 +111,6 @@ class MakairaTrackingDataGenerator
     protected function getCustomTrackingData(): array
     {
         return [];
-    }
-
-    /**
-     * Normalizes OXIDs controller class name for the method call.
-     * @param string $className OXIDs controller class name.
-     * @return string
-     */
-    protected function normalize(string $className): string
-    {
-        if (str_starts_with($className, 'ox')) {
-            $className = preg_replace('/^ox/', '', $className);
-        }
-
-        return ucfirst($className);
     }
 
     /**
@@ -170,14 +145,19 @@ class MakairaTrackingDataGenerator
 
         /** @var BasketItem $cartItem */
         foreach ($cart->getContents() as $cartItem) {
+            /** @var Article|OrderArticle $product */
             $product = $cartItem->getArticle();
+            if ($product instanceof OrderArticle) {
+                $product = $product->getArticle();
+            }
+            /** @var Category $category */
             $category = $product->getCategory();
 
             $cartData[] = [
                 'addEcommerceItem',
-                $product->oxarticles__oxartnum->value,
+                $product->getFieldData('oxarticles__oxartnum'),
                 $cartItem->getTitle(),
-                $category->oxcategories__oxtitle->value,
+                $category->getFieldData('oxcategories__oxtitle'),
                 $cartItem->getUnitPrice()->getBruttoPrice(),
                 $cartItem->getAmount(),
             ];
@@ -200,18 +180,19 @@ class MakairaTrackingDataGenerator
 
         $cart     = $oxidController->getBasket();
         $cartData = $this->createCartTrackingData($cart);
+        /** @var Order $order */
         $order    = $oxidController->getOrder();
 
         $cartData[] = [
             'trackEcommerceOrder',
-            $order->oxorder__oxordernr->value,
+            $order->getFieldData('oxorder__oxordernr'),
             $order->getTotalOrderSum(),
             $cart->getDiscountedProductsBruttoPrice(),
-            ($order->oxorder__oxartvatprice1->value + $order->oxorder__oxartvatprice2->value),
+            ($order->getFieldData('oxorder__oxartvatprice1') + $order->getFieldData('oxorder__oxartvatprice2')),
             ($order->getOrderDeliveryPrice()->getBruttoPrice() +
                 $order->getOrderPaymentPrice()->getBruttoPrice() +
                 $order->getOrderWrappingPrice()->getBruttoPrice()),
-            $order->oxorder__oxdiscount->value,
+            $order->getFieldData('oxorder__oxdiscount'),
         ];
 
         return $cartData;

@@ -40,16 +40,22 @@ class MakairaConnectViewConfig extends MakairaConnectViewConfig_parent
     public function getCookieBannerStylePath(): string
     {
         $modulePath = $this->getModulePath('makaira/oxid-connect-essential');
-        $file       = glob($modulePath . 'out/dist/*.css');
+        $file       = (array) glob($modulePath . 'out/dist/*.css');
 
-        return substr(reset($file), strlen($modulePath));
+        /** @var string $firstFile */
+        $firstFile = reset($file);
+
+        return substr($firstFile, strlen($modulePath));
     }
 
     public function getCookieBannerScriptPath(): string
     {
         $modulePath = $this->getModulePath('makaira/oxid-connect-essential');
-        $file       = glob($modulePath . 'out/dist/*.js');
+        $file       = (array) glob($modulePath . 'out/dist/*.js');
 
-        return substr(reset($file), strlen($modulePath));
+        /** @var string $firstFile */
+        $firstFile = reset($file);
+
+        return substr($firstFile, strlen($modulePath));
     }
 }
