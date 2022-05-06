@@ -36,14 +36,6 @@ class TouchAllCommand extends Command
     }
 
     /**
-     * @return void
-     */
-    protected function configure()
-    {
-        parent::configure();
-    }
-
-    /**
      * @param InputInterface  $input
      * @param OutputInterface $output
      *
