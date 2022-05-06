@@ -12,7 +12,7 @@ class TimestampNormalizer extends Modifier
     public function apply(Type $type)
     {
         if ($type->timestamp) {
-            $type->timestamp = (new DateTimeImmutable($type->timestamp))->format(DateTimeInterface::ATOM);
+            $type->timestamp = (new DateTimeImmutable($type->timestamp))->format('Y-m-d H:i:s');
         }
 
         return $type;

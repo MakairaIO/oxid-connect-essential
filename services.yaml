@@ -9,7 +9,7 @@ services:
 
   Makaira\OxidConnectEssential\:
     resource: './src/'
-    exclude: './src/{Controller,Domain,Event}/*'
+    exclude: './src/{Controller,Domain,Event,Oxid}/*'
 
   OxidEsales\Eshop\Core\TableViewNameGenerator: ~
 

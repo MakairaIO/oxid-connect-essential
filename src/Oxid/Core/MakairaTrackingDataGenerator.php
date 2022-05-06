@@ -30,7 +30,10 @@ class MakairaTrackingDataGenerator
 {
     public const TRACKER_URL = 'https://piwik.makaira.io/';
 
-    private static mixed $odoScopeTracking = false;
+    /**
+     * @var mixed
+     */
+    private static $odoScopeTracking = false;
 
     private const METHOD_MAP = [
         BasketController::class   => 'generateForBasket',

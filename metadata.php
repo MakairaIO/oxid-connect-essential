@@ -1,14 +1,9 @@
 <?php
 
 use Makaira\OxidConnectEssential\Controller\Admin as ModuleAdminController;
-use Makaira\OxidConnectEssential\Controller\CartController;
-use Makaira\OxidConnectEssential\Controller\Endpoint;
-use Makaira\OxidConnectEssential\Controller\ReviewController;
-use Makaira\OxidConnectEssential\Oxid\Core\MakairaConnectOutput;
-use Makaira\OxidConnectEssential\Oxid\Core\MakairaConnectViewConfig;
-use OxidEsales\Eshop\Core\Output;
-use OxidEsales\Eshop\Core\ViewConfig;
-use Makaira\OxidConnectEssential\Controller\UserController;
+use Makaira\OxidConnectEssential\Oxid\Core as ModuleCore;
+use OxidEsales\Eshop\Core as OxidCore;
+use Makaira\OxidConnectEssential\Controller as ModuleController;
 use Makaira\OxidConnectEssential\Module\Events;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\Eshop\Application\Controller\Admin as OxidAdminController;
@@ -23,14 +18,14 @@ $aModule = [
     'version'     => '1.1.0',
     'author'      => 'Makaira GmbH',
     'controllers' => [
-        "MakairaReviewController"  => ReviewController::class,
-        "MakairaUserController"    => UserController::class,
-        "MakairaCartController"    => CartController::class,
-        "makaira_connect_endpoint" => Endpoint::class,
+        "MakairaReviewController"  => ModuleController\ReviewController::class,
+        "MakairaUserController"    => ModuleController\UserController::class,
+        "MakairaCartController"    => ModuleController\CartController::class,
+        "makaira_connect_endpoint" => ModuleController\Endpoint::class,
     ],
     'extend'      => [
-        Output::class                                      => MakairaConnectOutput::class,
-        ViewConfig::class                                  => MakairaConnectViewConfig::class,
+        OxidCore\Output::class                             => ModuleCore\MakairaConnectOutput::class,
+        OxidCore\ViewConfig::class                         => ModuleCore\MakairaConnectViewConfig::class,
         OxidAdminController\ArticleAttributeAjax::class    => ModuleAdminController\ArticleAttributeAjax::class,
         OxidAdminController\ArticleCrosssellingAjax::class => ModuleAdminController\ArticleCrossSellingAjax::class,
         OxidAdminController\ArticleExtendAjax::class       => ModuleAdminController\ArticleExtendAjax::class,

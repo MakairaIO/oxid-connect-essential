@@ -8,7 +8,7 @@ use OxidEsales\EshopCommunity\Core\Config;
 
 class MakairaCookieUtils
 {
-    private static $bannerEnabled;
+    private static ?bool $bannerEnabled = null;
 
     public function hasCookiesAccepted(): bool
     {
