@@ -5,13 +5,16 @@ namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 use Doctrine\DBAL\Connection;
 use Exception;
 use JsonException;
+use Makaira\OxidConnectEssential\Command\TouchAllCommand;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
-use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 use OxidEsales\Eshop\Application\Model\Article;
 use OxidEsales\Eshop\Application\Model\Attribute;
 use OxidEsales\Eshop\Core\Model\MultiLanguageModel;
 use ReflectionException;
+use Symfony\Component\Console\Exception\ExceptionInterface;
+use Symfony\Component\Console\Input\ArrayInput;
+use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\HttpFoundation\Request;
 
 use function array_map;
@@ -344,6 +347,7 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ExceptionInterface
      */
     private function touchAll(): void
     {
@@ -351,8 +355,8 @@ class EndpointTest extends IntegrationTestCase
         $db->executeQuery('TRUNCATE makaira_connect_changes');
         $db->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 
-        /** @var Repository $repo */
-        $repo = static::getContainer()->get(Repository::class);
-        $repo->touchAll();
+        /** @var TouchAllCommand $repo */
+        $repo = static::getContainer()->get(TouchAllCommand::class);
+        $repo->run(new ArrayInput([]), new NullOutput());
     }
 }

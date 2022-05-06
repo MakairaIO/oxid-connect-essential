@@ -321,25 +321,6 @@ class Repository
         $this->parentProducts[$parentId] = $parentData;
     }
 
-    public function countChangesSince(int $since): int
-    {
-        /** @var Result $result */
-        $result = $this->database->executeQuery(
-            'SELECT
-                COUNT(*) count
-            FROM
-                makaira_connect_changes
-            WHERE
-                makaira_connect_changes.sequence > :since',
-            ['since' => $since ?: 0]
-        );
-
-        /** @var string $count */
-        $count = $result->fetchOne();
-
-        return (int) $count;
-    }
-
     protected function getRepositoryForType(string $type): AbstractRepository
     {
         if (!isset($this->repositoryMapping[$type])) {
@@ -347,47 +328,5 @@ class Repository
         }
 
         return $this->repositoryMapping[$type];
-    }
-
-    /**
-     * Mark an object as updated.
-     *
-     * @param string $type
-     * @param string $id
-     */
-    public function touch(string $type, string $id): void
-    {
-        if (!$id) {
-            return;
-        }
-        $this->database->executeQuery($this->touchQuery, ['type' => $type, 'id' => $id]);
-    }
-
-    /**
-     * Clean up changes list.
-     *
-     * @ignoreCodeCoverage
-     */
-    public function cleanup(): void
-    {
-        $this->database->executeQuery($this->cleanupQuery);
-    }
-
-    /**
-     * Add all items to the changes list.
-     */
-    public function touchAll(int $shopId = null): void
-    {
-        $this->cleanUp();
-
-        /**
-         * @var string              $type
-         * @var AbstractRepository $repository
-         */
-        foreach ($this->repositoryMapping as $type => $repository) {
-            foreach ($repository->getAllIds($shopId) as $id) {
-                $this->touch($type, $id);
-            }
-        }
     }
 }
