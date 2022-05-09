@@ -46,3 +46,13 @@ class_alias(
     OxidEsales\Eshop\Application\Controller\Admin\SelectListMainAjax::class,
     Makaira\OxidConnectEssential\Controller\Admin\SelectListMainAjax_parent::class
 );
+
+class_alias(
+    OxidEsales\Eshop\Core\Output::class,
+    Makaira\OxidConnectEssential\Oxid\Core\MakairaConnectOutput_parent::class
+);
+
+class_alias(
+    OxidEsales\Eshop\Core\ViewConfig::class,
+    Makaira\OxidConnectEssential\Oxid\Core\MakairaConnectViewConfig_parent::class
+);
