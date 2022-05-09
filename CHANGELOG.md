@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/MakairaIO/oxid-connect-essential/compare/1.2.0...1.2.1) (2022-05-09)
+
+
+### Bug Fixes
+
+* Set additional vendor information ([81ba5b1](https://github.com/MakairaIO/oxid-connect-essential/commit/81ba5b19b3cf47f283e060c45f065e199d240f6b))
+
 # [1.2.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.1.0...1.2.0) (2022-05-06)
 
 
