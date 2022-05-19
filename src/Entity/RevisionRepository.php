@@ -107,9 +107,7 @@ class RevisionRepository
             }
 
             $this->connection->commit();
-        } catch (DBALException $e) {
-            $this->connection->rollBack();
-        } catch (DBALDriverException $e) {
+        } catch (DBALException | DBALDriverException $e) {
             $this->connection->rollBack();
         }
     }

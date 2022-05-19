@@ -28,6 +28,8 @@ class Endpoint extends FrontendController
         $response = $this->handleRequest(Request::createFromGlobals());
 
         $response->send();
+        Registry::getSession()->freeze();
+
         exit(0);
     }
 

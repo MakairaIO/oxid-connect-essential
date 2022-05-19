@@ -4,7 +4,6 @@ namespace Makaira\OxidConnectEssential;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
-use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Doctrine\DBAL\ParameterType;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
@@ -25,17 +24,7 @@ class Repository
     /**
      * @var string
      */
-    protected string $cleanupQuery = '
-        DELETE FROM
-          makaira_connect_changes
-        WHERE
-          changed < DATE_SUB(NOW(), INTERVAL 1 DAY);
-    ';
-
-    /**
-     * @var string
-     */
-    protected string $selectQuery = '
+    private const SELECT_QUERY = '
         SELECT
             makaira_connect_changes.sequence,
             makaira_connect_changes.oxid AS `id`,
@@ -47,17 +36,6 @@ class Repository
         ORDER BY
             sequence ASC
         LIMIT :limit
-    ';
-
-    /**
-     * @var string
-     */
-    protected string $touchQuery = '
-        REPLACE INTO
-          makaira_connect_changes
-        (OXID, TYPE, CHANGED)
-          VALUES
-        (:id, :type, NOW());
     ';
 
     /**
@@ -168,7 +146,7 @@ class Repository
      */
     public function getChangesSince(int $since, int $limit = 50): array
     {
-        $prepared = $this->database->prepare($this->selectQuery);
+        $prepared = $this->database->prepare(self::SELECT_QUERY);
         $prepared->bindValue('since', $since, ParameterType::INTEGER);
         $prepared->bindValue('limit', $limit, ParameterType::INTEGER);
         $prepared->execute();

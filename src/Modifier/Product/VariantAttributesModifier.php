@@ -17,7 +17,7 @@ use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
  */
 class VariantAttributesModifier extends Modifier
 {
-    private string $selectVariantNameQuery = '
+    public string $selectVariantNameQuery = '
                         SELECT
                             oxvarname
                         FROM
@@ -26,7 +26,7 @@ class VariantAttributesModifier extends Modifier
                             oxid = :productId
                         ';
 
-    private string $selectVariantDataQuery = '
+    public string $selectVariantDataQuery = '
                         SELECT
                             oxid as `id`,
                             oxvarselect as `value`
@@ -37,7 +37,7 @@ class VariantAttributesModifier extends Modifier
                             AND {{activeSnippet}}
                         ';
 
-    private string $selectVariantAttributesQuery = '
+    public string $selectVariantAttributesQuery = '
                         SELECT
                             oxattribute.oxid as `id`,
                             oxobject2attribute.oxvalue as `value`
@@ -119,10 +119,11 @@ class VariantAttributesModifier extends Modifier
         $floatAttributes = $this->moduleSettings->get('makaira_attribute_as_float');
 
         foreach ($variants as $variant) {
+            $variantAttributes = [];
+
             $id = $variant['id'];
             if ($id) {
-                $valueArray        = array_map('trim', explode('|', $variant['value']));
-                $variantAttributes = [];
+                $valueArray = array_map('trim', explode('|', $variant['value']));
 
                 foreach ($hashArray as $index => $hash) {
                     if (in_array($hash, $integerAttributes, true)) {
@@ -146,7 +147,6 @@ class VariantAttributesModifier extends Modifier
 
             $attributes = $resultStatement->fetchAllAssociative();
 
-            $variantAttributes = [];
             foreach ($attributes as $attribute) {
                 /** @var string $hash */
                 $hash  = $attribute['id'];

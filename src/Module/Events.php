@@ -9,10 +9,8 @@ use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Exception;
-use oxDb;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerBuilderFactory;
-use oxRegistry;
 
 use function in_array;
 use function strtolower;

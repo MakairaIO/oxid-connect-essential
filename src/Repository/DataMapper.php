@@ -12,13 +12,13 @@ use function get_class;
 
 class DataMapper
 {
-    private array $commonFieldMapping = [
+    private const COMMON_FIELD_MAPPING = [
         'OXID'        => 'id',
         'OXTIMESTAMP' => 'timestamp',
         'OXACTIVE'    => 'active',
     ];
 
-    private array $productFieldMapping = [
+    private const PRODUCT_FIELD_MAPPING = [
         'OXSEARCHKEYS'     => 'searchkeys',
         'OXHIDDEN'         => 'hidden',
         'OXSORT'           => 'sort',
@@ -34,7 +34,7 @@ class DataMapper
         'OXTITLE'          => 'title',
     ];
 
-    private array $categoryFieldMapping = [
+    private const CATEGORY_FIELD_MAPPING = [
         'OXSORT'     => 'sort',
         'OXDESC'     => 'shortdesc',
         'OXLONGDESC' => 'longdesc',
@@ -42,7 +42,7 @@ class DataMapper
         'OXTITLE'    => 'category_title',
     ];
 
-    private array $manufacturerFieldMapping = [
+    private const MANUFACTURER_FIELD_MAPPING = [
         'OXSHORTDESC' => 'shortdesc',
         'OXTITLE'     => 'manufacturer_title',
     ];
@@ -59,22 +59,22 @@ class DataMapper
         switch ($docType) {
             case "product":
             case "variant":
-                $mappingFields = $this->productFieldMapping;
+                $mappingFields = self::PRODUCT_FIELD_MAPPING;
                 break;
 
             case "category":
-                $mappingFields = $this->categoryFieldMapping;
+                $mappingFields = self::CATEGORY_FIELD_MAPPING;
                 break;
 
             case "manufacturer":
-                $mappingFields = $this->manufacturerFieldMapping;
+                $mappingFields = self::MANUFACTURER_FIELD_MAPPING;
                 break;
 
             default:
                 break;
         }
 
-        $mappingFields = array_merge($this->commonFieldMapping, $mappingFields);
+        $mappingFields = array_merge(self::COMMON_FIELD_MAPPING, $mappingFields);
 
         $fieldDataTypes = $this->getFieldDataTypes($entity);
 

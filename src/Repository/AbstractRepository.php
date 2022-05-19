@@ -26,6 +26,7 @@ abstract class AbstractRepository
      * @param Connection      $database
      * @param ModifierList    $modifiers
      * @param TableTranslator $tableTranslator
+     * @param DataMapper      $dataMapper
      */
     public function __construct(
         Connection $database,

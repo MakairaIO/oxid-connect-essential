@@ -20,7 +20,7 @@ class RepositoryCollectEvent extends Event
     /**
      * @var Repository
      */
-    public $repository;
+    public Repository $repository;
 
     public function __construct(Repository $repository)
     {
