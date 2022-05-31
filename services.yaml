@@ -260,6 +260,8 @@ services:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\CategoryModifier:
+    bind:
+      $isMall: '@=service("Makaira_OxidConnectEssential_Oxid_Config").isMall()'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
@@ -283,19 +285,23 @@ services:
     class: OxidEsales\Eshop\Core\Config
     factory: ['OxidEsales\Eshop\Core\Registry', 'getConfig']
 
+  Makaira_OxidConnectEssential_Oxid_UtilsObject:
+    class: 'OxidEsales\Eshop\Core\UtilsObject'
+    factory: ['OxidEsales\Eshop\Core\UtilsObject', 'getInstance']
+
   Makaira_OxidConnectEssential_Oxid_Article:
     class: OxidEsales\Eshop\Application\Model\Article
-    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\Article']
 
   Makaira_OxidConnectEssential_Oxid_Category:
     class: OxidEsales\Eshop\Application\Model\Category
-    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\Category']
 
   Makaira_OxidConnectEssential_Oxid_Manufacturer:
     class: OxidEsales\Eshop\Application\Model\Manufacturer
-    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\Manufacturer']
 
   Makaira_OxidConnectEssential_Oxid_Session:
@@ -308,21 +314,21 @@ services:
 
   Makaira_OxidConnectEssential_Oxid_FrontEndController:
     class: OxidEsales\Eshop\Application\Controller\FrontendController
-    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
     calls:
       - ['addGlobalParams']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
-    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer:
-    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderArticle:
-    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
+    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
 
   Makaira\OxidConnectEssential\Service\UserService:

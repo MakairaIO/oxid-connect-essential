@@ -1,10 +1,10 @@
 <?php
 
 use Makaira\OxidConnectEssential\Controller\Admin as ModuleAdminController;
-use Makaira\OxidConnectEssential\Oxid\Core as ModuleCore;
+use Makaira\OxidConnectEssential\Oxid\Core as ModuleOxidCore;
+use Makaira\OxidConnectEssential\Core as ModuleCore;
 use OxidEsales\Eshop\Core as OxidCore;
 use Makaira\OxidConnectEssential\Controller as ModuleController;
-use Makaira\OxidConnectEssential\Module\Events;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\Eshop\Application\Controller\Admin as OxidAdminController;
 
@@ -26,8 +26,8 @@ $aModule = [
         "makaira_connect_endpoint" => ModuleController\Endpoint::class,
     ],
     'extend'      => [
-        OxidCore\Output::class                             => ModuleCore\MakairaConnectOutput::class,
-        OxidCore\ViewConfig::class                         => ModuleCore\MakairaConnectViewConfig::class,
+        OxidCore\Output::class                             => ModuleOxidCore\MakairaConnectOutput::class,
+        OxidCore\ViewConfig::class                         => ModuleOxidCore\MakairaConnectViewConfig::class,
         OxidAdminController\ArticleAttributeAjax::class    => ModuleAdminController\ArticleAttributeAjax::class,
         OxidAdminController\ArticleCrosssellingAjax::class => ModuleAdminController\ArticleCrossSellingAjax::class,
         OxidAdminController\ArticleExtendAjax::class       => ModuleAdminController\ArticleExtendAjax::class,
@@ -118,7 +118,7 @@ $aModule = [
         ],
     ],
     'events'      => [
-        'onActivate' => Events::class . '::onActivate',
+        'onActivate' => ModuleCore\ModuleEvents::class . '::onActivate',
     ],
     'templates' => [
         'layout/cookie-banner.tpl' => 'makaira/oxid-connect-essential/views/tpl/layout/cookie-banner.tpl',

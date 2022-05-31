@@ -8,7 +8,11 @@ use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
 
+use function array_change_key_case;
+use function array_merge;
 use function get_class;
+
+use const CASE_UPPER;
 
 class DataMapper
 {
@@ -80,26 +84,19 @@ class DataMapper
 
         $entity->additionalData = $dbResult;
 
-        // Map database columns to fields
-        foreach ($entity->additionalData as $column => $value) {
-            if (isset($mappingFields[$column])) {
-                $typeValue = $value;
-                $field = $mappingFields[$column];
-                if (isset($fieldDataTypes[$field])) {
-                    $c = $fieldDataTypes[$field];
-                    $typeValue = $c($value);
+        foreach ($mappingFields as $dbField => $mappedField) {
+            if (isset($entity->additionalData[$dbField])) {
+                $typeValue = $entity->additionalData[$dbField];
+                if (isset($fieldDataTypes[$mappedField])) {
+                    $c = $fieldDataTypes[$mappedField];
+                    $typeValue = $c($mappedField);
                 }
 
-                $entity->{$field} = $typeValue;
-                unset($entity->additionalData[$column]);
+                $entity->{$mappedField} = $typeValue;
+                unset($entity->additionalData[$dbField]);
             }
-        }
 
-        // Remove mapped fields from additional data
-        foreach ($mappingFields as $field) {
-            if (isset($entity->additionalData[$field])) {
-                unset($entity->additionalData[$field]);
-            }
+            unset($entity->additionalData[$mappedField]);
         }
     }
 
