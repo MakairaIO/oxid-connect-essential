@@ -229,7 +229,7 @@ class Repository
                 if ($typeProduct === $type) {
                     if (
                         true === $change->deleted ||
-                        (isset($change->data->OXVARCOUNT) && 0 === $change->data->OXVARCOUNT) ||
+                        (isset($change->data->OXVARCOUNT) && 0 === (int) $change->data->OXVARCOUNT) ||
                         $this->parentsPurchasable
                     ) {
                         $pChange = clone $change;

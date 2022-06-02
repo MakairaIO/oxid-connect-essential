@@ -108,7 +108,7 @@ class DataMapper
                 $typeValue = $entity->additionalData[$dbField];
                 if (isset($fieldDataTypes[$mappedField])) {
                     $c = $fieldDataTypes[$mappedField];
-                    $typeValue = $c($mappedField);
+                    $typeValue = $c($typeValue);
                 }
 
                 $entity->{$mappedField} = $typeValue;
