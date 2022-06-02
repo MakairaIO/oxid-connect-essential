@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/MakairaIO/oxid-connect-essential/compare/1.2.2...1.2.3) (2022-06-02)
+
+
+### Bug Fixes
+
+* Fixes data type check for pseudo variants and wrong lookup of mapped value ([58aeff8](https://github.com/MakairaIO/oxid-connect-essential/commit/58aeff8223eb920b62c8a9d76ad4b4d0aff59807))
+
 ## [1.2.2](https://github.com/MakairaIO/oxid-connect-essential/compare/1.2.1...1.2.2) (2022-06-02)
 
 
