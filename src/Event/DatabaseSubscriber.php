@@ -92,10 +92,10 @@ class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
     public static function getSubscribedEvents()
     {
         return [
-            AfterModelUpdateEvent::NAME => 'onChange',
-            AfterModelInsertEvent::NAME => 'onChange',
-            AfterModelDeleteEvent::NAME => 'onChange',
-            BeforeHeadersSendEvent::NAME => 'writeRevisions',
+            AfterModelUpdateEvent::class => 'onChange',
+            AfterModelInsertEvent::class => 'onChange',
+            AfterModelDeleteEvent::class => 'onChange',
+            BeforeHeadersSendEvent::class => 'writeRevisions',
         ];
     }
 }

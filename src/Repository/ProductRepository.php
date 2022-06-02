@@ -2,8 +2,10 @@
 
 namespace Makaira\OxidConnectEssential\Repository;
 
+use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Type\Product\Product;
+use Makaira\OxidConnectEssential\Utils\TableTranslator;
 
 class ProductRepository extends AbstractRepository
 {
@@ -36,8 +38,8 @@ class ProductRepository extends AbstractRepository
                 oxarticles.OXID as `id`,
                 oxarticles.oxtimestamp AS `timestamp`,
                 oxarticles.*,
+                oxartextends.*,
                 oxartextends.oxlongdesc AS `OXLONGDESC`,
-                oxartextends.oxtags AS `OXTAGS`,
                 oxmanufacturers.oxtitle AS manufacturer_title
             FROM
                 oxarticles

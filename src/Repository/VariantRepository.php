@@ -35,8 +35,8 @@ class VariantRepository extends ProductRepository
                 oxarticles.oxparentid AS `parent`,
                 oxarticles.oxtimestamp AS `timestamp`,
                 oxarticles.*,
-                oxartextends.oxlongdesc AS `OXLONGDESC`,
-                oxartextends.oxtags AS `OXTAGS`
+                oxartextends.*,
+                oxartextends.oxlongdesc AS `OXLONGDESC`
             FROM
                 oxarticles
                 LEFT JOIN oxartextends ON oxarticles.oxid = oxartextends.oxid
