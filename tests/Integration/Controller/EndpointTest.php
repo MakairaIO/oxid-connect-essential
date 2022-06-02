@@ -194,6 +194,7 @@ class EndpointTest extends IntegrationTestCase
 
             $controller  = new Endpoint();
             $rawResponse = $controller->handleRequest($request);
+            static::assertLessThan(400, $rawResponse->getStatusCode(), $rawResponse->getContent());
             $response    = json_decode($rawResponse->getContent(), true, 512, JSON_THROW_ON_ERROR);
 
             if ($response['count'] > 0) {

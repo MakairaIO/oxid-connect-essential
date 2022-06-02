@@ -17,10 +17,8 @@ use OxidEsales\TestingLibrary\UnitTestCase;
 use Psr\Container\ContainerInterface;
 use ReflectionClass;
 use ReflectionException;
-use RuntimeException;
 use Symfony\Component\HttpFoundation\Request;
 
-use function debug_backtrace;
 use function dirname;
 use function file_exists;
 use function file_put_contents;
@@ -29,7 +27,6 @@ use function json_encode;
 use function mkdir;
 use function random_bytes;
 use function sprintf;
-use function str_ends_with;
 
 use const JSON_PRETTY_PRINT;
 use const JSON_THROW_ON_ERROR;

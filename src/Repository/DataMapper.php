@@ -4,6 +4,10 @@ namespace Makaira\OxidConnectEssential\Repository;
 
 use Closure;
 use Makaira\OxidConnectEssential\Type;
+use Makaira\OxidConnectEssential\Type\Category\Category;
+use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer;
+use Makaira\OxidConnectEssential\Type\Product\Product;
+use Makaira\OxidConnectEssential\Type\Variant\Variant;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
@@ -12,13 +16,13 @@ use function get_class;
 
 class DataMapper
 {
-    private array $commonFieldMapping = [
+    private const COMMON_FIELD_MAPPING = [
         'OXID'        => 'id',
         'OXTIMESTAMP' => 'timestamp',
         'OXACTIVE'    => 'active',
     ];
 
-    private array $productFieldMapping = [
+    private const PRODUCT_FIELD_MAPPING = [
         'OXSEARCHKEYS'     => 'searchkeys',
         'OXHIDDEN'         => 'hidden',
         'OXSORT'           => 'sort',
@@ -34,7 +38,7 @@ class DataMapper
         'OXTITLE'          => 'title',
     ];
 
-    private array $categoryFieldMapping = [
+    private const CATEGORY_FIELD_MAPPING = [
         'OXSORT'     => 'sort',
         'OXDESC'     => 'shortdesc',
         'OXLONGDESC' => 'longdesc',
@@ -42,64 +46,76 @@ class DataMapper
         'OXTITLE'    => 'category_title',
     ];
 
-    private array $manufacturerFieldMapping = [
+    private const MANUFACTURER_FIELD_MAPPING = [
         'OXSHORTDESC' => 'shortdesc',
         'OXTITLE'     => 'manufacturer_title',
     ];
 
+    /**
+     * @var array<string, array<string, string>>
+     */
+    private static ?array $fieldMappings = null;
+
+    /**
+     * @var array<array<string, Closure>>
+     */
     private static array $dataTypes = [];
 
     /**
-     * @SuppressWarnings(CyclomaticComplexity)
+     *
      */
-    public function map(Type $entity, array $dbResult, string $docType): void
+    public function __construct()
     {
-        $mappingFields = [];
+        if (null === self::$fieldMappings) {
+            self::$fieldMappings[Product::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::PRODUCT_FIELD_MAPPING
+            );
 
-        switch ($docType) {
-            case "product":
-            case "variant":
-                $mappingFields = $this->productFieldMapping;
-                break;
+            self::$fieldMappings[Variant::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::PRODUCT_FIELD_MAPPING
+            );
 
-            case "category":
-                $mappingFields = $this->categoryFieldMapping;
-                break;
+            self::$fieldMappings[Category::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::CATEGORY_FIELD_MAPPING
+            );
 
-            case "manufacturer":
-                $mappingFields = $this->manufacturerFieldMapping;
-                break;
-
-            default:
-                break;
+            self::$fieldMappings[Manufacturer::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::MANUFACTURER_FIELD_MAPPING
+            );
         }
+    }
 
-        $mappingFields = array_merge($this->commonFieldMapping, $mappingFields);
+    /**
+     * @param Type  $entity
+     * @param array $dbResult
+     *
+     * @return void
+     */
+    public function map(Type $entity, array $dbResult): void
+    {
+        $mappingFields = self::$fieldMappings[get_class($entity)] ?? self::COMMON_FIELD_MAPPING;
 
         $fieldDataTypes = $this->getFieldDataTypes($entity);
 
         $entity->additionalData = $dbResult;
 
-        // Map database columns to fields
-        foreach ($entity->additionalData as $column => $value) {
-            if (isset($mappingFields[$column])) {
-                $typeValue = $value;
-                $field = $mappingFields[$column];
-                if (isset($fieldDataTypes[$field])) {
-                    $c = $fieldDataTypes[$field];
-                    $typeValue = $c($value);
+        foreach ($mappingFields as $dbField => $mappedField) {
+            if (isset($entity->additionalData[$dbField])) {
+                $typeValue = $entity->additionalData[$dbField];
+                if (isset($fieldDataTypes[$mappedField])) {
+                    $c = $fieldDataTypes[$mappedField];
+                    $typeValue = $c($mappedField);
                 }
 
-                $entity->{$field} = $typeValue;
-                unset($entity->additionalData[$column]);
+                $entity->{$mappedField} = $typeValue;
+                unset($entity->additionalData[$dbField]);
             }
-        }
 
-        // Remove mapped fields from additional data
-        foreach ($mappingFields as $field) {
-            if (isset($entity->additionalData[$field])) {
-                unset($entity->additionalData[$field]);
-            }
+            unset($entity->additionalData[$mappedField]);
         }
     }
 

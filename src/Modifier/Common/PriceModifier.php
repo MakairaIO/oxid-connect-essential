@@ -20,21 +20,18 @@ class PriceModifier extends Modifier
     /**
      * PriceModifier constructor.
      *
-     * @param bool $isNetto
-     * @param bool $showNetto
-     * @param int  $defaultVAT
+     * @param bool     $isNetto
+     * @param bool     $showNetto
+     * @param int|null $defaultVAT
      */
     public function __construct(
         ?bool $isNetto = false,
         ?bool $showNetto = false,
         ?int $defaultVAT = 19
     ) {
-        $this->defaultVAT = $defaultVAT;
-        $this->showNetto  = $showNetto;
-        $this->isNetto    = $isNetto;
-        $this->isNetto    = (bool) $this->isNetto;
-        $this->showNetto  = (bool) $this->showNetto;
-        $this->defaultVAT = (int) $this->defaultVAT;
+        $this->isNetto    = (bool) $isNetto;
+        $this->showNetto  = (bool) $showNetto;
+        $this->defaultVAT = (int) $defaultVAT;
     }
 
     /**

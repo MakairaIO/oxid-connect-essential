@@ -28,6 +28,8 @@ class Endpoint extends FrontendController
         $response = $this->handleRequest(Request::createFromGlobals());
 
         $response->send();
+        Registry::getSession()->freeze();
+
         exit(0);
     }
 
@@ -50,7 +52,7 @@ class Endpoint extends FrontendController
             $responseContent = ['message' => $exception->getMessage()];
             $statusCode      = $exception->getCode();
         } catch (Throwable $exception) {
-            $responseContent = ['messgae' => $exception->getMessage()];
+            $responseContent = ['message' => $exception->getMessage()];
             $statusCode      = 500;
         }
 

@@ -4,6 +4,9 @@ namespace Makaira\OxidConnectEssential\Utils;
 
 use Closure;
 
+use function md5;
+use function preg_replace_callback;
+
 class TableTranslator
 {
     /**
@@ -17,9 +20,14 @@ class TableTranslator
     private string $language = 'de';
 
     /**
-     * @var int | null
+     * @var int|null
      */
     private ?int $shopId = null;
+
+    /**
+     * @var array<string, string>
+     */
+    private static array $sqlCache = [];
 
     /**
      * @var Closure
@@ -71,13 +79,13 @@ class TableTranslator
     }
 
     /**
-     * @param int|string|null $shopId
+     * @param int|null $shopId
      *
      * @return TableTranslator
      */
-    public function setShopId($shopId): TableTranslator
+    public function setShopId(?int $shopId): TableTranslator
     {
-        $this->shopId = (int) $shopId;
+        $this->shopId = $shopId;
 
         return $this;
     }
@@ -91,16 +99,21 @@ class TableTranslator
      */
     public function translate(string $sql): string
     {
-        foreach ($this->searchTables as $searchTable) {
-            $viewNameGenerator = $this->viewNameGenerator;
-            $replaceTable = $viewNameGenerator($searchTable, $this->language, $this->shopId);
-            $sql          = (string) preg_replace_callback(
-                "((?P<tableName>{$searchTable})(?P<end>[^A-Za-z0-9_]|$))",
-                static fn ($match) => $replaceTable . $match['end'],
-                $sql
-            );
+        $cacheKey = md5($sql);
+        if (!isset(self::$sqlCache[$cacheKey])) {
+            foreach ($this->searchTables as $searchTable) {
+                $viewNameGenerator = $this->viewNameGenerator;
+                $replaceTable      = $viewNameGenerator($searchTable, $this->language, $this->shopId);
+                $sql               = (string) preg_replace_callback(
+                    "((?P<tableName>{$searchTable})(?P<end>[^A-Za-z0-9_]|$))",
+                    static fn($match) => $replaceTable . $match['end'],
+                    $sql
+                );
+            }
+
+            self::$sqlCache[$cacheKey] = $sql;
         }
 
-        return $sql;
+        return self::$sqlCache[$cacheKey];
     }
 }

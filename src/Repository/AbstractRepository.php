@@ -26,6 +26,7 @@ abstract class AbstractRepository
      * @param Connection      $database
      * @param ModifierList    $modifiers
      * @param TableTranslator $tableTranslator
+     * @param DataMapper      $dataMapper
      */
     public function __construct(
         Connection $database,
@@ -53,8 +54,10 @@ abstract class AbstractRepository
 
     public function get(string $id): Change
     {
+        $query = $this->tableTranslator->translate($this->getSelectQuery());
+
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($this->getSelectQuery(), ['id' => $id]);
+        $resultStatement = $this->database->executeQuery($query, ['id' => $id]);
 
         /** @var array<string, string> $result */
         $result = $resultStatement->fetchAssociative();
@@ -71,7 +74,7 @@ abstract class AbstractRepository
         if (!$deleted) {
             $type = $this->getInstance($result['id']);
 
-            $this->dataMapper->map($type, $result, $this->getType());
+            $this->dataMapper->map($type, $result);
 
             $change->data = $this->modifiers->applyModifiers($type, $this->getType());
         }
@@ -82,13 +85,13 @@ abstract class AbstractRepository
     /**
      * Get all IDs handled by this repository.
      *
-     * @param int|string|null $shopId
+     * @param int|null $shopId
      *
      * @return array
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function getAllIds($shopId = null): array
+    public function getAllIds(?int $shopId = null): array
     {
         $sql = $this->getAllIdsQuery();
         $this->tableTranslator->setShopId($shopId);

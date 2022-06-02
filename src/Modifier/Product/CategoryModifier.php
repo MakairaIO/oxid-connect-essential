@@ -10,13 +10,15 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
 
+use function str_replace;
+
 class CategoryModifier extends Modifier
 {
-    private string $selectCategoriesQuery = "
+    public string $selectCategoriesQuery = "
         SELECT
             o2c.oxcatnid AS catid,
             o2c.oxpos AS oxpos,
-            o2c.oxshopid AS shopid,
+            1 AS shopid,
             oc.OXTITLE as title,
             oc.OXACTIVE AS active,
             oc.OXLEFT AS oxleft,
@@ -31,7 +33,7 @@ class CategoryModifier extends Modifier
             AND :productActive = :productActive
         ";
 
-    protected string $selectCategoryPathQuery = "
+    public string $selectCategoryPathQuery = "
       SELECT
         oc.OXTITLE as title,
         oc.OXACTIVE as active
@@ -49,9 +51,16 @@ class CategoryModifier extends Modifier
     /**
      * @param Connection $database
      */
-    public function __construct(Connection $database)
+    public function __construct(Connection $database, bool $isMall)
     {
         $this->database = $database;
+        if ($isMall) {
+            $this->selectCategoriesQuery = str_replace(
+                '1 AS shopid',
+                'o2c.OXSHOPID AS shopid',
+                $this->selectCategoriesQuery
+            );
+        }
     }
 
     /**

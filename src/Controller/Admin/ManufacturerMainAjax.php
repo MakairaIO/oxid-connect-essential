@@ -121,8 +121,6 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     public function removeManufacturer(): void
     {
-        $productIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
-
         /** @var string $manufacturerId */
         $manufacturerId = Registry::getRequest()->getRequestParameter('oxid');
 
@@ -141,6 +139,7 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
             $resultStatement = $db->executeQuery($query);
             $changedIds      = $resultStatement->fetchAllAssociative();
         } else {
+            $productIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');
             $changedIds = $this->addParentIds($productIds);
         }
 
