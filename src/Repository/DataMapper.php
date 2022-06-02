@@ -4,6 +4,10 @@ namespace Makaira\OxidConnectEssential\Repository;
 
 use Closure;
 use Makaira\OxidConnectEssential\Type;
+use Makaira\OxidConnectEssential\Type\Category\Category;
+use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer;
+use Makaira\OxidConnectEssential\Type\Product\Product;
+use Makaira\OxidConnectEssential\Type\Variant\Variant;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
@@ -54,6 +58,11 @@ class DataMapper
     private static array $dataTypes = [];
 
     /**
+     * @param Type|Category|Product|Manufacturer|Variant $entity
+     * @param array                                      $dbResult
+     * @param string                                     $docType
+     *
+     * @return void
      * @SuppressWarnings(CyclomaticComplexity)
      */
     public function map(Type $entity, array $dbResult, string $docType): void
