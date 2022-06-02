@@ -53,8 +53,10 @@ abstract class AbstractRepository
 
     public function get(string $id): Change
     {
+        $query = $this->tableTranslator->translate($this->getSelectQuery());
+
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($this->getSelectQuery(), ['id' => $id]);
+        $resultStatement = $this->database->executeQuery($query, ['id' => $id]);
 
         /** @var array<string, string> $result */
         $result = $resultStatement->fetchAssociative();

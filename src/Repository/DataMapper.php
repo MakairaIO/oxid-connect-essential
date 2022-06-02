@@ -4,11 +4,19 @@ namespace Makaira\OxidConnectEssential\Repository;
 
 use Closure;
 use Makaira\OxidConnectEssential\Type;
+use Makaira\OxidConnectEssential\Type\Category\Category;
+use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer;
+use Makaira\OxidConnectEssential\Type\Product\Product;
+use Makaira\OxidConnectEssential\Type\Variant\Variant;
 use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
 
+use function array_change_key_case;
+use function array_merge;
 use function get_class;
+
+use const CASE_UPPER;
 
 class DataMapper
 {
@@ -50,6 +58,11 @@ class DataMapper
     private static array $dataTypes = [];
 
     /**
+     * @param Type|Category|Product|Manufacturer|Variant $entity
+     * @param array                                      $dbResult
+     * @param string                                     $docType
+     *
+     * @return void
      * @SuppressWarnings(CyclomaticComplexity)
      */
     public function map(Type $entity, array $dbResult, string $docType): void
@@ -80,26 +93,19 @@ class DataMapper
 
         $entity->additionalData = $dbResult;
 
-        // Map database columns to fields
-        foreach ($entity->additionalData as $column => $value) {
-            if (isset($mappingFields[$column])) {
-                $typeValue = $value;
-                $field = $mappingFields[$column];
-                if (isset($fieldDataTypes[$field])) {
-                    $c = $fieldDataTypes[$field];
-                    $typeValue = $c($value);
+        foreach ($mappingFields as $dbField => $mappedField) {
+            if (isset($entity->additionalData[$dbField])) {
+                $typeValue = $entity->additionalData[$dbField];
+                if (isset($fieldDataTypes[$mappedField])) {
+                    $c = $fieldDataTypes[$mappedField];
+                    $typeValue = $c($mappedField);
                 }
 
-                $entity->{$field} = $typeValue;
-                unset($entity->additionalData[$column]);
+                $entity->{$mappedField} = $typeValue;
+                unset($entity->additionalData[$dbField]);
             }
-        }
 
-        // Remove mapped fields from additional data
-        foreach ($mappingFields as $field) {
-            if (isset($entity->additionalData[$field])) {
-                unset($entity->additionalData[$field]);
-            }
+            unset($entity->additionalData[$mappedField]);
         }
     }
 

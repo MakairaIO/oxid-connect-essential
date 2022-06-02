@@ -13,7 +13,6 @@ class CategoryModifierTest extends UnitTestCase
 {
     public function testUnnested()
     {
-
         $resultMock = $this->createMock(Result::class);
         $resultMock->method('fetchAllAssociative')
             ->willReturnOnConsecutiveCalls(
@@ -55,7 +54,7 @@ class CategoryModifierTest extends UnitTestCase
         $product->id = 'abc';
         $product->OXACTIVE = 1;
 
-        $modifier = new CategoryModifier($databaseMock);
+        $modifier = new CategoryModifier($databaseMock, false);
 
         $product = $modifier->apply($product);
 

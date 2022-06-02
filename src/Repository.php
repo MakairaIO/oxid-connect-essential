@@ -4,7 +4,6 @@ namespace Makaira\OxidConnectEssential;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
-use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Doctrine\DBAL\ParameterType;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
@@ -12,6 +11,7 @@ use Makaira\OxidConnectEssential\Repository\ProductRepository;
 use Makaira\OxidConnectEssential\Type\Product\Product;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
+use function array_push;
 use function get_object_vars;
 
 /**
@@ -22,16 +22,6 @@ use function get_object_vars;
  */
 class Repository
 {
-    /**
-     * @var string
-     */
-    protected string $cleanupQuery = '
-        DELETE FROM
-          makaira_connect_changes
-        WHERE
-          changed < DATE_SUB(NOW(), INTERVAL 1 DAY);
-    ';
-
     /**
      * @var string
      */
@@ -47,17 +37,6 @@ class Repository
         ORDER BY
             sequence ASC
         LIMIT :limit
-    ';
-
-    /**
-     * @var string
-     */
-    protected string $touchQuery = '
-        REPLACE INTO
-          makaira_connect_changes
-        (OXID, TYPE, CHANGED)
-          VALUES
-        (:id, :type, NOW());
     ';
 
     /**
@@ -193,9 +172,7 @@ class Repository
         $changes           = [];
         /** @var ProductRepository $productRepository */
         $productRepository = $this->getRepositoryForType('product');
-        $typeProduct       = $productRepository->getType();
         $variantRepository = $this->getRepositoryForType('variant');
-        $typeVariant       = $variantRepository->getType();
         foreach ($result as $row) {
             try {
                 $type     = $row['type'];
@@ -203,7 +180,7 @@ class Repository
                 $id       = (string) $row['id'];
                 $parentId = null;
 
-                if ($typeVariant === $type) {
+                if ($variantRepository->getType() === $type) {
                     $parentId = $productRepository->getParentId($id);
 
                     if ($parentId && !isset($this->parentProducts[ $parentId ])) {
@@ -216,7 +193,7 @@ class Repository
                 $change           = $this->getRepositoryForType($type)->get($id);
                 $change->sequence = $sequence;
 
-                if ($typeVariant === $type && $parentId && $change->data instanceof Type) {
+                if ($parentId && $change->data instanceof Type && $variantRepository->getType() === $type) {
                     $dataKeys = get_object_vars($change->data);
                     foreach ($dataKeys as $key => $data) {
                         if (in_array($key, $this->propsExclude, false)) {
@@ -228,18 +205,21 @@ class Repository
                         }
                     }
                     if ($change->data instanceof Product) {
-                        $change->data->attributeStr   = array_merge(
-                            (array) $this->parentAttributes[$parentId]['attributeStr'],
-                            $change->data->attributeStr
+                        array_push(
+                            $change->data->attributeStr,
+                            ...((array) $this->parentAttributes[$parentId]['attributeStr'])
                         );
-                        $change->data->attributeInt   = array_merge(
-                            (array) $this->parentAttributes[$parentId]['attributeInt'],
-                            $change->data->attributeInt
+
+                        array_push(
+                            $change->data->attributeInt,
+                            ...((array) $this->parentAttributes[$parentId]['attributeInt'])
                         );
-                        $change->data->attributeFloat = array_merge(
-                            (array) $this->parentAttributes[$parentId]['attributeFloat'],
-                            $change->data->attributeFloat
+
+                        array_push(
+                            $change->data->attributeFloat,
+                            ...((array) $this->parentAttributes[$parentId]['attributeFloat'])
                         );
+
                         unset(
                             $change->data->tmpAttributeStr,
                             $change->data->tmpAttributeInt,
@@ -248,7 +228,7 @@ class Repository
                     }
                 }
 
-                if ($typeProduct === $type) {
+                if ($productRepository->getType() === $type) {
                     if (
                         true === $change->deleted ||
                         (isset($change->data->OXVARCOUNT) && 0 === $change->data->OXVARCOUNT) ||
@@ -279,7 +259,7 @@ class Repository
                         $productType->id = $pChange->id;
 
                         $pChange->sequence = $sequence;
-                        $pChange->type     = $typeVariant;
+                        $pChange->type     = $variantRepository->getType();
 
                         $changes[] = $pChange;
                         unset($pChange);
@@ -321,6 +301,12 @@ class Repository
         $this->parentProducts[$parentId] = $parentData;
     }
 
+    /**
+     * @param string $type
+     *
+     * @return AbstractRepository
+     * @throws OutOfBoundsException
+     */
     protected function getRepositoryForType(string $type): AbstractRepository
     {
         if (!isset($this->repositoryMapping[$type])) {
