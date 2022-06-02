@@ -13,8 +13,6 @@ use OxidEsales\Eshop\Core\Exception\NoArticleException;
 use OxidEsales\EshopCommunity\Application\Model\Basket;
 use OxidEsales\EshopCommunity\Application\Model\BasketItem;
 use OxidEsales\EshopCommunity\Core\Registry;
-use oxRegistry;
-use Thankyou;
 
 /**
  * This file is part of a marmalade GmbH project
@@ -175,7 +173,7 @@ class MakairaTrackingDataGenerator
      */
     protected function generateForThankYou(): array
     {
-        /** @var Thankyou $oxidController */
+        /** @var ThankYouController $oxidController */
         $oxidController = Registry::getConfig()->getTopActiveView();
 
         $cart     = $oxidController->getBasket();

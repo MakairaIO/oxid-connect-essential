@@ -58,9 +58,9 @@ class DataMapper
     private static array $dataTypes = [];
 
     /**
-     * @param Type|Category|Product|Manufacturer|Variant $entity
-     * @param array                                      $dbResult
-     * @param string                                     $docType
+     * @param Category|Product|Manufacturer|Variant $entity
+     * @param array                                 $dbResult
+     * @param string                                $docType
      *
      * @return void
      * @SuppressWarnings(CyclomaticComplexity)

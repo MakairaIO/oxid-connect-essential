@@ -85,13 +85,13 @@ abstract class AbstractRepository
     /**
      * Get all IDs handled by this repository.
      *
-     * @param int|string|null $shopId
+     * @param int|null $shopId
      *
      * @return array
      * @throws DBALDriverException
      * @throws DBALException
      */
-    public function getAllIds($shopId = null): array
+    public function getAllIds(?int $shopId = null): array
     {
         $sql = $this->getAllIdsQuery();
         $this->tableTranslator->setShopId($shopId);
