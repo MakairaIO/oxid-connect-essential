@@ -14,7 +14,7 @@ use function str_replace;
 
 class CategoryModifier extends Modifier
 {
-    private string $selectCategoriesQuery = "
+    public string $selectCategoriesQuery = "
         SELECT
             o2c.oxcatnid AS catid,
             o2c.oxpos AS oxpos,
@@ -33,7 +33,7 @@ class CategoryModifier extends Modifier
             AND :productActive = :productActive
         ";
 
-    protected string $selectCategoryPathQuery = "
+    public string $selectCategoryPathQuery = "
       SELECT
         oc.OXTITLE as title,
         oc.OXACTIVE as active
