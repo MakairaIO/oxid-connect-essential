@@ -74,7 +74,7 @@ abstract class AbstractRepository
         if (!$deleted) {
             $type = $this->getInstance($result['id']);
 
-            $this->dataMapper->map($type, $result, $this->getType());
+            $this->dataMapper->map($type, $result);
 
             $change->data = $this->modifiers->applyModifiers($type, $this->getType());
         }

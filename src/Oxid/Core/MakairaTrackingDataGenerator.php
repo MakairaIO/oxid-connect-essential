@@ -10,9 +10,9 @@ use OxidEsales\Eshop\Application\Model\Order;
 use OxidEsales\Eshop\Application\Model\OrderArticle;
 use OxidEsales\Eshop\Core\Exception\ArticleInputException;
 use OxidEsales\Eshop\Core\Exception\NoArticleException;
-use OxidEsales\EshopCommunity\Application\Model\Basket;
-use OxidEsales\EshopCommunity\Application\Model\BasketItem;
-use OxidEsales\EshopCommunity\Core\Registry;
+use OxidEsales\Eshop\Application\Model\Basket;
+use OxidEsales\Eshop\Application\Model\BasketItem;
+use OxidEsales\Eshop\Core\Registry;
 
 /**
  * This file is part of a marmalade GmbH project
@@ -119,6 +119,7 @@ class MakairaTrackingDataGenerator
      */
     protected function generateForBasket(): array
     {
+        /** @var Basket $cart */
         $cart = Registry::getSession()->getBasket();
         $cartData = $this->createCartTrackingData($cart);
 
@@ -176,6 +177,7 @@ class MakairaTrackingDataGenerator
         /** @var ThankYouController $oxidController */
         $oxidController = Registry::getConfig()->getTopActiveView();
 
+        /** @var Basket $cart */
         $cart     = $oxidController->getBasket();
         $cartData = $this->createCartTrackingData($cart);
         /** @var Order $order */
