@@ -13,7 +13,7 @@ namespace Makaira\OxidConnectEssential\Event;
 
 use Makaira\OxidConnectEssential\Repository;
 use Makaira\OxidConnectEssential\Repository\AbstractRepository;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 class RepositoryCollectEvent extends Event
 {

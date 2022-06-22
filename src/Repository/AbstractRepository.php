@@ -10,7 +10,7 @@ use Makaira\OxidConnectEssential\Change;
 use Makaira\OxidConnectEssential\Event\RepositoryCollectEvent;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 abstract class AbstractRepository
 {

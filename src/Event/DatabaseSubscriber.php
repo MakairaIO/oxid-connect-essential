@@ -15,7 +15,7 @@ use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelDeleteEve
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelInsertEvent;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelUpdateEvent;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\BeforeHeadersSendEvent;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 use function array_replace;
 

@@ -3,7 +3,7 @@
 namespace Makaira\OxidConnectEssential;
 
 use Makaira\OxidConnectEssential\Event\ModifierCollectEvent;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * Class Modifier
