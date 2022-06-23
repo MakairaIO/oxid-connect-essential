@@ -67,30 +67,10 @@
                 "picture_url_main": [],
                 "attributes": [
                     {
-                        "d248453369cf82a6a64617f1357089c5": "S",
-                        "16fd55d02a23f31097ca58eccfeec97c": "grau",
                         "9438ac75bac3e344628b14bf7ed82c15": "grau"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "S",
-                        "16fd55d02a23f31097ca58eccfeec97c": "orange",
                         "9438ac75bac3e344628b14bf7ed82c15": "orange"
-                    },
-                    {
-                        "d248453369cf82a6a64617f1357089c5": "M",
-                        "16fd55d02a23f31097ca58eccfeec97c": "orange"
-                    },
-                    {
-                        "d248453369cf82a6a64617f1357089c5": "M",
-                        "16fd55d02a23f31097ca58eccfeec97c": "grau"
-                    },
-                    {
-                        "d248453369cf82a6a64617f1357089c5": "L",
-                        "16fd55d02a23f31097ca58eccfeec97c": "grau"
-                    },
-                    {
-                        "d248453369cf82a6a64617f1357089c5": "L",
-                        "16fd55d02a23f31097ca58eccfeec97c": "orange"
                     }
                 ],
                 "parent": "",

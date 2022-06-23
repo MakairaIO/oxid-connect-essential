@@ -609,14 +609,7 @@
                 "rating": 0,
                 "searchable": true,
                 "picture_url_main": [],
-                "attributes": [
-                    {
-                        "16fd55d02a23f31097ca58eccfeec97c": "wei\u00df"
-                    },
-                    {
-                        "16fd55d02a23f31097ca58eccfeec97c": "schwarz"
-                    }
-                ],
+                "attributes": [],
                 "parent": "",
                 "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
                 "maincategoryurl": "Kiteboarding\/Zubehoer\/",
@@ -1195,56 +1188,38 @@
                 "picture_url_main": [],
                 "attributes": [
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
                         "9438ac75bac3e344628b14bf7ed82c15": "Blau",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Smoke Gray",
                         "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Super Blue",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30",
                         "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
                         "9438ac75bac3e344628b14bf7ed82c15": "Blau"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Smoke Gray",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
                         "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Super Blue",
                         "9438ac75bac3e344628b14bf7ed82c15": "Super Blue",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
                         "9438ac75bac3e344628b14bf7ed82c15": "Blau",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Smoke Gray",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
                         "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Super Blue",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
                         "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
                     }
@@ -1450,8 +1425,6 @@
                 "picture_url_main": [],
                 "attributes": [
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 32\/L 32",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
                         "9438ac75bac3e344628b14bf7ed82c15": "Blau",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32"
                     }
@@ -1647,62 +1620,42 @@
                 "picture_url_main": [],
                 "attributes": [
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XL",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XL",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Violet",
                         "9438ac75bac3e344628b14bf7ed82c15": "Violet",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XS",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XS",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Violet",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS",
                         "9438ac75bac3e344628b14bf7ed82c15": "Violet"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "S",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S",
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "S",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Violet",
                         "9438ac75bac3e344628b14bf7ed82c15": "Violet",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "M",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "M",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Violet",
                         "9438ac75bac3e344628b14bf7ed82c15": "Violet",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "L",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "L",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Violet",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
                         "9438ac75bac3e344628b14bf7ed82c15": "Violet"
                     }
@@ -1918,20 +1871,14 @@
                 "picture_url_main": [],
                 "attributes": [
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Dark Blue",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
                         "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 32\/L 32",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Dark Blue",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32",
                         "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Dark Blue",
                         "9438ac75bac3e344628b14bf7ed82c15": "Dark Blue",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
                     }
@@ -2159,40 +2106,30 @@
                 "picture_url_main": [],
                 "attributes": [
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XL",
-                        "16fd55d02a23f31097ca58eccfeec97c": "White",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
                         "9438ac75bac3e344628b14bf7ed82c15": "White",
                         "df3e95af29221b89021a3ae7d6e44ee0": 21,
                         "76c6ffafa93e97616bed9556f4cf56ae": 2.1
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XS",
-                        "16fd55d02a23f31097ca58eccfeec97c": "White",
                         "df3e95af29221b89021a3ae7d6e44ee0": 21,
                         "76c6ffafa93e97616bed9556f4cf56ae": 2.1,
                         "9438ac75bac3e344628b14bf7ed82c15": "White",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "S",
-                        "16fd55d02a23f31097ca58eccfeec97c": "White",
                         "df3e95af29221b89021a3ae7d6e44ee0": 21,
                         "76c6ffafa93e97616bed9556f4cf56ae": 2.1,
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S",
                         "9438ac75bac3e344628b14bf7ed82c15": "White"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "M",
-                        "16fd55d02a23f31097ca58eccfeec97c": "White",
                         "df3e95af29221b89021a3ae7d6e44ee0": 21,
                         "76c6ffafa93e97616bed9556f4cf56ae": 2.1,
                         "9438ac75bac3e344628b14bf7ed82c15": "White",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "L",
-                        "16fd55d02a23f31097ca58eccfeec97c": "White",
                         "df3e95af29221b89021a3ae7d6e44ee0": 42,
                         "76c6ffafa93e97616bed9556f4cf56ae": 4.2,
                         "9438ac75bac3e344628b14bf7ed82c15": "White",

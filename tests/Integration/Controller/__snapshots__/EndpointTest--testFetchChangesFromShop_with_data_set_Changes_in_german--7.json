@@ -1957,16 +1957,6 @@
                 "isVariant": true,
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "XL"
@@ -1985,6 +1975,16 @@
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
                     }
                 ],
                 "attributeInt": [
@@ -2118,16 +2118,6 @@
                 "isVariant": true,
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "S"
@@ -2146,6 +2136,16 @@
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
                     }
                 ],
                 "attributeInt": [
@@ -2279,16 +2279,6 @@
                 "isVariant": true,
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "White"
@@ -2307,6 +2297,16 @@
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
                     }
                 ],
                 "attributeInt": [
@@ -2440,16 +2440,6 @@
                 "isVariant": true,
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "White"
@@ -2468,6 +2458,16 @@
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
                     }
                 ],
                 "attributeInt": [
@@ -2601,16 +2601,6 @@
                 "isVariant": true,
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
                         "title": "PHPUnit float attribute",
                         "value": "4.2"
@@ -2639,30 +2629,40 @@
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
-                    }
-                ],
-                "attributeInt": [
+                    },
                     {
                         "id": "df3e95af29221b89021a3ae7d6e44ee0",
                         "title": "PHPUnit integer attribute",
                         "value": "21"
                     },
                     {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
+                    }
+                ],
+                "attributeInt": [
+                    {
                         "id": "df3e95af29221b89021a3ae7d6e44ee0",
                         "title": "PHPUnit integer attribute",
                         "value": "42"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributeFloat": [
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
                         "title": "PHPUnit float attribute",
-                        "value": "2.1"
+                        "value": "4.2"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
                         "title": "PHPUnit float attribute",
-                        "value": "4.2"
+                        "value": "2.1"
                     }
                 ],
                 "isPseudo": false,
