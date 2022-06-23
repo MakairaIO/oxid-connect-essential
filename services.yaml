@@ -121,6 +121,8 @@ services:
       $modifiers: '@Makaira\OxidConnectEssential\Repository\VariantModifierList'
     tags: ['makaira_connect_essential.repository']
 
+  Makaira\OxidConnectEssential\Oxid\Core\MakairaTrackingDataGenerator: ~
+
   Makaira\OxidConnectEssential\Service\TrackingRenderService:
     public: true
 
