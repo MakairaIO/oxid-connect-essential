@@ -3,7 +3,6 @@
 namespace Makaira\OxidConnectEssential\Utils;
 
 use OxidEsales\Eshop\Application\Controller\FrontendController;
-use OxidEsales\Eshop\Core\Language;
 use OxidEsales\Eshop\Core\UtilsView;
 
 class OxidSmartyParser implements ContentParserInterface

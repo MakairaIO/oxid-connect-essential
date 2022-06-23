@@ -79,7 +79,7 @@ class TableTranslator
     }
 
     /**
-     * @param int|string|null $shopId
+     * @param int|null $shopId
      *
      * @return TableTranslator
      */
@@ -100,7 +100,7 @@ class TableTranslator
     public function translate(string $sql): string
     {
         $cacheKey = md5(sprintf('%s-%u-%s', $sql, (int) $this->shopId, $this->language));
-        if (!isset(static::$sqlCache[$cacheKey])) {
+        if (!isset(self::$sqlCache[$cacheKey])) {
             foreach ($this->searchTables as $searchTable) {
                 $viewNameGenerator = $this->viewNameGenerator;
                 $replaceTable      = $viewNameGenerator($searchTable, $this->language, $this->shopId);
@@ -111,9 +111,9 @@ class TableTranslator
                 );
             }
 
-            static::$sqlCache[$cacheKey] = $sql;
+            self::$sqlCache[$cacheKey] = $sql;
         }
 
-        return static::$sqlCache[$cacheKey];
+        return self::$sqlCache[$cacheKey];
     }
 }

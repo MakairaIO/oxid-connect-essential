@@ -40,7 +40,7 @@ class ModelDataExtractor
             }
         }
 
-        if (!$dataExtractor instanceof AbstractModelDataExtractor) {
+        if (!($dataExtractor instanceof AbstractModelDataExtractor)) {
             throw new ModelNotSupportedException(sprintf("The model '%s' is not supported.", get_class($model)));
         }
 

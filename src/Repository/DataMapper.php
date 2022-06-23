@@ -12,21 +12,17 @@ use ReflectionClass;
 use ReflectionNamedType;
 use ReflectionProperty;
 
-use function array_change_key_case;
-use function array_merge;
 use function get_class;
-
-use const CASE_UPPER;
 
 class DataMapper
 {
-    private array $commonFieldMapping = [
+    private const COMMON_FIELD_MAPPING = [
         'OXID'        => 'id',
         'OXTIMESTAMP' => 'timestamp',
         'OXACTIVE'    => 'active',
     ];
 
-    private array $productFieldMapping = [
+    private const PRODUCT_FIELD_MAPPING = [
         'OXSEARCHKEYS'     => 'searchkeys',
         'OXHIDDEN'         => 'hidden',
         'OXSORT'           => 'sort',
@@ -42,7 +38,7 @@ class DataMapper
         'OXTITLE'          => 'title',
     ];
 
-    private array $categoryFieldMapping = [
+    private const CATEGORY_FIELD_MAPPING = [
         'OXSORT'     => 'sort',
         'OXDESC'     => 'shortdesc',
         'OXLONGDESC' => 'longdesc',
@@ -50,44 +46,58 @@ class DataMapper
         'OXTITLE'    => 'category_title',
     ];
 
-    private array $manufacturerFieldMapping = [
+    private const MANUFACTURER_FIELD_MAPPING = [
         'OXSHORTDESC' => 'shortdesc',
         'OXTITLE'     => 'manufacturer_title',
     ];
 
+    /**
+     * @var array<string, array<string, string>>
+     */
+    private static ?array $fieldMappings = null;
+
+    /**
+     * @var array<array<string, Closure>>
+     */
     private static array $dataTypes = [];
 
     /**
-     * @param Type|Category|Product|Manufacturer|Variant $entity
-     * @param array                                      $dbResult
-     * @param string                                     $docType
+     *
+     */
+    public function __construct()
+    {
+        if (null === self::$fieldMappings) {
+            self::$fieldMappings[Product::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::PRODUCT_FIELD_MAPPING
+            );
+
+            self::$fieldMappings[Variant::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::PRODUCT_FIELD_MAPPING
+            );
+
+            self::$fieldMappings[Category::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::CATEGORY_FIELD_MAPPING
+            );
+
+            self::$fieldMappings[Manufacturer::class] = array_replace(
+                self::COMMON_FIELD_MAPPING,
+                self::MANUFACTURER_FIELD_MAPPING
+            );
+        }
+    }
+
+    /**
+     * @param Type  $entity
+     * @param array $dbResult
      *
      * @return void
-     * @SuppressWarnings(CyclomaticComplexity)
      */
-    public function map(Type $entity, array $dbResult, string $docType): void
+    public function map(Type $entity, array $dbResult): void
     {
-        $mappingFields = [];
-
-        switch ($docType) {
-            case "product":
-            case "variant":
-                $mappingFields = $this->productFieldMapping;
-                break;
-
-            case "category":
-                $mappingFields = $this->categoryFieldMapping;
-                break;
-
-            case "manufacturer":
-                $mappingFields = $this->manufacturerFieldMapping;
-                break;
-
-            default:
-                break;
-        }
-
-        $mappingFields = array_merge($this->commonFieldMapping, $mappingFields);
+        $mappingFields = self::$fieldMappings[get_class($entity)] ?? self::COMMON_FIELD_MAPPING;
 
         $fieldDataTypes = $this->getFieldDataTypes($entity);
 
@@ -98,7 +108,7 @@ class DataMapper
                 $typeValue = $entity->additionalData[$dbField];
                 if (isset($fieldDataTypes[$mappedField])) {
                     $c = $fieldDataTypes[$mappedField];
-                    $typeValue = $c($mappedField);
+                    $typeValue = $c($typeValue);
                 }
 
                 $entity->{$mappedField} = $typeValue;

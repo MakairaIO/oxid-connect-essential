@@ -58,7 +58,7 @@ class MakairaCookieUtils
     ): bool {
         if ($this->hasCookiesAccepted()) {
             /** @var UtilsServer $oxidServerUtils */
-            $oxidServerUtils = Registry::get('oxutilsserver');
+            $oxidServerUtils = Registry::get(UtilsServer::class);
 
             return $oxidServerUtils->setOxCookie(
                 $name,
