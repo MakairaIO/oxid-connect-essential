@@ -8,27 +8,7 @@
             "sequence": 1,
             "deleted": false,
             "data": {
-                "category_title": "Bindungen",
-                "sort": "202",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/0f40c6a077b68c21f164767c4a903fd2",
-                "depth": 2,
-                "subcategories": [
-                    "0f40c6a077b68c21f164767c4a903fd2"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "0f40c6a077b68c21f164767c4a903fd2",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "943173edecf6d6870a0f357b8ac84d32",
                     "OXLEFT": "4",
@@ -48,11 +28,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Bindungen",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/0f40c6a077b68c21f164767c4a903fd2",
+                "id": "0f40c6a077b68c21f164767c4a903fd2",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "202",
+                "subcategories": [
+                    "0f40c6a077b68c21f164767c4a903fd2"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -61,27 +61,7 @@
             "sequence": 2,
             "deleted": false,
             "data": {
-                "category_title": "Trapeze",
-                "sort": "103",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f41a4463b227c437f6e6bf57b1697c4",
-                "depth": 2,
-                "subcategories": [
-                    "0f41a4463b227c437f6e6bf57b1697c4"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "0f41a4463b227c437f6e6bf57b1697c4",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "943a9ba3050e78b443c16e043ae60ef3",
                     "OXLEFT": "6",
@@ -101,11 +81,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Trapeze",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f41a4463b227c437f6e6bf57b1697c4",
+                "id": "0f41a4463b227c437f6e6bf57b1697c4",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "103",
+                "subcategories": [
+                    "0f41a4463b227c437f6e6bf57b1697c4"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -114,27 +114,7 @@
             "sequence": 3,
             "deleted": false,
             "data": {
-                "category_title": "Wakeboards",
-                "sort": "201",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/0f4270b89fbef1481958381410a0dbca",
-                "depth": 2,
-                "subcategories": [
-                    "0f4270b89fbef1481958381410a0dbca"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "0f4270b89fbef1481958381410a0dbca",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "943173edecf6d6870a0f357b8ac84d32",
                     "OXLEFT": "2",
@@ -154,11 +134,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Wakeboards",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/0f4270b89fbef1481958381410a0dbca",
+                "id": "0f4270b89fbef1481958381410a0dbca",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "201",
+                "subcategories": [
+                    "0f4270b89fbef1481958381410a0dbca"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -167,27 +167,7 @@
             "sequence": 4,
             "deleted": false,
             "data": {
-                "category_title": "Kiteboards",
-                "sort": "102",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f4f08358666c54b4fde3d83d2b7ef04",
-                "depth": 2,
-                "subcategories": [
-                    "0f4f08358666c54b4fde3d83d2b7ef04"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "0f4f08358666c54b4fde3d83d2b7ef04",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "943a9ba3050e78b443c16e043ae60ef3",
                     "OXLEFT": "4",
@@ -207,11 +187,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Kiteboards",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f4f08358666c54b4fde3d83d2b7ef04",
+                "id": "0f4f08358666c54b4fde3d83d2b7ef04",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "102",
+                "subcategories": [
+                    "0f4f08358666c54b4fde3d83d2b7ef04"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -220,27 +220,7 @@
             "sequence": 5,
             "deleted": false,
             "data": {
-                "category_title": "Kites",
-                "sort": "101",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f4fb00809cec9aa0910aa9c8fe36751",
-                "depth": 2,
-                "subcategories": [
-                    "0f4fb00809cec9aa0910aa9c8fe36751"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "0f4fb00809cec9aa0910aa9c8fe36751",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "943a9ba3050e78b443c16e043ae60ef3",
                     "OXLEFT": "2",
@@ -260,11 +240,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Kites",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f4fb00809cec9aa0910aa9c8fe36751",
+                "id": "0f4fb00809cec9aa0910aa9c8fe36751",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "101",
+                "subcategories": [
+                    "0f4fb00809cec9aa0910aa9c8fe36751"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -273,27 +273,7 @@
             "sequence": 6,
             "deleted": false,
             "data": {
-                "category_title": "Bekleidung",
-                "sort": "3",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141",
-                "depth": 1,
-                "subcategories": [
-                    "30e44ab83fdee7564.23264141"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "30e44ab83fdee7564.23264141",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "oxrootid",
                     "OXLEFT": "1",
@@ -313,11 +293,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Bekleidung",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141",
+                "id": "30e44ab83fdee7564.23264141",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "3",
+                "subcategories": [
+                    "30e44ab83fdee7564.23264141"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -326,27 +326,7 @@
             "sequence": 7,
             "deleted": false,
             "data": {
-                "category_title": "Wakeboarding",
-                "sort": "2",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943173edecf6d6870a0f357b8ac84d32",
-                "depth": 1,
-                "subcategories": [
-                    "943173edecf6d6870a0f357b8ac84d32"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "943173edecf6d6870a0f357b8ac84d32",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "oxrootid",
                     "OXLEFT": "1",
@@ -366,11 +346,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Wakeboarding",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32",
+                "id": "943173edecf6d6870a0f357b8ac84d32",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "2",
+                "subcategories": [
+                    "943173edecf6d6870a0f357b8ac84d32"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -379,27 +379,7 @@
             "sequence": 8,
             "deleted": false,
             "data": {
-                "category_title": "Kiteboarding",
-                "sort": "1",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3",
-                "depth": 1,
-                "subcategories": [
-                    "943a9ba3050e78b443c16e043ae60ef3"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "943a9ba3050e78b443c16e043ae60ef3",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "oxrootid",
                     "OXLEFT": "1",
@@ -419,11 +399,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Kiteboarding",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3",
+                "id": "943a9ba3050e78b443c16e043ae60ef3",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "1",
+                "subcategories": [
+                    "943a9ba3050e78b443c16e043ae60ef3"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -432,27 +432,7 @@
             "sequence": 9,
             "deleted": false,
             "data": {
-                "category_title": "Shirts & Co.",
-                "sort": "3020202",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310\/\/d862abc1f98741797cf889eb4a9090ad",
-                "depth": 4,
-                "subcategories": [
-                    "d862abc1f98741797cf889eb4a9090ad"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "d862abc1f98741797cf889eb4a9090ad",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad7facadcb7d4297f033d242aa0d310",
                     "OXLEFT": "22",
@@ -472,11 +452,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Shirts & Co.",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310\/\/d862abc1f98741797cf889eb4a9090ad",
+                "id": "d862abc1f98741797cf889eb4a9090ad",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "3020202",
+                "subcategories": [
+                    "d862abc1f98741797cf889eb4a9090ad"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -485,27 +485,7 @@
             "sequence": 10,
             "deleted": false,
             "data": {
-                "category_title": "Jeans",
-                "sort": "3020101",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761\/\/d863b76c6bb90a970a5577adf890e8cd",
-                "depth": 4,
-                "subcategories": [
-                    "d863b76c6bb90a970a5577adf890e8cd"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "d863b76c6bb90a970a5577adf890e8cd",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fadbdb3145458afc5aa4dbf7eb906761",
                     "OXLEFT": "14",
@@ -525,11 +505,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Jeans",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761\/\/d863b76c6bb90a970a5577adf890e8cd",
+                "id": "d863b76c6bb90a970a5577adf890e8cd",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "3020101",
+                "subcategories": [
+                    "d863b76c6bb90a970a5577adf890e8cd"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -538,27 +538,7 @@
             "sequence": 11,
             "deleted": false,
             "data": {
-                "category_title": "Jeans",
-                "sort": "3020201",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310\/\/d8665fef35f4d528e92c3d664f4a00c0",
-                "depth": 4,
-                "subcategories": [
-                    "d8665fef35f4d528e92c3d664f4a00c0"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "d8665fef35f4d528e92c3d664f4a00c0",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad7facadcb7d4297f033d242aa0d310",
                     "OXLEFT": "20",
@@ -578,11 +558,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Jeans",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310\/\/d8665fef35f4d528e92c3d664f4a00c0",
+                "id": "d8665fef35f4d528e92c3d664f4a00c0",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "3020201",
+                "subcategories": [
+                    "d8665fef35f4d528e92c3d664f4a00c0"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -591,27 +591,7 @@
             "sequence": 12,
             "deleted": false,
             "data": {
-                "category_title": "Shirts & Co.",
-                "sort": "3020102",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761\/\/d86779840626d3ab8263b62db85df3f0",
-                "depth": 4,
-                "subcategories": [
-                    "d86779840626d3ab8263b62db85df3f0"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "d86779840626d3ab8263b62db85df3f0",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fadbdb3145458afc5aa4dbf7eb906761",
                     "OXLEFT": "16",
@@ -631,11 +611,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Shirts & Co.",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761\/\/d86779840626d3ab8263b62db85df3f0",
+                "id": "d86779840626d3ab8263b62db85df3f0",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "3020102",
+                "subcategories": [
+                    "d86779840626d3ab8263b62db85df3f0"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -644,27 +644,7 @@
             "sequence": 13,
             "deleted": false,
             "data": {
-                "category_title": "Sets",
-                "sort": "203",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/d86d90e4b441aa3f0004dcda5ba5bb38",
-                "depth": 2,
-                "subcategories": [
-                    "d86d90e4b441aa3f0004dcda5ba5bb38"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "d86d90e4b441aa3f0004dcda5ba5bb38",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "943173edecf6d6870a0f357b8ac84d32",
                     "OXLEFT": "6",
@@ -684,11 +664,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Sets",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/d86d90e4b441aa3f0004dcda5ba5bb38",
+                "id": "d86d90e4b441aa3f0004dcda5ba5bb38",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "203",
+                "subcategories": [
+                    "d86d90e4b441aa3f0004dcda5ba5bb38"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -697,27 +697,7 @@
             "sequence": 14,
             "deleted": false,
             "data": {
-                "category_title": "Schuhe",
-                "sort": "3010102",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa\/\/d86fdf0d67bf76dc427aabd2e53e0a97",
-                "depth": 4,
-                "subcategories": [
-                    "d86fdf0d67bf76dc427aabd2e53e0a97"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "d86fdf0d67bf76dc427aabd2e53e0a97",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad2d80baf7aca6ac54e819e066f24aa",
                     "OXLEFT": "6",
@@ -737,11 +717,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Schuhe",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa\/\/d86fdf0d67bf76dc427aabd2e53e0a97",
+                "id": "d86fdf0d67bf76dc427aabd2e53e0a97",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "3010102",
+                "subcategories": [
+                    "d86fdf0d67bf76dc427aabd2e53e0a97"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -750,27 +750,7 @@
             "sequence": 15,
             "deleted": false,
             "data": {
-                "category_title": "Fashion",
-                "sort": "302",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e",
-                "depth": 2,
-                "subcategories": [
-                    "fad181ad64642b955becd0759345161e"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fad181ad64642b955becd0759345161e",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "30e44ab83fdee7564.23264141",
                     "OXLEFT": "12",
@@ -790,11 +770,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Fashion",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e",
+                "id": "fad181ad64642b955becd0759345161e",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "302",
+                "subcategories": [
+                    "fad181ad64642b955becd0759345161e"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -803,27 +803,7 @@
             "sequence": 16,
             "deleted": false,
             "data": {
-                "category_title": "Sonstiges",
-                "sort": "30102",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2a9b0037b71ff1107ae725aae8d1c",
-                "depth": 3,
-                "subcategories": [
-                    "fad2a9b0037b71ff1107ae725aae8d1c"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fad2a9b0037b71ff1107ae725aae8d1c",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad569d6659caca39bc93e98d13dd58b",
                     "OXLEFT": "9",
@@ -843,11 +823,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Sonstiges",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2a9b0037b71ff1107ae725aae8d1c",
+                "id": "fad2a9b0037b71ff1107ae725aae8d1c",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "30102",
+                "subcategories": [
+                    "fad2a9b0037b71ff1107ae725aae8d1c"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -856,27 +856,7 @@
             "sequence": 17,
             "deleted": false,
             "data": {
-                "category_title": "Neopren",
-                "sort": "30101",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa",
-                "depth": 3,
-                "subcategories": [
-                    "fad2d80baf7aca6ac54e819e066f24aa"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fad2d80baf7aca6ac54e819e066f24aa",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad569d6659caca39bc93e98d13dd58b",
                     "OXLEFT": "3",
@@ -896,11 +876,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Neopren",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa",
+                "id": "fad2d80baf7aca6ac54e819e066f24aa",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "30101",
+                "subcategories": [
+                    "fad2d80baf7aca6ac54e819e066f24aa"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -909,27 +909,7 @@
             "sequence": 18,
             "deleted": false,
             "data": {
-                "category_title": "Accessoires",
-                "sort": "30203",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad4d7e2b47d87bb6a2773d93d4ae9be",
-                "depth": 3,
-                "subcategories": [
-                    "fad4d7e2b47d87bb6a2773d93d4ae9be"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fad4d7e2b47d87bb6a2773d93d4ae9be",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad181ad64642b955becd0759345161e",
                     "OXLEFT": "25",
@@ -949,11 +929,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Accessoires",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad4d7e2b47d87bb6a2773d93d4ae9be",
+                "id": "fad4d7e2b47d87bb6a2773d93d4ae9be",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "30203",
+                "subcategories": [
+                    "fad4d7e2b47d87bb6a2773d93d4ae9be"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -962,27 +962,7 @@
             "sequence": 19,
             "deleted": false,
             "data": {
-                "category_title": "Sportswear",
-                "sort": "301",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b",
-                "depth": 2,
-                "subcategories": [
-                    "fad569d6659caca39bc93e98d13dd58b"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fad569d6659caca39bc93e98d13dd58b",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "30e44ab83fdee7564.23264141",
                     "OXLEFT": "2",
@@ -1002,11 +982,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Sportswear",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b",
+                "id": "fad569d6659caca39bc93e98d13dd58b",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "301",
+                "subcategories": [
+                    "fad569d6659caca39bc93e98d13dd58b"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -1015,27 +1015,7 @@
             "sequence": 20,
             "deleted": false,
             "data": {
-                "category_title": "F\u00fcr Ihn",
-                "sort": "30202",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310",
-                "depth": 3,
-                "subcategories": [
-                    "fad7facadcb7d4297f033d242aa0d310"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fad7facadcb7d4297f033d242aa0d310",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad181ad64642b955becd0759345161e",
                     "OXLEFT": "19",
@@ -1055,11 +1035,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "F\u00fcr Ihn",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310",
+                "id": "fad7facadcb7d4297f033d242aa0d310",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "30202",
+                "subcategories": [
+                    "fad7facadcb7d4297f033d242aa0d310"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -1068,27 +1068,7 @@
             "sequence": 21,
             "deleted": false,
             "data": {
-                "category_title": "Anz\u00fcge",
-                "sort": "3010101",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa\/\/fada9485f003c731b7fad08b873214e0",
-                "depth": 4,
-                "subcategories": [
-                    "fada9485f003c731b7fad08b873214e0"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fada9485f003c731b7fad08b873214e0",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad2d80baf7aca6ac54e819e066f24aa",
                     "OXLEFT": "4",
@@ -1108,11 +1088,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Anz\u00fcge",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa\/\/fada9485f003c731b7fad08b873214e0",
+                "id": "fada9485f003c731b7fad08b873214e0",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "3010101",
+                "subcategories": [
+                    "fada9485f003c731b7fad08b873214e0"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -1121,27 +1121,7 @@
             "sequence": 22,
             "deleted": false,
             "data": {
-                "category_title": "F\u00fcr Sie",
-                "sort": "30201",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761",
-                "depth": 3,
-                "subcategories": [
-                    "fadbdb3145458afc5aa4dbf7eb906761"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fadbdb3145458afc5aa4dbf7eb906761",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "fad181ad64642b955becd0759345161e",
                     "OXLEFT": "13",
@@ -1161,11 +1141,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "F\u00fcr Sie",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761",
+                "id": "fadbdb3145458afc5aa4dbf7eb906761",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "30201",
+                "subcategories": [
+                    "fadbdb3145458afc5aa4dbf7eb906761"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -1174,27 +1174,7 @@
             "sequence": 23,
             "deleted": false,
             "data": {
-                "category_title": "Angebote",
-                "sort": "4",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "fadcb6dd70b9f6248efa425bd159684e",
-                "depth": 1,
-                "subcategories": [
-                    "fadcb6dd70b9f6248efa425bd159684e"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fadcb6dd70b9f6248efa425bd159684e",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "oxrootid",
                     "OXLEFT": "1",
@@ -1214,11 +1194,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Angebote",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "fadcb6dd70b9f6248efa425bd159684e",
+                "id": "fadcb6dd70b9f6248efa425bd159684e",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "4",
+                "subcategories": [
+                    "fadcb6dd70b9f6248efa425bd159684e"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -1227,27 +1227,7 @@
             "sequence": 24,
             "deleted": false,
             "data": {
-                "category_title": "Zubeh\u00f6r",
-                "sort": "104",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/fc7e7bd8403448f00a363f60f44da8f2",
-                "depth": 2,
-                "subcategories": [
-                    "fc7e7bd8403448f00a363f60f44da8f2"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "fc7e7bd8403448f00a363f60f44da8f2",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "943a9ba3050e78b443c16e043ae60ef3",
                     "OXLEFT": "8",
@@ -1267,11 +1247,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Zubeh\u00f6r",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/fc7e7bd8403448f00a363f60f44da8f2",
+                "id": "fc7e7bd8403448f00a363f60f44da8f2",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "104",
+                "subcategories": [
+                    "fc7e7bd8403448f00a363f60f44da8f2"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         },
@@ -1280,27 +1280,7 @@
             "sequence": 25,
             "deleted": false,
             "data": {
-                "category_title": "Downloads",
-                "sort": "5",
-                "shortdesc": "",
-                "longdesc": "",
-                "hierarchy": "oia9ff5c96f1f29d527b61202ece0829",
-                "depth": 1,
-                "subcategories": [
-                    "oia9ff5c96f1f29d527b61202ece0829"
-                ],
-                "hidden": false,
-                "oxobject": [],
-                "es_id": "",
-                "id": "oia9ff5c96f1f29d527b61202ece0829",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXPARENTID": "oxrootid",
                     "OXLEFT": "1",
@@ -1320,11 +1300,31 @@
                     "OXSKIPDISCOUNTS": "0",
                     "OXSHOWSUFFIX": "1"
                 },
+                "category_title": "Downloads",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "oia9ff5c96f1f29d527b61202ece0829",
+                "id": "oia9ff5c96f1f29d527b61202ece0829",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
                 "selfLinks": {
                     "de": "oxid\/",
                     "en": "en\/Wakeboarding\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": "5",
+                "subcategories": [
+                    "oia9ff5c96f1f29d527b61202ece0829"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "category"
         }
