@@ -6,6 +6,9 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Utils\ContentParserInterface;
 
+/**
+ * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
+ */
 class LongDescriptionModifier extends Modifier
 {
     /** @var  ContentParserInterface */

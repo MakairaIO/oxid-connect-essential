@@ -44,8 +44,8 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
     {
         $container = $this->getSymfonyContainer();
 
-        /** @var Connection $db */
-        $db = $container->get(Connection::class);
+        /** @var Connection $connection */
+        $connection = $container->get(Connection::class);
 
         /** @var RevisionRepository $revisionRepository */
         $revisionRepository = $container->get(RevisionRepository::class);
@@ -66,7 +66,7 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
             WHERE `o2c`.`OXCATNID` = ?";
 
         /** @var Result $resultStatement */
-        $resultStatement = $db->executeQuery($query, [$categoryId]);
+        $resultStatement = $connection->executeQuery($query, [$categoryId]);
         $changedProducts = $resultStatement->fetchAllAssociative();
 
         /**

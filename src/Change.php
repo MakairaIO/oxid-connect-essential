@@ -2,13 +2,12 @@
 
 namespace Makaira\OxidConnectEssential;
 
-use stdClass;
-
 /**
  * Class Change
  *
  * @package Makaira\Connect
  * @codeCoverageIgnore
+ * @SuppressWarnings(PHPMD.ShortVariable)
  */
 class Change extends \Kore\DataObject\DataObject
 {

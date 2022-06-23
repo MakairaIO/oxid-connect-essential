@@ -121,6 +121,8 @@ services:
       $modifiers: '@Makaira\OxidConnectEssential\Repository\VariantModifierList'
     tags: ['makaira_connect_essential.repository']
 
+  Makaira\OxidConnectEssential\Service\TrackingRenderService:
+    public: true
 
   ### Modifier ###
 
@@ -315,3 +317,8 @@ services:
   Makaira\OxidConnectEssential\Service\ReviewService:
     public: true
     class: Makaira\OxidConnectEssential\Service\ReviewService
+
+  request:
+    public: true
+    class: Symfony\Component\HttpFoundation\Request
+    factory: ['Symfony\Component\HttpFoundation\Request', 'createFromGlobals']

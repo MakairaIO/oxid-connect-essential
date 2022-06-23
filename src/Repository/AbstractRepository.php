@@ -41,23 +41,23 @@ abstract class AbstractRepository
     }
 
     /**
-     * @param Event $e
+     * @param Event $event
      *
      * @return void
      */
-    public function addRepository(Event $e): void
+    public function addRepository(Event $event): void
     {
-        if ($e instanceof RepositoryCollectEvent) {
-            $e->addRepository($this);
+        if ($event instanceof RepositoryCollectEvent) {
+            $event->addRepository($this);
         }
     }
 
-    public function get(string $id): Change
+    public function get(string $objectId): Change
     {
         $query = $this->tableTranslator->translate($this->getSelectQuery());
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($query, ['id' => $id]);
+        $resultStatement = $this->database->executeQuery($query, ['id' => $objectId]);
 
         /** @var array<string, string> $result */
         $result = $resultStatement->fetchAssociative();
@@ -65,7 +65,7 @@ abstract class AbstractRepository
         $deleted = empty($result);
         $change  = new Change(
             [
-                'id'      => $id,
+                'id'      => $objectId,
                 'type'    => $this->getType(),
                 'deleted' => $deleted,
             ]
@@ -105,7 +105,7 @@ abstract class AbstractRepository
 
     abstract public function getType(): string;
 
-    abstract protected function getInstance(string $id): Type;
+    abstract protected function getInstance(string $objectId): Type;
 
     abstract protected function getSelectQuery(): string;
 

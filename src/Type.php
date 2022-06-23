@@ -2,6 +2,9 @@
 
 namespace Makaira\OxidConnectEssential;
 
+/**
+ * @SuppressWarnings(PHPMD.ShortVariable)
+ */
 class Type
 {
     /* primary es id field */

@@ -19,6 +19,9 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 use function array_replace;
 
+/**
+ * @SuppressWarnings(PHPMD.EmptyCatchBlock)
+ */
 class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
 {
     /**

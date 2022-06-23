@@ -9,6 +9,9 @@ use function array_keys;
 use function array_merge;
 use function get_object_vars;
 
+/**
+ * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
+ */
 class PriceModifier extends Modifier
 {
     private ?bool $isNetto;

@@ -2,14 +2,19 @@
 
 namespace Makaira\OxidConnectEssential\Controller;
 
+use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Application\Controller\FrontendController;
 use OxidEsales\Eshop\Application\Model\User;
-use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\Eshop\Core\Session;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
 
+/**
+ * @SuppressWarnings(PHPMD.ExitExpression)
+ */
 class BaseController extends FrontendController
 {
+    use SymfonyContainerTrait;
+
     public function render(): string
     {
         return '';
@@ -23,7 +28,8 @@ class BaseController extends FrontendController
 
     protected function getRequestBody(): array
     {
-        $request = Request::createFromGlobals();
+        $container = $this->getSymfonyContainer();
+        $request = $container->get('request');
         $body = (string) $request->getContent(false);
 
         return (array) json_decode($body, true, 512, JSON_THROW_ON_ERROR);
@@ -35,7 +41,9 @@ class BaseController extends FrontendController
     protected function checkAndGetActiveUser(): User
     {
         /** @var User|false $user */
-        $user = Registry::getSession()->getUser();
+        $container = $this->getSymfonyContainer();
+        $session = $container->get(Session::class);
+        $user = $session->getUser();
         if ($user === false) {
             $this->sendResponse(["message" => "Unauthorized"], 401);
             exit;

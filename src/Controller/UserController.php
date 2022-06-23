@@ -8,6 +8,9 @@ use OxidEsales\Eshop\Core\Exception\CookieException;
 use OxidEsales\Eshop\Core\Exception\UserException;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 
+/**
+ * @SuppressWarnings(PHPMD.ElseExpression)
+ */
 class UserController extends BaseController
 {
     private UserService $userService;

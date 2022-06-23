@@ -41,7 +41,8 @@ class UserService
         }
 
         // recalculate basket
-        if (($basket = $this->session->getBasket()) instanceof Basket) {
+        $basket = $this->session->getBasket();
+        if ($basket instanceof Basket) {
             $basket->onUpdate();
         }
 
@@ -60,7 +61,8 @@ class UserService
         $this->session->deleteVariable('dynvalue');
 
         // resetting & recalculate basket
-        if (($basket = $this->session->getBasket()) instanceof Basket) {
+        $basket = $this->session->getBasket();
+        if ($basket instanceof Basket) {
             $basket->resetUserInfo();
             $basket->onUpdate();
         }

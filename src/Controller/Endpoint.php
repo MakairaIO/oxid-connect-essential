@@ -7,6 +7,8 @@ use Makaira\OxidConnectEssential\Rpc\RpcService;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Application\Controller\FrontendController;
 use OxidEsales\Eshop\Core\Registry;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,6 +19,9 @@ use function ini_set;
 
 use const PHP_EOL;
 
+/**
+ * @SuppressWarnings(PHPMD.ExitExpression)
+ */
 class Endpoint extends FrontendController
 {
     use SymfonyContainerTrait;
@@ -25,7 +30,8 @@ class Endpoint extends FrontendController
     {
         ini_set('html_errors', 'off');
 
-        $response = $this->handleRequest(Request::createFromGlobals());
+        $container = $this->getSymfonyContainer();
+        $response = $this->handleRequest($container->get('request'));
 
         $response->send();
         Registry::getSession()->freeze();
@@ -37,6 +43,8 @@ class Endpoint extends FrontendController
      * @param Request $request
      *
      * @return Response
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     public function handleRequest(Request $request): Response
     {
