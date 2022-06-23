@@ -42,6 +42,8 @@ class MakairaConnectOutput extends MakairaConnectOutput_parent
         }
 
         $container = $this->getSymfonyContainer();
+
+        /** @var TrackingRenderService $trackingRenderer */
         $trackingRenderer = $container->get(TrackingRenderService::class);
 
         try {

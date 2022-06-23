@@ -7,6 +7,7 @@ use OxidEsales\Eshop\Application\Controller\FrontendController;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Session;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * @SuppressWarnings(PHPMD.ExitExpression)
@@ -29,6 +30,7 @@ class BaseController extends FrontendController
     protected function getRequestBody(): array
     {
         $container = $this->getSymfonyContainer();
+        /** @var Request $request */
         $request = $container->get('request');
         $body = (string) $request->getContent(false);
 
@@ -40,9 +42,12 @@ class BaseController extends FrontendController
      */
     protected function checkAndGetActiveUser(): User
     {
-        /** @var User|false $user */
         $container = $this->getSymfonyContainer();
+
+        /** @var Session $session */
         $session = $container->get(Session::class);
+
+        /** @var User|false $user */
         $user = $session->getUser();
         if ($user === false) {
             $this->sendResponse(["message" => "Unauthorized"], 401);

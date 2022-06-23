@@ -31,7 +31,9 @@ class Endpoint extends FrontendController
         ini_set('html_errors', 'off');
 
         $container = $this->getSymfonyContainer();
-        $response = $this->handleRequest($container->get('request'));
+        /** @var Request $request */
+        $request   = $container->get('request');
+        $response  = $this->handleRequest($request);
 
         $response->send();
         Registry::getSession()->freeze();

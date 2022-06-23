@@ -28,7 +28,7 @@ class TrackingRenderService
         $this->config = $config;
     }
 
-    public function render()
+    public function render(): string
     {
         $trackingData = $this->getTrackingData();
 
@@ -42,11 +42,12 @@ class TrackingRenderService
         foreach ($trackingData as $trackingPart) {
             $trackingHtml .= '_paq.push(' . json_encode($trackingPart) . ');';
         }
-        // @codingStandardsIgnoreStart
-        $trackingHtml .= "var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';";
-        $trackingHtml .= "g.defer=true; g.async=true; g.src={$trackerUrl}+'/piwik.js'; s.parentNode.insertBefore(g,s);";
+
+        $trackingHtml .= "var d=document, g=d.createElement('script'), ";
+        $trackingHtml .= "s=d.getElementsByTagName('script')[0]; g.type='text/javascript';";
+        $trackingHtml .= "g.defer=true; g.async=true; g.src={$trackerUrl}+'/piwik.js'; ";
+        $trackingHtml .= "s.parentNode.insertBefore(g,s);";
         $trackingHtml .= '</script>';
-        // @codingStandardsIgnoreEnd
 
         return $trackingHtml;
     }
@@ -59,8 +60,7 @@ class TrackingRenderService
     protected function getTrackingData(): array
     {
         if (null === self::$trackingData) {
-            /** @var MakairaTrackingDataGenerator $trackingDataGenerator */
-            $oxidController = $this->config->getTopActiveView();
+            $oxidController     = $this->config->getTopActiveView();
             self::$trackingData = $this->trackingDataGenerator->generate(get_class($oxidController));
         }
 
