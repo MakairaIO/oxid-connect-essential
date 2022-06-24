@@ -28,6 +28,11 @@ class TrackingRenderService
         $this->config = $config;
     }
 
+    /**
+     * @throws EmptyTrackingDataException
+     * @throws NoArticleException
+     * @throws ArticleInputException
+     */
     public function render(): string
     {
         $trackingData = $this->getTrackingData();
