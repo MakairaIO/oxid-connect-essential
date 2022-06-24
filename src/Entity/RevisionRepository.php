@@ -10,6 +10,9 @@ use Doctrine\DBAL\ParameterType;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
 
+/**
+ * @SuppressWarnings(PHPMD.ShortVariable)
+ */
 class RevisionRepository
 {
     private Connection $connection;
@@ -51,9 +54,9 @@ class RevisionRepository
             $this->fetchParentId = $this->connection->prepare('SELECT `OXPARENTID` FROM `oxarticles` WHERE `OXID` = ?');
         }
 
-        $this->fetchParentId->execute([$id]);
+        $result = $this->fetchParentId->executeQuery([$id]);
 
-        $isVariant = (bool) $this->fetchParentId->fetchOne();
+        $isVariant = (bool) $result->fetchOne();
         $this->touch($isVariant ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $id);
     }
 
@@ -97,13 +100,8 @@ class RevisionRepository
                 );
             }
 
-            $this->insertRevision->bindParam('type', $type);
-            $this->insertRevision->bindParam('objectId', $objectId);
-
             foreach ($revisions as $revision) {
-                $type     = $revision->type;
-                $objectId = $revision->objectId;
-                $this->insertRevision->execute();
+                $this->insertRevision->executeStatement(['type' => $revision->type, 'objectId' => $revision->objectId]);
             }
 
             $this->connection->commit();
@@ -122,10 +120,10 @@ class RevisionRepository
     public function countChanges(int $since): int
     {
         $prepared = $this->connection->prepare('SELECT COUNT(*) FROM `makaira_connect_changes` WHERE `SEQUENCE` > ?');
-        $prepared->execute([$since]);
+        $result = $prepared->executeQuery([$since]);
 
         /** @var string $count */
-        $count = $prepared->fetchOne();
+        $count = $result->fetchOne();
 
         return (int) $count;
     }
@@ -151,9 +149,9 @@ class RevisionRepository
         $prepared->bindValue(':since', $since, ParameterType::INTEGER);
         $prepared->bindValue(':limit', $limit, ParameterType::INTEGER);
 
-        $prepared->execute();
+        $result = $prepared->executeQuery();
 
-        return $prepared->fetchAllAssociative();
+        return $result->fetchAllAssociative();
     }
 
     /**

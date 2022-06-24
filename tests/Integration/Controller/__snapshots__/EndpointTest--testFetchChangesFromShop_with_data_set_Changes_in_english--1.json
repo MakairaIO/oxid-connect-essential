@@ -1,6 +1,6 @@
 {
     "since": 25,
-    "count": 25,
+    "count": 29,
     "requestedCount": 25,
     "changes": [
         {
@@ -8,28 +8,28 @@
             "sequence": 26,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Mauirippers",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "3a909e7c886063857e86982c7a3c5b84",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "mauirippers_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "3a909e7c886063857e86982c7a3c5b84",
+                "insert": "",
+                "manufacturer_title": "Mauirippers",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -38,28 +38,28 @@
             "sequence": 27,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Big Matsol",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "3a97c94553428daed76ba83e54d3876f",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "big_matsol_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "3a97c94553428daed76ba83e54d3876f",
+                "insert": "",
+                "manufacturer_title": "Big Matsol",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -68,28 +68,28 @@
             "sequence": 28,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Jucker Hawaii",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "3a9fd0ec4b41d001e770b1d2d7af3e73",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "mikejucker_hawaii_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "3a9fd0ec4b41d001e770b1d2d7af3e73",
+                "insert": "",
+                "manufacturer_title": "Jucker Hawaii",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -98,28 +98,28 @@
             "sequence": 29,
             "deleted": false,
             "data": {
-                "manufacturer_title": "ION",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "90a0b84564cde2394491df1c673b6aa0",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "ion_logo_black_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "90a0b84564cde2394491df1c673b6aa0",
+                "insert": "",
+                "manufacturer_title": "ION",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -128,28 +128,28 @@
             "sequence": 30,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Cabrinha",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "90a3eccf9d7121a9ca7d659f29021b7a",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "cabrinha_logo2011_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "90a3eccf9d7121a9ca7d659f29021b7a",
+                "insert": "",
+                "manufacturer_title": "Cabrinha",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -158,28 +158,28 @@
             "sequence": 31,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Naish",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "90a8a18dd0cf0e7aec5238f30e1c6106",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "naish_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "90a8a18dd0cf0e7aec5238f30e1c6106",
+                "insert": "",
+                "manufacturer_title": "Naish",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -188,28 +188,28 @@
             "sequence": 32,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Kuyichi",
-                "shortdesc": "A style conscious brand",
-                "es_id": "",
-                "id": "9434afb379a46d6c141de9c9e5b94fcf",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "logo3_ico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "9434afb379a46d6c141de9c9e5b94fcf",
+                "insert": "",
+                "manufacturer_title": "Kuyichi",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "A style conscious brand",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -218,28 +218,28 @@
             "sequence": 33,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Core Kiteboarding",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "adc566c366db8eaf30c6c124a09e82b3",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "core_logo_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "adc566c366db8eaf30c6c124a09e82b3",
+                "insert": "",
+                "manufacturer_title": "Core Kiteboarding",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -248,28 +248,28 @@
             "sequence": 34,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Liquid Force Kite",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "adc6df0977329923a6330cc8f3c0a906",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "lf_kite_logo_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "adc6df0977329923a6330cc8f3c0a906",
+                "insert": "",
+                "manufacturer_title": "Liquid Force Kite",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -278,28 +278,28 @@
             "sequence": 35,
             "deleted": false,
             "data": {
-                "manufacturer_title": "RRD",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "adca51c88a3caa1c7b939fd6a229ae3a",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": false,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "adca51c88a3caa1c7b939fd6a229ae3a",
+                "insert": "",
+                "manufacturer_title": "RRD",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -308,28 +308,28 @@
             "sequence": 36,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Spleene",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "adca6aa4df3f95b6b46e28d4fc5855ba",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": false,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "adca6aa4df3f95b6b46e28d4fc5855ba",
+                "insert": "",
+                "manufacturer_title": "Spleene",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -338,28 +338,28 @@
             "sequence": 37,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Flysurfer",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "dc50589ad69b6ec71721b25bdd403171",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": false,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "dc50589ad69b6ec71721b25bdd403171",
+                "insert": "",
+                "manufacturer_title": "Flysurfer",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -368,28 +368,28 @@
             "sequence": 38,
             "deleted": false,
             "data": {
-                "manufacturer_title": "Flyboards",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "dc59459d4d67189182c53ed0e4e777bc",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": false,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "dc59459d4d67189182c53ed0e4e777bc",
+                "insert": "",
+                "manufacturer_title": "Flyboards",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -398,28 +398,28 @@
             "sequence": 39,
             "deleted": false,
             "data": {
-                "manufacturer_title": "NPX",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "dc5ec524a9aa6175cf7a498d70ce510a",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "npx_logo_1_mico.png",
                     "OXSHOWSUFFIX": "0"
                 },
+                "es_id": "",
+                "id": "dc5ec524a9aa6175cf7a498d70ce510a",
+                "insert": "",
+                "manufacturer_title": "NPX",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
@@ -428,70 +428,96 @@
             "sequence": 40,
             "deleted": false,
             "data": {
-                "manufacturer_title": "O'Reilly",
-                "shortdesc": "",
-                "es_id": "",
-                "id": "oiaf6ab7e12e86291e86dd3ff891fe40",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXICON": "oreilly_1_mico.png",
                     "OXSHOWSUFFIX": "1"
                 },
+                "es_id": "",
+                "id": "oiaf6ab7e12e86291e86dd3ff891fe40",
+                "insert": "",
+                "manufacturer_title": "O'Reilly",
+                "meta_description": "",
+                "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
                     "en": "en\/By-Manufacturer\/oxid\/"
                 },
-                "insert": ""
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
             },
             "type": "manufacturer"
         },
         {
-            "id": "05848170643ab0deb9914566391c0c63",
+            "id": "f4debe0bb00c1ab0fe089a2b03491c63",
             "sequence": 41,
             "deleted": false,
             "data": {
-                "attributeStr": [],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 15,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
-                "attributes": [],
-                "parent": "",
-                "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
-                "maincategoryurl": "en\/Kiteboarding\/Harnesses\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
+                "TRACKING": null,
+                "active": true,
                 "activefrom": null,
-                "suggest": [],
+                "activeto": null,
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "05848170643ab0deb9914566391c0c63",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "ion_madtrixx_kite_waist_2011_1.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "15",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "159",
+                    "OXVARMAXPRICE": "0",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "1",
+                    "OXMAXDELTIME": "3",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "manufacturer_title": "ION",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/ion_madtrixx_kite_waist_2011_1.jpg"
+                },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
                 "category": [
                     {
                         "catid": "0f41a4463b227c437f6e6bf57b1697c4",
@@ -501,17 +527,59 @@
                         "path": "Kiteboarding\/Trapeze\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "1402",
                 "es_id": "",
-                "id": "05848170643ab0deb9914566391c0c63",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
+                "hidden": false,
+                "id": "f4debe0bb00c1ab0fe089a2b03491c63",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": true,
+                "isVariant": true,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>ION Madtrixx Kite Waist<\/h2><\/div>\r\n<p>New freestyle harness with a lean cut outline and a neoprene inside airbag. Thanks to the elastic cutaways at the rear part of the harness provides a maximum of flexibility. The new contour form with Wrap Tec guarantees a perfect fit.<\/p><br \/>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>Hip Protection<br \/>\r\nThe double layer foam padding protects the bones and all unprotected parts in this area, especially if the body is flexed to the side.<\/li>\r\n<li>Cross Link Webbing<br \/>\r\nUsually, the belt ends somewhere behind the buckle. A belt without cease along the rear side of the harness guarantees a better load balancing.<\/li>\r\n<li>Internal Flex Belt<br \/>\r\n  Flexible hip belt. Backs a safe, straight and comfortable seat of the harness.<\/li>\r\n<li>Handle Pass Leash Slider<br \/>\r\nA small ring of metal can slip the leash along the back of the harness and makes handle pass tricks easier.<\/li>\r\n<li>Push Button Spreader Bar<br \/>\r\nThe push button supports the quick assembly of the harness. There is no need to assemble all velcro strips at the buckle. Simply close the metal ring in the spreader bar, adjust the belt and - here we go!<\/li>\r\n<li>Belt Garage<br \/>\r\nPrevents from loose tottering of the belt.<\/li>\r\n<li>Protection Pads<br \/>\r\nA solid, neoprene padded board that keeps the harness hook away from the body.<\/li>\r\n<li>Contour shape<br \/>\r\n  preformed construction<\/li>\r\n<li>Elasto Tec<br \/>\r\nFlexible cutaways in hip harness care for a maximum of flexibility in the rear part of the harness.<\/li>\r\n<li>Soft edges&nbsp; <\/li>\r\n<li>Support Cushion<\/li>\r\n<li>Twister<\/li>\r\n<li>Wrap Tech<br \/>\r\npreformed construction of the harness that better fits the body.<\/li><\/ul>><\/p>",
+                "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
+                "maincategoryurl": "en\/Kiteboarding\/Harnesses\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "90a0b84564cde2394491df1c673b6aa0",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "05848170643ab0deb9914566391c0c63",
+                "picture_url_main": [],
+                "price": 159,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "harness, hip harness, madtrixx",
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid.html"
+                },
                 "shop": [
                     "1"
                 ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "shortdesc": "New freestyle harness with a lean cut outline",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 15,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Harness MADTRIXX",
+                "url": "X"
+            },
+            "type": "variant"
+        },
+        {
+            "id": "05848170643ab0deb9914566391c0c63",
+            "sequence": 41,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -565,10 +633,60 @@
                     "manufacturer_title": "ION",
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/ion_madtrixx_kite_waist_2011_1.jpg"
                 },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
+                "attributes": [],
+                "category": [
+                    {
+                        "catid": "0f41a4463b227c437f6e6bf57b1697c4",
+                        "title": "Trapeze",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Trapeze\/"
+                    }
+                ],
+                "ean": "1402",
+                "es_id": "",
+                "hidden": false,
+                "id": "05848170643ab0deb9914566391c0c63",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>ION Madtrixx Kite Waist<\/h2><\/div>\r\n<p>New freestyle harness with a lean cut outline and a neoprene inside airbag. Thanks to the elastic cutaways at the rear part of the harness provides a maximum of flexibility. The new contour form with Wrap Tec guarantees a perfect fit.<\/p><br \/>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>Hip Protection<br \/>\r\nThe double layer foam padding protects the bones and all unprotected parts in this area, especially if the body is flexed to the side.<\/li>\r\n<li>Cross Link Webbing<br \/>\r\nUsually, the belt ends somewhere behind the buckle. A belt without cease along the rear side of the harness guarantees a better load balancing.<\/li>\r\n<li>Internal Flex Belt<br \/>\r\n  Flexible hip belt. Backs a safe, straight and comfortable seat of the harness.<\/li>\r\n<li>Handle Pass Leash Slider<br \/>\r\nA small ring of metal can slip the leash along the back of the harness and makes handle pass tricks easier.<\/li>\r\n<li>Push Button Spreader Bar<br \/>\r\nThe push button supports the quick assembly of the harness. There is no need to assemble all velcro strips at the buckle. Simply close the metal ring in the spreader bar, adjust the belt and - here we go!<\/li>\r\n<li>Belt Garage<br \/>\r\nPrevents from loose tottering of the belt.<\/li>\r\n<li>Protection Pads<br \/>\r\nA solid, neoprene padded board that keeps the harness hook away from the body.<\/li>\r\n<li>Contour shape<br \/>\r\n  preformed construction<\/li>\r\n<li>Elasto Tec<br \/>\r\nFlexible cutaways in hip harness care for a maximum of flexibility in the rear part of the harness.<\/li>\r\n<li>Soft edges&nbsp; <\/li>\r\n<li>Support Cushion<\/li>\r\n<li>Twister<\/li>\r\n<li>Wrap Tech<br \/>\r\npreformed construction of the harness that better fits the body.<\/li><\/ul>><\/p>",
+                "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
+                "maincategoryurl": "en\/Kiteboarding\/Harnesses\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "90a0b84564cde2394491df1c673b6aa0",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 159,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "harness, hip harness, madtrixx",
                 "selfLinks": {
                     "de": "oxid.html",
                     "en": "en\/oxid.html"
-                }
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "New freestyle harness with a lean cut outline",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 15,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Harness MADTRIXX",
+                "url": "X"
             },
             "type": "product"
         },
@@ -577,78 +695,10 @@
             "sequence": 42,
             "deleted": false,
             "data": {
-                "attributeStr": [
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "wei\u00df"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "schwarz"
-                    }
-                ],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 61,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
-                "attributes": [
-                    {
-                        "16fd55d02a23f31097ca58eccfeec97c": "wei\u00df"
-                    },
-                    {
-                        "16fd55d02a23f31097ca58eccfeec97c": "schwarz"
-                    }
-                ],
-                "parent": "",
-                "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
-                "maincategoryurl": "en\/Kiteboarding\/Supplies\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
-                "category": [
-                    {
-                        "catid": "fc7e7bd8403448f00a363f60f44da8f2",
-                        "title": "Zubeh\u00f6r",
-                        "shopid": 1,
-                        "pos": 0,
-                        "path": "Kiteboarding\/Zubeh\u00f6r\/"
-                    }
-                ],
                 "TRACKING": null,
-                "es_id": "",
-                "id": "0584e8b766a4de2177f9ed11d1587f55",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -702,52 +752,146 @@
                     "manufacturer_title": null,
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/kitefix_self-adhesive_dacron_1.jpg"
                 },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "wei\u00df"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "schwarz"
+                    }
+                ],
+                "attributes": [
+                    {
+                        "16fd55d02a23f31097ca58eccfeec97c": "wei\u00df"
+                    },
+                    {
+                        "16fd55d02a23f31097ca58eccfeec97c": "schwarz"
+                    }
+                ],
+                "category": [
+                    {
+                        "catid": "fc7e7bd8403448f00a363f60f44da8f2",
+                        "title": "Zubeh\u00f6r",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Zubeh\u00f6r\/"
+                    }
+                ],
+                "ean": "1501",
+                "es_id": "",
+                "hidden": false,
+                "id": "0584e8b766a4de2177f9ed11d1587f55",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Sticky Tape Dacron Kitefix<\/h2><\/div>\r\n<div class=\"product_text3\">\r\n<div><span>The self-adhesive Dacron\r\ntape is ideal to boost GluFix and FiberFix repairs at the leading edge or the struts of your kite. You just came from water and detected a tear in the drapery of your kite? Use Dacron sticky tape for a quick and temporary repair. We sell it in white, black, green, red and blue.<\/span><\/div>\r\n<div><span>&nbsp;<\/span><\/div>\r\n<div><span>Each roll is about 5 cm of width and approx. 152 cm long.<\/span><\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p>><\/p><\/div>",
+                "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
+                "maincategoryurl": "en\/Kiteboarding\/Supplies\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 7.99,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "sticky tape, kite, repair, kitefix",
                 "selfLinks": {
                     "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
-                }
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "ideal for small repairs of the kite",
+                "soldamount": 3,
+                "sort": 0,
+                "stock": 61,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Sticky Tape DACRON KITEFIX",
+                "url": "X"
             },
             "type": "product"
         },
         {
-            "id": "058de8224773a1d5fd54d523f0c823e0",
+            "id": "f4b019980cef07d381f44f435fa07f95",
             "sequence": 43,
             "deleted": false,
             "data": {
-                "attributeStr": [],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 13,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
-                "attributes": [],
-                "parent": "",
-                "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
-                "maincategoryurl": "en\/Kiteboarding\/Kiteboards\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
+                "TRACKING": null,
+                "active": true,
                 "activefrom": null,
-                "suggest": [],
+                "activeto": null,
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "058de8224773a1d5fd54d523f0c823e0",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "499",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "cabrinha_caliber_2011.jpg",
+                    "OXPIC2": "cabrinha_caliber_2011_deck.jpg",
+                    "OXPIC3": "cabrinha_caliber_2011_bottom.jpg",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "13",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "479",
+                    "OXVARMAXPRICE": "479",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "1",
+                    "OXMAXDELTIME": "3",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "manufacturer_title": "Cabrinha",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/cabrinha_caliber_2011.jpg"
+                },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
                 "category": [
                     {
                         "catid": "0f4f08358666c54b4fde3d83d2b7ef04",
@@ -757,17 +901,59 @@
                         "path": "Kiteboarding\/Kiteboards\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "1302",
                 "es_id": "",
-                "id": "058de8224773a1d5fd54d523f0c823e0",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
+                "hidden": false,
+                "id": "f4b019980cef07d381f44f435fa07f95",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": true,
+                "isVariant": true,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Cabrinha Caliber - Board only<\/h2><\/div>Caliber means business with Freestyle and Freeride. If you want to kite fast and hard Caliber is for you!<br \/>\r\n<br \/>Caliber has a more flat rocker line than Custom that makes it firm and agile. It accelerates very quickly and keeps the speed even through wind holes. The outline of Caliber and the flex gradient will bring you hardest pop during the jump no matter if you go hooked or unhooked. The quad concave underwater hull gives you a maximum grip at strong wind and in choppy water.\r\n<div>&nbsp;<\/div>\r\n<div>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>a new unidirectional carbon layer for a strong pop and quick response<\/li>\r\n<li>different 3D top sheet design by size for more constant flex and pop<\/li>\r\n<li>a digitally printed surface with metallic effect: a digitally printed basis for longer life period<\/li>\r\n<li>24&#8216;&#8216; (61 cm) \/ 26&#8216;&#8216; (66 cm) \/ 28&#8216;&#8216; (71 cm) stand option<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Purchased parts package:<\/strong><\/div><br \/>\r\nAll boards are delivered with fins, fin screws and grab handle (+ screws).<br \/>\r\n<br \/>\r\n<div><strong>Sizes:<\/strong><\/div><\/div>\r\n<div><br \/>\r\n   127 x 38<br \/>\r\n   130 x 40<br \/>\r\n   133 x 41<br \/>\r\n   136 x 42<br \/>\r\n   139 x 43<\/div>\r\n<p>&nbsp;<\/p>><\/p>",
+                "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
+                "maincategoryurl": "en\/Kiteboarding\/Kiteboards\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "90a3eccf9d7121a9ca7d659f29021b7a",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "058de8224773a1d5fd54d523f0c823e0",
+                "picture_url_main": [],
+                "price": 479,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "kiteboard, kite, board, caliber, cabrinha",
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid.html"
+                },
                 "shop": [
                     "1"
                 ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "shortdesc": "Freestyle und Freeride Board",
+                "soldamount": 2,
+                "sort": 0,
+                "stock": 13,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Kiteboard CABRINHA CALIBER",
+                "url": "X"
+            },
+            "type": "variant"
+        },
+        {
+            "id": "058de8224773a1d5fd54d523f0c823e0",
+            "sequence": 43,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -821,52 +1007,128 @@
                     "manufacturer_title": "Cabrinha",
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/cabrinha_caliber_2011.jpg"
                 },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
+                "attributes": [],
+                "category": [
+                    {
+                        "catid": "0f4f08358666c54b4fde3d83d2b7ef04",
+                        "title": "Kiteboards",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Kiteboarding\/Kiteboards\/"
+                    }
+                ],
+                "ean": "1302",
+                "es_id": "",
+                "hidden": false,
+                "id": "058de8224773a1d5fd54d523f0c823e0",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Cabrinha Caliber - Board only<\/h2><\/div>Caliber means business with Freestyle and Freeride. If you want to kite fast and hard Caliber is for you!<br \/>\r\n<br \/>Caliber has a more flat rocker line than Custom that makes it firm and agile. It accelerates very quickly and keeps the speed even through wind holes. The outline of Caliber and the flex gradient will bring you hardest pop during the jump no matter if you go hooked or unhooked. The quad concave underwater hull gives you a maximum grip at strong wind and in choppy water.\r\n<div>&nbsp;<\/div>\r\n<div>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>a new unidirectional carbon layer for a strong pop and quick response<\/li>\r\n<li>different 3D top sheet design by size for more constant flex and pop<\/li>\r\n<li>a digitally printed surface with metallic effect: a digitally printed basis for longer life period<\/li>\r\n<li>24&#8216;&#8216; (61 cm) \/ 26&#8216;&#8216; (66 cm) \/ 28&#8216;&#8216; (71 cm) stand option<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Purchased parts package:<\/strong><\/div><br \/>\r\nAll boards are delivered with fins, fin screws and grab handle (+ screws).<br \/>\r\n<br \/>\r\n<div><strong>Sizes:<\/strong><\/div><\/div>\r\n<div><br \/>\r\n   127 x 38<br \/>\r\n   130 x 40<br \/>\r\n   133 x 41<br \/>\r\n   136 x 42<br \/>\r\n   139 x 43<\/div>\r\n<p>&nbsp;<\/p>><\/p>",
+                "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
+                "maincategoryurl": "en\/Kiteboarding\/Kiteboards\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "90a3eccf9d7121a9ca7d659f29021b7a",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 479,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "kiteboard, kite, board, caliber, cabrinha",
                 "selfLinks": {
                     "de": "oxid.html",
                     "en": "en\/oxid.html"
-                }
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "Freestyle und Freeride Board",
+                "soldamount": 2,
+                "sort": 0,
+                "stock": 13,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Kiteboard CABRINHA CALIBER",
+                "url": "X"
             },
             "type": "product"
         },
         {
-            "id": "058e613db53d782adfc9f2ccb43c45fe",
+            "id": "231ef134520cf05ecfb3195e63039edf",
             "sequence": 44,
             "deleted": false,
             "data": {
-                "attributeStr": [],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 16,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
-                "attributes": [],
-                "parent": "",
-                "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
-                "maincategoryurl": "en\/Wakeboarding\/Bindings\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
+                "TRACKING": null,
+                "active": true,
                 "activefrom": null,
-                "suggest": [],
+                "activeto": null,
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "058e613db53d782adfc9f2ccb43c45fe",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "399",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "obrien_decade_ct_boot_2010_1.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "16",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "359",
+                    "OXVARMAXPRICE": "0",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "4",
+                    "OXMAXDELTIME": "6",
+                    "OXDELTIMEUNIT": "DAY",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "manufacturer_title": null,
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/obrien_decade_ct_boot_2010_1.jpg"
+                },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
                 "category": [
                     {
                         "catid": "0f40c6a077b68c21f164767c4a903fd2",
@@ -876,17 +1138,59 @@
                         "path": "Wakeboarding\/Bindungen\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "2401",
                 "es_id": "",
-                "id": "058e613db53d782adfc9f2ccb43c45fe",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
+                "hidden": false,
+                "id": "231ef134520cf05ecfb3195e63039edf",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": true,
+                "isVariant": true,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>O'Brien Decade CT Boot<\/h2><\/div>The Decade Pro binding is not only a close-toe boot in a very fancy style. The aim was, to integrate the comfort of regular boots into a wake board binding, to stay lightweight and to reach a perfect performance at the water.\r\n<div>&nbsp;<\/div>\r\n<div>The wake board binding keeps it's size, doesn't ease off in a time and fits like a perfect shoe. The ergonomic and absorbing insole provides soft landings.<\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p>><\/p>",
+                "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
+                "maincategoryurl": "en\/Wakeboarding\/Bindings\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "058e613db53d782adfc9f2ccb43c45fe",
+                "picture_url_main": [],
+                "price": 359,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "binding, decade, boot, wakeboarding",
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                },
                 "shop": [
                     "1"
                 ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "shortdesc": "Less weight, best performance!",
+                "soldamount": 1,
+                "sort": 0,
+                "stock": 16,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Binding O'BRIEN DECADE CT",
+                "url": "X"
+            },
+            "type": "variant"
+        },
+        {
+            "id": "058e613db53d782adfc9f2ccb43c45fe",
+            "sequence": 44,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -940,64 +1244,185 @@
                     "manufacturer_title": null,
                     "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/obrien_decade_ct_boot_2010_1.jpg"
                 },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
+                "attributes": [],
+                "category": [
+                    {
+                        "catid": "0f40c6a077b68c21f164767c4a903fd2",
+                        "title": "Bindungen",
+                        "shopid": 1,
+                        "pos": 0,
+                        "path": "Wakeboarding\/Bindungen\/"
+                    }
+                ],
+                "ean": "2401",
+                "es_id": "",
+                "hidden": false,
+                "id": "058e613db53d782adfc9f2ccb43c45fe",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>O'Brien Decade CT Boot<\/h2><\/div>The Decade Pro binding is not only a close-toe boot in a very fancy style. The aim was, to integrate the comfort of regular boots into a wake board binding, to stay lightweight and to reach a perfect performance at the water.\r\n<div>&nbsp;<\/div>\r\n<div>The wake board binding keeps it's size, doesn't ease off in a time and fits like a perfect shoe. The ergonomic and absorbing insole provides soft landings.<\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p>><\/p>",
+                "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
+                "maincategoryurl": "en\/Wakeboarding\/Bindings\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 359,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "binding, decade, boot, wakeboarding",
                 "selfLinks": {
                     "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
-                }
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "Less weight, best performance!",
+                "soldamount": 1,
+                "sort": 0,
+                "stock": 16,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Binding O'BRIEN DECADE CT",
+                "url": "X"
             },
             "type": "product"
+        },
+        {
+            "id": "f4c2a4cb24995f0a4f2b789344de8315",
+            "sequence": 45,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
+                "additionalData": {
+                    "OXID": null,
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "4d8e204b50edd16a02f744736e5b0547",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "",
+                    "OXICON": "",
+                    "OXPIC1": "",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "0",
+                    "OXSTOCKFLAG": "4",
+                    "OXDELIVERY": null,
+                    "OXTIMESTAMP": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "",
+                    "OXVARSTOCK": "0",
+                    "OXVARCOUNT": "0",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "0",
+                    "OXVARMAXPRICE": "0",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "0",
+                    "OXMAXDELTIME": "0",
+                    "OXDELTIMEUNIT": "",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "OXLONGDESC": null,
+                    "manufacturer_title": null,
+                    "picture_url_main": false
+                },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
+                "category": [],
+                "ean": "",
+                "es_id": "",
+                "hidden": false,
+                "id": "f4c2a4cb24995f0a4f2b789344de8315",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": true,
+                "isVariant": true,
+                "longdesc": "",
+                "maincategory": null,
+                "maincategoryurl": null,
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "4d8e204b50edd16a02f744736e5b0547",
+                "picture_url_main": [],
+                "price": 0,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "",
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid.html"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "Product with OXSTOCKFLAG = 4",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 1,
+                "suggest": [],
+                "timestamp": "",
+                "title": "PHPUnit test product",
+                "url": "X"
+            },
+            "type": "variant"
         },
         {
             "id": "4d8e204b50edd16a02f744736e5b0547",
             "sequence": 45,
             "deleted": false,
             "data": {
-                "attributeStr": [],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "",
-                "shortdesc": "shortdesc",
-                "stock": 1,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
-                "attributes": [],
-                "parent": "",
-                "maincategory": null,
-                "maincategoryurl": null,
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
-                "category": [],
                 "TRACKING": null,
-                "es_id": "",
-                "id": "4d8e204b50edd16a02f744736e5b0547",
-                "timestamp": "",
-                "url": "X",
                 "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXID": null,
                     "OXSHOPID": "1",
@@ -1054,10 +1479,52 @@
                     "manufacturer_title": null,
                     "picture_url_main": false
                 },
+                "attributeFloat": [],
+                "attributeInt": [],
+                "attributeStr": [],
+                "attributes": [],
+                "category": [],
+                "ean": "",
+                "es_id": "",
+                "hidden": false,
+                "id": "4d8e204b50edd16a02f744736e5b0547",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "",
+                "maincategory": null,
+                "maincategoryurl": null,
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 0,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "",
                 "selfLinks": {
                     "de": "oxid.html",
                     "en": "en\/oxid.html"
-                }
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "Product with OXSTOCKFLAG = 4",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 1,
+                "suggest": [],
+                "timestamp": "",
+                "title": "PHPUnit test product",
+                "url": "X"
             },
             "type": "product"
         },
@@ -1066,6 +1533,65 @@
             "sequence": 46,
             "deleted": false,
             "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
+                "additionalData": {
+                    "OXSHOPID": "1",
+                    "OXPARENTID": "",
+                    "OXACTIVEFROM": null,
+                    "OXACTIVETO": null,
+                    "OXEAN": "",
+                    "OXDISTEAN": "",
+                    "OXMPN": "",
+                    "OXBLFIXEDPRICE": "0",
+                    "OXPRICEA": "0",
+                    "OXPRICEB": "0",
+                    "OXPRICEC": "0",
+                    "OXBPRICE": "0",
+                    "OXTPRICE": "0",
+                    "OXUNITNAME": "",
+                    "OXUNITQUANTITY": "0",
+                    "OXVAT": null,
+                    "OXTHUMB": "front(4)_v_th_th.jpg",
+                    "OXICON": "front(4)_v_ico_ico.jpg",
+                    "OXPIC1": "front(4)_v_pi.jpg",
+                    "OXPIC2": "",
+                    "OXPIC3": "",
+                    "OXPIC4": "",
+                    "OXPIC5": "",
+                    "OXPIC6": "",
+                    "OXPIC7": "",
+                    "OXWEIGHT": "0",
+                    "OXSTOCK": "17",
+                    "OXSTOCKFLAG": "1",
+                    "OXDELIVERY": null,
+                    "OXLENGTH": "0",
+                    "OXWIDTH": "0",
+                    "OXHEIGHT": "0",
+                    "OXFILE": "",
+                    "OXISCONFIGURABLE": "0",
+                    "OXVARNAME": "Size | Color",
+                    "OXVARSTOCK": "123",
+                    "OXVARCOUNT": "36",
+                    "OXVARSELECT": "",
+                    "OXVARMINPRICE": "92.9",
+                    "OXVARMAXPRICE": "109.9",
+                    "OXNONMATERIAL": "0",
+                    "OXFREESHIPPING": "0",
+                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXRATINGCNT": "0",
+                    "OXMINDELTIME": "2",
+                    "OXMAXDELTIME": "4",
+                    "OXDELTIMEUNIT": "WEEK",
+                    "OXUPDATEPRICETIME": null,
+                    "OXISDOWNLOADABLE": "0",
+                    "manufacturer_title": "Kuyichi",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front(4)_v_pi.jpg"
+                },
+                "attributeFloat": [],
+                "attributeInt": [],
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
@@ -1173,26 +1699,6 @@
                         "value": "Super Blue"
                     }
                 ],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 140,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
                 "attributes": [
                     {
                         "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
@@ -1249,18 +1755,6 @@
                         "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
                     }
                 ],
-                "parent": "",
-                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
                 "category": [
                     {
                         "catid": "d863b76c6bb90a970a5577adf890e8cd",
@@ -1270,17 +1764,59 @@
                         "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "3570",
                 "es_id": "",
+                "hidden": false,
                 "id": "531b537118f5f4d7a427cdb825440922",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<p>Cool and casual women's jeans from Kuyichi with individually adjustable waist and loose fit, straight cut.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n<p><font color=\"#000000\"><\/font><\/p>",
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 99.9,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "jeans,anna,kuyichi,cool,casual",
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                },
                 "shop": [
                     "1"
                 ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "shortdesc": "Cool lady jeans by Kuyichi",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 140,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Kuyichi Jeans ANNA",
+                "url": "X"
+            },
+            "type": "product"
+        },
+        {
+            "id": "531f91d4ab8bfb24c4d04e473d246d0b",
+            "sequence": 47,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -1298,17 +1834,17 @@
                     "OXUNITNAME": "",
                     "OXUNITQUANTITY": "0",
                     "OXVAT": null,
-                    "OXTHUMB": "front(4)_v_th_th.jpg",
-                    "OXICON": "front(4)_v_ico_ico.jpg",
-                    "OXPIC1": "front(4)_v_pi.jpg",
-                    "OXPIC2": "",
-                    "OXPIC3": "",
-                    "OXPIC4": "",
+                    "OXTHUMB": "thumb_th(2).jpg",
+                    "OXICON": "icon_ico(2).jpg",
+                    "OXPIC1": "front_z1(2).jpg",
+                    "OXPIC2": "back_z2(2).jpg",
+                    "OXPIC3": "detail1_z3(2).jpg",
+                    "OXPIC4": "detail2_z4(2).jpg",
                     "OXPIC5": "",
                     "OXPIC6": "",
                     "OXPIC7": "",
                     "OXWEIGHT": "0",
-                    "OXSTOCK": "17",
+                    "OXSTOCK": "4",
                     "OXSTOCKFLAG": "1",
                     "OXDELIVERY": null,
                     "OXLENGTH": "0",
@@ -1317,35 +1853,25 @@
                     "OXFILE": "",
                     "OXISCONFIGURABLE": "0",
                     "OXVARNAME": "Size | Color",
-                    "OXVARSTOCK": "123",
-                    "OXVARCOUNT": "36",
+                    "OXVARSTOCK": "5",
+                    "OXVARCOUNT": "24",
                     "OXVARSELECT": "",
-                    "OXVARMINPRICE": "92.9",
-                    "OXVARMAXPRICE": "109.9",
+                    "OXVARMINPRICE": "89.9",
+                    "OXVARMAXPRICE": "89.9",
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "2",
-                    "OXMAXDELTIME": "4",
-                    "OXDELTIMEUNIT": "WEEK",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "5",
+                    "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "Kuyichi",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front(4)_v_pi.jpg"
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(2).jpg"
                 },
-                "selfLinks": {
-                    "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
-                }
-            },
-            "type": "product"
-        },
-        {
-            "id": "531f91d4ab8bfb24c4d04e473d246d0b",
-            "sequence": 47,
-            "deleted": false,
-            "data": {
+                "attributeFloat": [],
+                "attributeInt": [],
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
@@ -1428,26 +1954,6 @@
                         "value": "Blau"
                     }
                 ],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 9,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
                 "attributes": [
                     {
                         "d248453369cf82a6a64617f1357089c5": "W 32\/L 32",
@@ -1456,18 +1962,6 @@
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 32\/L 32"
                     }
                 ],
-                "parent": "",
-                "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
                 "category": [
                     {
                         "catid": "d8665fef35f4d528e92c3d664f4a00c0",
@@ -1477,17 +1971,59 @@
                         "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "3560",
                 "es_id": "",
+                "hidden": false,
                 "id": "531f91d4ab8bfb24c4d04e473d246d0b",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<p><span id=\"goog-gtc-unit-2\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Stylish and slim men's jeans from Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-3\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Narrow low boot cut Jeans with straight legs.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-4\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">These jeans are made from 16\/23 rusty dark wash denim and have strikingly strong abrasion with hand-crafted used effects.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
+                "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 89.9,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "jeans,kuyichi,stylish,dark",
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid.html"
+                },
                 "shop": [
                     "1"
                 ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "shortdesc": "Narrow low boot cut Jeans with straight legs.",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 9,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Kuyichi Jeans KYLE",
+                "url": "X"
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b6099c305f591cb39d4314e9a823fc1",
+            "sequence": 48,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -1501,21 +2037,21 @@
                     "OXPRICEB": "0",
                     "OXPRICEC": "0",
                     "OXBPRICE": "0",
-                    "OXTPRICE": "0",
+                    "OXTPRICE": "72.9",
                     "OXUNITNAME": "",
                     "OXUNITQUANTITY": "0",
                     "OXVAT": null,
-                    "OXTHUMB": "thumb_th(2).jpg",
-                    "OXICON": "icon_ico(2).jpg",
-                    "OXPIC1": "front_z1(2).jpg",
-                    "OXPIC2": "back_z2(2).jpg",
-                    "OXPIC3": "detail1_z3(2).jpg",
-                    "OXPIC4": "detail2_z4(2).jpg",
+                    "OXTHUMB": "thumb_th(12)(5)_th.jpg",
+                    "OXICON": "icon_ico(12)(5)_ico.jpg",
+                    "OXPIC1": "front_z1(12).jpg",
+                    "OXPIC2": "back_z2(12).jpg",
+                    "OXPIC3": "detail1_z3(12).jpg",
+                    "OXPIC4": "detail2_z4(12).jpg",
                     "OXPIC5": "",
                     "OXPIC6": "",
                     "OXPIC7": "",
                     "OXWEIGHT": "0",
-                    "OXSTOCK": "4",
+                    "OXSTOCK": "0",
                     "OXSTOCKFLAG": "1",
                     "OXDELIVERY": null,
                     "OXLENGTH": "0",
@@ -1523,12 +2059,12 @@
                     "OXHEIGHT": "0",
                     "OXFILE": "",
                     "OXISCONFIGURABLE": "0",
-                    "OXVARNAME": "Size | Color",
-                    "OXVARSTOCK": "5",
-                    "OXVARCOUNT": "24",
+                    "OXVARNAME": "EU-Size | Color",
+                    "OXVARSTOCK": "100",
+                    "OXVARCOUNT": "10",
                     "OXVARSELECT": "",
-                    "OXVARMINPRICE": "89.9",
-                    "OXVARMAXPRICE": "89.9",
+                    "OXVARMINPRICE": "59.9",
+                    "OXVARMAXPRICE": "59.9",
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
@@ -1538,21 +2074,11 @@
                     "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
-                    "manufacturer_title": "Kuyichi",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(2).jpg"
+                    "manufacturer_title": null,
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(12).jpg"
                 },
-                "selfLinks": {
-                    "de": "oxid.html",
-                    "en": "en\/oxid.html"
-                }
-            },
-            "type": "product"
-        },
-        {
-            "id": "6b6099c305f591cb39d4314e9a823fc1",
-            "sequence": 48,
-            "deleted": false,
-            "data": {
+                "attributeFloat": [],
+                "attributeInt": [],
                 "attributeStr": [
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
@@ -1625,26 +2151,6 @@
                         "value": "Violet"
                     }
                 ],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 100,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
                 "attributes": [
                     {
                         "0e523da04c67ea53a87092a492db1689": "XL",
@@ -1707,18 +2213,6 @@
                         "9438ac75bac3e344628b14bf7ed82c15": "Violet"
                     }
                 ],
-                "parent": "",
-                "maincategory": "d86779840626d3ab8263b62db85df3f0",
-                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
                 "category": [
                     {
                         "catid": "d86779840626d3ab8263b62db85df3f0",
@@ -1728,17 +2222,59 @@
                         "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "3582",
                 "es_id": "",
+                "hidden": false,
                 "id": "6b6099c305f591cb39d4314e9a823fc1",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<p><span id=\"goog-gtc-unit-5\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kisser Fish Shirt, long shirt with short sleeves and colored printing that can be worn as a mini dress.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-6\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Available in clover green and violet from the exclusive Stewart+Brown Organic Cotton Line.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-7\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The finest Pima cotton consists of especially long fibres that guarantee a special high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
+                "maincategory": "d86779840626d3ab8263b62db85df3f0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 59.9,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "shirt,pima,short",
+                "selfLinks": {
+                    "de": "oxid-oxid.html",
+                    "en": "en\/oxid.html"
+                },
                 "shop": [
                     "1"
                 ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "shortdesc": "Long shirt with short sleeves and colored printing",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 100,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Stewart+Brown Shirt Kisser Fish",
+                "url": "X"
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b63456b3abeeeccd9b085a76ffba1a3",
+            "sequence": 49,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -1752,21 +2288,21 @@
                     "OXPRICEB": "0",
                     "OXPRICEC": "0",
                     "OXBPRICE": "0",
-                    "OXTPRICE": "72.9",
+                    "OXTPRICE": "0",
                     "OXUNITNAME": "",
                     "OXUNITQUANTITY": "0",
                     "OXVAT": null,
-                    "OXTHUMB": "thumb_th(12)(5)_th.jpg",
-                    "OXICON": "icon_ico(12)(5)_ico.jpg",
-                    "OXPIC1": "front_z1(12).jpg",
-                    "OXPIC2": "back_z2(12).jpg",
-                    "OXPIC3": "detail1_z3(12).jpg",
-                    "OXPIC4": "detail2_z4(12).jpg",
+                    "OXTHUMB": "thumb_th(7).jpg",
+                    "OXICON": "icon_ico(7).jpg",
+                    "OXPIC1": "front_z1(7).jpg",
+                    "OXPIC2": "back_z2(7).jpg",
+                    "OXPIC3": "detail1_z3(7).jpg",
+                    "OXPIC4": "detail2_z4(7).jpg",
                     "OXPIC5": "",
                     "OXPIC6": "",
                     "OXPIC7": "",
                     "OXWEIGHT": "0",
-                    "OXSTOCK": "0",
+                    "OXSTOCK": "26",
                     "OXSTOCKFLAG": "1",
                     "OXDELIVERY": null,
                     "OXLENGTH": "0",
@@ -1774,36 +2310,26 @@
                     "OXHEIGHT": "0",
                     "OXFILE": "",
                     "OXISCONFIGURABLE": "0",
-                    "OXVARNAME": "EU-Size | Color",
-                    "OXVARSTOCK": "100",
-                    "OXVARCOUNT": "10",
+                    "OXVARNAME": "Size | Color",
+                    "OXVARSTOCK": "37",
+                    "OXVARCOUNT": "24",
                     "OXVARSELECT": "",
-                    "OXVARMINPRICE": "59.9",
-                    "OXVARMAXPRICE": "59.9",
+                    "OXVARMINPRICE": "89.9",
+                    "OXVARMAXPRICE": "89.9",
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "3",
-                    "OXMAXDELTIME": "5",
-                    "OXDELTIMEUNIT": "DAY",
+                    "OXMINDELTIME": "4",
+                    "OXMAXDELTIME": "6",
+                    "OXDELTIMEUNIT": "WEEK",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
-                    "manufacturer_title": null,
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(12).jpg"
+                    "manufacturer_title": "Kuyichi",
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(7).jpg"
                 },
-                "selfLinks": {
-                    "de": "oxid-oxid.html",
-                    "en": "en\/oxid.html"
-                }
-            },
-            "type": "product"
-        },
-        {
-            "id": "6b63456b3abeeeccd9b085a76ffba1a3",
-            "sequence": 49,
-            "deleted": false,
-            "data": {
+                "attributeFloat": [],
+                "attributeInt": [],
                 "attributeStr": [
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
@@ -1896,26 +2422,6 @@
                         "value": "Dark Blue"
                     }
                 ],
-                "attributeInt": [],
-                "attributeFloat": [],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 63,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
                 "attributes": [
                     {
                         "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
@@ -1936,18 +2442,6 @@
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
                     }
                 ],
-                "parent": "",
-                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
                 "category": [
                     {
                         "catid": "d863b76c6bb90a970a5577adf890e8cd",
@@ -1957,17 +2451,59 @@
                         "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "3571",
                 "es_id": "",
+                "hidden": false,
                 "id": "6b63456b3abeeeccd9b085a76ffba1a3",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
+                "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
+                "meta_description": "",
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 89.9,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "kuyichi,jeans,dark,tight",
+                "selfLinks": {
+                    "de": "oxid.html",
+                    "en": "en\/oxid.html"
+                },
                 "shop": [
                     "1"
                 ],
-                "meta_keywords": "",
-                "meta_description": "",
+                "shortdesc": "Tight cut stretch jeans",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 63,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Kuyichi Jeans CANDY",
+                "url": "X"
+            },
+            "type": "product"
+        },
+        {
+            "id": "6b63f459c781fa42edeb889242304014",
+            "sequence": 50,
+            "deleted": false,
+            "data": {
+                "TRACKING": null,
+                "active": true,
+                "activefrom": null,
+                "activeto": null,
                 "additionalData": {
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
@@ -1981,21 +2517,21 @@
                     "OXPRICEB": "0",
                     "OXPRICEC": "0",
                     "OXBPRICE": "0",
-                    "OXTPRICE": "0",
+                    "OXTPRICE": "69.9",
                     "OXUNITNAME": "",
                     "OXUNITQUANTITY": "0",
                     "OXVAT": null,
-                    "OXTHUMB": "thumb_th(7).jpg",
-                    "OXICON": "icon_ico(7).jpg",
-                    "OXPIC1": "front_z1(7).jpg",
-                    "OXPIC2": "back_z2(7).jpg",
-                    "OXPIC3": "detail1_z3(7).jpg",
-                    "OXPIC4": "detail2_z4(7).jpg",
+                    "OXTHUMB": "thumb_th(15)(5)_th.jpg",
+                    "OXICON": "icon_ico(15)_ico.jpg",
+                    "OXPIC1": "front_z1(15).jpg",
+                    "OXPIC2": "back_z2(15).jpg",
+                    "OXPIC3": "detail1_z3(15).jpg",
+                    "OXPIC4": "detail2_z4(15).jpg",
                     "OXPIC5": "",
                     "OXPIC6": "",
                     "OXPIC7": "",
                     "OXWEIGHT": "0",
-                    "OXSTOCK": "26",
+                    "OXSTOCK": "0",
                     "OXSTOCKFLAG": "1",
                     "OXDELIVERY": null,
                     "OXLENGTH": "0",
@@ -2003,36 +2539,48 @@
                     "OXHEIGHT": "0",
                     "OXFILE": "",
                     "OXISCONFIGURABLE": "0",
-                    "OXVARNAME": "Size | Color",
-                    "OXVARSTOCK": "37",
-                    "OXVARCOUNT": "24",
+                    "OXVARNAME": "EU-Size | Color",
+                    "OXVARSTOCK": "17",
+                    "OXVARCOUNT": "5",
                     "OXVARSELECT": "",
-                    "OXVARMINPRICE": "89.9",
-                    "OXVARMAXPRICE": "89.9",
+                    "OXVARMINPRICE": "49.9",
+                    "OXVARMAXPRICE": "49.9",
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "4",
-                    "OXMAXDELTIME": "6",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "4",
                     "OXDELTIMEUNIT": "WEEK",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
-                    "manufacturer_title": "Kuyichi",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(7).jpg"
+                    "manufacturer_title": null,
+                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(15).jpg"
                 },
-                "selfLinks": {
-                    "de": "oxid.html",
-                    "en": "en\/oxid.html"
-                }
-            },
-            "type": "product"
-        },
-        {
-            "id": "6b63f459c781fa42edeb889242304014",
-            "sequence": 50,
-            "deleted": false,
-            "data": {
+                "attributeFloat": [
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "4.2"
+                    }
+                ],
+                "attributeInt": [
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "42"
+                    }
+                ],
                 "attributeStr": [
                     {
                         "id": "df3e95af29221b89021a3ae7d6e44ee0",
@@ -2115,48 +2663,6 @@
                         "value": "White"
                     }
                 ],
-                "attributeInt": [
-                    {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "42"
-                    }
-                ],
-                "attributeFloat": [
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "4.2"
-                    }
-                ],
-                "isPseudo": false,
-                "ean": "ean",
-                "title": "title",
-                "searchkeys": "searchkeys",
-                "hidden": true,
-                "sort": 0,
-                "longdesc": "longdesc",
-                "shortdesc": "shortdesc",
-                "stock": 17,
-                "onstock": true,
-                "manufacturerid": "manufacturerid",
-                "manufacturer_title": "",
-                "price": 0,
-                "insert": "XXXX-XX-XX",
-                "soldamount": 0,
-                "rating": 0,
-                "searchable": true,
-                "picture_url_main": [],
                 "attributes": [
                     {
                         "0e523da04c67ea53a87092a492db1689": "XL",
@@ -2199,18 +2705,6 @@
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L"
                     }
                 ],
-                "parent": "",
-                "maincategory": "d86779840626d3ab8263b62db85df3f0",
-                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 1,
-                "mak_boost_norm_sold": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "isVariant": false,
-                "activeto": null,
-                "activefrom": null,
-                "suggest": [],
                 "category": [
                     {
                         "catid": "d86779840626d3ab8263b62db85df3f0",
@@ -2220,74 +2714,47 @@
                         "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
                     }
                 ],
-                "TRACKING": null,
+                "ean": "3583",
                 "es_id": "",
+                "hidden": false,
                 "id": "6b63f459c781fa42edeb889242304014",
-                "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "url": "X",
-                "active": true,
-                "shop": [
-                    "1"
-                ],
-                "meta_keywords": "",
+                "insert": "XXXX-XX-XX",
+                "isPseudo": false,
+                "isVariant": false,
+                "longdesc": "<p><span id=\"goog-gtc-unit-9\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Cushy sleeveless long shirt from Pima cotton for hot summer days.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-10\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-11\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres for high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
+                "maincategory": "d86779840626d3ab8263b62db85df3f0",
+                "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
+                "mak_boost_norm_insert": 1,
+                "mak_boost_norm_profit_margin": 0,
+                "mak_boost_norm_rating": 0,
+                "mak_boost_norm_revenue": 0,
+                "mak_boost_norm_sold": 0,
+                "manufacturer_title": "",
+                "manufacturerid": "",
                 "meta_description": "",
-                "additionalData": {
-                    "OXSHOPID": "1",
-                    "OXPARENTID": "",
-                    "OXACTIVEFROM": null,
-                    "OXACTIVETO": null,
-                    "OXEAN": "",
-                    "OXDISTEAN": "",
-                    "OXMPN": "",
-                    "OXBLFIXEDPRICE": "0",
-                    "OXPRICEA": "0",
-                    "OXPRICEB": "0",
-                    "OXPRICEC": "0",
-                    "OXBPRICE": "0",
-                    "OXTPRICE": "69.9",
-                    "OXUNITNAME": "",
-                    "OXUNITQUANTITY": "0",
-                    "OXVAT": null,
-                    "OXTHUMB": "thumb_th(15)(5)_th.jpg",
-                    "OXICON": "icon_ico(15)_ico.jpg",
-                    "OXPIC1": "front_z1(15).jpg",
-                    "OXPIC2": "back_z2(15).jpg",
-                    "OXPIC3": "detail1_z3(15).jpg",
-                    "OXPIC4": "detail2_z4(15).jpg",
-                    "OXPIC5": "",
-                    "OXPIC6": "",
-                    "OXPIC7": "",
-                    "OXWEIGHT": "0",
-                    "OXSTOCK": "0",
-                    "OXSTOCKFLAG": "1",
-                    "OXDELIVERY": null,
-                    "OXLENGTH": "0",
-                    "OXWIDTH": "0",
-                    "OXHEIGHT": "0",
-                    "OXFILE": "",
-                    "OXISCONFIGURABLE": "0",
-                    "OXVARNAME": "EU-Size | Color",
-                    "OXVARSTOCK": "17",
-                    "OXVARCOUNT": "5",
-                    "OXVARSELECT": "",
-                    "OXVARMINPRICE": "49.9",
-                    "OXVARMAXPRICE": "49.9",
-                    "OXNONMATERIAL": "0",
-                    "OXFREESHIPPING": "0",
-                    "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
-                    "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "3",
-                    "OXMAXDELTIME": "4",
-                    "OXDELTIMEUNIT": "WEEK",
-                    "OXUPDATEPRICETIME": null,
-                    "OXISDOWNLOADABLE": "0",
-                    "manufacturer_title": null,
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(15).jpg"
-                },
+                "meta_keywords": "",
+                "onstock": true,
+                "parent": "",
+                "picture_url_main": [],
+                "price": 49.9,
+                "rating": 0,
+                "searchable": true,
+                "searchkeys": "shirt,pima,sleeveless,suspenders,casual,cool",
                 "selfLinks": {
                     "de": "oxid-oxid.html",
                     "en": "en\/oxid.html"
-                }
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "Cushy sleeveless long shirt from Pima cotton for hot summer days",
+                "soldamount": 0,
+                "sort": 0,
+                "stock": 17,
+                "suggest": [],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "title": "Stewart+Brown Organic Pima Edged Lengthen",
+                "url": "X"
             },
             "type": "product"
         }

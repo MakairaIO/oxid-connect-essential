@@ -99,7 +99,7 @@ class TableTranslator
      */
     public function translate(string $sql): string
     {
-        $cacheKey = md5($sql);
+        $cacheKey = md5(sprintf('%s-%u-%s', $sql, (int) $this->shopId, $this->language));
         if (!isset(self::$sqlCache[$cacheKey])) {
             foreach ($this->searchTables as $searchTable) {
                 $viewNameGenerator = $this->viewNameGenerator;

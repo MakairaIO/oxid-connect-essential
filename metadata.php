@@ -15,7 +15,7 @@ $aModule = [
     'title'       => 'Makaira Connect Essential',
     'description' => 'This module provides required endpoints to import product data into Makaira.',
     'thumbnail'   => 'makaira.jpg',
-    'version'     => '1.2.1',
+    'version'     => '1.2.3',
     'author'      => 'Makaira GmbH',
     'url'         => 'https://www.makaira.io/',
     'email'       => 'support@makaira.io',
@@ -27,7 +27,6 @@ $aModule = [
     ],
     'extend'      => [
         OxidCore\Output::class                             => ModuleOxidCore\MakairaConnectOutput::class,
-        OxidCore\ViewConfig::class                         => ModuleOxidCore\MakairaConnectViewConfig::class,
         OxidAdminController\ArticleAttributeAjax::class    => ModuleAdminController\ArticleAttributeAjax::class,
         OxidAdminController\ArticleCrosssellingAjax::class => ModuleAdminController\ArticleCrossSellingAjax::class,
         OxidAdminController\ArticleExtendAjax::class       => ModuleAdminController\ArticleExtendAjax::class,
@@ -109,12 +108,6 @@ $aModule = [
             'name'  => 'makaira_tracking_page_id',
             'type'  => 'str',
             'value' => '',
-        ],
-        [
-            'group' => 'TRACKING_PRIVACY',
-            'name'  => 'makaira_cookie_banner_enabled',
-            'type'  => 'bool',
-            'value' => true,
         ],
     ],
     'events'      => [

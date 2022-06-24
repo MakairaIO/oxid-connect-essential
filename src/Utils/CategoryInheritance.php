@@ -17,6 +17,9 @@ use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use OxidEsales\Eshop\Application\Model\Category;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class CategoryInheritance
 {
     private Connection $database;

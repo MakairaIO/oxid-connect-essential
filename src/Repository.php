@@ -118,7 +118,7 @@ class Repository
             $this->repositoryMapping[$repository->getType()] = $repository;
         }
 
-        $dispatcher->dispatch('makaira.connect.repository', new Event\RepositoryCollectEvent($this));
+        $dispatcher->dispatch(new Event\RepositoryCollectEvent($this), 'makaira.connect.repository');
     }
 
     /**

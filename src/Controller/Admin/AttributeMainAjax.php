@@ -13,6 +13,9 @@ use Psr\Container\ContainerInterface;
 
 use function array_map;
 
+/**
+ * @SuppressWarnings(PHPMD.ElseExpression)
+ */
 class AttributeMainAjax extends AttributeMainAjax_parent
 {
     use PSR12WrapperTrait;
@@ -23,8 +26,8 @@ class AttributeMainAjax extends AttributeMainAjax_parent
         /** @var ContainerInterface $container */
         $container = $this->getSymfonyContainer();
 
-        /** @var Connection $db */
-        $db = $container->get(Connection::class);
+        /** @var Connection $connection */
+        $connection = $container->get(Connection::class);
 
         /** @var string $attributeView */
         $attributeView = $this->callPSR12Incompatible('_getViewName', 'oxobject2attribute');
@@ -38,7 +41,7 @@ class AttributeMainAjax extends AttributeMainAjax_parent
             $query     = "SELECT {$attributeView}.`OXOBJECTID`, {$productView}.`OXPARENTID` {$oxidQuery}";
 
             /** @var Result $resultStatement */
-            $resultStatement = $db->executeQuery($query);
+            $resultStatement = $connection->executeQuery($query);
             $changedProducts = $resultStatement->fetchAllAssociative();
         } else {
             $entryIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxobject2attribute.oxid');
@@ -46,7 +49,7 @@ class AttributeMainAjax extends AttributeMainAjax_parent
                 $sqlEntryIds = implode(
                     ', ',
                     array_map(
-                        static fn($entryId) => $db->quote($entryId, ParameterType::STRING),
+                        static fn($entryId) => $connection->quote($entryId, ParameterType::STRING),
                         $entryIds
                     )
                 );
@@ -57,7 +60,7 @@ class AttributeMainAjax extends AttributeMainAjax_parent
                     WHERE o2a.`OXID` IN ({$sqlEntryIds})";
 
                 /** @var Result $resultStatement */
-                $resultStatement = $db->executeQuery($query);
+                $resultStatement = $connection->executeQuery($query);
                 $changedProducts = $resultStatement->fetchAllAssociative();
             }
         }

@@ -11,6 +11,9 @@ use Makaira\OxidConnectEssential\Type;
 use function array_column;
 use function sprintf;
 
+/**
+ * @SuppressWarnings(PHPMD.ElseExpression)
+ */
 abstract class AbstractShopModifier extends Modifier
 {
     private const QUERY_TEMPLATE = 'SELECT

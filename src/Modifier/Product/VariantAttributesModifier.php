@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Exception;
 use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
@@ -14,6 +15,8 @@ use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
  * Class AttributeModifier
  *
  * @package Makaira\OxidConnectEssential\Type\ProductRepository
+ * @SuppressWarnings(PHPMD.ShortVariable)
+ * @SuppressWarnings(PHPMD.LongVariable)
  */
 class VariantAttributesModifier extends Modifier
 {
@@ -78,7 +81,9 @@ class VariantAttributesModifier extends Modifier
      * @return Type
      * @throws ConnectException
      * @throws DBALException
-     * @SuppressWarnings(CyclomaticComplexity)
+     * @throws Exception
+     * @SuppressWarnings(PHPMD.NPathComplexity)
+     * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      */
     public function apply(Type $product)
     {
@@ -97,6 +102,8 @@ class VariantAttributesModifier extends Modifier
 
         $hashArray = [];
 
+        $variants = [['id' => '']];
+
         if (!$single) {
             $titleArray = array_map('trim', explode('|', $variantName));
             $hashArray  = array_map('md5', $titleArray);
@@ -108,8 +115,6 @@ class VariantAttributesModifier extends Modifier
 
             /** @var array<array<string, string>> $variants */
             $variants = $resultStatement->fetchAllAssociative();
-        } else {
-            $variants = [['id' => '']];
         }
 
         /** @var array<string> $integerAttributes */
@@ -126,12 +131,14 @@ class VariantAttributesModifier extends Modifier
                 $valueArray = array_map('trim', explode('|', $variant['value']));
 
                 foreach ($hashArray as $index => $hash) {
+                    $variantAttributes[$hash] = (string) $valueArray[$index];
+
                     if (in_array($hash, $integerAttributes, true)) {
-                        $variantAttributes[ $hash ] = (int) $valueArray[ $index ];
-                    } elseif (in_array($hash, $floatAttributes, true)) {
-                        $variantAttributes[ $hash ] = (float) $valueArray[ $index ];
-                    } else {
-                        $variantAttributes[ $hash ] = (string) $valueArray[ $index ];
+                        $variantAttributes[$hash] = (int) $valueArray[$index];
+                    }
+
+                    if (in_array($hash, $floatAttributes, true)) {
+                        $variantAttributes[$hash] = (float) $valueArray[$index];
                     }
                 }
             }
@@ -153,12 +160,14 @@ class VariantAttributesModifier extends Modifier
                 /** @var string|int|float $value */
                 $value = $attribute['value'];
 
+                $variantAttributes[$hash] = (string) $value;
+
                 if (in_array($hash, $integerAttributes)) {
-                    $variantAttributes[ $hash ] = (int) $value;
-                } elseif (in_array($hash, $floatAttributes)) {
-                    $variantAttributes[ $hash ] = (float) $value;
-                } else {
-                    $variantAttributes[ $hash ] = (string) $value;
+                    $variantAttributes[$hash] = (int) $value;
+                }
+
+                if (in_array($hash, $floatAttributes)) {
+                    $variantAttributes[$hash] = (float) $value;
                 }
             }
 

@@ -11,6 +11,8 @@ use OxidEsales\Eshop\Core\Field;
 use OxidEsales\Eshop\Core\Model\ListModel;
 use OxidEsales\Eshop\Core\Registry;
 
+use function trim;
+
 class ReviewService
 {
     public function getReviews(string $productId, int $limit = null, int $offset = 0): array
@@ -68,7 +70,7 @@ class ReviewService
             throw new Exception("Failed loading product");
         }
 
-        if ($rating !== null && $rating >= 1 && $rating <= 5) {
+        if ($rating >= 1 && $rating <= 5) {
             $ratingModel = oxNew(Rating::class);
             if ($ratingModel->allowRating($user->getId(), 'oxarticle', $product->getId())) {
                 $ratingModel->assign(
@@ -84,7 +86,8 @@ class ReviewService
             }
         }
 
-        if ($reviewText = trim($text)) {
+        $reviewText = trim($text);
+        if ($reviewText) {
             $review = oxNew(Review::class);
             $review->assign(
                 [

@@ -152,16 +152,16 @@ abstract class IntegrationTestCase extends UnitTestCase
 
         $snapshotFile = "{$snapshotDir}/{$snapshotFilename}";
 
+        $actualJson = json_encode($actual, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
+
         if (!file_exists($snapshotFile)) {
-            file_put_contents($snapshotFile, json_encode($actual, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT));
+            file_put_contents($snapshotFile, $actualJson);
             if (!$continueIfIncomplete) {
                 $this->markTestIncomplete();
             }
 
             return false;
         }
-
-        $actualJson = json_encode($actual, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT);
 
         if (null === $message) {
             $message = sprintf("Current object doesn't match the contents of %s", $snapshotFilename);

@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Result;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\RevisionHandler\Extractor\SelectList;
@@ -46,16 +47,18 @@ class SelectListTest extends UnitTestCase
             'variant3' => 'product1',
         ];
 
+        $resultMock = $this->createMock(Result::class);
+        $resultMock->expects($this->once())
+            ->method('fetchAllKeyValue')
+            ->willReturn($productIds);
+
         $statementMock = $this->createMock(Statement::class);
         $statementMock
             ->expects($this->once())
-            ->method('execute')
-            ->with(['phpunit42']);
+            ->method('executeQuery')
+            ->with(['phpunit42'])
+            ->willReturn($resultMock);
 
-        $statementMock
-            ->expects($this->once())
-            ->method('fetchAllKeyValue')
-            ->willReturn($productIds);
 
         $sql = 'SELECT `o2sl`.`OXOBJECTID`, `a`.`OXPARENTID` FROM `phpunit_oxobject2selectlist_de` `o2sl` ';
         $sql .= 'LEFT JOIN `phpunit_oxarticles_de` `a` ON `a`.`OXID` = `o2sl`.`OXOBJECTID` WHERE `o2sl`.`OXSELNID` = ?';

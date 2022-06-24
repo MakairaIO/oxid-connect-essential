@@ -5,7 +5,8 @@ namespace Makaira\OxidConnectEssential\Type\Product;
 use Makaira\OxidConnectEssential\Type;
 
 /**
- * @SuppressWarnings(TooManyFields)
+ * @SuppressWarnings(PHPMD.LongVariable)
+ * @SuppressWarnings(PHPMD.TooManyFields)
  */
 class Product extends Type
 {

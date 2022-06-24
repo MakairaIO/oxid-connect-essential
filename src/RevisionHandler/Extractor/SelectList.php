@@ -13,6 +13,9 @@ use OxidEsales\Eshop\Core\TableViewNameGenerator;
 
 use function array_replace;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class SelectList extends AbstractModelDataExtractor
 {
     private TableViewNameGenerator $viewNameGenerator;
@@ -45,11 +48,11 @@ class SelectList extends AbstractModelDataExtractor
         $sql .= "LEFT JOIN `{$productView}` `a` ON `a`.`OXID` = `o2sl`.`OXOBJECTID` WHERE `o2sl`.`OXSELNID` = ?";
 
         $statement = $this->connection->prepare($sql);
-        $statement->execute([$model->getId()]);
+        $result = $statement->executeQuery([$model->getId()]);
 
         $revisions = [];
         /** @var array<array<string, string>> $parentIds */
-        $parentIds = $statement->fetchAllKeyValue();
+        $parentIds = $result->fetchAllKeyValue();
         foreach ($parentIds as $productId => $parentId) {
             $type        = $parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT;
             $revisions[] = $this->buildRevision($type, $productId);
