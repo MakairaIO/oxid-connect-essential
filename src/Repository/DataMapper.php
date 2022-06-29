@@ -107,8 +107,8 @@ class DataMapper
             if (isset($entity->additionalData[$dbField])) {
                 $typeValue = $entity->additionalData[$dbField];
                 if (isset($fieldDataTypes[$mappedField])) {
-                    $c = $fieldDataTypes[$mappedField];
-                    $typeValue = $c($typeValue);
+                    $convertClosure = $fieldDataTypes[$mappedField];
+                    $typeValue = $convertClosure($typeValue);
                 }
 
                 $entity->{$mappedField} = $typeValue;
@@ -123,6 +123,7 @@ class DataMapper
      * @param Type $entity
      *
      * @return array<string, Closure>
+     * @SuppressWarnings(PHPMD.EvalExpression)
      */
     private function getFieldDataTypes(Type $entity): array
     {
@@ -134,8 +135,8 @@ class DataMapper
             $reflection = new ReflectionClass($entity);
             $properties = $reflection->getProperties(ReflectionProperty::IS_PUBLIC);
             foreach ($properties as $property) {
+                $propertyType = $property->getType();
                 if (
-                    null !== ($propertyType = $property->getType()) &&
                     $propertyType instanceof ReflectionNamedType &&
                     !('string' === $propertyType->getName() && $propertyType->allowsNull())
                 ) {

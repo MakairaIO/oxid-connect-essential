@@ -4,6 +4,9 @@ namespace Makaira\OxidConnectEssential\Repository;
 
 use Makaira\OxidConnectEssential\Type\Category\Category;
 
+/**
+ * @SuppressWarnings(PHPMD.ShortVariable)
+ */
 class CategoryRepository extends AbstractRepository
 {
     /**
@@ -19,13 +22,13 @@ class CategoryRepository extends AbstractRepository
     /**
      * Get an instance of current type.
      *
-     * @param string $id
+     * @param string $objectId
      *
      * @return Category
      */
-    public function getInstance(string $id): Category
+    public function getInstance(string $objectId): Category
     {
-        return new Category(['id' => $id]);
+        return new Category(['id' => $objectId]);
     }
 
     protected function getSelectQuery(): string

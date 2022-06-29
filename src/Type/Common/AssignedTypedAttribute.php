@@ -5,8 +5,7 @@ namespace Makaira\OxidConnectEssential\Type\Common;
 use Kore\DataObject\DataObject;
 
 /**
- * @SuppressWarnings(PHPMD.ExcessivePublicCount)
- * @SuppressWarnings(PHPMD.TooManyFields)
+ * @SuppressWarnings(PHPMD.ShortVariable)
  */
 class AssignedTypedAttribute extends DataObject
 {

@@ -22,13 +22,13 @@ class ProductRepository extends AbstractRepository
     /**
      * Get an instance of current type.
      *
-     * @param string $id
+     * @param string $objectId
      *
      * @return Product
      */
-    protected function getInstance(string $id): Product
+    protected function getInstance(string $objectId): Product
     {
-        return new Product(['id' => $id]);
+        return new Product(['id' => $objectId]);
     }
 
     protected function getSelectQuery(): string
@@ -61,10 +61,10 @@ class ProductRepository extends AbstractRepository
         return "SELECT OXPARENTID FROM oxarticles WHERE oxarticles.oxid = :id";
     }
 
-    public function getParentId(string $id): ?string
+    public function getParentId(string $productId): ?string
     {
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($this->getParentIdQuery(), ['id' => $id]);
+        $resultStatement = $this->database->executeQuery($this->getParentIdQuery(), ['id' => $productId]);
 
         /** @var string $parentID */
         $parentID = $resultStatement->fetchOne();

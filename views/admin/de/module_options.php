@@ -10,4 +10,6 @@ $aLang = [
     'SHOP_MODULE_makaira_field_blacklist_manufacturer' => '<b>Hersteller</b>: ausgeschlossene Felder',
     'SHOP_MODULE_makaira_attribute_as_int'             => 'Attribute als <b>Integer</b> importieren (OXID Liste)',
     'SHOP_MODULE_makaira_attribute_as_float'           => 'Attribute als <b>Float</b> importieren (OXID Liste)',
+    'SHOP_MODULE_GROUP_TRACKING_PRIVACY'               => 'Tracking & Datenschutz',
+    'SHOP_MODULE_makaira_tracking_page_id'             => 'Seiten-ID für das Tracking',
 ];

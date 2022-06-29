@@ -19,7 +19,7 @@ abstract class ModifierList
     public function __construct(string $tag, EventDispatcherInterface $dispatcher, array $modifiers)
     {
         $this->modifiers = $modifiers;
-        $dispatcher->dispatch($tag, new ModifierCollectEvent($this));
+        $dispatcher->dispatch(new ModifierCollectEvent($this), $tag);
     }
 
     /**

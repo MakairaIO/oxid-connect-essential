@@ -18,6 +18,7 @@ services:
       - { name: 'console.command', command: 'makaira:cleanup' }
 
   Makaira\OxidConnectEssential\Command\TouchAllCommand:
+    public: true
     bind:
       $repositories: !tagged makaira_connect_essential.repository
     tags:
@@ -34,7 +35,7 @@ services:
     public: true
     bind:
       $repositories: !tagged makaira_connect_essential.repository
-      $parentsPurchasable: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blVariantParentBuyable")'
+      $parentsPurchasable: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blVariantParentBuyable")'
 
   Makaira\OxidConnectEssential\Rpc\RpcService:
     public: true
@@ -120,6 +121,10 @@ services:
       $modifiers: '@Makaira\OxidConnectEssential\Repository\VariantModifierList'
     tags: ['makaira_connect_essential.repository']
 
+  Makaira\OxidConnectEssential\Oxid\Core\MakairaTrackingDataGenerator: ~
+
+  Makaira\OxidConnectEssential\Service\TrackingRenderService:
+    public: true
 
   ### Modifier ###
 
@@ -133,26 +138,26 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Product\ActiveModifier:
     bind:
-      $model: '@=service("Makaira_OxidConnectEssential_Oxid_UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article")'
+      $model: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\ActiveModifier:
     bind:
-      $model: '@=service("Makaira_OxidConnectEssential_Oxid_UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Category")'
+      $model: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Category")'
     tags:
       - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\ActiveModifier:
     bind:
-      $model: '@=service("Makaira_OxidConnectEssential_Oxid_UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Manufacturer")'
+      $model: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Manufacturer")'
     tags:
       - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\AttributeModifier:
     bind:
-      $activeSnippet: '@=service("Makaira_OxidConnectEssential_Oxid_UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article").getSqlActiveSnippet(true)'
+      $activeSnippet: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article").getSqlActiveSnippet(true)'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
@@ -186,13 +191,13 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Common\LongDescriptionModifier:
     bind:
-      $parseThroughSmarty: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("bl_perfParseLongDescinSmarty")'
+      $parseThroughSmarty: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("bl_perfParseLongDescinSmarty")'
 
   Makaira\OxidConnectEssential\Modifier\Common\PriceModifier:
     bind:
-      $isNetto: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blEnterNetPrice")'
-      $showNetto: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blShowNetPrice")'
-      $defaultVAT: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("dDefaultVAT")'
+      $isNetto: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blEnterNetPrice")'
+      $showNetto: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blShowNetPrice")'
+      $defaultVAT: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("dDefaultVAT")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
@@ -207,7 +212,7 @@ services:
   Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier:
     abstract: true
     bind:
-      $isMultiShop: '@=service("Makaira_OxidConnectEssential_Oxid_Config").isMall()'
+      $isMultiShop: '@=service("OxidEsales\\Eshop\\Core\\Config").isMall()'
 
   Makaira\OxidConnectEssential\Modifier\Product\ShopModifier:
     public: false
@@ -236,7 +241,7 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Common\StockModifier:
     bind:
-      $useStock: '@=service("Makaira_OxidConnectEssential_Oxid_Config").getShopConfVar("blUseStock")'
+      $useStock: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blUseStock")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
@@ -253,7 +258,7 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Product\CategoryModifier:
     bind:
-      $isMall: '@=service("Makaira_OxidConnectEssential_Oxid_Config").isMall()'
+      $isMall: '@=service("OxidEsales\\Eshop\\Core\\Config").isMall()'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
@@ -263,60 +268,42 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Product\VariantAttributesModifier:
     bind:
-      $activeSnippet: '@=service("Makaira_OxidConnectEssential_Oxid_UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article").getSqlActiveSnippet(true)'
+      $activeSnippet: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article").getSqlActiveSnippet(true)'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
 ### Helper ###
 
   OxidEsales\Eshop\Core\Language:
-    alias: Makaira_OxidConnectEssential_Oxid_Language
-
-  Makaira_OxidConnectEssential_Oxid_Language:
-    class: OxidEsales\Eshop\Core\Language
     factory: ['OxidEsales\Eshop\Core\Registry', 'getLang']
 
   OxidEsales\Eshop\Core\Config:
-    alias: Makaira_OxidConnectEssential_Oxid_Config
-
-  Makaira_OxidConnectEssential_Oxid_Config:
-    class: OxidEsales\Eshop\Core\Config
+    public: true
     factory: ['OxidEsales\Eshop\Core\Registry', 'getConfig']
 
   OxidEsales\Eshop\Core\UtilsObject:
-    alias: Makaira_OxidConnectEssential_Oxid_UtilsObject
-
-  Makaira_OxidConnectEssential_Oxid_UtilsObject:
-    class: OxidEsales\Eshop\Core\UtilsObject
+    public: true
     factory: ['OxidEsales\Eshop\Core\UtilsObject', 'getInstance']
 
-  OxidEsales\Eshop\Application\Controller\FrontendController:
-    alias: Makaira_OxidConnectEssential_Oxid_FrontEndController
-
   OxidEsales\Eshop\Core\Session:
-    alias: Makaira_OxidConnectEssential_Oxid_Session
-
-  Makaira_OxidConnectEssential_Oxid_Session:
-    class: OxidEsales\Eshop\Core\Session
     factory: ['OxidEsales\Eshop\Core\Registry', 'getSession']
 
-  Makaira_OxidConnectEssential_Oxid_FrontEndController:
-    class: OxidEsales\Eshop\Application\Controller\FrontendController
-    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
+  OxidEsales\Eshop\Application\Controller\FrontendController:
+    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
     calls:
       - ['addGlobalParams']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
-    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
+    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer:
-    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
+    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderArticle:
-    factory: ['@Makaira_OxidConnectEssential_Oxid_UtilsObject', 'oxNew']
+    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
 
   Makaira\OxidConnectEssential\Service\UserService:
@@ -327,8 +314,13 @@ services:
     public: true
     class: Makaira\OxidConnectEssential\Service\CartService
     bind:
-      $basket: '@=service("Makaira_OxidConnectEssential_Oxid_Session").getBasket()'
+      $basket: '@=service("OxidEsales\\Eshop\\Core\\Session").getBasket()'
 
   Makaira\OxidConnectEssential\Service\ReviewService:
     public: true
     class: Makaira\OxidConnectEssential\Service\ReviewService
+
+  request:
+    public: true
+    class: Symfony\Component\HttpFoundation\Request
+    factory: ['Symfony\Component\HttpFoundation\Request', 'createFromGlobals']

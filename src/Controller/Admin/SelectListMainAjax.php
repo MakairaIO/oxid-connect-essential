@@ -14,6 +14,10 @@ use Psr\Container\ContainerInterface;
 use function array_map;
 use function implode;
 
+/**
+ * @SuppressWarnings(PHPMD.ElseExpression)
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class SelectListMainAjax extends SelectListMainAjax_parent
 {
     use PSR12WrapperTrait;
@@ -27,8 +31,8 @@ class SelectListMainAjax extends SelectListMainAjax_parent
         /** @var ContainerInterface $container */
         $container = $this->getSymfonyContainer();
 
-        /** @var Connection $db */
-        $db = $container->get(Connection::class);
+        /** @var Connection $connection */
+        $connection = $container->get(Connection::class);
 
         /** @var string $articleSelectListView */
         $articleSelectListView = $this->callPSR12Incompatible('_getViewName', 'oxobject2selectlist');
@@ -42,7 +46,7 @@ class SelectListMainAjax extends SelectListMainAjax_parent
             $query     = "SELECT {$articleSelectListView}.`OXOBJECTID`, {$productView}.`OXPARENTID` {$oxidQuery}";
 
             /** @var Result $resultStatement */
-            $resultStatement = $db->executeQuery($query);
+            $resultStatement = $connection->executeQuery($query);
 
             $changedProducts = $resultStatement->fetchAllAssociative();
         } else {
@@ -51,7 +55,7 @@ class SelectListMainAjax extends SelectListMainAjax_parent
                 $sqlEntryIds = implode(
                     ', ',
                     array_map(
-                        static fn($entryId) => $db->quote($entryId, ParameterType::STRING),
+                        static fn($entryId) => $connection->quote($entryId, ParameterType::STRING),
                         $entryIds
                     )
                 );
@@ -62,7 +66,7 @@ class SelectListMainAjax extends SelectListMainAjax_parent
                     WHERE o2a.`OXID` IN ({$sqlEntryIds})";
 
                 /** @var Result $resultStatement */
-                $resultStatement = $db->executeQuery($query);
+                $resultStatement = $connection->executeQuery($query);
                 $changedProducts  = $resultStatement->fetchAllAssociative();
             }
         }

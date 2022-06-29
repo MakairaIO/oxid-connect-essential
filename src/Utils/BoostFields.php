@@ -20,6 +20,9 @@ use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Exception;
 
+/**
+ * @SuppressWarnings(PHPMD.ElseExpression)
+ */
 class BoostFields
 {
     /**
@@ -108,12 +111,16 @@ class BoostFields
         $maxTimestamp         = new DateTime($max);
         $daysFromMaxTimestamp = (int) $maxTimestamp->diff($timestamp)->format('%r%a');
 
-        $alpha = 0.1;
-        $x     = 60;
+        $alpha  = 0.1;
+        $factor = 60;
 
         // (0.5*(1+alpha*(x+x_zero)/(1+alpha*abs((x+x_zero))))+1/(2*(1+alpha*x_zero)))*max_influence
-        return (0.5 * (1 + $alpha * ($daysFromMaxTimestamp + $x) / (1 + $alpha * abs($x + $daysFromMaxTimestamp))) +
-                1 / (2 * (1 + $alpha * $x))) * $maxInfluence;
+        return (
+                0.5 * (
+                    1 + $alpha * ($daysFromMaxTimestamp + $factor) /
+                    (1 + $alpha * abs($factor + $daysFromMaxTimestamp))
+                ) + 1 / (2 * (1 + $alpha * $factor))
+            ) * $maxInfluence;
     }
 
     /**

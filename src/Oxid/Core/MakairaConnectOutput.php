@@ -2,12 +2,15 @@
 
 namespace Makaira\OxidConnectEssential\Oxid\Core;
 
+use Makaira\OxidConnectEssential\Exception\EmptyTrackingDataException;
+use Makaira\OxidConnectEssential\Service\TrackingRenderService;
+use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Exception\ArticleInputException;
 use OxidEsales\Eshop\Core\Exception\NoArticleException;
-use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Core\Output;
 
-use function get_class;
+use function str_replace;
+use function stripos;
 
 /**
  * This file is part of a marmalade GmbH project
@@ -20,7 +23,7 @@ use function get_class;
  */
 class MakairaConnectOutput extends MakairaConnectOutput_parent
 {
-    private static ?array $trackingData = null;
+    use SymfonyContainerTrait;
 
     /**
      * @throws ArticleInputException
@@ -34,53 +37,21 @@ class MakairaConnectOutput extends MakairaConnectOutput_parent
             return $output;
         }
 
-        if (
-            !str_contains($output, '</head>') ||
-            !Registry::get(MakairaCookieUtils::class)->hasCookiesAccepted()
-        ) {
+        if (!str_contains($output, '</head>')) {
             return $output;
         }
 
-        $trackingData = $this->getTrackingData();
+        $container = $this->getSymfonyContainer();
 
-        if (empty($trackingData)) {
+        /** @var TrackingRenderService $trackingRenderer */
+        $trackingRenderer = $container->get(TrackingRenderService::class);
+
+        try {
+            $trackingHtml = $trackingRenderer->render();
+            return str_replace('</head>', "{$trackingHtml}</head>", $output);
+        } catch (EmptyTrackingDataException $e) {
             return $output;
         }
-
-        /** @var MakairaTrackingDataGenerator $trackingDataGenerator */
-        $trackingDataGenerator = Registry::get(MakairaTrackingDataGenerator::class);
-
-        $trackerUrl = json_encode($trackingDataGenerator->getTrackerUrl());
-        $trackingHtml = '<script type="text/javascript">var _paq = _paq || [];';
-
-        foreach ($trackingData as $trackingPart) {
-            $trackingHtml .= '_paq.push(' . json_encode($trackingPart) . ');';
-        }
-        // @codingStandardsIgnoreStart
-        $trackingHtml .= "var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';";
-        $trackingHtml .= "g.defer=true; g.async=true; g.src={$trackerUrl}+'/piwik.js'; s.parentNode.insertBefore(g,s);";
-        $trackingHtml .= '</script>';
-        // @codingStandardsIgnoreEnd
-
-        return str_replace('</head>', "{$trackingHtml}</head>", $output);
-    }
-
-    /**
-     * @return array
-     * @throws ArticleInputException
-     * @throws NoArticleException
-     */
-    protected function getTrackingData(): array
-    {
-        if (null === self::$trackingData) {
-            /** @var MakairaTrackingDataGenerator $trackingDataGenerator */
-            $trackingDataGenerator = Registry::get(MakairaTrackingDataGenerator::class);
-            $oxidController = Registry::getConfig()
-                ->getTopActiveView();
-            self::$trackingData = $trackingDataGenerator->generate(get_class($oxidController));
-        }
-
-        return self::$trackingData;
     }
 
     /**
@@ -91,10 +62,7 @@ class MakairaConnectOutput extends MakairaConnectOutput_parent
      */
     public function output($sName, $output): void
     {
-        if (
-            self::OUTPUT_FORMAT_HTML === $this->_sOutputFormat &&
-            Registry::get(MakairaCookieUtils::class)->hasCookiesAccepted()
-        ) {
+        if (self::OUTPUT_FORMAT_HTML === $this->_sOutputFormat) {
             $closingHead = "</body>";
             $closingHeadNew = "<script type=\"text/javascript\">
 oiOS=new Date().getTimezoneOffset();oiOS=(oiOS<0?\"+\":\"-\")+(\"00\"+parseInt((Math.abs(oiOS/60)))).slice(-2);
@@ -102,7 +70,8 @@ document.cookie= \"oiLocalTimeZone=\"+oiOS+\";path=/;\";
 </script></body>";
 
             $output = ltrim($output);
-            if (false !== ($pos = stripos($output, $closingHead))) {
+            $pos = stripos($output, $closingHead);
+            if (false !== $pos) {
                 $output = substr_replace($output, $closingHeadNew, $pos, strlen($closingHead));
             }
         }

@@ -13,6 +13,9 @@ namespace Makaira\OxidConnectEssential\Type\SearchLink;
 
 use Makaira\OxidConnectEssential\Type;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class SearchLink extends Type
 {
     public string $MARM_OXSEARCH_SEARCHLINKS_EXTERNAL;

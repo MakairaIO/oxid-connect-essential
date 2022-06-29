@@ -12,6 +12,9 @@ use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
 
 use function str_replace;
 
+/**
+ * @SuppressWarnings(PHPMD.LongVariable)
+ */
 class CategoryModifier extends Modifier
 {
     public string $selectCategoriesQuery = "

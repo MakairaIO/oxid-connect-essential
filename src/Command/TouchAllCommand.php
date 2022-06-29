@@ -15,6 +15,9 @@ use function array_map;
 use function count;
 use function sprintf;
 
+/**
+ * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+ */
 class TouchAllCommand extends Command
 {
     /**
@@ -48,7 +51,7 @@ class TouchAllCommand extends Command
         foreach ($this->repositories as $repository) {
             $output->write(sprintf('Touching <fg=green>%s</>', $repository->getType()));
             $revisions     = array_map(
-                static fn($id) => new Revision($repository->getType(), $id),
+                static fn($objectId) => new Revision($repository->getType(), $objectId),
                 $repository->getAllIds()
             );
             $revisionCount = count($revisions);

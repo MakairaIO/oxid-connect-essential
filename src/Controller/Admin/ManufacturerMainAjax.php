@@ -16,6 +16,9 @@ use OxidEsales\Eshop\Core\Registry;
 use function array_map;
 use function implode;
 
+/**
+ * @SuppressWarnings(PHPMD.ElseExpression)
+ */
 class ManufacturerMainAjax extends ManufacturerMainAjax_parent
 {
     use PSR12WrapperTrait;
@@ -62,21 +65,21 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     private function addParentIds(array $productIds): array
     {
-        /** @var Connection $db */
-        $db = $this->getSymfonyContainer()->get(Connection::class);
+        /** @var Connection $connection */
+        $connection = $this->getSymfonyContainer()->get(Connection::class);
 
         /** @var string $productView */
         $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         $sqlProductIds = implode(
             ',',
-            array_map(static fn($id) => $db->quote($id, ParameterType::STRING), $productIds)
+            array_map(static fn($objectId) => $connection->quote($objectId, ParameterType::STRING), $productIds)
         );
 
         $query = "SELECT a.OXID, a.OXPARENTID FROM {$productView} a WHERE a.OXID IN ($sqlProductIds)";
 
         /** @var Result $resultStatement */
-        $resultStatement = $db->executeQuery($query);
+        $resultStatement = $connection->executeQuery($query);
 
         /** @var array<string> $result */
         $result = $resultStatement->fetchAllAssociative();
@@ -124,8 +127,8 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
         /** @var string $manufacturerId */
         $manufacturerId = Registry::getRequest()->getRequestParameter('oxid');
 
-        /** @var Connection $db */
-        $db = $this->getSymfonyContainer()->get(Connection::class);
+        /** @var Connection $connection */
+        $connection = $this->getSymfonyContainer()->get(Connection::class);
 
         /** @var string $productView */
         $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
@@ -136,7 +139,7 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
             $query     = "SELECT {$productView}.OXID, {$productView}.OXPARENTID {$oxidQuery}";
 
             /** @var Result $resultStatement */
-            $resultStatement = $db->executeQuery($query);
+            $resultStatement = $connection->executeQuery($query);
             $changedIds      = $resultStatement->fetchAllAssociative();
         } else {
             $productIds = (array) $this->callPSR12Incompatible('_getActionIds', 'oxarticles.oxid');

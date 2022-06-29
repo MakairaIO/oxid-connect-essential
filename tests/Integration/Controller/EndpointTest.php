@@ -204,10 +204,13 @@ class EndpointTest extends IntegrationTestCase
                         $change['data']['insert']    = preg_replace('/\d/', 'X', $change['data']['insert']);
                         $change['data']['url']       = preg_replace('/^.*$/', 'X', $change['data']['url']);
 
+                        ksort($change['data']);
+
                         return $change;
                     },
                     $response['changes']
                 );
+
                 $this->assertSnapshot($response, null, true);
                 $lastChange = end($response['changes']);
                 $since      = $lastChange['sequence'];

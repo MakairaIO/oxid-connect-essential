@@ -91,6 +91,7 @@ class TableTranslatorTest extends UnitTestCase
     {
         $translator = new TableTranslator(['oxarticles']);
         $translator->setViewNameGenerator(static fn () => 'phpunit_table');
+        $translator->setLanguage('xx');
 
         $sql = $translator->translate('SELECT * FROM oxarticles');
         self::assertEquals('SELECT * FROM phpunit_table', $sql);
