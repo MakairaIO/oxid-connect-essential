@@ -113,9 +113,6 @@ $aModule = [
     'events'      => [
         'onActivate' => ModuleCore\ModuleEvents::class . '::onActivate',
     ],
-    'templates' => [
-        'layout/cookie-banner.tpl' => 'makaira/oxid-connect-essential/views/tpl/layout/cookie-banner.tpl',
-    ],
     'blocks'      => [
         [
             'template' => 'layout/header.tpl',
