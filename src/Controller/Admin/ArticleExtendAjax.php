@@ -42,7 +42,7 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
      * @throws \Doctrine\DBAL\Driver\Exception
      * @throws \Doctrine\DBAL\Exception
      */
-    protected function onCategoriesRemoval($categoriesToRemove, $productId): void
+    public function onCategoriesRemoval($categoriesToRemove, $productId): void
     {
         parent::onCategoriesRemoval($categoriesToRemove, $productId);
 
