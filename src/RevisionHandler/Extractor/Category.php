@@ -44,10 +44,10 @@ class Category extends AbstractModelDataExtractor
         $query .= "LEFT JOIN `{$articleView}` a ON a.`OXID` = o2c.`OXOBJECTID` WHERE o2c.`OXCATNID` = ?";
 
         $statement = $this->connection->prepare($query);
-        $statement->execute([$model->getId()]);
+        $result = $statement->executeQuery([$model->getId()]);
 
         /** @var array<array<string, string>> $parentIds */
-        $parentIds = $statement->fetchAllKeyValue();
+        $parentIds = $result->fetchAllKeyValue();
         foreach ($parentIds as $productId => $parentId) {
             $type        = $parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT;
             $revisions[] = $this->buildRevision($type, $productId);
@@ -63,6 +63,6 @@ class Category extends AbstractModelDataExtractor
      */
     public function supports(BaseModel $model): bool
     {
-        return $model instanceof CategoryModel;
+        return $model instanceof CategoryModel && null !== $model->getId();
     }
 }

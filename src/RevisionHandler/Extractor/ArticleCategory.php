@@ -47,9 +47,9 @@ class ArticleCategory extends AbstractModelDataExtractor
 
         $productId = $model->getProductId();
 
-        $this->statement->execute([$productId]);
+        $result = $this->statement->executeQuery([$productId]);
 
-        $parentId = $this->statement->fetchOne();
+        $parentId = $result->fetchOne();
 
         return $this->buildRevision($parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $productId);
     }
@@ -61,6 +61,6 @@ class ArticleCategory extends AbstractModelDataExtractor
      */
     public function supports(BaseModel $model): bool
     {
-        return $model instanceof Object2CategoryModel;
+        return $model instanceof Object2CategoryModel && null !== $model->getProductId();
     }
 }
