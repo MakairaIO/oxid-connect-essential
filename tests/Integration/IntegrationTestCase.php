@@ -44,6 +44,7 @@ abstract class IntegrationTestCase extends UnitTestCase
     {
         parent::setUp();
         $this->snapshotCount = 0;
+        $this->resetShopData();
     }
 
     /**
@@ -152,9 +153,15 @@ abstract class IntegrationTestCase extends UnitTestCase
      */
     protected function assertSnapshot($actual, ?string $message = null, bool $continueIfIncomplete = false)
     {
+        $testConfig = new \OxidEsales\TestingLibrary\TestConfig();
+
         $reflection = new ReflectionClass($this);
 
-        $snapshotDir = dirname($reflection->getFileName()) . '/__snapshots__';
+        $snapshotDir = sprintf(
+            '%s/__snapshots__/%s',
+            dirname($reflection->getFileName()),
+            strtolower($testConfig->getShopEdition()),
+        );
 
         $snapshotFilename = sprintf(
             '%s--%s--%u.json',
@@ -210,13 +217,7 @@ abstract class IntegrationTestCase extends UnitTestCase
         return $text;
     }
 
-    protected function tearDown(): void
-    {
-        parent::tearDown();
-        self::resetShopData();
-    }
-
-    protected static function resetShopData()
+    protected function resetShopData()
     {
         $testConfig = new \OxidEsales\TestingLibrary\TestConfig();
         $serviceCaller = new \OxidEsales\TestingLibrary\ServiceCaller();
@@ -228,10 +229,4 @@ abstract class IntegrationTestCase extends UnitTestCase
             $serviceCaller->callService('ShopPreparation', 1);
         }
     }
-    //
-    // public static function tearDownAfterClass(): void
-    // {
-    //     parent::tearDownAfterClass();
-    //     self::resetShopData();
-    // }
 }
