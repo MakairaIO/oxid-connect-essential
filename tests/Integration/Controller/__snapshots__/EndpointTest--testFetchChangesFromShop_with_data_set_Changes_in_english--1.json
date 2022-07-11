@@ -10,6 +10,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "913",
                     "OXSHOPID": "1",
                     "OXICON": "mauirippers_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -22,7 +23,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -40,6 +41,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "912",
                     "OXSHOPID": "1",
                     "OXICON": "big_matsol_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -52,7 +54,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -70,6 +72,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "914",
                     "OXSHOPID": "1",
                     "OXICON": "mikejucker_hawaii_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -82,7 +85,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -100,6 +103,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "905",
                     "OXSHOPID": "1",
                     "OXICON": "ion_logo_black_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -112,7 +116,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -130,6 +134,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "906",
                     "OXSHOPID": "1",
                     "OXICON": "cabrinha_logo2011_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -142,7 +147,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -160,6 +165,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "901",
                     "OXSHOPID": "1",
                     "OXICON": "naish_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -172,7 +178,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -190,6 +196,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "902",
                     "OXSHOPID": "1",
                     "OXICON": "logo3_ico.png",
                     "OXSHOWSUFFIX": "0"
@@ -202,7 +209,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -220,6 +227,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "908",
                     "OXSHOPID": "1",
                     "OXICON": "core_logo_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -232,7 +240,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -250,6 +258,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "909",
                     "OXSHOPID": "1",
                     "OXICON": "lf_kite_logo_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -262,7 +271,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -280,6 +289,7 @@
             "data": {
                 "active": false,
                 "additionalData": {
+                    "OXMAPID": "911",
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
@@ -292,7 +302,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -310,6 +320,7 @@
             "data": {
                 "active": false,
                 "additionalData": {
+                    "OXMAPID": "910",
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
@@ -322,7 +333,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -340,6 +351,7 @@
             "data": {
                 "active": false,
                 "additionalData": {
+                    "OXMAPID": "907",
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
@@ -352,7 +364,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -370,6 +382,7 @@
             "data": {
                 "active": false,
                 "additionalData": {
+                    "OXMAPID": "904",
                     "OXSHOPID": "1",
                     "OXICON": "",
                     "OXSHOWSUFFIX": "0"
@@ -382,7 +395,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -400,6 +413,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "903",
                     "OXSHOPID": "1",
                     "OXICON": "npx_logo_1_mico.png",
                     "OXSHOWSUFFIX": "0"
@@ -412,7 +426,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid-oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -430,6 +444,7 @@
             "data": {
                 "active": true,
                 "additionalData": {
+                    "OXMAPID": "915",
                     "OXSHOPID": "1",
                     "OXICON": "oreilly_1_mico.png",
                     "OXSHOWSUFFIX": "1"
@@ -442,7 +457,7 @@
                 "meta_keywords": "",
                 "selfLinks": {
                     "de": "Nach-Hersteller\/oxid\/",
-                    "en": "en\/By-Manufacturer\/oxid\/"
+                    "en": "en\/By-manufacturer\/oxid\/"
                 },
                 "shop": [
                     "1"
@@ -463,6 +478,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "902",
                     "OXSHOPID": "1",
                     "OXPARENTID": "05848170643ab0deb9914566391c0c63",
                     "OXACTIVEFROM": null,
@@ -506,14 +522,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "1",
-                    "OXMAXDELTIME": "3",
-                    "OXDELTIMEUNIT": "DAY",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "5",
+                    "OXDELTIMEUNIT": "WEEK",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "ION",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/ion_madtrixx_kite_waist_2011_1.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/ion_madtrixx_kite_waist_2011_1.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -534,7 +551,7 @@
                 "insert": "XXXX-XX-XX",
                 "isPseudo": true,
                 "isVariant": true,
-                "longdesc": "<div class=\"product_title_big\">\r\n<h2>ION Madtrixx Kite Waist<\/h2><\/div>\r\n<p>New freestyle harness with a lean cut outline and a neoprene inside airbag. Thanks to the elastic cutaways at the rear part of the harness provides a maximum of flexibility. The new contour form with Wrap Tec guarantees a perfect fit.<\/p><br \/>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>Hip Protection<br \/>\r\nThe double layer foam padding protects the bones and all unprotected parts in this area, especially if the body is flexed to the side.<\/li>\r\n<li>Cross Link Webbing<br \/>\r\nUsually, the belt ends somewhere behind the buckle. A belt without cease along the rear side of the harness guarantees a better load balancing.<\/li>\r\n<li>Internal Flex Belt<br \/>\r\n  Flexible hip belt. Backs a safe, straight and comfortable seat of the harness.<\/li>\r\n<li>Handle Pass Leash Slider<br \/>\r\nA small ring of metal can slip the leash along the back of the harness and makes handle pass tricks easier.<\/li>\r\n<li>Push Button Spreader Bar<br \/>\r\nThe push button supports the quick assembly of the harness. There is no need to assemble all velcro strips at the buckle. Simply close the metal ring in the spreader bar, adjust the belt and - here we go!<\/li>\r\n<li>Belt Garage<br \/>\r\nPrevents from loose tottering of the belt.<\/li>\r\n<li>Protection Pads<br \/>\r\nA solid, neoprene padded board that keeps the harness hook away from the body.<\/li>\r\n<li>Contour shape<br \/>\r\n  preformed construction<\/li>\r\n<li>Elasto Tec<br \/>\r\nFlexible cutaways in hip harness care for a maximum of flexibility in the rear part of the harness.<\/li>\r\n<li>Soft edges&nbsp; <\/li>\r\n<li>Support Cushion<\/li>\r\n<li>Twister<\/li>\r\n<li>Wrap Tech<br \/>\r\npreformed construction of the harness that better fits the body.<\/li><\/ul>><\/p>",
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>ION Madtrixx Kite Waist 2011<\/h2><\/div>\r\n<p>New freestyle harness with a lean cut outline and a neoprene inside airbag. Thanks to the elastic cutaways at the rear part of the harness provides a maximum of flexibility. The new contour form with Wrap Tec guarantees a perfect fit.<\/p><br \/>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>Hip Protection<br \/>\r\nThe double layer foam padding protects the bones and all unprotected parts in this area, especially if the body is flexed to the side.<\/li>\r\n<li>Cross Link Webbing<br \/>\r\nUsually, the belt ends somewhere behind the buckle. A belt without cease along the rear side of the harness guarantees a better load balancing.<\/li>\r\n<li>Internal Flex Belt<br \/>\r\n  Flexible hip belt. Backs a safe, straight and comfortable seat of the harness.<\/li>\r\n<li>Handle Pass Leash Slider<br \/>\r\nA small ring of metal can slip the leash along the back of the harness and makes handle pass tricks easier.<\/li>\r\n<li>Push Button Spreader Bar<br \/>\r\nThe push button supports the quick assembly of the harness. There is no need to assemble all velcro strips at the buckle. Simply close the metal ring in the spreader bar, adjust the belt and - here we go!<\/li>\r\n<li>Belt Garage<br \/>\r\nPrevents from loose tottering of the belt.<\/li>\r\n<li>Protection Pads<br \/>\r\nA solid, neoprene padded board that keeps the harness hook away from the body.<\/li>\r\n<li>Contour shape<br \/>\r\n  preformed construction<\/li>\r\n<li>Elasto Tec<br \/>\r\nFlexible cutaways in hip harness care for a maximum of flexibility in the rear part of the harness.<\/li>\r\n<li>Soft edges&nbsp; <\/li>\r\n<li>Support Cushion<\/li>\r\n<li>Twister<\/li>\r\n<li>Wrap Tech<br \/>\r\npreformed construction of the harness that better fits the body.<\/li><\/ul><\/p>",
                 "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
                 "maincategoryurl": "en\/Kiteboarding\/Harnesses\/",
                 "mak_boost_norm_insert": 1,
@@ -581,6 +598,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "902",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -624,14 +642,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "1",
-                    "OXMAXDELTIME": "3",
-                    "OXDELTIMEUNIT": "DAY",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "5",
+                    "OXDELTIMEUNIT": "WEEK",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "ION",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/ion_madtrixx_kite_waist_2011_1.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/ion_madtrixx_kite_waist_2011_1.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -653,7 +672,7 @@
                 "insert": "XXXX-XX-XX",
                 "isPseudo": false,
                 "isVariant": false,
-                "longdesc": "<div class=\"product_title_big\">\r\n<h2>ION Madtrixx Kite Waist<\/h2><\/div>\r\n<p>New freestyle harness with a lean cut outline and a neoprene inside airbag. Thanks to the elastic cutaways at the rear part of the harness provides a maximum of flexibility. The new contour form with Wrap Tec guarantees a perfect fit.<\/p><br \/>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>Hip Protection<br \/>\r\nThe double layer foam padding protects the bones and all unprotected parts in this area, especially if the body is flexed to the side.<\/li>\r\n<li>Cross Link Webbing<br \/>\r\nUsually, the belt ends somewhere behind the buckle. A belt without cease along the rear side of the harness guarantees a better load balancing.<\/li>\r\n<li>Internal Flex Belt<br \/>\r\n  Flexible hip belt. Backs a safe, straight and comfortable seat of the harness.<\/li>\r\n<li>Handle Pass Leash Slider<br \/>\r\nA small ring of metal can slip the leash along the back of the harness and makes handle pass tricks easier.<\/li>\r\n<li>Push Button Spreader Bar<br \/>\r\nThe push button supports the quick assembly of the harness. There is no need to assemble all velcro strips at the buckle. Simply close the metal ring in the spreader bar, adjust the belt and - here we go!<\/li>\r\n<li>Belt Garage<br \/>\r\nPrevents from loose tottering of the belt.<\/li>\r\n<li>Protection Pads<br \/>\r\nA solid, neoprene padded board that keeps the harness hook away from the body.<\/li>\r\n<li>Contour shape<br \/>\r\n  preformed construction<\/li>\r\n<li>Elasto Tec<br \/>\r\nFlexible cutaways in hip harness care for a maximum of flexibility in the rear part of the harness.<\/li>\r\n<li>Soft edges&nbsp; <\/li>\r\n<li>Support Cushion<\/li>\r\n<li>Twister<\/li>\r\n<li>Wrap Tech<br \/>\r\npreformed construction of the harness that better fits the body.<\/li><\/ul>><\/p>",
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>ION Madtrixx Kite Waist 2011<\/h2><\/div>\r\n<p>New freestyle harness with a lean cut outline and a neoprene inside airbag. Thanks to the elastic cutaways at the rear part of the harness provides a maximum of flexibility. The new contour form with Wrap Tec guarantees a perfect fit.<\/p><br \/>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>Hip Protection<br \/>\r\nThe double layer foam padding protects the bones and all unprotected parts in this area, especially if the body is flexed to the side.<\/li>\r\n<li>Cross Link Webbing<br \/>\r\nUsually, the belt ends somewhere behind the buckle. A belt without cease along the rear side of the harness guarantees a better load balancing.<\/li>\r\n<li>Internal Flex Belt<br \/>\r\n  Flexible hip belt. Backs a safe, straight and comfortable seat of the harness.<\/li>\r\n<li>Handle Pass Leash Slider<br \/>\r\nA small ring of metal can slip the leash along the back of the harness and makes handle pass tricks easier.<\/li>\r\n<li>Push Button Spreader Bar<br \/>\r\nThe push button supports the quick assembly of the harness. There is no need to assemble all velcro strips at the buckle. Simply close the metal ring in the spreader bar, adjust the belt and - here we go!<\/li>\r\n<li>Belt Garage<br \/>\r\nPrevents from loose tottering of the belt.<\/li>\r\n<li>Protection Pads<br \/>\r\nA solid, neoprene padded board that keeps the harness hook away from the body.<\/li>\r\n<li>Contour shape<br \/>\r\n  preformed construction<\/li>\r\n<li>Elasto Tec<br \/>\r\nFlexible cutaways in hip harness care for a maximum of flexibility in the rear part of the harness.<\/li>\r\n<li>Soft edges&nbsp; <\/li>\r\n<li>Support Cushion<\/li>\r\n<li>Twister<\/li>\r\n<li>Wrap Tech<br \/>\r\npreformed construction of the harness that better fits the body.<\/li><\/ul><\/p>",
                 "maincategory": "0f41a4463b227c437f6e6bf57b1697c4",
                 "maincategoryurl": "en\/Kiteboarding\/Harnesses\/",
                 "mak_boost_norm_insert": 1,
@@ -700,6 +719,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "903",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -743,14 +763,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "3",
-                    "OXMAXDELTIME": "4",
+                    "OXMINDELTIME": "1",
+                    "OXMAXDELTIME": "3",
                     "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": null,
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/kitefix_self-adhesive_dacron_1.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/kitefix_self-adhesive_dacron_1.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -790,7 +811,7 @@
                 "insert": "XXXX-XX-XX",
                 "isPseudo": false,
                 "isVariant": false,
-                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Sticky Tape Dacron Kitefix<\/h2><\/div>\r\n<div class=\"product_text3\">\r\n<div><span>The self-adhesive Dacron\r\ntape is ideal to boost GluFix and FiberFix repairs at the leading edge or the struts of your kite. You just came from water and detected a tear in the drapery of your kite? Use Dacron sticky tape for a quick and temporary repair. We sell it in white, black, green, red and blue.<\/span><\/div>\r\n<div><span>&nbsp;<\/span><\/div>\r\n<div><span>Each roll is about 5 cm of width and approx. 152 cm long.<\/span><\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p>><\/p><\/div>",
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Sticky Tape Dacron Kitefix<\/h2><\/div>\r\n<div class=\"product_text3\">\r\n<div><span>The self-adhesive Dacron\r\ntape is ideal to boost GluFix and FiberFix repairs at the leading edge or the struts of your kite. You just came from water and detected a tear in the drapery of your kite? Use Dacron sticky tape for a quick and temporary repair. We sell it in white, black, green, red and blue.<\/span><\/div>\r\n<div><span>&nbsp;<\/span><\/div>\r\n<div><span>Each roll is about 5 cm of width and approx. 152 cm long.<\/span><\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p><\/p><\/div>",
                 "maincategory": "fc7e7bd8403448f00a363f60f44da8f2",
                 "maincategoryurl": "en\/Kiteboarding\/Supplies\/",
                 "mak_boost_norm_insert": 1,
@@ -837,6 +858,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "905",
                     "OXSHOPID": "1",
                     "OXPARENTID": "058de8224773a1d5fd54d523f0c823e0",
                     "OXACTIVEFROM": null,
@@ -849,7 +871,7 @@
                     "OXPRICEB": "0",
                     "OXPRICEC": "0",
                     "OXBPRICE": "0",
-                    "OXTPRICE": "499",
+                    "OXTPRICE": "0",
                     "OXUNITNAME": "",
                     "OXUNITQUANTITY": "0",
                     "OXVAT": null,
@@ -876,18 +898,19 @@
                     "OXVARCOUNT": "0",
                     "OXVARSELECT": "",
                     "OXVARMINPRICE": "479",
-                    "OXVARMAXPRICE": "479",
+                    "OXVARMAXPRICE": "0",
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "1",
-                    "OXMAXDELTIME": "3",
-                    "OXDELTIMEUNIT": "WEEK",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "4",
+                    "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "Cabrinha",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/cabrinha_caliber_2011.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/cabrinha_caliber_2011.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -908,7 +931,7 @@
                 "insert": "XXXX-XX-XX",
                 "isPseudo": true,
                 "isVariant": true,
-                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Cabrinha Caliber - Board only<\/h2><\/div>Caliber means business with Freestyle and Freeride. If you want to kite fast and hard Caliber is for you!<br \/>\r\n<br \/>Caliber has a more flat rocker line than Custom that makes it firm and agile. It accelerates very quickly and keeps the speed even through wind holes. The outline of Caliber and the flex gradient will bring you hardest pop during the jump no matter if you go hooked or unhooked. The quad concave underwater hull gives you a maximum grip at strong wind and in choppy water.\r\n<div>&nbsp;<\/div>\r\n<div>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>a new unidirectional carbon layer for a strong pop and quick response<\/li>\r\n<li>different 3D top sheet design by size for more constant flex and pop<\/li>\r\n<li>a digitally printed surface with metallic effect: a digitally printed basis for longer life period<\/li>\r\n<li>24&#8216;&#8216; (61 cm) \/ 26&#8216;&#8216; (66 cm) \/ 28&#8216;&#8216; (71 cm) stand option<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Purchased parts package:<\/strong><\/div><br \/>\r\nAll boards are delivered with fins, fin screws and grab handle (+ screws).<br \/>\r\n<br \/>\r\n<div><strong>Sizes:<\/strong><\/div><\/div>\r\n<div><br \/>\r\n   127 x 38<br \/>\r\n   130 x 40<br \/>\r\n   133 x 41<br \/>\r\n   136 x 42<br \/>\r\n   139 x 43<\/div>\r\n<p>&nbsp;<\/p>><\/p>",
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Cabrinha Caliber 2011 - Board only<\/h2><\/div>Caliber means business with Freestyle and Freeride. If you want to kite fast and hard Caliber is for you!<br \/>\r\n<br \/>Caliber has a more flat rocker line than Custom that makes it firm and agile. It accelerates very quickly and keeps the speed even through wind holes. The outline of Caliber and the flex gradient will bring you hardest pop during the jump no matter if you go hooked or unhooked. The quad concave underwater hull gives you a maximum grip at strong wind and in choppy water.\r\n<div>&nbsp;<\/div>\r\n<div>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>a new unidirectional carbon layer for a strong pop and quick response<\/li>\r\n<li>different 3D top sheet design by size for more constant flex and pop<\/li>\r\n<li>a digitally printed surface with metallic effect: a digitally printed basis for longer life period<\/li>\r\n<li>24&#8216;&#8216; (61 cm) \/ 26&#8216;&#8216; (66 cm) \/ 28&#8216;&#8216; (71 cm) stand option<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Purchased parts package:<\/strong><\/div><br \/>\r\nAll boards are delivered with fins, fin screws and grab handle (+ screws).<br \/>\r\n<br \/>\r\n<div><strong>Sizes:<\/strong><\/div><\/div>\r\n<div><br \/>\r\n   127 x 38<br \/>\r\n   130 x 40<br \/>\r\n   133 x 41<br \/>\r\n   136 x 42<br \/>\r\n   139 x 43<\/div>\r\n<p>&nbsp;<\/p><\/p>",
                 "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
                 "maincategoryurl": "en\/Kiteboarding\/Kiteboards\/",
                 "mak_boost_norm_insert": 1,
@@ -940,7 +963,7 @@
                 "stock": 13,
                 "suggest": [],
                 "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "title": "Kiteboard CABRINHA CALIBER",
+                "title": "Kiteboard CABRINHA CALIBER 2011",
                 "url": "X"
             },
             "type": "variant"
@@ -955,6 +978,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "905",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -967,7 +991,7 @@
                     "OXPRICEB": "0",
                     "OXPRICEC": "0",
                     "OXBPRICE": "0",
-                    "OXTPRICE": "499",
+                    "OXTPRICE": "0",
                     "OXUNITNAME": "",
                     "OXUNITQUANTITY": "0",
                     "OXVAT": null,
@@ -994,18 +1018,19 @@
                     "OXVARCOUNT": "0",
                     "OXVARSELECT": "",
                     "OXVARMINPRICE": "479",
-                    "OXVARMAXPRICE": "479",
+                    "OXVARMAXPRICE": "0",
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "1",
-                    "OXMAXDELTIME": "3",
-                    "OXDELTIMEUNIT": "WEEK",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "4",
+                    "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "Cabrinha",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/cabrinha_caliber_2011.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/cabrinha_caliber_2011.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -1027,7 +1052,7 @@
                 "insert": "XXXX-XX-XX",
                 "isPseudo": false,
                 "isVariant": false,
-                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Cabrinha Caliber - Board only<\/h2><\/div>Caliber means business with Freestyle and Freeride. If you want to kite fast and hard Caliber is for you!<br \/>\r\n<br \/>Caliber has a more flat rocker line than Custom that makes it firm and agile. It accelerates very quickly and keeps the speed even through wind holes. The outline of Caliber and the flex gradient will bring you hardest pop during the jump no matter if you go hooked or unhooked. The quad concave underwater hull gives you a maximum grip at strong wind and in choppy water.\r\n<div>&nbsp;<\/div>\r\n<div>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>a new unidirectional carbon layer for a strong pop and quick response<\/li>\r\n<li>different 3D top sheet design by size for more constant flex and pop<\/li>\r\n<li>a digitally printed surface with metallic effect: a digitally printed basis for longer life period<\/li>\r\n<li>24&#8216;&#8216; (61 cm) \/ 26&#8216;&#8216; (66 cm) \/ 28&#8216;&#8216; (71 cm) stand option<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Purchased parts package:<\/strong><\/div><br \/>\r\nAll boards are delivered with fins, fin screws and grab handle (+ screws).<br \/>\r\n<br \/>\r\n<div><strong>Sizes:<\/strong><\/div><\/div>\r\n<div><br \/>\r\n   127 x 38<br \/>\r\n   130 x 40<br \/>\r\n   133 x 41<br \/>\r\n   136 x 42<br \/>\r\n   139 x 43<\/div>\r\n<p>&nbsp;<\/p>><\/p>",
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>Cabrinha Caliber 2011 - Board only<\/h2><\/div>Caliber means business with Freestyle and Freeride. If you want to kite fast and hard Caliber is for you!<br \/>\r\n<br \/>Caliber has a more flat rocker line than Custom that makes it firm and agile. It accelerates very quickly and keeps the speed even through wind holes. The outline of Caliber and the flex gradient will bring you hardest pop during the jump no matter if you go hooked or unhooked. The quad concave underwater hull gives you a maximum grip at strong wind and in choppy water.\r\n<div>&nbsp;<\/div>\r\n<div>\r\n<div><strong>Fitting attributes:<\/strong><\/div>\r\n<ul>\r\n<li>a new unidirectional carbon layer for a strong pop and quick response<\/li>\r\n<li>different 3D top sheet design by size for more constant flex and pop<\/li>\r\n<li>a digitally printed surface with metallic effect: a digitally printed basis for longer life period<\/li>\r\n<li>24&#8216;&#8216; (61 cm) \/ 26&#8216;&#8216; (66 cm) \/ 28&#8216;&#8216; (71 cm) stand option<br \/>\r\n<\/li><\/ul>\r\n<div><strong>Purchased parts package:<\/strong><\/div><br \/>\r\nAll boards are delivered with fins, fin screws and grab handle (+ screws).<br \/>\r\n<br \/>\r\n<div><strong>Sizes:<\/strong><\/div><\/div>\r\n<div><br \/>\r\n   127 x 38<br \/>\r\n   130 x 40<br \/>\r\n   133 x 41<br \/>\r\n   136 x 42<br \/>\r\n   139 x 43<\/div>\r\n<p>&nbsp;<\/p><\/p>",
                 "maincategory": "0f4f08358666c54b4fde3d83d2b7ef04",
                 "maincategoryurl": "en\/Kiteboarding\/Kiteboards\/",
                 "mak_boost_norm_insert": 1,
@@ -1059,7 +1084,7 @@
                 "stock": 13,
                 "suggest": [],
                 "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "title": "Kiteboard CABRINHA CALIBER",
+                "title": "Kiteboard CABRINHA CALIBER 2011",
                 "url": "X"
             },
             "type": "product"
@@ -1074,6 +1099,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "906",
                     "OXSHOPID": "1",
                     "OXPARENTID": "058e613db53d782adfc9f2ccb43c45fe",
                     "OXACTIVEFROM": null,
@@ -1117,14 +1143,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "4",
-                    "OXMAXDELTIME": "6",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "4",
                     "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": null,
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/obrien_decade_ct_boot_2010_1.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/obrien_decade_ct_boot_2010_1.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -1145,7 +1172,7 @@
                 "insert": "XXXX-XX-XX",
                 "isPseudo": true,
                 "isVariant": true,
-                "longdesc": "<div class=\"product_title_big\">\r\n<h2>O'Brien Decade CT Boot<\/h2><\/div>The Decade Pro binding is not only a close-toe boot in a very fancy style. The aim was, to integrate the comfort of regular boots into a wake board binding, to stay lightweight and to reach a perfect performance at the water.\r\n<div>&nbsp;<\/div>\r\n<div>The wake board binding keeps it's size, doesn't ease off in a time and fits like a perfect shoe. The ergonomic and absorbing insole provides soft landings.<\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p>><\/p>",
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>O'Brien Decade CT Boot 2010<\/h2><\/div>The Decade Pro binding is not only a close-toe boot in a very fancy style. The aim was, to integrate the comfort of regular boots into a wake board binding, to stay lightweight and to reach a perfect performance at the water.\r\n<div>&nbsp;<\/div>\r\n<div>The wake board binding keeps it's size, doesn't ease off in a time and fits like a perfect shoe. The ergonomic and absorbing insole provides soft landings.<\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p><\/p>",
                 "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
                 "maincategoryurl": "en\/Wakeboarding\/Bindings\/",
                 "mak_boost_norm_insert": 1,
@@ -1177,7 +1204,7 @@
                 "stock": 16,
                 "suggest": [],
                 "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "title": "Binding O'BRIEN DECADE CT",
+                "title": "Binding O'BRIEN DECADE CT 2010",
                 "url": "X"
             },
             "type": "variant"
@@ -1192,6 +1219,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "906",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -1235,14 +1263,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "4",
-                    "OXMAXDELTIME": "6",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "4",
                     "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": null,
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/obrien_decade_ct_boot_2010_1.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/obrien_decade_ct_boot_2010_1.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -1264,7 +1293,7 @@
                 "insert": "XXXX-XX-XX",
                 "isPseudo": false,
                 "isVariant": false,
-                "longdesc": "<div class=\"product_title_big\">\r\n<h2>O'Brien Decade CT Boot<\/h2><\/div>The Decade Pro binding is not only a close-toe boot in a very fancy style. The aim was, to integrate the comfort of regular boots into a wake board binding, to stay lightweight and to reach a perfect performance at the water.\r\n<div>&nbsp;<\/div>\r\n<div>The wake board binding keeps it's size, doesn't ease off in a time and fits like a perfect shoe. The ergonomic and absorbing insole provides soft landings.<\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p>><\/p>",
+                "longdesc": "<div class=\"product_title_big\">\r\n<h2>O'Brien Decade CT Boot 2010<\/h2><\/div>The Decade Pro binding is not only a close-toe boot in a very fancy style. The aim was, to integrate the comfort of regular boots into a wake board binding, to stay lightweight and to reach a perfect performance at the water.\r\n<div>&nbsp;<\/div>\r\n<div>The wake board binding keeps it's size, doesn't ease off in a time and fits like a perfect shoe. The ergonomic and absorbing insole provides soft landings.<\/div>\r\n<p class=\"MsoNormal\"><strong>&nbsp;<\/strong><\/p><\/p>",
                 "maincategory": "0f40c6a077b68c21f164767c4a903fd2",
                 "maincategoryurl": "en\/Wakeboarding\/Bindings\/",
                 "mak_boost_norm_insert": 1,
@@ -1296,7 +1325,7 @@
                 "stock": 16,
                 "suggest": [],
                 "timestamp": "XXXX-XX-XX XX:XX:XX",
-                "title": "Binding O'BRIEN DECADE CT",
+                "title": "Binding O'BRIEN DECADE CT 2010",
                 "url": "X"
             },
             "type": "product"
@@ -1312,6 +1341,7 @@
                 "activeto": null,
                 "additionalData": {
                     "OXID": null,
+                    "OXMAPID": "1118",
                     "OXSHOPID": "1",
                     "OXPARENTID": "4d8e204b50edd16a02f744736e5b0547",
                     "OXACTIVEFROM": null,
@@ -1356,6 +1386,7 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
                     "OXMINDELTIME": "0",
                     "OXMAXDELTIME": "0",
@@ -1425,6 +1456,7 @@
                 "activeto": null,
                 "additionalData": {
                     "OXID": null,
+                    "OXMAPID": "1118",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -1469,6 +1501,7 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
                     "OXMINDELTIME": "0",
                     "OXMAXDELTIME": "0",
@@ -1538,6 +1571,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "956",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -1581,22 +1615,38 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
                     "OXMINDELTIME": "2",
-                    "OXMAXDELTIME": "4",
-                    "OXDELTIMEUNIT": "WEEK",
+                    "OXMAXDELTIME": "3",
+                    "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "Kuyichi",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front(4)_v_pi.jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/front(4)_v_pi.jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
                 "attributeStr": [
                     {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Smoke Gray"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
@@ -1606,22 +1656,7 @@
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
-                        "value": "Smoke Gray"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
                         "value": "Super Blue"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -1701,10 +1736,16 @@
                 ],
                 "attributes": [
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
+                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
+                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau"
+                    },
+                    {
+                        "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
                         "16fd55d02a23f31097ca58eccfeec97c": "Blau",
                         "9438ac75bac3e344628b14bf7ed82c15": "Blau",
-                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34"
                     },
                     {
                         "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
@@ -1713,22 +1754,10 @@
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
+                        "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
                         "16fd55d02a23f31097ca58eccfeec97c": "Super Blue",
-                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
                         "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
-                    },
-                    {
-                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
-                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
-                        "9438ac75bac3e344628b14bf7ed82c15": "Blau"
-                    },
-                    {
-                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Smoke Gray",
-                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
-                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
                     },
                     {
                         "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
@@ -1738,21 +1767,27 @@
                     },
                     {
                         "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
-                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
-                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34"
-                    },
-                    {
-                        "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
                         "16fd55d02a23f31097ca58eccfeec97c": "Smoke Gray",
                         "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
                         "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
                     },
                     {
-                        "d248453369cf82a6a64617f1357089c5": "W 34\/L 34",
+                        "d248453369cf82a6a64617f1357089c5": "W 31\/L 34",
+                        "16fd55d02a23f31097ca58eccfeec97c": "Smoke Gray",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 31\/L 34",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Smoke Gray"
+                    },
+                    {
+                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
                         "16fd55d02a23f31097ca58eccfeec97c": "Super Blue",
-                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 34\/L 34",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30",
                         "9438ac75bac3e344628b14bf7ed82c15": "Super Blue"
+                    },
+                    {
+                        "d248453369cf82a6a64617f1357089c5": "W 30\/L 30",
+                        "16fd55d02a23f31097ca58eccfeec97c": "Blau",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Blau",
+                        "943d32fd45d6eba3e5c8cce511cc0e74": "W 30\/L 30"
                     }
                 ],
                 "category": [
@@ -1818,6 +1853,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "960",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -1861,14 +1897,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "3",
-                    "OXMAXDELTIME": "5",
-                    "OXDELTIMEUNIT": "DAY",
+                    "OXMINDELTIME": "1",
+                    "OXMAXDELTIME": "3",
+                    "OXDELTIMEUNIT": "WEEK",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "Kuyichi",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(2).jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/front_z1(2).jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -2025,6 +2062,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "966",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -2068,6 +2106,7 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
                     "OXMINDELTIME": "3",
                     "OXMAXDELTIME": "5",
@@ -2075,11 +2114,16 @@
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": null,
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(12).jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/front_z1(12).jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
                 "attributeStr": [
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
+                    },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
@@ -2091,14 +2135,9 @@
                         "value": "Clover"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Violet"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XS"
+                        "value": "M"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
@@ -2108,7 +2147,7 @@
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "M"
+                        "value": "XS"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
@@ -2154,27 +2193,15 @@
                 "attributes": [
                     {
                         "0e523da04c67ea53a87092a492db1689": "XL",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
-                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
-                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
-                    },
-                    {
-                        "0e523da04c67ea53a87092a492db1689": "XL",
                         "16fd55d02a23f31097ca58eccfeec97c": "Violet",
                         "9438ac75bac3e344628b14bf7ed82c15": "Violet",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XS",
+                        "0e523da04c67ea53a87092a492db1689": "M",
                         "16fd55d02a23f31097ca58eccfeec97c": "Clover",
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover",
-                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
-                    },
-                    {
-                        "0e523da04c67ea53a87092a492db1689": "XS",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Violet",
-                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS",
-                        "9438ac75bac3e344628b14bf7ed82c15": "Violet"
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
                     },
                     {
                         "0e523da04c67ea53a87092a492db1689": "S",
@@ -2183,16 +2210,10 @@
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover"
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "S",
+                        "0e523da04c67ea53a87092a492db1689": "XS",
                         "16fd55d02a23f31097ca58eccfeec97c": "Violet",
-                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
-                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S"
-                    },
-                    {
-                        "0e523da04c67ea53a87092a492db1689": "M",
-                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
-                        "9438ac75bac3e344628b14bf7ed82c15": "Clover",
-                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "M"
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet"
                     },
                     {
                         "0e523da04c67ea53a87092a492db1689": "M",
@@ -2205,6 +2226,24 @@
                         "16fd55d02a23f31097ca58eccfeec97c": "Clover",
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "L",
                         "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "0e523da04c67ea53a87092a492db1689": "XS",
+                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
+                    },
+                    {
+                        "0e523da04c67ea53a87092a492db1689": "XL",
+                        "16fd55d02a23f31097ca58eccfeec97c": "Clover",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XL",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Clover"
+                    },
+                    {
+                        "0e523da04c67ea53a87092a492db1689": "S",
+                        "16fd55d02a23f31097ca58eccfeec97c": "Violet",
+                        "9438ac75bac3e344628b14bf7ed82c15": "Violet",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S"
                     },
                     {
                         "0e523da04c67ea53a87092a492db1689": "L",
@@ -2276,6 +2315,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "985",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -2319,14 +2359,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "4",
-                    "OXMAXDELTIME": "6",
+                    "OXMINDELTIME": "3",
+                    "OXMAXDELTIME": "5",
                     "OXDELTIMEUNIT": "WEEK",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": "Kuyichi",
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(7).jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/front_z1(7).jpg"
                 },
                 "attributeFloat": [],
                 "attributeInt": [],
@@ -2505,6 +2546,7 @@
                 "activefrom": null,
                 "activeto": null,
                 "additionalData": {
+                    "OXMAPID": "992",
                     "OXSHOPID": "1",
                     "OXPARENTID": "",
                     "OXACTIVEFROM": null,
@@ -2548,14 +2590,15 @@
                     "OXNONMATERIAL": "0",
                     "OXFREESHIPPING": "0",
                     "OXVENDORID": "a57c56e3ba710eafb2225e98f058d989",
+                    "OXPIXIEXPORTED": null,
                     "OXRATINGCNT": "0",
-                    "OXMINDELTIME": "3",
-                    "OXMAXDELTIME": "4",
-                    "OXDELTIMEUNIT": "WEEK",
+                    "OXMINDELTIME": "2",
+                    "OXMAXDELTIME": "3",
+                    "OXDELTIMEUNIT": "DAY",
                     "OXUPDATEPRICETIME": null,
                     "OXISDOWNLOADABLE": "0",
                     "manufacturer_title": null,
-                    "picture_url_main": "http:\/\/localhost.local\/out\/pictures\/master\/product\/1\/front_z1(15).jpg"
+                    "picture_url_main": "\/out\/pictures\/master\/product\/1\/front_z1(15).jpg"
                 },
                 "attributeFloat": [
                     {
@@ -2605,12 +2648,12 @@
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XS"
+                        "value": "S"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "S"
+                        "value": "XS"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
@@ -2673,20 +2716,20 @@
                         "76c6ffafa93e97616bed9556f4cf56ae": 2.1
                     },
                     {
-                        "0e523da04c67ea53a87092a492db1689": "XS",
-                        "16fd55d02a23f31097ca58eccfeec97c": "White",
-                        "df3e95af29221b89021a3ae7d6e44ee0": 21,
-                        "76c6ffafa93e97616bed9556f4cf56ae": 2.1,
-                        "9438ac75bac3e344628b14bf7ed82c15": "White",
-                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
-                    },
-                    {
                         "0e523da04c67ea53a87092a492db1689": "S",
                         "16fd55d02a23f31097ca58eccfeec97c": "White",
                         "df3e95af29221b89021a3ae7d6e44ee0": 21,
                         "76c6ffafa93e97616bed9556f4cf56ae": 2.1,
                         "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "S",
                         "9438ac75bac3e344628b14bf7ed82c15": "White"
+                    },
+                    {
+                        "0e523da04c67ea53a87092a492db1689": "XS",
+                        "16fd55d02a23f31097ca58eccfeec97c": "White",
+                        "df3e95af29221b89021a3ae7d6e44ee0": 21,
+                        "76c6ffafa93e97616bed9556f4cf56ae": 2.1,
+                        "9438ac75bac3e344628b14bf7ed82c15": "White",
+                        "6b6bc9f9ab8b153d9bebc2ad6ca2aa13": "XS"
                     },
                     {
                         "0e523da04c67ea53a87092a492db1689": "M",

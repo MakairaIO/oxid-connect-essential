@@ -26,6 +26,9 @@ class ReviewService
 
         /** @var ListModel $reviews */
         $reviews = $product->getReviews();
+        if (null === $reviews) {
+            return [];
+        }
         $reviewsArray = $reviews->getArray();
 
         if ($limit > 0) {

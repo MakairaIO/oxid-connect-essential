@@ -6,7 +6,6 @@ use Makaira\OxidConnectEssential\Exception\InvalidCartItem;
 use Makaira\OxidConnectEssential\Service\CartService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 use OxidEsales\Eshop\Application\Model\Basket;
-use OxidEsales\EshopCommunity\Core\Registry;
 
 class CartServiceTest extends IntegrationTestCase
 {
@@ -21,7 +20,7 @@ class CartServiceTest extends IntegrationTestCase
         self::assertEquals([
             [
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
-                "name" => "Kite NBK EVO",
+                "name" => "Kite NBK EVO 2010",
                 "price" => 699.0,
                 "base_price" => "699",
                 "quantity" => 20.0,
@@ -34,7 +33,7 @@ class CartServiceTest extends IntegrationTestCase
         self::assertEquals([
             [
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
-                "name" => "Kite NBK EVO",
+                "name" => "Kite NBK EVO 2010",
                 "price" => 699.0,
                 "base_price" => "699",
                 "quantity" => 15.0,

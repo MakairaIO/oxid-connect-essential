@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Result;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleCategory;
@@ -21,7 +22,10 @@ class ArticleCategoryTest extends UnitTestCase
             $this->createMock(TableViewNameGenerator::class)
         );
 
-        $actual = $dataExtractor->supports(new Object2Category());
+        $model = new Object2Category();
+        $model->assign(['oxobjectid' => 'phpunit_article']);
+
+        $actual = $dataExtractor->supports($model);
         $this->assertTrue($actual);
     }
 
@@ -32,7 +36,10 @@ class ArticleCategoryTest extends UnitTestCase
             $this->createMock(TableViewNameGenerator::class)
         );
 
-        $actual = $dataExtractor->supports(new OxidManufacturer());
+        $model = new OxidManufacturer();
+        $model->setId('phpunit_manufacturer');
+
+        $actual = $dataExtractor->supports($model);
         $this->assertFalse($actual);
     }
 
@@ -47,16 +54,18 @@ class ArticleCategoryTest extends UnitTestCase
      */
     public function testReturnsRevisionObject(string $parentId, string $expectedType)
     {
-        $statementMock = $this->createMock(Statement::class);
-        $statementMock
-            ->expects($this->once())
-            ->method('execute')
-            ->with(['phpunit42']);
-
-        $statementMock
+        $resultMock = $this->createMock(Result::class);
+        $resultMock
             ->expects($this->once())
             ->method('fetchOne')
             ->willReturn($parentId);
+
+        $statementMock = $this->createMock(Statement::class);
+        $statementMock
+            ->expects($this->once())
+            ->method('executeQuery')
+            ->with(['phpunit42'])
+            ->willReturn($resultMock);
 
         $sql = "SELECT `OXPARENTID` FROM `phpunit_oxarticles_de` WHERE `OXID` = ?";
 
