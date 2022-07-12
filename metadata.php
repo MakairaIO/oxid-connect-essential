@@ -113,11 +113,4 @@ $aModule = [
     'events'      => [
         'onActivate' => ModuleCore\ModuleEvents::class . '::onActivate',
     ],
-    'blocks'      => [
-        [
-            'template' => 'layout/header.tpl',
-            'block'    => 'layout_header_bottom',
-            'file'     => 'views/blocks/layout/header_tpl/layout_header_bottom.tpl',
-        ],
-    ],
 ];
