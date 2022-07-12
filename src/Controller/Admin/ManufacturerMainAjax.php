@@ -94,7 +94,7 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      * @return void
      * @throws ConnectionException
      */
-    private function executeTouches(array $productIds, string $manufacturerId): void
+    private function executeTouches(array $productIds, ?string $manufacturerId = null): void
     {
         $container = $this->getSymfonyContainer();
 
@@ -113,7 +113,9 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
             );
         }
 
-        $revisionRepository->touchManufacturer($manufacturerId);
+        if (null !== $manufacturerId) {
+            $revisionRepository->touchManufacturer($manufacturerId);
+        }
     }
 
     /**

@@ -34,7 +34,7 @@ class ArticleAttributeAjax extends ArticleAttributeAjax_parent
     {
         parent::onArticleAttributeRelationChange($articleId);
 
-        if (null!== $articleId && $this->isRemove) {
+        if (null !== $articleId && $this->isRemove) {
             /** @var ContainerInterface $container */
             $container = $this->getSymfonyContainer();
 

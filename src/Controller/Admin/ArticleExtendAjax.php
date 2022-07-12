@@ -22,15 +22,17 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
     {
         parent::setAsDefault();
 
-        /** @var string $productId */
+        /** @var string|null $productId */
         $productId = Registry::getRequest()->getRequestParameter("oxid");
 
-        /** @var ContainerInterface $container */
-        $container = $this->getSymfonyContainer();
+        if (null !== $productId) {
+            /** @var ContainerInterface $container */
+            $container = $this->getSymfonyContainer();
 
-        /** @var RevisionRepository $revisionRepo */
-        $revisionRepo = $container->get(RevisionRepository::class);
-        $revisionRepo->touchProduct($productId);
+            /** @var RevisionRepository $revisionRepo */
+            $revisionRepo = $container->get(RevisionRepository::class);
+            $revisionRepo->touchProduct($productId);
+        }
     }
 
     /**
