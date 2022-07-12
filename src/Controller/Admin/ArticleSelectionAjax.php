@@ -34,7 +34,9 @@ class ArticleSelectionAjax extends ArticleSelectionAjax_parent
      */
     protected function onArticleSelectionListChange($articleId): void
     {
-        if ($this->isRemove) {
+        parent::onArticleSelectionListChange($articleId);
+
+        if (null !== $articleId && $this->isRemove) {
             /** @var ContainerInterface $container */
             $container = $this->getSymfonyContainer();
 

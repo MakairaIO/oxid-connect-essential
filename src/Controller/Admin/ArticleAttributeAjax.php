@@ -26,13 +26,15 @@ class ArticleAttributeAjax extends ArticleAttributeAjax_parent
     /**
      * Method is used to bind to attribute and article relation change action.
      *
-     * @param string $articleId
+     * @param ?string $articleId
      *
      * @throws \Doctrine\DBAL\Exception
      */
     protected function onArticleAttributeRelationChange($articleId): void
     {
-        if ($this->isRemove) {
+        parent::onArticleAttributeRelationChange($articleId);
+
+        if (null!== $articleId && $this->isRemove) {
             /** @var ContainerInterface $container */
             $container = $this->getSymfonyContainer();
 

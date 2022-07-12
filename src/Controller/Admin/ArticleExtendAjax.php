@@ -9,6 +9,7 @@ use OxidEsales\Eshop\Core\Registry;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 use function array_map;
+use function array_values;
 
 class ArticleExtendAjax extends ArticleExtendAjax_parent
 {
@@ -50,12 +51,14 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
 
         /** @var RevisionRepository $revisionRepo */
         $revisionRepo = $container->get(RevisionRepository::class);
-        $revisionRepo->touchProduct($productId);
+        if (null !== $productId) {
+            $revisionRepo->touchProduct($productId);
+        }
 
         $revisionRepo->storeRevisions(
             array_map(
                 static fn ($categoryId) => new Revision(Revision::TYPE_CATEGORY, $categoryId),
-                $categoriesToRemove
+                array_values(array_filter((array) $categoriesToRemove))
             )
         );
     }
