@@ -7,6 +7,9 @@ use Makaira\OxidConnectEssential\Service\CartService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 use OxidEsales\Eshop\Application\Model\Basket;
 
+use function array_map;
+use function preg_replace;
+
 class CartServiceTest extends IntegrationTestCase
 {
     public function test()
@@ -17,29 +20,53 @@ class CartServiceTest extends IntegrationTestCase
 
         // Add a product to cart
         $cartService->addProductToCart('b56597806428de2f58b1c6c7d3e0e093', 20);
-        self::assertEquals([
+        $expected = [
             [
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
-                "name" => "Kite NBK EVO 2010",
-                "price" => 699.0,
-                "base_price" => "699",
-                "quantity" => 20.0,
-                "image_path" => 'http://localhost.local/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg'
-            ]
-        ], $cartService->getCartItems());
+                "name"         => "Kite NBK EVO 2010",
+                "price"        => 699.0,
+                "base_price"   => "699",
+                "quantity"     => 20.0,
+                "image_path"   => '/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg',
+            ],
+        ];
+
+        $actual = $cartService->getCartItems();
+        $actual = array_map(
+            static function ($entry) {
+                $entry['image_path'] = preg_replace('@^.*(/out/pictures/)@', '$1', $entry['image_path']);
+
+                return $entry;
+            },
+            $actual
+        );
+
+        self::assertEquals($expected, $actual);
 
         // Add a product to cart
         $cartService->updateCartItem('5f62f5daee9ecb4b4389918a2b070643', 15);
-        self::assertEquals([
+        $expected = [
             [
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
-                "name" => "Kite NBK EVO 2010",
-                "price" => 699.0,
-                "base_price" => "699",
-                "quantity" => 15.0,
-                "image_path" => 'http://localhost.local/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg'
-            ]
-        ], $cartService->getCartItems());
+                "name"         => "Kite NBK EVO 2010",
+                "price"        => 699.0,
+                "base_price"   => "699",
+                "quantity"     => 15.0,
+                "image_path"   => '/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg',
+            ],
+        ];
+
+        $actual = $cartService->getCartItems();
+        $actual = array_map(
+            static function ($entry) {
+                $entry['image_path'] = preg_replace('@^.*(/out/pictures/)@', '$1', $entry['image_path']);
+
+                return $entry;
+            },
+            $actual
+        );
+
+        self::assertEquals($expected, $actual);
 
         // Add a product to cart
         $cartService->removeCartItem('5f62f5daee9ecb4b4389918a2b070643');
