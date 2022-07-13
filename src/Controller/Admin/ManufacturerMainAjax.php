@@ -2,16 +2,13 @@
 
 namespace Makaira\OxidConnectEssential\Controller\Admin;
 
+use Doctrine\DBAL;
 use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\ConnectionException;
-use Doctrine\DBAL\Driver\Exception as DBALDriverException;
-use Doctrine\DBAL\Driver\Result;
-use Doctrine\DBAL\Exception as DBALException;
-use Doctrine\DBAL\ParameterType;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Registry;
+use Psr\Container;
 
 use function array_map;
 use function implode;
@@ -26,9 +23,11 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
 
     /**
      * @return void
-     * @throws ConnectionException
-     * @throws DBALDriverException
-     * @throws DBALException
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     public function addManufacturer()
     {
@@ -62,25 +61,27 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      * @param array $productIds
      *
      * @return array<string>
-     * @throws DBALDriverException
-     * @throws DBALException
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     private function addParentIds(array $productIds): array
     {
-        /** @var Connection $connection */
-        $connection = $this->getSymfonyContainer()->get(Connection::class);
+        /** @var DBAL\Connection $connection */
+        $connection = $this->getSymfonyContainer()->get(DBAL\Connection::class);
 
         /** @var string $productView */
         $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
 
         $sqlProductIds = implode(
             ',',
-            array_map(static fn($objectId) => $connection->quote($objectId, ParameterType::STRING), $productIds)
+            array_map(static fn($objectId) => $connection->quote($objectId, DBAL\ParameterType::STRING), $productIds)
         );
 
         $query = "SELECT a.OXID, a.OXPARENTID FROM {$productView} a WHERE a.OXID IN ($sqlProductIds)";
 
-        /** @var Result $resultStatement */
+        /** @var DBAL\Result $resultStatement */
         $resultStatement = $connection->executeQuery($query);
 
         /** @var array<string> $result */
@@ -90,11 +91,13 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
     }
 
     /**
-     * @param array  $productIds
-     * @param string $manufacturerId
+     * @param array       $productIds
+     * @param string|null $manufacturerId
      *
      * @return void
-     * @throws ConnectionException
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
      */
     private function executeTouches(array $productIds, ?string $manufacturerId = null): void
     {
@@ -122,9 +125,11 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
 
     /**
      * @return void
-     * @throws ConnectionException
-     * @throws DBALDriverException
-     * @throws DBALException
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     public function removeManufacturer(): void
     {
@@ -142,7 +147,7 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
             $oxidQuery = $this->callPSR12Incompatible('_getQuery');
             $query     = "SELECT {$productView}.OXID, {$productView}.OXPARENTID {$oxidQuery}";
 
-            /** @var Result $resultStatement */
+            /** @var DBAL\Result $resultStatement */
             $resultStatement = $connection->executeQuery($query);
             $changedIds      = $resultStatement->fetchAllAssociative();
         } else {
