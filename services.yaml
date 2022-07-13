@@ -141,26 +141,26 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Product\ActiveModifier:
     bind:
-      $model: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article")'
+      $modelClass: '@="OxidEsales\\Eshop\\Application\\Model\\Article"'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Category\ActiveModifier:
     bind:
-      $model: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Category")'
+      $modelClass: '@="OxidEsales\\Eshop\\Application\\Model\\Category"'
     tags:
       - { name: 'makaira.importer.modifier.category', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Manufacturer\ActiveModifier:
     bind:
-      $model: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Manufacturer")'
+      $modelClass: '@="OxidEsales\\Eshop\\Application\\Model\\Manufacturer"'
     tags:
       - { name: 'makaira.importer.modifier.manufacturer', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Common\AttributeModifier:
     bind:
-      $activeSnippet: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article").getSqlActiveSnippet(true)'
+      $modelClass: '@="OxidEsales\\Eshop\\Application\\Model\\Article"'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
@@ -271,7 +271,7 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Product\VariantAttributesModifier:
     bind:
-      $activeSnippet: '@=service("OxidEsales\\Eshop\\Core\\UtilsObject").oxNew("OxidEsales\\Eshop\\Application\\Model\\Article").getSqlActiveSnippet(true)'
+      $modelClass: '@="OxidEsales\\Eshop\\Application\\Model\\Article"'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 

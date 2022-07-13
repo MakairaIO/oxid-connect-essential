@@ -8,6 +8,7 @@ use Makaira\OxidConnectEssential\Modifier\Manufacturer\ActiveModifier;
 use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer as ManufacturerType;
 use OxidEsales\Eshop\Application\Model\Manufacturer;
 use OxidEsales\TestingLibrary\UnitTestCase;
+use OxidEsales\Eshop\Core\Registry as EshopRegistry;
 
 class ActiveModifierTest extends UnitTestCase
 {
@@ -33,7 +34,9 @@ class ActiveModifierTest extends UnitTestCase
         $modelMock->method('getCoreTableName')
             ->willReturn('oxcategories_test');
 
-        $modifier = new ActiveModifier($databaseMock, $modelMock);
+        EshopRegistry::getUtilsObject()::setClassInstance(Manufacturer::class, $modelMock);
+
+        $modifier = new ActiveModifier($databaseMock, Manufacturer::class);
         $type = new ManufacturerType(['id' => 42, 'active' => false]);
         $currentType = $modifier->apply($type);
 
@@ -62,7 +65,9 @@ class ActiveModifierTest extends UnitTestCase
         $modelMock->method('getCoreTableName')
             ->willReturn('oxcategories_test');
 
-        $modifier = new ActiveModifier($databaseMock, $modelMock);
+        EshopRegistry::getUtilsObject()::setClassInstance(Manufacturer::class, $modelMock);
+
+        $modifier = new ActiveModifier($databaseMock, Manufacturer::class);
         $type = new ManufacturerType(['id' => 42, 'active' => true]);
         $currentType = $modifier->apply($type);
 

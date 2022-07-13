@@ -10,20 +10,29 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Product\Product;
 use OxidEsales\Eshop\Core\Model\BaseModel;
+use Makaira\OxidConnectEssential\SymfonyContainerTrait;
+
 
 abstract class AbstractActiveModifier extends Modifier
 {
-    /**
-     * @var string
-     */
-    private string $activeSnippet;
+    use SymfonyContainerTrait;
 
     /**
      * @var string
      */
-    private string $tableName;
+    private $activeSnippet = null;
 
-    private BaseModel $model;
+    /**
+     * @var string
+     */
+    private $tableName = null;
+
+    private string $modelClass;
+
+    /**
+     * @var BaseModel
+     */
+    private $model = null;
 
     private Connection $database;
 
@@ -31,12 +40,10 @@ abstract class AbstractActiveModifier extends Modifier
      * @param Connection $database
      * @param BaseModel  $model
      */
-    public function __construct(Connection $database, BaseModel $model)
+    public function __construct(Connection $database, string $modelClass)
     {
-        $this->database      = $database;
-        $this->model         = $model;
-        $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
-        $this->tableName     = (string) $this->model->getCoreTableName();
+        $this->database   = $database;
+        $this->modelClass = $modelClass;
     }
 
     /**
@@ -50,6 +57,8 @@ abstract class AbstractActiveModifier extends Modifier
      */
     public function apply(Type $product)
     {
+        $this->safeGuard();
+
         $sql = "SELECT COUNT(OXID) > 0
             FROM {$this->tableName}
             WHERE OXID = '{$product->id}' AND {$this->activeSnippet}";
@@ -59,5 +68,19 @@ abstract class AbstractActiveModifier extends Modifier
         $product->active = (bool) $resultStatement->fetchOne();
 
         return $product;
+    }
+
+    protected function safeGuard(): void
+    {
+        if (!$this->model instanceof BaseModel) {
+            $this->model = $this->getSymfonyContainer()->get(\OxidEsales\Eshop\Core\UtilsObject::class)
+                ->oxNew($this->modelClass);
+        }
+        if (!$this->activeSnippet) {
+            $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
+        }
+        if (!$this->tableName) {
+            $this->tableName = (string) $this->model->getCoreTableName();
+        }
     }
 }
