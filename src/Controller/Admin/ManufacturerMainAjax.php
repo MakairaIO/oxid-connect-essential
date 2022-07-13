@@ -109,12 +109,12 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
         /** @var RevisionRepository $revisionRepository */
         $revisionRepository = $container->get(RevisionRepository::class);
 
-        if (!empty($productIds)) {
+        if (!empty($productIds) && array_key_exists('OXID', $productIds)) {
             $revisionRepository->storeRevisions(
                 array_map(
-                    static fn($changedProduct) => new Revision(
-                        $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
-                        $changedProduct['OXID']
+                    static fn($productIds) => new Revision(
+                        $productIds['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
+                        $productIds['OXID']
                     ),
                     $productIds
                 )
