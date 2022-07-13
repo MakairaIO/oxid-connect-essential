@@ -3,12 +3,12 @@
 namespace Makaira\OxidConnectEssential\Controller\Admin;
 
 use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
-use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
+use Psr\Container;
+use Doctrine\DBAL;
 
 use function array_map;
 
@@ -37,8 +37,11 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
     /**
      * @param string $categoryId
      *
-     * @throws DBALDriverException
-     * @throws DBALException
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     protected function onCategoryChange($categoryId): void
     {

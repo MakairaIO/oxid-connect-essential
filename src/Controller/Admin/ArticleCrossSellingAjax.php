@@ -6,6 +6,7 @@ use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Registry;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Doctrine\DBAL;
 
 class ArticleCrossSellingAjax extends ArticleCrossSellingAjax_parent
 {
@@ -13,6 +14,8 @@ class ArticleCrossSellingAjax extends ArticleCrossSellingAjax_parent
 
     /**
      * @return void
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     public function removeArticleCross()
     {

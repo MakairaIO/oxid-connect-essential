@@ -126,6 +126,9 @@ services:
   Makaira\OxidConnectEssential\Service\TrackingRenderService:
     public: true
 
+  Makaira\OxidConnectEssential\Entity\RevisionRepository:
+    public: true
+
   ### Modifier ###
 
   Makaira\OxidConnectEssential\Modifier\Category\HierarchyModifier:

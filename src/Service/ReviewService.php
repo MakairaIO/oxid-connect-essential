@@ -24,7 +24,7 @@ class ReviewService
             throw new Exception("Failed loading product");
         }
 
-        /** @var ListModel $reviews */
+        /** @var ListModel|null $reviews */
         $reviews = $product->getReviews();
         if (null === $reviews) {
             return [];

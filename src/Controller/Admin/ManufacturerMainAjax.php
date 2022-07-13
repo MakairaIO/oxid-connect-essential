@@ -47,13 +47,15 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
                     "SELECT {$productView}.OXID, {$productView}.OXPARENTID " . $this->callPSR12Incompatible('_getQuery')
                 )
             );
-        } else {
+        } elseif (!empty($productIds)) {
             $changedIds = $this->addParentIds($productIds);
         }
 
         parent::addManufacturer();
 
-        $this->executeTouches($changedIds, $manufacturerId);
+        if (!empty($changedIds)) {
+            $this->executeTouches($changedIds, $manufacturerId);
+        }
     }
 
     /**

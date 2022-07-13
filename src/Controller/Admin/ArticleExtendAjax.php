@@ -7,6 +7,8 @@ use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Registry;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Doctrine\DBAL;
+use Psr\Container;
 
 use function array_map;
 use function array_values;
@@ -41,9 +43,11 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
      * @param array<string> $categoriesToRemove
      * @param string        $productId
      *
-     * @throws \Doctrine\DBAL\ConnectionException
-     * @throws \Doctrine\DBAL\Driver\Exception
-     * @throws \Doctrine\DBAL\Exception
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     public function onCategoriesRemoval($categoriesToRemove, $productId): void
     {

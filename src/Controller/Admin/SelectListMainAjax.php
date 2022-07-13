@@ -10,6 +10,8 @@ use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Registry;
 use Psr\Container\ContainerInterface;
+use Psr\Container;
+use Doctrine\DBAL;
 
 use function array_map;
 use function implode;
@@ -24,7 +26,12 @@ class SelectListMainAjax extends SelectListMainAjax_parent
     use SymfonyContainerTrait;
 
     /**
-     * Removes article from Selection list
+     * @return void
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     public function removeArtFromSel(): void
     {

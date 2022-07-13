@@ -9,7 +9,8 @@ use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Registry;
-use Psr\Container\ContainerInterface;
+use Psr\Container;
+use Doctrine\DBAL;
 
 use function array_map;
 
@@ -21,9 +22,17 @@ class AttributeMainAjax extends AttributeMainAjax_parent
     use PSR12WrapperTrait;
     use SymfonyContainerTrait;
 
+    /**
+     * @return void
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
+     */
     public function removeAttrArticle(): void
     {
-        /** @var ContainerInterface $container */
+        /** @var Container\ContainerInterface $container */
         $container = $this->getSymfonyContainer();
 
         /** @var Connection $connection */
