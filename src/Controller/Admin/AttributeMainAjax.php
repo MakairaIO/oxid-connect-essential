@@ -5,6 +5,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\ParameterType;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
@@ -36,7 +37,9 @@ class AttributeMainAjax extends AttributeMainAjax_parent
         $container = $this->getSymfonyContainer();
 
         /** @var Connection $connection */
-        $connection = $container->get(Connection::class);
+        $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
+            ->create()
+            ->getConnection();
 
         /** @var string $attributeView */
         $attributeView = $this->callPSR12Incompatible('_getViewName', 'oxobject2attribute');

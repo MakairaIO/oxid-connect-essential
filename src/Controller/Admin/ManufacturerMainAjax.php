@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 
 use Doctrine\DBAL;
 use Doctrine\DBAL\Connection;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
@@ -68,8 +69,10 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     private function addParentIds(array $productIds): array
     {
-        /** @var DBAL\Connection $connection */
-        $connection = $this->getSymfonyContainer()->get(DBAL\Connection::class);
+        /** @var Connection $connection */
+        $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
+            ->create()
+            ->getConnection();
 
         /** @var string $productView */
         $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');
@@ -106,12 +109,12 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
         /** @var RevisionRepository $revisionRepository */
         $revisionRepository = $container->get(RevisionRepository::class);
 
-        if (!empty($productIds)) {
+        if (!empty($productIds) && array_key_exists('OXID', $productIds)) {
             $revisionRepository->storeRevisions(
                 array_map(
-                    static fn($changedProduct) => new Revision(
-                        $changedProduct['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
-                        $changedProduct['OXID']
+                    static fn($productIds) => new Revision(
+                        $productIds['OXPARENTID'] ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
+                        $productIds['OXID']
                     ),
                     $productIds
                 )
@@ -137,7 +140,9 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
         $manufacturerId = Registry::getRequest()->getRequestParameter('oxid');
 
         /** @var Connection $connection */
-        $connection = $this->getSymfonyContainer()->get(Connection::class);
+        $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
+            ->create()
+            ->getConnection();
 
         /** @var string $productView */
         $productView = $this->callPSR12Incompatible('_getViewName', 'oxarticles');

@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
@@ -51,7 +52,9 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
             $container = $this->getSymfonyContainer();
 
             /** @var Connection $connection */
-            $connection = $container->get(Connection::class);
+            $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
+                ->create()
+                ->getConnection();
 
             /** @var RevisionRepository $revisionRepository */
             $revisionRepository = $container->get(RevisionRepository::class);
