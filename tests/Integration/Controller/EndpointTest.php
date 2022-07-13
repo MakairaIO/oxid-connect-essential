@@ -3,6 +3,7 @@
 namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 
 use Doctrine\DBAL\Connection;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Exception;
 use JsonException;
 use Makaira\OxidConnectEssential\Command\TouchAllCommand;
@@ -379,7 +380,11 @@ class EndpointTest extends IntegrationTestCase
      */
     private function touchAll(): void
     {
-        $db = static::getContainer()->get(Connection::class);
+        /** @var Connection $connection */
+        $db = static::getContainer()->get(QueryBuilderFactoryInterface::class)
+            ->create()
+            ->getConnection();
+
         $db->executeQuery('TRUNCATE makaira_connect_changes');
         $db->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 

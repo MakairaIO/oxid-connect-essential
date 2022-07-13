@@ -36,7 +36,9 @@ class AttributeMainAjax extends AttributeMainAjax_parent
         $container = $this->getSymfonyContainer();
 
         /** @var Connection $connection */
-        $connection = $container->get(Connection::class);
+        $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
+            ->create()
+            ->getConnection();
 
         /** @var string $attributeView */
         $attributeView = $this->callPSR12Incompatible('_getViewName', 'oxobject2attribute');

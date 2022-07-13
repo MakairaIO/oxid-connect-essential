@@ -51,7 +51,9 @@ class CategoryOrderAjax extends CategoryOrderAjax_parent
             $container = $this->getSymfonyContainer();
 
             /** @var Connection $connection */
-            $connection = $container->get(Connection::class);
+            $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
+                ->create()
+                ->getConnection();
 
             /** @var RevisionRepository $revisionRepository */
             $revisionRepository = $container->get(RevisionRepository::class);
