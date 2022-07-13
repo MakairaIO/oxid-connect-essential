@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
