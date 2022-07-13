@@ -34,9 +34,9 @@ class ActiveModifierTest extends UnitTestCase
         $modelMock->method('getCoreTableName')
             ->willReturn('oxcategories_test');
 
-        EshopRegistry::getUtilsObject()::setClassInstance(Category::class, $modelMock);
+        EshopRegistry::getUtilsObject()->setClassInstance(Category::class, $modelMock);
 
-        $modifier = new ActiveModifier($databaseMock, Category::class);
+        $modifier = new ActiveModifier($databaseMock, Category::class, EshopRegistry::getUtilsObject());
         $type = new ProductType(['id' => 42, 'active' => false]);
         $currentType = $modifier->apply($type);
 
@@ -65,9 +65,9 @@ class ActiveModifierTest extends UnitTestCase
         $modelMock->method('getCoreTableName')
             ->willReturn('oxcategories_test');
 
-        EshopRegistry::getUtilsObject()::setClassInstance(Category::class, $modelMock);
+        EshopRegistry::getUtilsObject()->setClassInstance(Category::class, $modelMock);
 
-        $modifier = new ActiveModifier($databaseMock, Category::class);
+        $modifier = new ActiveModifier($databaseMock, Category::class, EshopRegistry::getUtilsObject());
         $type = new ProductType(['id' => 42, 'active' => true]);
         $currentType = $modifier->apply($type);
 

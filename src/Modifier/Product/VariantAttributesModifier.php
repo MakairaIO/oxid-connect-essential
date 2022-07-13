@@ -7,11 +7,11 @@ use Doctrine\DBAL\Driver\Exception;
 use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
-use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\Eshop\Core\Model\BaseModel;
+use OxidEsales\Eshop\Core\UtilsObject;
 
 /**
  * Class AttributeModifier
@@ -22,8 +22,6 @@ use OxidEsales\Eshop\Core\Model\BaseModel;
  */
 class VariantAttributesModifier extends Modifier
 {
-    use SymfonyContainerTrait;
-
     public string $selectVariantNameQuery = '
                         SELECT
                             oxvarname
@@ -58,17 +56,13 @@ class VariantAttributesModifier extends Modifier
 
     private Connection $database;
 
-    /**
-     * @var BaseModel
-     */
-    private $model = null;
+    private ?BaseModel $model = null;
 
-    /**
-     * @var string
-     */
-    private $activeSnippet = null;
+    private ?string $activeSnippet = null;
 
     private string $modelClass;
+
+    private UtilsObject $utilsObject;
 
     private ModuleSettingsProvider $moduleSettings;
 
@@ -76,15 +70,18 @@ class VariantAttributesModifier extends Modifier
      * @param Connection             $database
      * @param string                 $activeSnippet
      * @param ModuleSettingsProvider $moduleSettings
+     * @param UtilsObject            $utilsObject
      */
     public function __construct(
         Connection $database,
         string $modelClass,
-        ModuleSettingsProvider $moduleSettings
+        ModuleSettingsProvider $moduleSettings,
+        UtilsObject $utilsObject
     ) {
         $this->modelClass     = $modelClass;
         $this->database       = $database;
         $this->moduleSettings = $moduleSettings;
+        $this->utilsObject    = $utilsObject;
     }
 
     /**
@@ -198,7 +195,7 @@ class VariantAttributesModifier extends Modifier
     protected function safeGuard(): void
     {
         if (!($this->model instanceof BaseModel)) {
-            $this->model = $this->getSymfonyContainer()->get(\OxidEsales\Eshop\Core\UtilsObject::class)
+            $this->model = $this->utilsObject
                 ->oxNew($this->modelClass);
         }
         if (!$this->activeSnippet) {

@@ -7,12 +7,12 @@ use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
-use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\Eshop\Core\Model\BaseModel;
+use OxidEsales\Eshop\Core\UtilsObject;
 
 /**
  * Class AttributeModifier
@@ -22,8 +22,6 @@ use OxidEsales\Eshop\Core\Model\BaseModel;
  */
 class AttributeModifier extends Modifier
 {
-    use SymfonyContainerTrait;
-
     public string $selectAttributesQuery = '
                         SELECT
                             oxattribute.oxid as `id`,
@@ -98,17 +96,13 @@ class AttributeModifier extends Modifier
 
     private Connection $database;
 
-    /**
-     * @var BaseModel
-     */
-    private $model = null;
+    private ?BaseModel $model = null;
 
-    /**
-     * @var string
-     */
-    private $activeSnippet;
+    private ?string $activeSnippet = null;
 
     private string $modelClass;
+
+    private UtilsObject $utilsObject;
 
     /**
      * @param Connection             $database
@@ -118,11 +112,13 @@ class AttributeModifier extends Modifier
     public function __construct(
         Connection $database,
         string $modelClass,
-        ModuleSettingsProvider $moduleSettings
+        ModuleSettingsProvider $moduleSettings,
+        UtilsObject $utilsObject
     ) {
         $this->modelClass     = $modelClass;
         $this->database       = $database;
         $this->moduleSettings = $moduleSettings;
+        $this->utilsObject    = $utilsObject;
     }
 
     /**
@@ -268,8 +264,7 @@ class AttributeModifier extends Modifier
     protected function safeGuard(): void
     {
         if (!($this->model instanceof BaseModel)) {
-            $this->model = $this->getSymfonyContainer()->get(\OxidEsales\Eshop\Core\UtilsObject::class)
-                ->oxNew($this->modelClass);
+            $this->model = $this->utilsObject->oxNew($this->modelClass);
         }
         if (!$this->activeSnippet) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);

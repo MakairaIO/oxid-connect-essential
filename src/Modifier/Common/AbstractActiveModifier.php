@@ -10,40 +10,41 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Product\Product;
 use OxidEsales\Eshop\Core\Model\BaseModel;
-use Makaira\OxidConnectEssential\SymfonyContainerTrait;
-
+use OxidEsales\Eshop\Core\UtilsObject;
 
 abstract class AbstractActiveModifier extends Modifier
 {
-    use SymfonyContainerTrait;
+    /**
+     * @var string
+     */
+    private ?string $activeSnippet = null;
 
     /**
      * @var string
      */
-    private $activeSnippet = null;
-
-    /**
-     * @var string
-     */
-    private $tableName = null;
+    private ?string $tableName = null;
 
     private string $modelClass;
 
-    /**
-     * @var BaseModel
-     */
-    private $model = null;
+    private ?BaseModel $model = null;
 
     private Connection $database;
 
+    private UtilsObject $utilsObject;
+
     /**
-     * @param Connection $database
-     * @param BaseModel  $model
+     * @param Connection  $database
+     * @param BaseModel   $model
+     * @param UtilsObject $utilsObject
      */
-    public function __construct(Connection $database, string $modelClass)
-    {
+    public function __construct(
+        Connection $database,
+        string $modelClass,
+        UtilsObject $utilsObject
+    ) {
         $this->database   = $database;
         $this->modelClass = $modelClass;
+        $this->utilsObject = $utilsObject;
     }
 
     /**
@@ -73,8 +74,7 @@ abstract class AbstractActiveModifier extends Modifier
     protected function safeGuard(): void
     {
         if (!$this->model instanceof BaseModel) {
-            $this->model = $this->getSymfonyContainer()->get(\OxidEsales\Eshop\Core\UtilsObject::class)
-                ->oxNew($this->modelClass);
+            $this->model = $this->utilsObject->oxNew($this->modelClass);
         }
         if (!$this->activeSnippet) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
