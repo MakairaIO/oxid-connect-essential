@@ -34,6 +34,8 @@ class OxidSmartyParser implements ContentParserInterface
      */
     public function parseContent($content): string
     {
+        $this->frontendController->addGlobalParams();
+
         return $this->oxUtilsView->getRenderedContent($content, $this->frontendController->getViewData());
     }
 }

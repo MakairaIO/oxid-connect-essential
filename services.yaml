@@ -294,8 +294,6 @@ services:
   OxidEsales\Eshop\Application\Controller\FrontendController:
     factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
-    calls:
-      - ['addGlobalParams']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
     factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
