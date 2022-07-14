@@ -44,10 +44,10 @@ class Manufacturer extends AbstractModelDataExtractor
         $query     = "SELECT a.OXID, a.OXPARENTID FROM `{$articleView}` a WHERE a.`OXMANUFACTURERID` = ?";
         $statement = $this->connection->prepare($query);
 
-        $statement->execute([$model->getId()]);
+        $result = $statement->executeQuery([$model->getId()]);
 
         /** @var array<array<string, string>> $parentIds */
-        $parentIds = $statement->fetchAllKeyValue();
+        $parentIds = $result->fetchAllKeyValue();
         foreach ($parentIds as $productId => $parentId) {
             $type        = $parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT;
             $revisions[] = $this->buildRevision($type, $productId);
@@ -63,6 +63,6 @@ class Manufacturer extends AbstractModelDataExtractor
      */
     public function supports(BaseModel $model): bool
     {
-        return $model instanceof ManufacturerModel;
+        return $model instanceof ManufacturerModel && null !== $model->getId();
     }
 }

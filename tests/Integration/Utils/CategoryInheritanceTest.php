@@ -6,9 +6,9 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Utils\CategoryInheritance;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
-use PHPUnit\Framework\TestCase;
+use OxidEsales\TestingLibrary\UnitTestCase;
 
-class CategoryInheritanceTest extends TestCase
+class CategoryInheritanceTest extends UnitTestCase
 {
     public function testReturnCategoryIdIfInheritanceIsNotUsed()
     {
@@ -29,7 +29,10 @@ class CategoryInheritanceTest extends TestCase
         $resultMock->expects($this->once())->method('fetchFirstColumn')->willReturn($ids);
 
         $moduleSettingsMock = $this->createMock(ModuleSettingsProvider::class);
-        $moduleSettingsMock->method('get')->willReturn(true);
+        $moduleSettingsMock
+            ->method('get')
+            ->with('makaira_connect_category_inheritance')
+            ->willReturn(true);
 
         $databaseMock = $this->createMock(Connection::class);
         $databaseMock->expects($this->once())->method('executeQuery')->willReturn($resultMock);

@@ -34,16 +34,6 @@ class Version20220530141944 extends AbstractMigration
         if (!$table->hasColumn('OXSHOPID')) {
             $this->addSql('ALTER TABLE oxobject2category ADD COLUMN OXSHOPID INT(11) NOT NULL DEFAULT 1');
         }
-
-        $table = $schema->getTable('oxartextends');
-        if (!$table->hasColumn('OXTAGS')) {
-            $sql = "ALTER TABLE oxartextends
-                ADD OXTAGS VARCHAR(255) NOT NULL COMMENT 'Tags (multilanguage)',
-                ADD OXTAGS_1 varchar(255) NOT NULL,
-                ADD OXTAGS_2 varchar(255) NOT NULL,
-                ADD OXTAGS_3 varchar(255) NOT NULL";
-            $this->addSql($sql);
-        }
     }
 
     /**

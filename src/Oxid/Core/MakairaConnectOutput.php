@@ -7,7 +7,7 @@ use Makaira\OxidConnectEssential\Service\TrackingRenderService;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Exception\ArticleInputException;
 use OxidEsales\Eshop\Core\Exception\NoArticleException;
-use OxidEsales\EshopCommunity\Core\Output;
+use OxidEsales\Eshop\Core\Output;
 
 use function str_replace;
 use function stripos;

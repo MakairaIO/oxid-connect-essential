@@ -1,3 +1,25 @@
+# [1.3.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.2.3...1.3.0) (2022-06-29)
+
+
+### Bug Fixes
+
+* Code style ([4576925](https://github.com/MakairaIO/oxid-connect-essential/commit/4576925e383f24c5f28565aec9a866676038aee1))
+* Code style ([84a6ef0](https://github.com/MakairaIO/oxid-connect-essential/commit/84a6ef0182c9108a48502d8e60dcb7319336849a))
+* Fix tests ([bc2b7bc](https://github.com/MakairaIO/oxid-connect-essential/commit/bc2b7bc2550157a58a81772129cd42ddc59c468d))
+* Generate better key for table cache ([53f972c](https://github.com/MakairaIO/oxid-connect-essential/commit/53f972c5b04c7cfb2c89b1414329f827da35b38b))
+* Make snapshot test more stable ([a645990](https://github.com/MakairaIO/oxid-connect-essential/commit/a645990cb7a14301338f9ff01e9726f26f416676))
+* Remove unnecessary service definitions ([552ac78](https://github.com/MakairaIO/oxid-connect-essential/commit/552ac785a2cb56588cfec81e95355fecdd654dba))
+* Update event dispatch call ([7213f6c](https://github.com/MakairaIO/oxid-connect-essential/commit/7213f6ccb5f34a95115f50781e754825aca877a7))
+* Update test snapshots ([88f7242](https://github.com/MakairaIO/oxid-connect-essential/commit/88f7242396712c1097c205b364f71d819f2bcca1))
+
+
+### Features
+
+* Add PHP 8.1 to build process ([9c41a00](https://github.com/MakairaIO/oxid-connect-essential/commit/9c41a0013dde1a058e067bc3452154a2c6f7797b))
+* Change namespace for event class ([9799132](https://github.com/MakairaIO/oxid-connect-essential/commit/9799132f2f8715f514b6db073171f78ecabeef1b))
+* Fail GH action run if tests fail ([56194e2](https://github.com/MakairaIO/oxid-connect-essential/commit/56194e2e03aa49f7255d5150ffd469f0aea5b161))
+* Update dependency to OXID 6.5 ([194f793](https://github.com/MakairaIO/oxid-connect-essential/commit/194f793c235408d41dee51dcc9fdd674a45b52eb))
+
 ## [1.2.3](https://github.com/MakairaIO/oxid-connect-essential/compare/1.2.2...1.2.3) (2022-06-02)
 
 

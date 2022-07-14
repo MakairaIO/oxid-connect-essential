@@ -13,15 +13,24 @@ class ArticleTest extends UnitTestCase
 {
     public function testItSupportsArticleModel()
     {
-        $articleExtractor = new Article();
-        $actual = $articleExtractor->supports(new OxidArticle());
+        $dataExtractor = new Article();
+
+
+        $model = new OxidArticle();
+        $model->setId('phpunit_article');
+
+        $actual = $dataExtractor->supports($model);
         $this->assertTrue($actual);
     }
 
     public function testItDoesNotSupportCategoryModel()
     {
-        $articleExtractor = new Article();
-        $actual = $articleExtractor->supports(new OxidCategory());
+        $dataExtractor = new Article();
+
+        $model = new OxidCategory();
+        $model->setId('phpunit_category');
+
+        $actual = $dataExtractor->supports($model);
         $this->assertFalse($actual);
     }
 

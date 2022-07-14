@@ -18,21 +18,29 @@ class SelectListTest extends UnitTestCase
 {
     public function testItSupportsSelectListModel()
     {
-        $articleExtractor = new SelectList(
+        $dataExtractor = new SelectList(
             $this->createMock(Connection::class),
             $this->createMock(TableViewNameGenerator::class)
         );
-        $actual = $articleExtractor->supports(new SelectListModel());
+
+        $model = new SelectListModel();
+        $model->setId('phpunit_select_list');
+
+        $actual = $dataExtractor->supports($model);
         $this->assertTrue($actual);
     }
 
     public function testItDoesNotSupportCategoryModel()
     {
-        $articleExtractor = new SelectList(
+        $dataExtractor = new SelectList(
             $this->createMock(Connection::class),
             $this->createMock(TableViewNameGenerator::class)
         );
-        $actual = $articleExtractor->supports(new OxidCategory());
+
+        $model = new OxidCategory();
+        $model->setId('phpunit_category');
+
+        $actual = $dataExtractor->supports($model);
         $this->assertFalse($actual);
     }
 

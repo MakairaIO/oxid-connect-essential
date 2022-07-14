@@ -7,8 +7,11 @@ use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Registry;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Doctrine\DBAL;
+use Psr\Container;
 
 use function array_map;
+use function array_values;
 
 class ArticleExtendAjax extends ArticleExtendAjax_parent
 {
@@ -21,15 +24,17 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
     {
         parent::setAsDefault();
 
-        /** @var string $productId */
+        /** @var string|null $productId */
         $productId = Registry::getRequest()->getRequestParameter("oxid");
 
-        /** @var ContainerInterface $container */
-        $container = $this->getSymfonyContainer();
+        if (null !== $productId) {
+            /** @var ContainerInterface $container */
+            $container = $this->getSymfonyContainer();
 
-        /** @var RevisionRepository $revisionRepo */
-        $revisionRepo = $container->get(RevisionRepository::class);
-        $revisionRepo->touchProduct($productId);
+            /** @var RevisionRepository $revisionRepo */
+            $revisionRepo = $container->get(RevisionRepository::class);
+            $revisionRepo->touchProduct($productId);
+        }
     }
 
     /**
@@ -38,11 +43,13 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
      * @param array<string> $categoriesToRemove
      * @param string        $productId
      *
-     * @throws \Doctrine\DBAL\ConnectionException
-     * @throws \Doctrine\DBAL\Driver\Exception
-     * @throws \Doctrine\DBAL\Exception
+     * @throws Container\ContainerExceptionInterface
+     * @throws Container\NotFoundExceptionInterface
+     * @throws DBAL\ConnectionException
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
-    protected function onCategoriesRemoval($categoriesToRemove, $productId): void
+    public function onCategoriesRemoval($categoriesToRemove, $productId): void
     {
         parent::onCategoriesRemoval($categoriesToRemove, $productId);
 
@@ -50,12 +57,14 @@ class ArticleExtendAjax extends ArticleExtendAjax_parent
 
         /** @var RevisionRepository $revisionRepo */
         $revisionRepo = $container->get(RevisionRepository::class);
-        $revisionRepo->touchProduct($productId);
+        if (null !== $productId) {
+            $revisionRepo->touchProduct($productId);
+        }
 
         $revisionRepo->storeRevisions(
             array_map(
                 static fn ($categoryId) => new Revision(Revision::TYPE_CATEGORY, $categoryId),
-                $categoriesToRemove
+                array_values(array_filter((array) $categoriesToRemove))
             )
         );
     }

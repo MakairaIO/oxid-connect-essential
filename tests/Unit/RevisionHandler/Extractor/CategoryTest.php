@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Result;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\RevisionHandler\Extractor\Category;
@@ -21,7 +22,10 @@ class CategoryTest extends UnitTestCase
             $this->createMock(TableViewNameGenerator::class)
         );
 
-        $actual = $dataExtractor->supports(new OxidCategory());
+        $model = new OxidCategory();
+        $model->setId('phpunit_category');
+
+        $actual = $dataExtractor->supports($model);
         $this->assertTrue($actual);
     }
 
@@ -32,7 +36,10 @@ class CategoryTest extends UnitTestCase
             $this->createMock(TableViewNameGenerator::class)
         );
 
-        $actual = $dataExtractor->supports(new OxidManufacturer());
+        $model = new OxidManufacturer();
+        $model->setId('phpunit_manufacturer');
+
+        $actual = $dataExtractor->supports($model);
         $this->assertFalse($actual);
     }
 
@@ -47,16 +54,18 @@ class CategoryTest extends UnitTestCase
             'variant3' => 'product1',
         ];
 
-        $statementMock = $this->createMock(Statement::class);
-        $statementMock
-            ->expects($this->once())
-            ->method('execute')
-            ->with(['phpunit42']);
-
-        $statementMock
+        $resultMock = $this->createMock(Result::class);
+        $resultMock
             ->expects($this->once())
             ->method('fetchAllKeyValue')
             ->willReturn($productIds);
+
+        $statementMock = $this->createMock(Statement::class);
+        $statementMock
+            ->expects($this->once())
+            ->method('executeQuery')
+            ->with(['phpunit42'])
+            ->willReturn($resultMock);
 
         $sql = 'SELECT o2c.OXOBJECTID, a.OXPARENTID FROM `phpunit_oxobject2category_de` o2c ';
         $sql .= 'LEFT JOIN `phpunit_oxarticles_de` a ON a.`OXID` = o2c.`OXOBJECTID` WHERE o2c.`OXCATNID` = ?';

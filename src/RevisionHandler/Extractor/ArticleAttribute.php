@@ -51,9 +51,9 @@ class ArticleAttribute extends AbstractModelDataExtractor
         /** @var string $productId */
         $productId = $model->getRawFieldData('oxobjectid');
 
-        $this->statement->execute([$productId]);
+        $result = $this->statement->executeQuery([$productId]);
 
-        $parentId = $this->statement->fetchOne();
+        $parentId = $result->fetchOne();
 
         return $this->buildRevision($parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $productId);
     }
@@ -65,6 +65,6 @@ class ArticleAttribute extends AbstractModelDataExtractor
      */
     public function supports(BaseModel $model): bool
     {
-        return 'oxobject2attribute' === $model->getCoreTableName();
+        return 'oxobject2attribute' === $model->getCoreTableName() && null !== $model->getRawFieldData('oxobjectid');
     }
 }

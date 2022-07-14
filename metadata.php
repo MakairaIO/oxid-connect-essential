@@ -11,11 +11,11 @@ use OxidEsales\Eshop\Application\Controller\Admin as OxidAdminController;
 $sMetadataVersion = '2.1';
 
 $aModule = [
-    'id'          => ModuleSettingsProvider::MODULE_ID,
+    'id'          => 'makaira_oxid-connect-essential',
     'title'       => 'Makaira Connect Essential',
     'description' => 'This module provides required endpoints to import product data into Makaira.',
     'thumbnail'   => 'makaira.jpg',
-    'version'     => '1.2.3',
+    'version'     => '1.3.0',
     'author'      => 'Makaira GmbH',
     'url'         => 'https://www.makaira.io/',
     'email'       => 'support@makaira.io',
@@ -112,15 +112,5 @@ $aModule = [
     ],
     'events'      => [
         'onActivate' => ModuleCore\ModuleEvents::class . '::onActivate',
-    ],
-    'templates' => [
-        'layout/cookie-banner.tpl' => 'makaira/oxid-connect-essential/views/tpl/layout/cookie-banner.tpl',
-    ],
-    'blocks'      => [
-        [
-            'template' => 'layout/header.tpl',
-            'block'    => 'layout_header_bottom',
-            'file'     => 'views/blocks/layout/header_tpl/layout_header_bottom.tpl',
-        ],
     ],
 ];

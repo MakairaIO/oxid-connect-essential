@@ -45,9 +45,9 @@ class GraduatedPrices extends AbstractModelDataExtractor
         /** @var string $productId */
         $productId = $model->getRawFieldData('oxobjectid');
 
-        $this->statement->execute([$productId]);
+        $result = $this->statement->executeQuery([$productId]);
 
-        $parentId = $this->statement->fetchOne();
+        $parentId = $result->fetchOne();
 
         return $this->buildRevision($parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $productId);
     }
@@ -59,6 +59,6 @@ class GraduatedPrices extends AbstractModelDataExtractor
      */
     public function supports(BaseModel $model): bool
     {
-        return 'oxprice2article' === $model->getCoreTableName();
+        return 'oxprice2article' === $model->getCoreTableName() && null !== $model->getRawFieldData('oxobjectid');
     }
 }

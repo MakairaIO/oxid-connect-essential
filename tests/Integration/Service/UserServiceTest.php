@@ -7,7 +7,7 @@ use Makaira\OxidConnectEssential\Service\UserService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Session;
-use OxidEsales\EshopCommunity\Core\Registry;
+use OxidEsales\Eshop\Core\Registry;
 
 class UserServiceTest extends IntegrationTestCase
 {
@@ -23,10 +23,10 @@ class UserServiceTest extends IntegrationTestCase
         self::assertNotFalse($user);
         self::assertEquals(
             [
-                "id" => "oxdefaultadmin",
+                "id" => "e64c7d89f26bd1972efa854d13d7dd61",
                 "firstname" => "John",
                 "lastname" => "Doe",
-                "email" => "dev@marmalade.de"
+                "email" => "admin@example.com"
             ],
             [
                 'id' => $user->getFieldData('oxid'),

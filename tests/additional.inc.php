@@ -1,9 +1,11 @@
 <?php
 
-use OxidEsales\Eshop\Core\ConfigFile;
-use OxidEsales\Eshop\Core\Registry;
-use OxidEsales\TestingLibrary\Services\Library\DatabaseHandler;
+$testConfig = new \OxidEsales\TestingLibrary\TestConfig();
+$serviceCaller = new \OxidEsales\TestingLibrary\ServiceCaller();
+$fixturesFile = sprintf('%s/fixtures/shop-%s.sql', __DIR__, strtolower($testConfig->getShopEdition()));
 
-$configFile = Registry::get(ConfigFile::class);
-$DbHandler = new DatabaseHandler($configFile);
-$DbHandler->import(__DIR__ . '/test.sql');
+if (file_exists($fixturesFile)) {
+    $serviceCaller->setParameter('importSql', "@{$fixturesFile}");
+    $serviceCaller->setParameter('addDemoData', 0);
+    $serviceCaller->callService('ShopPreparation', 1);
+}

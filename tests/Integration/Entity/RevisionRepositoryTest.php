@@ -4,6 +4,7 @@ namespace Makaira\OxidConnectEssential\Test\Integration\Entity;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
+use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
@@ -33,7 +34,9 @@ class RevisionRepositoryTest extends IntegrationTestCase
         $repository = $this->insertRevisions();
 
         $container = static::getContainer();
-        $db        = $container->get(Connection::class);
+        $db        = $container->get(QueryBuilderFactoryInterface::class)
+                ->create()
+                ->getConnection();
 
         $query = <<<'EOQ'
 REPLACE INTO `makaira_connect_changes` (`TYPE`, `OXID`, `CHANGED`)
@@ -87,7 +90,9 @@ EOQ;
     private function insertRevisions(): RevisionRepository
     {
         $container = static::getContainer();
-        $db        = $container->get(Connection::class);
+        $db        = $container->get(QueryBuilderFactoryInterface::class)
+                ->create()
+                ->getConnection();
         $db->executeQuery('TRUNCATE makaira_connect_changes');
         $db->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 

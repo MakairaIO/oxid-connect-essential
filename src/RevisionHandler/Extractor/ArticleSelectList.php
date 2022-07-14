@@ -51,9 +51,9 @@ class ArticleSelectList extends AbstractModelDataExtractor
         /** @var string $productId */
         $productId = $model->getRawFieldData('oxobjectid');
 
-        $this->statement->execute([$productId]);
+        $result = $this->statement->executeQuery([$productId]);
 
-        $parentId = $this->statement->fetchOne();
+        $parentId = $result->fetchOne();
 
         return $this->buildRevision($parentId ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT, $productId);
     }
@@ -65,6 +65,6 @@ class ArticleSelectList extends AbstractModelDataExtractor
      */
     public function supports(BaseModel $model): bool
     {
-        return 'oxobject2selectlist' === $model->getCoreTableName();
+        return 'oxobject2selectlist' === $model->getCoreTableName() && null !== $model->getRawFieldData('oxobjectid');
     }
 }
