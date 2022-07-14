@@ -8,6 +8,14 @@
         {
             "name": "Stefan Krenz",
             "email": "sk@marmalade.group"
+        },
+        {
+            "name": "Heike Reuter",
+            "email": "heike.reuter@oxid-esales.com"
+        },
+        {
+            "name": "Anton Fedurtsya",
+            "email": "anton.fedurtsya@oxid-esales.com"
         }
     ],
     "minimum-stability": "dev",
