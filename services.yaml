@@ -292,21 +292,19 @@ services:
     factory: ['OxidEsales\Eshop\Core\Registry', 'getSession']
 
   OxidEsales\Eshop\Application\Controller\FrontendController:
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
     arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
-    calls:
-      - ['addGlobalParams']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer:
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderArticle:
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['OxidEsales\Eshop\Core\Registry', 'get']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
 
   Makaira\OxidConnectEssential\Service\UserService:
