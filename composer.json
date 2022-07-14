@@ -16,6 +16,10 @@
         {
             "name": "Anton Fedurtsya",
             "email": "anton.fedurtsya@oxid-esales.com"
+        },
+        {
+            "name": "Duong Tran",
+            "email": "duong.tran@marmalade.group"
         }
     ],
     "minimum-stability": "dev",
