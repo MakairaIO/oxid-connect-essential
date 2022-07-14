@@ -11,6 +11,8 @@ use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
+use OxidEsales\Eshop\Core\Model\BaseModel;
+use OxidEsales\Eshop\Core\UtilsObject;
 
 /**
  * Class AttributeModifier
@@ -94,7 +96,13 @@ class AttributeModifier extends Modifier
 
     private Connection $database;
 
-    private string $activeSnippet;
+    private ?BaseModel $model = null;
+
+    private ?string $activeSnippet = null;
+
+    private string $modelClass;
+
+    private UtilsObject $utilsObject;
 
     /**
      * @param Connection             $database
@@ -103,12 +111,14 @@ class AttributeModifier extends Modifier
      */
     public function __construct(
         Connection $database,
-        string $activeSnippet,
-        ModuleSettingsProvider $moduleSettings
+        string $modelClass,
+        ModuleSettingsProvider $moduleSettings,
+        UtilsObject $utilsObject
     ) {
-        $this->activeSnippet  = $activeSnippet;
+        $this->modelClass     = $modelClass;
         $this->database       = $database;
         $this->moduleSettings = $moduleSettings;
+        $this->utilsObject    = $utilsObject;
     }
 
     /**
@@ -123,6 +133,8 @@ class AttributeModifier extends Modifier
      */
     public function apply(Type $product): Type\Product\Product
     {
+        $this->safeGuard();
+
         /** @var Result $resultStatement */
         $resultStatement = $this->database->executeQuery($this->selectAttributesQuery, ['productId' => $product->id,]);
         $attributes      = $resultStatement->fetchAllAssociative();
@@ -247,5 +259,15 @@ class AttributeModifier extends Modifier
         }
 
         return $product;
+    }
+
+    protected function safeGuard(): void
+    {
+        if (!($this->model instanceof BaseModel)) {
+            $this->model = $this->utilsObject->oxNew($this->modelClass);
+        }
+        if (!$this->activeSnippet) {
+            $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
+        }
     }
 }
