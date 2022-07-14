@@ -42,7 +42,7 @@
                 "oxobject": [],
                 "selfLinks": {
                     "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "en": "en\/Wakeboarding\/Bindings\/"
                 },
                 "shop": [
                     "1"
@@ -95,8 +95,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Kiteboarding\/oxid\/",
+                    "en": "en\/Kiteboarding\/Harnesses\/"
                 },
                 "shop": [
                     "1"
@@ -149,8 +149,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Wakeboarding\/oxid-oxid\/",
+                    "en": "en\/Wakeboarding\/Wakeboards\/"
                 },
                 "shop": [
                     "1"
@@ -203,8 +203,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Kiteboarding\/oxid-oxid\/",
+                    "en": "en\/Kiteboarding\/Kiteboards\/"
                 },
                 "shop": [
                     "1"
@@ -257,8 +257,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Kiteboarding\/oxid-oxid-1\/",
+                    "en": "en\/Kiteboarding\/Kites\/"
                 },
                 "shop": [
                     "1"
@@ -311,8 +311,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/",
+                    "en": "en\/Gear\/"
                 },
                 "shop": [
                     "1"
@@ -365,8 +365,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Wakeboarding\/",
+                    "en": "en\/Wakeboarding\/"
                 },
                 "shop": [
                     "1"
@@ -419,8 +419,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Kiteboarding\/",
+                    "en": "en\/Kiteboarding\/"
                 },
                 "shop": [
                     "1"
@@ -473,8 +473,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/"
                 },
                 "shop": [
                     "1"
@@ -527,8 +527,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/"
                 },
                 "shop": [
                     "1"
@@ -581,8 +581,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/"
                 },
                 "shop": [
                     "1"
@@ -635,8 +635,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/"
                 },
                 "shop": [
                     "1"
@@ -689,8 +689,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Wakeboarding\/oxid-oxid-1\/",
+                    "en": "en\/Wakeboarding\/Sets\/"
                 },
                 "shop": [
                     "1"
@@ -743,8 +743,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Sportswear\/Neopren\/oxid\/",
+                    "en": "en\/Gear\/Sportswear\/Neoprene\/Shoes\/"
                 },
                 "shop": [
                     "1"
@@ -797,8 +797,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/",
+                    "en": "en\/Gear\/Fashion\/"
                 },
                 "shop": [
                     "1"
@@ -851,8 +851,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Sportswear\/oxid\/",
+                    "en": "en\/Gear\/Sportswear\/Various\/"
                 },
                 "shop": [
                     "1"
@@ -905,8 +905,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Sportswear\/Neopren\/",
+                    "en": "en\/Gear\/Sportswear\/Neoprene\/"
                 },
                 "shop": [
                     "1"
@@ -959,8 +959,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/oxid\/",
+                    "en": "en\/Gear\/Fashion\/Accessories\/"
                 },
                 "shop": [
                     "1"
@@ -1013,8 +1013,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Sportswear\/",
+                    "en": "en\/Gear\/Sportswear\/"
                 },
                 "shop": [
                     "1"
@@ -1067,8 +1067,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/Fuer-Ihn\/",
+                    "en": "en\/Gear\/Fashion\/For-Him\/"
                 },
                 "shop": [
                     "1"
@@ -1121,8 +1121,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Sportswear\/Neopren\/oxid-oxid\/",
+                    "en": "en\/Gear\/Sportswear\/Neoprene\/Suits\/"
                 },
                 "shop": [
                     "1"
@@ -1175,8 +1175,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid\/Fashion\/Fuer-Sie\/",
+                    "en": "en\/Gear\/Fashion\/For-Her\/"
                 },
                 "shop": [
                     "1"
@@ -1229,8 +1229,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid-oxid\/",
+                    "en": "en\/Special-Offers\/"
                 },
                 "shop": [
                     "1"
@@ -1283,8 +1283,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "Kiteboarding\/oxid-oxid-2\/",
+                    "en": "en\/Kiteboarding\/Supplies\/"
                 },
                 "shop": [
                     "1"
@@ -1337,8 +1337,8 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
-                    "en": "en\/oxid\/"
+                    "de": "oxid-oxid-1\/",
+                    "en": "en\/Downloads\/"
                 },
                 "shop": [
                     "1"
