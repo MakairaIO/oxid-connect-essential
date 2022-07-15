@@ -47,7 +47,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "202",
+                "sort": 202,
                 "subcategories": [
                     "0f40c6a077b68c21f164767c4a903fd2"
                 ],
@@ -100,7 +100,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "103",
+                "sort": 103,
                 "subcategories": [
                     "0f41a4463b227c437f6e6bf57b1697c4"
                 ],
@@ -153,7 +153,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "201",
+                "sort": 201,
                 "subcategories": [
                     "0f4270b89fbef1481958381410a0dbca"
                 ],
@@ -206,7 +206,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "102",
+                "sort": 102,
                 "subcategories": [
                     "0f4f08358666c54b4fde3d83d2b7ef04"
                 ],
@@ -259,7 +259,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "101",
+                "sort": 101,
                 "subcategories": [
                     "0f4fb00809cec9aa0910aa9c8fe36751"
                 ],
@@ -312,7 +312,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "3",
+                "sort": 3,
                 "subcategories": [
                     "30e44ab83fdee7564.23264141"
                 ],
@@ -365,7 +365,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "2",
+                "sort": 2,
                 "subcategories": [
                     "943173edecf6d6870a0f357b8ac84d32"
                 ],
@@ -418,7 +418,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "1",
+                "sort": 1,
                 "subcategories": [
                     "943a9ba3050e78b443c16e043ae60ef3"
                 ],
@@ -471,7 +471,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "3020202",
+                "sort": 3020202,
                 "subcategories": [
                     "d862abc1f98741797cf889eb4a9090ad"
                 ],
@@ -524,7 +524,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "3020101",
+                "sort": 3020101,
                 "subcategories": [
                     "d863b76c6bb90a970a5577adf890e8cd"
                 ],
@@ -577,7 +577,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "3020201",
+                "sort": 3020201,
                 "subcategories": [
                     "d8665fef35f4d528e92c3d664f4a00c0"
                 ],
@@ -630,7 +630,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "3020102",
+                "sort": 3020102,
                 "subcategories": [
                     "d86779840626d3ab8263b62db85df3f0"
                 ],
@@ -683,7 +683,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "203",
+                "sort": 203,
                 "subcategories": [
                     "d86d90e4b441aa3f0004dcda5ba5bb38"
                 ],
@@ -736,7 +736,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "3010102",
+                "sort": 3010102,
                 "subcategories": [
                     "d86fdf0d67bf76dc427aabd2e53e0a97"
                 ],
@@ -789,7 +789,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "302",
+                "sort": 302,
                 "subcategories": [
                     "fad181ad64642b955becd0759345161e"
                 ],
@@ -842,7 +842,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "30102",
+                "sort": 30102,
                 "subcategories": [
                     "fad2a9b0037b71ff1107ae725aae8d1c"
                 ],
@@ -895,7 +895,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "30101",
+                "sort": 30101,
                 "subcategories": [
                     "fad2d80baf7aca6ac54e819e066f24aa"
                 ],
@@ -948,7 +948,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "30203",
+                "sort": 30203,
                 "subcategories": [
                     "fad4d7e2b47d87bb6a2773d93d4ae9be"
                 ],
@@ -1001,7 +1001,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "301",
+                "sort": 301,
                 "subcategories": [
                     "fad569d6659caca39bc93e98d13dd58b"
                 ],
@@ -1054,7 +1054,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "30202",
+                "sort": 30202,
                 "subcategories": [
                     "fad7facadcb7d4297f033d242aa0d310"
                 ],
@@ -1107,7 +1107,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "3010101",
+                "sort": 3010101,
                 "subcategories": [
                     "fada9485f003c731b7fad08b873214e0"
                 ],
@@ -1160,7 +1160,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "30201",
+                "sort": 30201,
                 "subcategories": [
                     "fadbdb3145458afc5aa4dbf7eb906761"
                 ],
@@ -1213,7 +1213,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "4",
+                "sort": 4,
                 "subcategories": [
                     "fadcb6dd70b9f6248efa425bd159684e"
                 ],
@@ -1266,7 +1266,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "104",
+                "sort": 104,
                 "subcategories": [
                     "fc7e7bd8403448f00a363f60f44da8f2"
                 ],
@@ -1319,7 +1319,7 @@
                     "1"
                 ],
                 "shortdesc": "",
-                "sort": "5",
+                "sort": 5,
                 "subcategories": [
                     "oia9ff5c96f1f29d527b61202ece0829"
                 ],
