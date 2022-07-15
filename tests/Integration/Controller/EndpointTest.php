@@ -218,15 +218,8 @@ class EndpointTest extends IntegrationTestCase
                             );
                         }
 
-                        if (
-                            isset($change['data']['additionalData']['picture_url_main']) &&
-                            is_string($change['data']['additionalData']['picture_url_main'])
-                        ) {
-                            $change['data']['additionalData']['picture_url_main'] = preg_replace(
-                                '@^.*(/out/pictures/)@',
-                                '$1',
-                                $change['data']['additionalData']['picture_url_main']
-                            );
+                        if (isset($change['data']['additionalData'])) {
+                            unset($change['data']['additionalData']);
                         }
 
                         ksort($change['data']);
