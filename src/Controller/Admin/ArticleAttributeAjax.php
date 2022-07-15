@@ -5,6 +5,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Doctrine\DBAL;
 
 class ArticleAttributeAjax extends ArticleAttributeAjax_parent
 {
@@ -28,11 +29,14 @@ class ArticleAttributeAjax extends ArticleAttributeAjax_parent
      *
      * @param string $articleId
      *
-     * @throws \Doctrine\DBAL\Exception
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     protected function onArticleAttributeRelationChange($articleId): void
     {
-        if ($this->isRemove) {
+        parent::onArticleAttributeRelationChange($articleId);
+
+        if ($articleId && $this->isRemove) {
             /** @var ContainerInterface $container */
             $container = $this->getSymfonyContainer();
 

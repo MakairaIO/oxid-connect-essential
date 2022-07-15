@@ -10,6 +10,8 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
+use OxidEsales\Eshop\Core\Model\BaseModel;
+use OxidEsales\Eshop\Core\UtilsObject;
 
 /**
  * Class AttributeModifier
@@ -54,7 +56,13 @@ class VariantAttributesModifier extends Modifier
 
     private Connection $database;
 
-    private string $activeSnippet;
+    private ?BaseModel $model = null;
+
+    private ?string $activeSnippet = null;
+
+    private string $modelClass;
+
+    private UtilsObject $utilsObject;
 
     private ModuleSettingsProvider $moduleSettings;
 
@@ -62,15 +70,18 @@ class VariantAttributesModifier extends Modifier
      * @param Connection             $database
      * @param string                 $activeSnippet
      * @param ModuleSettingsProvider $moduleSettings
+     * @param UtilsObject            $utilsObject
      */
     public function __construct(
         Connection $database,
-        string $activeSnippet,
-        ModuleSettingsProvider $moduleSettings
+        string $modelClass,
+        ModuleSettingsProvider $moduleSettings,
+        UtilsObject $utilsObject
     ) {
-        $this->activeSnippet  = $activeSnippet;
+        $this->modelClass     = $modelClass;
         $this->database       = $database;
         $this->moduleSettings = $moduleSettings;
+        $this->utilsObject    = $utilsObject;
     }
 
     /**
@@ -90,6 +101,8 @@ class VariantAttributesModifier extends Modifier
         if (!$product->id) {
             throw new ConnectException("Cannot fetch attributes without a product ID.");
         }
+
+        $this->safeGuard();
 
         $product->attributes = [];
 
@@ -177,5 +190,16 @@ class VariantAttributesModifier extends Modifier
         }
 
         return $product;
+    }
+
+    protected function safeGuard(): void
+    {
+        if (!($this->model instanceof BaseModel)) {
+            $this->model = $this->utilsObject
+                ->oxNew($this->modelClass);
+        }
+        if (!$this->activeSnippet) {
+            $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
+        }
     }
 }

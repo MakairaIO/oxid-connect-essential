@@ -6,6 +6,9 @@ use OxidEsales\EshopCommunity\Internal\Framework\Module\Configuration\Bridge\Mod
 
 class ModuleSettingsProvider
 {
+    /**
+     * @TODO Keep this in sync with the ID in the metadata.php
+     */
     public const MODULE_ID = 'makaira_oxid-connect-essential';
 
     private ModuleSettingBridgeInterface $moduleSettings;

@@ -1,0 +1,857 @@
+{
+    "since": 0,
+    "count": 25,
+    "requestedCount": 25,
+    "changes": [
+        {
+            "id": "0f40c6a077b68c21f164767c4a903fd2",
+            "sequence": 1,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Bindungen",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/0f40c6a077b68c21f164767c4a903fd2",
+                "id": "0f40c6a077b68c21f164767c4a903fd2",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Wakeboarding\/oxid\/",
+                    "en": "en\/Wakeboarding\/Bindings\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 202,
+                "subcategories": [
+                    "0f40c6a077b68c21f164767c4a903fd2"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "0f41a4463b227c437f6e6bf57b1697c4",
+            "sequence": 2,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Trapeze",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f41a4463b227c437f6e6bf57b1697c4",
+                "id": "0f41a4463b227c437f6e6bf57b1697c4",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Kiteboarding\/oxid\/",
+                    "en": "en\/Kiteboarding\/Harnesses\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 103,
+                "subcategories": [
+                    "0f41a4463b227c437f6e6bf57b1697c4"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "0f4270b89fbef1481958381410a0dbca",
+            "sequence": 3,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Wakeboards",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/0f4270b89fbef1481958381410a0dbca",
+                "id": "0f4270b89fbef1481958381410a0dbca",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Wakeboarding\/oxid-oxid\/",
+                    "en": "en\/Wakeboarding\/Wakeboards\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 201,
+                "subcategories": [
+                    "0f4270b89fbef1481958381410a0dbca"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "0f4f08358666c54b4fde3d83d2b7ef04",
+            "sequence": 4,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Kiteboards",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f4f08358666c54b4fde3d83d2b7ef04",
+                "id": "0f4f08358666c54b4fde3d83d2b7ef04",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Kiteboarding\/oxid-oxid\/",
+                    "en": "en\/Kiteboarding\/Kiteboards\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 102,
+                "subcategories": [
+                    "0f4f08358666c54b4fde3d83d2b7ef04"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "0f4fb00809cec9aa0910aa9c8fe36751",
+            "sequence": 5,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Kites",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/0f4fb00809cec9aa0910aa9c8fe36751",
+                "id": "0f4fb00809cec9aa0910aa9c8fe36751",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Kiteboarding\/oxid-oxid-1\/",
+                    "en": "en\/Kiteboarding\/Kites\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 101,
+                "subcategories": [
+                    "0f4fb00809cec9aa0910aa9c8fe36751"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "30e44ab83fdee7564.23264141",
+            "sequence": 6,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Bekleidung",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141",
+                "id": "30e44ab83fdee7564.23264141",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/",
+                    "en": "en\/Gear\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 3,
+                "subcategories": [
+                    "30e44ab83fdee7564.23264141"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "943173edecf6d6870a0f357b8ac84d32",
+            "sequence": 7,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Wakeboarding",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32",
+                "id": "943173edecf6d6870a0f357b8ac84d32",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Wakeboarding\/",
+                    "en": "en\/Wakeboarding\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 2,
+                "subcategories": [
+                    "943173edecf6d6870a0f357b8ac84d32"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "943a9ba3050e78b443c16e043ae60ef3",
+            "sequence": 8,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Kiteboarding",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3",
+                "id": "943a9ba3050e78b443c16e043ae60ef3",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Kiteboarding\/",
+                    "en": "en\/Kiteboarding\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 1,
+                "subcategories": [
+                    "943a9ba3050e78b443c16e043ae60ef3"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "d862abc1f98741797cf889eb4a9090ad",
+            "sequence": 9,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Shirts & Co.",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310\/\/d862abc1f98741797cf889eb4a9090ad",
+                "id": "d862abc1f98741797cf889eb4a9090ad",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 3020202,
+                "subcategories": [
+                    "d862abc1f98741797cf889eb4a9090ad"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "d863b76c6bb90a970a5577adf890e8cd",
+            "sequence": 10,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Jeans",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761\/\/d863b76c6bb90a970a5577adf890e8cd",
+                "id": "d863b76c6bb90a970a5577adf890e8cd",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 3020101,
+                "subcategories": [
+                    "d863b76c6bb90a970a5577adf890e8cd"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "d8665fef35f4d528e92c3d664f4a00c0",
+            "sequence": 11,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Jeans",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310\/\/d8665fef35f4d528e92c3d664f4a00c0",
+                "id": "d8665fef35f4d528e92c3d664f4a00c0",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 3020201,
+                "subcategories": [
+                    "d8665fef35f4d528e92c3d664f4a00c0"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "d86779840626d3ab8263b62db85df3f0",
+            "sequence": 12,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Shirts & Co.",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761\/\/d86779840626d3ab8263b62db85df3f0",
+                "id": "d86779840626d3ab8263b62db85df3f0",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
+                    "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 3020102,
+                "subcategories": [
+                    "d86779840626d3ab8263b62db85df3f0"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "d86d90e4b441aa3f0004dcda5ba5bb38",
+            "sequence": 13,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Sets",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943173edecf6d6870a0f357b8ac84d32\/\/d86d90e4b441aa3f0004dcda5ba5bb38",
+                "id": "d86d90e4b441aa3f0004dcda5ba5bb38",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Wakeboarding\/oxid-oxid-1\/",
+                    "en": "en\/Wakeboarding\/Sets\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 203,
+                "subcategories": [
+                    "d86d90e4b441aa3f0004dcda5ba5bb38"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "d86fdf0d67bf76dc427aabd2e53e0a97",
+            "sequence": 14,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Schuhe",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa\/\/d86fdf0d67bf76dc427aabd2e53e0a97",
+                "id": "d86fdf0d67bf76dc427aabd2e53e0a97",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Sportswear\/Neopren\/oxid\/",
+                    "en": "en\/Gear\/Sportswear\/Neoprene\/Shoes\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 3010102,
+                "subcategories": [
+                    "d86fdf0d67bf76dc427aabd2e53e0a97"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fad181ad64642b955becd0759345161e",
+            "sequence": 15,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Fashion",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e",
+                "id": "fad181ad64642b955becd0759345161e",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/",
+                    "en": "en\/Gear\/Fashion\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 302,
+                "subcategories": [
+                    "fad181ad64642b955becd0759345161e"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fad2a9b0037b71ff1107ae725aae8d1c",
+            "sequence": 16,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Sonstiges",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2a9b0037b71ff1107ae725aae8d1c",
+                "id": "fad2a9b0037b71ff1107ae725aae8d1c",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Sportswear\/oxid\/",
+                    "en": "en\/Gear\/Sportswear\/Various\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 30102,
+                "subcategories": [
+                    "fad2a9b0037b71ff1107ae725aae8d1c"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fad2d80baf7aca6ac54e819e066f24aa",
+            "sequence": 17,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Neopren",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa",
+                "id": "fad2d80baf7aca6ac54e819e066f24aa",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Sportswear\/Neopren\/",
+                    "en": "en\/Gear\/Sportswear\/Neoprene\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 30101,
+                "subcategories": [
+                    "fad2d80baf7aca6ac54e819e066f24aa"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fad4d7e2b47d87bb6a2773d93d4ae9be",
+            "sequence": 18,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Accessoires",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad4d7e2b47d87bb6a2773d93d4ae9be",
+                "id": "fad4d7e2b47d87bb6a2773d93d4ae9be",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/oxid\/",
+                    "en": "en\/Gear\/Fashion\/Accessories\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 30203,
+                "subcategories": [
+                    "fad4d7e2b47d87bb6a2773d93d4ae9be"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fad569d6659caca39bc93e98d13dd58b",
+            "sequence": 19,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Sportswear",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b",
+                "id": "fad569d6659caca39bc93e98d13dd58b",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Sportswear\/",
+                    "en": "en\/Gear\/Sportswear\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 301,
+                "subcategories": [
+                    "fad569d6659caca39bc93e98d13dd58b"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fad7facadcb7d4297f033d242aa0d310",
+            "sequence": 20,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "F\u00fcr Ihn",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fad7facadcb7d4297f033d242aa0d310",
+                "id": "fad7facadcb7d4297f033d242aa0d310",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/Fuer-Ihn\/",
+                    "en": "en\/Gear\/Fashion\/For-Him\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 30202,
+                "subcategories": [
+                    "fad7facadcb7d4297f033d242aa0d310"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fada9485f003c731b7fad08b873214e0",
+            "sequence": 21,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Anz\u00fcge",
+                "depth": 4,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad569d6659caca39bc93e98d13dd58b\/\/fad2d80baf7aca6ac54e819e066f24aa\/\/fada9485f003c731b7fad08b873214e0",
+                "id": "fada9485f003c731b7fad08b873214e0",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Sportswear\/Neopren\/oxid-oxid\/",
+                    "en": "en\/Gear\/Sportswear\/Neoprene\/Suits\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 3010101,
+                "subcategories": [
+                    "fada9485f003c731b7fad08b873214e0"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fadbdb3145458afc5aa4dbf7eb906761",
+            "sequence": 22,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "F\u00fcr Sie",
+                "depth": 3,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "30e44ab83fdee7564.23264141\/\/fad181ad64642b955becd0759345161e\/\/fadbdb3145458afc5aa4dbf7eb906761",
+                "id": "fadbdb3145458afc5aa4dbf7eb906761",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid\/Fashion\/Fuer-Sie\/",
+                    "en": "en\/Gear\/Fashion\/For-Her\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 30201,
+                "subcategories": [
+                    "fadbdb3145458afc5aa4dbf7eb906761"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fadcb6dd70b9f6248efa425bd159684e",
+            "sequence": 23,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Angebote",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "fadcb6dd70b9f6248efa425bd159684e",
+                "id": "fadcb6dd70b9f6248efa425bd159684e",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid-oxid\/",
+                    "en": "en\/Special-Offers\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 4,
+                "subcategories": [
+                    "fadcb6dd70b9f6248efa425bd159684e"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "fc7e7bd8403448f00a363f60f44da8f2",
+            "sequence": 24,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Zubeh\u00f6r",
+                "depth": 2,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "943a9ba3050e78b443c16e043ae60ef3\/\/fc7e7bd8403448f00a363f60f44da8f2",
+                "id": "fc7e7bd8403448f00a363f60f44da8f2",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "Kiteboarding\/oxid-oxid-2\/",
+                    "en": "en\/Kiteboarding\/Supplies\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 104,
+                "subcategories": [
+                    "fc7e7bd8403448f00a363f60f44da8f2"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        },
+        {
+            "id": "oia9ff5c96f1f29d527b61202ece0829",
+            "sequence": 25,
+            "deleted": false,
+            "data": {
+                "active": true,
+                "category_title": "Downloads",
+                "depth": 1,
+                "es_id": "",
+                "hidden": false,
+                "hierarchy": "oia9ff5c96f1f29d527b61202ece0829",
+                "id": "oia9ff5c96f1f29d527b61202ece0829",
+                "insert": "",
+                "longdesc": "",
+                "meta_description": "",
+                "meta_keywords": "",
+                "oxobject": [],
+                "selfLinks": {
+                    "de": "oxid-oxid-1\/",
+                    "en": "en\/Downloads\/"
+                },
+                "shop": [
+                    "1"
+                ],
+                "shortdesc": "",
+                "sort": 5,
+                "subcategories": [
+                    "oia9ff5c96f1f29d527b61202ece0829"
+                ],
+                "timestamp": "XXXX-XX-XX XX:XX:XX",
+                "url": "X"
+            },
+            "type": "category"
+        }
+    ]
+}

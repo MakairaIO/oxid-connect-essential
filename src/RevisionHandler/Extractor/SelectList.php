@@ -68,6 +68,6 @@ class SelectList extends AbstractModelDataExtractor
      */
     public function supports(BaseModel $model): bool
     {
-        return $model instanceof SelectListModel;
+        return $model instanceof SelectListModel && null !== $model->getId();
     }
 }

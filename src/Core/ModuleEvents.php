@@ -4,18 +4,10 @@ declare(strict_types=1);
 
 namespace Makaira\OxidConnectEssential\Core;
 
-use Doctrine\DBAL\Connection;
-use Doctrine\DBAL\Driver\Exception as DBALDriverException;
-use Doctrine\DBAL\Driver\Result;
-use Doctrine\DBAL\Exception as DBALException;
 use Exception;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\DoctrineMigrationWrapper\MigrationsBuilder;
-use OxidEsales\Eshop\Core\Registry;
-use OxidEsales\EshopCommunity\Internal\Container\ContainerBuilderFactory;
-
-use function in_array;
-use function strtolower;
+use Symfony\Component\Console\Output\BufferedOutput;
 
 final class ModuleEvents
 {
@@ -31,6 +23,13 @@ final class ModuleEvents
     private static function executeMigrations(): void
     {
         $migrations = (new MigrationsBuilder())->build();
-        $migrations->execute('migrations:migrate', ModuleSettingsProvider::MODULE_ID);
+
+        $output = new BufferedOutput();
+        $migrations->setOutput($output);
+        $needsUpdate = $migrations->execute('migrations:up-to-date', ModuleSettingsProvider::MODULE_ID);
+
+        if ($needsUpdate) {
+            $migrations->execute('migrations:migrate', ModuleSettingsProvider::MODULE_ID);
+        }
     }
 }

@@ -10,7 +10,7 @@ use OxidEsales\Eshop\Application\Model\User;
 use OxidEsales\Eshop\Core\Exception\CookieException;
 use OxidEsales\Eshop\Core\Exception\UserException;
 use OxidEsales\Eshop\Core\Session;
-use OxidEsales\EshopCommunity\Core\Registry;
+use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Configuration\Bridge\ModuleSettingBridgeInterface;
 use OxidEsales\TestingLibrary\UnitTestCase;
@@ -24,9 +24,12 @@ use function file_exists;
 use function file_put_contents;
 use function is_dir;
 use function json_encode;
+use function md5;
 use function mkdir;
 use function random_bytes;
 use function sprintf;
+
+use function strtolower;
 
 use const JSON_PRETTY_PRINT;
 use const JSON_THROW_ON_ERROR;
@@ -41,6 +44,7 @@ abstract class IntegrationTestCase extends UnitTestCase
     {
         parent::setUp();
         $this->snapshotCount = 0;
+        $this->resetShopData();
     }
 
     /**
@@ -111,7 +115,23 @@ abstract class IntegrationTestCase extends UnitTestCase
             $session = Registry::getSession();
         }
 
-        return (new UserService($session))->login('dev@marmalade.de', 'mGXW6qpWhQTEx-wX_!D7', false);
+        $user = new User();
+        $user->setId(md5('admin@example.com'));
+        $userData = [
+            'oxid' => md5('admin@example.com'),
+            'oxusername' => 'admin@example.com',
+            'oxshopid' => 1,
+            'oxrights' => 'malladmin',
+            'oxfname' => 'John',
+            'oxlname' => 'Doe',
+        ];
+
+        $user->assign($userData);
+        $user->setPassword('phpunit_admin');
+
+        $user->save();
+
+        return (new UserService($session))->login('admin@example.com', 'phpunit_admin', false);
     }
 
     /**
@@ -133,9 +153,15 @@ abstract class IntegrationTestCase extends UnitTestCase
      */
     protected function assertSnapshot($actual, ?string $message = null, bool $continueIfIncomplete = false)
     {
+        $testConfig = new \OxidEsales\TestingLibrary\TestConfig();
+
         $reflection = new ReflectionClass($this);
 
-        $snapshotDir = dirname($reflection->getFileName()) . '/__snapshots__';
+        $snapshotDir = sprintf(
+            '%s/__snapshots__/%s',
+            dirname($reflection->getFileName()),
+            strtolower($testConfig->getShopEdition()),
+        );
 
         $snapshotFilename = sprintf(
             '%s--%s--%u.json',
@@ -189,5 +215,18 @@ abstract class IntegrationTestCase extends UnitTestCase
         }
 
         return $text;
+    }
+
+    protected function resetShopData()
+    {
+        $testConfig = new \OxidEsales\TestingLibrary\TestConfig();
+        $serviceCaller = new \OxidEsales\TestingLibrary\ServiceCaller();
+        $fixturesFile = sprintf('@%s/fixtures/shop-%s.sql', __DIR__, strtolower($testConfig->getShopEdition()));
+
+        if (file_exists($fixturesFile)) {
+            $serviceCaller->setParameter('importSql', "@{$fixturesFile}");
+            $serviceCaller->setParameter('addDemoData', 0);
+            $serviceCaller->callService('ShopPreparation', 1);
+        }
     }
 }

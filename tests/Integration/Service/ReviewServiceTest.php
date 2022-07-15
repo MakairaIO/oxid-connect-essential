@@ -5,21 +5,39 @@ namespace Makaira\OxidConnectEssential\Test\Integration\Service;
 use Exception;
 use Makaira\OxidConnectEssential\Service\ReviewService;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
+use OxidEsales\Eshop\Core\Registry;
 
 class ReviewServiceTest extends IntegrationTestCase
 {
     public function testGetReviews()
     {
+        $oxidLanguage    = Registry::getLang();
+        $oldBaseLanguage = $oxidLanguage->getBaseLanguage();
+        $oldTplLanguage  = $oxidLanguage->getTplLanguage();
+        $oxidLanguage->setBaseLanguage(1);
+        $oxidLanguage->setTplLanguage(1);
+
         $reviewService = new ReviewService();
-        $expected = [
+        $expected      = [
             [
                 "reviewer_name" => "Marc Muster",
-                "rating" => "5",
-                "text" => "Fantastic kite with great performance!",
-                "created_at" => "2011-03-25 16:51:05"
-            ]
+                "rating"        => "5",
+                "text"          => "Fantastic kite with great performance!",
+                "created_at"    => "2011-03-25 16:51:05",
+            ],
         ];
+
         self::assertEquals($expected, $reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093'));
+
+        $oxidLanguage->setBaseLanguage($oldBaseLanguage);
+        $oxidLanguage->setTplLanguage($oldTplLanguage);
+    }
+
+    public function testReturnsEmptyArrayIfThe()
+    {
+        $reviewService = new ReviewService();
+
+        self::assertEmpty($reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093'));
     }
 
     public function testThrowsExceptionIfCreateReviewForInvalidProductId()
@@ -54,12 +72,6 @@ class ReviewServiceTest extends IntegrationTestCase
                 "rating" => "5",
                 "text" => "testing review",
                 "created_at" => "XXXX-XX-XX XX:XX:XX"
-            ],
-            [
-                "reviewer_name" => "Marc Muster",
-                "rating" => "5",
-                "text" => "Fantastic kite with great performance!",
-                "created_at" => "2011-03-25 16:51:05"
             ]
         ];
 

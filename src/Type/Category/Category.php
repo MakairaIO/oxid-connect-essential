@@ -11,7 +11,7 @@ use Makaira\OxidConnectEssential\Type;
 class Category extends Type
 {
     public ?string $category_title = null;
-    public ?string $sort = null;
+    public ?int $sort = null;
     public ?string $shortdesc = null;
     public ?string $longdesc = null;
     public ?string $hierarchy = null;

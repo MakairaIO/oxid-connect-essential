@@ -42,6 +42,7 @@ abstract class AbstractUrlModifier extends Modifier
     public function apply(Type $type)
     {
         $objectData = array_merge((array) $type, $type->additionalData);
+        $objectData['oxid'] = $objectData['id'];
 
         //@formatter:off
         unset(

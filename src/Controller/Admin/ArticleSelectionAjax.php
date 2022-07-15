@@ -5,6 +5,7 @@ namespace Makaira\OxidConnectEssential\Controller\Admin;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Doctrine\DBAL;
 
 class ArticleSelectionAjax extends ArticleSelectionAjax_parent
 {
@@ -30,11 +31,14 @@ class ArticleSelectionAjax extends ArticleSelectionAjax_parent
      *
      * @param string $articleId
      *
-     * @throws \Doctrine\DBAL\Exception
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     protected function onArticleSelectionListChange($articleId): void
     {
-        if ($this->isRemove) {
+        parent::onArticleSelectionListChange($articleId);
+
+        if (null !== $articleId && $this->isRemove) {
             /** @var ContainerInterface $container */
             $container = $this->getSymfonyContainer();
 

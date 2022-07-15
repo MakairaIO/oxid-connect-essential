@@ -6,6 +6,7 @@ use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\SymfonyContainerTrait;
 use OxidEsales\Eshop\Core\Registry;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Doctrine\DBAL;
 
 class ArticleCrossSellingAjax extends ArticleCrossSellingAjax_parent
 {
@@ -13,19 +14,23 @@ class ArticleCrossSellingAjax extends ArticleCrossSellingAjax_parent
 
     /**
      * @return void
+     * @throws DBAL\Driver\Exception
+     * @throws DBAL\Exception
      */
     public function removeArticleCross()
     {
         parent::removeArticleCross();
 
-        /** @var string $productId */
+        /** @var string|null $productId */
         $productId = Registry::getRequest()->getRequestParameter('oxid');
 
-        /** @var ContainerInterface $container */
-        $container = $this->getSymfonyContainer();
+        if (null !== $productId) {
+            /** @var ContainerInterface $container */
+            $container = $this->getSymfonyContainer();
 
-        /** @var RevisionRepository $revisionRepo */
-        $revisionRepo = $container->get(RevisionRepository::class);
-        $revisionRepo->touchProduct($productId);
+            /** @var RevisionRepository $revisionRepo */
+            $revisionRepo = $container->get(RevisionRepository::class);
+            $revisionRepo->touchProduct($productId);
+        }
     }
 }
