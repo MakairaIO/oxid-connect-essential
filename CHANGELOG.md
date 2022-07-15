@@ -1,3 +1,36 @@
+# [1.4.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.3.0...1.4.0) (2022-07-15)
+
+
+### Bug Fixes
+
+* Add check if model ID is null ([fb079f9](https://github.com/MakairaIO/oxid-connect-essential/commit/fb079f902c6c79483227ee212a2e295f16cf5ba9))
+* Add checks ([3f0a371](https://github.com/MakairaIO/oxid-connect-essential/commit/3f0a371c98be2ac58f867ec17e3108310f9d3cdc))
+* Add missing OXID ID ([bbf36f4](https://github.com/MakairaIO/oxid-connect-essential/commit/bbf36f422321e508bc4213b7111413967df53759))
+* Add more checks ([ec4079f](https://github.com/MakairaIO/oxid-connect-essential/commit/ec4079f48e6b13628171cc807542209631fbd94b))
+* Add more checks ([cb7b88a](https://github.com/MakairaIO/oxid-connect-essential/commit/cb7b88a12ee41554f6a785898b1d05c9b8599906))
+* Add URL normalization ([4a5134c](https://github.com/MakairaIO/oxid-connect-essential/commit/4a5134c4c020a36645e1ae8b10cdb43ef3bad54d))
+* Change base class for unit test ([113aaf6](https://github.com/MakairaIO/oxid-connect-essential/commit/113aaf6a5f7160fc33a36b29928d37127f95c335))
+* Change data type for sort field on categories ([51927d5](https://github.com/MakairaIO/oxid-connect-essential/commit/51927d539d1e9621c30c20441bfd9700c710c5f1))
+* Change method visibility ([11c804d](https://github.com/MakairaIO/oxid-connect-essential/commit/11c804dd619f2fe981c4610d5f478b07d5c9c934))
+* Do not use class constant for module ID in metadata.php ([f37a6e1](https://github.com/MakairaIO/oxid-connect-essential/commit/f37a6e11873dad49052ade9d51cf5521c396bbc8))
+* Fix tests ([547581b](https://github.com/MakairaIO/oxid-connect-essential/commit/547581b9ce6dd6dc84ad37a6745266fa6ab9462d))
+* Remove adding OXTAGS column ([6b127a5](https://github.com/MakairaIO/oxid-connect-essential/commit/6b127a585ac6149d58ee3601c6d9bb6048574355))
+* Remove additional data from test results ([8cee8ac](https://github.com/MakairaIO/oxid-connect-essential/commit/8cee8ac20fe42ed89ac11eb034978f12fd080308))
+* Remove dev dependencies ([a69bb8a](https://github.com/MakairaIO/oxid-connect-essential/commit/a69bb8a9e24a112e7ff3797ccd93b4e3cacdbafc))
+* Remove obsolete template block override ([950680f](https://github.com/MakairaIO/oxid-connect-essential/commit/950680f8f95c8288e970247ab69cee5e98f62a41))
+* Remove obsolete template entry ([eef0465](https://github.com/MakairaIO/oxid-connect-essential/commit/eef0465b7de873839b3c187376de51db98b2a781))
+* Update database dumps ([0db59bd](https://github.com/MakairaIO/oxid-connect-essential/commit/0db59bd139a87817eb47629b8bb0961f71fba45d))
+* Update imports ([e150779](https://github.com/MakairaIO/oxid-connect-essential/commit/e1507790c20c9cfd845dce2c36169f895f6e968b))
+* Update snapshots ([dd763a1](https://github.com/MakairaIO/oxid-connect-essential/commit/dd763a1f96405b2e99d656a148ec9e20dc251ff7))
+* Update snapshots ([b23018d](https://github.com/MakairaIO/oxid-connect-essential/commit/b23018d2689ef523a7eb0332ee5d7cd99ef1c085))
+* Update snapshots for CE, PE and EE ([b8742fa](https://github.com/MakairaIO/oxid-connect-essential/commit/b8742fafaa5617e86b704da2e7447efb2f5e4ed6))
+
+
+### Features
+
+* Apply migration execution from module template ([99b34d2](https://github.com/MakairaIO/oxid-connect-essential/commit/99b34d2129b058f22ee610f4d9b5195ef68a28a8))
+* Remove obsolete files ([68677f0](https://github.com/MakairaIO/oxid-connect-essential/commit/68677f00f94d079b54bec6401eec4d32864f23a9))
+
 # [1.3.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.2.3...1.3.0) (2022-06-29)
 
 
