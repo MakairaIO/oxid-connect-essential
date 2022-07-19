@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.0...1.4.1) (2022-07-19)
+
+
+### Bug Fixes
+
+* Make OXID services public ([b5dc826](https://github.com/MakairaIO/oxid-connect-essential/commit/b5dc82624334781b8295e78ad90b8b977ca0a7a2))
+
 # [1.4.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.3.0...1.4.0) (2022-07-15)
 
 
