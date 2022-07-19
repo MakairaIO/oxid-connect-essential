@@ -278,6 +278,7 @@ services:
 ### Helper ###
 
   OxidEsales\Eshop\Core\Language:
+    public: true
     factory: ['OxidEsales\Eshop\Core\Registry', 'getLang']
 
   OxidEsales\Eshop\Core\Config:
@@ -289,21 +290,26 @@ services:
     factory: ['OxidEsales\Eshop\Core\UtilsObject', 'getInstance']
 
   OxidEsales\Eshop\Core\Session:
+    public: true
     factory: ['OxidEsales\Eshop\Core\Registry', 'getSession']
 
   OxidEsales\Eshop\Application\Controller\FrontendController:
+    public: true
     factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
+    public: true
     factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer:
+    public: true
     factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
 
   OxidEsales\Eshop\Application\Model\SeoEncoderArticle:
+    public: true
     factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
 
