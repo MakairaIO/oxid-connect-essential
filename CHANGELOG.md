@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.1...1.4.2) (2022-08-09)
+
+
+### Bug Fixes
+
+* Do not add the OXSHOPID column ([2996a22](https://github.com/MakairaIO/oxid-connect-essential/commit/2996a22b25a4d28d0346fd2ceeda642860adb78c))
+
 ## [1.4.1](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.0...1.4.1) (2022-07-19)
 
 
