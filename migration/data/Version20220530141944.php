@@ -29,11 +29,6 @@ class Version20220530141944 extends AbstractMigration
             ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci';
             $this->addSql($sql);
         }
-
-        $table = $schema->getTable('oxobject2category');
-        if (!$table->hasColumn('OXSHOPID')) {
-            $this->addSql('ALTER TABLE oxobject2category ADD COLUMN OXSHOPID INT(11) NOT NULL DEFAULT 1');
-        }
     }
 
     /**
