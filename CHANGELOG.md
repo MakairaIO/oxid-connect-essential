@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.2...1.4.3) (2022-09-19)
+
+
+### Bug Fixes
+
+* Remove conflict to OXID Connect module ([#15](https://github.com/MakairaIO/oxid-connect-essential/issues/15)) ([c5d0786](https://github.com/MakairaIO/oxid-connect-essential/commit/c5d07869eaecbaba738daa500a448672d2ae2d37))
+
 ## [1.4.2](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.1...1.4.2) (2022-08-09)
 
 
