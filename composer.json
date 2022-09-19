@@ -23,15 +23,11 @@
         }
     ],
     "minimum-stability": "dev",
-    "conflict": {
-        "makaira/oxid-connect": "*",
-        "makaira/oxid-connect-compat": "*"
-    },
     "require": {
         "php": ">=7.4",
         "ext-curl": "*",
         "ext-json": "*",
-        "makaira/shared-libs": "^2021.11 | ^2022.1",
+        "makaira/shared-libs": "^2022.1",
         "symfony/http-foundation": "^5.4"
     },
     "require-dev": {
