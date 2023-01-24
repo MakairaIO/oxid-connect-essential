@@ -41,11 +41,10 @@ jobs:
     steps:
       - name: Print run parameters
         run: |
-          echo "Running job with:\
-            PHP version: ${{ inputs.php }}\
-            MySQL version: ${{ inputs.mysql }}\
-            Template engine: ${{ inputs.template_engine }}\
-            Trigger event: ${{ github.event_name }}"
+          echo -e "Running job with:\n" \
+            "  PHP version: ${{ inputs.php }}\n" \
+            "  MySQL version: ${{ inputs.mysql }}\n" \
+            "  Trigger event: ${{ github.event_name }}\n"
 
       - name: Clone testing environment
         run: git clone https://github.com/OXID-eSales/docker-eshop-sdk.git .
