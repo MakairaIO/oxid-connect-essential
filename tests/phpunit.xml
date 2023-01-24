@@ -16,17 +16,17 @@
     beStrictAboutTestsThatDoNotTestAnything="false"
     verbose="false">
 
-  <coverage includeUncoveredFiles="true" processUncoveredFiles="true">
+  <coverage includeUncoveredFiles="true" processUncoveredFiles="false">
     <include>
       <directory suffix=".php">../src</directory>
     </include>
   </coverage>
 
   <testsuites>
-    <testsuite name="UnitTests">
+    <testsuite name="Unit">
       <directory>Unit/</directory>
     </testsuite>
-    <testsuite name="IntegrationTests">
+    <testsuite name="Integration">
       <directory>Integration/</directory>
     </testsuite>
   </testsuites>
