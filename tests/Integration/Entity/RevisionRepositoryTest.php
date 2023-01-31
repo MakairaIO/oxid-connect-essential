@@ -8,6 +8,8 @@ use Doctrine\DBAL\Exception as DBALException;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * @SuppressWarnings(PHPMD)
@@ -17,8 +19,10 @@ class RevisionRepositoryTest extends IntegrationTestCase
     /**
      * @return void
      * @throws ConnectionException
+     * @throws ContainerExceptionInterface
      * @throws DBALDriverException
      * @throws DBALException
+     * @throws NotFoundExceptionInterface
      */
     public function testWriteRevisions(): void
     {
@@ -41,14 +45,16 @@ class RevisionRepositoryTest extends IntegrationTestCase
     /**
      * @return void
      * @throws ConnectionException
+     * @throws ContainerExceptionInterface
      * @throws DBALDriverException
      * @throws DBALException
+     * @throws NotFoundExceptionInterface
      */
     public function testRevisionsAreRemoved(): void
     {
         $repository = $this->insertRevisions();
 
-        $db = $this->get(QueryBuilderFactoryInterface::class)
+        $db = $this->getService(QueryBuilderFactoryInterface::class)
             ->create()
             ->getConnection();
 
@@ -97,19 +103,18 @@ EOQ;
 
     /**
      * @return RevisionRepository
-     * @throws ConnectionException
-     * @throws DBALDriverException
-     * @throws DBALException
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     private function insertRevisions(): RevisionRepository
     {
-        $db = $this->get(QueryBuilderFactoryInterface::class)
+        $db = $this->getService(QueryBuilderFactoryInterface::class)
             ->create()
             ->getConnection();
         $db->executeQuery('TRUNCATE makaira_connect_changes');
         $db->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 
-        $repository = $this->get(RevisionRepository::class);
+        $repository = $this->getService(RevisionRepository::class);
 
         $repository->touchProduct('product_21');
         $repository->touchcategory('category_42');

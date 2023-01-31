@@ -33,11 +33,11 @@ class ReviewServiceTest extends IntegrationTestCase
         $oxidLanguage->setTplLanguage($oldTplLanguage);
     }
 
-    public function testReturnsEmptyArrayIfThe()
+    public function testReturnsEmptyArrayIfTheProductHasNoReviews()
     {
         $reviewService = new ReviewService();
 
-        self::assertEmpty($reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093'));
+        self::assertEmpty($reviewService->getReviews('05848170643ab0deb9914566391c0c63'));
     }
 
     public function testThrowsExceptionIfCreateReviewForInvalidProductId()
@@ -65,7 +65,7 @@ class ReviewServiceTest extends IntegrationTestCase
         $user = $this->loginToTestingUser();
 
         $reviewService = new ReviewService();
-        $reviewService->createReview('b56597806428de2f58b1c6c7d3e0e093', '5', 'testing review', $user);
+        $reviewService->createReview('05848170643ab0deb9914566391c0c63', '5', 'testing review', $user);
         $expected = [
             [
                 "reviewer_name" => 'John Doe',
@@ -75,7 +75,7 @@ class ReviewServiceTest extends IntegrationTestCase
             ]
         ];
 
-        $reviews = $reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093');
+        $reviews = $reviewService->getReviews('05848170643ab0deb9914566391c0c63');
         $reviews[0]['created_at'] = "XXXX-XX-XX XX:XX:XX";
         self::assertEquals($expected, $reviews);
     }
@@ -86,9 +86,9 @@ class ReviewServiceTest extends IntegrationTestCase
         $reviews = $reviewService->getReviews('b56597806428de2f58b1c6c7d3e0e093', 1, 0);
         $expected = [
             [
-                "reviewer_name" => 'John Doe',
+                "reviewer_name" => 'Marc Muster',
                 "rating" => "5",
-                "text" => "testing review",
+                "text" => "Fantastic kite with great performance!",
                 "created_at" => "XXXX-XX-XX XX:XX:XX"
             ],
         ];

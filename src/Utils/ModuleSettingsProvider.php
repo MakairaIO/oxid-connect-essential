@@ -27,7 +27,6 @@ class ModuleSettingsProvider
      */
     public function __construct(private ModuleSettingServiceInterface $moduleSettings)
     {
-        $this->moduleSettings = $moduleSettings;
     }
 
     /**
