@@ -23,7 +23,7 @@ class CartServiceTest extends IntegrationTestCase
         $expected = [
             [
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
-                "name"         => "Kite NBK EVO 2010",
+                "name"         => "Kite NBK EVO",
                 "price"        => 699.0,
                 "base_price"   => "699",
                 "quantity"     => 20.0,
@@ -48,7 +48,7 @@ class CartServiceTest extends IntegrationTestCase
         $expected = [
             [
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
-                "name"         => "Kite NBK EVO 2010",
+                "name"         => "Kite NBK EVO",
                 "price"        => 699.0,
                 "base_price"   => "699",
                 "quantity"     => 15.0,

@@ -12,8 +12,13 @@ use OxidEsales\Eshop\Core\Exception\CookieException;
 use OxidEsales\Eshop\Core\Exception\UserException;
 use OxidEsales\Eshop\Core\Session;
 use OxidEsales\Eshop\Core\Registry;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
+use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingServiceInterface;
 use OxidEsales\EshopCommunity\Tests\DatabaseTrait;
 use OxidEsales\Facts\Edition\EditionSelector;
+use PHPUnit\Framework\TestCase;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 use ReflectionClass;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -34,7 +39,7 @@ use const JSON_THROW_ON_ERROR;
 /**
  * @SuppressWarnings(PHPMD)
  */
-abstract class IntegrationTestCase extends \OxidEsales\EshopCommunity\Tests\Integration\IntegrationTestCase
+abstract class IntegrationTestCase extends TestCase
 {
     use DatabaseTrait;
 
@@ -48,7 +53,6 @@ abstract class IntegrationTestCase extends \OxidEsales\EshopCommunity\Tests\Inte
 
     public function setUp(): void
     {
-        parent::setUp();
         $this->snapshotCount = 0;
     }
 
@@ -196,5 +200,20 @@ abstract class IntegrationTestCase extends \OxidEsales\EshopCommunity\Tests\Inte
         }
 
         return $text;
+    }
+
+    /**
+     * @template T
+     * @psalm-param class-string $serviceName
+     *
+     * @return T|null
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
+     */
+    protected function getService(string $name): ?object
+    {
+        return ContainerFactory::getInstance()
+            ->getContainer()
+            ->get($name);
     }
 }

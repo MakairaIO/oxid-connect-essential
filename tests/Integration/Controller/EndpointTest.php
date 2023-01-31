@@ -8,6 +8,7 @@ use Makaira\OxidConnectEssential\Rpc\SignatureCheck;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use Makaira\Signing\Hash\Sha256;
 use Makaira\Signing\HashGenerator;
+use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
 use Exception;
 use JsonException;
@@ -26,7 +27,6 @@ use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\HttpFoundation\Request;
 
-use Symfony\Component\String\UnicodeString;
 use function array_map;
 use function end;
 use function is_string;
@@ -43,21 +43,15 @@ class EndpointTest extends IntegrationTestCase
 {
     /**
      * @return void
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     public function setUp(): void
     {
         parent::setUp();
 
-        $moduleSettings = $this->createMock(ModuleSettingServiceInterface::class);
-        $moduleSettings->method('getString')
-            ->with('makaira_connect_secret')
-            ->willReturn(new UnicodeString(static::SECRET));
-
-        $signatureCheck = new SignatureCheck(new Sha256(), $moduleSettings);
-
-        $this->set(SignatureCheck::class, $signatureCheck);
-//        $moduleSettings = $this->get(ModuleSettingServiceInterface::class);
-//        $moduleSettings->saveString('makaira_connect_secret', static::SECRET, static::MODULE_ID);
+        $moduleSettings = $this->getService(ModuleSettingServiceInterface::class);
+        $moduleSettings->saveString('makaira_connect_secret', static::SECRET, static::MODULE_ID);
     }
 
     /**
@@ -221,7 +215,6 @@ class EndpointTest extends IntegrationTestCase
      * @throws ExceptionInterface
      * @throws JsonException
      * @throws NotFoundExceptionInterface
-     * @throws ReflectionException
      * @dataProvider provideLanguages
      */
     public function testFetchChangesFromShop(string $language): void
@@ -294,9 +287,10 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
      * @throws DBALException
      * @throws ExceptionInterface
-     * @throws Exception
+     * @throws NotFoundExceptionInterface
      */
     private function prepareProducts(): void
     {
@@ -406,7 +400,7 @@ class EndpointTest extends IntegrationTestCase
         $product->setLanguage(1);
         $product->save();
 
-        $moduleSettings = $this->get(ModuleSettingServiceInterface::class);
+        $moduleSettings = $this->getService(ModuleSettingServiceInterface::class);
         $moduleSettings->saveCollection('makaira_attribute_as_int', [$intAttributeId], static::MODULE_ID);
         $moduleSettings->saveCollection('makaira_attribute_as_float', [$floatAttributeId], static::MODULE_ID);
 
@@ -415,19 +409,19 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
-     * @throws ExceptionInterface
-     * @throws DBALException
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     private function touchAll(): void
     {
-        $database = $this->get(QueryBuilderFactoryInterface::class)
+        $database = $this->getService(QueryBuilderFactoryInterface::class)
             ->create()
             ->getConnection();
 
         $database->executeQuery('TRUNCATE makaira_connect_changes');
         $database->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 
-        $repo = $this->get(TouchAllCommand::class);
+        $repo = $this->getService(TouchAllCommand::class);
         $repo->run(new ArrayInput([]), new NullOutput());
     }
 }
