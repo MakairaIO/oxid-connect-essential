@@ -4,13 +4,13 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Command;
 
 use Makaira\OxidConnectEssential\Command\CleanUpCommand;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\BufferedOutput;
 
-class CleanUpCommandTest extends UnitTestCase
+class CleanUpCommandTest extends TestCase
 {
-    public function testCleanUpIsCalled()
+    public function testCleanUpIsCalled(): void
     {
         $repositoryMock = $this->createMock(RevisionRepository::class);
         $repositoryMock->expects($this->once())->method('cleanup');

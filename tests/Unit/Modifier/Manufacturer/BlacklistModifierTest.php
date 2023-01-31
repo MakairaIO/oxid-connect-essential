@@ -14,11 +14,11 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Manufacturer;
 use Makaira\OxidConnectEssential\Modifier\Manufacturer\BlacklistModifier;
 use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class BlacklistModifierTest extends UnitTestCase
+class BlacklistModifierTest extends TestCase
 {
-    private function productFactory($skipFields = [])
+    private function productFactory($skipFields = []): Product
     {
         $product = new Product();
         $fieldValues = [
@@ -51,7 +51,7 @@ class BlacklistModifierTest extends UnitTestCase
         return $product;
     }
 
-    public function getTestBlacklistedFieldsData()
+    public function getTestBlacklistedFieldsData(): array
     {
         return [
             [
@@ -86,7 +86,7 @@ class BlacklistModifierTest extends UnitTestCase
     /**
      * @dataProvider getTestBlacklistedFieldsData
      */
-    public function testBlacklistedFields($product, $modifiedProduct, $blacklist)
+    public function testBlacklistedFields($product, $modifiedProduct, $blacklist): void
     {
         $moduleSettingsMock = $this->createMock(ModuleSettingsProvider::class);
         $moduleSettingsMock->method('get')->willReturn($blacklist);

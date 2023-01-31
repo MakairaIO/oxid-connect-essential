@@ -12,9 +12,10 @@ interface ContentParserInterface
     /**
      * Parse content through a templating engine
      *
+     * @param string $id
      * @param string $content
      *
      * @return string
      */
-    public function parseContent($content);
+    public function parseContent(string $id, string $content): string;
 }

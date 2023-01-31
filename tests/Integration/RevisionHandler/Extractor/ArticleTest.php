@@ -1,17 +1,17 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
+namespace Makaira\OxidConnectEssential\Test\Integration\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\RevisionHandler\Extractor\Article;
 use OxidEsales\Eshop\Application\Model\Article as OxidArticle;
 use OxidEsales\Eshop\Application\Model\Category as OxidCategory;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class ArticleTest extends UnitTestCase
+class ArticleTest extends TestCase
 {
-    public function testItSupportsArticleModel()
+    public function testItSupportsArticleModel(): void
     {
         $dataExtractor = new Article();
 
@@ -23,7 +23,7 @@ class ArticleTest extends UnitTestCase
         $this->assertTrue($actual);
     }
 
-    public function testItDoesNotSupportCategoryModel()
+    public function testItDoesNotSupportCategoryModel(): void
     {
         $dataExtractor = new Article();
 
@@ -38,7 +38,7 @@ class ArticleTest extends UnitTestCase
      * @return void
      * @dataProvider provideTestData
      */
-    public function testReturnsRevisionObject(string $parentId, string $expectedType)
+    public function testReturnsRevisionObject(string $parentId, string $expectedType): void
     {
         $article = $this->createMock(OxidArticle::class);
         $article->method('getParentId')->willReturn($parentId);
@@ -59,7 +59,7 @@ class ArticleTest extends UnitTestCase
         $this->assertEqualsCanonicalizing($expected, $actual);
     }
 
-    public function provideTestData()
+    public function provideTestData(): array
     {
         return [
             'Testing product' => ['', Revision::TYPE_PRODUCT],

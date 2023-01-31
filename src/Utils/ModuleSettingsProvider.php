@@ -2,7 +2,7 @@
 
 namespace Makaira\OxidConnectEssential\Utils;
 
-use OxidEsales\EshopCommunity\Internal\Framework\Module\Configuration\Bridge\ModuleSettingBridgeInterface;
+use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingServiceInterface;
 
 class ModuleSettingsProvider
 {
@@ -11,12 +11,21 @@ class ModuleSettingsProvider
      */
     public const MODULE_ID = 'makaira_oxid-connect-essential';
 
-    private ModuleSettingBridgeInterface $moduleSettings;
+    private const SETTING_TYPES = [
+        'makaira_connect_secret'               => 'getString',
+        'makaira_connect_category_inheritance' => 'getBoolean',
+        'makaira_field_blacklist_product'      => 'getCollection',
+        'makaira_field_blacklist_category'     => 'getCollection',
+        'makaira_field_blacklist_manufacturer' => 'getCollection',
+        'makaira_attribute_as_int'             => 'getCollection',
+        'makaira_attribute_as_float'           => 'getCollection',
+        'makaira_tracking_page_id'             => 'getString',
+    ];
 
     /**
-     * @param ModuleSettingBridgeInterface $moduleSettings
+     * @param ModuleSettingServiceInterface $moduleSettings
      */
-    public function __construct(ModuleSettingBridgeInterface $moduleSettings)
+    public function __construct(private ModuleSettingServiceInterface $moduleSettings)
     {
         $this->moduleSettings = $moduleSettings;
     }
@@ -26,8 +35,10 @@ class ModuleSettingsProvider
      *
      * @return string|int|float|bool|array<string|int|float|bool>
      */
-    public function get(string $settingId)
+    public function get(string $settingId): array|float|bool|int|string
     {
-        return $this->moduleSettings->get($settingId, self::MODULE_ID);
+        $method = self::SETTING_TYPES[$settingId] ?? 'getString';
+
+        return $this->moduleSettings->{$method}($settingId, self::MODULE_ID);
     }
 }

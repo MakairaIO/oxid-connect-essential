@@ -3,11 +3,11 @@
 namespace Makaira\OxidConnectEssential\Test\Unit\Utils;
 
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class TableTranslatorTest extends UnitTestCase
+class TableTranslatorTest extends TestCase
 {
-    public function testSimpleTranslate()
+    public function testSimpleTranslate(): void
     {
         $translator = new TableTranslator(['oxarticles']);
 
@@ -15,7 +15,7 @@ class TableTranslatorTest extends UnitTestCase
         self::assertEquals('SELECT * FROM oxv_oxarticles_de', $sql);
     }
 
-    public function testTranslateWithSetLanguage()
+    public function testTranslateWithSetLanguage(): void
     {
         $translator = new TableTranslator(['oxarticles']);
         $translator->setLanguage('kh');
@@ -24,7 +24,7 @@ class TableTranslatorTest extends UnitTestCase
         self::assertEquals('SELECT * FROM oxv_oxarticles_kh', $sql);
     }
 
-    public function testTranslateWithShopId()
+    public function testTranslateWithShopId(): void
     {
         $translator = new TableTranslator(['oxarticles']);
         $translator->setShopId(42);
@@ -33,7 +33,7 @@ class TableTranslatorTest extends UnitTestCase
         self::assertEquals('SELECT * FROM oxv_oxarticles_42_de', $sql);
     }
 
-    public function testTranslateWithLanguageAndShopId()
+    public function testTranslateWithLanguageAndShopId(): void
     {
         $translator = new TableTranslator(['oxarticles']);
         $translator->setLanguage('kh');
@@ -43,7 +43,7 @@ class TableTranslatorTest extends UnitTestCase
         self::assertEquals('SELECT * FROM oxv_oxarticles_42_kh', $sql);
     }
 
-    public function testTranslateWithView()
+    public function testTranslateWithView(): void
     {
         $translator = new TableTranslator(['oxarticles']);
 
@@ -51,7 +51,7 @@ class TableTranslatorTest extends UnitTestCase
         self::assertEquals('SELECT * FROM oxv_oxarticles_en', $sql);
     }
 
-    public function testMultiTranslate()
+    public function testMultiTranslate(): void
     {
         $translator = new TableTranslator(['oxarticles']);
 
@@ -59,7 +59,7 @@ class TableTranslatorTest extends UnitTestCase
         self::assertEquals('SELECT * FROM oxv_oxarticles_de WHERE oxv_oxarticles_de.OXACTIVE = 1', $sql);
     }
 
-    public function testTranslateWithMultipleTables()
+    public function testTranslateWithMultipleTables(): void
     {
         $translator = new TableTranslator(['oxarticles', 'oxartextends']);
 
@@ -73,7 +73,7 @@ class TableTranslatorTest extends UnitTestCase
         );
     }
 
-    public function testTranslateWithPartialMatches()
+    public function testTranslateWithPartialMatches(): void
     {
         $translator = new TableTranslator(['oxarticles']);
 
@@ -87,7 +87,7 @@ class TableTranslatorTest extends UnitTestCase
         );
     }
 
-    public function testTranslateWithcustomTranslation()
+    public function testTranslateWithcustomTranslation(): void
     {
         $translator = new TableTranslator(['oxarticles']);
         $translator->setViewNameGenerator(static fn () => 'phpunit_table');

@@ -4,11 +4,11 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Common;
 
 use Makaira\OxidConnectEssential\Modifier\Common\PriceModifier;
 use Makaira\OxidConnectEssential\Type\Product\Product;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class PriceModifierTest extends UnitTestCase
+class PriceModifierTest extends TestCase
 {
-    private function productFactory()
+    private function productFactory(): Product
     {
         $product = new Product();
         $product->OXBPRICE = 10;
@@ -28,35 +28,35 @@ class PriceModifierTest extends UnitTestCase
         return $product;
     }
 
-    public function testBruttoBrutto()
+    public function testBruttoBrutto(): void
     {
         $modifier = new PriceModifier(false, false, 16);
         $product = $modifier->apply($this->productFactory());
         $this->assertEquals(10, $product->OXPRICE);
     }
 
-    public function testBruttoNetto()
+    public function testBruttoNetto(): void
     {
         $modifier = new PriceModifier(false, true, 16);
         $product = $modifier->apply($this->productFactory());
         $this->assertEquals(10, $product->OXPRICE);
     }
 
-    public function testNettoBrutto()
+    public function testNettoBrutto(): void
     {
         $modifier = new PriceModifier(true, false, 16);
         $product = $modifier->apply($this->productFactory());
         $this->assertEquals(11.6, $product->OXPRICE);
     }
 
-    public function testNettoNetto()
+    public function testNettoNetto(): void
     {
         $modifier = new PriceModifier(true, true, 16);
         $product = $modifier->apply($this->productFactory());
         $this->assertEquals(10, $product->OXPRICE);
     }
 
-    public function testAllPrices()
+    public function testAllPrices(): void
     {
         $modifier = new PriceModifier(true, false, 16);
         $product = $modifier->apply($this->productFactory());

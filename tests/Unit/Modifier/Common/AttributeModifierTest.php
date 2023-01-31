@@ -2,11 +2,11 @@
 
 namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Common;
 
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class AttributeModifierTest extends UnitTestCase
+class AttributeModifierTest extends TestCase
 {
-    public function testApply()
+    public function testApply(): void
     {
         //
     }

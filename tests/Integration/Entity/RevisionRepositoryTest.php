@@ -2,15 +2,24 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Entity;
 
-use DateTimeImmutable;
-use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\ConnectionException;
+use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Exception as DBALException;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
-use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 
+/**
+ * @SuppressWarnings(PHPMD)
+ */
 class RevisionRepositoryTest extends IntegrationTestCase
 {
+    /**
+     * @return void
+     * @throws ConnectionException
+     * @throws DBALDriverException
+     * @throws DBALException
+     */
     public function testWriteRevisions(): void
     {
         $repository = $this->insertRevisions();
@@ -24,19 +33,24 @@ class RevisionRepositoryTest extends IntegrationTestCase
             ['sequence' => '4', 'id' => 'custom_168', 'type' => 'custom'],
         ];
 
-        $this->assertSame($expected, $revisions);
+        static::assertSame($expected, $revisions);
 
-        $this->assertSame($expected, $revisions);
+        static::assertSame($expected, $revisions);
     }
 
+    /**
+     * @return void
+     * @throws ConnectionException
+     * @throws DBALDriverException
+     * @throws DBALException
+     */
     public function testRevisionsAreRemoved(): void
     {
         $repository = $this->insertRevisions();
 
-        $container = static::getContainer();
-        $db        = $container->get(QueryBuilderFactoryInterface::class)
-                ->create()
-                ->getConnection();
+        $db = $this->get(QueryBuilderFactoryInterface::class)
+            ->create()
+            ->getConnection();
 
         $query = <<<'EOQ'
 REPLACE INTO `makaira_connect_changes` (`TYPE`, `OXID`, `CHANGED`)
@@ -46,9 +60,9 @@ EOQ;
         $db->executeQuery(
             $query,
             [
-                'type'     => 'custom',
-                'id1'      => 'custom_1',
-                'id2'      => 'custom_2',
+                'type' => 'custom',
+                'id1' => 'custom_1',
+                'id2' => 'custom_2',
                 'changed1' => '2022-01-01T00:00:00.000+00:00',
                 'changed2' => '2021-01-01T00:00:00.000+00:00',
             ]
@@ -83,21 +97,19 @@ EOQ;
 
     /**
      * @return RevisionRepository
-     * @throws \Doctrine\DBAL\ConnectionException
-     * @throws \Doctrine\DBAL\Driver\Exception
-     * @throws \Doctrine\DBAL\Exception
+     * @throws ConnectionException
+     * @throws DBALDriverException
+     * @throws DBALException
      */
     private function insertRevisions(): RevisionRepository
     {
-        $container = static::getContainer();
-        $db        = $container->get(QueryBuilderFactoryInterface::class)
-                ->create()
-                ->getConnection();
+        $db = $this->get(QueryBuilderFactoryInterface::class)
+            ->create()
+            ->getConnection();
         $db->executeQuery('TRUNCATE makaira_connect_changes');
         $db->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 
-        /** @var RevisionRepository $repository */
-        $repository = $container->get(RevisionRepository::class);
+        $repository = $this->get(RevisionRepository::class);
 
         $repository->touchProduct('product_21');
         $repository->touchcategory('category_42');

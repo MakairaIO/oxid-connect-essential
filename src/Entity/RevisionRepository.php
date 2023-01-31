@@ -105,7 +105,7 @@ class RevisionRepository
             }
 
             $this->connection->commit();
-        } catch (DBALException | DBALDriverException $e) {
+        } catch (DBALException | DBALDriverException) {
             $this->connection->rollBack();
         }
     }
@@ -149,9 +149,7 @@ class RevisionRepository
         $prepared->bindValue(':since', $since, ParameterType::INTEGER);
         $prepared->bindValue(':limit', $limit, ParameterType::INTEGER);
 
-        $result = $prepared->executeQuery();
-
-        return $result->fetchAllAssociative();
+        return $prepared->executeQuery()->fetchAllAssociative();
     }
 
     /**

@@ -2,18 +2,18 @@
 
 namespace Makaira\OxidConnectEssential\Test\Unit\Command;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Console\Output\BufferedOutput;
 use Makaira\OxidConnectEssential\Command\TouchAllCommand;
 use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\Repository\CategoryRepository;
 use Makaira\OxidConnectEssential\Repository\ManufacturerRepository;
 use Makaira\OxidConnectEssential\Repository\ProductRepository;
-use OxidEsales\TestingLibrary\UnitTestCase;
 use Symfony\Component\Console\Input\ArrayInput;
 
-class TouchAllCommandTest extends UnitTestCase
+class TouchAllCommandTest extends TestCase
 {
-    public function testCreatesRevisions()
+    public function testCreatesRevisions(): void
     {
         $productRepository = $this->getMockBuilder(ProductRepository::class)
             ->disableOriginalConstructor()

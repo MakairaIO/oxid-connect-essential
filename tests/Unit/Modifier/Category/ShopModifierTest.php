@@ -6,11 +6,11 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Modifier\Category\ShopModifier;
 use Makaira\OxidConnectEssential\Type\Product\Product;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class ShopModifierTest extends UnitTestCase
+class ShopModifierTest extends TestCase
 {
-    public function testCEPE()
+    public function testCEPE(): void
     {
         $databaseMock = $this->createMock(Connection::class);
         $databaseMock
@@ -24,7 +24,7 @@ class ShopModifierTest extends UnitTestCase
         $this->assertEquals(['test'], $product->shop);
     }
 
-    public function testEE()
+    public function testEE(): void
     {
         $resultMock = $this->createMock(Result::class);
         $resultMock->method('fetchFirstColumn')
