@@ -7,11 +7,11 @@ use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Modifier\Product\CategoryModifier;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
 use Makaira\OxidConnectEssential\Type\Product\Product;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class CategoryModifierTest extends UnitTestCase
+class CategoryModifierTest extends TestCase
 {
-    public function testUnnested()
+    public function testUnnested(): void
     {
         $resultMock = $this->createMock(Result::class);
         $resultMock->method('fetchAllAssociative')

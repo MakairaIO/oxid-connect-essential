@@ -1,23 +1,38 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
+namespace Makaira\OxidConnectEssential\Test\Integration\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Result;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
-use Makaira\OxidConnectEssential\RevisionHandler\Extractor\Category;
+use Makaira\OxidConnectEssential\RevisionHandler\Extractor\SelectList;
 use OxidEsales\Eshop\Application\Model\Category as OxidCategory;
 use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
+use OxidEsales\Eshop\Application\Model\SelectList as SelectListModel;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class CategoryTest extends UnitTestCase
+class SelectListTest extends TestCase
 {
-    public function testItSupportsCategoryModel()
+    public function testItSupportsSelectListModel(): void
     {
-        $dataExtractor = new Category(
+        $dataExtractor = new SelectList(
+            $this->createMock(Connection::class),
+            $this->createMock(TableViewNameGenerator::class)
+        );
+
+        $model = new SelectListModel();
+        $model->setId('phpunit_select_list');
+
+        $actual = $dataExtractor->supports($model);
+        $this->assertTrue($actual);
+    }
+
+    public function testItDoesNotSupportCategoryModel(): void
+    {
+        $dataExtractor = new SelectList(
             $this->createMock(Connection::class),
             $this->createMock(TableViewNameGenerator::class)
         );
@@ -26,24 +41,10 @@ class CategoryTest extends UnitTestCase
         $model->setId('phpunit_category');
 
         $actual = $dataExtractor->supports($model);
-        $this->assertTrue($actual);
-    }
-
-    public function testItDoesNotSupportManufacturerModel()
-    {
-        $dataExtractor = new Category(
-            $this->createMock(Connection::class),
-            $this->createMock(TableViewNameGenerator::class)
-        );
-
-        $model = new OxidManufacturer();
-        $model->setId('phpunit_manufacturer');
-
-        $actual = $dataExtractor->supports($model);
         $this->assertFalse($actual);
     }
 
-    public function testCreatesRevisionsForCategoryAndProducts()
+    public function testCreatesRevisionsForProducts(): void
     {
         $productIds = [
             'product1' => '',
@@ -55,8 +56,7 @@ class CategoryTest extends UnitTestCase
         ];
 
         $resultMock = $this->createMock(Result::class);
-        $resultMock
-            ->expects($this->once())
+        $resultMock->expects($this->once())
             ->method('fetchAllKeyValue')
             ->willReturn($productIds);
 
@@ -67,8 +67,10 @@ class CategoryTest extends UnitTestCase
             ->with(['phpunit42'])
             ->willReturn($resultMock);
 
-        $sql = 'SELECT o2c.OXOBJECTID, a.OXPARENTID FROM `phpunit_oxobject2category_de` o2c ';
-        $sql .= 'LEFT JOIN `phpunit_oxarticles_de` a ON a.`OXID` = o2c.`OXOBJECTID` WHERE o2c.`OXCATNID` = ?';
+
+        $sql = 'SELECT `o2sl`.`OXOBJECTID`, `a`.`OXPARENTID` FROM `phpunit_oxobject2selectlist_de` `o2sl` ';
+        $sql .= 'LEFT JOIN `phpunit_oxarticles_de` `a` ON `a`.`OXID` = `o2sl`.`OXOBJECTID` WHERE `o2sl`.`OXSELNID` = ?';
+
         $db = $this->createMock(Connection::class);
         $db->expects($this->once())
             ->method('prepare')
@@ -77,10 +79,10 @@ class CategoryTest extends UnitTestCase
 
         $viewNameCallback = function (string $table) {
             switch ($table) {
+                case 'oxobject2selectlist':
+                    return 'phpunit_oxobject2selectlist_de';
                 case 'oxarticles':
                     return 'phpunit_oxarticles_de';
-                case 'oxobject2category':
-                    return 'phpunit_oxobject2category_de';
                 default:
                     return 'phpunit_42_table';
             }
@@ -89,10 +91,10 @@ class CategoryTest extends UnitTestCase
         $viewNameGenerator = $this->createMock(TableViewNameGenerator::class);
         $viewNameGenerator->method('getViewName')->willReturnCallback($viewNameCallback);
 
-        $model = $this->createMock(OxidCategory::class);
+        $model = $this->createMock(OxidManufacturer::class);
         $model->method('getId')->willReturn('phpunit42');
 
-        $categoryExtractor = new Category($db, $viewNameGenerator);
+        $categoryExtractor = new SelectList($db, $viewNameGenerator);
         $actual            = $categoryExtractor->extract($model);
 
         $changed = new DateTimeImmutable();
@@ -101,14 +103,15 @@ class CategoryTest extends UnitTestCase
             $revision->changed = $changed;
         }
 
-        $expected = [
-            Revision::TYPE_CATEGORY . '-phpunit42' => new Revision(Revision::TYPE_CATEGORY, 'phpunit42', $changed),
-            Revision::TYPE_PRODUCT . '-product1'   => new Revision(Revision::TYPE_PRODUCT, 'product1', $changed),
-            Revision::TYPE_PRODUCT . '-product2'   => new Revision(Revision::TYPE_PRODUCT, 'product2', $changed),
-            Revision::TYPE_PRODUCT . '-product3'   => new Revision(Revision::TYPE_PRODUCT, 'product3', $changed),
-            Revision::TYPE_VARIANT . '-variant1'   => new Revision(Revision::TYPE_VARIANT, 'variant1', $changed),
-            Revision::TYPE_VARIANT . '-variant2'   => new Revision(Revision::TYPE_VARIANT, 'variant2', $changed),
-            Revision::TYPE_VARIANT . '-variant3'   => new Revision(Revision::TYPE_VARIANT, 'variant3', $changed),
+        $productType      = Revision::TYPE_PRODUCT;
+        $variantType      = Revision::TYPE_VARIANT;
+        $expected         = [
+            $productType . '-product1'       => new Revision($productType, 'product1', $changed),
+            $productType . '-product2'       => new Revision($productType, 'product2', $changed),
+            $productType . '-product3'       => new Revision($productType, 'product3', $changed),
+            $variantType . '-variant1'       => new Revision($variantType, 'variant1', $changed),
+            $variantType . '-variant2'       => new Revision($variantType, 'variant2', $changed),
+            $variantType . '-variant3'       => new Revision($variantType, 'variant3', $changed),
         ];
 
         $this->assertEqualsCanonicalizing($expected, $actual);

@@ -5,12 +5,12 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Repository;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Repository\ProductModifierList;
 use Makaira\OxidConnectEssential\Type;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\EventDispatcher\EventDispatcher;
 
-class ProductModifierListTest extends UnitTestCase
+class ProductModifierListTest extends TestCase
 {
-    public function testApplyModifier()
+    public function testApplyModifier(): void
     {
         $modifierMock = $this->createMock(Modifier::class);
         $type = new Type();

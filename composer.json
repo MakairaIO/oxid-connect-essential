@@ -26,6 +26,7 @@
     "require": {
         "php": ">=8.0",
         "ext-curl": "*",
+        "ext-iconv": "*",
         "ext-json": "*",
         "makaira/shared-libs": "^2022.1",
         "symfony/http-foundation": "^5.4"

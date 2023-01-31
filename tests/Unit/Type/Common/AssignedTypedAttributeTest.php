@@ -3,13 +3,13 @@
 namespace Makaira\OxidConnectEssential\Test\Unit\Type\Common;
 
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
 use function md5;
 
-class AssignedTypedAttributeTest extends UnitTestCase
+class AssignedTypedAttributeTest extends TestCase
 {
-    public function testItReturnsItsIdOnStringCast()
+    public function testItReturnsItsIdOnStringCast(): void
     {
         $typedAttribute = new AssignedTypedAttribute(
             ['id' => 'phpunit_id', 'title' => 'PHPUnit Title', 'value' => 42]

@@ -14,9 +14,9 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Category;
 use Makaira\OxidConnectEssential\Modifier\Category\BlacklistModifier;
 use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class BlacklistModifierTest extends UnitTestCase
+class BlacklistModifierTest extends TestCase
 {
     private function productFactory($skipFields = [])
     {

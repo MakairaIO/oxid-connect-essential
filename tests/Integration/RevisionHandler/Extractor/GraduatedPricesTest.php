@@ -1,6 +1,6 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
+namespace Makaira\OxidConnectEssential\Test\Integration\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
@@ -11,11 +11,11 @@ use Makaira\OxidConnectEssential\RevisionHandler\Extractor\GraduatedPrices;
 use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
 use OxidEsales\Eshop\Application\Model\Object2Category;
 use OxidEsales\Eshop\Core\Model\BaseModel;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class GraduatedPricesTest extends UnitTestCase
+class GraduatedPricesTest extends TestCase
 {
-    public function testItSupportsBaseModel()
+    public function testItSupportsBaseModel(): void
     {
         $dataExtractor = new GraduatedPrices($this->createMock(Connection::class));
 
@@ -27,7 +27,7 @@ class GraduatedPricesTest extends UnitTestCase
         $this->assertTrue($actual);
     }
 
-    public function testItDoesNotSupportManufacturerModel()
+    public function testItDoesNotSupportManufacturerModel(): void
     {
         $dataExtractor = new GraduatedPrices($this->createMock(Connection::class));
 
@@ -47,7 +47,7 @@ class GraduatedPricesTest extends UnitTestCase
      * @throws \Doctrine\DBAL\Exception
      * @dataProvider provideTestData
      */
-    public function testReturnsRevisionObject(string $parentId, string $expectedType)
+    public function testReturnsRevisionObject(string $parentId, string $expectedType): void
     {
         $resultMock = $this->createMock(Result::class);
         $resultMock
@@ -88,7 +88,7 @@ class GraduatedPricesTest extends UnitTestCase
         $this->assertEqualsCanonicalizing($expected, $actual);
     }
 
-    public function provideTestData()
+    public function provideTestData(): array
     {
         return [
             'Testing product' => ['', Revision::TYPE_PRODUCT],

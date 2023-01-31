@@ -1,6 +1,6 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
+namespace Makaira\OxidConnectEssential\Test\Integration\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
@@ -11,12 +11,11 @@ use Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleSelectList;
 use OxidEsales\Eshop\Application\Model\Article as OxidArticle;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
-use OxidEsales\TestingLibrary\UnitTestCase;
 use PHPUnit\Framework\TestCase;
 
-class ArticleSelectListTest extends UnitTestCase
+class ArticleSelectListTest extends TestCase
 {
-    public function testItSupportsBaseModel()
+    public function testItSupportsBaseModel(): void
     {
         $dataExtractor = new ArticleSelectList(
             $this->createMock(Connection::class),
@@ -31,7 +30,7 @@ class ArticleSelectListTest extends UnitTestCase
         $this->assertTrue($actual);
     }
 
-    public function testItDoesNotSupportProductModel()
+    public function testItDoesNotSupportProductModel(): void
     {
         $dataExtractor = new ArticleSelectList(
             $this->createMock(Connection::class),
@@ -54,7 +53,7 @@ class ArticleSelectListTest extends UnitTestCase
      * @throws \Doctrine\DBAL\Exception
      * @dataProvider provideTestData
      */
-    public function testReturnsRevisionObject(string $parentId, string $expectedType)
+    public function testReturnsRevisionObject(string $parentId, string $expectedType): void
     {
         $resultMock = $this->createMock(Result::class);
         $resultMock
@@ -102,7 +101,7 @@ class ArticleSelectListTest extends UnitTestCase
         $this->assertEqualsCanonicalizing($expected, $actual);
     }
 
-    public function provideTestData()
+    public function provideTestData(): array
     {
         return [
             'Testing product' => ['', Revision::TYPE_PRODUCT],

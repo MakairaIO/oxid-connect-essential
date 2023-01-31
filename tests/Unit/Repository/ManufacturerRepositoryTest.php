@@ -11,14 +11,14 @@ use Makaira\OxidConnectEssential\Repository\ManufacturerRepository;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
 use Makaira\OxidConnectEssential\Type\Manufacturer\Manufacturer;
-use OxidEsales\TestingLibrary\UnitTestCase;
 use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
-class ManufacturerRepositoryTest extends UnitTestCase
+class ManufacturerRepositoryTest extends TestCase
 {
     use TableTranslatorTrait;
 
-    public function testLoadManufacturer()
+    public function testLoadManufacturer(): void
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -47,7 +47,7 @@ class ManufacturerRepositoryTest extends UnitTestCase
         );
     }
 
-    public function testSetDeletedMarker()
+    public function testSetDeletedMarker(): void
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -72,7 +72,7 @@ class ManufacturerRepositoryTest extends UnitTestCase
         );
     }
 
-    public function testRunModifierLoadManufacturer()
+    public function testRunModifierLoadManufacturer(): void
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -99,7 +99,7 @@ class ManufacturerRepositoryTest extends UnitTestCase
         );
     }
 
-    public function testGetAllIds()
+    public function testGetAllIds(): void
     {
         /**
          * @var AbstractRepository $repository

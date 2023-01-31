@@ -10,19 +10,18 @@ use Makaira\OxidConnectEssential\Entity\RevisionRepository;
 use Makaira\OxidConnectEssential\RevisionHandler\ModelDataExtractor;
 use Makaira\OxidConnectEssential\RevisionHandler\ModelNotSupportedException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
-use OxidEsales\EshopCommunity\Internal\Framework\Event\AbstractShopAwareEventSubscriber;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelDeleteEvent;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelInsertEvent;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\AfterModelUpdateEvent;
 use OxidEsales\EshopCommunity\Internal\Transition\ShopEvents\BeforeHeadersSendEvent;
-use Symfony\Contracts\EventDispatcher\Event;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 use function array_replace;
 
 /**
  * @SuppressWarnings(PHPMD.EmptyCatchBlock)
  */
-class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
+class DatabaseSubscriber implements EventSubscriberInterface
 {
     /**
      * @var array<array<string, Revision>>
@@ -50,7 +49,7 @@ class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
      *
      * @return void
      */
-    public function onChange(Event $event): void
+    public function onChange(AfterModelUpdateEvent|AfterModelInsertEvent|AfterModelDeleteEvent $event): void
     {
         $this->processModel($event->getModel());
     }
@@ -64,7 +63,7 @@ class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
     {
         try {
             $this->revisions[] = $this->dataExtractor->extractData($model);
-        } catch (ModelNotSupportedException $e) {
+        } catch (ModelNotSupportedException) {
         }
     }
 
@@ -92,7 +91,7 @@ class DatabaseSubscriber extends AbstractShopAwareEventSubscriber
     /**
      * @return array<string>
      */
-    public static function getSubscribedEvents()
+    public static function getSubscribedEvents(): array
     {
         return [
             AfterModelUpdateEvent::class => 'onChange',

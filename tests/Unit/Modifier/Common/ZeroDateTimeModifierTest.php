@@ -4,11 +4,11 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Common;
 
 use Makaira\OxidConnectEssential\Modifier\Common\ZeroDateTimeModifier;
 use Makaira\OxidConnectEssential\Type;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class ZeroDateTimeModifierTest extends UnitTestCase
+class ZeroDateTimeModifierTest extends TestCase
 {
-    public function testValidDateTime()
+    public function testValidDateTime(): void
     {
         $modifier = new ZeroDateTimeModifier();
 
@@ -21,7 +21,7 @@ class ZeroDateTimeModifierTest extends UnitTestCase
         $this->assertEquals("2016-01-01", $modifier->apply($type)->timestamp);
     }
 
-    public function testInvalidDateTime()
+    public function testInvalidDateTime(): void
     {
         $modifier = new ZeroDateTimeModifier();
 
@@ -34,26 +34,25 @@ class ZeroDateTimeModifierTest extends UnitTestCase
         $this->assertEquals(null, $modifier->apply($type)->timestamp);
     }
 
-    public function testNonDateValues()
+    public function testNonDateValues(): void
     {
         $modifier = new ZeroDateTimeModifier();
         $stringTestValue = 'some string';
         $arrayTestValue = [1,2,3];
-        $boolTestValue = false;
 
         $type = new Type();
         $type->id = $stringTestValue;
-        $type->active = $boolTestValue;
+        $type->active = false;
         $type->shop = $arrayTestValue;
 
         $this->assertEquals($stringTestValue, $modifier->apply($type)->id);
 
-        $this->assertEquals($boolTestValue, $modifier->apply($type)->active);
+        $this->assertFalse($modifier->apply($type)->active);
 
         $this->assertEquals($arrayTestValue, $modifier->apply($type)->shop);
     }
 
-    public function testInvalidDateTimeNested()
+    public function testInvalidDateTimeNested(): void
     {
         $modifier = new ZeroDateTimeModifier();
 

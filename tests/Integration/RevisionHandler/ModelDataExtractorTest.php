@@ -1,6 +1,6 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler;
+namespace Makaira\OxidConnectEssential\Test\Integration\RevisionHandler;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
@@ -8,11 +8,12 @@ use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\RevisionHandler\Extractor\Article;
 use Makaira\OxidConnectEssential\RevisionHandler\Extractor\Category;
 use Makaira\OxidConnectEssential\RevisionHandler\ModelDataExtractor;
+use Makaira\OxidConnectEssential\RevisionHandler\ModelNotSupportedException;
 use OxidEsales\Eshop\Application\Model\Article as OxidArticle;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class ModelDataExtractorTest extends UnitTestCase
+class ModelDataExtractorTest extends TestCase
 {
     /**
      * @param string $productId
@@ -20,10 +21,10 @@ class ModelDataExtractorTest extends UnitTestCase
      * @param string $expectedType
      *
      * @return void
-     * @throws \Makaira\OxidConnectEssential\RevisionHandler\ModelNotSupportedException
+     * @throws ModelNotSupportedException
      * @dataProvider provideProducts
      */
-    public function testCanExtractDataFromProduct(string $productId, string $parentId, string $expectedType)
+    public function testCanExtractDataFromProduct(string $productId, string $parentId, string $expectedType): void
     {
         $categoryExtractor = new Category(
             $this->createMock(Connection::class),
@@ -53,7 +54,7 @@ class ModelDataExtractorTest extends UnitTestCase
         $this->assertEqualsCanonicalizing($expected, $actual);
     }
 
-    public function provideProducts()
+    public function provideProducts(): array
     {
         return [
             ['phpunit42', '', Revision::TYPE_PRODUCT],
