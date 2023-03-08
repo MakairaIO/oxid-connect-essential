@@ -78,7 +78,7 @@ class VariantAttributesModifier extends Modifier
         Connection $database,
         string $modelClass,
         ModuleSettingsProvider $moduleSettings,
-        UtilsObject $utilsObject
+        UtilsObject $utilsObject,
     ) {
         $this->modelClass     = $modelClass;
         $this->database       = $database;
@@ -147,14 +147,14 @@ class VariantAttributesModifier extends Modifier
                 $valueArray = array_map('trim', explode('|', $variant['value']));
 
                 foreach ($hashArray as $index => $hash) {
-                    $variantAttributes[$hash] = (string) $valueArray[$index];
+                    $variantAttributes[$hash] = (string)$valueArray[$index];
 
                     if (in_array($hash, $integerAttributes, true)) {
-                        $variantAttributes[$hash] = (int) $valueArray[$index];
+                        $variantAttributes[$hash] = (int)$valueArray[$index];
                     }
 
                     if (in_array($hash, $floatAttributes, true)) {
-                        $variantAttributes[$hash] = (float) $valueArray[$index];
+                        $variantAttributes[$hash] = (float)$valueArray[$index];
                     }
                 }
             }
@@ -165,25 +165,25 @@ class VariantAttributesModifier extends Modifier
                 [
                     'productId' => $product->id,
                     'variantId' => $id,
-                ]
+                ],
             );
 
             $attributes = $resultStatement->fetchAllAssociative();
 
             foreach ($attributes as $attribute) {
                 /** @var string $hash */
-                $hash  = $attribute['id'];
+                $hash = $attribute['id'];
                 /** @var string|int|float $value */
                 $value = $attribute['value'];
 
-                $variantAttributes[$hash] = (string) $value;
+                $variantAttributes[$hash] = (string)$value;
 
                 if (in_array($hash, $integerAttributes)) {
-                    $variantAttributes[$hash] = (int) $value;
+                    $variantAttributes[$hash] = (int)$value;
                 }
 
                 if (in_array($hash, $floatAttributes)) {
-                    $variantAttributes[$hash] = (float) $value;
+                    $variantAttributes[$hash] = (float)$value;
                 }
             }
 
