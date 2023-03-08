@@ -9,7 +9,9 @@ use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
+use Makaira\OxidConnectEssential\Type\Variant\Variant;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
+use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\UtilsObject;
 
@@ -58,7 +60,7 @@ class VariantAttributesModifier extends Modifier
 
     private ?BaseModel $model = null;
 
-    private ?string $activeSnippet = null;
+    private string $activeSnippet = '';
 
     private string $modelClass;
 
@@ -68,7 +70,7 @@ class VariantAttributesModifier extends Modifier
 
     /**
      * @param Connection             $database
-     * @param string                 $activeSnippet
+     * @param class-string           $modelClass
      * @param ModuleSettingsProvider $moduleSettings
      * @param UtilsObject            $utilsObject
      */
@@ -87,12 +89,13 @@ class VariantAttributesModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type\Variant\Variant $product
+     * @param Variant $product
      *
      * @return Type
      * @throws ConnectException
      * @throws DBALException
      * @throws Exception
+     * @throws SystemComponentException
      * @SuppressWarnings(PHPMD.NPathComplexity)
      * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      */
@@ -192,13 +195,20 @@ class VariantAttributesModifier extends Modifier
         return $product;
     }
 
+    /**
+     * @return void
+     * @throws SystemComponentException
+     */
     protected function safeGuard(): void
     {
-        if (!($this->model instanceof BaseModel)) {
-            $this->model = $this->utilsObject
-                ->oxNew($this->modelClass);
+        if (
+            !($this->model instanceof BaseModel) &&
+            (($model = $this->utilsObject->oxNew($this->modelClass)) instanceof BaseModel)
+        ) {
+            $this->model = $model;
         }
-        if (!$this->activeSnippet) {
+
+        if (!$this->activeSnippet && $this->model instanceof BaseModel) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
         }
     }

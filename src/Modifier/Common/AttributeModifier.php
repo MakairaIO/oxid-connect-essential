@@ -8,9 +8,10 @@ use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
-use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
+use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\UtilsObject;
 
@@ -98,7 +99,7 @@ class AttributeModifier extends Modifier
 
     private ?BaseModel $model = null;
 
-    private ?string $activeSnippet = null;
+    private string $activeSnippet = '';
 
     private string $modelClass;
 
@@ -106,8 +107,9 @@ class AttributeModifier extends Modifier
 
     /**
      * @param Connection             $database
-     * @param string                 $activeSnippet
+     * @param string                 $modelClass
      * @param ModuleSettingsProvider $moduleSettings
+     * @param UtilsObject            $utilsObject
      */
     public function __construct(
         Connection $database,
@@ -124,14 +126,14 @@ class AttributeModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type\Product\Product $product
+     * @param Product $product
      *
-     * @return Type\Product\Product
-     * @throws ConnectException
+     * @return Product
      * @throws DBALDriverException
      * @throws DBALException
+     * @throws SystemComponentException
      */
-    public function apply(Type $product): Type\Product\Product
+    public function apply(Type $product): Product
     {
         $this->safeGuard();
 
@@ -261,12 +263,20 @@ class AttributeModifier extends Modifier
         return $product;
     }
 
+    /**
+     * @return void
+     * @throws SystemComponentException
+     */
     protected function safeGuard(): void
     {
-        if (!($this->model instanceof BaseModel)) {
-            $this->model = $this->utilsObject->oxNew($this->modelClass);
+        if (
+            !($this->model instanceof BaseModel) &&
+            (($model = $this->utilsObject->oxNew($this->modelClass)) instanceof BaseModel)
+        ) {
+            $this->model = $model;
         }
-        if (!$this->activeSnippet) {
+
+        if (!$this->activeSnippet && $this->model instanceof BaseModel) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
         }
     }
