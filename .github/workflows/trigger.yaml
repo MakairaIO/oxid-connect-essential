@@ -13,7 +13,7 @@ jobs:
         php: [ '8.0', '8.1' ]
         mysql: [ '5.7.37', '8.0' ]
     name: "Testing PHP ${{ matrix.php }} with MySQL ${{ matrix.mysql }}"
-    uses: ./.github/workflows/development.yml
+    uses: ./.github/workflows/development.yaml
     secrets: inherit
     with:
       php: ${{ matrix.php }}
