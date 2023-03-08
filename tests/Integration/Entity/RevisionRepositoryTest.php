@@ -31,10 +31,10 @@ class RevisionRepositoryTest extends IntegrationTestCase
         $revisions = $repository->getRevisions(0);
 
         $expected = [
-            ['sequence' => '1', 'id' => 'product_21', 'type' => 'product'],
-            ['sequence' => '2', 'id' => 'category_42', 'type' => 'category'],
-            ['sequence' => '3', 'id' => 'manufacturer_84', 'type' => 'manufacturer'],
-            ['sequence' => '4', 'id' => 'custom_168', 'type' => 'custom'],
+            ['sequence' => 1, 'id' => 'product_21', 'type' => 'product'],
+            ['sequence' => 2, 'id' => 'category_42', 'type' => 'category'],
+            ['sequence' => 3, 'id' => 'manufacturer_84', 'type' => 'manufacturer'],
+            ['sequence' => 4, 'id' => 'custom_168', 'type' => 'custom'],
         ];
 
         static::assertSame($expected, $revisions);
@@ -70,19 +70,19 @@ EOQ;
                 'id1' => 'custom_1',
                 'id2' => 'custom_2',
                 'changed1' => '2022-01-01T00:00:00.000+00:00',
-                'changed2' => '2021-01-01T00:00:00.000+00:00',
+                'changed2' => '2021-01-01T00:00:00.000+00:00',t
             ]
         );
 
         $revisions = $repository->getRevisions(0);
 
         $expected = [
-            ['sequence' => '1', 'id' => 'product_21', 'type' => 'product'],
-            ['sequence' => '2', 'id' => 'category_42', 'type' => 'category'],
-            ['sequence' => '3', 'id' => 'manufacturer_84', 'type' => 'manufacturer'],
-            ['sequence' => '4', 'id' => 'custom_168', 'type' => 'custom'],
-            ['sequence' => '5', 'id' => 'custom_1', 'type' => 'custom'],
-            ['sequence' => '6', 'id' => 'custom_2', 'type' => 'custom'],
+            ['sequence' => 1, 'id' => 'product_21', 'type' => 'product'],
+            ['sequence' => 2, 'id' => 'category_42', 'type' => 'category'],
+            ['sequence' => 3, 'id' => 'manufacturer_84', 'type' => 'manufacturer'],
+            ['sequence' => 4, 'id' => 'custom_168', 'type' => 'custom'],
+            ['sequence' => 5, 'id' => 'custom_1', 'type' => 'custom'],
+            ['sequence' => 6, 'id' => 'custom_2', 'type' => 'custom'],
         ];
 
         $this->assertSame($expected, $revisions);
@@ -92,10 +92,10 @@ EOQ;
         $revisions = $repository->getRevisions(0);
 
         $expected = [
-            ['sequence' => '1', 'id' => 'product_21', 'type' => 'product'],
-            ['sequence' => '2', 'id' => 'category_42', 'type' => 'category'],
-            ['sequence' => '3', 'id' => 'manufacturer_84', 'type' => 'manufacturer'],
-            ['sequence' => '4', 'id' => 'custom_168', 'type' => 'custom'],
+            ['sequence' => 1, 'id' => 'product_21', 'type' => 'product'],
+            ['sequence' => 2, 'id' => 'category_42', 'type' => 'category'],
+            ['sequence' => 3, 'id' => 'manufacturer_84', 'type' => 'manufacturer'],
+            ['sequence' => 4, 'id' => 'custom_168', 'type' => 'custom'],
         ];
 
         $this->assertSame($expected, $revisions);
