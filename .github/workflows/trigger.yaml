@@ -7,12 +7,15 @@ on:
     types: [ opened, synchronize, reopened ]
 
 jobs:
-  trigger_test:
+  run-tests:
     strategy:
       matrix:
         php: [ '8.0', '8.1' ]
-        mysql: ['5.7.37', '8.0' ]
-    uses: ./.github/workflows/development.yaml
+        mysql: [ '5.7.37', '8.0' ]
+    name: "Testing PHP ${{ matrix.php }} with MySQL ${{ matrix.mysql }}"
+    uses: ./.github/workflows/development.yml
+    secrets: inherit
     with:
       php: ${{ matrix.php }}
       mysql: ${{ matrix.mysql }}
+#      report_sonarcloud: true
