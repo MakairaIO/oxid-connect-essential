@@ -9,19 +9,14 @@ use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Product\Product;
+use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\UtilsObject;
 
 abstract class AbstractActiveModifier extends Modifier
 {
-    /**
-     * @var string
-     */
     private ?string $activeSnippet = null;
 
-    /**
-     * @var string
-     */
     private ?string $tableName = null;
 
     private string $modelClass;
@@ -33,9 +28,9 @@ abstract class AbstractActiveModifier extends Modifier
     private UtilsObject $utilsObject;
 
     /**
-     * @param Connection  $database
-     * @param BaseModel   $model
-     * @param UtilsObject $utilsObject
+     * @param Connection   $database
+     * @param class-string $modelClass
+     * @param UtilsObject  $utilsObject
      */
     public function __construct(
         Connection $database,
@@ -55,8 +50,9 @@ abstract class AbstractActiveModifier extends Modifier
      * @return Type
      * @throws DBALException
      * @throws DBALDriverException
+     * @throws SystemComponentException
      */
-    public function apply(Type $product)
+    public function apply(Type $product): Type
     {
         $this->safeGuard();
 
@@ -71,15 +67,23 @@ abstract class AbstractActiveModifier extends Modifier
         return $product;
     }
 
+    /**
+     * @return void
+     * @throws SystemComponentException
+     */
     protected function safeGuard(): void
     {
-        if (!$this->model instanceof BaseModel) {
-            $this->model = $this->utilsObject->oxNew($this->modelClass);
+        if (
+            !($this->model instanceof BaseModel) &&
+            (($model = $this->utilsObject->oxNew($this->modelClass)) instanceof BaseModel)
+        ) {
+            $this->model = $model;
         }
-        if (!$this->activeSnippet) {
+
+        if (!$this->activeSnippet && $this->model instanceof BaseModel) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
         }
-        if (!$this->tableName) {
+        if (!$this->tableName && $this->model instanceof BaseModel) {
             $this->tableName = (string) $this->model->getCoreTableName();
         }
     }
