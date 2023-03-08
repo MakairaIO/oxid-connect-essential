@@ -115,7 +115,7 @@ class AttributeModifier extends Modifier
         Connection $database,
         string $modelClass,
         ModuleSettingsProvider $moduleSettings,
-        UtilsObject $utilsObject
+        UtilsObject $utilsObject,
     ) {
         $this->modelClass     = $modelClass;
         $this->database       = $database;
@@ -145,14 +145,14 @@ class AttributeModifier extends Modifier
         $integerAttributes = $this->moduleSettings->get('makaira_attribute_as_int');
 
         /** @var array<string> $floatAttributes */
-        $floatAttributes   = $this->moduleSettings->get('makaira_attribute_as_float');
+        $floatAttributes = $this->moduleSettings->get('makaira_attribute_as_float');
 
         if (false === $product->isVariant) {
             $product->tmpAttributeStr   = [];
             $product->tmpAttributeInt   = [];
             $product->tmpAttributeFloat = [];
             foreach ($attributes as $attributeData) {
-                $attribute                = new AssignedTypedAttribute($attributeData);
+                $attribute                  = new AssignedTypedAttribute($attributeData);
                 $product->tmpAttributeStr[] = $attribute;
 
                 $attributeId = $attributeData['id'];

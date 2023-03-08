@@ -35,10 +35,10 @@ abstract class AbstractActiveModifier extends Modifier
     public function __construct(
         Connection $database,
         string $modelClass,
-        UtilsObject $utilsObject
+        UtilsObject $utilsObject,
     ) {
-        $this->database   = $database;
-        $this->modelClass = $modelClass;
+        $this->database    = $database;
+        $this->modelClass  = $modelClass;
         $this->utilsObject = $utilsObject;
     }
 
@@ -62,7 +62,7 @@ abstract class AbstractActiveModifier extends Modifier
 
         /** @var Result $resultStatement */
         $resultStatement = $this->database->executeQuery($sql);
-        $product->active = (bool) $resultStatement->fetchOne();
+        $product->active = (bool)$resultStatement->fetchOne();
 
         return $product;
     }
@@ -84,7 +84,7 @@ abstract class AbstractActiveModifier extends Modifier
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
         }
         if (!$this->tableName && $this->model instanceof BaseModel) {
-            $this->tableName = (string) $this->model->getCoreTableName();
+            $this->tableName = (string)$this->model->getCoreTableName();
         }
     }
 }

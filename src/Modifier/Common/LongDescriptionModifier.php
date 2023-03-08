@@ -31,7 +31,7 @@ class LongDescriptionModifier extends Modifier
     public function apply(Type $product)
     {
         if ($this->parseLongDesc) {
-            $product->longdesc = $this->renderer->parseContent((string) $product->id, $product->longdesc);
+            $product->longdesc = $this->renderer->parseContent((string)$product->id, $product->longdesc);
         }
 
         $product->longdesc = trim(strip_tags($product->longdesc));
