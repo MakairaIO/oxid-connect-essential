@@ -1,5 +1,5 @@
 {
-  "branches": ["stable"],
+  "branches": ["+([0-9])?(.{+([0-9]),x}).x", "stable"],
   "tagFormat": "${version}",
   "plugins": [
     "@semantic-release/commit-analyzer",
