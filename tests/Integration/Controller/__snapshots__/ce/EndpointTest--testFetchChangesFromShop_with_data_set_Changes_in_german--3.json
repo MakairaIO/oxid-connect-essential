@@ -26,6 +26,16 @@
                         "value": "orange"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "grau"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "orange"
+                    },
+                    {
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "S"
@@ -39,16 +49,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "L"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "grau"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "orange"
                     }
                 ],
                 "attributes": [
@@ -958,14 +958,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6cf89d2d73e666457d167cebfc3eb492",
-                        "title": "Lieferumfang",
-                        "value": "Kite, Tasche, CPR Control System, Pumpe"
-                    },
-                    {
                         "id": "8a142c3f14ef22a14.79693851",
                         "title": "Einsatzbereich",
                         "value": "Allround"
+                    },
+                    {
+                        "id": "6cf89d2d73e666457d167cebfc3eb492",
+                        "title": "Lieferumfang",
+                        "value": "Kite, Tasche, CPR Control System, Pumpe"
                     }
                 ],
                 "category": [
@@ -1034,14 +1034,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6cf89d2d73e666457d167cebfc3eb492",
-                        "title": "Lieferumfang",
-                        "value": "Kite, Tasche, CPR Control System, Pumpe"
-                    },
-                    {
                         "id": "8a142c3f14ef22a14.79693851",
                         "title": "Einsatzbereich",
                         "value": "Allround"
+                    },
+                    {
+                        "id": "6cf89d2d73e666457d167cebfc3eb492",
+                        "title": "Lieferumfang",
+                        "value": "Kite, Tasche, CPR Control System, Pumpe"
                     }
                 ],
                 "attributes": [
@@ -1929,14 +1929,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6cf89d2d73e666457d167cebfc3eb492",
-                        "title": "Lieferumfang",
-                        "value": "Kite, Tasche, CPR Control System, Pumpe"
-                    },
-                    {
                         "id": "8a142c3f14ef22a14.79693851",
                         "title": "Einsatzbereich",
                         "value": "Progressive Freestyle, Wakestyle"
+                    },
+                    {
+                        "id": "6cf89d2d73e666457d167cebfc3eb492",
+                        "title": "Lieferumfang",
+                        "value": "Kite, Tasche, CPR Control System, Pumpe"
                     }
                 ],
                 "category": [
@@ -2005,14 +2005,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6cf89d2d73e666457d167cebfc3eb492",
-                        "title": "Lieferumfang",
-                        "value": "Kite, Tasche, CPR Control System, Pumpe"
-                    },
-                    {
                         "id": "8a142c3f14ef22a14.79693851",
                         "title": "Einsatzbereich",
                         "value": "Progressive Freestyle, Wakestyle"
+                    },
+                    {
+                        "id": "6cf89d2d73e666457d167cebfc3eb492",
+                        "title": "Lieferumfang",
+                        "value": "Kite, Tasche, CPR Control System, Pumpe"
                     }
                 ],
                 "attributes": [
@@ -2651,24 +2651,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Super Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Super Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -2743,6 +2743,11 @@
                         "value": "Super Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Super Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 32"
@@ -2751,11 +2756,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Super Blue"
                     }
                 ],
                 "attributes": [],
@@ -2830,6 +2830,11 @@
                         "value": "Super Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Super Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 30"
@@ -2838,11 +2843,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Super Blue"
                     }
                 ],
                 "attributes": [],
@@ -2917,6 +2917,11 @@
                         "value": "Super Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Super Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 31\/L 30"
@@ -2925,11 +2930,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Super Blue"
                     }
                 ],
                 "attributes": [],
@@ -2999,24 +2999,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
                     }
                 ],
                 "attributes": [],
