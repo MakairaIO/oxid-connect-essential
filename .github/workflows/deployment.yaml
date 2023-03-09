@@ -2,9 +2,9 @@ name: Development
 
 on:
   push:
-    branches: [ stable ]
+    branches: [ "[0-9]+.x", stable ]
   pull_request:
-    branches: [ stable ]
+    branches: [ "[0-9]+.x", stable ]
     types: [opened, synchronize, reopened]
 
 env:
