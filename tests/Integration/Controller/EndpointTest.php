@@ -2,16 +2,9 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 
-use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Exception as DBALException;
-use Makaira\OxidConnectEssential\Rpc\SignatureCheck;
 use Makaira\OxidConnectEssential\Test\ArraySort;
-use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
-use Makaira\Signing\Hash\Sha256;
-use Makaira\Signing\HashGenerator;
-use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
-use Exception;
 use JsonException;
 use Makaira\OxidConnectEssential\Command\TouchAllCommand;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
@@ -22,7 +15,6 @@ use OxidEsales\Eshop\Core\Model\MultiLanguageModel;
 use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingServiceInterface;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
-use ReflectionException;
 use Symfony\Component\Console\Exception\ExceptionInterface;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
@@ -34,8 +26,6 @@ use function is_string;
 use function json_decode;
 use function md5;
 use function preg_replace;
-
-use function strnatcmp;
 
 use const JSON_THROW_ON_ERROR;
 
