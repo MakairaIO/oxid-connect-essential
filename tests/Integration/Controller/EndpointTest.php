@@ -5,6 +5,7 @@ namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Rpc\SignatureCheck;
+use Makaira\OxidConnectEssential\Test\ArraySort;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use Makaira\Signing\Hash\Sha256;
 use Makaira\Signing\HashGenerator;
@@ -268,9 +269,9 @@ class EndpointTest extends IntegrationTestCase
                         }
 
                         if (isset($change['data']['attributeStr'])) {
-                            usort(
+                            $change['data']['attributeStr'] = ArraySort::mergeSort(
                                 $change['data']['attributeStr'],
-                                static fn ($a, $b) => strcmp($a['title'], $b['title'])
+                                ['title' => ArraySort::ASCENDING, 'value' => ArraySort::ASCENDING]
                             );
                         }
 
