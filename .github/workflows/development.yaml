@@ -127,6 +127,8 @@ jobs:
             --json '{"type":"path", "url":"./test-module", "options": {"symlink": true}}'
           docker-compose exec -T \
             php composer require ${{ env.PACKAGE_NAME }}:* --no-interaction --no-update
+          docker-compose exec -T \
+            php composer require oxid-esales/oxideshop-demodata-ce:"dev-b-7.0.x" --no-interaction --no-update
 
       - name: Install dependencies and reset shop
         run: |
