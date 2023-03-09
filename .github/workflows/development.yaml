@@ -14,7 +14,7 @@ on:
         default: 'both'
       module_codecept_test_group:
         type: string
-        default: 'oe_moduletemplate'
+        default: 'makaira_oxid-connect-essential'
       report_sonarcloud:
         type: boolean
         default: false
@@ -37,20 +37,6 @@ on:
         options:
           - '5.7.37'
           - '8.0'
-      template_engine:
-        description: 'Template engine - smarty with flow theme, twig with twig theme'
-        required: true
-        default: 'twig'
-        type: choice
-        options:
-          - 'both'
-          - 'twig'
-          - 'smarty'
-      module_codecept_test_group:
-        description: 'Module codeception test group'
-        required: true
-        default: 'oe_moduletemplate'
-        type: string
       report_sonarcloud:
         description: 'Trigger sonarcloud analize?'
         required: true
