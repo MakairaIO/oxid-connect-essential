@@ -25,21 +25,14 @@ class CartServiceTest extends IntegrationTestCase
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
                 "name"         => "Kite NBK EVO",
                 "price"        => 699.0,
-                "base_price"   => "699",
+                "base_price"   => 699.0,
                 "quantity"     => 20.0,
                 "image_path"   => '/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg',
             ],
         ];
 
         $actual = $cartService->getCartItems();
-        $actual = array_map(
-            static function ($entry) {
-                $entry['image_path'] = preg_replace('@^.*(/out/pictures/)@', '$1', $entry['image_path']);
-
-                return $entry;
-            },
-            $actual
-        );
+        $this->normalizeCartItems($actual);
 
         self::assertEquals($expected, $actual);
 
@@ -50,21 +43,14 @@ class CartServiceTest extends IntegrationTestCase
                 "cart_item_id" => "5f62f5daee9ecb4b4389918a2b070643",
                 "name"         => "Kite NBK EVO",
                 "price"        => 699.0,
-                "base_price"   => "699",
+                "base_price"   => 699.0,
                 "quantity"     => 15.0,
                 "image_path"   => '/out/pictures/generated/product/1/87_87_75/nkb_evo_2010_1.jpg',
             ],
         ];
 
         $actual = $cartService->getCartItems();
-        $actual = array_map(
-            static function ($entry) {
-                $entry['image_path'] = preg_replace('@^.*(/out/pictures/)@', '$1', $entry['image_path']);
-
-                return $entry;
-            },
-            $actual
-        );
+        $this->normalizeCartItems($actual);
 
         self::assertEquals($expected, $actual);
 
@@ -88,5 +74,22 @@ class CartServiceTest extends IntegrationTestCase
         $this->expectExceptionMessage("Invalid cart_item_id: phpunit42");
 
         $cartService->updateCartItem('phpunit42', 42);
+    }
+
+    /**
+     * @param array $actual
+     *
+     * @return void
+     */
+    private function normalizeCartItems(array &$actual): void
+    {
+        $actual = array_map(
+            static fn ($entry) => [
+                ...$entry,
+                'image_path' => preg_replace('@^.*(/+out/+pictures/+)@', '/out/pictures/', $entry['image_path']),
+                'base_price' => (float)$entry['base_price'],
+            ],
+            $actual
+        );
     }
 }

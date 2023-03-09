@@ -29,6 +29,7 @@ class RevisionRepositoryTest extends IntegrationTestCase
         $repository = $this->insertRevisions();
 
         $revisions = $repository->getRevisions(0);
+        $this->normalizeRevisions($revisions);
 
         $expected = [
             ['sequence' => 1, 'id' => 'product_21', 'type' => 'product'],
@@ -75,6 +76,7 @@ EOQ;
         );
 
         $revisions = $repository->getRevisions(0);
+        $this->normalizeRevisions($revisions);
 
         $expected = [
             ['sequence' => 1, 'id' => 'product_21', 'type' => 'product'],
@@ -90,6 +92,7 @@ EOQ;
         $repository->cleanup();
 
         $revisions = $repository->getRevisions(0);
+        $this->normalizeRevisions($revisions);
 
         $expected = [
             ['sequence' => 1, 'id' => 'product_21', 'type' => 'product'],
@@ -122,5 +125,18 @@ EOQ;
         $repository->touch('custom', 'custom_168');
 
         return $repository;
+    }
+
+    /**
+     * @param array $revisions
+     *
+     * @return void
+     */
+    private function normalizeRevisions(array &$revisions): void
+    {
+        $revisions = array_map(
+            static fn ($revision) => [...$revision, 'sequence' => (int)$revision['sequence']],
+            $revisions
+        );
     }
 }
