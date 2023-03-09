@@ -13,7 +13,6 @@ use OxidEsales\Eshop\Core\Exception\UserException;
 use OxidEsales\Eshop\Core\Session;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
-use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingServiceInterface;
 use OxidEsales\EshopCommunity\Tests\DatabaseTrait;
 use OxidEsales\Facts\Edition\EditionSelector;
 use PHPUnit\Framework\TestCase;
