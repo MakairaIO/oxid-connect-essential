@@ -1,5 +1,8 @@
 name: Development
 
+on:
+  workflow_call:
+
 env:
   PACKAGE_NAME: 'makaira/oxid-connect-essential'
   MODULE_PATH: 'makaira/oxid-connect-essential'
