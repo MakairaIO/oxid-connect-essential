@@ -135,7 +135,11 @@ EOQ;
     private function normalizeRevisions(array &$revisions): void
     {
         $revisions = array_map(
-            static fn ($revision) => [...$revision, 'sequence' => (int)$revision['sequence']],
+            static function ($revision) {
+                $revision['sequence'] = (int)$revision['sequence'];
+
+                return $revision;
+            },
             $revisions
         );
     }

@@ -84,11 +84,12 @@ class CartServiceTest extends IntegrationTestCase
     private function normalizeCartItems(array &$actual): void
     {
         $actual = array_map(
-            static fn ($entry) => [
-                ...$entry,
-                'image_path' => preg_replace('@^.*(/+out/+pictures/+)@', '/out/pictures/', $entry['image_path']),
-                'base_price' => (float)$entry['base_price'],
-            ],
+            static function ($entry) {
+                $entry['image_path'] = preg_replace('@^.*(/+out/+pictures/+)@', '/out/pictures/', $entry['image_path']);
+                $entry['base_price'] = (float)$entry['base_price'];
+
+                return $entry;
+            },
             $actual
         );
     }
