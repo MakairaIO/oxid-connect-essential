@@ -524,12 +524,12 @@
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
-                        "value": "wei\u00df"
+                        "value": "schwarz"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
-                        "value": "schwarz"
+                        "value": "wei\u00df"
                     }
                 ],
                 "attributes": [
@@ -985,11 +985,6 @@
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
-                        "value": "Super Blue"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
                         "value": "Blau"
                     },
                     {
@@ -998,6 +993,11 @@
                         "value": "Smoke Gray"
                     },
                     {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Super Blue"
+                    },
+                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
@@ -1011,11 +1011,6 @@
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Super Blue"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
@@ -1028,14 +1023,34 @@
                         "value": "W 31\/L 34"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -1071,21 +1086,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
                     }
                 ],
                 "attributes": [
@@ -1217,17 +1217,37 @@
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
+                        "value": "Blau"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
+                        "value": "Schwarz"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -1268,26 +1288,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
                     }
                 ],
                 "attributes": [
@@ -1366,17 +1366,7 @@
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XL"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XS"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "S"
+                        "value": "L"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
@@ -1386,7 +1376,32 @@
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
                     },
                     {
                         "id": "0e523da04c67ea53a87092a492db1689",
@@ -1397,21 +1412,6 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XS"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
                     },
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
@@ -1569,17 +1569,17 @@
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
+                        "value": "Dark Blue"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "value": "Schwarz"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 32"
+                        "value": "W 30\/L 30"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
@@ -1589,7 +1589,27 @@
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -1630,26 +1650,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
                     }
                 ],
                 "attributes": [
@@ -1762,17 +1762,7 @@
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XL"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XS"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "S"
+                        "value": "L"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
@@ -1782,7 +1772,32 @@
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
                     },
                     {
                         "id": "0e523da04c67ea53a87092a492db1689",
@@ -1793,21 +1808,6 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XS"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
                     },
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
