@@ -258,6 +258,13 @@ class EndpointTest extends IntegrationTestCase
                             unset($change['data']['additionalData']);
                         }
 
+                        if (isset($change['data']['shop'])) {
+                            $change['data']['shop'] = array_map(
+                                static fn ($shopId) => (int) $shopId,
+                                (array) $change['data']['shop']
+                            );
+                        }
+
                         ksort($change['data']);
 
                         return $change;
