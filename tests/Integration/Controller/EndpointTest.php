@@ -34,6 +34,8 @@ use function json_decode;
 use function md5;
 use function preg_replace;
 
+use function strnatcmp;
+
 use const JSON_THROW_ON_ERROR;
 
 /**
@@ -262,6 +264,13 @@ class EndpointTest extends IntegrationTestCase
                             $change['data']['shop'] = array_map(
                                 static fn ($shopId) => (int) $shopId,
                                 (array) $change['data']['shop']
+                            );
+                        }
+
+                        if (isset($change['data']['attributeStr'])) {
+                            usort(
+                                $change['data']['attributeStr'],
+                                static fn ($a, $b) => strcmp($a['title'], $b['title'])
                             );
                         }
 

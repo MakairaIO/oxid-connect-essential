@@ -998,6 +998,21 @@
                         "value": "Smoke Gray"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Smoke Gray"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Super Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 34"
@@ -1071,21 +1086,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Smoke Gray"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Super Blue"
                     }
                 ],
                 "attributes": [
@@ -1215,6 +1215,16 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 32"
@@ -1278,16 +1288,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [
@@ -1369,16 +1369,6 @@
                         "value": "XL"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Clover"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Violet"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "XS"
@@ -1422,6 +1412,16 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "L"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -1567,6 +1567,16 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 32"
@@ -1640,16 +1650,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [
@@ -1760,19 +1760,54 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "M"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XL"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
                     },
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
@@ -1780,19 +1815,14 @@
                         "value": "White"
                     },
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XS"
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "White"
                     },
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "S"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "M"
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
@@ -1800,44 +1830,14 @@
                         "value": "4.2"
                     },
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "L"
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     },
                     {
                         "id": "df3e95af29221b89021a3ae7d6e44ee0",
                         "title": "PHPUnit integer attribute",
                         "value": "42"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "XL"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "XS"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "White"
                     }
                 ],
                 "attributes": [
