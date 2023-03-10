@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.3...2.0.0) (2023-03-10)
+
+
+### Features
+
+* OXID 7.0 compability ([#19](https://github.com/MakairaIO/oxid-connect-essential/issues/19)) ([fa17cbf](https://github.com/MakairaIO/oxid-connect-essential/commit/fa17cbfb6c1f7e6d4e927a484c3e71d2fea25765))
+
+
+### BREAKING CHANGES
+
+* Incompatibilities between OXID 6.5 and OXID 7.0
+
 ## [1.4.3](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.2...1.4.3) (2022-09-19)
 
 
