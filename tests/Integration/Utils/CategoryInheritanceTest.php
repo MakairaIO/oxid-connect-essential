@@ -3,14 +3,21 @@
 namespace Makaira\OxidConnectEssential\Test\Integration\Utils;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
+use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Utils\CategoryInheritance;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class CategoryInheritanceTest extends UnitTestCase
+class CategoryInheritanceTest extends TestCase
 {
-    public function testReturnCategoryIdIfInheritanceIsNotUsed()
+    /**
+     * @return void
+     * @throws DBALDriverException
+     * @throws DBALException
+     */
+    public function testReturnCategoryIdIfInheritanceIsNotUsed(): void
     {
         $databaseMock       = $this->createMock(Connection::class);
         $moduleSettingsMock = $this->createMock(ModuleSettingsProvider::class);
@@ -21,7 +28,12 @@ class CategoryInheritanceTest extends UnitTestCase
         $this->assertSame(['phpunit'], $categoryInheritance->buildCategoryInheritance('phpunit'));
     }
 
-    public function testReturnArrayIfInheritanceIsUsed()
+    /**
+     * @return void
+     * @throws DBALDriverException
+     * @throws DBALException
+     */
+    public function testReturnArrayIfInheritanceIsUsed(): void
     {
         $ids = ['fad569d6659caca39bc93e98d13dd58b', 'phpunit_21', 'phpunit_42', 'phpunit_84'];
 

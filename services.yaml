@@ -194,7 +194,7 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Common\LongDescriptionModifier:
     bind:
-      $parseThroughSmarty: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("bl_perfParseLongDescinSmarty")'
+      $parseLongDesc: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("bl_perfParseLongDescinSmarty")'
 
   Makaira\OxidConnectEssential\Modifier\Common\PriceModifier:
     bind:
@@ -276,6 +276,12 @@ services:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
 ### Helper ###
+
+  Doctrine\DBAL\Driver\Connection:
+    alias: Doctrine\DBAL\Connection
+
+  Doctrine\DBAL\Connection:
+    factory: ['@OxidEsales\EshopCommunity\Internal\Framework\Database\ConnectionProviderInterface', 'get']
 
   OxidEsales\Eshop\Core\Language:
     public: true

@@ -11,21 +11,14 @@ use Makaira\OxidConnectEssential\Utils\ContentParserInterface;
  */
 class LongDescriptionModifier extends Modifier
 {
-    /** @var  ContentParserInterface */
-    private ContentParserInterface $contentParser;
-
-    private bool $parseThroughSmarty;
-
     /**
-     * LongDescriptionModifier constructor.
-     *
-     * @param ContentParserInterface $contentParser
-     * @param bool                   $parseThroughSmarty
+     * @param ContentParserInterface $renderer
+     * @param bool|null              $parseLongDesc
      */
-    public function __construct(ContentParserInterface $contentParser, bool $parseThroughSmarty = false)
-    {
-        $this->parseThroughSmarty = $parseThroughSmarty;
-        $this->contentParser      = $contentParser;
+    public function __construct(
+        private ContentParserInterface $renderer,
+        private ?bool $parseLongDesc = false,
+    ) {
     }
 
     /**
@@ -37,8 +30,8 @@ class LongDescriptionModifier extends Modifier
      */
     public function apply(Type $product)
     {
-        if ($this->parseThroughSmarty) {
-            $product->longdesc = $this->contentParser->parseContent($product->longdesc);
+        if ($this->parseLongDesc) {
+            $product->longdesc = $this->renderer->parseContent((string)$product->id, $product->longdesc);
         }
 
         $product->longdesc = trim(strip_tags($product->longdesc));

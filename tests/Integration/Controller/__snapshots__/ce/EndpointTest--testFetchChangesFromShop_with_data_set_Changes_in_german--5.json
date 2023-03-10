@@ -16,24 +16,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Smoke Gray"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Smoke Gray"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -55,7 +55,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">\r\n<p><span>Eine lockere und l\u00e4ssige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.<\/span><\/p>\r\n<p><span><br \/>\r\n<strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><\/span><\/p>\r\n<p><span><br \/>\r\n<\/span><\/p><\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -73,11 +73,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,anna,kuyichi,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-ANNA.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-ANNA.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-ANNA.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "L\u00e4ssige Damenjeans von Kuyichi",
                 "soldamount": 0,
@@ -103,24 +103,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Smoke Gray"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Smoke Gray"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -142,7 +142,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">\r\n<p><span>Eine lockere und l\u00e4ssige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.<\/span><\/p>\r\n<p><span><br \/>\r\n<strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><\/span><\/p>\r\n<p><span><br \/>\r\n<\/span><\/p><\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -160,11 +160,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,anna,kuyichi,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-ANNA.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-ANNA.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-ANNA.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "L\u00e4ssige Damenjeans von Kuyichi",
                 "soldamount": 0,
@@ -195,6 +195,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 31\/L 32"
@@ -203,11 +208,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -229,7 +229,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">\r\n<p><span>Eine lockere und l\u00e4ssige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.<\/span><\/p>\r\n<p><span><br \/>\r\n<strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><\/span><\/p>\r\n<p><span><br \/>\r\n<\/span><\/p><\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -247,11 +247,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,anna,kuyichi,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-ANNA.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-ANNA.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-ANNA.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "L\u00e4ssige Damenjeans von Kuyichi",
                 "soldamount": 0,
@@ -282,6 +282,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 32"
@@ -290,11 +295,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -316,7 +316,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">\r\n<p><span>Eine lockere und l\u00e4ssige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.<\/span><\/p>\r\n<p><span><br \/>\r\n<strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><\/span><\/p>\r\n<p><span><br \/>\r\n<\/span><\/p><\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -334,11 +334,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,anna,kuyichi,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-ANNA.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-ANNA.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-ANNA.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "L\u00e4ssige Damenjeans von Kuyichi",
                 "soldamount": 0,
@@ -364,24 +364,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 30"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Super Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Super Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
                     }
                 ],
                 "attributes": [],
@@ -403,7 +403,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">\r\n<p><span>Eine lockere und l\u00e4ssige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.<\/span><\/p>\r\n<p><span><br \/>\r\n<strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><\/span><\/p>\r\n<p><span><br \/>\r\n<\/span><\/p><\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -421,11 +421,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,anna,kuyichi,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-ANNA.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-ANNA.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-ANNA.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "L\u00e4ssige Damenjeans von Kuyichi",
                 "soldamount": 0,
@@ -456,6 +456,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 30"
@@ -464,11 +469,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -490,7 +490,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">\r\n<p><span>Eine lockere und l\u00e4ssige Damenjeans von Kuyichi mit individuell einstellbarem Bund und lockerer Passform, gerade geschnitten.<\/span><\/p>\r\n<p><span><br \/>\r\n<strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><\/span><\/p>\r\n<p><span><br \/>\r\n<\/span><\/p><\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -508,11 +508,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,anna,kuyichi,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-ANNA.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-ANNA.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-ANNA.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "L\u00e4ssige Damenjeans von Kuyichi",
                 "soldamount": 0,
@@ -538,24 +538,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -577,7 +577,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -595,11 +595,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -625,24 +625,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -664,7 +664,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -682,11 +682,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -712,24 +712,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -751,7 +751,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -769,11 +769,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -799,24 +799,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -838,7 +838,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -856,11 +856,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -891,6 +891,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 31\/L 30"
@@ -899,11 +904,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -925,7 +925,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -943,11 +943,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -978,6 +978,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 32"
@@ -986,11 +991,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1012,7 +1012,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1030,11 +1030,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1060,24 +1060,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 30"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 30"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
                     }
                 ],
                 "attributes": [],
@@ -1099,7 +1099,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1117,11 +1117,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1152,6 +1152,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 30"
@@ -1160,11 +1165,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1186,7 +1186,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1204,11 +1204,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1239,6 +1239,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 32"
@@ -1247,11 +1252,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1273,7 +1273,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1291,11 +1291,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1326,6 +1326,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 30"
@@ -1334,11 +1339,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1360,7 +1360,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1378,11 +1378,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1413,6 +1413,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 31\/L 30"
@@ -1421,11 +1426,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1447,7 +1447,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1465,11 +1465,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1500,6 +1500,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 32"
@@ -1508,11 +1513,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1534,7 +1534,7 @@
                 "isVariant": true,
                 "longdesc": "Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot\r\nJeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty\r\nDenim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von\r\nHand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1552,11 +1552,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1587,6 +1587,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 32"
@@ -1595,11 +1600,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1621,7 +1621,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1639,11 +1639,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1674,6 +1674,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 31\/L 34"
@@ -1682,11 +1687,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1708,7 +1708,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1726,11 +1726,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1761,6 +1761,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 30"
@@ -1769,11 +1774,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1795,7 +1795,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1813,11 +1813,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1848,6 +1848,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 34"
@@ -1856,11 +1861,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1882,7 +1882,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1900,11 +1900,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -1935,6 +1935,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 31\/L 32"
@@ -1943,11 +1948,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1969,7 +1969,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -1987,11 +1987,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -2022,6 +2022,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 32"
@@ -2030,11 +2035,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -2056,7 +2056,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -2074,11 +2074,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,
@@ -2104,24 +2104,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 30"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
                     }
                 ],
                 "attributes": [],
@@ -2143,7 +2143,7 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Die modische und schmale Herrenjeans von Kuyichi. Schmale  Low Boot Jeans mit geradem Beinschnitt. Gefertigt ist die Jeans aus 16\/23 Rusty Denim in dunkler Waschung mit markant starkem Abrieb und aufw\u00e4ndig, von Hand gearbeiteten Used-Effekten.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><br \/>\r\n<\/div>",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                 "mak_boost_norm_insert": 0,
                 "mak_boost_norm_profit_margin": 0,
                 "mak_boost_norm_rating": 0,
@@ -2161,11 +2161,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,modisch,dunkel",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Schmale Low Boot Jeans mit geradem Beinschnitt",
                 "soldamount": 0,

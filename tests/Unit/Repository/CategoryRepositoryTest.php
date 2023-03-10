@@ -10,17 +10,15 @@ use Makaira\OxidConnectEssential\Repository\CategoryRepository;
 use Makaira\OxidConnectEssential\Repository\DataMapper;
 use Makaira\OxidConnectEssential\Repository\ModifierList;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
-use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Category\Category;
-use OxidEsales\TestingLibrary\UnitTestCase;
-use ParseError;
 use PHPUnit\Framework\MockObject\MockObject;
+use PHPUnit\Framework\TestCase;
 
-class CategoryRepositoryTest extends UnitTestCase
+class CategoryRepositoryTest extends TestCase
 {
     use TableTranslatorTrait;
 
-    public function testLoadCategory()
+    public function testLoadCategory(): void
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -41,7 +39,7 @@ class CategoryRepositoryTest extends UnitTestCase
         );
     }
 
-    public function testSetDeletedMarker()
+    public function testSetDeletedMarker(): void
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -62,7 +60,7 @@ class CategoryRepositoryTest extends UnitTestCase
         );
     }
 
-    public function testRunModifierLoadCategory()
+    public function testRunModifierLoadCategory(): void
     {
         /**
          * @var MockObject<ModifierList> $modifiersMock
@@ -84,7 +82,7 @@ class CategoryRepositoryTest extends UnitTestCase
         );
     }
 
-    public function testGetAllIds()
+    public function testGetAllIds(): void
     {
         /**
          * @var AbstractRepository $repository

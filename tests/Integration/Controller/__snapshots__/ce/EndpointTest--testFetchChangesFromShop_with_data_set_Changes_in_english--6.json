@@ -16,24 +16,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -73,11 +73,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,stylish,dark",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Narrow low boot cut Jeans with straight legs.",
                 "soldamount": 0,
@@ -108,6 +108,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 30"
@@ -116,11 +121,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -160,11 +160,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,stylish,dark",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Narrow low boot cut Jeans with straight legs.",
                 "soldamount": 0,
@@ -190,24 +190,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -247,11 +247,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,stylish,dark",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Narrow low boot cut Jeans with straight legs.",
                 "soldamount": 0,
@@ -282,6 +282,11 @@
                         "value": "Blau"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Blau"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 34"
@@ -290,11 +295,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -334,11 +334,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,stylish,dark",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Narrow low boot cut Jeans with straight legs.",
                 "soldamount": 0,
@@ -364,24 +364,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -421,11 +421,11 @@
                 "searchable": false,
                 "searchkeys": "jeans,kuyichi,stylish,dark",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-KYLE.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-KYLE.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Narrow low boot cut Jeans with straight legs.",
                 "soldamount": 0,
@@ -451,11 +451,6 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Violet"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "XL"
@@ -464,6 +459,11 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XL"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -508,11 +508,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -538,11 +538,6 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Clover"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "M"
@@ -551,6 +546,11 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "M"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -595,11 +595,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -630,14 +630,14 @@
                         "value": "S"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Clover"
-                    },
-                    {
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "S"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -682,11 +682,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -717,14 +717,14 @@
                         "value": "XS"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Violet"
-                    },
-                    {
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XS"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -769,11 +769,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -799,11 +799,6 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Violet"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "M"
@@ -812,6 +807,11 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "M"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -856,11 +856,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -891,14 +891,14 @@
                         "value": "L"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Clover"
-                    },
-                    {
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "L"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -943,11 +943,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -973,11 +973,6 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Clover"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "XS"
@@ -986,6 +981,11 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XS"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -1030,11 +1030,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -1065,14 +1065,14 @@
                         "value": "XL"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Clover"
-                    },
-                    {
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XL"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Clover"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -1117,11 +1117,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -1147,11 +1147,6 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Violet"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "S"
@@ -1160,6 +1155,11 @@
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "S"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -1204,11 +1204,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -1239,14 +1239,14 @@
                         "value": "L"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Violet"
-                    },
-                    {
                         "id": "0e523da04c67ea53a87092a492db1689",
                         "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "L"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "Violet"
                     },
                     {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
@@ -1291,11 +1291,11 @@
                 "searchable": false,
                 "searchkeys": "shirt,pima,short",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/Stewart-Brown-Shirt-Kisser-Fish.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Shirt-Kisser-Fish.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Long shirt with short sleeves and colored printing",
                 "soldamount": 0,
@@ -1321,24 +1321,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -1378,11 +1378,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1408,24 +1408,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -1465,11 +1465,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1500,6 +1500,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 31\/L 30"
@@ -1508,11 +1513,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1552,11 +1552,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1587,6 +1587,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 30"
@@ -1595,11 +1600,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1639,11 +1639,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1669,24 +1669,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -1726,11 +1726,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1761,6 +1761,11 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 32"
@@ -1769,11 +1774,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -1813,11 +1813,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1848,6 +1848,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 32"
@@ -1856,11 +1861,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1900,11 +1900,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1930,24 +1930,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 30"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 30"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 30"
                     }
                 ],
                 "attributes": [],
@@ -1987,11 +1987,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -2017,24 +2017,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -2074,11 +2074,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -2109,6 +2109,11 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 34"
@@ -2117,11 +2122,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -2161,11 +2161,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,

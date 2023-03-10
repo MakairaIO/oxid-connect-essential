@@ -1,4 +1,5 @@
-name: Makaira OXID Connect Essential migrations
-migrations_namespace: Makaira\OxidConnectEssential\Migrations
-table_name: oxmigrations_makaira_connect
-migrations_directory: data
+table_storage:
+  table_name: oxmigrations_makaira_connect
+
+migrations_paths:
+  'Makaira\OxidConnectEssential\Migrations': './data'

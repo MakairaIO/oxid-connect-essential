@@ -6,13 +6,13 @@ use Makaira\OxidConnectEssential\Utils\TableTranslator;
 use Makaira\OxidConnectEssential\Utils\TableTranslatorConfigurator;
 use OxidEsales\Eshop\Core\Language;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
 use function json_decode;
 
-class TableTranslatorConfiguratorTest extends UnitTestCase
+class TableTranslatorConfiguratorTest extends TestCase
 {
-    public function testTranslate()
+    public function testTranslate(): void
     {
         $viewNameGenerator = $this->createMock(TableViewNameGenerator::class);
         $viewNameGenerator->method('getViewName')

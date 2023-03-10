@@ -1,44 +1,43 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
+namespace Makaira\OxidConnectEssential\Test\Integration\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Result;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
-use Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleAttribute;
-use OxidEsales\Eshop\Application\Model\Article as OxidArticle;
-use OxidEsales\Eshop\Core\Model\BaseModel;
+use Makaira\OxidConnectEssential\RevisionHandler\Extractor\ArticleCategory;
+use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
+use OxidEsales\Eshop\Application\Model\Object2Category;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class ArticleAttributeTest extends UnitTestCase
+class ArticleCategoryTest extends TestCase
 {
-    public function testItSupportsBaseModel()
+    public function testItSupportsObject2CategoryModel(): void
     {
-        $dataExtractor = new ArticleAttribute(
+        $dataExtractor = new ArticleCategory(
             $this->createMock(Connection::class),
             $this->createMock(TableViewNameGenerator::class)
         );
 
-        $model = new BaseModel();
-        $model->init('oxobject2attribute');
-        $model->assign(['oxobjectid' => 'phpunit_oxobjectid']);
+        $model = new Object2Category();
+        $model->assign(['oxobjectid' => 'phpunit_article']);
 
         $actual = $dataExtractor->supports($model);
         $this->assertTrue($actual);
     }
 
-    public function testItDoesNotSupportProductModel()
+    public function testItDoesNotSupportManufacturerModel(): void
     {
-        $dataExtractor = new ArticleAttribute(
+        $dataExtractor = new ArticleCategory(
             $this->createMock(Connection::class),
             $this->createMock(TableViewNameGenerator::class)
         );
 
-        $model = new OxidArticle();
-        $model->setId('phpunit_article');
+        $model = new OxidManufacturer();
+        $model->setId('phpunit_manufacturer');
 
         $actual = $dataExtractor->supports($model);
         $this->assertFalse($actual);
@@ -53,7 +52,7 @@ class ArticleAttributeTest extends UnitTestCase
      * @throws \Doctrine\DBAL\Exception
      * @dataProvider provideTestData
      */
-    public function testReturnsRevisionObject(string $parentId, string $expectedType)
+    public function testReturnsRevisionObject(string $parentId, string $expectedType): void
     {
         $resultMock = $this->createMock(Result::class);
         $resultMock
@@ -83,10 +82,10 @@ class ArticleAttributeTest extends UnitTestCase
             ->with('oxarticles')
             ->willReturn('phpunit_oxarticles_de');
 
-        $model = $this->createMock(BaseModel::class);
-        $model->method('getRawFieldData')->with('oxobjectid')->willReturn('phpunit42');
+        $model = $this->createMock(Object2Category::class);
+        $model->method('getProductId')->willReturn('phpunit42');
 
-        $articleExtractor = new ArticleAttribute($db, $viewNameGenerator);
+        $articleExtractor = new ArticleCategory($db, $viewNameGenerator);
         $actual = $articleExtractor->extract($model);
 
         $changed = new DateTimeImmutable();
@@ -101,7 +100,7 @@ class ArticleAttributeTest extends UnitTestCase
         $this->assertEqualsCanonicalizing($expected, $actual);
     }
 
-    public function provideTestData()
+    public function provideTestData(): array
     {
         return [
             'Testing product' => ['', Revision::TYPE_PRODUCT],

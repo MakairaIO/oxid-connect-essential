@@ -1,6 +1,6 @@
 <?php
 
-namespace Makaira\OxidConnectEssential\Test\Unit\RevisionHandler\Extractor;
+namespace Makaira\OxidConnectEssential\Test\Integration\RevisionHandler\Extractor;
 
 use DateTimeImmutable;
 use Doctrine\DBAL\Connection;
@@ -11,11 +11,11 @@ use Makaira\OxidConnectEssential\RevisionHandler\Extractor\Manufacturer;
 use OxidEsales\Eshop\Application\Model\Article as OxidArticle;
 use OxidEsales\Eshop\Application\Model\Manufacturer as OxidManufacturer;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class ManufacturerTest extends UnitTestCase
+class ManufacturerTest extends TestCase
 {
-    public function testItSupportsManufacturerModel()
+    public function testItSupportsManufacturerModel(): void
     {
         $dataExtractor = new Manufacturer(
             $this->createMock(Connection::class),
@@ -29,7 +29,7 @@ class ManufacturerTest extends UnitTestCase
         $this->assertTrue($actual);
     }
 
-    public function testItDoesNotSupportProductModel()
+    public function testItDoesNotSupportProductModel(): void
     {
         $dataExtractor = new Manufacturer(
             $this->createMock(Connection::class),
@@ -43,7 +43,7 @@ class ManufacturerTest extends UnitTestCase
         $this->assertFalse($actual);
     }
 
-    public function testCreatesRevisionsForManufacturerAndProducts()
+    public function testCreatesRevisionsForManufacturerAndProducts(): void
     {
         $productIds = [
             'product1' => '',

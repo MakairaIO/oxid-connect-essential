@@ -5,9 +5,9 @@ namespace Makaira\OxidConnectEssential\Test\Unit\Utils;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Result;
 use Makaira\OxidConnectEssential\Utils\BoostFields;
-use OxidEsales\TestingLibrary\UnitTestCase;
+use PHPUnit\Framework\TestCase;
 
-class BoostFieldsTest extends UnitTestCase
+class BoostFieldsTest extends TestCase
 {
     public function testCanNormalizeFieldWithRange100(): void
     {
@@ -30,7 +30,7 @@ class BoostFieldsTest extends UnitTestCase
         $this->assertSame(0.25, $actual);
     }
 
-    public function testCanNormalizeTimestamp()
+    public function testCanNormalizeTimestamp(): void
     {
         $resultMock = $this->createMock(Result::class);
         $resultMock->method('fetchAssociative')->willReturn([
@@ -46,7 +46,7 @@ class BoostFieldsTest extends UnitTestCase
         $this->assertSame(1.0, $actual);
     }
 
-    private function createDbMock(string $key, int $min, int $max)
+    private function createDbMock(string $key, int $min, int $max): Connection
     {
         $resultMock = $this->createMock(Result::class);
         $resultMock->method('fetchAssociative')->willReturn([

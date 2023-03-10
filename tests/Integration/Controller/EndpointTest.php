@@ -2,9 +2,9 @@
 
 namespace Makaira\OxidConnectEssential\Test\Integration\Controller;
 
-use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Exception as DBALException;
+use Makaira\OxidConnectEssential\Test\ArraySort;
 use OxidEsales\EshopCommunity\Internal\Framework\Database\QueryBuilderFactoryInterface;
-use Exception;
 use JsonException;
 use Makaira\OxidConnectEssential\Command\TouchAllCommand;
 use Makaira\OxidConnectEssential\Controller\Endpoint;
@@ -12,7 +12,9 @@ use Makaira\OxidConnectEssential\Test\Integration\IntegrationTestCase;
 use OxidEsales\Eshop\Application\Model\Article;
 use OxidEsales\Eshop\Application\Model\Attribute;
 use OxidEsales\Eshop\Core\Model\MultiLanguageModel;
-use ReflectionException;
+use OxidEsales\EshopCommunity\Internal\Framework\Module\Facade\ModuleSettingServiceInterface;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\NotFoundExceptionInterface;
 use Symfony\Component\Console\Exception\ExceptionInterface;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
@@ -27,21 +29,29 @@ use function preg_replace;
 
 use const JSON_THROW_ON_ERROR;
 
+/**
+ * @SuppressWarnings(PHPMD)
+ */
 class EndpointTest extends IntegrationTestCase
 {
     /**
      * @return void
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
-    protected function setUp(): void
+    public function setUp(): void
     {
         parent::setUp();
 
-        static::setModuleSetting('makaira_connect_secret', parent::SECRET);
+        $moduleSettings = $this->getService(ModuleSettingServiceInterface::class);
+        $moduleSettings->saveString('makaira_connect_secret', static::SECRET, static::MODULE_ID);
     }
 
     /**
      * @return void
      * @throws JsonException
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     public function testResponsesWith403ForInvalidSignature(): void
     {
@@ -54,6 +64,8 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     public function testResponsesWith401IfHeadersAreMissing(): void
     {
@@ -65,7 +77,9 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
      * @throws JsonException
+     * @throws NotFoundExceptionInterface
      */
     public function testResponsesWith400IfBodyIsNotJson(): void
     {
@@ -82,7 +96,9 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
      * @throws JsonException
+     * @throws NotFoundExceptionInterface
      */
     public function testResponsesWith400IfActionIsMissing(): void
     {
@@ -95,7 +111,9 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
      * @throws JsonException
+     * @throws NotFoundExceptionInterface
      */
     public function testResponsesWith404IfActionIsUnknown(): void
     {
@@ -108,7 +126,9 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
      * @throws JsonException
+     * @throws NotFoundExceptionInterface
      */
     public function testResponsesWith400IfSinceIsMissing(): void
     {
@@ -121,7 +141,9 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
      * @throws JsonException
+     * @throws NotFoundExceptionInterface
      */
     public function testCanGetLanguagesFromShop(): void
     {
@@ -135,7 +157,11 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
+     * @throws ContainerExceptionInterface
+     * @throws DBALException
+     * @throws ExceptionInterface
      * @throws JsonException
+     * @throws NotFoundExceptionInterface
      */
     public function testCanGetReplicationStatus(): void
     {
@@ -177,8 +203,11 @@ class EndpointTest extends IntegrationTestCase
      * @param string $language
      *
      * @return void
+     * @throws ContainerExceptionInterface
+     * @throws DBALException
+     * @throws ExceptionInterface
      * @throws JsonException
-     * @throws ReflectionException
+     * @throws NotFoundExceptionInterface
      * @dataProvider provideLanguages
      */
     public function testFetchChangesFromShop(string $language): void
@@ -222,6 +251,20 @@ class EndpointTest extends IntegrationTestCase
                             unset($change['data']['additionalData']);
                         }
 
+                        if (isset($change['data']['shop'])) {
+                            $change['data']['shop'] = array_map(
+                                static fn ($shopId) => (int) $shopId,
+                                (array) $change['data']['shop']
+                            );
+                        }
+
+                        if (isset($change['data']['attributeStr'])) {
+                            $change['data']['attributeStr'] = ArraySort::mergeSort(
+                                $change['data']['attributeStr'],
+                                ['title' => ArraySort::ASCENDING, 'value' => ArraySort::ASCENDING]
+                            );
+                        }
+
                         ksort($change['data']);
 
                         return $change;
@@ -251,7 +294,10 @@ class EndpointTest extends IntegrationTestCase
 
     /**
      * @return void
-     * @throws Exception
+     * @throws ContainerExceptionInterface
+     * @throws DBALException
+     * @throws ExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     private function prepareProducts(): void
     {
@@ -301,9 +347,9 @@ class EndpointTest extends IntegrationTestCase
         $articleAttributeInt->setLanguage(1);
         $articleAttributeInt->save();
 
-        $articleAttributeFloat = new MultiLanguageModel();
-        $articleAttributeFloat->init('oxobject2attribute');
-        $articleAttributeFloat->assign(
+        $productAttributeFloat = new MultiLanguageModel();
+        $productAttributeFloat->init('oxobject2attribute');
+        $productAttributeFloat->assign(
             [
                 'oxid'       => md5("{$testProductId}-{$floatAttributeId}"),
                 'oxobjectid' => $testProductId,
@@ -311,10 +357,10 @@ class EndpointTest extends IntegrationTestCase
                 'oxvalue'    => '2.1',
             ]
         );
-        $articleAttributeFloat->setLanguage(0);
-        $articleAttributeFloat->save();
-        $articleAttributeFloat->setLanguage(1);
-        $articleAttributeFloat->save();
+        $productAttributeFloat->setLanguage(0);
+        $productAttributeFloat->save();
+        $productAttributeFloat->setLanguage(1);
+        $productAttributeFloat->save();
 
         $articleAttributeInt = new MultiLanguageModel();
         $articleAttributeInt->init('oxobject2attribute');
@@ -331,9 +377,9 @@ class EndpointTest extends IntegrationTestCase
         $articleAttributeInt->setLanguage(1);
         $articleAttributeInt->save();
 
-        $articleAttributeFloat = new MultiLanguageModel();
-        $articleAttributeFloat->init('oxobject2attribute');
-        $articleAttributeFloat->assign(
+        $productAttributeFloat = new MultiLanguageModel();
+        $productAttributeFloat->init('oxobject2attribute');
+        $productAttributeFloat->assign(
             [
                 'oxid'       => md5("{$testVariantId}-{$floatAttributeId}"),
                 'oxobjectid' => $testVariantId,
@@ -341,10 +387,10 @@ class EndpointTest extends IntegrationTestCase
                 'oxvalue'    => '4.2',
             ]
         );
-        $articleAttributeFloat->setLanguage(0);
-        $articleAttributeFloat->save();
-        $articleAttributeFloat->setLanguage(1);
-        $articleAttributeFloat->save();
+        $productAttributeFloat->setLanguage(0);
+        $productAttributeFloat->save();
+        $productAttributeFloat->setLanguage(1);
+        $productAttributeFloat->save();
 
         $product = new Article();
         $product->assign(
@@ -361,28 +407,28 @@ class EndpointTest extends IntegrationTestCase
         $product->setLanguage(1);
         $product->save();
 
-        self::setModuleSetting('makaira_attribute_as_int', [$intAttributeId]);
-        self::setModuleSetting('makaira_attribute_as_float', [$floatAttributeId]);
+        $moduleSettings = $this->getService(ModuleSettingServiceInterface::class);
+        $moduleSettings->saveCollection('makaira_attribute_as_int', [$intAttributeId], static::MODULE_ID);
+        $moduleSettings->saveCollection('makaira_attribute_as_float', [$floatAttributeId], static::MODULE_ID);
 
         $this->touchAll();
     }
 
     /**
      * @return void
-     * @throws ExceptionInterface
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
      */
     private function touchAll(): void
     {
-        /** @var Connection $connection */
-        $db = static::getContainer()->get(QueryBuilderFactoryInterface::class)
+        $database = $this->getService(QueryBuilderFactoryInterface::class)
             ->create()
             ->getConnection();
 
-        $db->executeQuery('TRUNCATE makaira_connect_changes');
-        $db->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
+        $database->executeQuery('TRUNCATE makaira_connect_changes');
+        $database->executeQuery('ALTER TABLE makaira_connect_changes AUTO_INCREMENT = 1');
 
-        /** @var TouchAllCommand $repo */
-        $repo = static::getContainer()->get(TouchAllCommand::class);
+        $repo = $this->getService(TouchAllCommand::class);
         $repo->run(new ArrayInput([]), new NullOutput());
     }
 }

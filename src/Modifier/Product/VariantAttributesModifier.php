@@ -9,7 +9,9 @@ use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
+use Makaira\OxidConnectEssential\Type\Variant\Variant;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
+use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\UtilsObject;
 
@@ -58,7 +60,7 @@ class VariantAttributesModifier extends Modifier
 
     private ?BaseModel $model = null;
 
-    private ?string $activeSnippet = null;
+    private string $activeSnippet = '';
 
     private string $modelClass;
 
@@ -68,7 +70,7 @@ class VariantAttributesModifier extends Modifier
 
     /**
      * @param Connection             $database
-     * @param string                 $activeSnippet
+     * @param class-string           $modelClass
      * @param ModuleSettingsProvider $moduleSettings
      * @param UtilsObject            $utilsObject
      */
@@ -76,7 +78,7 @@ class VariantAttributesModifier extends Modifier
         Connection $database,
         string $modelClass,
         ModuleSettingsProvider $moduleSettings,
-        UtilsObject $utilsObject
+        UtilsObject $utilsObject,
     ) {
         $this->modelClass     = $modelClass;
         $this->database       = $database;
@@ -87,12 +89,13 @@ class VariantAttributesModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type\Variant\Variant $product
+     * @param Variant $product
      *
      * @return Type
      * @throws ConnectException
      * @throws DBALException
      * @throws Exception
+     * @throws SystemComponentException
      * @SuppressWarnings(PHPMD.NPathComplexity)
      * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      */
@@ -144,14 +147,14 @@ class VariantAttributesModifier extends Modifier
                 $valueArray = array_map('trim', explode('|', $variant['value']));
 
                 foreach ($hashArray as $index => $hash) {
-                    $variantAttributes[$hash] = (string) $valueArray[$index];
+                    $variantAttributes[$hash] = (string)$valueArray[$index];
 
                     if (in_array($hash, $integerAttributes, true)) {
-                        $variantAttributes[$hash] = (int) $valueArray[$index];
+                        $variantAttributes[$hash] = (int)$valueArray[$index];
                     }
 
                     if (in_array($hash, $floatAttributes, true)) {
-                        $variantAttributes[$hash] = (float) $valueArray[$index];
+                        $variantAttributes[$hash] = (float)$valueArray[$index];
                     }
                 }
             }
@@ -162,25 +165,25 @@ class VariantAttributesModifier extends Modifier
                 [
                     'productId' => $product->id,
                     'variantId' => $id,
-                ]
+                ],
             );
 
             $attributes = $resultStatement->fetchAllAssociative();
 
             foreach ($attributes as $attribute) {
                 /** @var string $hash */
-                $hash  = $attribute['id'];
+                $hash = $attribute['id'];
                 /** @var string|int|float $value */
                 $value = $attribute['value'];
 
-                $variantAttributes[$hash] = (string) $value;
+                $variantAttributes[$hash] = (string)$value;
 
                 if (in_array($hash, $integerAttributes)) {
-                    $variantAttributes[$hash] = (int) $value;
+                    $variantAttributes[$hash] = (int)$value;
                 }
 
                 if (in_array($hash, $floatAttributes)) {
-                    $variantAttributes[$hash] = (float) $value;
+                    $variantAttributes[$hash] = (float)$value;
                 }
             }
 
@@ -192,13 +195,20 @@ class VariantAttributesModifier extends Modifier
         return $product;
     }
 
+    /**
+     * @return void
+     * @throws SystemComponentException
+     */
     protected function safeGuard(): void
     {
-        if (!($this->model instanceof BaseModel)) {
-            $this->model = $this->utilsObject
-                ->oxNew($this->modelClass);
+        if (
+            !($this->model instanceof BaseModel) &&
+            (($model = $this->utilsObject->oxNew($this->modelClass)) instanceof BaseModel)
+        ) {
+            $this->model = $model;
         }
-        if (!$this->activeSnippet) {
+
+        if (!$this->activeSnippet && $this->model instanceof BaseModel) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
         }
     }

@@ -21,11 +21,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid\/",
+                    "de": "Wakeboarding\/Bindungen\/",
                     "en": "en\/Wakeboarding\/Bindings\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 202,
@@ -55,11 +55,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Kiteboarding\/oxid\/",
+                    "de": "Kiteboarding\/Trapeze\/",
                     "en": "en\/Kiteboarding\/Harnesses\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 103,
@@ -89,11 +89,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid-oxid\/",
+                    "de": "Wakeboarding\/Wakeboards\/",
                     "en": "en\/Wakeboarding\/Wakeboards\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 201,
@@ -123,11 +123,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Kiteboarding\/oxid-oxid\/",
+                    "de": "Kiteboarding\/Kiteboards\/",
                     "en": "en\/Kiteboarding\/Kiteboards\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 102,
@@ -157,11 +157,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Kiteboarding\/oxid-oxid-1\/",
+                    "de": "Kiteboarding\/Kites\/",
                     "en": "en\/Kiteboarding\/Kites\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 101,
@@ -191,11 +191,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/",
+                    "de": "Bekleidung\/",
                     "en": "en\/Gear\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 3,
@@ -229,7 +229,7 @@
                     "en": "en\/Wakeboarding\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 2,
@@ -263,7 +263,7 @@
                     "en": "en\/Kiteboarding\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 1,
@@ -293,11 +293,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid\/",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 3020202,
@@ -327,11 +327,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 3020101,
@@ -361,11 +361,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 3020201,
@@ -395,11 +395,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/oxid\/",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 3020102,
@@ -429,11 +429,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Wakeboarding\/oxid-oxid-1\/",
+                    "de": "Wakeboarding\/Sets\/",
                     "en": "en\/Wakeboarding\/Sets\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 203,
@@ -463,11 +463,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Sportswear\/Neopren\/oxid\/",
+                    "de": "Bekleidung\/Sportswear\/Neopren\/oxid\/",
                     "en": "en\/Gear\/Sportswear\/Neoprene\/Shoes\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 3010102,
@@ -497,11 +497,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/",
+                    "de": "Bekleidung\/Fashion\/",
                     "en": "en\/Gear\/Fashion\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 302,
@@ -531,11 +531,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Sportswear\/oxid\/",
+                    "de": "Bekleidung\/Sportswear\/oxid\/",
                     "en": "en\/Gear\/Sportswear\/Various\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 30102,
@@ -565,11 +565,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Sportswear\/Neopren\/",
+                    "de": "Bekleidung\/Sportswear\/Neopren\/",
                     "en": "en\/Gear\/Sportswear\/Neoprene\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 30101,
@@ -599,11 +599,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/oxid\/",
+                    "de": "Bekleidung\/Fashion\/oxid\/",
                     "en": "en\/Gear\/Fashion\/Accessories\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 30203,
@@ -633,11 +633,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Sportswear\/",
+                    "de": "Bekleidung\/Sportswear\/",
                     "en": "en\/Gear\/Sportswear\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 301,
@@ -667,11 +667,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/",
                     "en": "en\/Gear\/Fashion\/For-Him\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 30202,
@@ -701,11 +701,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Sportswear\/Neopren\/oxid-oxid\/",
+                    "de": "Bekleidung\/Sportswear\/Neopren\/Anzuege\/",
                     "en": "en\/Gear\/Sportswear\/Neoprene\/Suits\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 3010101,
@@ -735,11 +735,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/",
                     "en": "en\/Gear\/Fashion\/For-Her\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 30201,
@@ -769,11 +769,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid-oxid\/",
+                    "de": "Angebote\/",
                     "en": "en\/Special-Offers\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 4,
@@ -803,11 +803,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "Kiteboarding\/oxid-oxid-2\/",
+                    "de": "Kiteboarding\/Zubehoer\/",
                     "en": "en\/Kiteboarding\/Supplies\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 104,
@@ -837,11 +837,11 @@
                 "meta_keywords": "",
                 "oxobject": [],
                 "selfLinks": {
-                    "de": "oxid-oxid-1\/",
+                    "de": "Downloads\/",
                     "en": "en\/Downloads\/"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "",
                 "sort": 5,

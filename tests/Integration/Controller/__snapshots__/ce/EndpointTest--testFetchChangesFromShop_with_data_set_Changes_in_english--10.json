@@ -16,24 +16,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 34\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 34\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -73,11 +73,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs",
                 "soldamount": 0,
@@ -103,24 +103,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Blau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Blau"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -160,11 +160,11 @@
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -190,14 +190,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "orange"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
                     }
                 ],
                 "attributes": [],
@@ -237,11 +237,11 @@
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -267,14 +267,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "grau"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
                     }
                 ],
                 "attributes": [],
@@ -314,11 +314,11 @@
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -344,14 +344,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "orange"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
                     }
                 ],
                 "attributes": [],
@@ -391,11 +391,11 @@
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -421,14 +421,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "grau"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "M"
                     }
                 ],
                 "attributes": [],
@@ -468,11 +468,11 @@
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -503,14 +503,14 @@
                         "value": "grau"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "grau"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
                     }
                 ],
                 "attributes": [],
@@ -550,11 +550,11 @@
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -585,14 +585,14 @@
                         "value": "orange"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "orange"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "S"
                     }
                 ],
                 "attributes": [],
@@ -632,11 +632,11 @@
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
