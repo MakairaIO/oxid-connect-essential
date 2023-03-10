@@ -10,6 +10,8 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
 
+use Makaira\OxidConnectEssential\Utils\TableTranslator;
+
 use function str_replace;
 
 /**
@@ -52,18 +54,14 @@ class CategoryModifier extends Modifier
     private Connection $database;
 
     /**
-     * @param Connection $database
+     * @param Connection      $database
+     * @param TableTranslator $tableTranslator
      */
-    public function __construct(Connection $database, bool $isMall)
+    public function __construct(Connection $database, TableTranslator $tableTranslator)
     {
-        $this->database = $database;
-        if ($isMall) {
-            $this->selectCategoriesQuery = str_replace(
-                '1 AS shopid',
-                'o2c.OXSHOPID AS shopid',
-                $this->selectCategoriesQuery
-            );
-        }
+        $this->database                = $database;
+        $this->selectCategoriesQuery   = $tableTranslator->translate($this->selectCategoriesQuery);
+        $this->selectCategoryPathQuery = $tableTranslator->translate($this->selectCategoryPathQuery);
     }
 
     /**
@@ -81,9 +79,9 @@ class CategoryModifier extends Modifier
         $resultStatement = $this->database->executeQuery(
             $this->selectCategoriesQuery,
             [
-                'productId' => $product->id,
+                'productId'     => $product->id,
                 'productActive' => $product->active,
-            ]
+            ],
         );
 
         $allCats = $resultStatement->fetchAllAssociative();
@@ -98,12 +96,12 @@ class CategoryModifier extends Modifier
                     'left'   => $cat['oxleft'],
                     'right'  => $cat['oxright'],
                     'rootId' => $cat['oxrootid'],
-                ]
+                ],
             );
 
             $catPaths = $resultStatement->fetchAllAssociative();
 
-            $path  = '';
+            $path   = '';
             $active = true;
             foreach ($catPaths as $catPath) {
                 $active &= $catPath['active'];
