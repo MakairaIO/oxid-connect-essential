@@ -22,6 +22,7 @@ class DataMapper
     ];
 
     private const PRODUCT_FIELD_MAPPING = [
+        'timestamp'        => 'timestamp',
         'OXSEARCHKEYS'     => 'searchkeys',
         'OXHIDDEN'         => 'hidden',
         'OXSORT'           => 'sort',
