@@ -17,9 +17,8 @@ use function get_class;
 class DataMapper
 {
     private const COMMON_FIELD_MAPPING = [
-        'OXID'        => 'id',
-        'OXTIMESTAMP' => 'timestamp',
-        'OXACTIVE'    => 'active',
+        'OXID'     => 'id',
+        'OXACTIVE' => 'active',
     ];
 
     private const PRODUCT_FIELD_MAPPING = [
@@ -39,14 +38,16 @@ class DataMapper
     ];
 
     private const CATEGORY_FIELD_MAPPING = [
-        'OXSORT'     => 'sort',
-        'OXDESC'     => 'shortdesc',
-        'OXLONGDESC' => 'longdesc',
-        'OXHIDDEN'   => 'hidden',
-        'OXTITLE'    => 'category_title',
+        'OXTIMESTAMP' => 'timestamp',
+        'OXSORT'      => 'sort',
+        'OXDESC'      => 'shortdesc',
+        'OXLONGDESC'  => 'longdesc',
+        'OXHIDDEN'    => 'hidden',
+        'OXTITLE'     => 'category_title',
     ];
 
     private const MANUFACTURER_FIELD_MAPPING = [
+        'OXTIMESTAMP' => 'timestamp',
         'OXSHORTDESC' => 'shortdesc',
         'OXTITLE'     => 'manufacturer_title',
     ];
