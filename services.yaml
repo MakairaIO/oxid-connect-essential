@@ -260,8 +260,6 @@ services:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
   Makaira\OxidConnectEssential\Modifier\Product\CategoryModifier:
-    bind:
-      $isMall: '@=service("OxidEsales\\Eshop\\Core\\Config").isMall()'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
 
