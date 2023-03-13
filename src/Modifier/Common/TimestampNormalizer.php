@@ -13,16 +13,18 @@ class TimestampNormalizer extends Modifier
 
     public function __construct()
     {
-        $this->zeroDate = new DateTimeImmutable('0001-01-01T00:00:00');
+        $this->zeroDate = new DateTimeImmutable('0001-01-01 00:00:00');
     }
 
     public function apply(Type $type)
     {
         if ($type->timestamp) {
-            $type->timestamp = (new DateTimeImmutable($type->timestamp))->format('Y-m-d H:i:s');
-            if ($type->timestamp < $this->zeroDate) {
-                $type->timestamp = $this->zeroDate;
+            $timestamp = new DateTimeImmutable($type->timestamp);
+            if ($timestamp < $this->zeroDate) {
+                $timestamp = $this->zeroDate;
             }
+
+            $type->timestamp = $timestamp->format('Y-m-d H:i:s');
         }
 
         return $type;
