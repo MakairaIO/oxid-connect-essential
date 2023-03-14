@@ -10,6 +10,8 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
+use Makaira\OxidConnectEssential\Utils\TableTranslator;
+use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\UtilsObject;
 
@@ -66,6 +68,8 @@ class VariantAttributesModifier extends Modifier
 
     private ModuleSettingsProvider $moduleSettings;
 
+    private TableTranslator $tableTranslator;
+
     /**
      * @param Connection             $database
      * @param string                 $activeSnippet
@@ -76,12 +80,14 @@ class VariantAttributesModifier extends Modifier
         Connection $database,
         string $modelClass,
         ModuleSettingsProvider $moduleSettings,
-        UtilsObject $utilsObject
+        UtilsObject $utilsObject,
+        TableTranslator $tableTranslator,
     ) {
-        $this->modelClass     = $modelClass;
-        $this->database       = $database;
-        $this->moduleSettings = $moduleSettings;
-        $this->utilsObject    = $utilsObject;
+        $this->modelClass      = $modelClass;
+        $this->database        = $database;
+        $this->moduleSettings  = $moduleSettings;
+        $this->utilsObject     = $utilsObject;
+        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -107,7 +113,10 @@ class VariantAttributesModifier extends Modifier
         $product->attributes = [];
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($this->selectVariantNameQuery, ['productId' => $product->id]);
+        $resultStatement = $this->database->executeQuery(
+            $this->tableTranslator->translate($this->selectVariantNameQuery),
+            ['productId' => $product->id]
+        );
 
         /** @var string $variantName */
         $variantName = $resultStatement->fetchOne();
@@ -124,7 +133,10 @@ class VariantAttributesModifier extends Modifier
             $query = str_replace('{{activeSnippet}}', $this->activeSnippet, $this->selectVariantDataQuery);
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery($query, ['productId' => $product->id]);
+            $resultStatement = $this->database->executeQuery(
+                $this->tableTranslator->translate($query),
+                ['productId' => $product->id]
+            );
 
             /** @var array<array<string, string>> $variants */
             $variants = $resultStatement->fetchAllAssociative();
@@ -158,7 +170,7 @@ class VariantAttributesModifier extends Modifier
 
             /** @var Result $resultStatement */
             $resultStatement = $this->database->executeQuery(
-                $this->selectVariantAttributesQuery,
+                $this->tableTranslator->translate($this->selectVariantAttributesQuery),
                 [
                     'productId' => $product->id,
                     'variantId' => $id,

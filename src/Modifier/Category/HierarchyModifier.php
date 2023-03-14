@@ -18,6 +18,7 @@ use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Category\Category;
+use Makaira\OxidConnectEssential\Utils\TableTranslator;
 
 class HierarchyModifier extends Modifier
 {
@@ -35,9 +36,12 @@ class HierarchyModifier extends Modifier
 
     private Connection $database;
 
-    public function __construct(Connection $database)
+    private TableTranslator $tableTranslator;
+
+    public function __construct(Connection $database, TableTranslator $tableTranslator)
     {
-        $this->database = $database;
+        $this->database        = $database;
+        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -53,7 +57,7 @@ class HierarchyModifier extends Modifier
     {
         /** @var Result $resultStatement */
         $resultStatement = $this->database->executeQuery(
-            $this->selectQuery,
+            $this->tableTranslator->translate($this->selectQuery),
             [
                 'left'   => $category->additionalData['OXLEFT'],
                 'right'  => $category->additionalData['OXRIGHT'],
