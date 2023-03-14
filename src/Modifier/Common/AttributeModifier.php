@@ -118,7 +118,7 @@ class AttributeModifier extends Modifier
         string $modelClass,
         ModuleSettingsProvider $moduleSettings,
         UtilsObject $utilsObject,
-        TableTranslator $tableTranslator,
+        TableTranslator $tableTranslator
     ) {
         $this->modelClass      = $modelClass;
         $this->database        = $database;
@@ -227,7 +227,7 @@ class AttributeModifier extends Modifier
             );
 
             $variants = $resultStatement->fetchAllAssociative();
-        } else {^
+        } else {
             /** @var Result $resultStatement */
             $resultStatement =
                 $this->database->executeQuery(

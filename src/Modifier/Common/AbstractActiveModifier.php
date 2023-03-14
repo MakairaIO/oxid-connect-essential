@@ -45,7 +45,7 @@ abstract class AbstractActiveModifier extends Modifier
         Connection $database,
         string $modelClass,
         UtilsObject $utilsObject,
-        TableTranslator $tableTranslator,
+        TableTranslator $tableTranslator
     ) {
         $this->database        = $database;
         $this->modelClass      = $modelClass;
