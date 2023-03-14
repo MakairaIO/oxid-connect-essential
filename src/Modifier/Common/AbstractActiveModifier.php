@@ -9,6 +9,7 @@ use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Product\Product;
+use Makaira\OxidConnectEssential\Utils\TableTranslator;
 use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\UtilsObject;
@@ -27,6 +28,8 @@ abstract class AbstractActiveModifier extends Modifier
 
     private UtilsObject $utilsObject;
 
+    private TableTranslator $tableTranslator;
+
     /**
      * @param Connection   $database
      * @param class-string $modelClass
@@ -36,10 +39,12 @@ abstract class AbstractActiveModifier extends Modifier
         Connection $database,
         string $modelClass,
         UtilsObject $utilsObject,
+        TableTranslator $tableTranslator,
     ) {
-        $this->database    = $database;
-        $this->modelClass  = $modelClass;
-        $this->utilsObject = $utilsObject;
+        $this->database        = $database;
+        $this->modelClass      = $modelClass;
+        $this->utilsObject     = $utilsObject;
+        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -61,7 +66,9 @@ abstract class AbstractActiveModifier extends Modifier
             WHERE OXID = '{$product->id}' AND {$this->activeSnippet}";
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($sql);
+        $resultStatement = $this->database->executeQuery(
+            $this->tableTranslator->translate($sql)
+        );
         $product->active = (bool)$resultStatement->fetchOne();
 
         return $product;

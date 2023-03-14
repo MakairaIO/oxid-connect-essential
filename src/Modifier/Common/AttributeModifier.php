@@ -11,6 +11,7 @@ use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
+use Makaira\OxidConnectEssential\Utils\TableTranslator;
 use OxidEsales\Eshop\Core\Exception\SystemComponentException;
 use OxidEsales\Eshop\Core\Model\BaseModel;
 use OxidEsales\Eshop\Core\UtilsObject;
@@ -105,6 +106,8 @@ class AttributeModifier extends Modifier
 
     private UtilsObject $utilsObject;
 
+    private TableTranslator $tableTranslator;
+
     /**
      * @param Connection             $database
      * @param string                 $modelClass
@@ -116,11 +119,13 @@ class AttributeModifier extends Modifier
         string $modelClass,
         ModuleSettingsProvider $moduleSettings,
         UtilsObject $utilsObject,
+        TableTranslator $tableTranslator,
     ) {
-        $this->modelClass     = $modelClass;
-        $this->database       = $database;
-        $this->moduleSettings = $moduleSettings;
-        $this->utilsObject    = $utilsObject;
+        $this->modelClass      = $modelClass;
+        $this->database        = $database;
+        $this->moduleSettings  = $moduleSettings;
+        $this->utilsObject     = $utilsObject;
+        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -138,7 +143,10 @@ class AttributeModifier extends Modifier
         $this->safeGuard();
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($this->selectAttributesQuery, ['productId' => $product->id,]);
+        $resultStatement = $this->database->executeQuery(
+            $this->tableTranslator->translate($this->selectAttributesQuery),
+            ['productId' => $product->id,]
+        );
         $attributes      = $resultStatement->fetchAllAssociative();
 
         /** @var array<string> $integerAttributes */
@@ -167,10 +175,17 @@ class AttributeModifier extends Modifier
             $product->attributeInt   = $product->tmpAttributeInt;
             $product->attributeFloat = $product->tmpAttributeFloat;
 
-            $query = str_replace('{{activeSnippet}}', $this->activeSnippet, $this->selectVariantsAttributesQuery);
+            $query = str_replace(
+                '{{activeSnippet}}',
+                $this->activeSnippet,
+                $this->selectVariantsAttributesQuery
+            );
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery($query, ['productId' => $product->id]);
+            $resultStatement = $this->database->executeQuery(
+                $this->tableTranslator->translate($query),
+                ['productId' => $product->id]
+            );
             $rawAttributes   = $resultStatement->fetchAllAssociative();
             $attributes      = [];
             foreach ($rawAttributes as $attributeData) {
@@ -199,23 +214,35 @@ class AttributeModifier extends Modifier
         if (false === $product->isVariant) {
             /** @var Result $resultStatement */
             $resultStatement =
-                $this->database->executeQuery($this->selectVariantsNameQuery, ['productId' => $product->id]);
+                $this->database->executeQuery(
+                    $this->tableTranslator->translate($this->selectVariantsNameQuery),
+                    ['productId' => $product->id]
+                );
 
             $variantsName = $resultStatement->fetchAllAssociative();
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery($this->selectVariantsQuery, ['productId' => $product->id]);
+            $resultStatement = $this->database->executeQuery(
+                $this->tableTranslator->translate($this->selectVariantsQuery),
+                ['productId' => $product->id]
+            );
 
             $variants = $resultStatement->fetchAllAssociative();
-        } else {
+        } else {^
             /** @var Result $resultStatement */
             $resultStatement =
-                $this->database->executeQuery($this->selectVariantNameQuery, ['productId' => $product->id]);
+                $this->database->executeQuery(
+                    $this->tableTranslator->translate($this->selectVariantNameQuery),
+                    ['productId' => $product->id]
+                );
 
             $variantsName = $resultStatement->fetchAllAssociative();
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery($this->selectVariantQuery, ['productId' => $product->id]);
+            $resultStatement = $this->database->executeQuery(
+                $this->tableTranslator->translate($this->selectVariantQuery),
+                ['productId' => $product->id]
+            );
 
             $variants = $resultStatement->fetchAllAssociative();
         }
