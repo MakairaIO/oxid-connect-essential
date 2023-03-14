@@ -82,7 +82,7 @@ class VariantAttributesModifier extends Modifier
         string $modelClass,
         ModuleSettingsProvider $moduleSettings,
         UtilsObject $utilsObject,
-        TableTranslator $tableTranslator,
+        TableTranslator $tableTranslator
     ) {
         $this->modelClass      = $modelClass;
         $this->database        = $database;
