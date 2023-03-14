@@ -53,15 +53,16 @@ class CategoryModifier extends Modifier
 
     private Connection $database;
 
+    private TableTranslator $tableTranslator;
+
     /**
      * @param Connection      $database
      * @param TableTranslator $tableTranslator
      */
     public function __construct(Connection $database, TableTranslator $tableTranslator)
     {
-        $this->database                = $database;
-        $this->selectCategoriesQuery   = $tableTranslator->translate($this->selectCategoriesQuery);
-        $this->selectCategoryPathQuery = $tableTranslator->translate($this->selectCategoryPathQuery);
+        $this->database        = $database;
+        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -77,7 +78,7 @@ class CategoryModifier extends Modifier
     {
         /** @var Result $resultStatement */
         $resultStatement = $this->database->executeQuery(
-            $this->selectCategoriesQuery,
+            $this->tableTranslator->translate($this->selectCategoriesQuery),
             [
                 'productId'     => $product->id,
                 'productActive' => $product->active,
@@ -91,7 +92,7 @@ class CategoryModifier extends Modifier
         foreach ($allCats as $cat) {
             /** @var Result $resultStatement */
             $resultStatement = $this->database->executeQuery(
-                $this->selectCategoryPathQuery,
+                $this->tableTranslator->translate($this->selectCategoryPathQuery),
                 [
                     'left'   => $cat['oxleft'],
                     'right'  => $cat['oxright'],
