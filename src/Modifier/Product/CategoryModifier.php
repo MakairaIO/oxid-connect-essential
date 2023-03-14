@@ -9,10 +9,7 @@ use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
-
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
-
-use function str_replace;
 
 /**
  * @SuppressWarnings(PHPMD.LongVariable)
