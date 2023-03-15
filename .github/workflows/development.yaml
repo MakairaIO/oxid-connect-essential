@@ -133,7 +133,7 @@ jobs:
           docker-compose exec -T \
             php composer require oxid-esales/oxideshop-demodata-ce:"~v${{ env.demo-data-version }}" --no-interaction --no-update
           docker-compose exec -T \
-            php composer require composer require oxid-esales/oxideshop-demodata-installer:"dev-b-${{ env.oxid-version }}.x" --no-interaction --no-update
+            php composer require oxid-esales/oxideshop-demodata-installer:"dev-b-${{ env.oxid-version }}.x" --no-interaction --no-update
 
       - name: Install dependencies and reset shop
         run: |
