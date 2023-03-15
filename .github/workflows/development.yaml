@@ -137,9 +137,13 @@ jobs:
 
       - name: Install dependencies and reset shop
         run: |
+          echo -e "\033[1;37mRun composer update\033[0m"
           docker-compose exec -T php composer update --no-interaction
+          echo -e "\033[1;37mReset database\033[0m"
           docker-compose exec -T php vendor/bin/reset-shop
+          echo -e "\033[1;37mInstall demo data\033[0m"
           docker-compose exec -T php vendor/bin/oe-eshop-demodata_install
+          echo -e "\033[1;37mActivate module\033[0m"
           docker-compose exec -T php bin/oe-console oe:module:activate ${{ env.MODULE_IDS }}
 
       - name: Stop containers
