@@ -27,6 +27,7 @@ on:
         default: '8.0'
         type: choice
         options:
+          - '7.4'
           - '8.0'
           - '8.1'
       mysql:
@@ -45,6 +46,7 @@ on:
 
 env:
   oxid-version: "6.5"
+  demo-data-version: "6.0"
   PACKAGE_NAME: 'makaira/oxid-connect-essential'
   MODULE_IDS: 'makaira_oxid-connect-essential'
   SONARCLOUD_ORGANIZATION: 'makairaio'
@@ -129,7 +131,7 @@ jobs:
           docker-compose exec -T \
             php composer require ${{ env.PACKAGE_NAME }}:* --no-interaction --no-update
           docker-compose exec -T \
-            php composer require oxid-esales/oxideshop-demodata-ce:"dev-b-${{ env.oxid-version }}.x" --no-interaction --no-update
+            php composer require oxid-esales/oxideshop-demodata-ce:"~v${{ env.demo-data-version }}" --no-interaction --no-update
 
       - name: Install dependencies and reset shop
         run: |
