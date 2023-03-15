@@ -138,7 +138,10 @@ jobs:
       - name: Install dependencies and reset shop
         run: |
           docker-compose exec -T php composer update --no-interaction
-          docker-compose exec -T ls -alh --color ./ bin/ vendor/ vendor/bin/
+          docker-compose exec -T ls -alh ./
+          docker-compose exec -T ls -alh bin/
+          docker-compose exec -T ls -alh vendor/
+          docker-compose exec -T ls -alh vendor/bin/
           docker-compose exec -T php bin/reset-shop
           docker-compose exec -T php bin/oe-eshop-demodata_install
           docker-compose exec -T php bin/oe-console oe:module:activate ${{ env.MODULE_IDS }}
