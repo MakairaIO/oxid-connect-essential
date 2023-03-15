@@ -44,7 +44,7 @@ on:
         type: boolean
 
 env:
-  oxid-version: 7.0
+  oxid-version: "7.0"
   PACKAGE_NAME: 'makaira/oxid-connect-essential'
   MODULE_IDS: 'makaira_oxid-connect-essential'
   SONARCLOUD_ORGANIZATION: 'makairaio'
