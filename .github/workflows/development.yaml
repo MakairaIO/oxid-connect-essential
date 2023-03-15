@@ -44,6 +44,7 @@ on:
         type: boolean
 
 env:
+  oxid-version: 7.0
   PACKAGE_NAME: 'makaira/oxid-connect-essential'
   MODULE_IDS: 'makaira_oxid-connect-essential'
   SONARCLOUD_ORGANIZATION: 'makairaio'
@@ -63,10 +64,10 @@ jobs:
             Trigger event: ${{ github.event_name }}"
 
       - name: Clone testing environment
-        run: git clone https://github.com/OXID-eSales/docker-eshop-sdk.git .
+        run: git clone --depth 1 --single-branch https://github.com/OXID-eSales/docker-eshop-sdk.git .
 
       - name: Clone the shop
-        run: git clone --depth 1 https://github.com/OXID-eSales/oxideshop_ce.git --branch b-7.0.x --single-branch source
+        run: git clone --depth 1 --branch b-${{ env.oxid-version }}.x --single-branch https://github.com/OXID-eSales/oxideshop_ce.git source
 
       - name: Cache current installation
         uses: actions/cache@v3
@@ -128,7 +129,7 @@ jobs:
           docker-compose exec -T \
             php composer require ${{ env.PACKAGE_NAME }}:* --no-interaction --no-update
           docker-compose exec -T \
-            php composer require oxid-esales/oxideshop-demodata-ce:"dev-b-7.0.x" --no-interaction --no-update
+            php composer require oxid-esales/oxideshop-demodata-ce:"dev-b-${{ env.oxid-version }}.x" --no-interaction --no-update
 
       - name: Install dependencies and reset shop
         run: |
