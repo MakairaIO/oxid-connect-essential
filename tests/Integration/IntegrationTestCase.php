@@ -132,9 +132,8 @@ abstract class IntegrationTestCase extends TestCase
         $reflection = new ReflectionClass($this);
 
         $snapshotDir = sprintf(
-            '%s/__snapshots__/%s',
+            '%s/__snapshots__',
             dirname($reflection->getFileName()),
-            strtolower($this->getShopEdition()),
         );
 
         $snapshotFilename = sprintf(
