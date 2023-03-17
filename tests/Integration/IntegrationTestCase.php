@@ -28,7 +28,6 @@ use function md5;
 use function mkdir;
 use function random_bytes;
 use function sprintf;
-
 use function strtolower;
 
 use const JSON_PRETTY_PRINT;
