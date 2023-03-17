@@ -7,6 +7,8 @@
 
 declare(strict_types=1);
 
+include __DIR__ . '/../../vendor/autoload.php';
+
 class_alias(
     OxidEsales\Eshop\Application\Controller\Admin\ArticleAttributeAjax::class,
     Makaira\OxidConnectEssential\Controller\Admin\ArticleAttributeAjax_parent::class
