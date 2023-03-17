@@ -16,14 +16,8 @@ use OxidEsales\Eshop\Core\UtilsObject;
 
 abstract class AbstractActiveModifier extends Modifier
 {
-    /**
-     * @var string
-     */
     private ?string $activeSnippet = null;
 
-    /**
-     * @var string
-     */
     private ?string $tableName = null;
 
     private string $modelClass;
@@ -37,9 +31,10 @@ abstract class AbstractActiveModifier extends Modifier
     private TableTranslator $tableTranslator;
 
     /**
-     * @param Connection  $database
-     * @param BaseModel   $model
-     * @param UtilsObject $utilsObject
+     * @param Connection      $database
+     * @param string          $modelClass
+     * @param UtilsObject     $utilsObject
+     * @param TableTranslator $tableTranslator
      */
     public function __construct(
         Connection $database,
@@ -59,8 +54,9 @@ abstract class AbstractActiveModifier extends Modifier
      * @param Product $product
      *
      * @return Type
-     * @throws DBALException
      * @throws DBALDriverException
+     * @throws DBALException
+     * @throws SystemComponentException
      */
     public function apply(Type $product)
     {
@@ -79,10 +75,16 @@ abstract class AbstractActiveModifier extends Modifier
         return $product;
     }
 
+    /**
+     * @return void
+     * @throws SystemComponentException
+     */
     protected function safeGuard(): void
     {
         if (!$this->model instanceof BaseModel) {
-            $this->model = $this->utilsObject->oxNew($this->modelClass);
+            /** @var BaseModel $modelInstance */
+            $modelInstance = $this->utilsObject->oxNew($this->modelClass);
+            $this->model   = $modelInstance;
         }
         if (!$this->activeSnippet) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);

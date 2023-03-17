@@ -133,7 +133,7 @@ class VariantAttributesModifier extends Modifier
             $titleArray = array_map('trim', explode('|', $variantName));
             $hashArray  = array_map('md5', $titleArray);
 
-            $query = str_replace('{{activeSnippet}}', $this->activeSnippet, $this->selectVariantDataQuery);
+            $query = str_replace('{{activeSnippet}}', (string) $this->activeSnippet, $this->selectVariantDataQuery);
 
             /** @var Result $resultStatement */
             $resultStatement = $this->database->executeQuery(
@@ -183,8 +183,9 @@ class VariantAttributesModifier extends Modifier
     protected function safeGuard(): void
     {
         if (!($this->model instanceof BaseModel)) {
-            $this->model = $this->utilsObject
-                ->oxNew($this->modelClass);
+            /** @var BaseModel $modelInstance */
+            $modelInstance = $this->utilsObject->oxNew($this->modelClass);
+            $this->model   = $modelInstance;
         }
         if (!$this->activeSnippet) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);

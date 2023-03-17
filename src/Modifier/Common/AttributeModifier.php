@@ -10,6 +10,7 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedTypedAttribute;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
 use OxidEsales\Eshop\Core\Exception\SystemComponentException;
@@ -110,8 +111,10 @@ class AttributeModifier extends Modifier
 
     /**
      * @param Connection             $database
-     * @param string                 $activeSnippet
+     * @param string                 $modelClass
      * @param ModuleSettingsProvider $moduleSettings
+     * @param UtilsObject            $utilsObject
+     * @param TableTranslator        $tableTranslator
      */
     public function __construct(
         Connection $database,
@@ -130,12 +133,12 @@ class AttributeModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type\Product\Product $product
+     * @param Product $product
      *
-     * @return Type\Product\Product
-     * @throws ConnectException
+     * @return Product
      * @throws DBALDriverException
      * @throws DBALException
+     * @throws SystemComponentException
      */
     public function apply(Type $product): Type\Product\Product
     {
@@ -176,7 +179,7 @@ class AttributeModifier extends Modifier
 
             $query = str_replace(
                 '{{activeSnippet}}',
-                $this->activeSnippet,
+                (string) $this->activeSnippet,
                 $this->selectVariantsAttributesQuery
             );
 
@@ -292,7 +295,9 @@ class AttributeModifier extends Modifier
     protected function safeGuard(): void
     {
         if (!($this->model instanceof BaseModel)) {
-            $this->model = $this->utilsObject->oxNew($this->modelClass);
+            /** @var BaseModel $modelInstance */
+            $modelInstance = $this->utilsObject->oxNew($this->modelClass);
+            $this->model   = $modelInstance;
         }
         if (!$this->activeSnippet) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);

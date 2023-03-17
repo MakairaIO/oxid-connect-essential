@@ -33,12 +33,11 @@ class AttributeMainAjax extends AttributeMainAjax_parent
      */
     public function removeAttrArticle(): void
     {
-        /** @var Container\ContainerInterface $container */
         $container = $this->getSymfonyContainer();
 
-        /** @var Connection $connection */
-        $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
-            ->create()
+        /** @var QueryBuilderFactoryInterface $queryBuilder */
+        $queryBuilder = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class);
+        $connection   = $queryBuilder->create()
             ->getConnection();
 
         /** @var string $attributeView */
