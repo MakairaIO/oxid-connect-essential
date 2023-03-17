@@ -37,7 +37,6 @@ on:
         type: choice
         options:
           - '5.7.37'
-          - '8.0'
       report_sonarcloud:
         description: 'Trigger sonarcloud analize?'
         required: true

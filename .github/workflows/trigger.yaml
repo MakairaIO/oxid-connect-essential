@@ -12,10 +12,10 @@ jobs:
   run-tests:
     strategy:
       matrix:
-        php: [ '8.0', '8.1' ]
-        mysql: [ '5.7.37', '8.0' ]
+        php: [ '7.4', '8.0', '8.1' ]
+        mysql: [ '5.7.37' ]
         include:
-          - php: '8.0'
+          - php: '7.4'
             mysql: '5.7.37'
             report_sonarcloud: true
     name: "Testing PHP ${{ matrix.php }} with MySQL ${{ matrix.mysql }}"
