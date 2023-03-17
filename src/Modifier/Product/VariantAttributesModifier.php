@@ -8,6 +8,7 @@ use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
+use Makaira\OxidConnectEssential\Type\Product\Product;
 use Makaira\OxidConnectEssential\Exception as ConnectException;
 use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
@@ -72,9 +73,10 @@ class VariantAttributesModifier extends Modifier
 
     /**
      * @param Connection             $database
-     * @param string                 $activeSnippet
+     * @param string                 $modelClass
      * @param ModuleSettingsProvider $moduleSettings
      * @param UtilsObject            $utilsObject
+     * @param TableTranslator        $tableTranslator
      */
     public function __construct(
         Connection $database,
@@ -93,12 +95,13 @@ class VariantAttributesModifier extends Modifier
     /**
      * Modify product and return modified product
      *
-     * @param Type\Variant\Variant $product
+     * @param Product $product
      *
      * @return Type
      * @throws ConnectException
      * @throws DBALException
      * @throws Exception
+     * @throws SystemComponentException
      * @SuppressWarnings(PHPMD.NPathComplexity)
      * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      */
@@ -167,34 +170,7 @@ class VariantAttributesModifier extends Modifier
                     }
                 }
             }
-
-            /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
-                $this->tableTranslator->translate($this->selectVariantAttributesQuery),
-                [
-                    'productId' => $product->id,
-                    'variantId' => $id,
-                ]
-            );
-
-            $attributes = $resultStatement->fetchAllAssociative();
-
-            foreach ($attributes as $attribute) {
-                /** @var string $hash */
-                $hash  = $attribute['id'];
-                /** @var string|int|float $value */
-                $value = $attribute['value'];
-
-                $variantAttributes[$hash] = (string) $value;
-
-                if (in_array($hash, $integerAttributes)) {
-                    $variantAttributes[$hash] = (int) $value;
-                }
-
-                if (in_array($hash, $floatAttributes)) {
-                    $variantAttributes[$hash] = (float) $value;
-                }
-            }
+            $this->addVariantAttributes($product, $id, $variantAttributes, $integerAttributes, $floatAttributes);
 
             if (!empty($variantAttributes)) {
                 $product->attributes[] = $variantAttributes;
@@ -212,6 +188,53 @@ class VariantAttributesModifier extends Modifier
         }
         if (!$this->activeSnippet) {
             $this->activeSnippet = $this->model->getSqlActiveSnippet(true);
+        }
+    }
+
+    /**
+     * @param Product $product
+     * @param string $id
+     * @param array  $variantAttributes
+     * @param array  $integerAttributes
+     * @param array  $floatAttributes
+     *
+     * @return void
+     * @throws DBALException
+     * @throws Exception
+     */
+    private function addVariantAttributes(
+        Product $product,
+        string $id,
+        array &$variantAttributes,
+        array $integerAttributes,
+        array $floatAttributes
+    ): void {
+        /** @var Result $resultStatement */
+        $resultStatement = $this->database->executeQuery(
+            $this->tableTranslator->translate($this->selectVariantAttributesQuery),
+            [
+                'productId' => $product->id,
+                'variantId' => $id,
+            ]
+        );
+
+        $attributes = $resultStatement->fetchAllAssociative();
+
+        foreach ($attributes as $attribute) {
+            /** @var string $hash */
+            $hash = $attribute['id'];
+            /** @var string|int|float $value */
+            $value = $attribute['value'];
+
+            $variantAttributes[$hash] = (string)$value;
+
+            if (in_array($hash, $integerAttributes)) {
+                $variantAttributes[$hash] = (int)$value;
+            }
+
+            if (in_array($hash, $floatAttributes)) {
+                $variantAttributes[$hash] = (float)$value;
+            }
         }
     }
 }
