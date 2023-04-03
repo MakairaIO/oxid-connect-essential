@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/MakairaIO/oxid-connect-essential/compare/2.0.0...2.0.1) (2023-04-03)
+
+
+### Bug Fixes
+
+* Use table translator in all modifiers ([3f1ac1f](https://github.com/MakairaIO/oxid-connect-essential/commit/3f1ac1f1c2badea56fea2221befb58f072e30578))
+
 # [2.0.0](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.3...2.0.0) (2023-03-10)
 
 
