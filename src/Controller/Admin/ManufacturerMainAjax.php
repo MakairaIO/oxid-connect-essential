@@ -69,9 +69,9 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
      */
     private function addParentIds(array $productIds): array
     {
-        /** @var Connection $connection */
-        $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
-            ->create()
+        /** @var QueryBuilderFactoryInterface $queryBuilder */
+        $queryBuilder = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class);
+        $connection   = $queryBuilder->create()
             ->getConnection();
 
         /** @var string $productView */
@@ -139,9 +139,9 @@ class ManufacturerMainAjax extends ManufacturerMainAjax_parent
         /** @var string $manufacturerId */
         $manufacturerId = Registry::getRequest()->getRequestParameter('oxid');
 
-        /** @var Connection $connection */
-        $connection = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class)
-            ->create()
+        /** @var QueryBuilderFactoryInterface $queryBuilder */
+        $queryBuilder = $this->getSymfonyContainer()->get(QueryBuilderFactoryInterface::class);
+        $connection   = $queryBuilder->create()
             ->getConnection();
 
         /** @var string $productView */

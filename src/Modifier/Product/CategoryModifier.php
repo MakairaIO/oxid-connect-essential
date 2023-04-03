@@ -9,8 +9,7 @@ use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
-
-use function str_replace;
+use Makaira\OxidConnectEssential\Utils\TableTranslator;
 
 /**
  * @SuppressWarnings(PHPMD.LongVariable)
@@ -51,19 +50,16 @@ class CategoryModifier extends Modifier
 
     private Connection $database;
 
+    private TableTranslator $tableTranslator;
+
     /**
-     * @param Connection $database
+     * @param Connection      $database
+     * @param TableTranslator $tableTranslator
      */
-    public function __construct(Connection $database, bool $isMall)
+    public function __construct(Connection $database, TableTranslator $tableTranslator)
     {
-        $this->database = $database;
-        if ($isMall) {
-            $this->selectCategoriesQuery = str_replace(
-                '1 AS shopid',
-                'o2c.OXSHOPID AS shopid',
-                $this->selectCategoriesQuery
-            );
-        }
+        $this->database        = $database;
+        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -79,11 +75,11 @@ class CategoryModifier extends Modifier
     {
         /** @var Result $resultStatement */
         $resultStatement = $this->database->executeQuery(
-            $this->selectCategoriesQuery,
+            $this->tableTranslator->translate($this->selectCategoriesQuery),
             [
-                'productId' => $product->id,
+                'productId'     => $product->id,
                 'productActive' => $product->active,
-            ]
+            ],
         );
 
         $allCats = $resultStatement->fetchAllAssociative();
@@ -93,17 +89,17 @@ class CategoryModifier extends Modifier
         foreach ($allCats as $cat) {
             /** @var Result $resultStatement */
             $resultStatement = $this->database->executeQuery(
-                $this->selectCategoryPathQuery,
+                $this->tableTranslator->translate($this->selectCategoryPathQuery),
                 [
                     'left'   => $cat['oxleft'],
                     'right'  => $cat['oxright'],
                     'rootId' => $cat['oxrootid'],
-                ]
+                ],
             );
 
             $catPaths = $resultStatement->fetchAllAssociative();
 
-            $path  = '';
+            $path   = '';
             $active = true;
             foreach ($catPaths as $catPath) {
                 $active &= $catPath['active'];

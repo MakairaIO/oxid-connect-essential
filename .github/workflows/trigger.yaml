@@ -1,0 +1,33 @@
+name: Run CI tests
+
+on:
+  push:
+    branches: [ "[0-9]+.x", "stable" ]
+  workflow_dispatch: ~
+  pull_request:
+    branches: [ "[0-9]+.x", "stable" ]
+    types: [ opened, synchronize, reopened ]
+
+jobs:
+  run-tests:
+    strategy:
+      matrix:
+        php: [ '7.4', '8.0', '8.1' ]
+        mysql: [ '5.7.37' ]
+        include:
+          - php: '7.4'
+            mysql: '5.7.37'
+            report_sonarcloud: true
+    name: "Testing PHP ${{ matrix.php }} with MySQL ${{ matrix.mysql }}"
+    uses: ./.github/workflows/development.yaml
+    secrets: inherit
+    with:
+      php: ${{ matrix.php }}
+      mysql: ${{ matrix.mysql }}
+
+  release:
+    name: Create a new release
+    needs: [ "run-tests" ]
+    if: github.event_name != 'pull_request'
+    secrets: inherit
+    uses: ./.github/workflows/release.yaml
