@@ -6,22 +6,22 @@ use Makaira\OxidConnectEssential\Exception\InvalidCartItem;
 use OxidEsales\Eshop\Application\Model\Article;
 use OxidEsales\Eshop\Application\Model\Basket;
 use OxidEsales\Eshop\Application\Model\BasketItem;
+use OxidEsales\Eshop\Core\Exception\ArticleException;
 use OxidEsales\Eshop\Core\Exception\ArticleInputException;
 use OxidEsales\Eshop\Core\Exception\NoArticleException;
 use OxidEsales\Eshop\Core\Exception\OutOfStockException;
 
 class CartService
 {
-    private Basket $basket;
-
-    public function __construct(Basket $basket)
+    public function __construct(private Basket $basket)
     {
-        $this->basket = $basket;
     }
 
     /**
+     * @return array
      * @throws ArticleInputException
      * @throws NoArticleException
+     * @throws ArticleException
      */
     public function getCartItems(): array
     {

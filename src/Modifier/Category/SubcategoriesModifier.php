@@ -2,6 +2,8 @@
 
 namespace Makaira\OxidConnectEssential\Modifier\Category;
 
+use Doctrine\DBAL\Driver\Exception as DBALDriverException;
+use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Utils\CategoryInheritance;
@@ -9,19 +11,16 @@ use Makaira\OxidConnectEssential\Type\Category\Category;
 
 class SubcategoriesModifier extends Modifier
 {
-    private CategoryInheritance $categoryInheritance;
-
-    public function __construct(CategoryInheritance $categoryInheritance)
+    public function __construct(private CategoryInheritance $categoryInheritance)
     {
-        $this->categoryInheritance = $categoryInheritance;
     }
 
     /**
      * @param Category $category
      *
      * @return Category
-     * @throws \Doctrine\DBAL\Driver\Exception
-     * @throws \Doctrine\DBAL\Exception
+     * @throws DBALDriverException
+     * @throws DBALException
      */
     public function apply(Type $category): Category
     {

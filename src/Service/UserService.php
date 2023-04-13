@@ -11,11 +11,8 @@ use OxidEsales\Eshop\Core\Session;
 
 class UserService
 {
-    private Session $session;
-
-    public function __construct(Session $session)
+    public function __construct(private Session $session)
     {
-        $this->session = $session;
     }
 
     /**

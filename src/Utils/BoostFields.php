@@ -30,16 +30,13 @@ class BoostFields
      */
     private ?array $minMaxValues = null;
 
-    private Connection $database;
-
     /**
      * BoostFieldStatistics constructor.
      *
-     * @param Connection $database
+     * @param Connection $connection
      */
-    public function __construct(Connection $database)
+    public function __construct(private Connection $connection)
     {
-        $this->database = $database;
     }
 
     /**
@@ -51,7 +48,7 @@ class BoostFields
     {
         if (null === $this->minMaxValues) {
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery($this->getMinMaxQuery());
+            $resultStatement = $this->connection->executeQuery($this->getMinMaxQuery());
 
             /** @var array<string> $rawValues */
             $rawValues = (array) $resultStatement->fetchAssociative();

@@ -14,12 +14,6 @@ use function get_object_vars;
  */
 class PriceModifier extends Modifier
 {
-    private ?bool $isNetto;
-
-    private ?bool $showNetto;
-
-    private ?int $defaultVAT;
-
     /**
      * PriceModifier constructor.
      *
@@ -28,13 +22,10 @@ class PriceModifier extends Modifier
      * @param int|null $defaultVAT
      */
     public function __construct(
-        ?bool $isNetto = false,
-        ?bool $showNetto = false,
-        ?int $defaultVAT = 19
+        private ?bool $isNetto = false,
+        private ?bool $showNetto = false,
+        private ?int $defaultVAT = 19,
     ) {
-        $this->isNetto    = (bool) $isNetto;
-        $this->showNetto  = (bool) $showNetto;
-        $this->defaultVAT = (int) $defaultVAT;
     }
 
     /**
@@ -49,7 +40,7 @@ class PriceModifier extends Modifier
         if ($this->isNetto && !$this->showNetto) {
             $keys      = array_merge(array_keys(get_object_vars($type)), array_keys($type->additionalData));
             $priceKeys = array_filter($keys, static fn($key) => str_contains(strtolower($key), 'price'));
-            $vat       = 1 + ($type->OXVAT ?? $this->defaultVAT) / 100.0;
+            $vat       = 1 + ($type->OXVAT ?? (int) $this->defaultVAT) / 100.0;
 
             foreach ($priceKeys as $priceKey) {
                 $type->{$priceKey} *= $vat;

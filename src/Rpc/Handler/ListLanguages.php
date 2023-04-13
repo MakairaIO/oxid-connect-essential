@@ -7,14 +7,11 @@ use OxidEsales\Eshop\Core\Language;
 
 class ListLanguages implements HandlerInterface
 {
-    private Language $language;
-
     /**
      * @param Language $language
      */
-    public function __construct(Language $language)
+    public function __construct(private Language $language)
     {
-        $this->language = $language;
     }
 
     /**

@@ -6,12 +6,20 @@ services:
     public: false
     autowire: true
     autoconfigure: true
+    bind:
+      OxidEsales\Eshop\Core\Language $language: "@makaira.oxid.language"
+      Doctrine\DBAL\Connection $connection: "@makaira.oxid.database"
+      OxidEsales\Eshop\Core\UtilsObject $utilsObject: "@makaira.oxid.utils_object"
+      OxidEsales\Eshop\Application\Model\SeoEncoderArticle $seoEncoderArticle: "@makaira.oxid.seo_encoder_article"
+      OxidEsales\Eshop\Application\Model\SeoEncoderCategory $seoEncoderCategory: "@makaira.oxid.seo_encoder_category"
+      OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer $seoEncoderManufacturer: "@makaira.oxid.seo_encoder_manufacturer"
+      OxidEsales\Eshop\Core\Session $session: "@makaira.oxid.session"
+      OxidEsales\Eshop\Application\Controller\FrontendController $frontendController: "@makaira.oxid.frontend_controller"
+      OxidEsales\Eshop\Core\TableViewNameGenerator $viewNameGenerator: "@makaira.oxid.table_view_name_generator"
 
   Makaira\OxidConnectEssential\:
     resource: './src/'
     exclude: './src/{Controller,Domain,Event,Oxid,Type,Exception,Core}/*'
-
-  OxidEsales\Eshop\Core\TableViewNameGenerator: ~
 
   Makaira\OxidConnectEssential\Command\CleanUpCommand:
     tags:
@@ -35,7 +43,7 @@ services:
     public: true
     bind:
       $repositories: !tagged makaira_connect_essential.repository
-      $parentsPurchasable: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blVariantParentBuyable")'
+      $parentsPurchasable: '@=service("makaira.oxid.config").getShopConfVar("blVariantParentBuyable")'
 
   Makaira\OxidConnectEssential\Rpc\RpcService:
     public: true
@@ -194,13 +202,13 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Common\LongDescriptionModifier:
     bind:
-      $parseLongDesc: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("bl_perfParseLongDescinSmarty")'
+      $parseLongDesc: '@=service("makaira.oxid.config").getShopConfVar("bl_perfParseLongDescinSmarty")'
 
   Makaira\OxidConnectEssential\Modifier\Common\PriceModifier:
     bind:
-      $isNetto: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blEnterNetPrice")'
-      $showNetto: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blShowNetPrice")'
-      $defaultVAT: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("dDefaultVAT")'
+      $isNetto: '@=service("makaira.oxid.config").getShopConfVar("blEnterNetPrice")'
+      $showNetto: '@=service("makaira.oxid.config").getShopConfVar("blShowNetPrice")'
+      $defaultVAT: '@=service("makaira.oxid.config").getShopConfVar("dDefaultVAT")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
@@ -215,7 +223,7 @@ services:
   Makaira\OxidConnectEssential\Modifier\Common\AbstractShopModifier:
     abstract: true
     bind:
-      $isMultiShop: '@=service("OxidEsales\\Eshop\\Core\\Config").isMall()'
+      $isMultiShop: '@=service("makaira.oxid.config").isMall()'
 
   Makaira\OxidConnectEssential\Modifier\Product\ShopModifier:
     public: false
@@ -244,7 +252,7 @@ services:
 
   Makaira\OxidConnectEssential\Modifier\Common\StockModifier:
     bind:
-      $useStock: '@=service("OxidEsales\\Eshop\\Core\\Config").getShopConfVar("blUseStock")'
+      $useStock: '@=service("makaira.oxid.config").getShopConfVar("blUseStock")'
     tags:
       - { name: 'makaira.importer.modifier.product', priority: 1000 }
       - { name: 'makaira.importer.modifier.variant', priority: 1000 }
@@ -275,47 +283,56 @@ services:
 
 ### Helper ###
 
-  Doctrine\DBAL\Driver\Connection:
-    alias: Doctrine\DBAL\Connection
-
-  Doctrine\DBAL\Connection:
+  makaira.oxid.database:
+    class: Doctrine\DBAL\Connection
     factory: ['@OxidEsales\EshopCommunity\Internal\Framework\Database\ConnectionProviderInterface', 'get']
 
-  OxidEsales\Eshop\Core\Language:
+  makaira.oxid.language:
+    class: OxidEsales\Eshop\Core\Language
     public: true
     factory: ['OxidEsales\Eshop\Core\Registry', 'getLang']
 
-  OxidEsales\Eshop\Core\Config:
+  makaira.oxid.config:
+    class: OxidEsales\Eshop\Core\Config
     public: true
     factory: ['OxidEsales\Eshop\Core\Registry', 'getConfig']
 
-  OxidEsales\Eshop\Core\UtilsObject:
+  makaira.oxid.utils_object:
+    class: OxidEsales\Eshop\Core\UtilsObject
     public: true
     factory: ['OxidEsales\Eshop\Core\UtilsObject', 'getInstance']
 
-  OxidEsales\Eshop\Core\Session:
+  makaira.oxid.session:
+    class: OxidEsales\Eshop\Core\Session
     public: true
     factory: ['OxidEsales\Eshop\Core\Registry', 'getSession']
 
-  OxidEsales\Eshop\Application\Controller\FrontendController:
+  makaira.oxid.frontend_controller:
+    class: OxidEsales\Eshop\Application\Controller\FrontendController
     public: true
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['@makaira.oxid.utils_object', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Controller\FrontendController']
 
-  OxidEsales\Eshop\Application\Model\SeoEncoderCategory:
+  makaira.oxid.seo_encoder_category:
+    class: OxidEsales\Eshop\Application\Model\SeoEncoderCategory
     public: true
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['@makaira.oxid.utils_object', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderCategory']
 
-  OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer:
+  makaira.oxid.seo_encoder_manufacturer:
+    class: OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer
     public: true
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['@makaira.oxid.utils_object', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderManufacturer']
 
-  OxidEsales\Eshop\Application\Model\SeoEncoderArticle:
+  makaira.oxid.seo_encoder_article:
+    class: OxidEsales\Eshop\Application\Model\SeoEncoderArticle
     public: true
-    factory: ['@OxidEsales\Eshop\Core\UtilsObject', 'oxNew']
+    factory: ['@makaira.oxid.utils_object', 'oxNew']
     arguments: ['OxidEsales\Eshop\Application\Model\SeoEncoderArticle']
+
+  makaira.oxid.table_view_name_generator:
+    class: OxidEsales\Eshop\Core\TableViewNameGenerator
 
   Makaira\OxidConnectEssential\Service\UserService:
     public: true
@@ -325,7 +342,7 @@ services:
     public: true
     class: Makaira\OxidConnectEssential\Service\CartService
     bind:
-      $basket: '@=service("OxidEsales\\Eshop\\Core\\Session").getBasket()'
+      $basket: '@=service("makaira.oxid.session").getBasket()'
 
   Makaira\OxidConnectEssential\Service\ReviewService:
     public: true

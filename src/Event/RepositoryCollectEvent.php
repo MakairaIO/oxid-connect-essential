@@ -17,14 +17,8 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class RepositoryCollectEvent extends Event
 {
-    /**
-     * @var Repository
-     */
-    public Repository $repository;
-
-    public function __construct(Repository $repository)
+    public function __construct(private Repository $repository)
     {
-        $this->repository = $repository;
     }
 
     public function addRepository(AbstractRepository $repository): void

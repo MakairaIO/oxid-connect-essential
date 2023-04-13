@@ -2,6 +2,7 @@
 
 namespace Makaira\OxidConnectEssential\Repository;
 
+use Codeception\Lib\Interfaces\ConsolePrinter;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
@@ -14,30 +15,18 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 abstract class AbstractRepository
 {
-    protected Connection $database;
-
-    private ModifierList $modifiers;
-
-    private TableTranslator $tableTranslator;
-
-    private DataMapper $dataMapper;
-
     /**
-     * @param Connection      $database
+     * @param Connection      $connection
      * @param ModifierList    $modifiers
      * @param TableTranslator $tableTranslator
      * @param DataMapper      $dataMapper
      */
     public function __construct(
-        Connection $database,
-        ModifierList $modifiers,
-        TableTranslator $tableTranslator,
-        DataMapper $dataMapper
+        private Connection $connection,
+        private ModifierList $modifiers,
+        private TableTranslator $tableTranslator,
+        private DataMapper $dataMapper
     ) {
-        $this->tableTranslator = $tableTranslator;
-        $this->modifiers       = $modifiers;
-        $this->database        = $database;
-        $this->dataMapper      = $dataMapper;
     }
 
     /**
@@ -57,7 +46,7 @@ abstract class AbstractRepository
         $query = $this->tableTranslator->translate($this->getSelectQuery());
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($query, ['id' => $objectId]);
+        $resultStatement = $this->connection->executeQuery($query, ['id' => $objectId]);
 
         /** @var array<string, string> $result */
         $result = $resultStatement->fetchAssociative();
@@ -98,7 +87,7 @@ abstract class AbstractRepository
         $sql = $this->tableTranslator->translate($sql);
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($sql);
+        $resultStatement = $this->connection->executeQuery($sql);
 
         return $resultStatement->fetchFirstColumn();
     }

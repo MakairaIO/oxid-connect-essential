@@ -12,11 +12,8 @@ use Symfony\Component\Console\Output\OutputInterface;
  */
 class CleanUpCommand extends Command
 {
-    private RevisionRepository $revisionRepository;
-
-    public function __construct(RevisionRepository $revisionRepository)
+    public function __construct(private RevisionRepository $revisionRepository)
     {
-        $this->revisionRepository = $revisionRepository;
         parent::__construct('makaira:cleanup');
     }
 

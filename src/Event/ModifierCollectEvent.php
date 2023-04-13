@@ -17,14 +17,8 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class ModifierCollectEvent extends Event
 {
-    /**
-     * @var ModifierList
-     */
-    public ModifierList $modifierList;
-
-    public function __construct(ModifierList $modifierList)
+    public function __construct(private ModifierList $modifierList)
     {
-        $this->modifierList = $modifierList;
     }
 
     public function addModifier(Modifier $modifier): void

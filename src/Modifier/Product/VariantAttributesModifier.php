@@ -57,38 +57,24 @@ class VariantAttributesModifier extends Modifier
                             AND oxobject2attribute.oxobjectid in (:productId, :variantId)
                         ';
 
-    private Connection $database;
-
     private ?BaseModel $model = null;
 
     private string $activeSnippet = '';
 
-    private string $modelClass;
-
-    private UtilsObject $utilsObject;
-
-    private ModuleSettingsProvider $moduleSettings;
-
-    private TableTranslator $tableTranslator;
-
     /**
-     * @param Connection             $database
+     * @param Connection             $connection
      * @param class-string           $modelClass
      * @param ModuleSettingsProvider $moduleSettings
      * @param UtilsObject            $utilsObject
+     * @param TableTranslator        $tableTranslator
      */
     public function __construct(
-        Connection $database,
-        string $modelClass,
-        ModuleSettingsProvider $moduleSettings,
-        UtilsObject $utilsObject,
-        TableTranslator $tableTranslator
+        private Connection $connection,
+        private string $modelClass,
+        private ModuleSettingsProvider $moduleSettings,
+        private UtilsObject $utilsObject,
+        private TableTranslator $tableTranslator
     ) {
-        $this->modelClass      = $modelClass;
-        $this->database        = $database;
-        $this->moduleSettings  = $moduleSettings;
-        $this->utilsObject     = $utilsObject;
-        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -115,7 +101,7 @@ class VariantAttributesModifier extends Modifier
         $product->attributes = [];
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery(
+        $resultStatement = $this->connection->executeQuery(
             $this->tableTranslator->translate($this->selectVariantNameQuery),
             ['productId' => $product->id]
         );
@@ -135,7 +121,7 @@ class VariantAttributesModifier extends Modifier
             $query = str_replace('{{activeSnippet}}', $this->activeSnippet, $this->selectVariantDataQuery);
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
+            $resultStatement = $this->connection->executeQuery(
                 $this->tableTranslator->translate($query),
                 ['productId' => $product->id]
             );
@@ -171,7 +157,7 @@ class VariantAttributesModifier extends Modifier
             }
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
+            $resultStatement = $this->connection->executeQuery(
                 $this->tableTranslator->translate($this->selectVariantAttributesQuery),
                 [
                     'productId' => $product->id,

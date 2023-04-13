@@ -10,11 +10,6 @@ use function preg_replace_callback;
 class TableTranslator
 {
     /**
-     * @var array<string>
-     */
-    private array $searchTables;
-
-    /**
      * @var string
      */
     private string $language = 'de';
@@ -39,10 +34,8 @@ class TableTranslator
      *
      * @param string[] $searchTables
      */
-    public function __construct(array $searchTables)
+    public function __construct(private array $searchTables)
     {
-        $this->searchTables = $searchTables;
-
         $this->viewNameGenerator = static function ($table, $language, $shopId = null) {
             if (null !== $shopId) {
                 $table = "{$table}_{$shopId}";

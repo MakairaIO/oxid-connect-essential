@@ -16,16 +16,10 @@ use function json_encode;
  */
 class TrackingRenderService
 {
-    private MakairaTrackingDataGenerator $trackingDataGenerator;
-
-    private Config $config;
-
     private static ?array $trackingData = null;
 
-    public function __construct(MakairaTrackingDataGenerator $trackingDataGenerator, Config $config)
+    public function __construct(private MakairaTrackingDataGenerator $trackingDataGenerator, private Config $config)
     {
-        $this->trackingDataGenerator = $trackingDataGenerator;
-        $this->config = $config;
     }
 
     /**
