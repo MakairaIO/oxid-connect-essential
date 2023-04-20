@@ -1,3 +1,12 @@
+## [1.4.4](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.3...1.4.4) (2023-04-20)
+
+
+### Bug Fixes
+
+* Enable maintenance releases ([6258704](https://github.com/MakairaIO/oxid-connect-essential/commit/6258704dc5853c235d78ed115d2f47a22fceba46))
+* Use table translator in all modifiers ([59efae3](https://github.com/MakairaIO/oxid-connect-essential/commit/59efae3cdbd5d6633a9fe81c5a3d5c8e3be076fc))
+* Various minor issues ([f8c81e0](https://github.com/MakairaIO/oxid-connect-essential/commit/f8c81e070af6cafbc1fee516a508941bcdf57f46))
+
 ## [1.4.3](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.2...1.4.3) (2022-09-19)
 
 
