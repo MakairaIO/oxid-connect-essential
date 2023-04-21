@@ -11,16 +11,13 @@ use OxidEsales\Eshop\Core\Model\BaseModel;
 
 class UrlModifier extends AbstractUrlModifier
 {
-    private SeoEncoderCategory $encoder;
-
     /**
-     * @param SeoEncoderCategory $encoder
-     * @param Language           $oxLang
+     * @param SeoEncoderCategory $seoEncoderCategory
+     * @param Language           $language
      */
-    public function __construct(SeoEncoderCategory $encoder, Language $oxLang)
+    public function __construct(private SeoEncoderCategory $seoEncoderCategory, Language $language)
     {
-        $this->encoder = $encoder;
-        parent::__construct($oxLang);
+        parent::__construct($language);
     }
 
     /**
@@ -43,7 +40,7 @@ class UrlModifier extends AbstractUrlModifier
         $url = '';
 
         if ($model instanceof Category) {
-            $url = $this->encoder->getCategoryUri($model, $languageId);
+            $url = $this->seoEncoderCategory->getCategoryUri($model, $languageId);
         }
 
         return $url;

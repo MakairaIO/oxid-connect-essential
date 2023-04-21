@@ -3,6 +3,8 @@
 namespace Makaira\OxidConnectEssential\RevisionHandler\Extractor;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Exception;
+use Doctrine\DBAL\Exception as DBALException;
 use Doctrine\DBAL\Statement;
 use Makaira\OxidConnectEssential\Domain\Revision;
 use Makaira\OxidConnectEssential\RevisionHandler\AbstractModelDataExtractor;
@@ -17,24 +19,20 @@ class ArticleCategory extends AbstractModelDataExtractor
      */
     private ?Statement $statement = null;
 
-    private TableViewNameGenerator $viewNameGenerator;
-
-    private Connection $connection;
-
     /**
      * @param Connection             $connection
      * @param TableViewNameGenerator $viewNameGenerator
      */
-    public function __construct(Connection $connection, TableViewNameGenerator $viewNameGenerator)
+    public function __construct(private Connection $connection, private TableViewNameGenerator $viewNameGenerator)
     {
-        $this->connection        = $connection;
-        $this->viewNameGenerator = $viewNameGenerator;
     }
 
     /**
      * @param Object2CategoryModel $model
      *
      * @return array<Revision>
+     * @throws Exception
+     * @throws DBALException
      */
     public function extract(BaseModel $model): array
     {

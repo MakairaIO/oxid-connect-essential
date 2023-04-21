@@ -93,27 +93,20 @@ class Repository
      */
     private array $repositoryMapping = [];
 
-    private Connection $database;
-
-    private ?bool $parentsPurchasable;
-
     /**
      * Repository constructor.
      *
-     * @param Connection                   $database
+     * @param Connection                   $connection
      * @param EventDispatcherInterface     $dispatcher
      * @param iterable<AbstractRepository> $repositories
      * @param bool                         $parentsPurchasable
      */
     public function __construct(
-        Connection $database,
+        private Connection $connection,
         EventDispatcherInterface $dispatcher,
         iterable $repositories,
-        ?bool $parentsPurchasable
+        private ?bool $parentsPurchasable
     ) {
-        $this->database           = $database;
-        $this->parentsPurchasable = (bool) $parentsPurchasable;
-
         foreach ($repositories as $repository) {
             $this->repositoryMapping[$repository->getType()] = $repository;
         }
@@ -146,7 +139,7 @@ class Repository
      */
     public function getChangesSince(int $since, int $limit = 50): array
     {
-        $prepared = $this->database->prepare(self::SELECT_QUERY);
+        $prepared = $this->connection->prepare(self::SELECT_QUERY);
         $prepared->bindValue('since', $since, ParameterType::INTEGER);
         $prepared->bindValue('limit', $limit, ParameterType::INTEGER);
         $prepared->execute();

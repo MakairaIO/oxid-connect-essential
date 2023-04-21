@@ -34,14 +34,8 @@ class HierarchyModifier extends Modifier
       ORDER BY oc.OXLEFT;
     ";
 
-    private Connection $database;
-
-    private TableTranslator $tableTranslator;
-
-    public function __construct(Connection $database, TableTranslator $tableTranslator)
+    public function __construct(private Connection $connection, private TableTranslator $tableTranslator)
     {
-        $this->database        = $database;
-        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -56,7 +50,7 @@ class HierarchyModifier extends Modifier
     public function apply(Type $category): Category
     {
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery(
+        $resultStatement = $this->connection->executeQuery(
             $this->tableTranslator->translate($this->selectQuery),
             [
                 'left'   => $category->additionalData['OXLEFT'],

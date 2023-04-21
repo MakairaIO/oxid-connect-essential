@@ -20,31 +20,19 @@ abstract class AbstractActiveModifier extends Modifier
 
     private ?string $tableName = null;
 
-    private string $modelClass;
-
     private ?BaseModel $model = null;
 
-    private Connection $database;
-
-    private UtilsObject $utilsObject;
-
-    private TableTranslator $tableTranslator;
-
     /**
-     * @param Connection   $database
+     * @param Connection   $connection
      * @param class-string $modelClass
      * @param UtilsObject  $utilsObject
      */
     public function __construct(
-        Connection $database,
-        string $modelClass,
-        UtilsObject $utilsObject,
-        TableTranslator $tableTranslator
+        private Connection $connection,
+        private string $modelClass,
+        private UtilsObject $utilsObject,
+        private TableTranslator $tableTranslator
     ) {
-        $this->database        = $database;
-        $this->modelClass      = $modelClass;
-        $this->utilsObject     = $utilsObject;
-        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -66,7 +54,7 @@ abstract class AbstractActiveModifier extends Modifier
             WHERE OXID = '{$product->id}' AND {$this->activeSnippet}";
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery(
+        $resultStatement = $this->connection->executeQuery(
             $this->tableTranslator->translate($sql)
         );
         $product->active = (bool)$resultStatement->fetchOne();

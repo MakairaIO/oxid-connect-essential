@@ -9,14 +9,11 @@ use Makaira\OxidConnectEssential\Rpc\HandlerInterface;
 
 class GetReplicationStatus implements HandlerInterface
 {
-    private RevisionRepository $repository;
-
     /**
      * @param RevisionRepository $repository
      */
-    public function __construct(RevisionRepository $repository)
+    public function __construct(private RevisionRepository $repository)
     {
-        $this->repository = $repository;
     }
 
     /**

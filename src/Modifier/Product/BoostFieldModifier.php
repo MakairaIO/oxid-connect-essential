@@ -19,16 +19,13 @@ use Makaira\OxidConnectEssential\Utils\BoostFields;
 
 class BoostFieldModifier extends Modifier
 {
-    private BoostFields $boostFieldUtilities;
-
     /**
      * BoostFieldModifier constructor.
      *
-     * @param BoostFields $boostFieldUtilities
+     * @param BoostFields $boostFields
      */
-    public function __construct(BoostFields $boostFieldUtilities)
+    public function __construct(private BoostFields $boostFields)
     {
-        $this->boostFieldUtilities = $boostFieldUtilities;
     }
 
     /**
@@ -45,13 +42,13 @@ class BoostFieldModifier extends Modifier
         /** @var string $insertDate */
         $insertDate = $type->additionalData['OXINSERT'];
 
-        $type->mak_boost_norm_insert = $this->boostFieldUtilities->normalizeTimestamp((string) $insertDate, 'insert');
+        $type->mak_boost_norm_insert = $this->boostFields->normalizeTimestamp((string) $insertDate, 'insert');
 
-        $type->mak_boost_norm_sold   = $this->boostFieldUtilities->normalize(
+        $type->mak_boost_norm_sold   = $this->boostFields->normalize(
             (float) $type->additionalData['OXSOLDAMOUNT'],
             'sold'
         );
-        $type->mak_boost_norm_rating = $this->boostFieldUtilities->normalize(
+        $type->mak_boost_norm_rating = $this->boostFields->normalize(
             (float) $type->additionalData['OXRATING'],
             'rating'
         );
@@ -59,12 +56,12 @@ class BoostFieldModifier extends Modifier
         $priceAverage =
             ((float) $type->additionalData['OXVARMINPRICE'] + (float) $type->additionalData['OXVARMAXPRICE']) / 2;
 
-        $type->mak_boost_norm_revenue = $this->boostFieldUtilities->normalize(
+        $type->mak_boost_norm_revenue = $this->boostFields->normalize(
             (float) ($priceAverage * (float) $type->additionalData['OXSOLDAMOUNT']),
             'revenue'
         );
 
-        $type->mak_boost_norm_profit_margin = $this->boostFieldUtilities->normalize(
+        $type->mak_boost_norm_profit_margin = $this->boostFields->normalize(
             (0.0 === round((float) $type->additionalData['OXBPRICE'])) ? 0 :
                 ($priceAverage - (float) $type->additionalData['OXBPRICE']),
             'profit_margin'

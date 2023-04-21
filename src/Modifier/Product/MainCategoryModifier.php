@@ -12,6 +12,7 @@
 namespace Makaira\OxidConnectEssential\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
 use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier;
@@ -22,25 +23,16 @@ use OxidEsales\Eshop\Core\Language;
 
 class MainCategoryModifier extends Modifier
 {
-    private Connection $database;
-
-    private SeoEncoderCategory $encoder;
-
-    private Language $oxLang;
-
     /**
-     * @param Connection         $database
-     * @param SeoEncoderCategory $encoder
-     * @param Language           $oxLang
+     * @param Connection         $connection
+     * @param SeoEncoderCategory $seoEncoderCategory
+     * @param Language           $language
      */
     public function __construct(
-        Connection $database,
-        SeoEncoderCategory $encoder,
-        Language $oxLang
+        private Connection $connection,
+        private SeoEncoderCategory $seoEncoderCategory,
+        private Language $language
     ) {
-        $this->oxLang   = $oxLang;
-        $this->encoder  = $encoder;
-        $this->database = $database;
     }
 
     /**
@@ -50,7 +42,7 @@ class MainCategoryModifier extends Modifier
      *
      * @return Type\Product\Product
      * @throws DBALException
-     * @throws \Doctrine\DBAL\Driver\Exception
+     * @throws DBALDriverException
      */
     public function apply(Type $type)
     {
@@ -59,17 +51,17 @@ class MainCategoryModifier extends Modifier
             $sql = "SELECT `OXCATNID` FROM `oxobject2category` WHERE `OXOBJECTID`= ? ORDER BY `OXTIME` LIMIT 1";
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery($sql, [$type->parent ?: $type->id]);
+            $resultStatement = $this->connection->executeQuery($sql, [$type->parent ?: $type->id]);
 
             /** @var string $categoryId */
             $categoryId = $resultStatement->fetchOne();
 
             if ($categoryId) {
                 $type->maincategory = $categoryId;
-                $languageId         = (int) $this->oxLang->getBaseLanguage();
+                $languageId         = (int) $this->language->getBaseLanguage();
                 $oCategory          = oxNew(Category::class);
                 $oCategory->loadInLang($languageId, $categoryId);
-                $type->maincategoryurl = $this->encoder->getCategoryUri($oCategory, $languageId);
+                $type->maincategoryurl = $this->seoEncoderCategory->getCategoryUri($oCategory, $languageId);
             }
         }
 

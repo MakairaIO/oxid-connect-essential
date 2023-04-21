@@ -15,18 +15,12 @@ use function array_replace;
 
 class Manufacturer extends AbstractModelDataExtractor
 {
-    private Connection $connection;
-
-    private TableViewNameGenerator $viewNameGenerator;
-
     /**
      * @param Connection             $connection
      * @param TableViewNameGenerator $viewNameGenerator
      */
-    public function __construct(Connection $connection, TableViewNameGenerator $viewNameGenerator)
+    public function __construct(private Connection $connection, private TableViewNameGenerator $viewNameGenerator)
     {
-        $this->viewNameGenerator = $viewNameGenerator;
-        $this->connection        = $connection;
     }
 
     /**

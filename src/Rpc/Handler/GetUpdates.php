@@ -14,20 +14,11 @@ use function array_flip;
 
 class GetUpdates implements HandlerInterface
 {
-    private Language $language;
-
-    private TableTranslator $tableTranslator;
-
-    private Repository $repository;
-
     public function __construct(
-        Language $language,
-        TableTranslator $tableTranslator,
-        Repository $repository
+        private Language $language,
+        private TableTranslator $tableTranslator,
+        private Repository $repository
     ) {
-        $this->repository      = $repository;
-        $this->tableTranslator = $tableTranslator;
-        $this->language        = $language;
     }
 
     /**

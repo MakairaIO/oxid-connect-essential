@@ -48,18 +48,12 @@ class CategoryModifier extends Modifier
       ORDER BY oc.OXLEFT;
     ";
 
-    private Connection $database;
-
-    private TableTranslator $tableTranslator;
-
     /**
-     * @param Connection      $database
+     * @param Connection      $connection
      * @param TableTranslator $tableTranslator
      */
-    public function __construct(Connection $database, TableTranslator $tableTranslator)
+    public function __construct(private Connection $connection, private TableTranslator $tableTranslator)
     {
-        $this->database        = $database;
-        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -74,7 +68,7 @@ class CategoryModifier extends Modifier
     public function apply(Type $product)
     {
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery(
+        $resultStatement = $this->connection->executeQuery(
             $this->tableTranslator->translate($this->selectCategoriesQuery),
             [
                 'productId'     => $product->id,
@@ -88,7 +82,7 @@ class CategoryModifier extends Modifier
 
         foreach ($allCats as $cat) {
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
+            $resultStatement = $this->connection->executeQuery(
                 $this->tableTranslator->translate($this->selectCategoryPathQuery),
                 [
                     'left'   => $cat['oxleft'],

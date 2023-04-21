@@ -28,20 +28,14 @@ class DatabaseSubscriber implements EventSubscriberInterface
      */
     private array $revisions = [];
 
-    private ModelDataExtractor $dataExtractor;
-
-    private RevisionRepository $revisionRepository;
-
     /**
      * @param ModelDataExtractor $dataExtractor
      * @param RevisionRepository $revisionRepository
      */
     public function __construct(
-        ModelDataExtractor $dataExtractor,
-        RevisionRepository $revisionRepository
+        private ModelDataExtractor $dataExtractor,
+        private RevisionRepository $revisionRepository
     ) {
-        $this->revisionRepository = $revisionRepository;
-        $this->dataExtractor      = $dataExtractor;
     }
 
     /**

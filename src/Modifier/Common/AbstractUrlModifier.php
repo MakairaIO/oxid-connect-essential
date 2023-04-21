@@ -20,16 +20,13 @@ use function array_keys;
 
 abstract class AbstractUrlModifier extends Modifier
 {
-    private Language $oxLang;
-
     /**
      * UrlModifier constructor.
      *
-     * @param Language $oxLang
+     * @param Language $language
      */
-    public function __construct(Language $oxLang)
+    public function __construct(private Language $language)
     {
-        $this->oxLang = $oxLang;
     }
 
     /**
@@ -39,7 +36,7 @@ abstract class AbstractUrlModifier extends Modifier
      *
      * @return Type
      */
-    public function apply(Type $type)
+    public function apply(Type $type): Type
     {
         $objectData = array_merge((array) $type, $type->additionalData);
         $objectData['oxid'] = $objectData['id'];
@@ -65,11 +62,11 @@ abstract class AbstractUrlModifier extends Modifier
         $object = $this->createModelInstance();
         $object->assign($objectData);
 
-        $type->url = $this->getUrl($type, $object, (int) $this->oxLang->getBaseLanguage());
+        $type->url = $this->getUrl($type, $object, (int) $this->language->getBaseLanguage());
 
         $type->selfLinks = [];
         /** @var array<int> $languageIds */
-        $languageIds     = $this->oxLang->getLanguageIds();
+        $languageIds     = $this->language->getLanguageIds();
         foreach (array_keys($languageIds) as $id) {
             $key                   = $languageIds[$id];
             $type->selfLinks[$key] = $this->getUrl($type, $object, $id);

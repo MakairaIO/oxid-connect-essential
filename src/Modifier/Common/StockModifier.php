@@ -12,14 +12,11 @@ use Makaira\OxidConnectEssential\Type\Product\Product;
 
 class StockModifier extends Modifier
 {
-    private bool $useStock;
-
     /**
      * @param bool $useStock
      */
-    public function __construct(bool $useStock)
+    public function __construct(private bool $useStock)
     {
-        $this->useStock = $useStock;
     }
 
     /**
@@ -35,10 +32,10 @@ class StockModifier extends Modifier
             $stockFlag = (int) $type->additionalData['OXSTOCKFLAG'];
             $stock     = (int) $type->additionalData['OXSTOCK'] + (int) $type->additionalData['OXVARSTOCK'];
 
-            // 1 --> Standard
-            // 2 --> Wenn ausverkauft offline
-            // 3 --> Wenn ausverkauft nicht bestellbar
-            // 4 --> Fremdlager
+            // 1 --> Default
+            // 2 --> If sold-out, go offline
+            // 3 --> If sold-out, become not purchasable
+            // 4 --> Handled externally
             $onStock = (2 !== $stockFlag) || (0 < $stock);
             if (4 === $stockFlag) {
                 $stock = 1;

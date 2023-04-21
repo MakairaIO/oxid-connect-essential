@@ -15,6 +15,7 @@ use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\EshopCommunity\Internal\Container\ContainerFactory;
 use OxidEsales\EshopCommunity\Tests\DatabaseTrait;
 use OxidEsales\Facts\Edition\EditionSelector;
+use OxidEsales\Facts\Facts;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
@@ -129,11 +130,19 @@ abstract class IntegrationTestCase extends TestCase
      */
     protected function assertSnapshot(mixed $actual, ?string $message = null, bool $continueIfIncomplete = false)
     {
+        try {
+            $facts   = new Facts();
+            $edition = strtolower($facts->getEdition());
+        } catch (Exception) {
+            $edition = 'ce';
+        }
+
         $reflection = new ReflectionClass($this);
 
         $snapshotDir = sprintf(
-            '%s/__snapshots__',
+            '%s/__snapshots__/%s',
             dirname($reflection->getFileName()),
+            $edition,
         );
 
         $snapshotFilename = sprintf(

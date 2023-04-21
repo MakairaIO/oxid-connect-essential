@@ -4,14 +4,13 @@ namespace Makaira\OxidConnectEssential\Utils;
 
 use OxidEsales\Eshop\Application\Controller\FrontendController;
 use OxidEsales\Eshop\Core\Language;
-use OxidEsales\Eshop\Core\UtilsView;
 use OxidEsales\EshopCommunity\Internal\Framework\Templating\TemplateRendererInterface;
 
 class ContentParser implements ContentParserInterface
 {
     public function __construct(
         private TemplateRendererInterface $renderer,
-        private Language $oxidLanguage,
+        private Language $language,
         private FrontendController $frontendController
     ) {
     }
@@ -28,7 +27,7 @@ class ContentParser implements ContentParserInterface
     {
         $this->frontendController->addGlobalParams();
 
-        $activeLanguageId = $this->oxidLanguage->getTplLanguage();
+        $activeLanguageId = $this->language->getTplLanguage();
 
         return $this->renderer->renderFragment(
             $content,

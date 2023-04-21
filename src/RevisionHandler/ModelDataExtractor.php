@@ -12,16 +12,10 @@ use function get_class;
 class ModelDataExtractor
 {
     /**
-     * @var iterable<AbstractModelDataExtractor>
-     */
-    private iterable $extractors;
-
-    /**
      * @param iterable<AbstractModelDataExtractor> $extractors
      */
-    public function __construct(iterable $extractors)
+    public function __construct(private iterable $extractors)
     {
-        $this->extractors = $extractors;
     }
 
     /**

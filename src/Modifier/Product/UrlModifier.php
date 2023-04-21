@@ -11,16 +11,13 @@ use OxidEsales\Eshop\Core\Model\BaseModel;
 
 class UrlModifier extends AbstractUrlModifier
 {
-    private SeoEncoderArticle $encoder;
-
     /**
-     * @param SeoEncoderArticle $encoder
-     * @param Language          $oxLang
+     * @param SeoEncoderArticle $seoEncoderArticle
+     * @param Language          $language
      */
-    public function __construct(SeoEncoderArticle $encoder, Language $oxLang)
+    public function __construct(private SeoEncoderArticle $seoEncoderArticle, Language $language)
     {
-        $this->encoder = $encoder;
-        parent::__construct($oxLang);
+        parent::__construct($language);
     }
 
     /**
@@ -47,7 +44,7 @@ class UrlModifier extends AbstractUrlModifier
                 $type->additionalData['picture_url_main'] = $model->getMasterZoomPictureUrl(1);
             }
 
-            $url = $this->encoder->getArticleMainUri($model, $languageId);
+            $url = $this->seoEncoderArticle->getArticleMainUri($model, $languageId);
         }
 
         return $url;

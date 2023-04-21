@@ -17,14 +17,11 @@ use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 
 abstract class AbstractBlacklistModifier extends Modifier
 {
-    protected ModuleSettingsProvider $moduleSettings;
-
     /**
-     * @param ModuleSettingsProvider $moduleSettings
+     * @param ModuleSettingsProvider $moduleSettingsProvider
      */
-    public function __construct(ModuleSettingsProvider $moduleSettings)
+    public function __construct(private ModuleSettingsProvider $moduleSettingsProvider)
     {
-        $this->moduleSettings = $moduleSettings;
     }
 
     /**
@@ -36,7 +33,7 @@ abstract class AbstractBlacklistModifier extends Modifier
      */
     public function apply(Type $type)
     {
-        $blacklistedFields = (array) $this->moduleSettings->get($this->getBlacklistedFieldSetting());
+        $blacklistedFields = (array) $this->moduleSettingsProvider->get($this->getBlacklistedFieldSetting());
         foreach ($blacklistedFields as $blacklistedField) {
             if (isset($type->$blacklistedField)) {
                 unset($type->$blacklistedField);

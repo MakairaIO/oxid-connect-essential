@@ -9,6 +9,15 @@ use Makaira\OxidConnectEssential\Utils\TableTranslator;
 
 class ProductRepository extends AbstractRepository
 {
+    public function __construct(
+        private Connection $connection,
+        ModifierList $modifiers,
+        TableTranslator $tableTranslator,
+        DataMapper $dataMapper,
+    ) {
+        parent::__construct($connection, $modifiers, $tableTranslator, $dataMapper);
+    }
+
     /**
      * Get TYPE of repository.
      *
@@ -64,7 +73,7 @@ class ProductRepository extends AbstractRepository
     public function getParentId(string $productId): ?string
     {
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery($this->getParentIdQuery(), ['id' => $productId]);
+        $resultStatement = $this->connection->executeQuery($this->getParentIdQuery(), ['id' => $productId]);
 
         /** @var string $parentID */
         $parentID = $resultStatement->fetchOne();

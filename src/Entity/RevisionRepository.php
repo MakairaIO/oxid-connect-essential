@@ -15,8 +15,6 @@ use Makaira\OxidConnectEssential\Domain\Revision;
  */
 class RevisionRepository
 {
-    private Connection $connection;
-
     private ?Statement $fetchParentId = null;
 
     private ?Statement $insertRevision = null;
@@ -24,9 +22,8 @@ class RevisionRepository
     /**
      * @param Connection $connection
      */
-    public function __construct(Connection $connection)
+    public function __construct(private Connection $connection)
     {
-        $this->connection = $connection;
     }
 
     /**

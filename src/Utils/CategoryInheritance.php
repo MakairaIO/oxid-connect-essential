@@ -22,22 +22,16 @@ use OxidEsales\Eshop\Application\Model\Category;
  */
 class CategoryInheritance
 {
-    private Connection $database;
-
-    private ModuleSettingsProvider $moduleSettingsProvider;
-
     /**
      * CategoryInheritance constructor.
      *
-     * @param Connection             $database
+     * @param Connection             $connection
      * @param ModuleSettingsProvider $moduleSettingsProvider
      */
     public function __construct(
-        Connection $database,
-        ModuleSettingsProvider $moduleSettingsProvider
+        private Connection $connection,
+        private ModuleSettingsProvider $moduleSettingsProvider
     ) {
-        $this->moduleSettingsProvider = $moduleSettingsProvider;
-        $this->database               = $database;
     }
 
     /**
@@ -59,7 +53,7 @@ class CategoryInheritance
                     ORDER BY `OXLEFT` ASC";
 
                 /** @var Result $result */
-                $result = $this->database->executeQuery(
+                $result = $this->connection->executeQuery(
                     $sql,
                     [
                         'rootId' => $category->getFieldData('oxrootid'),

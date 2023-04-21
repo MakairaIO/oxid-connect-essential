@@ -94,38 +94,23 @@ class AttributeModifier extends Modifier
                             variant.oxid = :productId
                         ';
 
-    private ModuleSettingsProvider $moduleSettings;
-
-    private Connection $database;
-
     private ?BaseModel $model = null;
 
     private string $activeSnippet = '';
 
-    private string $modelClass;
-
-    private UtilsObject $utilsObject;
-
-    private TableTranslator $tableTranslator;
-
     /**
-     * @param Connection             $database
+     * @param Connection             $connection
      * @param string                 $modelClass
      * @param ModuleSettingsProvider $moduleSettings
      * @param UtilsObject            $utilsObject
      */
     public function __construct(
-        Connection $database,
-        string $modelClass,
-        ModuleSettingsProvider $moduleSettings,
-        UtilsObject $utilsObject,
-        TableTranslator $tableTranslator
+        private Connection $connection,
+        private string $modelClass,
+        private ModuleSettingsProvider $moduleSettings,
+        private UtilsObject $utilsObject,
+        private TableTranslator $tableTranslator
     ) {
-        $this->modelClass      = $modelClass;
-        $this->database        = $database;
-        $this->moduleSettings  = $moduleSettings;
-        $this->utilsObject     = $utilsObject;
-        $this->tableTranslator = $tableTranslator;
     }
 
     /**
@@ -143,7 +128,7 @@ class AttributeModifier extends Modifier
         $this->safeGuard();
 
         /** @var Result $resultStatement */
-        $resultStatement = $this->database->executeQuery(
+        $resultStatement = $this->connection->executeQuery(
             $this->tableTranslator->translate($this->selectAttributesQuery),
             ['productId' => $product->id,]
         );
@@ -182,7 +167,7 @@ class AttributeModifier extends Modifier
             );
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
+            $resultStatement = $this->connection->executeQuery(
                 $this->tableTranslator->translate($query),
                 ['productId' => $product->id]
             );
@@ -214,7 +199,7 @@ class AttributeModifier extends Modifier
         if (false === $product->isVariant) {
             /** @var Result $resultStatement */
             $resultStatement =
-                $this->database->executeQuery(
+                $this->connection->executeQuery(
                     $this->tableTranslator->translate($this->selectVariantsNameQuery),
                     ['productId' => $product->id]
                 );
@@ -222,7 +207,7 @@ class AttributeModifier extends Modifier
             $variantsName = $resultStatement->fetchAllAssociative();
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
+            $resultStatement = $this->connection->executeQuery(
                 $this->tableTranslator->translate($this->selectVariantsQuery),
                 ['productId' => $product->id]
             );
@@ -231,7 +216,7 @@ class AttributeModifier extends Modifier
         } else {
             /** @var Result $resultStatement */
             $resultStatement =
-                $this->database->executeQuery(
+                $this->connection->executeQuery(
                     $this->tableTranslator->translate($this->selectVariantNameQuery),
                     ['productId' => $product->id]
                 );
@@ -239,7 +224,7 @@ class AttributeModifier extends Modifier
             $variantsName = $resultStatement->fetchAllAssociative();
 
             /** @var Result $resultStatement */
-            $resultStatement = $this->database->executeQuery(
+            $resultStatement = $this->connection->executeQuery(
                 $this->tableTranslator->translate($this->selectVariantQuery),
                 ['productId' => $product->id]
             );
