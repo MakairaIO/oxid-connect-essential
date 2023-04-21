@@ -11,7 +11,6 @@ use OxidEsales\Eshop\Core\Model\BaseModel;
 
 class UrlModifier extends AbstractUrlModifier
 {
-
     /**
      * @param SeoEncoderCategory $seoEncoderCategory
      * @param Language           $language
