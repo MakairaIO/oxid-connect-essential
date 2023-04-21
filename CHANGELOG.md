@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/MakairaIO/oxid-connect-essential/compare/2.0.1...2.1.0) (2023-04-21)
+
+
+### Features
+
+* **Testing:** Add test snapshots for OXID PE and OXID EE ([#22](https://github.com/MakairaIO/oxid-connect-essential/issues/22)) ([1a7cc3b](https://github.com/MakairaIO/oxid-connect-essential/commit/1a7cc3b9820053f7ad3d11f000a6f2592b8039c4))
+
 ## [2.0.1](https://github.com/MakairaIO/oxid-connect-essential/compare/2.0.0...2.0.1) (2023-04-03)
 
 
