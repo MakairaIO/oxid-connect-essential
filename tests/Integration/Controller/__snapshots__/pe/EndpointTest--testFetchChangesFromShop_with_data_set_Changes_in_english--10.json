@@ -16,24 +16,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "title": "Color",
+                        "value": "Black"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Size",
                         "value": "W 34\/L 34"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 34\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -43,7 +43,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-12",
@@ -56,28 +56,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs",
                 "soldamount": 0,
@@ -103,24 +103,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -130,7 +120,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-5-1",
@@ -143,28 +133,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -190,14 +180,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "orange"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "orange"
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "M"
                     }
                 ],
                 "attributes": [],
@@ -207,7 +197,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Him\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "3552-4",
@@ -220,28 +210,28 @@
                 "longdesc": "<div>Casual short sleeve shirt for men with the imprint &quot;ORGANIC TO THE BONE&quot;. <\/div>\r\n<ul>\r\n<li>Fair Trade Produkt <br \/>\r\n<\/li>\r\n<li>100% organic<\/li><\/ul>",
                 "maincategory": "d862abc1f98741797cf889eb4a9090ad",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "dc581d8a115035cbfb0223c9c736f513",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -267,14 +257,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "gray"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "grau"
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "L"
                     }
                 ],
                 "attributes": [],
@@ -284,7 +274,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Him\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "3552-5",
@@ -297,28 +287,28 @@
                 "longdesc": "<div>Casual short sleeve shirt for men with the imprint &quot;ORGANIC TO THE BONE&quot;. <\/div>\r\n<ul>\r\n<li>Fair Trade Produkt <br \/>\r\n<\/li>\r\n<li>100% organic<\/li><\/ul>",
                 "maincategory": "d862abc1f98741797cf889eb4a9090ad",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "dc581d8a115035cbfb0223c9c736f513",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -344,14 +334,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "orange"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "orange"
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "L"
                     }
                 ],
                 "attributes": [],
@@ -361,7 +351,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Him\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "3552-6",
@@ -374,28 +364,28 @@
                 "longdesc": "<div>Casual short sleeve shirt for men with the imprint &quot;ORGANIC TO THE BONE&quot;. <\/div>\r\n<ul>\r\n<li>Fair Trade Produkt <br \/>\r\n<\/li>\r\n<li>100% organic<\/li><\/ul>",
                 "maincategory": "d862abc1f98741797cf889eb4a9090ad",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "dc581d8a115035cbfb0223c9c736f513",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -421,14 +411,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "gray"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "grau"
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "M"
                     }
                 ],
                 "attributes": [],
@@ -438,7 +428,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Him\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "3552-3",
@@ -451,28 +441,28 @@
                 "longdesc": "<div>Casual short sleeve shirt for men with the imprint &quot;ORGANIC TO THE BONE&quot;. <\/div>\r\n<ul>\r\n<li>Fair Trade Produkt <br \/>\r\n<\/li>\r\n<li>100% organic<\/li><\/ul>",
                 "maincategory": "d862abc1f98741797cf889eb4a9090ad",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "dc581d8a115035cbfb0223c9c736f513",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -499,18 +489,18 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "grau"
+                        "title": "Color",
+                        "value": "gray"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "gray"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "S"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "grau"
                     }
                 ],
                 "attributes": [],
@@ -520,7 +510,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Him\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "3552-1",
@@ -533,28 +523,28 @@
                 "longdesc": "<div>Casual short sleeve shirt for men with the imprint &quot;ORGANIC TO THE BONE&quot;. <\/div>\r\n<ul>\r\n<li>Fair Trade Produkt <br \/>\r\n<\/li>\r\n<li>100% organic<\/li><\/ul>",
                 "maincategory": "d862abc1f98741797cf889eb4a9090ad",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "dc581d8a115035cbfb0223c9c736f513",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,
@@ -581,18 +571,18 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
                         "value": "orange"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "orange"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "S"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "orange"
                     }
                 ],
                 "attributes": [],
@@ -602,7 +592,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Him\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "3552-2",
@@ -615,28 +605,28 @@
                 "longdesc": "<div>Casual short sleeve shirt for men with the imprint \"ORGANIC TO THE BONE\". <\/div>\r\n<ul>\r\n<li>Fair Trade Produkt <br \/>\r\n<\/li>\r\n<li>100% organic<\/li><\/ul>",
                 "maincategory": "d862abc1f98741797cf889eb4a9090ad",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "dc581d8a115035cbfb0223c9c736f513",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt, tiger, organic, men, grey, orange",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid\/Kuyichi-T-Shirt-TIGER.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Shirts-Co\/Kuyichi-T-Shirt-TIGER.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Short sleeve shirt for men",
                 "soldamount": 0,

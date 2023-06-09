@@ -16,24 +16,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -43,7 +33,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-8",
@@ -56,28 +46,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -103,24 +93,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -130,7 +110,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-12",
@@ -143,28 +123,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -190,24 +170,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -217,7 +187,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-3-4",
@@ -230,28 +200,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -277,24 +247,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -304,7 +264,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-4-4",
@@ -317,28 +277,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -364,24 +324,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -391,7 +341,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-11-4",
@@ -404,28 +354,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -451,24 +401,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Size",
                         "value": "W 32\/L 32"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 32\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -478,7 +428,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-8-4",
@@ -491,28 +441,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -538,24 +488,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -565,7 +505,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-10",
@@ -578,28 +518,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -625,24 +565,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -652,7 +582,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-3",
@@ -665,28 +595,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -713,23 +643,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "title": "Size",
                         "value": "W 30\/L 30"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -739,7 +669,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-1-4",
@@ -752,28 +682,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -799,24 +729,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -826,7 +746,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-6",
@@ -839,28 +759,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -886,24 +806,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -913,7 +823,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-7-4",
@@ -926,28 +836,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -973,24 +883,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1000,7 +900,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-9",
@@ -1013,28 +913,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1060,24 +960,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1087,7 +977,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-1",
@@ -1100,28 +990,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1147,24 +1037,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -1174,7 +1054,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "0801-85-874-5-4",
@@ -1187,28 +1067,28 @@
                 "longdesc": "<p>Strech jeans by Kuyichi, tight cut and in a dark washing.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,tight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Tight cut stretch jeans",
                 "soldamount": 0,
@@ -1246,9 +1126,24 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Color",
+                        "value": "White"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "White"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "XL"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
@@ -1256,24 +1151,9 @@
                         "value": "2.1"
                     },
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XL"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "XL"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "White"
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1283,7 +1163,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1607-02-WHT-5-7",
@@ -1296,28 +1176,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-9\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Cushy sleeveless long shirt from Pima cotton for hot summer days.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-10\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-11\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres for high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,sleeveless,suspenders,casual,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Cushy sleeveless long shirt from Pima cotton for hot summer days",
                 "soldamount": 0,
@@ -1355,9 +1235,24 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Color",
+                        "value": "White"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "White"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
+                        "value": "S"
+                    },
+                    {
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "S"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
@@ -1365,24 +1260,9 @@
                         "value": "2.1"
                     },
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "S"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "White"
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1392,7 +1272,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1607-02-WHT-2-7",
@@ -1405,28 +1285,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-9\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Cushy sleeveless long shirt from Pima cotton for hot summer days.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-10\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-11\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres for high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,sleeveless,suspenders,casual,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Cushy sleeveless long shirt from Pima cotton for hot summer days",
                 "soldamount": 0,
@@ -1464,9 +1344,24 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Color",
+                        "value": "White"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "White"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
+                        "value": "XS"
+                    },
+                    {
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "XS"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
@@ -1474,24 +1369,9 @@
                         "value": "2.1"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XS"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "XS"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "White"
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1501,7 +1381,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1607-02-WHT-1-7",
@@ -1514,28 +1394,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-9\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Cushy sleeveless long shirt from Pima cotton for hot summer days.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-10\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-11\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres for high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,sleeveless,suspenders,casual,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Cushy sleeveless long shirt from Pima cotton for hot summer days",
                 "soldamount": 0,
@@ -1573,9 +1453,24 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Color",
+                        "value": "White"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "White"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
+                        "value": "M"
+                    },
+                    {
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "M"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
@@ -1583,24 +1478,9 @@
                         "value": "2.1"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "M"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "M"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "White"
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1610,7 +1490,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1607-02-WHT-3-7",
@@ -1623,28 +1503,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-9\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Cushy sleeveless long shirt from Pima cotton for hot summer days.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-10\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-11\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres for high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,sleeveless,suspenders,casual,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Cushy sleeveless long shirt from Pima cotton for hot summer days",
                 "soldamount": 0,
@@ -1692,9 +1572,24 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Color",
+                        "value": "White"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "White"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
+                        "value": "L"
+                    },
+                    {
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "L"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
@@ -1707,29 +1602,14 @@
                         "value": "4.2"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "L"
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     },
                     {
                         "id": "df3e95af29221b89021a3ae7d6e44ee0",
                         "title": "PHPUnit integer attribute",
                         "value": "42"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "White"
                     }
                 ],
                 "attributes": [],
@@ -1739,7 +1619,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1607-02-WHT-4-7",
@@ -1752,28 +1632,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-9\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Cushy sleeveless long shirt from Pima cotton for hot summer days.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-10\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-11\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres for high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,sleeveless,suspenders,casual,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Cushy sleeveless long shirt from Pima cotton for hot summer days",
                 "soldamount": 0,
@@ -1799,24 +1679,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 34\/L 30"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1831,7 +1701,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-10-4-3",
@@ -1844,28 +1714,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1891,24 +1761,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 32\/L 32"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1923,7 +1783,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-8-4-3",
@@ -1936,28 +1796,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1983,24 +1843,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 32\/L 34"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2015,7 +1865,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-9-4-3",
@@ -2028,28 +1878,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -2075,24 +1925,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 30\/L 34"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2107,7 +1947,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-3-4-3",
@@ -2120,28 +1960,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -2167,29 +2007,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2204,7 +2029,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-1-4",
@@ -2217,28 +2042,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -2265,28 +2090,28 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "title": "Size",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 32"
                     },
                     {
                         "id": "6b6e77de7a04de54f1aa63cfeca2f487",
                         "title": "Washing",
                         "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2301,7 +2126,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-8-4",
@@ -2314,28 +2139,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,

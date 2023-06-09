@@ -16,24 +16,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "S"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "title": "Color",
+                        "value": "Black"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
                         "value": "S"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "S"
                     }
                 ],
                 "attributes": [],
@@ -43,7 +43,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "0901-35-352-2",
@@ -56,28 +56,28 @@
                 "longdesc": "<p>Kuyichi Stretch-Jersey Longsleeve with a stylish Kuyichi front print.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6b09a02f3c78adb5771bce215ec265",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,shirt,pima,longsleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Kuyichi-Longsleeve-Lani.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Stretch-Jersey Longsleeve",
                 "soldamount": 0,
@@ -104,23 +104,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "title": "Color",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
+                        "title": "EU-Size",
                         "value": "XL"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
                         "value": "XL"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -130,7 +130,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "0901-35-352-5",
@@ -143,28 +143,28 @@
                 "longdesc": "<p>Kuyichi Stretch-Jersey Longsleeve with a stylish Kuyichi front print.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6b09a02f3c78adb5771bce215ec265",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,shirt,pima,longsleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Kuyichi-Longsleeve-Lani.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Stretch-Jersey Longsleeve",
                 "soldamount": 0,
@@ -190,24 +190,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "M"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "title": "Color",
+                        "value": "Black"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
                         "value": "M"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "M"
                     }
                 ],
                 "attributes": [],
@@ -217,7 +217,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "0901-35-352-3",
@@ -230,28 +230,28 @@
                 "longdesc": "<p>Kuyichi Stretch-Jersey Longsleeve with a stylish Kuyichi front print.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6b09a02f3c78adb5771bce215ec265",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,shirt,pima,longsleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Kuyichi-Longsleeve-Lani.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Stretch-Jersey Longsleeve",
                 "soldamount": 0,
@@ -277,24 +277,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -304,7 +294,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-7-1",
@@ -317,28 +307,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -364,24 +354,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -391,7 +371,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-11",
@@ -404,28 +384,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -451,24 +431,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -478,7 +448,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-10",
@@ -491,28 +461,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -538,24 +508,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -565,7 +525,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-2",
@@ -578,28 +538,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 95,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -625,24 +585,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -652,7 +602,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-11-1",
@@ -665,28 +615,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -713,23 +663,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "title": "Color",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "title": "Size",
                         "value": "W 32\/L 32"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -739,7 +689,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-8",
@@ -752,28 +702,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 99,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs",
                 "soldamount": 0,
@@ -800,23 +750,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
+                        "title": "Color",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "title": "Size",
                         "value": "W 32\/L 32"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -826,7 +776,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-8-1",
@@ -839,28 +789,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs",
                 "soldamount": 0,
@@ -886,24 +836,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -913,7 +853,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-4",
@@ -926,28 +866,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -973,24 +913,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1000,7 +930,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-3",
@@ -1013,28 +943,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1060,24 +990,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1087,7 +1007,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-1",
@@ -1100,28 +1020,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1147,24 +1067,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1174,7 +1084,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-7",
@@ -1187,28 +1097,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 95,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1234,24 +1144,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1261,7 +1161,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-6",
@@ -1274,28 +1174,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1321,24 +1221,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1348,7 +1238,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-4-1",
@@ -1361,28 +1251,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1408,24 +1298,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1435,7 +1315,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-3-1",
@@ -1448,28 +1328,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1495,24 +1375,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1522,7 +1392,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-6-1",
@@ -1535,28 +1405,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 95,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1582,24 +1452,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
+                        "title": "Color",
+                        "value": "Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Size",
                         "value": "W 34\/L 34"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 34\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -1609,7 +1479,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-12-1",
@@ -1622,28 +1492,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs",
                 "soldamount": 0,
@@ -1669,24 +1539,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1696,7 +1556,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-9",
@@ -1709,28 +1569,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1756,24 +1616,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1783,7 +1633,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-2-1",
@@ -1796,28 +1646,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 95,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1843,24 +1693,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1870,7 +1710,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-5",
@@ -1883,28 +1723,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -1930,24 +1770,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -1957,7 +1787,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-1-1",
@@ -1970,28 +1800,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -2017,24 +1847,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -2044,7 +1864,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-10-1",
@@ -2057,28 +1877,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
@@ -2104,24 +1924,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Blau"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Blau"
                     }
                 ],
                 "attributes": [],
@@ -2131,7 +1941,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Ihn\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Him\/Jeans\/"
                     }
                 ],
                 "ean": "0802-85-823-9-1",
@@ -2144,28 +1954,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-24\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A trendy and fresh men's jeans by Kuyichi.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-25\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Casual jeans with a zipper over the pockets and straight, tight legs.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d8665fef35f4d528e92c3d664f4a00c0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Him\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "943ed656e21971fb2f1827facbba9bec",
                 "picture_url_main": [],
                 "price": 109,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,casual,fresh,straight,cool",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Ihn\/oxid-oxid\/Kuyichi-Jeans-MICK.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Ihn\/Jeans\/Kuyichi-Jeans-MICK.html",
                     "en": "en\/Gear\/Fashion\/For-Him\/Jeans\/Kuyichi-Jeans-MICK.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Casual jeans with a zipper over the pockets and straight, tight legs.",
                 "soldamount": 0,
