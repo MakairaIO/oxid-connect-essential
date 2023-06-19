@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.0...2.1.1) (2023-06-19)
+
+
+### Bug Fixes
+
+* **DataMapper:** Do not remove fields that are mandatory to generate an SEO URL. ([#23](https://github.com/MakairaIO/oxid-connect-essential/issues/23)) ([5f859ab](https://github.com/MakairaIO/oxid-connect-essential/commit/5f859aba0cae6a2eacf82a436be017072eed5f63))
+
 # [2.1.0](https://github.com/MakairaIO/oxid-connect-essential/compare/2.0.1...2.1.0) (2023-04-21)
 
 
