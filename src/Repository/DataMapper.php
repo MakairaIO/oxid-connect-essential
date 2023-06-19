@@ -13,6 +13,7 @@ use ReflectionNamedType;
 use ReflectionProperty;
 
 use function get_class;
+use function in_array;
 
 class DataMapper
 {
@@ -53,6 +54,8 @@ class DataMapper
         'OXSHORTDESC' => 'shortdesc',
         'OXTITLE'     => 'manufacturer_title',
     ];
+
+    private const SEO_FIELDS = ['OXTITLE', 'OXARTNUM', 'OXPARENTID', 'OXVARSELECT'];
 
     /**
      * @var array<string, array<string, string>>
@@ -115,10 +118,17 @@ class DataMapper
                 }
 
                 $entity->{$mappedField} = $typeValue;
-                unset($entity->additionalData[$dbField]);
+
+                // Keep fields which are required for SEO URL generation
+                if (!in_array($dbField, self::SEO_FIELDS, true)) {
+                    unset($entity->additionalData[$dbField]);
+                }
             }
 
-            unset($entity->additionalData[$mappedField]);
+            // Keep fields which are required for SEO URL generation
+            if (!in_array($mappedField, self::SEO_FIELDS, true)) {
+                unset($entity->additionalData[$mappedField]);
+            }
         }
     }
 

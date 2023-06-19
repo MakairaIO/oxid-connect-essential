@@ -20,11 +20,16 @@ use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Output\NullOutput;
 use Symfony\Component\HttpFoundation\Request;
 
+use function array_filter;
+use function array_keys;
 use function array_map;
+use function cubrid_num_cols;
 use function end;
+use function is_numeric;
 use function is_string;
 use function json_decode;
 use function md5;
+use function preg_match;
 use function preg_replace;
 
 use const JSON_THROW_ON_ERROR;
@@ -235,6 +240,17 @@ class EndpointTest extends IntegrationTestCase
                         $change['data']['timestamp'] = preg_replace('/\d/', 'X', $change['data']['timestamp']);
                         $change['data']['insert']    = preg_replace('/\d/', 'X', $change['data']['insert']);
                         $change['data']['url']       = preg_replace('/^.*$/', 'X', $change['data']['url']);
+
+                        $boostFields = array_filter(
+                            array_keys($change['data']),
+                            static fn ($key) => str_starts_with($key, 'mak_boost_')
+                        );
+
+                        foreach ($boostFields as $boostField) {
+                            if (is_numeric($change['data'][$boostField])) {
+                                $change['data'][$boostField] = 'X';
+                            }
+                        }
 
                         if (
                             isset($change['data']['picture_url_main']) &&

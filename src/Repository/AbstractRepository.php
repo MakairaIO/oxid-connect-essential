@@ -2,7 +2,6 @@
 
 namespace Makaira\OxidConnectEssential\Repository;
 
-use Codeception\Lib\Interfaces\ConsolePrinter;
 use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
