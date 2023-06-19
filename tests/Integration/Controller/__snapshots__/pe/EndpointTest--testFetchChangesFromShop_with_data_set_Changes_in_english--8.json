@@ -16,29 +16,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -53,7 +38,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-4-4",
@@ -66,28 +51,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -113,24 +98,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 30\/L 32"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -145,7 +120,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-2-4-3",
@@ -158,28 +133,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -205,24 +180,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 31\/L 30"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -237,7 +202,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-4-4-3",
@@ -250,28 +215,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -297,24 +262,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 31\/L 32"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -329,7 +284,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-5-4-3",
@@ -342,28 +297,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -389,29 +344,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -426,7 +366,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-3-4",
@@ -439,28 +379,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -486,29 +426,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -523,7 +448,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-7-4",
@@ -536,28 +461,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -583,24 +508,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 32\/L 30"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -615,7 +530,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-7-4-3",
@@ -628,28 +543,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -675,24 +590,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 34\/L 34"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -707,7 +612,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-12-4-3",
@@ -720,28 +625,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -767,24 +672,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 30\/L 30"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -799,7 +694,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-1-4-3",
@@ -812,28 +707,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -859,24 +754,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 34\/L 32"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -891,7 +776,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-11-4-3",
@@ -904,28 +789,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -951,29 +836,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -988,7 +858,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-9-4",
@@ -1001,28 +871,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1048,29 +918,29 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Color",
+                        "value": "Dark Blue"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "title": "Size",
                         "value": "W 34\/L 34"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 34"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Bangle Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1085,7 +955,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-12-4",
@@ -1098,28 +968,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1145,29 +1015,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 30\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1182,7 +1037,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-2-4",
@@ -1195,28 +1050,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1243,28 +1098,28 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
+                        "value": "Dark Blue"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "title": "Size",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 34"
                     },
                     {
                         "id": "6b6e77de7a04de54f1aa63cfeca2f487",
                         "title": "Washing",
                         "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1279,7 +1134,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-6-4",
@@ -1292,28 +1147,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1339,24 +1194,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
+                        "value": "W 31\/L 34"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1371,7 +1216,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-6-4-3",
@@ -1384,28 +1229,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1431,29 +1276,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1468,7 +1298,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-10-4",
@@ -1481,28 +1311,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1528,29 +1358,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 31\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1565,7 +1380,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-5-4",
@@ -1578,28 +1393,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1625,29 +1440,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "6f6cb72d544962fa333e2e34ce64f719",
+                        "title": "Size  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1662,7 +1462,7 @@
                         "title": "Jeans",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Jeans\/"
+                        "path": "Gear\/Fashion\/For Her\/Jeans\/"
                     }
                 ],
                 "ean": "85-8573-846-11-4",
@@ -1675,28 +1475,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-12\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Kuyichi Jean's Sugar, the leading jeans model for repeated washing.<\/span><\/span>&nbsp;<span id=\"goog-gtc-unit-13\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The jeans fit casual on the hip and has a loose leg.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-14\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Deeply set huge pockets guarantee a bootylicious butt.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Jeans\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dark,straight",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leading jeans for repeated washing",
                 "soldamount": 0,
@@ -1722,24 +1522,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "XS"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
                         "value": "Nocturne"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Nocturne"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
                         "value": "XS"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Nocturne"
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "XS"
                     }
                 ],
                 "attributes": [],
@@ -1749,7 +1549,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1810-00-NOC-1-8",
@@ -1762,28 +1562,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-15\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A subtle long-arm shirt of Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-16\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The soft material is cushily nested at the cleavage and has got two frisky buttons.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-17\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises the usage of finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-18\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres that guarantee its high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6ac464656c16c90d671721c93dc6ba",
                 "picture_url_main": [],
                 "price": 59.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,long-sleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Subtle long-arm shirt",
                 "soldamount": 0,
@@ -1810,23 +1610,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
+                        "value": "Nocturne"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Nocturne"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
+                        "title": "EU-Size",
                         "value": "M"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
                         "value": "M"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Nocturne"
                     }
                 ],
                 "attributes": [],
@@ -1836,7 +1636,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1810-00-NOC-3-8",
@@ -1849,28 +1649,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-15\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A subtle long-arm shirt of Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-16\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The soft material is cushily nested at the cleavage and has got two frisky buttons.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-17\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises the usage of finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-18\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres that guarantee its high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6ac464656c16c90d671721c93dc6ba",
                 "picture_url_main": [],
                 "price": 59.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,long-sleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Subtle long-arm shirt",
                 "soldamount": 0,
@@ -1896,24 +1696,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "S"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
                         "value": "Nocturne"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Nocturne"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
                         "value": "S"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Nocturne"
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "S"
                     }
                 ],
                 "attributes": [],
@@ -1923,7 +1723,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1810-00-NOC-2-8",
@@ -1936,28 +1736,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-15\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A subtle long-arm shirt of Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-16\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The soft material is cushily nested at the cleavage and has got two frisky buttons.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-17\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises the usage of finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-18\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres that guarantee its high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6ac464656c16c90d671721c93dc6ba",
                 "picture_url_main": [],
                 "price": 59.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,long-sleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Subtle long-arm shirt",
                 "soldamount": 0,
@@ -1984,23 +1784,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
+                        "value": "Nocturne"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Nocturne"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
+                        "title": "EU-Size",
                         "value": "XL"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
                         "value": "XL"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Nocturne"
                     }
                 ],
                 "attributes": [],
@@ -2010,7 +1810,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1810-00-NOC-5-8",
@@ -2023,28 +1823,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-15\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A subtle long-arm shirt of Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-16\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The soft material is cushily nested at the cleavage and has got two frisky buttons.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-17\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises the usage of finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-18\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres that guarantee its high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6ac464656c16c90d671721c93dc6ba",
                 "picture_url_main": [],
                 "price": 59.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,long-sleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Subtle long-arm shirt",
                 "soldamount": 0,
@@ -2071,23 +1871,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
+                        "title": "Color",
+                        "value": "Nocturne"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
                         "value": "Nocturne"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
+                        "title": "EU-Size",
                         "value": "L"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
                         "value": "L"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Nocturne"
                     }
                 ],
                 "attributes": [],
@@ -2097,7 +1897,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "1810-00-NOC-4-8",
@@ -2110,28 +1910,28 @@
                 "longdesc": "<p><span id=\"goog-gtc-unit-15\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">A subtle long-arm shirt of Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-16\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The soft material is cushily nested at the cleavage and has got two frisky buttons.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-17\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">The shirt comes from the exclusive Stewart+Brown Organic Cotton Line and promises the usage of finest Pima cotton.&nbsp;<\/span><\/span><span id=\"goog-gtc-unit-18\" class=\"goog-gtc-unit\"><span dir=\"ltr\" class=\"goog-gtc-translatable goog-gtc-from-human\">Pima cotton consists of especially long fibres that guarantee its high quality.<\/span><\/span><\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6ac464656c16c90d671721c93dc6ba",
                 "picture_url_main": [],
                 "price": 59.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,long-sleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Lace-Scoop-Neck-Tee.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Subtle long-arm shirt",
                 "soldamount": 0,
@@ -2157,24 +1957,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "L"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "title": "Color",
+                        "value": "Black"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Size",
                         "value": "L"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
+                        "value": "L"
                     }
                 ],
                 "attributes": [],
@@ -2184,7 +1984,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "0901-35-352-4",
@@ -2197,28 +1997,28 @@
                 "longdesc": "<p>Kuyichi Stretch-Jersey Longsleeve with a stylish Kuyichi front print.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6b09a02f3c78adb5771bce215ec265",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,shirt,pima,longsleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Kuyichi-Longsleeve-Lani.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Stretch-Jersey Longsleeve",
                 "soldamount": 0,
@@ -2245,23 +2045,23 @@
                 "attributeStr": [
                     {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "Schwarz"
+                        "title": "Color",
+                        "value": "Black"
+                    },
+                    {
+                        "id": "cb5feb1b7314637725a2e73bdc9f7295",
+                        "title": "Color  (VarSelect)",
+                        "value": "Black"
                     },
                     {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
+                        "title": "EU-Size",
                         "value": "XS"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "id": "02055c57e871c64842f867c7d94d9bd9",
+                        "title": "EU-Size  (VarSelect)",
                         "value": "XS"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -2271,7 +2071,7 @@
                         "title": "Shirts & Co.",
                         "shopid": 1,
                         "pos": 0,
-                        "path": "Bekleidung\/Fashion\/F\u00fcr Sie\/Shirts & Co.\/"
+                        "path": "Gear\/Fashion\/For Her\/Shirts & Co.\/"
                     }
                 ],
                 "ean": "0901-35-352-1",
@@ -2284,28 +2084,28 @@
                 "longdesc": "<p>Kuyichi Stretch-Jersey Longsleeve with a stylish Kuyichi front print.<\/p>\r\n<p><strong>100% organic cotton, 100% Fair Trade.<\/strong><\/p>\r\n",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
                 "maincategoryurl": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b6b09a02f3c78adb5771bce215ec265",
                 "picture_url_main": [],
                 "price": 29.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,shirt,pima,longsleeve",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Kuyichi-Longsleeve-Lani.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Kuyichi-Longsleeve-Lani.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Stretch-Jersey Longsleeve",
                 "soldamount": 0,

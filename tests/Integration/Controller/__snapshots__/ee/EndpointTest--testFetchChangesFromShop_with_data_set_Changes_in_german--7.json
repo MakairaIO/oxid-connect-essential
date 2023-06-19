@@ -16,24 +16,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -55,29 +55,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -108,6 +108,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 34"
@@ -116,11 +121,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -142,29 +142,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -195,6 +195,11 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 34"
@@ -203,11 +208,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -229,29 +229,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -277,24 +277,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 30"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 30"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 30"
                     }
                 ],
                 "attributes": [],
@@ -316,29 +316,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -369,6 +369,11 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 32"
@@ -377,11 +382,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 32"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -403,29 +403,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -451,24 +451,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -490,29 +490,29 @@
                 "isVariant": true,
                 "longdesc": "Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -543,6 +543,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 30"
@@ -551,11 +556,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -577,29 +577,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -625,24 +625,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -664,29 +664,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -717,6 +717,11 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 30"
@@ -725,11 +730,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
                     }
                 ],
                 "attributes": [],
@@ -751,29 +751,29 @@
                 "isVariant": true,
                 "longdesc": "Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -799,24 +799,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 34"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 34"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 34"
                     }
                 ],
                 "attributes": [],
@@ -838,29 +838,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -886,24 +886,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 32\/L 30"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 32\/L 30"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 32\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 32\/L 30"
                     }
                 ],
                 "attributes": [],
@@ -925,29 +925,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -978,6 +978,11 @@
                         "value": "Schwarz"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Schwarz"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 34"
@@ -986,11 +991,6 @@
                         "id": "d248453369cf82a6a64617f1357089c5",
                         "title": "Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Schwarz"
                     }
                 ],
                 "attributes": [],
@@ -1012,29 +1012,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -1060,24 +1060,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 30\/L 30"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Schwarz"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 30\/L 30"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Schwarz"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 30\/L 30"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 30\/L 30"
                     }
                 ],
                 "attributes": [],
@@ -1099,29 +1099,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -1147,24 +1147,24 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
-                        "title": "Gr\u00f6\u00dfe",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "9438ac75bac3e344628b14bf7ed82c15",
                         "title": "Farbe",
                         "value": "Dark Blue"
                     },
                     {
-                        "id": "d248453369cf82a6a64617f1357089c5",
-                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "W 31\/L 32"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "Dark Blue"
+                    },
+                    {
+                        "id": "943d32fd45d6eba3e5c8cce511cc0e74",
+                        "title": "Gr\u00f6\u00dfe",
+                        "value": "W 31\/L 32"
+                    },
+                    {
+                        "id": "d248453369cf82a6a64617f1357089c5",
+                        "title": "Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "W 31\/L 32"
                     }
                 ],
                 "attributes": [],
@@ -1186,29 +1186,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Stretch-Jeans von Kuyichi, eng geschnitten und in dunkler Waschung.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63456b3abeeeccd9b085a76ffba1a3",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,eng",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-CANDY.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-CANDY.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-CANDY.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Eng geschnittene Stretch-Jeans",
                 "soldamount": 0,
@@ -1246,18 +1246,13 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "XL"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "XL"
                     },
                     {
@@ -1266,14 +1261,19 @@
                         "value": "White"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "XL"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1295,29 +1295,29 @@
                 "isVariant": true,
                 "longdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe\r\nSommertage oder zum Layering bestens geeignet. Das Shirt kommt aus der\r\nexklusiven Stewart+Brown Organic Cotton Linie und verspricht die\r\nVerwendung feinster Pima-Baumwolle. Pima Baumwolle besteht aus besonders\r\n langstapeligen Fasern, die die hohe Qualit\u00e4t ausmachen.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,\u00e4rmellos,tr\u00e4ger,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe Sommertage",
                 "soldamount": 0,
@@ -1355,18 +1355,13 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "S"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
                         "value": "S"
                     },
                     {
@@ -1375,14 +1370,19 @@
                         "value": "White"
                     },
                     {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "S"
-                    },
-                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1404,29 +1404,29 @@
                 "isVariant": true,
                 "longdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe\r\nSommertage oder zum Layering bestens geeignet. Das Shirt kommt aus der\r\nexklusiven Stewart+Brown Organic Cotton Linie und verspricht die\r\nVerwendung feinster Pima-Baumwolle. Pima Baumwolle besteht aus besonders\r\n langstapeligen Fasern, die die hohe Qualit\u00e4t ausmachen.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,\u00e4rmellos,tr\u00e4ger,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe Sommertage",
                 "soldamount": 0,
@@ -1464,21 +1464,6 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "XS"
@@ -1489,9 +1474,24 @@
                         "value": "XS"
                     },
                     {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "White"
+                    },
+                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1513,29 +1513,29 @@
                 "isVariant": true,
                 "longdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe\r\nSommertage oder zum Layering bestens geeignet. Das Shirt kommt aus der\r\nexklusiven Stewart+Brown Organic Cotton Linie und verspricht die\r\nVerwendung feinster Pima-Baumwolle. Pima Baumwolle besteht aus besonders\r\n langstapeligen Fasern, die die hohe Qualit\u00e4t ausmachen.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,\u00e4rmellos,tr\u00e4ger,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe Sommertage",
                 "soldamount": 0,
@@ -1573,21 +1573,6 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
-                    },
-                    {
-                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
-                        "title": "PHPUnit float attribute",
-                        "value": "2.1"
-                    },
-                    {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
                         "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
                         "title": "EU-Gr\u00f6\u00dfe",
                         "value": "M"
@@ -1598,9 +1583,24 @@
                         "value": "M"
                     },
                     {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "White"
+                    },
+                    {
                         "id": "16fd55d02a23f31097ca58eccfeec97c",
                         "title": "Farbe  (VarSelect)",
                         "value": "White"
+                    },
+                    {
+                        "id": "76c6ffafa93e97616bed9556f4cf56ae",
+                        "title": "PHPUnit float attribute",
+                        "value": "2.1"
+                    },
+                    {
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     }
                 ],
                 "attributes": [],
@@ -1622,29 +1622,29 @@
                 "isVariant": true,
                 "longdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe\r\nSommertage oder zum Layering bestens geeignet. Das Shirt kommt aus der\r\nexklusiven Stewart+Brown Organic Cotton Linie und verspricht die\r\nVerwendung feinster Pima-Baumwolle. Pima Baumwolle besteht aus besonders\r\n langstapeligen Fasern, die die hohe Qualit\u00e4t ausmachen.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,\u00e4rmellos,tr\u00e4ger,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe Sommertage",
                 "soldamount": 0,
@@ -1692,9 +1692,24 @@
                 ],
                 "attributeStr": [
                     {
-                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
-                        "title": "PHPUnit integer attribute",
-                        "value": "21"
+                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
+                        "title": "EU-Gr\u00f6\u00dfe",
+                        "value": "L"
+                    },
+                    {
+                        "id": "0e523da04c67ea53a87092a492db1689",
+                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
+                        "value": "L"
+                    },
+                    {
+                        "id": "9438ac75bac3e344628b14bf7ed82c15",
+                        "title": "Farbe",
+                        "value": "White"
+                    },
+                    {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "White"
                     },
                     {
                         "id": "76c6ffafa93e97616bed9556f4cf56ae",
@@ -1707,29 +1722,14 @@
                         "value": "4.2"
                     },
                     {
-                        "id": "9438ac75bac3e344628b14bf7ed82c15",
-                        "title": "Farbe",
-                        "value": "White"
-                    },
-                    {
-                        "id": "6b6bc9f9ab8b153d9bebc2ad6ca2aa13",
-                        "title": "EU-Gr\u00f6\u00dfe",
-                        "value": "L"
+                        "id": "df3e95af29221b89021a3ae7d6e44ee0",
+                        "title": "PHPUnit integer attribute",
+                        "value": "21"
                     },
                     {
                         "id": "df3e95af29221b89021a3ae7d6e44ee0",
                         "title": "PHPUnit integer attribute",
                         "value": "42"
-                    },
-                    {
-                        "id": "0e523da04c67ea53a87092a492db1689",
-                        "title": "EU-Gr\u00f6\u00dfe  (VarSelect)",
-                        "value": "L"
-                    },
-                    {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "White"
                     }
                 ],
                 "attributes": [],
@@ -1751,29 +1751,29 @@
                 "isVariant": true,
                 "longdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe\r\nSommertage oder zum Layering bestens geeignet. Das Shirt kommt aus der\r\nexklusiven Stewart+Brown Organic Cotton Linie und verspricht die\r\nVerwendung feinster Pima-Baumwolle. Pima Baumwolle besteht aus besonders\r\n langstapeligen Fasern, die die hohe Qualit\u00e4t ausmachen.<br \/>\r\n<br \/><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>",
                 "maincategory": "d86779840626d3ab8263b62db85df3f0",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b63f459c781fa42edeb889242304014",
                 "picture_url_main": [],
                 "price": 49.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "shirt,pima,\u00e4rmellos,tr\u00e4ger,l\u00e4ssig,locker",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid-oxid\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Shirts-Co\/Stewart-Brown-Organic-Pima-Edged-Lengthen.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Leichtes, \u00e4rmelloses Tr\u00e4ger-Longshirt aus Pimabaumwolle f\u00fcr hei\u00dfe Sommertage",
                 "soldamount": 0,
@@ -1799,14 +1799,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 34\/L 30"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -1814,9 +1814,9 @@
                         "value": "W 34\/L 30"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Predded Green"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1843,29 +1843,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Kuyichi Jeans Sugar, das Spitzenjeansmodell in verschiedenen Waschungen. Die Jeans sitzt l\u00e4ssig auf der H\u00fcfte und ist mit breitem, geraden Beinschnitt. Tiefgesetzte, gro\u00dfe Taschen sorgen f\u00fcr einen knackigen Hintern<br \/>\r\n<strong><br \/>\r\n<\/strong><\/div>\r\n<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\"><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,gerade,h\u00fcftjeans",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Spitzenjeans in verschiedenen Waschungen",
                 "soldamount": 0,
@@ -1891,9 +1891,9 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
@@ -1906,9 +1906,9 @@
                         "value": "W 32\/L 32"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Predded Green"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -1935,29 +1935,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Kuyichi Jeans Sugar, das Spitzenjeansmodell in verschiedenen Waschungen. Die Jeans sitzt l\u00e4ssig auf der H\u00fcfte und ist mit breitem, geraden Beinschnitt. Tiefgesetzte, gro\u00dfe Taschen sorgen f\u00fcr einen knackigen Hintern<br \/>\r\n<strong><br \/>\r\n<\/strong><\/div>\r\n<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\"><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,gerade,h\u00fcftjeans",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Spitzenjeans in verschiedenen Waschungen",
                 "soldamount": 0,
@@ -1983,14 +1983,14 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 34"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -1998,9 +1998,9 @@
                         "value": "W 32\/L 34"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Predded Green"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2027,29 +2027,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Kuyichi Jeans Sugar, das Spitzenjeansmodell in verschiedenen Waschungen. Die Jeans sitzt l\u00e4ssig auf der H\u00fcfte und ist mit breitem, geraden Beinschnitt. Tiefgesetzte, gro\u00dfe Taschen sorgen f\u00fcr einen knackigen Hintern<br \/>\r\n<strong><br \/>\r\n<\/strong><\/div>\r\n<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\"><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,gerade,h\u00fcftjeans",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Spitzenjeans in verschiedenen Waschungen",
                 "soldamount": 0,
@@ -2075,9 +2075,9 @@
                 "attributeInt": [],
                 "attributeStr": [
                     {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Predded Green"
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
                     },
                     {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
@@ -2090,9 +2090,9 @@
                         "value": "W 30\/L 34"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Predded Green"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2119,29 +2119,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Kuyichi Jeans Sugar, das Spitzenjeansmodell in verschiedenen Waschungen. Die Jeans sitzt l\u00e4ssig auf der H\u00fcfte und ist mit breitem, geraden Beinschnitt. Tiefgesetzte, gro\u00dfe Taschen sorgen f\u00fcr einen knackigen Hintern<br \/>\r\n<strong><br \/>\r\n<\/strong><\/div>\r\n<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\"><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,gerade,h\u00fcftjeans",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Spitzenjeans in verschiedenen Waschungen",
                 "soldamount": 0,
@@ -2172,14 +2172,14 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 30\/L 30"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -2187,9 +2187,9 @@
                         "value": "W 30\/L 30"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Bangle Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2216,29 +2216,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Kuyichi Jeans Sugar, das Spitzenjeansmodell in verschiedenen Waschungen. Die Jeans sitzt l\u00e4ssig auf der H\u00fcfte und ist mit breitem, geraden Beinschnitt. Tiefgesetzte, gro\u00dfe Taschen sorgen f\u00fcr einen knackigen Hintern<br \/>\r\n<strong><br \/>\r\n<\/strong><\/div>\r\n<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\"><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/>\r\n<\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,gerade,h\u00fcftjeans",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Spitzenjeans in verschiedenen Waschungen",
                 "soldamount": 0,
@@ -2269,14 +2269,14 @@
                         "value": "Dark Blue"
                     },
                     {
+                        "id": "16fd55d02a23f31097ca58eccfeec97c",
+                        "title": "Farbe  (VarSelect)",
+                        "value": "Dark Blue"
+                    },
+                    {
                         "id": "943d32fd45d6eba3e5c8cce511cc0e74",
                         "title": "Gr\u00f6\u00dfe",
                         "value": "W 32\/L 32"
-                    },
-                    {
-                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
-                        "title": "Washing",
-                        "value": "Bangle Blue"
                     },
                     {
                         "id": "d248453369cf82a6a64617f1357089c5",
@@ -2284,9 +2284,9 @@
                         "value": "W 32\/L 32"
                     },
                     {
-                        "id": "16fd55d02a23f31097ca58eccfeec97c",
-                        "title": "Farbe  (VarSelect)",
-                        "value": "Dark Blue"
+                        "id": "6b6e77de7a04de54f1aa63cfeca2f487",
+                        "title": "Washing",
+                        "value": "Bangle Blue"
                     },
                     {
                         "id": "418fa487bf06eb6f14ffa32115a762d2",
@@ -2313,29 +2313,29 @@
                 "isVariant": true,
                 "longdesc": "<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\">Kuyichi\r\n Jeans Sugar, das Spitzenjeansmodell in verschiedenen Waschungen. Die\r\nJeans sitzt l\u00e4ssig auf der H\u00fcfte und ist mit breitem, geraden\r\nBeinschnitt. Tiefgesetzte, gro\u00dfe Taschen sorgen f\u00fcr einen knackigen\r\nHintern<br \/>\r\n<strong><br \/>\r\n<\/strong><\/div>\r\n<div style=\"font: 12px 'Lucida Grande',Lucida,Verdana,sans-serif\"><strong>100% \u00f6kologisch angebaute Baumwolle, 100% Fair Trade.<\/strong><br \/>\r\n<br \/><\/div>",
                 "maincategory": "d863b76c6bb90a970a5577adf890e8cd",
-                "maincategoryurl": "oxid\/Fashion\/Fuer-Sie\/oxid\/",
-                "mak_boost_norm_insert": 0,
-                "mak_boost_norm_profit_margin": 0,
-                "mak_boost_norm_rating": 0,
-                "mak_boost_norm_revenue": 0,
-                "mak_boost_norm_sold": 0,
+                "maincategoryurl": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/",
+                "mak_boost_norm_insert": "X",
+                "mak_boost_norm_profit_margin": "X",
+                "mak_boost_norm_rating": "X",
+                "mak_boost_norm_revenue": "X",
+                "mak_boost_norm_sold": "X",
                 "manufacturer_title": "",
                 "manufacturerid": "9434afb379a46d6c141de9c9e5b94fcf",
                 "meta_description": "",
                 "meta_keywords": "",
                 "onstock": true,
-                "parent": "",
+                "parent": "6b66d82af984e5ad46b9cb27b1ef8aae",
                 "picture_url_main": [],
                 "price": 89.9,
                 "rating": 0,
                 "searchable": false,
                 "searchkeys": "kuyichi,jeans,dunkel,gerade,h\u00fcftjeans",
                 "selfLinks": {
-                    "de": "oxid\/Fashion\/Fuer-Sie\/oxid\/Kuyichi-Jeans-SUGAR.html",
+                    "de": "Bekleidung\/Fashion\/Fuer-Sie\/Jeans\/Kuyichi-Jeans-SUGAR.html",
                     "en": "en\/Gear\/Fashion\/For-Her\/Jeans\/Kuyichi-Jeans-SUGAR.html"
                 },
                 "shop": [
-                    "1"
+                    1
                 ],
                 "shortdesc": "Spitzenjeans in verschiedenen Waschungen",
                 "soldamount": 0,
