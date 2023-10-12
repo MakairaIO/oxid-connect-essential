@@ -1,3 +1,10 @@
+## [1.4.6](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.5...1.4.6) (2023-10-12)
+
+
+### Bug Fixes
+
+* Prevent attribute duplication ([b3581e0](https://github.com/MakairaIO/oxid-connect-essential/commit/b3581e00683f75cf5c467c8e46db831fee31c9c1))
+
 ## [1.4.5](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.4...1.4.5) (2023-06-19)
 
 
