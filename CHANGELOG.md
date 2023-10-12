@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.1...2.1.2) (2023-10-12)
+
+
+### Bug Fixes
+
+* Prevent attribute duplication ([fab1c81](https://github.com/MakairaIO/oxid-connect-essential/commit/fab1c81dee229b979ea31ba33cbe41be3ed55b88))
+
 ## [2.1.1](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.0...2.1.1) (2023-06-19)
 
 
