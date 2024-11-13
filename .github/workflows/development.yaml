@@ -152,7 +152,7 @@ jobs:
 
       - name: Upload configuration artifacts
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Configs-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: |
@@ -215,7 +215,7 @@ jobs:
 
       - name: Upload log artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: StylesLog-${{ inputs.php }}
           path: |
@@ -253,7 +253,7 @@ jobs:
 
       - name: Upload log artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ModuleIntegrationTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: |
@@ -297,7 +297,7 @@ jobs:
 
       - name: Upload log artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ModuleUnitTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: |
@@ -326,13 +326,13 @@ jobs:
             installation-${{ github.sha }}-${{ join(inputs.*, '-') }}-${{ github.run_number }}-${{ github.run_attempt }}
 
       - name: Download unit artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ModuleUnitTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: ./source/coverage/
 
       - name: Download integration artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: ModuleIntegrationTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: ./source/coverage/
@@ -352,7 +352,7 @@ jobs:
           sed -i 's+/var/www/test-module/+./+' source/coverage.xml
 
       - name: Upload log artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TestsLog-${{ inputs.php }}-${{ inputs.mysql }}
           path: source/coverage.xml
@@ -367,7 +367,7 @@ jobs:
 
       - name: Download TestsLog artifacts
         continue-on-error: true
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: TestsLog-${{ inputs.php }}-${{ inputs.mysql }}
           path: ./tests/

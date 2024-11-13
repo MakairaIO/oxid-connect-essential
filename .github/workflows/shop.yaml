@@ -103,7 +103,7 @@ jobs:
 
       - name: Upload configuration artifacts
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Configs-${{ inputs.php }}-${{ github.sha }}-${{ github.run_number }}-${{ github.run_attempt }}
           path: |
@@ -148,7 +148,7 @@ jobs:
 
       - name: Upload log artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TestsLog-${{ matrix.php }}
           path: |
