@@ -16,7 +16,7 @@ jobs:
         mysql: [ '5.7', '8.0' ]
         include:
           - php: '8.0'
-            mysql: '5.7.37'
+            mysql: '5.7'
             report_sonarcloud: true
     name: "Testing PHP ${{ matrix.php }} with MySQL ${{ matrix.mysql }}"
     uses: ./.github/workflows/development.yaml
