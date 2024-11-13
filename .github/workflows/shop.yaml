@@ -150,6 +150,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: TestsLog-${{ matrix.php }}
+          name: TestsLog-${{ matrix.php }}-shop
           path: |
             source/phpunit.xml
