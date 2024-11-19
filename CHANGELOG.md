@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.2...2.1.3) (2024-11-19)
+
+
+### Bug Fixes
+
+* Update GitHub artifact ([#25](https://github.com/MakairaIO/oxid-connect-essential/issues/25)) ([ff869d9](https://github.com/MakairaIO/oxid-connect-essential/commit/ff869d9c0fb7e1e665ff76e7dbc58c06f2ddf830))
+
 ## [2.1.2](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.1...2.1.2) (2023-10-12)
 
 
