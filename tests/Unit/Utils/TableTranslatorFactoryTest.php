@@ -42,15 +42,15 @@ class TableTranslatorFactoryTest extends TestCase
 
         $tableTranslator->setShopId(42);
         $tableTranslator->setLanguage('en');
-        $translated = $tableTranslator->translate('SELECT * FROM oxarticles, oxobject2category');
+        $translated = $tableTranslator->translate('SELECT *, \'CE\' FROM oxarticles, oxobject2category');
 
-        $this->assertSame('SELECT * FROM oxarticles_2_42, oxobject2category', $translated);
+        $this->assertSame('SELECT *, \'CE\' FROM oxarticles_2_42, oxobject2category', $translated);
 
         $tableTranslator->setShopId(21);
         $tableTranslator->setLanguage(1);
-        $translated = $tableTranslator->translate('SELECT * FROM oxarticles, oxobject2category');
+        $translated = $tableTranslator->translate('SELECT *, \'CE\' FROM oxarticles, oxobject2category');
 
-        $this->assertSame('SELECT * FROM oxarticles_1_21, oxobject2category', $translated);
+        $this->assertSame('SELECT *, \'CE\' FROM oxarticles_1_21, oxobject2category', $translated);
     }
 
     /**
@@ -79,14 +79,14 @@ class TableTranslatorFactoryTest extends TestCase
 
         $tableTranslator->setShopId(42);
         $tableTranslator->setLanguage('en');
-        $translated = $tableTranslator->translate('SELECT * FROM oxarticles, oxobject2category');
+        $translated = $tableTranslator->translate('SELECT *, \'EE\' FROM oxarticles, oxobject2category');
 
-        $this->assertSame('SELECT * FROM oxarticles_2_42, oxobject2category_2_42', $translated);
+        $this->assertSame('SELECT *, \'EE\' FROM oxarticles_2_42, oxobject2category_2_42', $translated);
 
         $tableTranslator->setShopId(21);
         $tableTranslator->setLanguage(1);
-        $translated = $tableTranslator->translate('SELECT * FROM oxarticles, oxobject2category');
+        $translated = $tableTranslator->translate('SELECT *, \'EE\' FROM oxarticles, oxobject2category');
 
-        $this->assertSame('SELECT * FROM oxarticles_1_21, oxobject2category_1_21', $translated);
+        $this->assertSame('SELECT *, \'EE\' FROM oxarticles_1_21, oxobject2category_1_21', $translated);
     }
 }
