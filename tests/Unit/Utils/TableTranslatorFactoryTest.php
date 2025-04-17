@@ -72,7 +72,7 @@ class TableTranslatorFactoryTest extends TestCase
         );
 
         $editionSelector = $this->createMock(EditionSelector::class);
-        $editionSelector->method('isEnterprise')->willReturn(false);
+        $editionSelector->method('isEnterprise')->willReturn(true);
 
         $factory = new TableTranslatorFactory($language, $viewNameGenerator, $editionSelector);
         $tableTranslator = $factory->create(['oxarticles'], ['oxobject2category']);
