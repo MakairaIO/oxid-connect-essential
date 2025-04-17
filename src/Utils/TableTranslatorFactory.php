@@ -4,44 +4,45 @@ namespace Makaira\OxidConnectEssential\Utils;
 
 use OxidEsales\Eshop\Core\Language;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
+use OxidEsales\Facts\Edition\EditionSelector;
 
 use function is_numeric;
 
-class TableTranslatorConfigurator
+class TableTranslatorFactory
 {
     /**
      * @var array<string, int>
      */
     private array $languageMap;
 
-    /**
-     * TableTranslatorConfigurator constructor.
-     *
-     * @param Language               $language
-     * @param TableViewNameGenerator $viewNameGenerator
-     */
-    public function __construct(Language $language, private TableViewNameGenerator $viewNameGenerator)
-    {
-        $oxidLanguages           = $language->getLanguageArray();
+    public function __construct(
+        Language $language,
+        private TableViewNameGenerator $viewNameGenerator,
+        private EditionSelector $editionSelector,
+    ) {
+        $oxidLanguages = $language->getLanguageArray();
         foreach ($oxidLanguages as $oxidLanguage) {
             $this->languageMap[(string) $oxidLanguage->abbr] = (int) $oxidLanguage->id;
         }
     }
 
-    /**
-     * @param TableTranslator $tableTranslator
-     *
-     * @return void
-     */
-    public function configure(TableTranslator $tableTranslator): void
+    public function create(array $searchTables, array $enterpriseSearchTables = []): TableTranslator
     {
+        if ($this->editionSelector->isEnterprise()) {
+            $searchTables = array_merge($searchTables, $enterpriseSearchTables);
+        }
+
+        $tableTranslator = new TableTranslator($searchTables);
+
         $tableTranslator->setViewNameGenerator(
             fn($table, $language, $shopId = null) => $this->viewNameGenerator->getViewName(
                 $table,
                 $this->mapLanguage($language),
-                $shopId
-            )
+                $shopId,
+            ),
         );
+
+        return $tableTranslator;
     }
 
     /**
@@ -49,7 +50,7 @@ class TableTranslatorConfigurator
      *
      * @return int|null
      */
-    private function mapLanguage($language): ?int
+    private function mapLanguage(int|string $language): ?int
     {
         if (is_numeric($language)) {
             return (int) $language;

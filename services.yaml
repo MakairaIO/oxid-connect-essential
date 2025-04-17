@@ -1,5 +1,6 @@
 parameters:
   searchTables: ['oxarticles', 'oxartextends', 'oxattribute', 'oxcategories', 'oxmanufacturers', 'oxobject2attribute']
+  enterpriseSearchTables: ['oxobject2category']
 
 services:
   _defaults:
@@ -62,12 +63,15 @@ services:
   Makaira\Signing\HashGenerator:
     class: Makaira\Signing\Hash\Sha256
 
-  Makaira\OxidConnectEssential\Utils\TableTranslatorConfigurator: ~
+  Makaira\OxidConnectEssential\Utils\TableTranslatorFactory: ~
+
+  OxidEsales\Facts\Edition\EditionSelector: ~
 
   Makaira\OxidConnectEssential\Utils\TableTranslator:
     bind:
       $searchTables: '%searchTables%'
-    configurator: ['@Makaira\OxidConnectEssential\Utils\TableTranslatorConfigurator', 'configure']
+      $enterpriseSearchTables: '%enterpriseSearchTables%'
+    factory: ['@Makaira\OxidConnectEssential\Utils\TableTranslatorFactory', 'create']
 
   Makaira\OxidConnectEssential\RevisionHandler\Extractor\Article:
     tags: ['makaira_connect_essential.model_data_extractor']
