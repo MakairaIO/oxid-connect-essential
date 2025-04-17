@@ -44,7 +44,7 @@ class TableTranslatorFactoryTest extends TestCase
         $tableTranslator->setLanguage('en');
         $translated = $tableTranslator->translate('SELECT * FROM oxarticles, oxobject2category');
 
-        $this->assertSame('SELECT * FROM oxarticles_2_4, oxobject2category', $translated);
+        $this->assertSame('SELECT * FROM oxarticles_2_42, oxobject2category', $translated);
 
         $tableTranslator->setShopId(21);
         $tableTranslator->setLanguage(1);
@@ -81,7 +81,7 @@ class TableTranslatorFactoryTest extends TestCase
         $tableTranslator->setLanguage('en');
         $translated = $tableTranslator->translate('SELECT * FROM oxarticles, oxobject2category');
 
-        $this->assertSame('SELECT * FROM oxarticles_2_4, oxobject2category_2_4', $translated);
+        $this->assertSame('SELECT * FROM oxarticles_2_42, oxobject2category_2_42', $translated);
 
         $tableTranslator->setShopId(21);
         $tableTranslator->setLanguage(1);
