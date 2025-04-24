@@ -61,8 +61,7 @@ class CategoryModifier extends Modifier
         private TableTranslator $tableTranslator,
         EditionSelector $editionSelector,
     ) {
-        $isEnterprise = $editionSelector->getEdition() === EditionSelector::ENTERPRISE;
-        if ($isEnterprise) {
+        if ($editionSelector->isEnterprise()) {
             $this->selectCategoriesQuery = str_replace(
                 '1 AS shopid',
                 'o2c.OXSHOPID AS shopid',
