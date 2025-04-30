@@ -6,6 +6,7 @@ use Closure;
 
 use function md5;
 use function preg_replace_callback;
+use function sprintf;
 
 class TableTranslator
 {

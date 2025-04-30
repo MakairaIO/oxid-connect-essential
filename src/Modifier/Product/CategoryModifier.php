@@ -10,6 +10,9 @@ use Makaira\OxidConnectEssential\Modifier;
 use Makaira\OxidConnectEssential\Type;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
 use Makaira\OxidConnectEssential\Utils\TableTranslator;
+use OxidEsales\Facts\Edition\EditionSelector;
+
+use function str_replace;
 
 /**
  * @SuppressWarnings(PHPMD.LongVariable)
@@ -51,9 +54,20 @@ class CategoryModifier extends Modifier
     /**
      * @param Connection      $connection
      * @param TableTranslator $tableTranslator
+     * @param EditionSelector $editionSelector
      */
-    public function __construct(private Connection $connection, private TableTranslator $tableTranslator)
-    {
+    public function __construct(
+        private Connection $connection,
+        private TableTranslator $tableTranslator,
+        EditionSelector $editionSelector,
+    ) {
+        if ($editionSelector->isEnterprise()) {
+            $this->selectCategoriesQuery = str_replace(
+                '1 AS shopid',
+                'o2c.OXSHOPID AS shopid',
+                $this->selectCategoriesQuery,
+            );
+        }
     }
 
     /**

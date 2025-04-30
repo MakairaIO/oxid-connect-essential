@@ -3,18 +3,17 @@
 namespace Makaira\OxidConnectEssential\Test\Unit\Modifier\Product;
 
 use Doctrine\DBAL\Connection;
+use Doctrine\DBAL\Driver\Exception as DBALDriverException;
 use Doctrine\DBAL\Driver\Result;
+use Doctrine\DBAL\Exception as DBALException;
 use Makaira\OxidConnectEssential\Modifier\Product\CategoryModifier;
 use Makaira\OxidConnectEssential\Test\TableTranslatorTrait;
 use Makaira\OxidConnectEssential\Type\Common\AssignedCategory;
 use Makaira\OxidConnectEssential\Type\Product\Product;
+use OxidEsales\Facts\Edition\EditionSelector;
+use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
-
-use function in_array;
-use function json_encode;
-
-use const JSON_PRETTY_PRINT;
 
 class CategoryModifierTest extends TestCase
 {
@@ -22,6 +21,12 @@ class CategoryModifierTest extends TestCase
 
     private static ?Result $resultMock = null;
 
+    /**
+     * @return void
+     * @throws Exception
+     * @throws DBALDriverException
+     * @throws DBALException
+     */
     public function testUnnested(): void
     {
         $databaseMock = $this->createMock(Connection::class);
@@ -46,11 +51,16 @@ class CategoryModifierTest extends TestCase
                 }
             );
 
+        $editionSelectorMock = $this->createMock(EditionSelector::class);
+        $editionSelectorMock
+            ->method('isEnterprise')
+            ->willReturn(false);
+
         $product = new Product();
         $product->id = 'abc';
         $product->OXACTIVE = 1;
 
-        $modifier = new CategoryModifier($databaseMock, $this->getTableTranslatorMock());
+        $modifier = new CategoryModifier($databaseMock, $this->getTableTranslatorMock(), $editionSelectorMock);
 
         $product = $modifier->apply($product);
 
@@ -72,6 +82,7 @@ class CategoryModifierTest extends TestCase
 
     /**
      * @return Result|(Result&MockObject)|MockObject
+     * @throws Exception
      */
     private function createResultMock()
     {
