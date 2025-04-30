@@ -1,3 +1,10 @@
+## [2.1.4](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.3...2.1.4) (2025-04-30)
+
+
+### Bug Fixes
+
+* **Enterprise Edition:** Update SQL query for category assignments ([#26](https://github.com/MakairaIO/oxid-connect-essential/issues/26)) ([500256b](https://github.com/MakairaIO/oxid-connect-essential/commit/500256b705935ce8975e47f7f21ce3873790f2b0))
+
 ## [2.1.3](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.2...2.1.3) (2024-11-19)
 
 
