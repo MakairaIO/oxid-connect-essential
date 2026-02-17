@@ -40,7 +40,7 @@ class UrlModifier extends AbstractUrlModifier
         $url = '';
 
         if ($model instanceof Category) {
-            $url = $this->seoEncoderCategory->getCategoryUri($model, $languageId);
+            $url = (string) $this->seoEncoderCategory->getCategoryUri($model, $languageId);
         }
 
         return $url;
