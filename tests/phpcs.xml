@@ -4,8 +4,8 @@
 
     <!-- Paths to check -->
     <file>../src/</file>
-    <file>../views/admin/de/</file>
-    <file>../views/admin/en/</file>
+    <file>../views/admin_twig/de/</file>
+    <file>../views/admin_twig/en/</file>
     <file>./</file>
 <!--
     <file>../translations</file>

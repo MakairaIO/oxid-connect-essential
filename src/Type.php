@@ -15,7 +15,7 @@ class Type
 
     /* required fields + mak-fields */
     public ?string $timestamp = null;
-    public string $url = '';
+    public array|string $url = '';
     public bool $active = true;
     public array $shop = [];
     public string $meta_keywords = '';
