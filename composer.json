@@ -66,21 +66,7 @@
             "oxid-esales/oxideshop-composer-plugin": false
         },
         "audit": {
-            "ignore": [
-                "PKSA-2q9d-8kh9-49wx",
-                "PKSA-pght-23ww-rrdy",
-                "PKSA-6y8p-nrf4-ysf5",
-                "PKSA-yr6f-z9sx-cps3",
-                "PKSA-28zg-9h7g-fhvp",
-                "PKSA-54c6-f9b9-7wg4",
-                "PKSA-wy1k-8qg5-z8xd",
-                "PKSA-31hv-m6rg-8ryk",
-                "PKSA-98zc-53yc-qt81",
-                "PKSA-t4kv-1sv2-1mzx",
-                "PKSA-wc9h-gs49-76tm",
-                "PKSA-thph-wfk6-pp4j",
-                "PKSA-hgp5-21g7-7phg"
-            ]
+            "block-insecure": false
         }
     }
 }
