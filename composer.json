@@ -66,7 +66,7 @@
             "oxid-esales/oxideshop-composer-plugin": false
         },
         "audit": {
-            "block-insecure": false
+            "ignore": ["smarty/smarty"]
         }
     }
 }
