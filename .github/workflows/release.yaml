@@ -37,7 +37,7 @@ jobs:
           dev: no
           php_version: 8.0
           version: 2
-          args: --ignore-platform-reqs --prefer-dist -no --no-progress
+          args: --ignore-platform-reqs --prefer-dist -no --no-progress --no-security-blocking
 
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v2

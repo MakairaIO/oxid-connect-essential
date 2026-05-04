@@ -1,3 +1,15 @@
+# [2.2.0](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.4...2.2.0) (2026-03-04)
+
+
+### Bug Fixes
+
+* **deps:** Ignore the security advisories due to the dependencies ([6bc71db](https://github.com/MakairaIO/oxid-connect-essential/commit/6bc71db896f2260dc722c056e882f6fc2b3656e7))
+
+
+### Features
+
+* Allow an array of URLs ([#27](https://github.com/MakairaIO/oxid-connect-essential/issues/27)) ([3a3b339](https://github.com/MakairaIO/oxid-connect-essential/commit/3a3b339ba14836a61274322cc87661a39297ae7b))
+
 ## [2.1.4](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.3...2.1.4) (2025-04-30)
 
 
