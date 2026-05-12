@@ -48,6 +48,7 @@ class ModelDataExtractorTest extends TestCase
         }
 
         $expected = [
+            Revision::TYPE_PRODUCT . '-phpunit21' => new Revision(Revision::TYPE_PRODUCT, 'phpunit21', $changed),
             $expectedType . '-phpunit42' => new Revision($expectedType, 'phpunit42', $changed),
         ];
 

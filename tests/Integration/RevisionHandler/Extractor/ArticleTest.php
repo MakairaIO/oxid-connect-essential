@@ -37,10 +37,9 @@ class ArticleTest extends TestCase
     public function testReturnsRevisionForParentWithoutVariants(): void
     {
         $article = $this->createMock(OxidArticle::class);
-        $article
-            ->method('getParentId')->willReturn('')
-            ->method('getId')->willReturn('phpunit-parent')
-            ->method('getVariants')->willReturn([]);
+        $article->method('getParentId')->willReturn('');
+        $article->method('getId')->willReturn('phpunit-parent');
+        $article->method('getVariantIds')->willReturn([]);
 
         $articleExtractor = new Article();
         $actual           = $articleExtractor->extract($article);
@@ -65,10 +64,9 @@ class ArticleTest extends TestCase
     public function testReturnsRevisionForParentWithVariants(): void
     {
         $article = $this->createMock(OxidArticle::class);
-        $article
-            ->method('getParentId')->willReturn('')
-            ->method('getId')->willReturn('phpunit-parent')
-            ->method('getVariantIds')->willReturn(['phpunit-variant1', 'phpunit-variant2']);
+        $article->method('getParentId')->willReturn('');
+        $article->method('getId')->willReturn('phpunit-parent');
+        $article->method('getVariantIds')->willReturn(['phpunit-variant1', 'phpunit-variant2']);
 
         $articleExtractor = new Article();
         $actual           = $articleExtractor->extract($article);
@@ -102,9 +100,8 @@ class ArticleTest extends TestCase
     public function testReturnsRevisionObjectsForVariant(): void
     {
         $article = $this->createMock(OxidArticle::class);
-        $article
-            ->method('getParentId')->willReturn('phpunit-parent')
-            ->method('getId')->willReturn('phpunit-variant1');
+        $article->method('getParentId')->willReturn('phpunit-parent');
+        $article->method('getId')->willReturn('phpunit-variant1');
 
         $articleExtractor = new Article();
         $actual           = $articleExtractor->extract($article);
