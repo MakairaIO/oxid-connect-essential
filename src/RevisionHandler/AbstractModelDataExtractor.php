@@ -10,19 +10,30 @@ abstract class AbstractModelDataExtractor implements ModelDataExtractorInterface
     /**
      * @param string                 $type
      * @param string                 $objectId
-     * @param DateTimeInterface|null $changed
-     * @param int|null               $revision
      *
      * @return array<Revision>
      */
     protected function buildRevision(
         string $type,
         string $objectId,
-        ?DateTimeInterface $changed = null,
-        ?int $revision = null
     ): array {
-        $key = sprintf('%s-%s', $type, $objectId);
+        return $this->buildRevisions([$objectId => $type]);
+    }
 
-        return [$key => new Revision($type, $objectId, $changed, $revision)];
+    /**
+     * @param array<string, string>  $input
+     *
+     * @return array<Revision>
+     */
+    protected function buildRevisions(
+        array $input,
+    ): array {
+        $revisions = [];
+        foreach ($input as $objectId => $type) {
+            $key = sprintf('%s-%s', $type, $objectId);
+            $revisions[$key] = new Revision($type, $objectId);
+        }
+
+        return $revisions;
     }
 }

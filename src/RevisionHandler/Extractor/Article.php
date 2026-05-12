@@ -16,10 +16,19 @@ class Article extends AbstractModelDataExtractor
      */
     public function extract(BaseModel $model): array
     {
-        return $this->buildRevision(
-            $model->getParentId() ? Revision::TYPE_VARIANT : Revision::TYPE_PRODUCT,
-            $model->getId()
-        );
+        $isParentArticle = !$model->getParentId();
+        $revisionInput = [];
+        if ($isParentArticle) {
+            $revisionInput[$model->getId()] = Revision::TYPE_PRODUCT;
+            foreach ($model->getVariantIds(false) as $variantId) {
+                $revisionInput[$variantId] = Revision::TYPE_VARIANT;
+            }
+        } else {
+            $revisionInput[$model->getParentId()] = Revision::TYPE_PRODUCT;
+            $revisionInput[$model->getId()] = Revision::TYPE_VARIANT;
+        }
+
+        return $this->buildRevisions($revisionInput);
     }
 
     /**

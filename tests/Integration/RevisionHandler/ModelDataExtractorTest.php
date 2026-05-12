@@ -16,15 +16,10 @@ use PHPUnit\Framework\TestCase;
 class ModelDataExtractorTest extends TestCase
 {
     /**
-     * @param string $productId
-     * @param string $parentId
-     * @param string $expectedType
-     *
-     * @return void
      * @throws ModelNotSupportedException
      * @dataProvider provideProducts
      */
-    public function testCanExtractDataFromProduct(string $productId, string $parentId, string $expectedType): void
+    public function testCanExtractDataFromProduct(string $productId, string $parentId): void
     {
         $categoryExtractor = new Category(
             $this->createMock(Connection::class),
@@ -48,8 +43,16 @@ class ModelDataExtractorTest extends TestCase
         }
 
         $expected = [
-            $expectedType . '-phpunit42' => new Revision($expectedType, 'phpunit42', $changed),
+            Revision::TYPE_PRODUCT . '-phpunit42' => new Revision(Revision::TYPE_PRODUCT, 'phpunit42', $changed),
         ];
+
+        if ($parentId) {
+            $expected = [
+                Revision::TYPE_PRODUCT . '-phpunit21' => new Revision(Revision::TYPE_PRODUCT, 'phpunit21', $changed),
+                Revision::TYPE_VARIANT . '-phpunit42' => new Revision(Revision::TYPE_VARIANT, 'phpunit42', $changed),
+            ];
+        }
+
 
         $this->assertEqualsCanonicalizing($expected, $actual);
     }
@@ -57,8 +60,8 @@ class ModelDataExtractorTest extends TestCase
     public function provideProducts(): array
     {
         return [
-            ['phpunit42', '', Revision::TYPE_PRODUCT],
-            ['phpunit42', 'phpunit21', Revision::TYPE_VARIANT],
+            ['phpunit42', ''],
+            ['phpunit42', 'phpunit21'],
         ];
     }
 }
