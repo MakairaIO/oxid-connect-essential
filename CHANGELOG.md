@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/MakairaIO/oxid-connect-essential/compare/2.2.0...2.2.1) (2026-05-12)
+
+
+### Bug Fixes
+
+* When product is changed mark all variants also as changed ([#30](https://github.com/MakairaIO/oxid-connect-essential/issues/30)) ([0fb41de](https://github.com/MakairaIO/oxid-connect-essential/commit/0fb41de2cf5e085f43590f4e79dc8871cef7c7e5)), closes [#29](https://github.com/MakairaIO/oxid-connect-essential/issues/29)
+
 # [2.2.0](https://github.com/MakairaIO/oxid-connect-essential/compare/2.1.4...2.2.0) (2026-03-04)
 
 
