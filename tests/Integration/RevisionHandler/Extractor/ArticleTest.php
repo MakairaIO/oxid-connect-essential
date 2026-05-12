@@ -34,18 +34,16 @@ class ArticleTest extends TestCase
         $this->assertFalse($actual);
     }
 
-    /**
-     * @return void
-     * @dataProvider provideTestData
-     */
-    public function testReturnsRevisionObject(string $parentId, string $expectedType): void
+    public function testReturnsRevisionForParentWithoutVariants(): void
     {
         $article = $this->createMock(OxidArticle::class);
-        $article->method('getParentId')->willReturn($parentId);
-        $article->method('getId')->willReturn('phpunit42');
+        $article
+            ->method('getParentId')->willReturn('')
+            ->method('getId')->willReturn('phpunit-parent')
+            ->method('getVariants')->willReturn([]);
 
         $articleExtractor = new Article();
-        $actual = $articleExtractor->extract($article);
+        $actual           = $articleExtractor->extract($article);
 
         $changed = new DateTimeImmutable();
 
@@ -54,16 +52,81 @@ class ArticleTest extends TestCase
         }
 
         $expected = [
-            $expectedType . '-phpunit42' => new Revision($expectedType, 'phpunit42', $changed)
+            Revision::TYPE_PRODUCT . '-phpunit-parent' => new Revision(
+                Revision::TYPE_PRODUCT,
+                'phpunit-parent',
+                $changed,
+            ),
         ];
         $this->assertEqualsCanonicalizing($expected, $actual);
     }
 
-    public function provideTestData(): array
+
+    public function testReturnsRevisionForParentWithVariants(): void
     {
-        return [
-            'Testing product' => ['', Revision::TYPE_PRODUCT],
-            'Testing variant' => ['phpunit21', Revision::TYPE_VARIANT]
+        $article = $this->createMock(OxidArticle::class);
+        $article
+            ->method('getParentId')->willReturn('')
+            ->method('getId')->willReturn('phpunit-parent')
+            ->method('getVariantIds')->willReturn(['phpunit-variant1', 'phpunit-variant2']);
+
+        $articleExtractor = new Article();
+        $actual           = $articleExtractor->extract($article);
+
+        $changed = new DateTimeImmutable();
+
+        foreach ($actual as $revision) {
+            $revision->changed = $changed;
+        }
+
+        $expected = [
+            Revision::TYPE_PRODUCT . '-phpunit-parent'   => new Revision(
+                Revision::TYPE_PRODUCT,
+                'phpunit-parent',
+                $changed,
+            ),
+            Revision::TYPE_VARIANT . '-phpunit-variant1' => new Revision(
+                Revision::TYPE_VARIANT,
+                'phpunit-variant1',
+                $changed,
+            ),
+            Revision::TYPE_VARIANT . '-phpunit-variant2' => new Revision(
+                Revision::TYPE_VARIANT,
+                'phpunit-variant2',
+                $changed,
+            ),
         ];
+        $this->assertEqualsCanonicalizing($expected, $actual);
+    }
+
+    public function testReturnsRevisionObjectsForVariant(): void
+    {
+        $article = $this->createMock(OxidArticle::class);
+        $article
+            ->method('getParentId')->willReturn('phpunit-parent')
+            ->method('getId')->willReturn('phpunit-variant1');
+
+        $articleExtractor = new Article();
+        $actual           = $articleExtractor->extract($article);
+
+        $changed = new DateTimeImmutable();
+
+        foreach ($actual as $revision) {
+            $revision->changed = $changed;
+        }
+
+        $expected = [
+            Revision::TYPE_PRODUCT . '-phpunit-parent'   => new Revision(
+                Revision::TYPE_PRODUCT,
+                'phpunit-parent',
+                $changed,
+            ),
+            Revision::TYPE_VARIANT . '-phpunit-variant1' => new Revision(
+                Revision::TYPE_VARIANT,
+                'phpunit-variant1',
+                $changed,
+            ),
+        ];
+        $this->assertEqualsCanonicalizing($expected, $actual);
     }
 }
