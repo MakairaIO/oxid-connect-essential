@@ -150,6 +150,9 @@ jobs:
           echo -e "\033[1;37mInstall demo data\033[0m"
           docker compose exec -T php php vendor/bin/oe-eshop-demodata_install
           echo -e "\033[1;37mActivate module\033[0m"
+          docker compose exec -T php pwd
+          docker compose exec -T php ls -alh --color bin/
+          docker compose exec -T php php bin/oe-console
           docker compose exec -T php php bin/oe-console -v oe:module:activate ${{ env.MODULE_IDS }}
 
       - name: Stop containers
