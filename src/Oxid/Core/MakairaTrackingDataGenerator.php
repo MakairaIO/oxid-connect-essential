@@ -2,6 +2,7 @@
 
 namespace Makaira\OxidConnectEssential\Oxid\Core;
 
+use Makaira\OxidConnectEssential\Utils\ModuleSettingsProvider;
 use OxidEsales\Eshop\Application\Controller\BasketController;
 use OxidEsales\Eshop\Application\Controller\ThankYouController;
 use OxidEsales\Eshop\Application\Model\Article;
@@ -35,8 +36,14 @@ class MakairaTrackingDataGenerator
     private const METHOD_MAP = [
         BasketController::class   => 'generateForBasket',
         ThankYouController::class => 'generateForThankYou',
-
     ];
+
+    private ModuleSettingsProvider $moduleSettings;
+
+    public function __construct(ModuleSettingsProvider $moduleSettings)
+    {
+        $this->moduleSettings = $moduleSettings;
+    }
 
     /**
      * Generates the tracking data array to send to piwik.
@@ -48,11 +55,7 @@ class MakairaTrackingDataGenerator
     public function generate(string $oxidControllerClass): array
     {
         /** @var string $siteId */
-        $siteId = Registry::getConfig()->getShopConfVar(
-            'makaira_tracking_page_id',
-            null,
-            'module:makaira_oxid-connect-essential'
-        );
+        $siteId = $this->moduleSettings->get('makaira_tracking_page_id');
 
         if (empty($siteId)) {
             return [];
