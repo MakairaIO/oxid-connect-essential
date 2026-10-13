@@ -68,11 +68,6 @@ jobs:
       - name: Clone testing environment ${{ env.oxid-testing-environment }}
         run: git clone --depth 1 --branch ${{ env.oxid-testing-environment }} --single-branch https://github.com/OXID-eSales/docker-eshop-sdk.git .
 
-      - name: Patch files for compability
-        run: |
-          sed -i 's/docker-compose /docker compose /g' Makefile
-          sed -i '1d' docker-compose.yml
-
       - name: Clone the shop
         run: git clone --depth 1 --branch b-${{ env.oxid-version }}.x --single-branch https://github.com/OXID-eSales/oxideshop_ce.git source
 
@@ -85,7 +80,6 @@ jobs:
 
       - name: Prepare container configuration
         run: |
-          alias docker-compose='docker compose'
           make setup
           make addbasicservices
           make file=services/selenium-chrome.yml addservice
@@ -124,9 +118,13 @@ jobs:
         with:
           path: source/test-module
 
+      - name: Patch files for compatibility
+        run: |
+              sed -i 's/docker-compose /docker compose /g' Makefile
+              sed -i '1d' docker-compose.yml.dist
+
       - name: Start containers
         run: |
-          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -189,7 +187,6 @@ jobs:
 
       - name: Start containers
         run: |
-          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -224,7 +221,6 @@ jobs:
       - name: Stop containers
         if: always()
         run: |
-          alias docker-compose='docker compose'
           make down
           sleep 2
 
@@ -252,7 +248,6 @@ jobs:
 
       - name: Start containers
         run: |
-          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -298,7 +293,6 @@ jobs:
 
       - name: Start containers
         run: |
-          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -356,7 +350,6 @@ jobs:
 
       - name: Start containers
         run: |
-          alias docker-compose='docker compose'
           make up
           sleep 2
 
