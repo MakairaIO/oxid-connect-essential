@@ -152,15 +152,12 @@ jobs:
           docker compose exec -T php pwd
           docker compose exec -T php ls -alh --color bin/
           docker compose exec -T php php bin/oe-console
-          docker compose exec -T php -d 'log_errors=on' -d 'error_log=/dev/stderr' php bin/oe-console -vvv oe:module:activate ${{ env.MODULE_IDS }}
+          docker compose exec -T php php -d 'log_errors=on' -d 'error_log=/dev/stderr' bin/oe-console -vvv oe:module:activate ${{ env.MODULE_IDS }}
 
       - name: Show OXID log
         if: always()
-        shell: bash --noprofile --norc -eo pipefail -c {0}
         run: |
-          if [ -e source/log/ooxideshop.log ]; then
-            cat source/log/ooxideshop.log
-          fi
+          sh -c 'test -e source/log/ooxideshop.log && cat source/log/ooxideshop.log; exit 0'
 
       - name: Stop containers
         run: |
