@@ -10,7 +10,7 @@ env:
 jobs:
   release:
     name: Create a new release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Clone code repo
         uses: actions/checkout@v7

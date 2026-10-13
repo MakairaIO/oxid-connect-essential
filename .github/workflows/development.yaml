@@ -54,7 +54,7 @@ env:
 
 jobs:
   install_shop_with_module:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Print run parameters
         run: |
@@ -171,7 +171,7 @@ jobs:
 
   styles:
     needs: [ install_shop_with_module ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
         uses: actions/cache@v6
@@ -234,7 +234,7 @@ jobs:
 
   integration_tests:
     needs: [ install_shop_with_module ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
         uses: actions/cache@v6
@@ -280,7 +280,7 @@ jobs:
 
   unit_tests:
     needs: [ install_shop_with_module ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
         uses: actions/cache@v6
@@ -326,7 +326,7 @@ jobs:
   prepare_coverage_results:
     needs: [ unit_tests, integration_tests ]
     if: ${{ always() && inputs.report_sonarcloud }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
         uses: actions/cache@v6
@@ -373,7 +373,7 @@ jobs:
   sonarcloud:
     needs: [ prepare_coverage_results ]
     if: ${{ always() && inputs.report_sonarcloud }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout current module
         uses: actions/checkout@v7
