@@ -80,6 +80,7 @@ jobs:
 
       - name: Prepare container configuration
         run: |
+          alias docker-compose='docker compose'
           make setup
           make addbasicservices
           make file=services/selenium-chrome.yml addservice
@@ -120,6 +121,7 @@ jobs:
 
       - name: Start containers
         run: |
+          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -182,6 +184,7 @@ jobs:
 
       - name: Start containers
         run: |
+          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -216,6 +219,7 @@ jobs:
       - name: Stop containers
         if: always()
         run: |
+          alias docker-compose='docker compose'
           make down
           sleep 2
 
@@ -243,6 +247,7 @@ jobs:
 
       - name: Start containers
         run: |
+          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -288,6 +293,7 @@ jobs:
 
       - name: Start containers
         run: |
+          alias docker-compose='docker compose'
           make up
           sleep 2
 
@@ -345,6 +351,7 @@ jobs:
 
       - name: Start containers
         run: |
+          alias docker-compose='docker compose'
           make up
           sleep 2
 
