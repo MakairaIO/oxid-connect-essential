@@ -68,6 +68,9 @@ jobs:
       - name: Clone testing environment ${{ env.oxid-testing-environment }}
         run: git clone --depth 1 --branch ${{ env.oxid-testing-environment }} --single-branch https://github.com/OXID-eSales/docker-eshop-sdk.git .
 
+      - name: Patch Docker Compose calls
+        run: set -i 's/docker-compose /docker compose /g' Makefile
+
       - name: Clone the shop
         run: git clone --depth 1 --branch b-${{ env.oxid-version }}.x --single-branch https://github.com/OXID-eSales/oxideshop_ce.git source
 
