@@ -121,7 +121,7 @@ jobs:
       - name: Patch files for compatibility
         run: |
               sed -i 's/docker-compose /docker compose /g' Makefile
-              sed -i '1d' docker-compose.yml.dist
+              sed -i '1d' docker-compose.yml
 
       - name: Start containers
         run: |
