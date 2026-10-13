@@ -149,15 +149,7 @@ jobs:
           echo -e "\033[1;37mInstall demo data\033[0m"
           docker compose exec -T php php vendor/bin/oe-eshop-demodata_install
           echo -e "\033[1;37mActivate module\033[0m"
-          docker compose exec -T php pwd
-          docker compose exec -T php ls -alh --color bin/
-          docker compose exec -T php php bin/oe-console
           docker compose exec -T php php -d 'log_errors=on' -d 'error_log=/dev/stderr' bin/oe-console -vvv oe:module:activate ${{ env.MODULE_IDS }}
-
-      - name: Show OXID log
-        if: always()
-        run: |
-          sh -c 'test -e source/log/ooxideshop.log && cat source/log/ooxideshop.log; exit 0'
 
       - name: Stop containers
         run: |

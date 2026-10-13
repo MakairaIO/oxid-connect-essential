@@ -38,8 +38,11 @@ class MakairaTrackingDataGenerator
         ThankYouController::class => 'generateForThankYou',
     ];
 
-    public function __construct(private ModuleSettingsProvider $moduleSettings)
+    private ModuleSettingsProvider $moduleSettings;
+
+    public function __construct(ModuleSettingsProvider $moduleSettings)
     {
+        $this->moduleSettings = $moduleSettings;
     }
 
     /**
