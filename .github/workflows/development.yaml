@@ -142,7 +142,6 @@ jobs:
 
       - name: Install dependencies and reset shop
         run: |
-          set -x
           echo -e "\033[1;37mRun composer update\033[0m"
           docker compose exec -T php composer update --no-interaction
           echo -e "\033[1;37mReset database\033[0m"
@@ -153,7 +152,15 @@ jobs:
           docker compose exec -T php pwd
           docker compose exec -T php ls -alh --color bin/
           docker compose exec -T php php bin/oe-console
-          docker compose exec -T php php bin/oe-console -v oe:module:activate ${{ env.MODULE_IDS }}
+          docker compose exec -T php -d 'log_errors=on' -d 'error_log=/dev/stderr' php bin/oe-console -vvv oe:module:activate ${{ env.MODULE_IDS }}
+
+      - name: Show OXID log
+        if: always()
+        shell: bash --noprofile --norc -eo pipefail -c {0}
+        run: |
+          if [ -e source/log/ooxideshop.log ]; then
+            cat source/log/ooxideshop.log
+          fi
 
       - name: Stop containers
         run: |
