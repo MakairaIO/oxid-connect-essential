@@ -1,3 +1,11 @@
+## [1.4.7](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.6...1.4.7) (2026-10-22)
+
+
+### Bug Fixes
+
+* Do not block packages ([2a5503b](https://github.com/MakairaIO/oxid-connect-essential/commit/2a5503b1e1656b55e2f8ea48dc2a4f707ce99b22))
+* Use module settings service to get the site id for tracking [backport] ([#32](https://github.com/MakairaIO/oxid-connect-essential/issues/32)) ([d9efdf4](https://github.com/MakairaIO/oxid-connect-essential/commit/d9efdf4176948d83a90cc423a1283fb7ae595158))
+
 ## [1.4.6](https://github.com/MakairaIO/oxid-connect-essential/compare/1.4.5...1.4.6) (2023-10-12)
 
 
