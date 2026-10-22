@@ -62,6 +62,11 @@
         "allow-plugins": {
             "oxid-esales/oxideshop-unified-namespace-generator": true,
             "oxid-esales/oxideshop-composer-plugin": false
+        },
+        "policy": {
+            "advisories": {
+                "block": false
+            }
         }
     }
 }
