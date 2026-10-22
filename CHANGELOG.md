@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/MakairaIO/oxid-connect-essential/compare/2.2.1...2.2.2) (2026-10-22)
+
+
+### Bug Fixes
+
+* Use module settings service to get the site id for tracking ([#31](https://github.com/MakairaIO/oxid-connect-essential/issues/31)) ([37d4280](https://github.com/MakairaIO/oxid-connect-essential/commit/37d4280a97a2ba7344e3232d45a5fc4e2ac212b6))
+
 ## [2.2.1](https://github.com/MakairaIO/oxid-connect-essential/compare/2.2.0...2.2.1) (2026-05-12)
 
 
