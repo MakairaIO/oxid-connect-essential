@@ -54,7 +54,7 @@ env:
 
 jobs:
   install_shop_with_module:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Print run parameters
         run: |
@@ -72,7 +72,7 @@ jobs:
         run: git clone --depth 1 --branch b-${{ env.oxid-version }}.x --single-branch https://github.com/OXID-eSales/oxideshop_ce.git source
 
       - name: Cache current installation
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: |
             ./*
@@ -114,9 +114,14 @@ jobs:
               source/source/config.inc.php
 
       - name: Checkout current module
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           path: source/test-module
+
+      - name: Patch files for compatibility
+        run: |
+              sed -i 's/docker-compose /docker compose /g' Makefile
+              sed -i '1d' docker-compose.yml
 
       - name: Start containers
         run: |
@@ -125,40 +130,40 @@ jobs:
 
       - name: Install module
         run: |
-          docker-compose exec -T \
+          docker compose exec -T \
             php composer config repositories.${{ env.PACKAGE_NAME }} \
             --json '{"type":"path", "url":"./test-module", "options": {"symlink": true}}'
-          docker-compose exec -T \
+          docker compose exec -T \
             php composer require ${{ env.PACKAGE_NAME }}:* --no-interaction --no-update
-          docker-compose exec -T \
+          docker compose exec -T \
             php composer require oxid-esales/oxideshop-demodata-ce:"${{ env.oxid-demo-data-version }}" --no-interaction --no-update
-          docker-compose exec -T \
+          docker compose exec -T \
             php composer require oxid-esales/oxideshop-demodata-installer:"dev-b-${{ env.oxid-version }}.x" --no-interaction --no-update
 
       - name: Install dependencies and reset shop
         run: |
           echo -e "\033[1;37mRun composer update\033[0m"
-          docker-compose exec -T php composer update --no-interaction
+          docker compose exec -T php composer update --no-interaction
           echo -e "\033[1;37mReset database\033[0m"
-          docker-compose exec -T php php vendor/bin/reset-shop
+          docker compose exec -T php php vendor/bin/reset-shop
           echo -e "\033[1;37mInstall demo data\033[0m"
-          docker-compose exec -T php php vendor/bin/oe-eshop-demodata_install
+          docker compose exec -T php php vendor/bin/oe-eshop-demodata_install
           echo -e "\033[1;37mActivate module\033[0m"
-          docker-compose exec -T php php bin/oe-console oe:module:activate ${{ env.MODULE_IDS }}
+          docker compose exec -T php php -d 'log_errors=on' -d 'error_log=/dev/stderr' bin/oe-console -vvv oe:module:activate ${{ env.MODULE_IDS }}
 
       - name: Stop containers
         run: |
-          docker-compose down
+          docker compose down
           sleep 2
 
       - name: Show docker log
         if: always()
         run: |
-          docker-compose logs
+          docker compose logs
 
       - name: Upload configuration artifacts
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: Configs-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: |
@@ -169,10 +174,10 @@ jobs:
 
   styles:
     needs: [ install_shop_with_module ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: |
             ./*
@@ -187,14 +192,14 @@ jobs:
 
       - name: Install module dependencies
         run: |
-          docker-compose exec -T \
+          docker compose exec -T \
             --workdir=/var/www/test-module \
             php composer install
 
       - name: Run phpcs
         if: always()
         run: |
-          docker-compose exec -T \
+          docker compose exec -T \
             --workdir=/var/www/test-module \
             php composer phpcs
 
@@ -202,14 +207,14 @@ jobs:
         id: phpstan
         if: always()
         run: |
-          docker-compose exec -T \
+          docker compose exec -T \
             --workdir=/var/www/test-module \
             php composer phpstan
 
       - name: Run phpstan scan and generate report for further processing
         if: always()
         run: |
-          docker-compose exec -T \
+          docker compose exec -T \
             --workdir=/var/www/test-module \
             php composer phpstan-report
 
@@ -221,7 +226,7 @@ jobs:
 
       - name: Upload log artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: StylesLog-${{ inputs.php }}
           path: |
@@ -230,10 +235,10 @@ jobs:
 
   integration_tests:
     needs: [ install_shop_with_module ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: |
             ./*
@@ -248,7 +253,7 @@ jobs:
 
       - name: Run tests
         run: |
-          docker-compose exec -T \
+          docker compose exec -T \
             -e XDEBUG_MODE=coverage \
             php php vendor/bin/phpunit \
               -c /var/www/vendor/${{ env.PACKAGE_NAME }}/tests/phpunit.xml \
@@ -259,7 +264,7 @@ jobs:
 
       - name: Upload log artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: ModuleIntegrationTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: |
@@ -270,15 +275,15 @@ jobs:
       - name: Stop containers
         if: always()
         run: |
-          docker-compose down
+          docker compose down
           sleep 2
 
   unit_tests:
     needs: [ install_shop_with_module ]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: |
             ./*
@@ -293,7 +298,7 @@ jobs:
 
       - name: Run tests
         run: |
-          docker-compose exec -T \
+          docker compose exec -T \
             -e XDEBUG_MODE=coverage \
             php php vendor/bin/phpunit \
               -c /var/www/vendor/${{ env.PACKAGE_NAME }}/tests/phpunit.xml \
@@ -303,7 +308,7 @@ jobs:
 
       - name: Upload log artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: ModuleUnitTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: |
@@ -314,16 +319,16 @@ jobs:
       - name: Stop containers
         if: always()
         run: |
-          docker-compose down
+          docker compose down
           sleep 2
 
   prepare_coverage_results:
     needs: [ unit_tests, integration_tests ]
     if: ${{ always() && inputs.report_sonarcloud }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Load current installation from cache
-        uses: actions/cache@v3
+        uses: actions/cache@v6
         with:
           path: |
             ./*
@@ -332,13 +337,13 @@ jobs:
             installation-${{ github.sha }}-${{ join(inputs.*, '-') }}-${{ github.run_number }}-${{ github.run_attempt }}
 
       - name: Download unit artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v8
         with:
           name: ModuleUnitTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: ./source/coverage/
 
       - name: Download integration artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v8
         with:
           name: ModuleIntegrationTestsLog-${{ inputs.php }}-${{ inputs.mysql }}-${{ inputs.template_engine }}
           path: ./source/coverage/
@@ -354,11 +359,11 @@ jobs:
           ls -alh source/coverage
           wget https://phar.phpunit.de/phpcov-8.2.1.phar
           mv phpcov-8.2.1.phar source/phpcov.phar
-          docker-compose exec -T php php phpcov.phar merge --clover coverage.xml ./coverage
+          docker compose exec -T php php phpcov.phar merge --clover coverage.xml ./coverage
           sed -i 's+/var/www/test-module/+./+' source/coverage.xml
 
       - name: Upload log artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: TestsLog-${{ inputs.php }}-${{ inputs.mysql }}
           path: source/coverage.xml
@@ -366,14 +371,14 @@ jobs:
   sonarcloud:
     needs: [ prepare_coverage_results ]
     if: ${{ always() && inputs.report_sonarcloud }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout current module
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Download TestsLog artifacts
         continue-on-error: true
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v8
         with:
           name: TestsLog-${{ inputs.php }}-${{ inputs.mysql }}
           path: ./tests/
